@@ -1,0 +1,33 @@
+// DFFX1
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt DFFX1 Q QN CK D vdd vss
+    M26  (QN net055 vss vss)  nch w=2u l=1u wf=2
+    M25  (net055 qbint vss vss)  nch w=2u l=1u wf=2
+    M23  (Q qbint vss vss)  nch w=2u l=1u wf=2
+    M19  (n30 CKb net028 net028)  nch w=2u l=1u wf=2
+    M18  (net028 qbint vss vss)  nch w=2u l=1u wf=2
+    M17  (qbint n30 vss vss)  nch w=2u l=1u wf=2
+    M15  (n30 CKbb mout mout)  nch w=2u l=1u wf=2
+    M11  (n20 CKbb net017 net017)  nch w=2u l=1u wf=2
+    M10  (net017 mout vss vss)  nch w=2u l=1u wf=2
+    M9  (mout n20 vss vss)  nch w=2u l=1u wf=2
+    M5  (n20 CKb net13 net13)  nch w=2u l=1u wf=2
+    M4  (net13 D vss vss)  nch w=2u l=1u wf=2
+    M3  (CKbb CKb vss vss)  nch w=2u l=1u wf=2
+    M0  (CKb CK vss vss)  nch w=2u l=1u wf=2
+    M27  (QN net055 vdd vdd)  pch w=4u l=1u
+    M24  (net055 qbint vdd vdd)  pch w=4u l=1u
+    M22  (Q qbint vdd vdd)  pch w=4u l=1u
+    M21  (n30 CKbb net029 net029)  pch w=4u l=1u
+    M20  (net029 qbint vdd vdd)  pch w=4u l=1u
+    M16  (qbint n30 vdd vdd)  pch w=4u l=1u
+    M14  (n30 CKb mout mout)  pch w=4u l=1u
+    M13  (n20 CKb net018 net018)  pch w=4u l=1u
+    M12  (net018 mout vdd vdd)  pch w=4u l=1u
+    M8  (mout n20 vdd vdd)  pch w=4u l=1u
+    M7  (n20 CKbb net14 net14)  pch w=4u l=1u
+    M6  (net14 D vdd vdd)  pch w=4u l=1u
+    M2  (CKbb CKb vdd vdd)  pch w=4u l=1u
+    M1  (CKb CK vdd vdd)  pch w=4u l=1u
+ends DFFX1

@@ -1,0 +1,347 @@
+lvs_netlist yes -allow_inconsistent_model
+
+//  AG: Filter M with D,G,S,G terminals tied together 
+//  AB: Filter M with D,G,S terminals tied together 
+//  RC: Filter R with PLUS and MINUS terminals tied together 
+//  RE: Filter C with PLUS and MINUS terminals tied together 
+//  RG: Filter D with PLUS and MINUS terminals tied together 
+
+#IFNDEF FILTER_DGS_TIED_MOS 
+ LVS_FILTER_OPTION AG RC RE RG; 
+#ELSE 
+ LVS_FILTER_OPTION AB RC RE RG; 
+#ENDIF
+
+input_scale 2000;
+grid 5;
+unit -length u;
+text_depth -primary;
+mask_svdb_dir "svdb";
+
+layout_preserve_case -property yes
+
+
+// ****  Layer Definitions ****
+ 
+
+layer_def empty 999;
+
+// Metal layers
+
+layer_def Metal1 1020;
+layer_map 7 -datatype -le 5 1020;
+
+layer_def Metal2 1021;
+layer_map 9 -datatype -le 5 1021;
+
+layer_def Metal3 1022;
+layer_map 11 -datatype -le 5 1022;
+
+layer_def Metal4 1023;
+layer_map 31 -datatype -le 5 1023;
+
+// Dummy resistor layers
+
+layer_def M1Resdum 1009;
+layer_map 75 -datatype 0 1009;
+
+layer_def M2Resdum 1010;
+layer_map 76 -datatype 0 1010;
+
+layer_def M3Resdum 1011;
+layer_map 77 -datatype 0 1011;
+
+layer_def M4Resdum 1012;
+layer_map 78 -datatype 0 1012;
+
+layer_def ResWdum 1049;
+layer_map 71 -datatype 0 1049;
+
+layer_def Resdum 1050;
+layer_map 13 -datatype 0 1050;
+
+// Vias
+
+layer_def Cont 1005;
+layer_map 6 -datatype 0 1005;
+
+layer_def Via1 1052;
+layer_map 8 -datatype 0 1052;
+
+layer_def Via2 1053;
+layer_map 10 -datatype 0 1053;
+
+layer_def Via3 1054;
+layer_map 30 -datatype 0 1054;
+
+// MOS layers
+
+layer_def Oxide 1041;
+layer_map 1 -datatype 0 1041;
+
+layer_def Nwell 1039;
+layer_map 2 -datatype 0 1039;
+
+layer_def Nimp 1037;
+layer_map 4 -datatype 0 1037;
+
+layer_def Pimp 1045;
+layer_map 5 -datatype 0 1045;
+
+layer_def Poly 1047;
+layer_map 3 -datatype 0 1047;
+
+layer_def Psub 1048;
+layer_map 25 -datatype 0 1048;
+
+// Text
+
+layer_def text 1098;
+layer_map 63 -texttype 0 1098;
+text_layer text;
+port -text_layer text;
+
+layer_def nwell_conn_text 10645;
+layer_map 2 -texttype 0 10645;
+text_layer nwell_conn_text;
+port -text_layer nwell_conn_text;
+
+layer_def metal1_conn_text 1064;
+layer_map 7 -texttype 0 1064;
+text_layer metal1_conn_text;
+port -text_layer metal1_conn_text;
+
+layer_def metal2_conn_text 1065;
+layer_map 9 -texttype 0 1065;
+text_layer metal2_conn_text;
+port -text_layer metal2_conn_text;
+
+layer_def metal3_conn_text 1066;
+layer_map 11 -texttype 0 1066;
+text_layer metal3_conn_text;
+port -text_layer metal3_conn_text;
+
+layer_def metal4_conn_text 1067;
+layer_map 31 -texttype 0 1067;
+text_layer metal4_conn_text;
+port -text_layer metal4_conn_text;
+
+// Label
+
+layer_def nwell_label 10765;
+layer_map 2 -texttype 0 10765;
+text_layer nwell_label;
+port -text_layer nwell_label;
+
+layer_def m1_label 1076;
+layer_map 7 -texttype 3 1076;
+text_layer m1_label;
+port -text_layer m1_label;
+
+layer_def m2_label 1077;
+layer_map 9 -texttype 3 1077;
+text_layer m2_label;
+port -text_layer m2_label;
+
+layer_def m3_label 1078;
+layer_map 11 -texttype 3 1078;
+text_layer m3_label;
+port -text_layer m3_label;
+
+layer_def m4_label 1079;
+layer_map 31 -texttype 3 1079;
+text_layer m4_label;
+port -text_layer m4_label;
+
+// pin
+layer_def nwell_pin 10875;
+layer_map 2 -texttype 0 10875;
+text_layer nwell_pin;
+port -text_layer nwell_pin;
+
+layer_def m1_pin 1087;
+layer_map 7 -texttype 1 1087;
+text_layer m1_pin;
+port -text_layer m1_pin;
+
+layer_def m2_pin 1088;
+layer_map 9 -texttype 1 1088;
+text_layer m2_pin;
+port -text_layer m2_pin;
+
+layer_def m3_pin 1089;
+layer_map 11 -texttype 1 1089;
+text_layer m3_pin;
+port -text_layer m3_pin;
+
+layer_def m4_pin 1090;
+layer_map 31 -texttype 1 1090;
+text_layer m4_pin;
+port -text_layer m4_pin;
+
+extent bulk;
+
+// Auxiliar layers
+
+// cont_poly=Cont and Poly
+and Cont Poly cont_poly;
+
+// metal1_conn=Metal1 andnot M1Resdum
+not Metal1 M1Resdum metal1_conn;
+
+// metal2_conn=Metal2 andnot M2Resdum
+not Metal2 M2Resdum metal2_conn;
+
+// metal3_conn=Metal3 andnot M3Resdum
+not Metal3 M3Resdum metal3_conn;
+
+// metal4_conn=Metal4 andnot M4Resdum
+not Metal4 M4Resdum metal4_conn;
+
+// nactive=Nimp and Oxide
+and Nimp Oxide nactive;
+
+// nwell_conn=Nwell andnot ResWdum
+not Nwell ResWdum nwell_conn;
+
+// pactive=Pimp and Oxide
+and Oxide Pimp pactive;
+
+// pdiff=pactive andnot Poly
+not pactive Poly pdiff;
+
+// pdiff_conn=pdiff andnot Resdum
+not pdiff Resdum pdiff_conn;
+
+// cont_pdiff=Cont and pdiff_conn
+and Cont pdiff_conn cont_pdiff;
+
+// poly_conn=Poly andnot Resdum
+not Poly Resdum poly_conn;
+
+// ndiff=(nactive andnot poly_conn)
+not nactive poly_conn ndiff;
+
+// ndiff_conn=ndiff andnot Resdum
+not ndiff Resdum ndiff_conn;
+
+// cont_ndiff=Cont and ndiff_conn
+and Cont ndiff_conn cont_ndiff;
+
+// ntap=(Nwell and ndiff_conn) andnot (Psub and NPNdummy)
+//and Nwell ndiff_conn L74405;
+//and NPNdummy Psub L28555;
+//not L74405 L28555 ntap;
+and Nwell ndiff_conn ntap;
+
+// ptap=(pdiff_conn andnot (Nwell andnot Psub)) andnot PNPdummy
+// not Nwell Psub L83944;
+//not pdiff_conn Nwell L65704;
+//not L65704 PNPdummy ptap;
+not pdiff_conn Nwell ptap;
+
+// psubstrate=(bulk andnot (Nburied and Nwell)) andnot (Psub andnot (Psub size -0.001))
+//not bulk nb_tap L14174;
+//size Psub -by -0.001 L86601;
+//not Psub L86601 L7495;
+//not L14174 L7495 psubstrate;
+not bulk Nwell bulk_1;
+not bulk_1 Psub psubstrate;
+
+//_pmos1v
+and Oxide Poly OxPoly;
+and OxPoly Pimp _pmos1v;
+
+//_nmos1v
+and OxPoly Nimp _nmos1v;
+
+
+// Connections
+
+connect metal4_conn metal3_conn -by Via3;
+connect metal3_conn metal2_conn -by Via2;
+connect metal2_conn metal1_conn -by Via1;
+connect metal1_conn poly_conn -by cont_poly;
+connect metal1_conn pdiff_conn -by cont_pdiff;
+//connect metal1_conn npn_emit -by cont_ndiff;
+connect metal1_conn ndiff_conn -by cont_ndiff;
+//connect metal1_conn pnp_emit -by cont_pdiff;
+
+sconnect pdiff_conn psubstrate -by ptap;
+lvs_softchk psubstrate -type contact
+
+sconnect ndiff_conn nwell_conn -by ntap;
+lvs_softchk nwell_conn -type contact
+
+// Attachments
+
+attach metal4_conn_text metal4_conn;
+attach metal3_conn_text metal3_conn;
+attach metal2_conn_text metal2_conn;
+attach metal1_conn_text metal1_conn;
+attach nwell_conn_text nwell_conn;
+
+attach nwell_label nwell_conn;
+attach m1_label metal1_conn;
+attach m2_label metal2_conn;
+attach m3_label metal3_conn;
+attach m4_label metal4_conn;
+
+attach nwell_pin nwell_conn;
+attach m1_pin metal1_conn;
+attach m2_pin metal2_conn;
+attach m3_pin metal3_conn;
+attach m4_pin metal4_conn;
+
+and psubstrate nactive _nmos1v_sti;
+size _nmos1v -by 1 _nmos1v_wpe_temp;
+not _nmos1v_wpe_temp Nwell _nmos1v_wpe;
+device MN (nmos4) _nmos1v poly_conn (G) ndiff_conn (S) ndiff_conn (D) psubstrate (B) (S D) -model "nch" <_nmos1v_sti> <_nmos1v_wpe>
+[property fw, w, l, ad, as, pd, ps, sa, sb, sca, scb, scc 
+    width=perim_co(_nmos1v, ndiff_conn)/2
+    fw=width 
+    w=width 
+    l=area(_nmos1v) / width 
+    ad=area(D) 
+    as=area(S)
+    pd=perimeter(D) 
+    ps=perimeter(S) 
+    s = ENCLOSURE_VECTOR(_nmos1v_sti,2)
+    sw = SUM(s::w)
+    sa = SUM(s::a * (s::w / sw))
+    sb = SUM(s::b * (s::w / sw))
+    sch = ENCLOSURE_PERPENDICULAR(_nmos1v, _nmos1v_wpe, S, 1)
+    scv = ENCLOSURE_PARALLEL(_nmos1v, _nmos1v_wpe, S, 1)
+    //sca = TVF_NUM_FUN("calc_sca", "wpe_procedure", sch, scv, w, l, 1)
+    //scb = TVF_NUM_FUN("calc_scb", "wpe_procedure", sch, scv, w, l, 1)
+    //scc = TVF_NUM_FUN("calc_scc", "wpe_procedure", sch, scv, w, l, 1)    
+];
+lvs_check_property MN(nmos4) l l -tolerance 0
+lvs_check_property MN(nmos4) w w -tolerance 0
+lvs_map_device M(nmos4) MN(nmos4);
+
+device MP (pmos4) _pmos1v poly_conn (G) pdiff_conn (S) pdiff_conn (D) nwell_conn (B) (S D) -model "pch" <pactive>
+[property fw, w, l, ad, as, pd, ps, sa, sb, sca, scb, scc
+    width=perim_co(_pmos1v, pdiff_conn)/2
+    fw=width 
+    w=width 
+    l=area(_pmos1v) / width 
+    ad=area(D) 
+    as=area(S)
+    pd=perimeter(D)
+    ps=perimeter(S)
+    s = ENCLOSURE_VECTOR(pactive,2)
+    sw = SUM(s::w)
+    sa = SUM(s::a * (s::w / sw))
+    sb = SUM(s::b * (s::w / sw))
+    sch = ENCLOSURE_PERPENDICULAR(_pmos1v, nwell_conn, S, 1)
+    scv = ENCLOSURE_PARALLEL(_pmos1v, nwell_conn, S, 1)
+    //sca = TVF_NUM_FUN("calc_sca", "wpe_procedure", sch, scv, w, l, 1)
+    //scb = TVF_NUM_FUN("calc_scb", "wpe_procedure", sch, scv, w, l, 1)
+    //scc = TVF_NUM_FUN("calc_scc", "wpe_procedure", sch, scv, w, l, 1)
+];
+lvs_check_property MP(pmos4) l l -tolerance 0
+lvs_check_property MP(pmos4) w w -tolerance 0
+lvs_map_device M(pmos4) MP(pmos4);
+
+

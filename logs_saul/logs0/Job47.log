@@ -1,0 +1,109 @@
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = KISTA_TEST_AMS
+	Cell         = test_soi_inv
+	View         = config
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = KISTA_TEST_AMS:test_soi_inv:1_none_Interactive.8
+	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.8.rdb
+	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.8/1/KISTA_TEST_AMS:test_soi_inv:1
+	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data
+	Project Dir  = /home/saul/simulation
+	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_soi_inv/adexl
+	File Encoding = 0
+
+
+variable oasisVariableValue redefined
+variable persistNewList redefined
+
+*Info*    The auto suspension is disabled.
+
+
+
+
+
+
+*Info*    Run start for Point ID (1 1) on testbench [
+          KISTA_TEST_AMS:test_soi_inv:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.8/1/KISTA_TEST_AMS:test_soi_inv:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.8/1/KISTA_TEST_AMS:test_soi_inv:1
+
+
+*Info*    Creating Netlist for Point ID (1 1)
+
+generate netlist...
+Begin Incremental Netlisting Nov 15 11:46:59 2021
+WARNING (OSSHNL-335): Design configuration has changed since last netlisting session in this run
+directory. Netlist(s) from last session cannot be reused for incremental
+netlisting. Therefore, re-netlisting the design.
+
+ERROR (OSSHNL-109): The cellview 'KISTA_TEST_ANALOG/inv_soi_qrc_test2/schematic2' has been modified since the last extraction. Validate
+that the schematic is correct and run Check and Save to correct this error.
+
+End netlisting Nov 15 11:46:59 2021
+ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
+      ...unsuccessful.
+
+*Error*   Error ID  = 5012
+*Error*   Error Msg = Failed to create netlist.
+
+
+
+
+
+
+
+
+
+*Info*    Run start for Point ID (1 1) on testbench [
+          KISTA_TEST_AMS:test_soi_inv:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.8/1/KISTA_TEST_AMS:test_soi_inv:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.8/1/KISTA_TEST_AMS:test_soi_inv:1
+
+
+*Info*    Creating Netlist for Point ID (1 1)
+
+generate netlist...
+Begin Incremental Netlisting Nov 15 11:46:59 2021
+ERROR (OSSHNL-109): The cellview 'KISTA_TEST_ANALOG/inv_soi_qrc_test2/schematic2' has been modified since the last extraction. Validate
+that the schematic is correct and run Check and Save to correct this error.
+
+End netlisting Nov 15 11:46:59 2021
+ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
+      ...unsuccessful.
+
+*Error*   Error ID  = 5012
+*Error*   Error Msg = Failed to create netlist.
+
+
+
+

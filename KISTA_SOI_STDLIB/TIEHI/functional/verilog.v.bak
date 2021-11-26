@@ -1,0 +1,6 @@
+//Verilog HDL for "KISTA_SOI_STDLIB", "TIEHI" "functional"
+
+
+module TIEHI ( );
+
+endmodule

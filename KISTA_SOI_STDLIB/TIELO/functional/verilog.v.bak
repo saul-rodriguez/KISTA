@@ -1,0 +1,6 @@
+//Verilog HDL for "KISTA_SOI_STDLIB", "TIELO" "functional"
+
+
+module TIELO ( );
+
+endmodule

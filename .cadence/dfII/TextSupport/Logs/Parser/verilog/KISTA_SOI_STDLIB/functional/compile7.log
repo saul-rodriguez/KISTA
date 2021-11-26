@@ -1,0 +1,20 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Nov 22, 2021 at 22:17:50 CET
+xmvlog
+    -use5x
+    -SPECIFICUNIT DECAP1
+    -zparse /tmp/vamsZparj24477
+    -NOWARN DLNOHV
+    -work KISTA_SOI_STDLIB
+    -view functional
+    -nostdout
+    -logfile /home/saul/projects/KISTA/.cadence/dfII/TextSupport/Logs/Parser/verilog/KISTA_SOI_STDLIB/functional/compile7.log
+    -messages
+    -cdslib /home/saul/projects/KISTA/cds.lib
+    /home/saul/projects/KISTA/KISTA_SOI_STDLIB/DECAP1/functional/verilog.v
+
+file: /home/saul/projects/KISTA/KISTA_SOI_STDLIB/DECAP1/functional/verilog.v
+	module KISTA_SOI_STDLIB.DECAP1:functional
+		errors: 0, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Nov 22, 2021 at 22:17:50 CET  (total: 00:00:00)

@@ -1,0 +1,7 @@
+// TIELO
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt TIELO Y vss vdd
+    M0  (Y net25 vss vss)  nch w=2u l=1u wf=2
+    M1  (net25 net25 vdd vdd)  pch w=4u l=1u
+ends TIELO

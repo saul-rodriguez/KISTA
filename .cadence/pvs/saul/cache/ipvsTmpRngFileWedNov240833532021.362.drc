@@ -1,0 +1,15 @@
+7 0
+1 offgrid_check 1
+Grid violation
+1 ortho_45_check 1
+Orthogonal and 45 degree violation
+1 acute_check 1
+Acute angle  violation
+1 METAL1.W.1 1
+METAL1.W.1: Metal1 width must be >= 2.0 um
+1 METAL2.W.1 1
+METAL2.W.1: Metal2 width must be >= 2.0 um
+1 METAL3.W.1 1
+METAL3.W.1: Metal3 width must be >= 2.0 um
+1 METAL4.W.1 1
+METAL4.W.1: Metal4 width must be >= 2.0 um

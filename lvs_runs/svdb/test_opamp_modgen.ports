@@ -1,0 +1,8 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary test_opamp_modgen
+INN 1 INN 27200 191000 metal3_conn
+BIAS 4 BIAS 20400 68600 metal2_conn
+OUT 7 OUT 375200 161600 metal2_conn
+INP 2 INP 27400 199000 metal3_conn
+VS 5 VS 21800 9200 metal1_conn
+VD 8 VD 30000 288400 metal2_conn

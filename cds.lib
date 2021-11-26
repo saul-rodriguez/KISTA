@@ -1,0 +1,17 @@
+SOFTINCLUDE /pkg/cadence/installs/IC618/share/cdssetup/cds.lib
+INCLUDE $IUSHOME/tools/inca/files/cds.lib
+
+
+DEFINE KISTA /home/saul/projects/KISTA/KISTA
+
+DEFINE KISTA_TEST_ANALOG /home/saul/projects/KISTA/KISTA_TEST_ANALOG
+#Removed by ddDeleteObj: DEFINE KISTA_SOI /home/saul/projects/KISTA/KISTA_SOI
+#Removed by ddDeleteObj: DEFINE KISTA_SOI /home/saul/projects/KISTA/KISTA_SOI
+#Removed by ddDeleteObj: DEFINE KISTA_SOI_TECH /home/saul/projects/KISTA/KISTA_SOI_TECH
+DEFINE KISTA_1UM /home/saul/projects/KISTA/KISTA_1UM
+DEFINE KISTA_TEST_STREAMIN /home/saul/projects/KISTA/KISTA_TEST_STREAMIN
+#Removed by ddDeleteObj: DEFINE KISTA_SOI_STDLIB_TECH /home/saul/projects/KISTA/KISTA_SOI_STDLIB_TECH
+DEFINE KISTA_SOI_STDLIB /home/saul/projects/KISTA/KISTA_SOI_STDLIB
+DEFINE KISTA_SOI_STDLIB_TECH /home/saul/projects/KISTA/KISTA_SOI_STDLIB_TECH
+DEFINE KISTA_TEST_AMS /home/saul/projects/KISTA/KISTA_TEST_AMS
+DEFINE KISTA_SOI_TECH /home/saul/projects/KISTA/KISTA_SOI_TECH

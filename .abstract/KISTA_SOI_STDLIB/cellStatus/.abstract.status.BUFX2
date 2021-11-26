@@ -1,0 +1,5 @@
+cUiSetViewStatus {BUFX2} {layout} {1}
+cUiSetViewStatus {BUFX2} {logical} {0}
+cUiSetViewStatus {BUFX2} {abstract.pin} {0}
+cUiSetViewStatus {BUFX2} {abstract.ext} {0}
+cUiSetViewStatus {BUFX2} {abstract} {0}

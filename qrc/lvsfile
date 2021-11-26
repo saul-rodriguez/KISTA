@@ -1,0 +1,22 @@
+text text_metal1_conn attach metal1_conn
+text text_metal2_conn attach metal2_conn
+text text_metal3_conn attach metal3_conn
+text text_metal4_conn attach metal4_conn
+text text_nwell_conn attach nwell_conn
+connect metal4_conn metal3_conn by Via3
+connect metal3_conn metal2_conn by Via2
+connect metal2_conn metal1_conn by Via1
+connect metal1_conn poly_conn by cont_poly
+connect metal1_conn pdiff_conn by cont_pdiff
+connect metal1_conn ndiff_conn by cont_ndiff
+sconnect pdiff_conn psubstrate by ptap
+sconnect ndiff_conn nwell_conn by ntap
+stamp _soi_nsb by ndiff_conn
+stamp _soi_nd by ndiff_conn
+stamp _soi_psb by pdiff_conn
+stamp _soi_pd by pdiff_conn
+model=ldd[nmos3],nch
+element ldd[nmos3] _nmos1v poly_conn _soi_nd _soi_nsb _soi_nsb
+model=ldd[pmos3],pch
+element ldd[pmos3] _pmos1v poly_conn _soi_pd _soi_psb _soi_psb
+

@@ -1,0 +1,35 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : inv_soi_qrc_test2                            *
+* Netlisted  : Fri Nov 26 13:42:37 2021                     *
+* PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(nmos3) _nmos1v _soi_nd(D) poly_conn(G) _soi_nsb(S) _soi_nsb(B)
+*.DEVTMPLT 1 MP(pmos3) _pmos1v _soi_pd(D) poly_conn(G) _soi_psb(S) _soi_psb(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos3_CDNS_2                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos3_CDNS_2 1 2 3 4
+** N=4 EP=4 FDC=1
+M0 2 3 4 4 nmos3 L=1e-06 W=2e-06 AD=5e-12 AS=0 PD=9e-06 PS=0 fw=2e-06 sa=2e-06 sb=2e-06 $X=7000 $Y=2000 $dt=0
+.ends nmos3_CDNS_2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos3_CDNS_3                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos3_CDNS_3 1 2 3 4
+** N=5 EP=4 FDC=1
+M0 2 3 4 4 pmos3 L=1e-06 W=2e-06 AD=5e-12 AS=0 PD=9e-06 PS=0 fw=2e-06 sa=2e-06 sb=2e-06 $X=7000 $Y=2000 $dt=1
+.ends pmos3_CDNS_3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: inv_soi_qrc_test2                               *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt inv_soi_qrc_test2 3 4 2 5
+** N=5 EP=4 FDC=2
+X0 1 2 3 4 nmos3_CDNS_2 $T=27400 3200 1 180 $X=11400 $Y=3200
+X1 1 2 3 5 pmos3_CDNS_3 $T=27400 34800 0 180 $X=11400 $Y=20800
+.ends inv_soi_qrc_test2

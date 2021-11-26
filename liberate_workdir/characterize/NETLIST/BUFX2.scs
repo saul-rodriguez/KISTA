@@ -1,0 +1,9 @@
+// BUFX2
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt BUFX2 Y A vdd vss
+    M1  (Y net6 vss vss)  nch w=4u l=1u wf=4.000
+    M0  (net6 A vss vss)  nch w=2u l=1u wf=2
+    M3  (Y net6 vdd vdd)  pch w=8u l=1u
+    M2  (net6 A vdd vdd)  pch w=4u l=1u
+ends BUFX2

@@ -1,0 +1,93 @@
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = KISTA_TEST_AMS
+	Cell         = test_ams_dff
+	View         = config
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.9
+	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.9.rdb
+	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_ams_dff:2
+	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data
+	Project Dir  = /home/saul/simulation
+	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl
+	File Encoding = 0
+
+
+variable oasisVariableValue redefined
+variable persistNewList redefined
+
+*Info*    The auto suspension is disabled.
+
+
+
+
+
+
+*Info*    Run start for Point ID (0 1) on testbench [
+          KISTA_TEST_AMS:test_ams_dff:2 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_ams_dff:2/netlist
+
+
+*Info*    Data Directory    =
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_ams_dff:2
+
+
+*Info*    Creating Netlist for Point ID (0 1)
+
+generate netlist...
+Begin Incremental Netlisting Nov 15 08:38:24 2021
+WARNING (OSSHNL-335): Design configuration has changed since last netlisting session in this run
+directory. Netlist(s) from last session cannot be reused for incremental
+netlisting. Therefore, re-netlisting the design.
+
+End netlisting Nov 15 08:38:24 2021
+
+Netlisting Statistics:
+	Number of components:  716
+
+	Elapsed time:          1.0s (716.00/s)
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          KISTA_TEST_AMS:test_ams_dff:2 ] for Point ID (0 1).
+
+Delete psf data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_ams_dff:2/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+
+*Info*    Run complete for Point ID (0 1) on testbench [
+          KISTA_TEST_AMS:test_ams_dff:2 ].
+
+
+
+
+

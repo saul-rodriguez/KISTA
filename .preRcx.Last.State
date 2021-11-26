@@ -1,0 +1,14 @@
+
+
+vuipreRcxFormTable = '(
+	runName  "inv_soi_qrc_test2"
+	runDir  "/home/saul/projects/KISTA/lvs_runs/svdb"
+	assuraTech  "/home/saul/projects/KISTA/pvtech.lib"
+	tech  "kista_pvs"
+	mapFile  ""
+	netProp  5
+	instProp  6
+	devProp  7
+)
+
+

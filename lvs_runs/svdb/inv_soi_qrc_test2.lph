@@ -1,0 +1,11 @@
+# Placement Hierarchy File (lph)
+# 
+# 
+# 
+% pmos3_CDNS_3 4
+M0 MP 4
+% nmos3_CDNS_2 4
+M0 MN 4
+% inv_soi_qrc_test2 4
+X0 nmos3_CDNS_2 4
+X1 pmos3_CDNS_3 4

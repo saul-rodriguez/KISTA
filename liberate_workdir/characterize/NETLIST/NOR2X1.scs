@@ -1,0 +1,9 @@
+// NOR2X1
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt NOR2X1 Y A B vss vdd
+    M1  (net9 A vdd vdd)  pch w=4u l=1u
+    M0  (Y B net9 net9)  pch w=4u l=1u
+    M3  (Y A vss vss)  nch w=2u l=1u wf=2
+    M2  (Y B vss vss)  nch w=2u l=1u wf=2
+ends NOR2X1

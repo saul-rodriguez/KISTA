@@ -1,0 +1,18 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : pmos4                                        *
+* Netlisted  : Fri Oct 22 07:23:57 2021                     *
+* PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(nmos4) _nmos1v ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 1 MP(pmos4) _pmos1v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos4                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos4
+** N=5 EP=0 FDC=1
+M0 2 1 3 4 pmos4 L=1e-06 W=2e-06 AD=5e-12 AS=5e-12 PD=9e-06 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 $X=7000 $Y=2000 $dt=1
+.ends pmos4

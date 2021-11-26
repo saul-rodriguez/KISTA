@@ -1,0 +1,340 @@
+********************************************************************************
+pvs 16.15-s010 64 bit (Fri Jun 28 22:24:07 PDT 2019)
+Build Ref No.: 010 Production (06-28-2019) [pvs_1615]
+
+Copyright 2019 Cadence Design Systems, Inc.
+All rights reserved worldwide.
+
+Build O/S:       Linux x86_64 2.6.18-194.el5
+Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
+Process Id:      1151
+Starting Time:   Tue Oct 26 09:49:50 2021 (Tue Oct 26 07:49:50 2021 GMT)
+With parameters: -erc -get_rules /tmp/pvsrng.13982@s2424.1 -tc top -gds /dev/null -get_options /tmp/pvsoptpar.13982@s2424.1 -gen_tags /tmp/pvsgentags.13982@s2424.1 -control /tmp/ipvsRulesCheckControl.13982@s2424.1 /home/saul/projects/KISTA/pvs/kista_lvs.rul 
+********************************************************************************
+
+
+########################################################################
+Get host info ...
+########################################################################
+CPU info:
+    model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+    cpu MHz         :  1239.990
+    cache size      :  20480 KB
+    physical cores  :  16
+    logical cores   :  32
+    hyper-threading on
+
+Memory info:
+    64168M physical memory installed.
+
+    MemTotal:       65709328 kB
+    MemFree:         1733312 kB
+    MemAvailable:   16923964 kB
+    Buffers:               0 kB
+    Cached:         14461848 kB
+    SwapCached:       195276 kB
+    Active:         48886300 kB
+    Inactive:       10917488 kB
+    Active(anon):   41312528 kB
+    Inactive(anon):  4233976 kB
+    Active(file):    7573772 kB
+    Inactive(file):  6683512 kB
+    Unevictable:           0 kB
+    Mlocked:               0 kB
+    SwapTotal:      32964604 kB
+    SwapFree:           1208 kB
+    Dirty:                12 kB
+    Writeback:             0 kB
+    AnonPages:      45146820 kB
+    Mapped:           368800 kB
+    Shmem:            204556 kB
+    Slab:            1748448 kB
+    SReclaimable:    1425356 kB
+    SUnreclaim:       323092 kB
+    KernelStack:       11472 kB
+    PageTables:       185916 kB
+    NFS_Unstable:          0 kB
+    Bounce:                0 kB
+    WritebackTmp:          0 kB
+    CommitLimit:    65819268 kB
+    Committed_AS:   79199352 kB
+    VmallocTotal:   34359738367 kB
+    VmallocUsed:      422088 kB
+    VmallocChunk:   34325399548 kB
+    Percpu:            10240 kB
+    HardwareCorrupted:     0 kB
+    AnonHugePages:   2400256 kB
+    CmaTotal:              0 kB
+    CmaFree:               0 kB
+    HugePages_Total:       0
+    HugePages_Free:        0
+    HugePages_Rsvd:        0
+    HugePages_Surp:        0
+    Hugepagesize:       2048 kB
+    DirectMap4k:      179524 kB
+    DirectMap2M:     4968448 kB
+    DirectMap1G:    61865984 kB
+
+
+########################################################################
+Get environment info ...
+########################################################################
+ENV VAR: TCL_LIBRARY = /pkg/cadence/installs/PVS161/share/lib/tcltk/08.64/tcl8.6
+ENV VAR: TCLX_LIBRARY = /pkg/cadence/installs/PVS161/share/lib/tclx/08.40
+ENV VAR: TCLLIBPATH = /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cadence/installs/PVS161/share/lib/tclxml/3.2 /pkg/cadence/installs/PVS161/share/lib/tcllib/1.18 /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cadence/installs/PVS161/share/lib/tclxml/3.2 /pkg/cadence/installs/PVS161/share/lib/tcllib/1.18 
+
+
+########################################################################
+Parsing Control File /tmp/ipvsRulesCheckControl.13982@s2424.1 ...
+########################################################################
+RESULTS_DB -erc "/home/saul/projects/KISTA/erc_runs/nmos3.erc_errors.ascii" -ascii;
+LVS_RUN_ERC_CHECKS yes;
+
+########################################################################
+Parsing Rule File /home/saul/projects/KISTA/pvs/kista_lvs.rul ...
+########################################################################
+LVS_NETLIST yes -allow_inconsistent_model;
+LVS_FILTER_OPTION AG RC RE RG;
+INPUT_SCALE 2000;
+GRID 5;
+UNIT -length u;
+TEXT_DEPTH -primary;
+MASK_SVDB_DIR svdb;
+LAYOUT_PRESERVE_CASE -property yes;
+LAYER_DEF empty 999;
+LAYER_DEF Metal1 1020;
+LAYER_MAP 7 -datatype -le 5 1020;
+LAYER_DEF Metal2 1021;
+LAYER_MAP 9 -datatype -le 5 1021;
+LAYER_DEF Metal3 1022;
+LAYER_MAP 11 -datatype -le 5 1022;
+LAYER_DEF Metal4 1023;
+LAYER_MAP 31 -datatype -le 5 1023;
+LAYER_DEF M1Resdum 1009;
+LAYER_MAP 75 -datatype 0 1009;
+LAYER_DEF M2Resdum 1010;
+LAYER_MAP 76 -datatype 0 1010;
+LAYER_DEF M3Resdum 1011;
+LAYER_MAP 77 -datatype 0 1011;
+LAYER_DEF M4Resdum 1012;
+LAYER_MAP 78 -datatype 0 1012;
+LAYER_DEF ResWdum 1049;
+LAYER_MAP 71 -datatype 0 1049;
+LAYER_DEF Resdum 1050;
+LAYER_MAP 13 -datatype 0 1050;
+LAYER_DEF Cont 1005;
+LAYER_MAP 6 -datatype 0 1005;
+LAYER_DEF Via1 1052;
+LAYER_MAP 8 -datatype 0 1052;
+LAYER_DEF Via2 1053;
+LAYER_MAP 10 -datatype 0 1053;
+LAYER_DEF Via3 1054;
+LAYER_MAP 30 -datatype 0 1054;
+LAYER_DEF Oxide 1041;
+LAYER_MAP 1 -datatype 0 1041;
+LAYER_DEF Nwell 1039;
+LAYER_MAP 2 -datatype 0 1039;
+LAYER_DEF Nimp 1037;
+LAYER_MAP 4 -datatype 0 1037;
+LAYER_DEF Pimp 1045;
+LAYER_MAP 5 -datatype 0 1045;
+LAYER_DEF Poly 1047;
+LAYER_MAP 3 -datatype 0 1047;
+LAYER_DEF Psub 1048;
+LAYER_MAP 25 -datatype 0 1048;
+LAYER_DEF KTH_source 11000;
+LAYER_MAP 170 -datatype 0 11000;
+LAYER_DEF text 1098;
+LAYER_MAP 63 -texttype 0 1098;
+TEXT_LAYER text;
+PORT -text_layer text;
+LAYER_DEF nwell_conn_text 10645;
+LAYER_MAP 2 -texttype 0 10645;
+TEXT_LAYER nwell_conn_text;
+PORT -text_layer nwell_conn_text;
+LAYER_DEF metal1_conn_text 1064;
+LAYER_MAP 7 -texttype 0 1064;
+TEXT_LAYER metal1_conn_text;
+PORT -text_layer metal1_conn_text;
+LAYER_DEF metal2_conn_text 1065;
+LAYER_MAP 9 -texttype 0 1065;
+TEXT_LAYER metal2_conn_text;
+PORT -text_layer metal2_conn_text;
+LAYER_DEF metal3_conn_text 1066;
+LAYER_MAP 11 -texttype 0 1066;
+TEXT_LAYER metal3_conn_text;
+PORT -text_layer metal3_conn_text;
+LAYER_DEF metal4_conn_text 1067;
+LAYER_MAP 31 -texttype 0 1067;
+TEXT_LAYER metal4_conn_text;
+PORT -text_layer metal4_conn_text;
+LAYER_DEF nwell_label 10765;
+LAYER_MAP 2 -texttype 0 10765;
+TEXT_LAYER nwell_label;
+PORT -text_layer nwell_label;
+LAYER_DEF m1_label 1076;
+LAYER_MAP 7 -texttype 3 1076;
+TEXT_LAYER m1_label;
+PORT -text_layer m1_label;
+LAYER_DEF m2_label 1077;
+LAYER_MAP 9 -texttype 3 1077;
+TEXT_LAYER m2_label;
+PORT -text_layer m2_label;
+LAYER_DEF m3_label 1078;
+LAYER_MAP 11 -texttype 3 1078;
+TEXT_LAYER m3_label;
+PORT -text_layer m3_label;
+LAYER_DEF m4_label 1079;
+LAYER_MAP 31 -texttype 3 1079;
+TEXT_LAYER m4_label;
+PORT -text_layer m4_label;
+LAYER_DEF nwell_pin 10875;
+LAYER_MAP 2 -texttype 0 10875;
+TEXT_LAYER nwell_pin;
+PORT -text_layer nwell_pin;
+LAYER_DEF m1_pin 1087;
+LAYER_MAP 7 -texttype 1 1087;
+TEXT_LAYER m1_pin;
+PORT -text_layer m1_pin;
+LAYER_DEF m2_pin 1088;
+LAYER_MAP 9 -texttype 1 1088;
+TEXT_LAYER m2_pin;
+PORT -text_layer m2_pin;
+LAYER_DEF m3_pin 1089;
+LAYER_MAP 11 -texttype 1 1089;
+TEXT_LAYER m3_pin;
+PORT -text_layer m3_pin;
+LAYER_DEF m4_pin 1090;
+LAYER_MAP 31 -texttype 1 1090;
+TEXT_LAYER m4_pin;
+PORT -text_layer m4_pin;
+EXTENT bulk;
+AND Cont Poly cont_poly;
+NOT Metal1 M1Resdum metal1_conn;
+NOT Metal2 M2Resdum metal2_conn;
+NOT Metal3 M3Resdum metal3_conn;
+NOT Metal4 M4Resdum metal4_conn;
+AND Nimp Oxide nactive;
+NOT Nwell ResWdum nwell_conn;
+AND Oxide Pimp pactive;
+NOT pactive Poly pdiff;
+NOT pdiff Resdum pdiff_conn;
+AND Cont pdiff_conn cont_pdiff;
+NOT Poly Resdum poly_conn;
+NOT nactive poly_conn ndiff;
+NOT ndiff Resdum ndiff_conn;
+AND Cont ndiff_conn cont_ndiff;
+AND Nwell ndiff_conn ntap;
+NOT pdiff_conn Nwell ptap;
+NOT bulk Nwell bulk_1;
+NOT bulk_1 Psub psubstrate;
+AND Oxide Poly OxPoly;
+AND OxPoly Pimp _pmos1v;
+AND OxPoly Nimp _nmos1v;
+CONNECT metal4_conn metal3_conn -by Via3;
+CONNECT metal3_conn metal2_conn -by Via2;
+CONNECT metal2_conn metal1_conn -by Via1;
+CONNECT metal1_conn poly_conn -by cont_poly;
+CONNECT metal1_conn pdiff_conn -by cont_pdiff;
+CONNECT metal1_conn ndiff_conn -by cont_ndiff;
+SCONNECT pdiff_conn psubstrate -by ptap;
+LVS_SOFTCHK psubstrate -type contact;
+SCONNECT ndiff_conn nwell_conn -by ntap;
+LVS_SOFTCHK nwell_conn -type contact;
+ATTACH metal4_conn_text metal4_conn;
+ATTACH metal3_conn_text metal3_conn;
+ATTACH metal2_conn_text metal2_conn;
+ATTACH metal1_conn_text metal1_conn;
+ATTACH nwell_conn_text nwell_conn;
+ATTACH nwell_label nwell_conn;
+ATTACH m1_label metal1_conn;
+ATTACH m2_label metal2_conn;
+ATTACH m3_label metal3_conn;
+ATTACH m4_label metal4_conn;
+ATTACH nwell_pin nwell_conn;
+ATTACH m1_pin metal1_conn;
+ATTACH m2_pin metal2_conn;
+ATTACH m3_pin metal3_conn;
+ATTACH m4_pin metal4_conn;
+AND psubstrate nactive _nmos1v_sti;
+SIZE _nmos1v -by 1 _nmos1v_wpe_temp;
+NOT _nmos1v_wpe_temp Nwell _nmos1v_wpe;
+NOT ndiff_conn KTH_source _soi_d;
+AND ndiff_conn KTH_source _soi_sb;
+DEVICE MN ( nmos3 ) _nmos1v poly_conn ( G ) _soi_sb ( S ) _soi_d ( D ) _soi_sb ( B ) -model nch < _nmos1v_sti > < _nmos1v_wpe > [ property fw , w , l , ad , as , pd , ps , sa , sb , sca , scb , scc 
+ width = perim_co ( _nmos1v , _soi_d ) / 2 
+ fw = width 
+ w = width 
+ l = area ( _nmos1v ) / width 
+ ad = area ( D ) 
+ as = area ( S ) 
+ pd = perimeter ( D ) 
+ ps = perimeter ( S ) 
+ s = ENCLOSURE_VECTOR ( _nmos1v_sti , 2 ) 
+ sw = SUM ( s::w ) 
+ sa = SUM ( s::a * ( s::w / sw ) ) 
+ sb = SUM ( s::b * ( s::w / sw ) ) 
+ sch = ENCLOSURE_PERPENDICULAR ( _nmos1v , _nmos1v_wpe , S , 1 ) 
+ scv = ENCLOSURE_PARALLEL ( _nmos1v , _nmos1v_wpe , S , 1 ) 
+ ];
+LVS_CHECK_PROPERTY MN ( nmos4 ) l l -tolerance 0;
+LVS_CHECK_PROPERTY MN ( nmos4 ) w w -tolerance 0;
+LVS_MAP_DEVICE M ( nmos4 ) MN ( nmos4 );
+DEVICE MP ( pmos4 ) _pmos1v poly_conn ( G ) pdiff_conn ( S ) pdiff_conn ( D ) nwell_conn ( B ) ( S D ) -model pch < pactive > [ property fw , w , l , ad , as , pd , ps , sa , sb , sca , scb , scc 
+ width = perim_co ( _pmos1v , pdiff_conn ) / 2 
+ fw = width 
+ w = width 
+ l = area ( _pmos1v ) / width 
+ ad = area ( D ) 
+ as = area ( S ) 
+ pd = perimeter ( D ) 
+ ps = perimeter ( S ) 
+ s = ENCLOSURE_VECTOR ( pactive , 2 ) 
+ sw = SUM ( s::w ) 
+ sa = SUM ( s::a * ( s::w / sw ) ) 
+ sb = SUM ( s::b * ( s::w / sw ) ) 
+ sch = ENCLOSURE_PERPENDICULAR ( _pmos1v , nwell_conn , S , 1 ) 
+ scv = ENCLOSURE_PARALLEL ( _pmos1v , nwell_conn , S , 1 ) 
+ ];
+LVS_CHECK_PROPERTY MP ( pmos4 ) l l -tolerance 0;
+LVS_CHECK_PROPERTY MP ( pmos4 ) w w -tolerance 0;
+LVS_MAP_DEVICE M ( pmos4 ) MP ( pmos4 );
+
+
+########################################################################
+Optimizing Rules ...
+########################################################################
+[WARN] Neither hcell nor -automatch option is specified.
+Completed execution early, as requested by the "-get_rules" or "-gen_tags"
+
+   ONE LAYER BOOLEAN: Cumulative Time CPU =        0(s) REAL =        0(s)
+   TWO LAYER BOOLEAN: Cumulative Time CPU =        0(s) REAL =        0(s)
+ POLYGON TOPOLOGICAL: Cumulative Time CPU =        0(s) REAL =        0(s)
+ POLYGON MEASUREMENT: Cumulative Time CPU =        0(s) REAL =        0(s)
+                SIZE: Cumulative Time CPU =        0(s) REAL =        0(s)
+    EDGE TOPOLOGICAL: Cumulative Time CPU =        0(s) REAL =        0(s)
+    EDGE MEASUREMENT: Cumulative Time CPU =        0(s) REAL =        0(s)
+               STAMP: Cumulative Time CPU =        0(s) REAL =        0(s)
+       ONE LAYER DRC: Cumulative Time CPU =        0(s) REAL =        0(s)
+       TWO LAYER DRC: Cumulative Time CPU =        0(s) REAL =        0(s)
+            NET AREA: Cumulative Time CPU =        0(s) REAL =        0(s)
+             DENSITY: Cumulative Time CPU =        0(s) REAL =        0(s)
+       MISCELLANEOUS: Cumulative Time CPU =        0(s) REAL =        0(s)
+             CONNECT: Cumulative Time CPU =        0(s) REAL =        0(s)
+              DEVICE: Cumulative Time CPU =        0(s) REAL =        0(s)
+                 ERC: Cumulative Time CPU =        0(s) REAL =        0(s)
+       PATTERN_MATCH: Cumulative Time CPU =        0(s) REAL =        0(s)
+            DFM FILL: Cumulative Time CPU =        0(s) REAL =        0(s)
+
+
+Total CPU Time                    : 0(s)
+Total Real Time                   : 0(s)
+Peak Memory Used                  : 11(M)
+Total Original Geometry           : 0(0)
+Total ERC RuleChecks              : 0
+Total ERC Results                 : 0 (0)
+
+
+Netlist Extraction Finished Normally. Tue Oct 26 09:49:50 2021
+
+

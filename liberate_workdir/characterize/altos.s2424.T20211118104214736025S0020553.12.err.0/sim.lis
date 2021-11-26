@@ -1,0 +1,36 @@
+spectre -64 -plugin /pkg/cadence/installs/LIBERATE171/lib/lnx86_64_2.6/libSki.so +multiple -cp -ss -l -f nutascii +lqt 0 +libtkn 0001208F0F964DEB4DDB67C73FE609F74FDE77D55BF946F37BD5279610F747F509CF6EC154DA12934B9F70D7629B49EA4ECE0BD3368335D8109B25EB159644D65A996F953AED25A20AD079D119DF75F437E90CBD68E877A237E979E368BB77A203E915BE78E814C35B86629846D1469243D379D135B977A237E918473B16573D567F00003A91 
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.538.isr11 64bit -- 14 Nov 2017
+Copyright (C) 1989-2017 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence and Spectre are registered trademarks of Cadence
+        Design Systems, Inc. All others are the property of their respective
+        holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: saul   Host: s2424   HostID: ED824314   PID: 23459
+Memory  available: 484.6551 MB  physical: 67.2863 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [2719.8] ( 16 ),  1 [1504.0] ( 17 ),  2 [1748.6] ( 18 )
+                 3 [2716.8] ( 19 ),  4 [1422.1] ( 20 ),  5 [1672.9] ( 21 )
+                 6 [2298.6] ( 22 ),  7 [1699.8] ( 23 )
+        1:       8 [2160.1] ( 24 ),  9 [2399.9] ( 25 ), 10 [1826.7] ( 26 )
+                11 [3134.0] ( 27 ), 12 [1480.4] ( 28 ), 13 [2397.5] ( 29 )
+                14 [1790.9] ( 30 ), 15 [2399.9] ( 31 )
+        
+System load averages (1min, 5min, 15min) : 8.9 %, 9.2 %, 9.2 %
+Hyperthreading is enabled
+
+
+Simulating `stdin' on s2424 at 10:45:03 AM, Thur Nov 18, 2021 (process id:
+        23459).
+Current working directory:
+        /home/saul/projects/KISTA/liberate_workdir/characterize/altos.s2424.T20211118104214736025S0020553.12
+
+Notice from spectre.
+    Loading plugin
+        '/pkg/cadence/installs/LIBERATE171/lib/lnx86_64_2.6/libSki.so' ...

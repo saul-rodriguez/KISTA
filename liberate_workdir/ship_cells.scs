@@ -1,0 +1,124 @@
+// Generated for: spectre
+// Generated on: Nov 18 09:02:11 2021
+// Design library name: KISTA_SOI_STDLIB
+// Design cell name: timing
+// Design view name: schematic
+simulator lang=spectre
+global 0 VSS! VDD!
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: INVX1
+// View name: schematic
+subckt INVX1_schematic Y A inh_VDD inh_VSS
+    M0 (Y A inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M1 (Y A inh_VDD inh_VDD) pch w=4u l=1u
+ends INVX1_schematic
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: NOR2X1
+// View name: schematic
+subckt NOR2X1_schematic Y A B inh_VSS inh_VDD
+    M1 (net9 A inh_VDD inh_VDD) pch w=4u l=1u
+    M0 (Y B net9 net9) pch w=4u l=1u
+    M3 (Y A inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M2 (Y B inh_VSS inh_VSS) nch w=2u l=1u wf=2
+ends NOR2X1_schematic
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: BUFX2
+// View name: schematic
+subckt BUFX2_schematic Y A inh_VDD inh_VSS
+    M1 (Y net6 inh_VSS inh_VSS) nch w=4u l=1u wf=4.000
+    M0 (net6 A inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M3 (Y net6 inh_VDD inh_VDD) pch w=8u l=1u
+    M2 (net6 A inh_VDD inh_VDD) pch w=4u l=1u
+ends BUFX2_schematic
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: NAND2X1
+// View name: schematic
+subckt NAND2X1_schematic Y A B inh_VDD inh_VSS
+    M1 (Y B inh_VDD inh_VDD) pch w=4u l=1u
+    M0 (Y A inh_VDD inh_VDD) pch w=4u l=1u
+    M3 (net6 A inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M2 (Y B net6 net6) nch w=2u l=1u wf=2
+ends NAND2X1_schematic
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: DFFX1
+// View name: schematic
+subckt DFFX1_schematic Q QN CK D inh_VDD inh_VSS
+    M26 (QN net055 inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M25 (net055 qbint inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M23 (Q qbint inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M19 (n30 CKb net028 net028) nch w=2u l=1u wf=2
+    M18 (net028 qbint inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M17 (qbint n30 inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M15 (n30 CKbb mout mout) nch w=2u l=1u wf=2
+    M11 (n20 CKbb net017 net017) nch w=2u l=1u wf=2
+    M10 (net017 mout inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M9 (mout n20 inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M5 (n20 CKb net13 net13) nch w=2u l=1u wf=2
+    M4 (net13 D inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M3 (CKbb CKb inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M0 (CKb CK inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M27 (QN net055 inh_VDD inh_VDD) pch w=4u l=1u
+    M24 (net055 qbint inh_VDD inh_VDD) pch w=4u l=1u
+    M22 (Q qbint inh_VDD inh_VDD) pch w=4u l=1u
+    M21 (n30 CKbb net029 net029) pch w=4u l=1u
+    M20 (net029 qbint inh_VDD inh_VDD) pch w=4u l=1u
+    M16 (qbint n30 inh_VDD inh_VDD) pch w=4u l=1u
+    M14 (n30 CKb mout mout) pch w=4u l=1u
+    M13 (n20 CKb net018 net018) pch w=4u l=1u
+    M12 (net018 mout inh_VDD inh_VDD) pch w=4u l=1u
+    M8 (mout n20 inh_VDD inh_VDD) pch w=4u l=1u
+    M7 (n20 CKbb net14 net14) pch w=4u l=1u
+    M6 (net14 D inh_VDD inh_VDD) pch w=4u l=1u
+    M2 (CKbb CKb inh_VDD inh_VDD) pch w=4u l=1u
+    M1 (CKb CK inh_VDD inh_VDD) pch w=4u l=1u
+ends DFFX1_schematic
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: TIEHI
+// View name: schematic
+subckt TIEHI Y inh_VDD inh_VSS
+    M0 (net7 net7 inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M1 (Y net7 inh_VDD inh_VDD) pch w=4u l=1u
+ends TIEHI
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: TIELO
+// View name: schematic
+subckt TIELO Y inh_VSS inh_VDD
+    M0 (Y net25 inh_VSS inh_VSS) nch w=2u l=1u wf=2
+    M1 (net25 net25 inh_VDD inh_VDD) pch w=4u l=1u
+ends TIELO
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: timing
+// View name: schematic
+I0 (net1 net2 VDD! VSS!) INVX1_schematic
+I1 (net3 net4 net5 VSS! VDD!) NOR2X1_schematic
+I2 (net6 net7 VDD! VSS!) BUFX2_schematic
+I3 (net8 net9 net10 VDD! VSS!) NAND2X1_schematic
+I5 (net11 net12 net13 net14 VDD! VSS!) DFFX1_schematic
+I6 (net15 VDD! VSS!) TIEHI
+I7 (net16 VSS! VDD!) TIELO
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

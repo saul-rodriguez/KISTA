@@ -1,0 +1,86 @@
+*
+*
+*
+*                       LINUX           Wed Nov 10 15:16:36 2021
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 19.1.3-s062
+*  Build Date     : Tue Jul 23 02:42:20 PDT 2019
+*
+*  HSPICE LIBRARY
+*
+*
+*
+
+*
+.SUBCKT inv_soi_qrc_test IN VS OUT VD
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MM0	OUT#2	IN#5	VS#1	VS#1	nch	L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0	fw=2e-06 sa=2e-06 sb=2e-06
+MM1	OUT#1	IN#4	VD#1	VD#1	pch	L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0	fw=2e-06 sa=2e-06 sb=2e-06
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rc1	IN#4	IN#1	   35.7289	$poly_conn
+Rc2	IN#5	IN#3	   35.7289	$poly_conn
+Rb1	VS#1	VS	   75.1251	$metal1_conn
+Rb2	VD#1	VD	   62.1509	$metal1_conn
+Rb3	IN#1	IN	   45.0736	$metal1_conn
+Rb5	IN	IN#3	   45.0662	$metal1_conn
+Rb6	OUT#1	OUT	   62.3374	$metal1_conn
+Rb7	OUT	OUT#2	   75.2206	$metal1_conn
+*
+*       CAPACITOR CARDS
+*
+*
+C1	OUT	1	1.26419e-13
+C2	VD#1	OUT#1	1.23879e-17
+C3	VD	1	5.14855e-16
+C4	IN#4	1	1.95207e-16
+C5	IN#5	1	4.59746e-16
+C6	IN#4	X1/5	2.78851e-16
+C7	VS#1	OUT#2	1.19105e-17
+C8	IN#1	1	7.77113e-16
+C9	IN#3	1	7.79341e-16
+C10	OUT#1	1	6.99763e-16
+C11	OUT#2	1	6.68096e-16
+C12	VD#1	1	1.21375e-16
+C13	OUT#1	X1/5	2.00946e-16
+C14	VS#1	1	2.64427e-16
+C15	OUT#1	IN#4	6.18538e-17
+C16	VD#1	X1/5	2.00046e-16
+C17	VD#1	IN#4	6.09857e-17
+C18	OUT#2	IN#5	6.08504e-17
+C19	VS#1	IN#5	6.0737e-17
+C20	IN	X1/5	4.60725e-17
+C21	IN	VD#1	6.19352e-18
+C22	VS#1	IN	6.33736e-18
+C23	IN	OUT	2.66724e-17
+C24	IN	VD	2.02058e-17
+C25	IN	1	7.02348e-14
+C26	IN	VS	2.31501e-17
+C27	OUT	VS	1.06009e-17
+C28	1	VS	5.20578e-16
+C29	IN#4	VS	8.41912e-19
+C30	IN#5	VS	1.39458e-18
+C31	IN#1	VS	4.88453e-18
+C32	IN#3	VS	5.2699e-18
+C33	OUT#1	VS	5.27967e-18
+C34	OUT#2	VS	1.70575e-18
+*
+*
+.ENDS inv_soi_qrc_test
+*

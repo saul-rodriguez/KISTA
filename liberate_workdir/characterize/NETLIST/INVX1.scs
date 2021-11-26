@@ -1,0 +1,7 @@
+// INVX1
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt INVX1 Y A vdd vss
+    M0  (Y A vss vss)  nch w=2u l=1u wf=2
+    M1  (Y A vdd vdd)  pch w=4u l=1u
+ends INVX1

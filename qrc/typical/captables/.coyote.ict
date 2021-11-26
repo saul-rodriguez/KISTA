@@ -1,0 +1,52 @@
+SIMPLEX_TECHFILE_FORMAT 3000 RC BASE 311200 3.1.1a 311200 3.1.1a Wed Aug 29 18:51:57 2001
+process "unknown" {
+	background_dielectric_constant 1.000000
+}
+conductor "M2" {
+	min_spacing 17.000000
+	min_width 1.000000
+	height 1.230000
+	thickness 0.150000
+	resistivity 0.087
+	gate_forming_layer false
+}
+conductor "M3" {
+	min_spacing 17.000000
+	min_width 1.000000
+	height 1.680000
+	thickness 0.150000
+	resistivity 0.087
+	gate_forming_layer false
+}
+conductor "M4" {
+	min_spacing 17.000000
+	min_width 1.000000
+	height 2.130000
+	thickness 0.150000
+	resistivity 0.087
+	gate_forming_layer false
+}
+dielectric "D1" {
+	conformal false
+	height 1.380000
+	thickness 0.300000
+	dielectric_constant 2.600000
+}
+dielectric "D2" {
+	conformal false
+	height 1.680000
+	thickness 0.150000
+	dielectric_constant 4.200000
+}
+dielectric "D3" {
+	conformal false
+	height 1.830000
+	thickness 0.300000
+	dielectric_constant 2.600000
+}
+dielectric "D4" {
+	conformal false
+	height 2.130000
+	thickness 0.200000
+	dielectric_constant 4.200000
+}

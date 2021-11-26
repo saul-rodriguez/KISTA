@@ -1,0 +1,13 @@
+and2x1 324.0
+buff1x1 259.2
+dff_pos 2073.6
+dlatch 907.2
+fax2x1 2138.4
+hax2x1 907.2
+invx1 129.2
+mux2x1 518.4
+nand2x1 194.4
+nor2x1 194.4
+or2x1 324
+srlatch 388.8
+xor2x1 583.2

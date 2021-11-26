@@ -1,0 +1,16 @@
+
+/pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb Output Summary
+========================================================================
+
+Delete EDB      : N
+EDB Library dir : test_pmos3_pcell_10446.db
+ECDB dir        : ./
+Top Cell        : test_pmos3_pcell
+CDL netlist     : svdb/test_pmos3_pcell.net
+Layer map file  : svdb/test_pmos3_pcell.ecdbmap
+Text map file   : svdb/test_pmos3_pcell.ports
+Dependency map  : test_pmos3_pcell.lmap.perc
+Lvs file        : svdb/test_pmos3_pcell.lvsfile
+Float net file : .test_pmos3_pcell.info.softchk
+debug           : 0
+Source Library  : test_pmos3_pcell_10446

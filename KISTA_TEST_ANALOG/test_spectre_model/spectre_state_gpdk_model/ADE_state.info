@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("KISTA_TEST_ANALOG" "test_spectre_model" "schematic" "spectre")
+descriptionText = "None"

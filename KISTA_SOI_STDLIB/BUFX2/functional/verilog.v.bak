@@ -1,0 +1,6 @@
+//Verilog HDL for "KISTA_SOI_STDLIB", "BUFX2" "functional"
+
+
+module BUFX2 ( );
+
+endmodule

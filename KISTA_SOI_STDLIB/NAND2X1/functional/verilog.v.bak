@@ -1,0 +1,6 @@
+//Verilog HDL for "KISTA_SOI_STDLIB", "NAND2X1" "functional"
+
+
+module NAND2X1 ( );
+
+endmodule

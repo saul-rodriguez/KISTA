@@ -1,0 +1,5 @@
+cUiSetViewStatus {TIEHI} {layout} {1}
+cUiSetViewStatus {TIEHI} {logical} {0}
+cUiSetViewStatus {TIEHI} {abstract.pin} {0}
+cUiSetViewStatus {TIEHI} {abstract.ext} {0}
+cUiSetViewStatus {TIEHI} {abstract} {0}

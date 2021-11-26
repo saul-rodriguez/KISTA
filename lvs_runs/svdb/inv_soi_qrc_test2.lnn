@@ -1,0 +1,9 @@
+# SVDB: Layout Netlist Names (lnn)
+# SVDB: Layout Primary inv_soi_qrc_test2
+% nmos3_CDNS_2 4
+% pmos3_CDNS_3 4
+% inv_soi_qrc_test2 4
+2 OUT
+3 IN
+4 VS
+5 VD

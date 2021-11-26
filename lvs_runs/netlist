@@ -1,0 +1,34 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  KISTA_TEST_ANALOG
+* Top Cell Name: inv_soi_qrc_test2
+* View Name:     schematic
+* Netlisted on:  Nov 26 13:42:33 2021
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: KISTA_TEST_ANALOG
+* Cell Name:    inv_soi_qrc_test2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv_soi_qrc_test2 IN OUT VD VS
+*.PININFO IN:B OUT:B VD:B VS:B
+MM0 OUT IN VS VS nmos3 W=2u L=1u
+MM1 OUT IN VD VD pmos3 W=2u L=1u
+.ENDS
+

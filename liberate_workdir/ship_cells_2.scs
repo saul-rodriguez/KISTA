@@ -1,0 +1,124 @@
+// Generated for: spectre
+// Generated on: Nov 18 09:02:11 2021
+// Design library name: KISTA_SOI_STDLIB
+// Design cell name: timing
+// Design view name: schematic
+simulator lang=spectre
+global 0 vss vdd
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: INVX1
+// View name: schematic
+subckt INVX1 Y A vdd vss
+    M0 (Y A vss vss) nch w=2u l=1u wf=2
+    M1 (Y A vdd vdd) pch w=4u l=1u
+ends INVX1
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: NOR2X1
+// View name: schematic
+subckt NOR2X1 Y A B vss vdd
+    M1 (net9 A vdd vdd) pch w=4u l=1u
+    M0 (Y B net9 net9) pch w=4u l=1u
+    M3 (Y A vss vss) nch w=2u l=1u wf=2
+    M2 (Y B vss vss) nch w=2u l=1u wf=2
+ends NOR2X1
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: BUFX2
+// View name: schematic
+subckt BUFX2 Y A vdd vss
+    M1 (Y net6 vss vss) nch w=4u l=1u wf=4.000
+    M0 (net6 A vss vss) nch w=2u l=1u wf=2
+    M3 (Y net6 vdd vdd) pch w=8u l=1u
+    M2 (net6 A vdd vdd) pch w=4u l=1u
+ends BUFX2
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: NAND2X1
+// View name: schematic
+subckt NAND2X1 Y A B vdd vss
+    M1 (Y B vdd vdd) pch w=4u l=1u
+    M0 (Y A vdd vdd) pch w=4u l=1u
+    M3 (net6 A vss vss) nch w=2u l=1u wf=2
+    M2 (Y B net6 net6) nch w=2u l=1u wf=2
+ends NAND2X1
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: DFFX1
+// View name: schematic
+subckt DFFX1 Q QN CK D vdd vss
+    M26 (QN net055 vss vss) nch w=2u l=1u wf=2
+    M25 (net055 qbint vss vss) nch w=2u l=1u wf=2
+    M23 (Q qbint vss vss) nch w=2u l=1u wf=2
+    M19 (n30 CKb net028 net028) nch w=2u l=1u wf=2
+    M18 (net028 qbint vss vss) nch w=2u l=1u wf=2
+    M17 (qbint n30 vss vss) nch w=2u l=1u wf=2
+    M15 (n30 CKbb mout mout) nch w=2u l=1u wf=2
+    M11 (n20 CKbb net017 net017) nch w=2u l=1u wf=2
+    M10 (net017 mout vss vss) nch w=2u l=1u wf=2
+    M9 (mout n20 vss vss) nch w=2u l=1u wf=2
+    M5 (n20 CKb net13 net13) nch w=2u l=1u wf=2
+    M4 (net13 D vss vss) nch w=2u l=1u wf=2
+    M3 (CKbb CKb vss vss) nch w=2u l=1u wf=2
+    M0 (CKb CK vss vss) nch w=2u l=1u wf=2
+    M27 (QN net055 vdd vdd) pch w=4u l=1u
+    M24 (net055 qbint vdd vdd) pch w=4u l=1u
+    M22 (Q qbint vdd vdd) pch w=4u l=1u
+    M21 (n30 CKbb net029 net029) pch w=4u l=1u
+    M20 (net029 qbint vdd vdd) pch w=4u l=1u
+    M16 (qbint n30 vdd vdd) pch w=4u l=1u
+    M14 (n30 CKb mout mout) pch w=4u l=1u
+    M13 (n20 CKb net018 net018) pch w=4u l=1u
+    M12 (net018 mout vdd vdd) pch w=4u l=1u
+    M8 (mout n20 vdd vdd) pch w=4u l=1u
+    M7 (n20 CKbb net14 net14) pch w=4u l=1u
+    M6 (net14 D vdd vdd) pch w=4u l=1u
+    M2 (CKbb CKb vdd vdd) pch w=4u l=1u
+    M1 (CKb CK vdd vdd) pch w=4u l=1u
+ends DFFX1
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: TIEHI
+// View name: schematic
+subckt TIEHI Y vdd vss
+    M0 (net7 net7 vss vss) nch w=2u l=1u wf=2
+    M1 (Y net7 vdd vdd) pch w=4u l=1u
+ends TIEHI
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: TIELO
+// View name: schematic
+subckt TIELO Y vss vdd
+    M0 (Y net25 vss vss) nch w=2u l=1u wf=2
+    M1 (net25 net25 vdd vdd) pch w=4u l=1u
+ends TIELO
+// End of subcircuit definition.
+
+// Library name: KISTA_SOI_STDLIB
+// Cell name: timing
+// View name: schematic
+I0 (net1 net2 vdd vss) INVX1
+I1 (net3 net4 net5 vss vdd) NOR2X1
+I2 (net6 net7 vdd vss) BUFX2
+I3 (net8 net9 net10 vdd vss) NAND2X1
+I5 (net11 net12 net13 net14 vdd vss) DFFX1
+I6 (net15 vdd vss) TIEHI
+I7 (net16 vss vdd) TIELO
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

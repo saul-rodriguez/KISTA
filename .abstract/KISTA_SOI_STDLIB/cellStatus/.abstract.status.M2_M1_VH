@@ -1,0 +1,5 @@
+cUiSetViewStatus {M2_M1_VH} {layout} {0}
+cUiSetViewStatus {M2_M1_VH} {logical} {0}
+cUiSetViewStatus {M2_M1_VH} {abstract.pin} {0}
+cUiSetViewStatus {M2_M1_VH} {abstract.ext} {0}
+cUiSetViewStatus {M2_M1_VH} {abstract} {0}

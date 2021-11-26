@@ -1,0 +1,17 @@
+case	"preserve"
+convertDot	"node"
+convertPin	"geometry"
+hierDepth	32
+labelCase	"preserve"
+labelDepth	32
+layerMap	"/home/saul/projects/KISTA/pvs/kista_1u.layermap"
+library	"KISTA_TEST_ANALOG"
+logFile	"/home/saul/projects/KISTA/drc_runs/PIPO1.LOG"
+maxVertices	2048
+pinAttNum	0
+runDir	"/home/saul/projects/KISTA/drc_runs"
+strmFile	"/home/saul/projects/KISTA/drc_runs/test_opamp_modgen.gds"
+strmVersion	5
+techLib	"KISTA_SOI_TECH"
+topCell	"test_opamp_modgen"
+view	"layout"

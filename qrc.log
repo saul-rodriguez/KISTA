@@ -1,0 +1,27 @@
+
+
+  Cadence Quantus Extraction - 64-bit Parasitic Extractor - Version
+20.1.2-p025 Thu Sep 3 13:54:09 PDT 2020
+--------------------------------------------------------------------------------------------------------------
+                                 Copyright 2020 Cadence Design Systems,
+Inc.
+
+
+WARNING (EXTQRCXOPT-381) : The output_db -hierarchy_delimiter option value cannot be an empty string.
+It is now set to be the same as that of the input_db -hierarchy_delimiter
+option. If input_db -hierarchy_delimiter is not set, then output_db
+-hierarchy_delimiter is set to the default value ("/" character).
+
+
+INFO (EXTQRCXLOG-103) : Command file checking completed.
+
+Ending at 2021-Nov-26 13:43:19 (2021-Nov-26 12:43:19 GMT).
+  Executed by:           saul
+  Execution host:        s2424
+  Run duration:          00:00:00 CPU time, 00:00:00 clock time
+  Memory used:           163,930,112
+  Warning messages:      0
+  Error messages:        0
+
+Exit code 0.
+Cadence Quantus Extraction exited successfully.

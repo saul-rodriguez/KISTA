@@ -1,0 +1,11 @@
+-- Device Mapping file generated from SpiceIn GUI
+devSelect := resistor res
+
+devSelect := capacitor cap
+
+devSelect := pch pmos3
+	propMap := W w L l subtype model
+
+devSelect := nch nmos3
+	propMap := W w L l subtype model
+

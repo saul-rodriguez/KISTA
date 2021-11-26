@@ -1,0 +1,35 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : DECAP1                                       *
+* Netlisted  : Thu Nov 18 06:59:39 2021                     *
+* PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(nmos3) _nmos1v _soi_nd(D) poly_conn(G) _soi_nsb(S) _soi_nsb(B)
+*.DEVTMPLT 1 MP(pmos3) _pmos1v _soi_pd(D) poly_conn(G) _soi_psb(S) _soi_psb(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos3_CDNS_2                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos3_CDNS_2 2 3
+** N=3 EP=2 FDC=1
+M0 2 3 2 2 nmos3 L=1e-06 W=2e-06 AD=5e-12 AS=0 PD=9e-06 PS=0 fw=2e-06 sa=2e-06 sb=2e-06 $X=7000 $Y=2000 $dt=0
+.ends nmos3_CDNS_2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos3_CDNS_3                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos3_CDNS_3 2 3
+** N=4 EP=2 FDC=1
+M0 2 3 2 2 pmos3 L=1e-06 W=4e-06 AD=1e-11 AS=0 PD=1.3e-05 PS=0 fw=4e-06 sa=2e-06 sb=2e-06 $X=7000 $Y=2000 $dt=1
+.ends pmos3_CDNS_3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: DECAP1                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt DECAP1 VDD! VSS!
+** N=4 EP=2 FDC=2
+X2 VSS! VDD! nmos3_CDNS_2 $T=4000 6600 0 0 $X=4000 $Y=6600
+X3 VDD! VSS! pmos3_CDNS_3 $T=20000 65800 0 180 $X=4000 $Y=51800
+.ends DECAP1

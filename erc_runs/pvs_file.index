@@ -1,0 +1,61 @@
+"Cadence Directory" internal none /home/saul/projects/KISTA/.cadence/
+"Current Directory" internal none /home/saul/projects/KISTA
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /home/saul/projects/KISTA/erc_runs/.preset.autosave
+"Job Signature" internal none IPVS_1635237574_13982
+"PVS Job Mode" internal none erc
+"Run Directory" internal none /home/saul/projects/KISTA/erc_runs
+"PVS Version" internal none 16.15-s010
+"Binary Name" internal none pvsgui
+"PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
+"PVS Job Time" internal none 1635237578
+"Control File" input text /home/saul/projects/KISTA/erc_runs/pvsercctl
+"DFII version" internal none 6.1.8.0
+"Do not check rules files before run" internal none ENABLED
+"Extracted Spice File" output text /home/saul/projects/KISTA/erc_runs/test_pmos3_pcell.spi
+"Input Layout" input none OA: KISTA_TEST_ANALOG test_pmos3_pcell layout
+"Intermediate GDSII File" output none /home/saul/projects/KISTA/erc_runs/test_pmos3_pcell.gds
+"Intermediate GDSII File creation Errors" output none /home/saul/projects/KISTA/erc_runs/PIPO1.LOG
+"Intermediate OASIS File creation Errors" output none /home/saul/projects/KISTA/erc_runs/PIPO1.LOG
+"Layout Cell Name" internal none test_pmos3_pcell
+"Layout ConvertPin" internal text geometry
+"Layout GDSII" input none /home/saul/projects/KISTA/erc_runs/test_pmos3_pcell.gds
+"Layout HierDepth" internal none 32
+"Layout Layermap" internal text /home/saul/projects/KISTA/pvs/kista_1u.layermap
+"Layout Library Name" internal none KISTA_TEST_ANALOG
+"Layout MaxVertices" internal none 2048
+"Layout NoConvertHalfWidthPath" input none nil
+"Layout ReplaceBusBitChar" input none nil
+"Layout Scale" internal none 0.0005
+"Layout TechLib" internal none KISTA_SOI_TECH
+"Layout Top Cell" internal none test_pmos3_pcell
+"Layout View Name" internal none layout
+"Output Layout Cellmap I" internal text /home/saul/projects/KISTA/erc_runs/lay_cellMap.txt
+"PIPO Log I" log text  /home/saul/projects/KISTA/erc_runs/PIPO1.LOG
+"PIPO Output I" internal text  /home/saul/projects/KISTA/erc_runs/PIPO1.OUT
+"PIPO Setup File I" internal text  /home/saul/projects/KISTA/erc_runs/pipo1.setup
+"PVS Job Log" log text /home/saul/projects/KISTA/erc_runs/pvsuierc.log
+"PVS Job Mode" internal none erc
+"Rule File" input text /home/saul/projects/KISTA/pvs/kista_lvs.rul
+"Run Directory" internal none /home/saul/projects/KISTA/erc_runs
+"PVS Version" internal none 16.15-s010
+"Binary Name" internal none pvsvirt
+"PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
+"PVS Job Time" internal none 1635237578
+"ERC Result" internal none EMPTY
+"ERC Summary" output text /home/saul/projects/KISTA/erc_runs/test_pmos3_pcell.sum
+"Extracted Spice File" output text /home/saul/projects/KISTA/erc_runs/test_pmos3_pcell.spi
+"Extraction Report" output erc /home/saul/projects/KISTA/erc_runs/test_pmos3_pcell.ext.rep
+"Extraction Result" internal none CLEAN
+"LVS Report Options" internal none -none
+"Layout GDSII" input none /home/saul/projects/KISTA/erc_runs/test_pmos3_pcell.gds
+"Layout Top Cell" internal none test_pmos3_pcell
+"PVS Job Mode" internal none erc
+"Report MaxResults" internal none 1000
+"Rule File" input text /home/saul/projects/KISTA/pvs/kista_lvs.rul
+"Run Directory" internal none /home/saul/projects/KISTA/erc_runs/
+"UI Data" internal none ENABLED
+"PVS Version" internal none 16.15-s010
+"Binary Name" internal none pvs
+"PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
+"PVS Job Time" internal none 1635237578

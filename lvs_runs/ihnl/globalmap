@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+KISTA_TEST_ANALOG/inv_soi_qrc_test2/schematic inv_soi_qrc_test2
+$endmodel
+$net
+$endnet
+$param
+$endparam

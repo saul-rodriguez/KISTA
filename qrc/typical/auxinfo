@@ -1,0 +1,18 @@
+
+[2D STACK]
+0 poly_conn
+1 metal1_conn
+2 metal2_conn
+3 metal3_conn
+4 metal4_conn
+[Analog Mbb]
+metal1_conn 30.0000
+metal2_conn 30.0000
+metal3_conn 30.0000
+metal4_conn 30.0000
+[Digital Mbb]
+metal4_conn 20.0000
+metal3_conn 20.0000
+metal2_conn 20.0000
+metal1_conn 20.0000
+[2D LAYERS COMB]

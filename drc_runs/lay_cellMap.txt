@@ -1,0 +1,1 @@
+KISTA_TEST_ANALOG test_opamp_modgen layout test_opamp_modgen

@@ -1,0 +1,21 @@
+BEGIN MBB_DEFINITION
+KISTA_1U_typical
+4 layer process
+metal1_conn 30.0000
+metal2_conn 30.0000
+metal3_conn 30.0000
+metal4_conn 30.0000
+END MBB_DEFINITION
+
+BEGIN VHALO_DEFINITION
+metal1_conn
+metal2_conn
+metal3_conn
+metal4_conn
+END VHALO_DEFINITION
+BEGIN VHALO_VALUES
+metal1_conn 30.0000
+metal2_conn 30.0000
+metal3_conn 30.0000
+metal4_conn 30.0000
+END VHALO_VALUES

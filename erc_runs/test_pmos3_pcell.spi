@@ -1,0 +1,18 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : test_pmos3_pcell                             *
+* Netlisted  : Tue Oct 26 10:39:39 2021                     *
+* PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(nmos3) _nmos1v _soi_nd(D) poly_conn(G) _soi_nsb(S) _soi_nsb(B)
+*.DEVTMPLT 1 MP(pmos3) _pmos1v _soi_pd(D) poly_conn(G) _soi_psb(S) _soi_psb(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: test_pmos3_pcell                                *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt test_pmos3_pcell
+** N=5 EP=0 FDC=1
+M0 2 4 1 1 pmos3 L=1e-06 W=2.4e-05 AD=6e-11 AS=0 PD=5.3e-05 PS=0 fw=2.4e-05 sa=2e-06 sb=2e-06 $X=22200 $Y=5400 $dt=1
+.ends test_pmos3_pcell

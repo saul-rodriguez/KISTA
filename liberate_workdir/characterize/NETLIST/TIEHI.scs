@@ -1,0 +1,7 @@
+// TIEHI
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt TIEHI Y vdd vss
+    M0  (net7 net7 vss vss)  nch w=2u l=1u wf=2
+    M1  (Y net7 vdd vdd)  pch w=4u l=1u
+ends TIEHI

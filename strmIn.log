@@ -1,0 +1,50 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-58) $
+          : sub-version  IC6.1.8-64b.500.7 
+Started at: 26-Oct-2021  08:35:02
+User Name : saul
+Host Name : s2424
+Directory : /home/saul/projects/KISTA
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-75): Target library 'KISTA_TEST_STREAMIN' is attached to the technology library 'KISTA_SOI_TECH'. Therefore, the technology file is opened in read-only mode. All the undefined layer-purpose pairs will be dropped.
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /home/saul/projects/KISTA/pvs/kista_1u.layermap
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				KISTA_TEST_STREAMIN
+	strmFile			/home/saul/projects/KISTA/strm_out/layermap_cell.gds
+	logFile				strmIn.log
+	topCell				layermap_cell
+	view				layout
+	case				Preserve
+	layerMap			/home/saul/projects/KISTA/pvs/kista_1u.layermap
+	propSeparator			,
+
+INFO (XSTRM-220): 1. Translating STRUCTURE M1_NWELL_CDNS_635227999020 as cellView KISTA_TEST_STREAMIN/M1_NWELL_CDNS_635227999020/layout.
+INFO (XSTRM-220): 2. Translating STRUCTURE M1_PSUB_CDNS_635227999021 as cellView KISTA_TEST_STREAMIN/M1_PSUB_CDNS_635227999021/layout.
+INFO (XSTRM-220): 3. Translating STRUCTURE nmos3_CDNS_635227999020 as cellView KISTA_TEST_STREAMIN/nmos3_CDNS_635227999020/layout.
+INFO (XSTRM-220): 4. Translating STRUCTURE pmos3_CDNS_635227999021 as cellView KISTA_TEST_STREAMIN/pmos3_CDNS_635227999021/layout.
+INFO (XSTRM-220): 5. Translating STRUCTURE layermap_cell as cellView KISTA_TEST_STREAMIN/layermap_cell/layout.
+
+Summary of Objects Translated:
+	Instances:                              4
+	CustomVias:                             0
+	StandardVias:                           7
+	CdsGenVias:                             0
+	Arrays:                                 0
+	Polygons:                               0
+	Paths:                                  0
+	PathSegs:                               0
+	Rectangles:                             37
+	Text:                                   0
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  5
+
+Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 4380KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.

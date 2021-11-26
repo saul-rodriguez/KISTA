@@ -1,0 +1,158 @@
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+INFO: Temp reference value is 25 .
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+***************************************************************************************
+Command line: /pkg/cadence/installs/EXT191/tools/extraction/bin/64bit/Techgen -plan -multi_cpu 8 kista_4M.ict -multi_cpu 8 kista_4M.ict 
+
+
+Techgen -cell version s19.1.3062
+Analyzing process kista_4M.ict and generating minimum bounding box values
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+
+------------------------------------------------------------------------
+Interconnect Capacitance Modeler Techgen64 Version s19.1.3062
+-----------------------------------------------------------------
+   Copyright (c) 2019 Cadence Design Systems, Inc.
+
+Creating directory structure
+Generating area models
+Generating 3d model list
+Creating model list 
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+***************************************************************************************
+Command line: Techgen -concat  -Ronly -hideprocess kista_4M.ict RCGEN
+
+
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+INFO: Found old ./p2lvsfile and renamed to ./p2lvsfile_1
+INFO: Temp reference value is 25 .
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer poly_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal1_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal2_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal3_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer metal4_conn, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer Via1, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_poly, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_pdiff, because this layer has no Tc1 and Tc2.
+No temperature processing will occur for the layer cont_ndiff, because this layer has no Tc1 and Tc2.

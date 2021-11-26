@@ -1,0 +1,175 @@
+process "KISTA_1U_typical" {
+      background_dielectric_constant 1
+      temp_reference  25
+   	em_tref 110        
+   	em_output_wlt drawn 
+   	em_variables  w delta_T    
+   	em_conductor_unit mA/um 
+   	em_via_area_unit  mA 
+	em_via_unit mA 
+}
+diffusion "Oxide" {
+        thickness           0.33
+        resistivity         1
+        dielectric_constant  3.9
+}
+conductor "poly_conn" {
+        min_spacing         0.50
+        min_width           1.00
+        height              0.35
+        thickness           0.1
+        resistivity         15
+        gate_forming_layer  true
+}
+conductor "metal1_conn" {
+        min_spacing         2.0
+        min_width           1.0        
+        height              0.78
+        thickness           0.15
+        resistivity         0.0736       
+        gate_forming_layer  false          
+}
+conductor "metal2_conn" {
+        min_spacing         2.0
+        min_width           1.0
+        height              1.23
+        thickness           0.15
+        resistivity         0.0604      
+        gate_forming_layer  false        
+}
+conductor "metal3_conn" {
+        min_spacing         2.0
+        min_width           1.0        
+        height              1.68
+        thickness           0.15
+        resistivity         0.0604
+        gate_forming_layer  false
+}
+conductor "metal4_conn" {
+        min_spacing         2.0
+        min_width           1.0        
+        height              2.13
+        thickness           0.15
+        resistivity         0.0604
+        gate_forming_layer  false
+}
+
+
+dielectric "FOX" {
+        conformal           FALSE
+        height              0
+        thickness           0.35
+        dielectric_constant 3.9
+        loss_tangent        0
+}
+
+dielectric "diel1" {
+#        conformal           TRUE
+        conformal           FALSE
+        height              0.35
+        thickness           0.03
+        dielectric_constant 7
+        loss_tangent        0
+        expandedFrom        poly_conn
+        topThickness        0.03
+        theta               90
+}
+dielectric "diel2" {
+        conformal           FALSE
+        height              0.38
+        thickness           0.4
+        dielectric_constant 4.2
+        loss_tangent        0
+}
+dielectric "diel3" {
+        conformal           FALSE
+        height              0.78
+        thickness           0.15
+        dielectric_constant 4.2
+        loss_tangent        0
+}
+dielectric "diel4" {
+        conformal           FALSE
+        height              0.93
+        thickness           0.3
+        dielectric_constant 2.6
+        loss_tangent        0
+}
+dielectric "diel5" {
+        conformal           FALSE
+        height              1.23
+        thickness           0.15
+        dielectric_constant 4.2
+        loss_tangent        0
+}
+dielectric "diel6" {
+        conformal           FALSE
+        height              1.38
+        thickness           0.3
+        dielectric_constant 2.6
+        loss_tangent        0
+        thermal_conductivity 0.0124
+}
+dielectric "diel7" {
+        conformal           FALSE
+        height              1.68
+        thickness           0.15
+        dielectric_constant 4.2
+        loss_tangent        0
+        thermal_conductivity 0.0124
+}
+dielectric "diel8" {
+        conformal           FALSE
+        height              1.83
+        thickness           0.3
+        dielectric_constant 2.6
+        loss_tangent        0
+        thermal_conductivity 0.0124
+}
+dielectric "diel9" {
+        conformal           FALSE
+        height              2.13
+        thickness           0.15
+        dielectric_constant 4.2
+        loss_tangent        0
+        thermal_conductivity 0.0124
+}
+via "Via3" {
+        top_layer         "metal4_conn"
+        bottom_layer      "metal3_conn"
+        contact_resistance 0.5
+        thermal_conductivity 0.39
+	temp_tc1           0 
+	temp_tc2           0
+  
+}
+via "Via2" {
+        top_layer         "metal3_conn"
+        bottom_layer      "metal2_conn"
+        contact_resistance 0.5
+        thermal_conductivity 0.39
+	temp_tc1           0 
+	temp_tc2           0
+ 
+}
+via "Via1" {
+        top_layer         "metal2_conn"
+        bottom_layer      "metal1_conn"
+        contact_resistance 0.5
+}
+via "cont_poly" {
+        top_layer         "metal1_conn"
+        bottom_layer      "poly_conn"
+        contact_resistance 45
+}
+via "cont_pdiff" {
+        top_layer         "metal1_conn"
+        bottom_layer      "Oxide"
+        contact_resistance 62
+}
+via "cont_ndiff" {
+        top_layer         "metal1_conn"
+        bottom_layer      "Oxide"
+        contact_resistance 75
+}
+

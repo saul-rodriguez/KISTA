@@ -1,0 +1,203 @@
+# Liberate Template Example Tcl File - Sept 2008
+
+set_var slew_lower_rise 0.3
+set_var slew_upper_rise 0.7
+set_var slew_lower_fall 0.3
+set_var slew_upper_fall 0.7
+
+set_var measure_slew_lower_rise 0.3
+set_var measure_slew_upper_rise 0.7
+set_var measure_slew_lower_fall 0.3
+set_var measure_slew_upper_fall 0.7
+
+# Set the maximum output transition time allowed (in seconds)
+# 1e-9 is in ns
+set_var max_transition 10e-09
+
+# enter a space separated list of cell names to process
+set cells {  }
+
+define_template -type delay \
+        -index_1        {0.250 0.500 0.750 1.250 1.500} \
+        -index_2        {0.0150 0.0500 0.1500 0.3000 0.6000} \
+        delay_template_5x5
+
+define_template -type power \
+        -index_1        {0.250 0.500 0.750 1.250 1.500} \
+        -index_2        {0.0150 0.0500 0.1500 0.3000 0.6000} \
+        power_template_5x5
+
+define_template -type constraint \
+        -index_1  {0.250  0.750 1.500} \
+        -index_2  {0.250  0.750 1.500} \
+        constraint_template_3x3
+
+if {[ALAPI_active_cell "INVX1"]} {
+define_cell \
+    -input { X } -output { Y } -pinlist { A X } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    INVX1
+
+}
+
+
+if {[ALAPI_active_cell "AND2X1"]} {
+define_cell \
+    -input { A B } -output { Y } -pinlist { A B Y } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    AND2X1
+
+}
+
+if {[ALAPI_active_cell "BUFF1X1"]} {
+define_cell \
+    -input { X } -output { Y } -pinlist { X Y } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    BUFF1X1
+
+}
+
+if {[ALAPI_active_cell "DFF_POS"]} {
+define_cell \
+    -input { D } -output { Q Qn } -clock { Clk } -pinlist { Clk D Q Qn } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    DFF_POS
+
+}
+
+
+if {[ALAPI_active_cell "DLATCH"]} {
+define_cell \
+    -input { Clk D } -output { Q Qn } -pinlist { D Clk Q Qn } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    DLATCH
+}
+
+
+
+if {[ALAPI_active_cell "FAX2X1"]} {
+define_cell \
+    -input { A B Cin } -output { Cout Y } -pinlist { A B Cin Cout Y } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    FAX2X1
+}
+
+
+if {[ALAPI_active_cell "HAX2X1"]} {
+define_cell \
+    -input { A B } -output { YC YS } -pinlist { YC YS } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    HAX2X1
+}
+
+
+
+if {[ALAPI_active_cell "MUX2X1"]} {
+define_cell \
+    -input { A B SEL } -output { OUT } -pinlist { A B SEL OUT } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    MUX2X1
+}
+
+
+
+if {[ALAPI_active_cell "MUX4X1"]} {
+define_cell \
+    -input { A B C D SEL<1> SEL<0> } -output { OUT } -pinlist { A B SEL OUT } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    MUX4X1
+}
+
+
+
+if {[ALAPI_active_cell "NAND2X1"]} {
+define_cell \
+    -input { A B } -output { Y } -pinlist { A B Y } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    NAND2X1
+}
+
+
+
+if {[ALAPI_active_cell "NAND3X1"]} {
+define_cell \
+    -input { A B C } -output { Y } -pinlist { A B C Y } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    NAND2X1
+}
+
+
+if {[ALAPI_active_cell "NOR2X1"]} {
+define_cell \
+    -input { A B } -output { Y } -pinlist { A B Y } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    NOR2X1
+}
+
+
+if {[ALAPI_active_cell "OR2X1"]} {
+define_cell \
+    -input { A B } -output { Y } -pinlist { A B Y } \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    OR2X1
+}
+
+
+if {[ALAPI_active_cell "SRLATCH"]} {
+define_cell \
+    -input { S R } -output { Q Qn } -pinlist { S R Q Qn} \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    SRLATCH
+}
+
+
+if {[ALAPI_active_cell "TGATE"]} {
+define_cell \
+    -input { A An B } -output { Y } -pinlist { A An B Y} \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    TGATE
+}
+
+
+if {[ALAPI_active_cell "XOR2X1"]} {
+define_cell \
+    -input { A B } -output { Y } -pinlist { A B Y} \
+        -constraint  constraint_template_3x3    \
+        -delay       delay_template_5x5 \
+        -power       power_template_5x5 \
+    XOR2X1
+}
+
+
+
+

@@ -1,0 +1,1265 @@
+Running: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/pvsvirt \
+  -mode drc \
+  -global_log_file /home/saul/projects/KISTA/drc_runs/pvsuidrc.log \
+  -control /home/saul/projects/KISTA/drc_runs/pvsdrcctl \
+  -cell_tree /home/saul/projects/KISTA/drc_runs/cell_tree.txt \
+  -layLibName KISTA_TEST_ANALOG \
+  -layCellName test_opamp_modgen \
+  -layViewName layout \
+  -igds /home/saul/projects/KISTA/drc_runs/test_opamp_modgen.gds \
+  -layScale 0.0005 \
+  -layTechLib KISTA_SOI_TECH \
+  -layLayerMap /home/saul/projects/KISTA/pvs/kista_1u.layermap \
+  -convertPin geometry \
+  -replaceBusBitChar nil \
+  -noConvertHalfWidthPath nil \
+  -layHierDepth 32 \
+  -layMaxVertices 2048 \
+  -rulesFile /home/saul/projects/KISTA/drc_runs/.technology.rul \
+  -df2_version 6.1.8.0 \
+  -sign IPVS_1637821800_30895 \
+  -run_dir /home/saul/projects/KISTA/drc_runs \
+  -no_rules_check
+
+
+
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $
+          : sub-version  IC6.1.8-64b.500.7 
+Started at: 25-Nov-2021  07:30:02
+User Name : saul
+Host Name : s2424
+Directory : /home/saul/projects/KISTA
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+*WARNING* The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KISTA/drc_runs/test_opamp_modgen.gds' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /home/saul/projects/KISTA/pvs/kista_1u.layermap
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Oxide_thk' at line number '5' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Nhvt' at line number '8' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Nlvt' at line number '9' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Phvt' at line number '11' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Plvt' at line number '12' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Nzvt' at line number '13' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'SiProt' at line number '14' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Via4' at line number '23' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal5' at line number '24' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Via5' at line number '25' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal6' at line number '26' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Via6' at line number '27' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal7' at line number '28' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Via7' at line number '29' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal8' at line number '30' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Via8' at line number '31' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal9' at line number '32' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Via9' at line number '33' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal10' at line number '34' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Via10' at line number '35' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal11' at line number '36' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'CapMetal' at line number '37' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Nburied' at line number '38' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal5' at line number '44' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal6' at line number '45' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal7' at line number '46' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal8' at line number '47' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal9' at line number '48' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal10' at line number '49' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal11' at line number '50' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal5' at line number '55' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal6' at line number '56' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal7' at line number '57' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal8' at line number '58' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal9' at line number '59' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal10' at line number '60' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal11' at line number '61' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal5' at line number '66' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal6' at line number '67' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal7' at line number '68' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal8' at line number '69' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal9' at line number '70' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal10' at line number '71' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal11' at line number '72' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal5' at line number '77' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal6' at line number '78' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal7' at line number '79' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal8' at line number '80' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal9' at line number '81' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal10' at line number '82' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal11' at line number '83' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Bondpad' at line number '84' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Capdum' at line number '85' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Cap3dum' at line number '86' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'INDdummy' at line number '87' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'IND2dummy' at line number '88' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'IND3dummy' at line number '89' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Resdum' at line number '90' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'ResWdum' at line number '91' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'M5Resdum' at line number '96' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'M6Resdum' at line number '97' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'M7Resdum' at line number '98' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'M8Resdum' at line number '99' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'M9Resdum' at line number '100' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'M10Resdum' at line number '101' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'M11Resdum' at line number '102' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'BJTdum' at line number '103' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'VPNP2dum' at line number '104' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'VPNP5dum' at line number '105' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'VPNP10dum' at line number '106' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'NPN2dum' at line number '107' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'NPN5dum' at line number '108' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'NPN10dum' at line number '109' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'NPNdummy' at line number '110' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'PNPdummy' at line number '111' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'DIOdummy' at line number '113' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'ESDdummy' at line number '114' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'SRAM' at line number '117' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 KISTA_TEST_ANALOG
+strmFile                                /home/saul/projects/KISTA/drc_runs/test_opamp_modgen.gds
+topCell                                 test_opamp_modgen
+view                                    layout
+runDir                                  /home/saul/projects/KISTA/drc_runs
+logFile                                 /home/saul/projects/KISTA/drc_runs/PIPO1.LOG
+techLib                                 KISTA_SOI_TECH
+hierDepth                               32
+maxVertices                             2048
+layerMap                                /home/saul/projects/KISTA/pvs/kista_1u.layermap
+userSkillFile                           /home/saul/projects/KISTA/drc_runs/strmout.il
+labelDepth                              32
+case                                    Preserve
+convertDot                              node
+
+KISTA libInit.il file is loaded
+initializing MOS callbacks
+INFO (XSTRM-223): 1. Translating stdVia KISTA_SOI_TECH/M2_M1/layout as STRUCTURE M2_M1_CDNS_1.
+INFO (XSTRM-223): 2. Translating stdVia KISTA_SOI_TECH/M2_M1/layout as STRUCTURE M2_M1_CDNS_2.
+INFO (XSTRM-223): 3. Translating stdVia KISTA_SOI_TECH/M2_M1/layout as STRUCTURE M2_M1_CDNS_3.
+INFO (XSTRM-223): 4. Translating stdVia KISTA_SOI_TECH/M2_M1/layout as STRUCTURE M2_M1_CDNS_4.
+INFO (XSTRM-223): 5. Translating stdVia KISTA_SOI_TECH/M2_M1/layout as STRUCTURE M2_M1_CDNS_5.
+INFO (XSTRM-223): 6. Translating stdVia KISTA_SOI_TECH/M3_M2/layout as STRUCTURE M3_M2_CDNS_6.
+INFO (XSTRM-223): 7. Translating stdVia KISTA_SOI_TECH/M3_M2/layout as STRUCTURE M3_M2_CDNS_7.
+INFO (XSTRM-223): 8. Translating stdVia KISTA_SOI_TECH/M3_M2/layout as STRUCTURE M3_M2_CDNS_8.
+Express Pcell license has been checked out for the Express Pcell feature.
+INFO (XSTRM-223): 9. Translating cellView KISTA_1UM/nmos3/layout as STRUCTURE nmos3_CDNS_9.
+INFO (XSTRM-223): 10. Translating cellView KISTA_1UM/nmos3/layout as STRUCTURE nmos3_CDNS_10.
+INFO (XSTRM-223): 11. Translating cellView KISTA_1UM/pmos3/layout as STRUCTURE pmos3_CDNS_11.
+INFO (XSTRM-223): 12. Translating cellView KISTA_TEST_ANALOG/test_opamp_modgen/layout as STRUCTURE test_opamp_modgen.
+INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Objects Translated:
+	Scalar Instances:                       50
+	Array Instances:                        0
+	Polygons:                               0
+	Paths:                                  0
+	Rectangles:                             122
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           183
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               229
+	Text:                                   0
+	TextDisplay:                            5
+	Cells:                                  12
+
+Elapsed Time: 0.3s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 6032KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '79' warning(s) found.
+
+
+********************************************************************************
+pvs 16.15-s010 64 bit (Fri Jun 28 22:24:07 PDT 2019)
+Build Ref No.: 010 Production (06-28-2019) [pvs_1615]
+
+Copyright 2019 Cadence Design Systems, Inc.
+All rights reserved worldwide.
+
+Build O/S:       Linux x86_64 2.6.18-194.el5
+Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
+Process Id:      4094
+Starting Time:   Thu Nov 25 07:30:02 2021 (Thu Nov 25 06:30:02 2021 GMT)
+With parameters: -drc -top_cell test_opamp_modgen -ui_data -control /home/saul/projects/KISTA/drc_runs/pvsdrcctl -cell_tree /home/saul/projects/KISTA/drc_runs/cell_tree.txt -ai /home/saul/projects/KISTA/drc_runs/.technology.rul 
+********************************************************************************
+
+
+########################################################################
+Get host info ...
+########################################################################
+CPU info:
+    model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+    cpu MHz         :  1897.998
+    cache size      :  20480 KB
+    physical cores  :  16
+    logical cores   :  32
+    hyper-threading on
+
+Memory info:
+    64168M physical memory installed.
+
+    MemTotal:       65709328 kB
+    MemFree:         8867264 kB
+    MemAvailable:   13633832 kB
+    Buffers:               0 kB
+    Cached:          5376356 kB
+    SwapCached:       259876 kB
+    Active:         47615220 kB
+    Inactive:        5515912 kB
+    Active(anon):   44058208 kB
+    Inactive(anon):  4801932 kB
+    Active(file):    3557012 kB
+    Inactive(file):   713980 kB
+    Unevictable:           0 kB
+    Mlocked:               0 kB
+    SwapTotal:      32964604 kB
+    SwapFree:              0 kB
+    Dirty:                12 kB
+    Writeback:             0 kB
+    AnonPages:      47494576 kB
+    Mapped:           378732 kB
+    Shmem:           1105364 kB
+    Slab:            1327028 kB
+    SReclaimable:     987564 kB
+    SUnreclaim:       339464 kB
+    KernelStack:       12144 kB
+    PageTables:       197720 kB
+    NFS_Unstable:          0 kB
+    Bounce:                0 kB
+    WritebackTmp:          0 kB
+    CommitLimit:    65819268 kB
+    Committed_AS:   66297216 kB
+    VmallocTotal:   34359738367 kB
+    VmallocUsed:      422088 kB
+    VmallocChunk:   34325399548 kB
+    Percpu:            10240 kB
+    HardwareCorrupted:     0 kB
+    AnonHugePages:   2617344 kB
+    CmaTotal:              0 kB
+    CmaFree:               0 kB
+    HugePages_Total:       0
+    HugePages_Free:        0
+    HugePages_Rsvd:        0
+    HugePages_Surp:        0
+    Hugepagesize:       2048 kB
+    DirectMap4k:      179524 kB
+    DirectMap2M:     4968448 kB
+    DirectMap1G:    61865984 kB
+
+
+########################################################################
+Get environment info ...
+########################################################################
+ENV VAR: TCL_LIBRARY = /pkg/cadence/installs/PVS161/share/lib/tcltk/08.64/tcl8.6
+ENV VAR: TCLX_LIBRARY = /pkg/cadence/installs/PVS161/share/lib/tclx/08.40
+ENV VAR: TCLLIBPATH = /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cadence/installs/PVS161/share/lib/tclxml/3.2 /pkg/cadence/installs/PVS161/share/lib/tcllib/1.18 /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cadence/installs/PVS161/share/lib/tclxml/3.2 /pkg/cadence/installs/PVS161/share/lib/tcllib/1.18 /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cadence/installs/PVS161/share/lib/tclxml/3.2 /pkg/cadence/installs/PVS161/share/lib/tcllib/1.18 
+
+
+########################################################################
+Parsing Control File /home/saul/projects/KISTA/drc_runs/pvsdrcctl ...
+########################################################################
+TEXT_DEPTH -primary;
+VIRTUAL_CONNECT -colon no;
+VIRTUAL_CONNECT -semicolon_as_colon yes;
+VIRTUAL_CONNECT -report no;
+VIRTUAL_CONNECT -depth -primary;
+REPORT_SUMMARY -drc "test_opamp_modgen.sum" -replace;
+MAX_RESULTS -drc 1000;
+MAX_VERTEX -drc 4096;
+RESULTS_DB -drc "/home/saul/projects/KISTA/drc_runs/test_opamp_modgen.drc_errors.ascii" -ascii;
+KEEP_LAYERS -none;
+ABORT_ON_LAYOUT_ERROR yes;
+LAYOUT_FORMAT gdsii;
+LAYOUT_PATH "/home/saul/projects/KISTA/drc_runs/test_opamp_modgen.gds";
+
+########################################################################
+Parsing Rule File /home/saul/projects/KISTA/drc_runs/.technology.rul ...
+########################################################################
+TECHNOLOGY kista_pvs -ruleSet default -techLib /home/saul/projects/KISTA/pvtech.lib;
+[WARN] The rule set 'default' in technology 'kista_pvs' has file './pvlLVS.rul' given for 'ErcRules'. However, this file does not exist, or cannot be read, and will be ignored.
+[INFO] TECHNOLOGY: Rules file /home/saul/projects/KISTA/pvs/./kista_drc.rul will be included after the remainder of the current rules are processed.
+[INFO] TECHNOLOGY kista_pvs -techLib /home/saul/projects/KISTA/pvtech.lib: End of additions.
+LAYOUT_PATH "CELLNAME.gds" gdsii;
+[WARN]: LAYOUT_PATH at line 18 in file /home/saul/projects/KISTA/pvs/./kista_drc.rul is skipped. It is set in control file.
+LAYOUT_PRIMARY "CELLNAME";
+[WARN] Cmd-line override: LAYOUT_PRIMARY "test_opamp_modgen";
+RESULTS_DB -drc "CELLNAME.db" -ascii;
+[WARN]: RESULTS_DB -ascii at line 20 in file /home/saul/projects/KISTA/pvs/./kista_drc.rul is skipped. It is set in control file.
+INPUT_SCALE 2000;
+GRID 5;
+UNIT -length u;
+TEXT_DEPTH -primary;
+[WARN]: TEXT_DEPTH at line 25 in file /home/saul/projects/KISTA/pvs/./kista_drc.rul is skipped. It is set in control file.
+FLAG -nonsimple yes;
+
+RULE offgrid_check {
+    CAPTION Grid violation;
+    LAYOUT_INPUT -offgrid;
+}
+
+RULE ortho_45_check {
+    CAPTION Orthogonal and 45 degree violation;
+    LAYOUT_INPUT -skew;
+}
+
+RULE acute_check {
+    CAPTION Acute angle  violation;
+    LAYOUT_INPUT -acute;
+}
+LAYER_DEF empty 999;
+LAYER_DEF Oxide 1034;
+LAYER_MAP 1 -datatype 0 1034;
+LAYER_DEF Poly 1040;
+LAYER_MAP 3 -datatype 0 1040;
+LAYER_DEF Cont 1002;
+LAYER_MAP 6 -datatype 0 1002;
+LAYER_DEF Metal1 1016;
+LAYER_MAP 7 -datatype -le 5 1016;
+LAYER_DEF Metal2 1017;
+LAYER_MAP 9 -datatype -le 5 1017;
+LAYER_DEF Metal3 1018;
+LAYER_MAP 11 -datatype -le 5 1018;
+LAYER_DEF Metal4 1019;
+LAYER_MAP 31 -datatype -le 5 1019;
+LAYER_DEF Via1 1045;
+LAYER_MAP 8 -datatype 0 1045;
+LAYER_DEF Via2 1046;
+LAYER_MAP 10 -datatype 0 1046;
+LAYER_DEF Via3 1047;
+LAYER_MAP 30 -datatype 0 1047;
+LAYER_DEF KTH_openpad 1048;
+LAYER_MAP 172 -datatype 0 1048;
+OR Metal1 Metal2 M12;
+OR Metal3 Metal4 M34;
+OR M12 M34 Metal_all;
+AND Cont Via1 Cont_Via1_ov;
+AND Via1 Via2 Via1_Via2_ov;
+AND Via2 Via3 Via2_Via3_ov;
+
+RULE OXIDE.W.1 {
+    CAPTION OXIDEW.1: Oxide width must be >= 2.0 um;
+    INTE Oxide Oxide -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE POLY.W.1 {
+    CAPTION POLY.W.1: Poly width must be >= 1.0 um;
+    INTE Poly Poly -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE CONT.W.1 {
+    CAPTION CONT.W.1: Cont width must be >= 1.0 um;
+    INTE Cont Cont -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE METAL1.W.1 {
+    CAPTION METAL1.W.1: Metal1 width must be >= 2.0 um;
+    INTE Metal1 Metal1 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL2.W.1 {
+    CAPTION METAL2.W.1: Metal2 width must be >= 2.0 um;
+    INTE Metal2 Metal2 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL3.W.1 {
+    CAPTION METAL3.W.1: Metal3 width must be >= 2.0 um;
+    INTE Metal3 Metal3 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL4.W.1 {
+    CAPTION METAL4.W.1: Metal4 width must be >= 2.0 um;
+    INTE Metal4 Metal4 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE KTH_OPENPAD.W.1 {
+    CAPTION KTH_OPENPAD.W.1: KTH_openpad width must be >= 88.0 um;
+    INTE KTH_openpad KTH_openpad -lt 88 -output region -singular -abut lt 90;
+}
+
+RULE OXIDE.SP.1.1 {
+    CAPTION OXIDE.SP.1.1: Oxide to Oxide spacing must be >= 2.0 um;
+    EXTE Oxide Oxide -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE POLY.SP.1.1 {
+    CAPTION POLY.SP.1.1: Poly to Poly spacing must be >= 2.0 um;
+    EXTE Poly Poly -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL1.SP.1.1 {
+    CAPTION METAL1.SP.1.1: Metal1 to Metal1 spacing must be >= 2.0 um;
+    EXTE Metal1 Metal1 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL2.SP.1.1 {
+    CAPTION METAL1.SP.1.1: Metal2 to Metal2 spacing must be >= 2.0 um;
+    EXTE Metal2 Metal2 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL3.SP.1.1 {
+    CAPTION METAL1.SP.1.1: Metal3 to Metal3 spacing must be >= 2.0 um;
+    EXTE Metal3 Metal3 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL4.SP.1.1 {
+    CAPTION METAL1.SP.1.1: Metal4 to Metal4 spacing must be >= 2.0 um;
+    EXTE Metal4 Metal4 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE CONT.SP.1.1 {
+    CAPTION CONT.SP.1.1: Cont to Cont spacing must be >= 1.0 um;
+    EXTE Cont Cont -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE CONT.SP.1.2 {
+    CAPTION CONT.SP.1.2: Cont to Via1 spacing must be >= 1.0 um;
+    EXTE Cont Via1 -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE VIA1.SP.1.1 {
+    CAPTION VIA1.SP.1.1: Via1 to Via1 spacing must be >= 1.0 um;
+    EXTE Via1 Via1 -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE VIA1.SP.1.2 {
+    CAPTION VIA1.SP.1.2: Via1 to Via2 spacing must be >= 1.0 um;
+    EXTE Via1 Via2 -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE VIA2.SP.1.1 {
+    CAPTION VIA2.SP.1.1: Via2 to Via2 spacing must be >= 1.0 um;
+    EXTE Via2 Via2 -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE VIA2.SP.1.2 {
+    CAPTION VIA2.SP.1.2: Via2 to Via3 spacing must be >= 1.0 um;
+    EXTE Via2 Via3 -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE CONT.E.1 {
+    CAPTION CONT.E.1: Metal1 to Cont enclosure must be >= 0.5 um;
+    ENC Cont metal1 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE CONT.E.2 {
+    CAPTION CONT.E.2: Poly to Cont enclosure must be >= 0.5 um;
+    ENC Cont Poly -lt 0.5 -abut lt 90 -overlap -single_point;
+}
+
+RULE CONT.E.3 {
+    CAPTION CONT.E.3: Oxide to Cont enclosure must be >= 0.5 um;
+    ENC Cont Oxide -lt 0.5 -abut lt 90 -overlap -single_point;
+}
+
+RULE VIA1.E.1 {
+    CAPTION VIA1.E.1: Metal1 to Via1 enclosure must be >= 0.5 um;
+    ENC Via1 metal1 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE VIA1.E.2 {
+    CAPTION VIA1.E.2: Metal2 to Via1 enclosure must be >= 0.5 um;
+    ENC Via1 metal2 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE VIA2.E.1 {
+    CAPTION VIA2.E.1: Metal2 to Via2 enclosure must be >= 0.5 um;
+    ENC Via2 metal2 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE VIA2.E.2 {
+    CAPTION VIA2.E.2: Metal3 to Via2 enclosure must be >= 0.5 um;
+    ENC Via2 metal3 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE VIA3.E.1 {
+    CAPTION VIA3.E.1: Metal3 to Via3 enclosure must be >= 0.5 um;
+    ENC Via3 metal3 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE VIA3.E.2 {
+    CAPTION VIA3.E.2: Metal4 to Via3 enclosure must be >= 0.5 um;
+    ENC Via3 metal4 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE KTH_OPENPAD.E.1 {
+    CAPTION KTH_OPENPAD.E.1: Metal[X] to KTH_openpad enclosure must be >= 6.0 um;
+    ENC KTH_openpad metal_all -lt 6 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE CONT.OV.1 {
+    CAPTION CONT.OV.1: Via1 over Cont not allowed;
+    AREA Cont_Via1_ov -gt 0;
+}
+
+RULE VIA1.OV.1 {
+    CAPTION VIA1.OV.1: Via2 over Via1 not allowed;
+    AREA Via1_Via2_ov -gt 0;
+}
+
+RULE VIA2.OV.1 {
+    CAPTION VIA2.OV.1: Via3 over Via2 not allowed;
+    AREA Via2_Via3_ov -gt 0;
+}
+
+########################################################################
+checkout license ...
+########################################################################
+This mode requires 1 primary license.
+Checking out SoftShare license Phys_Ver_Sys_DRC_XL 16.1 Qty: 1 ... succeeded (1s).
+
+
+
+########################################################################
+Optimizing Rules ...
+########################################################################
+Time: cpu=0.01/0.01  real=0.06/0.06  Memory: 9.12/9.16/9.67
+
+
+########################################################################
+Loading Layout Data ...
+########################################################################
+Parsing Layer Mapping File test_opamp_modgen.lmap ...
+
+GDSII Input Summary
+
+Date: Thu Nov 25 07:30:02 2021
+GDSII file: /home/saul/projects/KISTA/drc_runs/test_opamp_modgen.gds
+GDSII size: 32768
+GDSII version: 5.0
+GDSII library name: KISTA_TEST_ANALOG
+Last Modified: 7:29:52 11/25/2021
+Last Accessed: 7:30:2 11/25/2021
+data base unit in user units    : 0.0005
+physical size of data base unit : 5e-10
+magnification: 1
+
+loading cell M2_M1_CDNS_1 ...
+loading cell M2_M1_CDNS_2 ...
+loading cell M2_M1_CDNS_3 ...
+loading cell M2_M1_CDNS_4 ...
+loading cell M2_M1_CDNS_5 ...
+loading cell M3_M2_CDNS_6 ...
+loading cell M3_M2_CDNS_7 ...
+loading cell M3_M2_CDNS_8 ...
+loading cell nmos3_CDNS_9 ...
+loading cell nmos3_CDNS_10 ...
+loading cell pmos3_CDNS_11 ...
+loading cell test_opamp_modgen ...
+Time: cpu=0.01/0.02  real=0.06/0.12  Memory: 17.16/17.31/17.31
+
+
+Cell Summary:
+----------------------------------------------------------------------------
+    CELL                 INSTANCE    GEOMETRY      LABELS        HREF        FREF
+----------------------------------------------------------------------------
+M2_M1_CDNS_1                    0           3           0          49          49
+M2_M1_CDNS_2                    0           4           0           4           4
+M2_M1_CDNS_3                    0           4           0         100         100
+M2_M1_CDNS_4                    0           6           0          21          21
+M2_M1_CDNS_5                    0          10           0           2           2
+M3_M2_CDNS_6                    0           4           0           4           4
+M3_M2_CDNS_7                    0           8           0           1           1
+M3_M2_CDNS_8                    0           5           0           2           2
+nmos3_CDNS_9                    0          23           0          20          20
+nmos3_CDNS_10                   0          21           0          10          10
+pmos3_CDNS_11                   0          19           0          20          20
+test_opamp_modgen             233         235           0           1           1
+----------------------------------------------------------------------------
+TOTAL CELL = 12;  INSTANCE = 233;  GEOMETRY = 342;  LABEL = 0
+
+Layer Summary:
+----------------------------------------------------------------------------
+    LAYER                      ID       HPN      HTC        FPN       FTC
+----------------------------------------------------------------------------
+Cont                         1002        33         0       550         0
+Metal1                       1016       207         0       660         0
+Metal2                       1017        54         0       229         0
+Metal3                       1018         8         0        12         0
+Metal4                       1019         0         0         0         0
+Oxide                        1034         3         0        50         0
+Poly                         1040         9         0       150         0
+Via1                         1045        17         0       357         0
+Via2                         1046        11         0        20         0
+Via3                         1047         0         0         0         0
+KTH_openpad                  1048         0         0         0         0
+----------------------------------------------------------------------------
+
+CHIP EXTENT: 9800 200 399000 295600
+
+Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 17.16/17.31/17.31
+
+
+Ports ...
+========================================================================
+
+Texts For Connectivity ...
+========================================================================
+
+Texts For SELECT -LABEL ...
+========================================================================
+
+Texts For EXPAND_TEXT_ORIGIN ...
+========================================================================
+
+Texts For DFM_TEXT ...
+========================================================================
+
+########################################################################
+Preparing Hierarchical Database ...
+########################################################################
+
+Constructing Hierarchical Database ...
+========================================================================
+
+    M3_M2_CDNS_7 is expanded.
+Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 17.16/17.31/17.31
+
+
+  REORGANIZE HIERARCHIES (1)...
+
+Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 17.16/17.31/17.31
+
+    M2_M1_CDNS_1 is expanded.
+    M2_M1_CDNS_2 is expanded.
+    M2_M1_CDNS_3 is expanded.
+    M2_M1_CDNS_4 is expanded.
+    M2_M1_CDNS_5 is expanded.
+    M3_M2_CDNS_6 is expanded.
+    M3_M2_CDNS_8 is expanded.
+  REORGANIZE HIERARCHIES (2)...
+
+Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 21.18/21.33/21.33
+
+
+Cell Summary:
+----------------------------------------------------------------------------
+    CELL                 INSTANCE    GEOMETRY      LABELS        HREF        FREF
+----------------------------------------------------------------------------
+nmos3_CDNS_9                    0          23           0          20          20
+nmos3_CDNS_10                   0          21           0          10          10
+pmos3_CDNS_11                   0          19           0          20          20
+test_opamp_modgen              50         978           0           1           1
+----------------------------------------------------------------------------
+TOTAL CELL = 4;  INSTANCE = 50;  GEOMETRY = 1041;  LABEL = 0
+
+Layer Summary:
+----------------------------------------------------------------------------
+    LAYER                      ID       HPN      HTC        FPN       FTC
+----------------------------------------------------------------------------
+Cont                         1002        33         0       550         0
+Metal1                       1016       378         0       660         0
+Metal2                       1017       229         0       229         0
+Metal3                       1018        12         0        12         0
+Metal4                       1019         0         0         0         0
+Oxide                        1034         3         0        50         0
+Poly                         1040         9         0       150         0
+Via1                         1045       357         0       357         0
+Via2                         1046        20         0        20         0
+Via3                         1047         0         0         0         0
+KTH_openpad                  1048         0         0         0         0
+----------------------------------------------------------------------------
+
+Layer Summary(Texts For Connectivity):
+----------------------------------------------------------------------------
+    LAYER                      ID       TEXTS
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Layer Summary(Texts For SELECT -LABEL):
+----------------------------------------------------------------------------
+    LAYER                      ID       TEXTS
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Layer Summary(Texts For EXPAND_TEXT_ORIGIN):
+----------------------------------------------------------------------------
+    LAYER                      ID       TEXTS
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Layer Summary(Texts For DFM_TEXT):
+----------------------------------------------------------------------------
+    LAYER                      ID       TEXTS
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 21.18/21.33/21.33
+
+
+Compacting Hierarchy Library ...
+========================================================================
+Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 9.11/9.27/21.33
+
+
+Analyzing Cell Overlapings ...
+========================================================================
+Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 9.11/9.27/13.29
+
+
+Merge Layers ...
+========================================================================
+    Cont = OR Cont
+    generate layer Cont, TYP = P, HPN = 27, FPN = 450, HEN = 108, FEN = 1800
+
+    Metal1 = OR Metal1
+    generate layer Metal1, TYP = P, HPN = 147, FPN = 288, HEN = 700, FEN = 1264
+
+    Metal2 = OR Metal2
+    generate layer Metal2, TYP = P, HPN = 23, FPN = 23, HEN = 140, FEN = 140
+
+    Metal3 = OR Metal3
+    generate layer Metal3, TYP = P, HPN = 4, FPN = 4, HEN = 18, FEN = 18
+
+    Oxide = OR Oxide
+    generate layer Oxide, TYP = P, HPN = 3, FPN = 50, HEN = 12, FEN = 200
+
+    Poly = OR Poly
+    generate layer Poly, TYP = P, HPN = 3, FPN = 50, HEN = 24, FEN = 400
+
+    Via1 = OR Via1
+    generate layer Via1, TYP = P, HPN = 357, FPN = 357, HEN = 1428, FEN = 1428
+
+    Via2 = OR Via2
+    generate layer Via2, TYP = P, HPN = 20, FPN = 20, HEN = 80, FEN = 80
+
+Time: cpu=0.01/0.03  real=0.01/0.13  Memory: 9.10/9.27/17.31
+
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.10/9.27/9.27
+
+
+########################################################################
+Execute Operations ...
+########################################################################
+
+
+operation group: 1/40
+    offgrid_check:L262144 = layout_input -offgrid
+========================================================================
+    generate layer offgrid_check:L262144, TYP = R, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.10/9.27/9.27
+
+
+    Rule Check offgrid_check finished, 0 error(s) reported.
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 2/40
+    ortho_45_check:L262145 = layout_input -skew
+========================================================================
+    generate layer ortho_45_check:L262145, TYP = E, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.10/9.27/9.27
+
+
+    Rule Check ortho_45_check finished, 0 error(s) reported.
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 3/40
+    acute_check:L262146 = layout_input -acute
+========================================================================
+    generate layer acute_check:L262146, TYP = E, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.10/9.27/9.27
+
+
+    Rule Check acute_check finished, 0 error(s) reported.
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 4/40
+    OXIDE.W.1:L262153 = INTE Oxide -lt 2 -output region -single_point -abut lt 90
+========================================================================
+    generate layer OXIDE.W.1:L262153, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.10/9.27/17.31
+
+
+    Rule Check OXIDE.W.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 5/40
+    POLY.W.1:L262154 = INTE Poly -lt 1 -output region -single_point -abut lt 90
+========================================================================
+    generate layer POLY.W.1:L262154, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/17.31
+
+
+    Rule Check POLY.W.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 6/40
+    CONT.W.1:L262155 = INTE Cont -lt 1 -output region -single_point -abut lt 90
+========================================================================
+    generate layer CONT.W.1:L262155, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/17.31
+
+
+    Rule Check CONT.W.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 7/40
+    METAL1.W.1:L262156 = INTE Metal1 -lt 2 -output region -single_point -abut lt 90
+========================================================================
+    generate layer METAL1.W.1:L262156, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/21.33
+
+
+    Rule Check METAL1.W.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 8/40
+    METAL2.W.1:L262157 = INTE Metal2 -lt 2 -output region -single_point -abut lt 90
+========================================================================
+    generate layer METAL2.W.1:L262157, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/17.57
+
+
+    Rule Check METAL2.W.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 9/40
+    METAL3.W.1:L262158 = INTE Metal3 -lt 2 -output region -single_point -abut lt 90
+========================================================================
+    generate layer METAL3.W.1:L262158, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/17.31
+
+
+    Rule Check METAL3.W.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 10/40
+    METAL4.W.1:L262159 = INTE Metal4 -lt 2 -output region -single_point -abut lt 90
+========================================================================
+    generate layer METAL4.W.1:L262159, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+    Rule Check METAL4.W.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 11/40
+    KTH_OPENPAD.W.1:L262160 = INTE KTH_openpad -lt 88 -output region -single_point -abut lt 90
+========================================================================
+    generate layer KTH_OPENPAD.W.1:L262160, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+    Rule Check KTH_OPENPAD.W.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 12/40
+    OXIDE.SP.1.1:L262161 = EXTE Oxide -lt 2 -output region -single_point -abut lt 90
+========================================================================
+    generate layer OXIDE.SP.1.1:L262161, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/21.33
+
+
+    Rule Check OXIDE.SP.1.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 13/40
+    POLY.SP.1.1:L262162 = EXTE Poly -lt 2 -output region -single_point -abut lt 90
+========================================================================
+    generate layer POLY.SP.1.1:L262162, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/21.33
+
+
+    Rule Check POLY.SP.1.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 14/40
+    METAL1.SP.1.1:L262163 = EXTE Metal1 -lt 2 -output region -single_point -abut lt 90
+========================================================================
+    generate layer METAL1.SP.1.1:L262163, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/21.33
+
+
+    Rule Check METAL1.SP.1.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 15/40
+    METAL2.SP.1.1:L262164 = EXTE Metal2 -lt 2 -output region -single_point -abut lt 90
+========================================================================
+    generate layer METAL2.SP.1.1:L262164, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/17.31
+
+
+    Rule Check METAL2.SP.1.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 16/40
+    METAL3.SP.1.1:L262165 = EXTE Metal3 -lt 2 -output region -single_point -abut lt 90
+========================================================================
+    generate layer METAL3.SP.1.1:L262165, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/17.31
+
+
+    Rule Check METAL3.SP.1.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 17/40
+    METAL4.SP.1.1:L262166 = EXTE Metal4 -lt 2 -output region -single_point -abut lt 90
+========================================================================
+    generate layer METAL4.SP.1.1:L262166, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+    Rule Check METAL4.SP.1.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 18/40
+    CONT.SP.1.1:L262167 = EXTE Cont -lt 1 -output region -single_point -abut lt 90
+========================================================================
+    generate layer CONT.SP.1.1:L262167, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/17.31
+
+
+    Rule Check CONT.SP.1.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 19/40
+    CONT.SP.1.2:L262168 = EXTE Cont Via1 -lt 1 -output region -single_point -abut lt 90
+========================================================================
+    generate layer CONT.SP.1.2:L262168, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/17.57
+
+
+    Rule Check CONT.SP.1.2 finished, 0 error(s) reported.
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 20/40
+    VIA1.SP.1.1:L262169 = EXTE Via1 -lt 1 -output region -single_point -abut lt 90
+========================================================================
+    generate layer VIA1.SP.1.1:L262169, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/17.31
+
+
+    Rule Check VIA1.SP.1.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 21/40
+    VIA1.SP.1.2:L262170 = EXTE Via1 Via2 -lt 1 -output region -single_point -abut lt 90
+========================================================================
+    generate layer VIA1.SP.1.2:L262170, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/17.31
+
+
+    Rule Check VIA1.SP.1.2 finished, 0 error(s) reported.
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 22/40
+    VIA2.SP.1.1:L262171 = EXTE Via2 -lt 1 -output region -single_point -abut lt 90
+========================================================================
+    generate layer VIA2.SP.1.1:L262171, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/17.31
+
+
+    Rule Check VIA2.SP.1.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 23/40
+    VIA2.SP.1.2:L262172 = EXTE Via2 Via3 -lt 1 -output region -single_point -abut lt 90
+========================================================================
+    generate layer VIA2.SP.1.2:L262172, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/9.27
+
+
+    Rule Check VIA2.SP.1.2 finished, 0 error(s) reported.
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 24/40
+    CONT.E.1:L262173 = ENC Cont Metal1 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
+========================================================================
+    generate layer CONT.E.1:L262173, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/13.29
+
+
+    Rule Check CONT.E.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 25/40
+    CONT.E.2:L262174 = ENC Cont Poly -lt 0.5 -abut lt 90 -overlap -single_point
+========================================================================
+    generate layer CONT.E.2:L262174, TYP = R, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/17.31
+
+    delete layer Poly
+
+    Rule Check CONT.E.2 finished, 0 error(s) reported.
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 26/40
+    CONT.E.3:L262175 = ENC Cont Oxide -lt 0.5 -abut lt 90 -overlap -single_point
+========================================================================
+    generate layer CONT.E.3:L262175, TYP = R, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/17.31
+
+    delete layer Oxide
+
+    Rule Check CONT.E.3 finished, 0 error(s) reported.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 27/40
+    VIA1.E.1:L262176 = ENC Via1 Metal1 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
+========================================================================
+    generate layer VIA1.E.1:L262176, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/17.31
+
+
+    Rule Check VIA1.E.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 28/40
+    VIA1.E.2:L262177 = ENC Via1 Metal2 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
+========================================================================
+    generate layer VIA1.E.2:L262177, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/17.31
+
+
+    Rule Check VIA1.E.2 finished, 0 error(s) reported.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 29/40
+    VIA2.E.1:L262178 = ENC Via2 Metal2 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
+========================================================================
+    generate layer VIA2.E.1:L262178, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/17.31
+
+
+    Rule Check VIA2.E.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 30/40
+    VIA2.E.2:L262179 = ENC Via2 Metal3 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
+========================================================================
+    generate layer VIA2.E.2:L262179, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/13.29
+
+
+    Rule Check VIA2.E.2 finished, 0 error(s) reported.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 31/40
+    VIA3.E.1:L262180 = ENC Via3 Metal3 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
+========================================================================
+    generate layer VIA3.E.1:L262180, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/9.27
+
+
+    Rule Check VIA3.E.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/9.27
+
+
+
+operation group: 32/40
+    VIA3.E.2:L262181 = ENC Via3 Metal4 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
+========================================================================
+    generate layer VIA3.E.2:L262181, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.10/9.27/9.27
+
+
+    Rule Check VIA3.E.2 finished, 0 error(s) reported.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/9.27
+
+
+
+operation group: 33/40
+    Metal_all = OR Metal1 Metal3 Metal2 Metal4
+========================================================================
+    layer Metal_all not generated, operation is dynamically optimized out.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/9.27
+
+    delete layer Metal1
+    delete layer Metal3
+    delete layer Metal2
+    delete layer Metal4
+
+
+operation group: 34/40
+    KTH_OPENPAD.E.1:L262182 = ENC KTH_openpad Metal_all -lt 6 -output region -single_point -abut lt 90 -outside_also
+========================================================================
+    generate layer KTH_OPENPAD.E.1:L262182, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/9.27
+
+    delete layer KTH_openpad
+    delete layer Metal_all
+
+    Rule Check KTH_OPENPAD.E.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/9.27
+
+
+
+operation group: 35/40
+    Cont_Via1_ov = AND Cont Via1
+========================================================================
+    generate layer Cont_Via1_ov, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/17.31
+
+    delete layer Cont
+
+
+operation group: 36/40
+    CONT.OV.1:L262183 = AREA Cont_Via1_ov -gt 0
+========================================================================
+    generate layer CONT.OV.1:L262183, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/9.27
+
+    delete layer Cont_Via1_ov
+
+    Rule Check CONT.OV.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/9.27
+
+
+
+operation group: 37/40
+    Via1_Via2_ov = AND Via1 Via2
+========================================================================
+    generate layer Via1_Via2_ov, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/17.31
+
+    delete layer Via1
+
+
+operation group: 38/40
+    VIA1.OV.1:L262184 = AREA Via1_Via2_ov -gt 0
+========================================================================
+    generate layer VIA1.OV.1:L262184, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/9.27
+
+    delete layer Via1_Via2_ov
+
+    Rule Check VIA1.OV.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/9.27
+
+
+
+operation group: 39/40
+    Via2_Via3_ov = AND Via2 Via3
+========================================================================
+    generate layer Via2_Via3_ov, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/9.27
+
+    delete layer Via2
+    delete layer Via3
+
+
+operation group: 40/40
+    VIA2.OV.1:L262185 = AREA Via2_Via3_ov -gt 0
+========================================================================
+    generate layer VIA2.OV.1:L262185, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/9.27
+
+    delete layer Via2_Via3_ov
+
+    Rule Check VIA2.OV.1 finished, 0 error(s) reported.
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.11/9.27/9.27
+
+
+
+########################################################################
+Outputting Results ...
+########################################################################
+
+   ONE LAYER BOOLEAN: Cumulative Time CPU =        0(s) REAL =        0(s)
+   TWO LAYER BOOLEAN: Cumulative Time CPU =        0(s) REAL =        0(s)
+ POLYGON TOPOLOGICAL: Cumulative Time CPU =        0(s) REAL =        0(s)
+ POLYGON MEASUREMENT: Cumulative Time CPU =        0(s) REAL =        0(s)
+                SIZE: Cumulative Time CPU =        0(s) REAL =        0(s)
+    EDGE TOPOLOGICAL: Cumulative Time CPU =        0(s) REAL =        0(s)
+    EDGE MEASUREMENT: Cumulative Time CPU =        0(s) REAL =        0(s)
+               STAMP: Cumulative Time CPU =        0(s) REAL =        0(s)
+       ONE LAYER DRC: Cumulative Time CPU =        0(s) REAL =        0(s)
+       TWO LAYER DRC: Cumulative Time CPU =        0(s) REAL =        0(s)
+            NET AREA: Cumulative Time CPU =        0(s) REAL =        0(s)
+             DENSITY: Cumulative Time CPU =        0(s) REAL =        0(s)
+       MISCELLANEOUS: Cumulative Time CPU =        0(s) REAL =        0(s)
+             CONNECT: Cumulative Time CPU =        0(s) REAL =        0(s)
+              DEVICE: Cumulative Time CPU =        0(s) REAL =        0(s)
+                 ERC: Cumulative Time CPU =        0(s) REAL =        0(s)
+       PATTERN_MATCH: Cumulative Time CPU =        0(s) REAL =        0(s)
+            DFM FILL: Cumulative Time CPU =        0(s) REAL =        0(s)
+
+
+Total CPU Time                    : 0(s)
+Total Real Time                   : 0(s)
+Peak Memory Used                  : 21(M)
+Total Original Geometry           : 342(2028)
+Total DRC RuleChecks              : 36
+Total DRC Results                 : 0 (0)
+Summary can be found in file test_opamp_modgen.sum
+ASCII report database is /home/saul/projects/KISTA/drc_runs/test_opamp_modgen.drc_errors.ascii
+Checking in all SoftShare licenses.
+
+
+Design Rule Check Finished Normally. Thu Nov 25 07:30:03 2021
+
+
+
+
