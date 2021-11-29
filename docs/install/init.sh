@@ -1,9 +1,8 @@
-#####################################################
-# Set path to KTH KISTA 1UM SOI CADENCE environment #
-#####################################################
-
-#Rev 1.0 2021-11-29
-#Author: S. Rodriguez
+################################
+# Set path to XFAV environment #
+################################
+#export X_DIR=/pkg/xfab/XKIT
+#export PATH=$X_DIR/x_all/cadence/xenv:$PATH
 
 #environment variables copied from XFAB_AMS_refkit_2_5_1
 #export MG_ENABLE_DUMMYPARAMS=true
@@ -15,8 +14,8 @@ export REFKIT_DIR=$PWD
 ################################
 # Set path to Cadence Virtuoso #
 ################################ 
-export CDSHOME=/afs/ict.kth.se/pkg/designkits/ekt/cadence/installs/IC618
-#export CDSHOME=/pkg/cadence/installs/IC618
+export CDSHOME=/pkg/cadence/installs/IC618
+#export CDSHOME=/pkg/cadence/installs/IC617
 export PATH=$PATH:$CDSHOME/tools/bin:$CDSHOME/tools/dfII/bin
 export CDS_AUTO_64BIT=ALL
 
@@ -27,8 +26,7 @@ export CDS_Netlisting_Mode="Analog"
 ##########################################
 # Set path to SPECTRE/MMSIM (simulators) #
 ##########################################
-export MMSIMHOME=/afs/ict.kth.se/pkg/designkits/ekt/cadence/installs/SPECTRE201
-#export MMSIMHOME=/pkg/cadence/installs/SPECTRE181
+export MMSIMHOME=/pkg/cadence/installs/SPECTRE181
 export PATH=$PATH:$MMSIMHOME/tools/bin
 #export CDS_AHDLCMI_ENABLE=NO
 
@@ -42,25 +40,21 @@ export PATH=$PATH:$MMSIMHOME/tools/bin
 ################################
 # Set QRC Parasitic Extraction #
 ################################
-export QRC_HOME=/afs/kth.se/pkg/designkits/ekt/cadence/installs/QUANTUS201
-#export QRCHOME=/afs/kth.se/pkg/designkits/ekt/cadence/installs/QUANTUS211
 #export QRC_HOME=/pkg/cadence/installs/EXT191
+export QRC_HOME=/pkg/cadence/installs/QUANTUS201
 export PATH=$PATH:$QRC_HOME/tools/bin
 export QRC_ENABLE_EXTRACTION="t"
 
 #########################
 # Set PVS DRC/LVS tools #
 ######################### 
-export PVSHOME=/afs/ict.kth.se/pkg/designkits/ekt/cadence/installs/PVS191
-#export PVSHOME=/pkg/cadence/installs/PVS161
+export PVSHOME=/pkg/cadence/installs/PVS161
 export PATH=$PATH:$PVSHOME/tools/bin
 
 ######################
 # Set XCELIUM tools  #
 ######################
-export IUSHOME=/afs/ict.kth.se/pkg/designkits/ekt/cadence/installs/XCELIUM2003
-#export IUSHOME=/afs/ict.kth.se/pkg/designkits/ekt/cadence/installs/XCELIUM2109
-#export IUSHOME=/pkg/cadence/installs/XCELIUM1803
+export IUSHOME=/pkg/cadence/installs/XCELIUM1803
 export PATH=$PATH:$IUSHOME/tools/bin/64bit:$IUSHOME/tools/bin
 export CDS_BIND_TMP_DD=true
 
@@ -69,15 +63,13 @@ export CDS_BIND_TMP_DD=true
 ###################
 #export RTL_HOME=/pkg/cadence/installs/RC142
 #export PATH=$PATH:$RTL_HOME/tools.lnx86/bin
-#export GENUSHOME=/pkg/cadence/installs/GENUS181
-export GENUSHOME=/afs/ict.kth.se/pkg/designkits/ekt/cadence/installs/GENUS191
+export GENUSHOME=/pkg/cadence/installs/GENUS181
 export PATH=$PATH:$GENUSHOME/tools.lnx86/bin
 
 ######################################
 # INNOVUS DIGITAL PLACE AND ROUTE    #
 ######################################
-export INNOVUS=/afs/ict.kth.se/pkg/designkits/ekt/cadence/installs/INNOVUS191
-#export INNOVUS=/pkg/cadence/installs/INNOVUS181
+export INNOVUS=/pkg/cadence/installs/INNOVUS181
 export PATH=$PATH:$INNOVUS/tools/bin/64bit:$INNOVUS/tools/bin
 export EDIHOME=$INNOVUS
 export CDS_ENABLE_EXP_PCELL=TRUE
@@ -97,8 +89,11 @@ export MGLS_LICENSE_FILE=1727@lic02.ug.kth.se
 # Instructions #
 ################
 
-echo Cadence Environment Initialization for KISTA 1UM SOI CMOS completed
-echo to open Cadence in a working directory type: virtuoso 
+echo Cadence Environment Initialization for XFAB completed
+echo to create a new working directory run: xkit -t xh018
+echo for help: xkit -h
+echo Europractice MPW options: XH018 - 6 Metal option
+echo to open Cadence in a working directory: virtuoso 
 
 
 

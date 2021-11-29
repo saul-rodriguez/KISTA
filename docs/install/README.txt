@@ -7,7 +7,7 @@ Author: Saul Rodriguez
 
 Steps:
 
-1) Create a new directory for the new project and enter in it: 
+1) Create a new directory for the new project and enter into it: 
 
 mkdir myworkdir
 cd myworkdir
