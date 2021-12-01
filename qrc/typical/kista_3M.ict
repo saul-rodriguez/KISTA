@@ -11,6 +11,7 @@ process "KISTA_1U_typical" {
 diffusion "Oxide" {
         thickness           0.145
         resistivity         1
+#        resistivity         600
         dielectric_constant  3.9
 }
 conductor "poly_conn" {
@@ -18,7 +19,7 @@ conductor "poly_conn" {
         min_width           1.00
         height             0.145
         thickness           0.1
-        resistivity         15
+        resistivity         150
         gate_forming_layer  true
 }
 conductor "metal1_conn" {
@@ -26,7 +27,7 @@ conductor "metal1_conn" {
         min_width           1.0        
         height              0.45
         thickness           0.60
-        resistivity         0.0736       
+        resistivity         0.05       
         gate_forming_layer  false          
 }
 conductor "metal2_conn" {
@@ -34,17 +35,17 @@ conductor "metal2_conn" {
         min_width           1.0
         height              1.45
         thickness           0.6
-        resistivity         0.0604      
+        resistivity         0.05      
         gate_forming_layer  false        
 }
-#conductor "metal3_conn" {
-#        min_spacing         2.0
-#        min_width           1.0        
-#        height              1.68
-#        thickness           0.15
-#        resistivity         0.0604
-#        gate_forming_layer  false
-#}
+conductor "metal3_conn" {
+        min_spacing         2.0
+        min_width           1.0        
+        height              2.45
+        thickness           1.1
+        resistivity         0.025
+        gate_forming_layer  false
+}
 #conductor "metal4_conn" {
 #        min_spacing         2.0
 #        min_width           1.0        
@@ -68,7 +69,7 @@ dielectric "diel1" {
         conformal           FALSE
         height             0.145
         thickness           0.305
-        dielectric_constant 7
+        dielectric_constant 3.9
         loss_tangent        0
         expandedFrom        poly_conn
         topThickness        0.03
@@ -78,23 +79,27 @@ dielectric "diel2" {
         conformal           FALSE
         height              0.45
         thickness           1.00
-        dielectric_constant 4.2
+        dielectric_constant 3.9
         loss_tangent        0
 }
-#dielectric "diel3" {
+dielectric "diel3" {
+        conformal           FALSE
+        height              1.45
+        thickness           1.0
+        dielectric_constant 3.9
+        loss_tangent        0
+}
+dielectric "diel4" {
 #        conformal           FALSE
-#        height              0.78
-#        thickness           0.15
-#        dielectric_constant 4.2
-#        loss_tangent        0
-#}
-#dielectric "diel4" {
-#        conformal           FALSE
-#        height              0.93
-#        thickness           0.3
-#        dielectric_constant 2.6
-#        loss_tangent        0
-#}
+        conformal           TRUE
+		expandedFrom       metal3_conn
+        height              2.45
+        thickness           0.4
+	    topThickness        0.4
+		side_expand         0.4
+        dielectric_constant 3.9
+        loss_tangent        0
+}
 #dielectric "diel5" {
 #        conformal           FALSE
 #        height              1.23
@@ -142,14 +147,11 @@ dielectric "diel2" {
 #	temp_tc1           0 
 #	temp_tc2           0
 #}
-#via "Via2" {
-#        top_layer         "metal3_conn"
-#        bottom_layer      "metal2_conn"
-#        contact_resistance 0.5
-#        thermal_conductivity 0.39
-#	temp_tc1           0 
-#	temp_tc2           0 
-#}
+via "Via2" {
+        top_layer         "metal3_conn"
+        bottom_layer      "metal2_conn"
+        contact_resistance 0.1
+}
 via "Via1" {
         top_layer         "metal2_conn"
         bottom_layer      "metal1_conn"
@@ -158,16 +160,16 @@ via "Via1" {
 via "cont_poly" {
         top_layer         "metal1_conn"
         bottom_layer      "poly_conn"
-        contact_resistance 45
+        contact_resistance 5
 }
 via "cont_pdiff" {
         top_layer         "metal1_conn"
         bottom_layer      "Oxide"
-        contact_resistance 62
+        contact_resistance 5
 }
 via "cont_ndiff" {
         top_layer         "metal1_conn"
         bottom_layer      "Oxide"
-        contact_resistance 75
+        contact_resistance 5
 }
 
