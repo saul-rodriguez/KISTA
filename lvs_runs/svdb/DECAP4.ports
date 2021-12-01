@@ -1,4 +1,0 @@
-# SVDB: Port Table (ports)
-# SVDB: Layout Primary DECAP4
-VDD! 1 VDD! 6000 72800 metal1_conn
-VSS! 2 VSS! 6000 -1200 metal1_conn

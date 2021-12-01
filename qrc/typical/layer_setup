@@ -1,4 +1,4 @@
-pro_layer=FOX    ext_layer=nwell_conn,psubstrate
+pro_layer=BOX    ext_layer=nwell_conn,psubstrate
 pro_layer=Oxide  ext_layer=ndiff_conn,pdiff_conn
 pro_layer=poly_conn  ext_layer=poly_conn   
 pro_layer=metal1_conn  ext_layer=metal1_conn 

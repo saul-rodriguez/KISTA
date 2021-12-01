@@ -1,8 +1,0 @@
-# SVDB: Port Table (ports)
-# SVDB: Layout Primary NAND2X1
-VSS! 6 VSS! 13000 1200 metal1_conn
-A 1 A 11800 37000 metal1_conn
-VDD! 4 VDD! 6000 72000 metal1_conn
-VDD! 4 VDD! 5800 71200 metal1_conn
-B 2 B 43200 36600 metal1_conn
-Y 5 Y 36000 20000 metal1_conn

@@ -3,7 +3,7 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Fri Nov 26 13:42:38 2021
+#####  NVN Run Start                 :   Wed Dec  1 14:59:23 2021
 #####  ERC Summary File              :   inv_soi_qrc_test2.sum
 #####  Extraction Report File        :   inv_soi_qrc_test2.rep
 #####  Comparison Report File        :   inv_soi_qrc_test2.rep.cls
@@ -21,13 +21,13 @@
 #####  
 #####  Extraction CPU Time           :   0h 0m 0s - (0s)
 #####  Extraction Exec Time          :   0h 0m 0s - (0s)
-#####  Extraction Peak Memory Usage  :   25.00MB
+#####  Extraction Peak Memory Usage  :   29.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
 #####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
-#####  NVN Peak Memory Usage         :   232.11MB
+#####  NVN Peak Memory Usage         :   232.12MB
 #####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
 #####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   232.11MB
+#####  LVS Total Peak Memory Usage   :   232.12MB
 #####  
 ##############################################################################################################
 

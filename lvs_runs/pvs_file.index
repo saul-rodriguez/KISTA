@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/saul/projects/KISTA
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/saul/projects/KISTA/lvs_runs/.preset.autosave
-"Job Signature" internal none IPVS_1637930550_1840
+"Job Signature" internal none IPVS_1638367154_30293
 "PVS Job Mode" internal none lvs
 "Run Directory" internal none /home/saul/projects/KISTA/lvs_runs
 "Technology Mapping File" internal none /home/saul/projects/KISTA/pvtech.lib
@@ -12,7 +12,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1637930552
+"PVS Job Time" internal none 1638367156
 "CDL Out Display Pin Information" internal none ENABLED
 "CDL Out Stop List" internal text auCdl
 "CDL Out View List" internal text auCdl schematic
@@ -60,7 +60,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1637930556
+"PVS Job Time" internal none 1638367161
 "Comparison Report" output cls /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.rep.cls
 "ERC Result" internal none EMPTY
 "ERC Summary" output text /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.sum
@@ -81,7 +81,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1637930557
+"PVS Job Time" internal none 1638367161
 "Comparison Result" internal none MATCH
 "LVS Run Name" internal none inv_soi_qrc_test2.rep
 "Run Directory" internal none /home/saul/projects/KISTA/lvs_runs/
@@ -90,4 +90,4 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsnvn
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1637930558
+"PVS Job Time" internal none 1638367163

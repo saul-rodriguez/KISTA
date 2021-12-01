@@ -2,7 +2,7 @@
 * CDL Netlist:                                              *
 *                                                           *
 * Cell Name  : inv_soi_qrc_test2                            *
-* Netlisted  : Fri Nov 26 13:42:37 2021                     *
+* Netlisted  : Wed Dec  1 14:59:21 2021                     *
 * PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
 *.LDD
@@ -10,26 +10,56 @@
 *.DEVTMPLT 1 MP(pmos3) _pmos1v _soi_pd(D) poly_conn(G) _soi_psb(S) _soi_psb(B)
 
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
-* Sub cell: nmos3_CDNS_2                                    *
+* Sub cell: M2_M1_CDNS_1                                    *
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
-.subckt nmos3_CDNS_2 1 2 3 4
-** N=4 EP=4 FDC=1
-M0 2 3 4 4 nmos3 L=1e-06 W=2e-06 AD=5e-12 AS=0 PD=9e-06 PS=0 fw=2e-06 sa=2e-06 sb=2e-06 $X=7000 $Y=2000 $dt=0
-.ends nmos3_CDNS_2
+.subckt M2_M1_CDNS_1 1
+** N=1 EP=1 FDC=0
+.ends M2_M1_CDNS_1
 
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
-* Sub cell: pmos3_CDNS_3                                    *
+* Sub cell: M3_M2_CDNS_2                                    *
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
-.subckt pmos3_CDNS_3 1 2 3 4
+.subckt M3_M2_CDNS_2 1
+** N=1 EP=1 FDC=0
+.ends M3_M2_CDNS_2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M1_PO_CDNS_3                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M1_PO_CDNS_3 1
+** N=1 EP=1 FDC=0
+.ends M1_PO_CDNS_3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos3_CDNS_4                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos3_CDNS_4 1 2 3 4
+** N=4 EP=4 FDC=1
+M0 2 4 3 3 nmos3 L=1e-06 W=2e-06 AD=5e-12 AS=0 PD=9e-06 PS=0 fw=2e-06 sa=2e-06 sb=2e-06 $X=7000 $Y=2000 $dt=0
+.ends nmos3_CDNS_4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos3_CDNS_5                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos3_CDNS_5 1 2 3 4
 ** N=5 EP=4 FDC=1
 M0 2 3 4 4 pmos3 L=1e-06 W=2e-06 AD=5e-12 AS=0 PD=9e-06 PS=0 fw=2e-06 sa=2e-06 sb=2e-06 $X=7000 $Y=2000 $dt=1
-.ends pmos3_CDNS_3
+.ends pmos3_CDNS_5
 
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
 * Sub cell: inv_soi_qrc_test2                               *
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
 .subckt inv_soi_qrc_test2 IN OUT VD VS
-** N=5 EP=4 FDC=2
-X0 1 OUT IN VS nmos3_CDNS_2 $T=27400 3200 1 180 $X=11400 $Y=3200
-X1 1 OUT IN VD pmos3_CDNS_3 $T=27400 34800 0 180 $X=11400 $Y=20800
+** N=8 EP=4 FDC=2
+X0 IN M2_M1_CDNS_1 $T=286400 455800 0 0 $X=284400 $Y=453800
+X1 VD M2_M1_CDNS_1 $T=304000 479400 0 0 $X=302000 $Y=477400
+X2 OUT M2_M1_CDNS_1 $T=582000 452200 0 0 $X=580000 $Y=450200
+X3 OUT M2_M1_CDNS_1 $T=1134000 332200 0 0 $X=1132000 $Y=330200
+X4 VD M3_M2_CDNS_2 $T=304000 483400 0 0 $X=302000 $Y=481400
+X5 OUT M3_M2_CDNS_2 $T=1130000 332200 0 0 $X=1128000 $Y=330200
+X6 OUT M3_M2_CDNS_2 $T=1130000 452200 0 0 $X=1128000 $Y=450200
+X7 OUT M1_PO_CDNS_3 $T=338000 452200 0 0 $X=336000 $Y=450200
+X8 OUT M1_PO_CDNS_3 $T=458000 452200 0 0 $X=456000 $Y=450200
+X9 4 OUT VS IN nmos3_CDNS_4 $T=316000 440200 1 180 $X=300000 $Y=440200
+X10 4 OUT IN VD pmos3_CDNS_5 $T=316000 471800 0 180 $X=300000 $Y=457800
 .ends inv_soi_qrc_test2

@@ -1,0 +1,19 @@
+INFO: Temp reference value is 25 .
+INFO: Found old ./p2lvsfile and renamed to ./p2lvsfile_1
+INFO: Temp reference value is 25 .
+INFO: Found old ./p2lvsfile and renamed to ./p2lvsfile_2
+INFO: Temp reference value is 25 .
+INFO: Found old ./p2lvsfile and renamed to ./p2lvsfile_3
+INFO: Temp reference value is 25 .
+Techgen -cell version p20.1.2025
+Analyzing process ../ict_files/kista_3M.ict and generating minimum bounding box values
+
+------------------------------------------------------------------------
+Interconnect Capacitance Modeler Techgen64 Version p20.1.2025
+-----------------------------------------------------------------
+   Copyright (c) 2020 Cadence Design Systems, Inc.
+
+Creating directory structure
+Generating area models
+Generating 3d model list
+Creating model list 

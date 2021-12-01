@@ -1,7 +1,58 @@
---- Starting "Innovus: generateCapTbl  " on Thu Nov 18 13:05:50 2021 (mem=245.8M) ---
+--- Starting "Innovus: generateCapTbl  " on Wed Dec  1 09:54:18 2021 (mem=245.8M) ---
 --- Running on s2424 (x86_64 w/Linux 3.10.0-1160.42.2.el7.x86_64) ---
 Copyright 1996-2003 Cadence Design Systems, Inc..  Disassembly is strictly prohibited.
 This version was compiled on (64bit) 11/08/2019 08:48 (Linux 2.6.18-194.el5).
+Info: Running the command:
+	#CUI#generateCapTbl#write_cap_table#  -ict ../kista_3M.ict -output typ.capTbl -oa22 
+Info: Using default coyote.
+Skipped key word em_tref at line 4
+Skipped key word em_output_wlt at line 5
+Skipped key word em_variables at line 6
+Skipped key word em_conductor_unit at line 7
+Skipped key word em_via_area_unit at line 8
+Skipped key word em_via_unit at line 9
+Skipped key word dielectric_constant at line 15
+Skipped key word loss_tangent at line 64
+Skipped key word loss_tangent at line 73
+Skipped key word theta at line 76
+Skipped key word loss_tangent at line 86
+Skipped key word theta at line 89
+Skipped key word loss_tangent at line 96
+Skipped key word loss_tangent at line 103
+Skipped key word loss_tangent at line 114
+**WARN: (ENCEXT-6023):	Redistribution metal layer M3 is used in the process.
+**WARN: (ENCEXT-6004):	LEF file not specified, #CUI#generateCapTbl#write_cap_table# will not use info from LEF file.
+#Start testing solver coyote 
+#Finished testing solver coyote 
 
-Usage: #CUI#generateCapTbl#write_cap_table# [-help] [-bestModel] [-cap <float>] [-encrypt] -output <string> [-res <float>] [-solverExe <string>] [-xcap <float>] [ #CUI#-lef#-lef# <string> [ -shrinkFactor <float> ]] { -ict <string> | -incaptable <string> }
+**** Start Generating BASIC_CAP_TABLE...
+         0%  done at 09:54:23 on 12/01/2021
+        10%  done at 09:54:32 on 12/01/2021
+        20%  done at 09:54:39 on 12/01/2021
+        30%  done at 09:54:47 on 12/01/2021
+        40%  done at 09:54:55 on 12/01/2021
+        50%  done at 09:55:05 on 12/01/2021
+        60%  done at 09:55:16 on 12/01/2021
+        70%  done at 09:55:27 on 12/01/2021
+        80%  done at 09:55:39 on 12/01/2021
+        90%  done at 09:55:52 on 12/01/2021
+       100%  done at 09:56:25 on 12/01/2021
 
+**** BASIC_CAP_TABLE Completed.
+
+**** Start Generating EXTENDED_CAP_TABLE...
+#	0%   done at 09:56:25 on 12/01/2021
+#	10%  done at 09:57:54 on 12/01/2021
+#	20%  done at 09:59:50 on 12/01/2021
+#	30%  done at 10:01:30 on 12/01/2021
+#	40%  done at 10:02:40 on 12/01/2021
+#	50%  done at 10:04:20 on 12/01/2021
+#	60%  done at 10:05:43 on 12/01/2021
+#	70%  done at 10:07:21 on 12/01/2021
+#	80%  done at 10:08:43 on 12/01/2021
+#	90%  done at 10:10:01 on 12/01/2021
+#	100% done at 10:12:04 on 12/01/2021
+
+**** EXTENDED_CAP_TABLE Completed.
+
+**** #CUI#generateCapTbl#write_cap_table# Finished (CPU Time: 0:02:03  MEM: 292.215M)

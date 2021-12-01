@@ -3,7 +3,7 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : inv_soi_qrc_test2_3428.db
+EDB Library dir : inv_soi_qrc_test2_15082.db
 ECDB dir        : ./
 Top Cell        : inv_soi_qrc_test2
 CDL netlist     : /home/saul/projects/KISTA/lvs_runs/svdb/inv_soi_qrc_test2.net
@@ -13,4 +13,4 @@ Dependency map  : inv_soi_qrc_test2.lmap.perc
 Lvs file        : /home/saul/projects/KISTA/lvs_runs/svdb/inv_soi_qrc_test2.lvsfile
 Float net file : .inv_soi_qrc_test2.info.softchk
 debug           : 0
-Source Library  : inv_soi_qrc_test2_3428
+Source Library  : inv_soi_qrc_test2_15082

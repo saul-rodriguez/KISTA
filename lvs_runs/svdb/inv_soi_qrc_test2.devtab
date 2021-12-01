@@ -1,8 +1,8 @@
 Device_Table 2000
-0 0 1 Fri Nov 26 13:42:37 2021
+0 0 1 Wed Dec  1 14:59:21 2021
 2
 Device Entry 0
-0 0 24 Fri Nov 26 13:42:37 2021
+0 0 24 Wed Dec  1 14:59:21 2021
 _nmos1v
 MOS
 MN
@@ -28,7 +28,7 @@ ps
 sa
 sb
 Device Entry 1
-0 0 24 Fri Nov 26 13:42:37 2021
+0 0 24 Wed Dec  1 14:59:21 2021
 _pmos1v
 MOS
 MP

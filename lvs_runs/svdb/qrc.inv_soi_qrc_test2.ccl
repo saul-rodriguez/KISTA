@@ -20,7 +20,7 @@ filter_coupling_cap \
 	 -coupling_cap_threshold_absolute 10 \
 	 -coupling_cap_threshold_relative 0.01
 filter_res \
-	 -merge_parallel_res true \
+	 -merge_parallel_res false \
 	 -min_res 0.1
 input_db -type pvs \
 	 -run_name "inv_soi_qrc_test2" \
@@ -39,8 +39,6 @@ output_setup \
 	 -file_name "/home/saul/projects/KISTA/inv_soi_qrc_test2.sp" \
 	 -net_name_space "SCHEMATIC" \
 	 -temporary_directory_name "inv_soi_qrc_test2"
-parasitic_reduction \
-	 -enable_reduction true
 process_technology \
 	 -technology_corner \
 		"rcx_typical" \

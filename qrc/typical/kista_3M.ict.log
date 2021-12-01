@@ -1,0 +1,10 @@
+***************************************************************************************
+Command line: /pkg/cadence/installs/QUANTUS201/tools/extraction/bin/64bit/Techgen -plan -multi_cpu 8 ../ict_files/kista_3M.ict -multi_cpu 8 ../ict_files/kista_3M.ict 
+
+
+***************************************************************************************
+Command line: Techgen -concat  -Ronly -hideprocess ../ict_files/kista_3M.ict RCGEN
+
+
+INFO: Found old ./p2lvsfile and renamed to ./p2lvsfile_4
+INFO: Temp reference value is 25 .

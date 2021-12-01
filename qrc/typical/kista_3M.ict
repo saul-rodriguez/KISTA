@@ -18,7 +18,7 @@ conductor "poly_conn" {
         min_spacing         0.50
         min_width           1.00
         height             0.145
-        thickness           0.1
+        thickness          0.10
         resistivity         150
         gate_forming_layer  true
 }
@@ -64,11 +64,24 @@ dielectric "BOX" {
         loss_tangent        0
 }
 
+dielectric "diel11" {
+        conformal           TRUE
+#        conformal           FALSE
+        height             0.145
+        thickness           0.1
+        dielectric_constant 3.9
+        loss_tangent        0
+        expandedFrom        poly_conn
+        topThickness        0.1
+        theta               90
+}
+
+
 dielectric "diel1" {
 ##        conformal           TRUE
         conformal           FALSE
-        height             0.145
-        thickness           0.305
+        height             0.245
+        thickness           0.205
         dielectric_constant 3.9
         loss_tangent        0
         expandedFrom        poly_conn
