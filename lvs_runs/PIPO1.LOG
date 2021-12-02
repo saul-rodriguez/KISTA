@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $
           : sub-version  IC6.1.8-64b.500.7 
-Started at: 01-Dec-2021  14:59:17
+Started at: 02-Dec-2021  06:56:09
 User Name : saul
 Host Name : s2424
 Directory : /home/saul/projects/KISTA
@@ -10,7 +10,7 @@ CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
 
-WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.gds' already exists. It will be overwritten.
+WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KISTA/lvs_runs/DFFX1.gds' already exists. It will be overwritten.
 INFO (XSTRM-217): Reading the layer map file, /home/saul/projects/KISTA/pvs/kista_1u.layermap
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Oxide_thk' at line number '5' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Nhvt' at line number '8' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -93,13 +93,13 @@ WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.l
 INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 
 Summary of Options :
-library                                 KISTA_TEST_ANALOG
-strmFile                                /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.gds
-topCell                                 inv_soi_qrc_test2
+library                                 KISTA_SOI_STDLIB
+strmFile                                /home/saul/projects/KISTA/lvs_runs/DFFX1.gds
+topCell                                 DFFX1
 view                                    layout
 runDir                                  /home/saul/projects/KISTA/lvs_runs
 logFile                                 /home/saul/projects/KISTA/lvs_runs/PIPO1.LOG
-techLib                                 KISTA_SOI_TECH
+techLib                                 KISTA_SOI_STDLIB_TECH
 hierDepth                               32
 maxVertices                             2048
 layerMap                                /home/saul/projects/KISTA/pvs/kista_1u.layermap
@@ -108,20 +108,19 @@ labelDepth                              32
 case                                    Preserve
 convertDot                              node
 
-INFO (XSTRM-223): 1. Translating stdVia KISTA_SOI_TECH/M2_M1/layout as STRUCTURE M2_M1_CDNS_1.
-INFO (XSTRM-223): 2. Translating stdVia KISTA_SOI_TECH/M3_M2/layout as STRUCTURE M3_M2_CDNS_2.
-INFO (XSTRM-223): 3. Translating stdVia KISTA_SOI_TECH/M1_PO/layout as STRUCTURE M1_PO_CDNS_3.
-INFO (XSTRM-223): 4. Translating cellView KISTA_1UM/nmos3/layout as STRUCTURE nmos3_CDNS_4.
-INFO (XSTRM-223): 5. Translating cellView KISTA_1UM/pmos3/layout as STRUCTURE pmos3_CDNS_5.
-INFO (XSTRM-223): 6. Translating cellView KISTA_TEST_ANALOG/inv_soi_qrc_test2/layout as STRUCTURE inv_soi_qrc_test2.
+INFO (XSTRM-223): 1. Translating stdVia KISTA_SOI_TECH/M1_PO/layout as STRUCTURE M1_PO_CDNS_1.
+INFO (XSTRM-223): 2. Translating stdVia KISTA_SOI_TECH/M2_M1/layout as STRUCTURE M2_M1_CDNS_2.
+INFO (XSTRM-223): 3. Translating cellView KISTA_1UM/nmos3/layout as STRUCTURE nmos3_CDNS_3.
+INFO (XSTRM-223): 4. Translating cellView KISTA_1UM/pmos3/layout as STRUCTURE pmos3_CDNS_4.
+INFO (XSTRM-223): 5. Translating cellView KISTA_SOI_STDLIB/DFFX1/layout as STRUCTURE DFFX1.
 INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 
 Summary of Objects Translated:
-	Scalar Instances:                       2
+	Scalar Instances:                       28
 	Array Instances:                        0
 	Polygons:                               0
 	Paths:                                  0
-	Rectangles:                             59
+	Rectangles:                             46
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -133,13 +132,13 @@ Summary of Objects Translated:
 	Area Halos:                             0
 	Markers:                                0
 	Rows:                                   0
-	Standard Vias                           9
+	Standard Vias                           15
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               8
+	Pathsegs:                               125
 	Text:                                   0
-	TextDisplay:                            5
-	Cells:                                  6
+	TextDisplay:                            7
+	Cells:                                  5
 
-Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 5844KB
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 7152KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '79' warning(s) found.

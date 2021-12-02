@@ -1,1 +1,1 @@
-KISTA_TEST_ANALOG inv_soi_qrc_test2 layout inv_soi_qrc_test2
+KISTA_SOI_STDLIB DFFX1 layout DFFX1

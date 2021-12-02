@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : inv_soi_qrc_test2_15082.db
+EDB Library dir : DFFX1_1895.db
 ECDB dir        : ./
-Top Cell        : inv_soi_qrc_test2
-CDL netlist     : /home/saul/projects/KISTA/lvs_runs/svdb/inv_soi_qrc_test2.net
-Layer map file  : /home/saul/projects/KISTA/lvs_runs/svdb/inv_soi_qrc_test2.ecdbmap
-Text map file   : /home/saul/projects/KISTA/lvs_runs/svdb/inv_soi_qrc_test2.ports
-Dependency map  : inv_soi_qrc_test2.lmap.perc
-Lvs file        : /home/saul/projects/KISTA/lvs_runs/svdb/inv_soi_qrc_test2.lvsfile
-Float net file : .inv_soi_qrc_test2.info.softchk
+Top Cell        : DFFX1
+CDL netlist     : /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.net
+Layer map file  : /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.ecdbmap
+Text map file   : /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.ports
+Dependency map  : DFFX1.lmap.perc
+Lvs file        : /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.lvsfile
+Float net file : .DFFX1.info.softchk
 debug           : 0
-Source Library  : inv_soi_qrc_test2_15082
+Source Library  : DFFX1_1895

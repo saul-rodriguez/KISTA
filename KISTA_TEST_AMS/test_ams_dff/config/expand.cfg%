@@ -1,4 +1,4 @@
-//Revision 16
+//Revision 18
 //NOTE
 // Default austriamicrosystems template for AMS Designer
 // Note:
@@ -17,7 +17,7 @@ viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spec
 stoplist symbol, spectre;
 
 
-cell KISTA_SOI_STDLIB.DFFX1 binding :functional;
+cell KISTA_SOI_STDLIB.DFFX1 binding :schematic;
 
 
 endconfig

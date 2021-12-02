@@ -11,7 +11,7 @@ updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
 Running Artist Hierarchical Netlisting ...
 KISTA libInit.il file is loaded
 initializing MOS callbacks
-End netlisting Dec  1 14:59:18 2021
+End netlisting Dec  2 06:56:10 2021
 
 Running simin
 
@@ -19,8 +19,8 @@ Running runSim()...
 
 
 Running runsim with simulator: "auCdl"
-Begin simulation:    Dec  1 14:59:18 2021
+Begin simulation:    Dec  2 06:56:10 2021
 
 auCdl netlisting completed
-End simulation:      Dec  1 14:59:18 2021
+End simulation:      Dec  2 06:56:10 2021
 INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.

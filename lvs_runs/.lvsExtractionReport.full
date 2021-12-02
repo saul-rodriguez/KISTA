@@ -5,13 +5,13 @@
 			*****************************************************
 
 
-Report File Name         : inv_soi_qrc_test2.rep
-ERC Summary File         : inv_soi_qrc_test2.sum
-LVS Comparison Report    : inv_soi_qrc_test2.rep.cls
-LVS Softchk Report       : inv_soi_qrc_test2.softchk
-Layout Name              : /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.gds ("inv_soi_qrc_test2")
+Report File Name         : DFFX1.rep
+ERC Summary File         : DFFX1.sum
+LVS Comparison Report    : DFFX1.rep.cls
+LVS Softchk Report       : DFFX1.softchk
+Layout Name              : /home/saul/projects/KISTA/lvs_runs/DFFX1.gds ("DFFX1")
 User Name                : saul
-Creation Time            : Wed Dec  1 14:59:21 2021
+Creation Time            : Thu Dec  2 06:56:13 2021
 Current directory        : /home/saul/projects/KISTA/lvs_runs
 PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 
@@ -25,9 +25,8 @@ PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 
 
 Clean cell list (added by extraction report parser )
- for cell "M1_PO_CDNS_3"
- for cell "M2_M1_CDNS_1"
- for cell "M3_M2_CDNS_2"
- for cell "inv_soi_qrc_test2"
- for cell "nmos3_CDNS_4"
- for cell "pmos3_CDNS_5"
+ for cell "DFFX1"
+ for cell "M1_PO_CDNS_1"
+ for cell "M2_M1_CDNS_2"
+ for cell "nmos3_CDNS_3"
+ for cell "pmos3_CDNS_4"

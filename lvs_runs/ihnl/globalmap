@@ -1,8 +1,10 @@
 CADENCE IHNL11140
 $model
-KISTA_TEST_ANALOG/inv_soi_qrc_test2/schematic inv_soi_qrc_test2
+KISTA_SOI_STDLIB/DFFX1/schematic DFFX1
 $endmodel
 $net
+VSS! VSS!
+VDD! VDD!
 $endnet
 $param
 $endparam

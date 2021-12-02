@@ -76,6 +76,6 @@ hnlLastNetNameDifferentFrom = '( )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
-                    ( "KISTA_TEST_ANALOG" "1636963733" )
+                    ( "KISTA_SOI_STDLIB" "1637219307" )
                   )
 hnlLastDesignVars = '( )

@@ -1,16 +1,16 @@
-\# Program start time:     UTC 2021.11.15 21:35:58.009
-\# Local time: CET (UTC+01:00) 2021.11.15 22:35:58.009
+\# Program start time:     UTC 2021.12.02 06:56:43.233
+\# Local time: CET (UTC+01:00) 2021.12.02 07:56:43.233
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $
 \o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.7  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso27788 -mpshost s2424 -davinciService DaVinciService_27788_1637012151 -log /home/saul/projects/KISTA/logs_saul/logs0/Job0.log -licenseLockFileName /home/saul/projects/KISTA/.tmp_saul/.s2424_27788 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 0
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso32276 -mpshost s2424 -davinciService DaVinciService_32276_1638428196 -log /home/saul/projects/KISTA/logs_saul/logs0/Job0.log -licenseLockFileName /home/saul/projects/KISTA/.tmp_saul/.s2424_32276 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 0
 \# Host name (type):	s2424 (x86_64)
 \# Operating system:	Linux 3.10.0-1160.42.2.el7.x86_64 #1 SMP Tue Sep 7 14:49:57 UTC 2021
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
 \# X display name (WxH):	:95 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			RealVNC Ltd (VNC nograph server, PID 439)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 14957)
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x3ffffa (4194298)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        530 MB
-\# Available memory:	      4,035 MB
+\# Initial sbrk value:	        516 MB
+\# Available memory:	     38,455 MB
 \# System memory:	     96,361 MB
-\# Maximum memory size:	     95,970 MB
-\# Max mem available:	      4,174 MB
+\# Maximum memory size:	     95,984 MB
+\# Max mem available:	     38,594 MB
 \# Initial memory used:	        139 MB
 \#        process size:	      1,382 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	s2424:/home/saul/projects/KISTA
-\# Process Id:		446
+\# Process Id:		14963
 \o 
 \o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
@@ -65,33 +65,34 @@
 \o Loading socket.cxt 
 \o Loading par.cxt 
 \o Loading alvs.cxt 
+\# Memory report: using         253 MB, process size 1,491 MB at UTC 2021.12.02 06:56:45.017
 \o Loading caa.cxt 
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
-\# Memory report: using         268 MB, process size 1,592 MB at UTC 2021.11.15 21:36:00.108
 \o Loading adexl.cxt 
 \o *Info*    Exporting services from client ... 
 \o 
 \o Loading cli.cxt 
 \o Loading cle.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso27788, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso32276, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 446 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 14963 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\w *WARNING* The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
 \o *Info*    Client has finished starting ... 
 \o 
 \p > 
 \a _treeSetOpcGUI(t)
 \r t
-\# Available memory:          3,902 MB at UTC 2021.11.15 21:36:08.309
-\# Memory report: Maximum memory size now 4,221 MB at UTC 2021.11.15 21:36:08.309
-\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.11.15 21:36:08.309
-\# Memory report: Maximum memory size now 4,134 MB at UTC 2021.11.15 21:36:38.309
+\# Available memory:         38,264 MB at UTC 2021.12.02 06:56:54.309
+\# Memory report: Maximum memory size now 38,583 MB at UTC 2021.12.02 06:56:54.309
+\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.12.02 06:56:54.309
 \o 
 \o *Info*    Received signal SIGTERM.
 \o 
 \o 
 \o Loading simui.cxt 
-\# Memory report: on exit            324 MB, process size 1,647 MB at UTC 2021.11.15 21:39:58.230
+\# Memory report: on exit            324 MB, process size 1,647 MB at UTC 2021.12.02 07:00:45.432
 \# Memory report: peak usage         324 MB, process size 1,647 MB

@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/saul/projects/KISTA
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/saul/projects/KISTA/lvs_runs/.preset.autosave
-"Job Signature" internal none IPVS_1638367154_30293
+"Job Signature" internal none IPVS_1638424567_32667
 "PVS Job Mode" internal none lvs
 "Run Directory" internal none /home/saul/projects/KISTA/lvs_runs
 "Technology Mapping File" internal none /home/saul/projects/KISTA/pvtech.lib
@@ -12,31 +12,31 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1638367156
+"PVS Job Time" internal none 1638424568
 "CDL Out Display Pin Information" internal none ENABLED
 "CDL Out Stop List" internal text auCdl
 "CDL Out View List" internal text auCdl schematic
 "Control File" input text /home/saul/projects/KISTA/lvs_runs/pvslvsctl
 "DFII version" internal none 6.1.8.0
 "Do not check rules files before run" internal none ENABLED
-"Extracted Spice File" output text /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.spi
-"Input Layout" input none OA: KISTA_TEST_ANALOG inv_soi_qrc_test2 layout
-"Input Schematic" input none OA: KISTA_TEST_ANALOG inv_soi_qrc_test2 schematic
-"Intermediate GDSII File" output none /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.gds
+"Extracted Spice File" output text /home/saul/projects/KISTA/lvs_runs/DFFX1.spi
+"Input Layout" input none OA: KISTA_SOI_STDLIB DFFX1 layout
+"Input Schematic" input none OA: KISTA_SOI_STDLIB DFFX1 schematic
+"Intermediate GDSII File" output none /home/saul/projects/KISTA/lvs_runs/DFFX1.gds
 "Intermediate GDSII File creation Errors" output none /home/saul/projects/KISTA/lvs_runs/PIPO1.LOG
 "Intermediate OASIS File creation Errors" output none /home/saul/projects/KISTA/lvs_runs/PIPO1.LOG
-"Layout Cell Name" internal none inv_soi_qrc_test2
+"Layout Cell Name" internal none DFFX1
 "Layout ConvertPin" internal text geometry
-"Layout GDSII" input none /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.gds
+"Layout GDSII" input none /home/saul/projects/KISTA/lvs_runs/DFFX1.gds
 "Layout HierDepth" internal none 32
 "Layout Layermap" internal text /home/saul/projects/KISTA/pvs/kista_1u.layermap
-"Layout Library Name" internal none KISTA_TEST_ANALOG
+"Layout Library Name" internal none KISTA_SOI_STDLIB
 "Layout MaxVertices" internal none 2048
 "Layout NoConvertHalfWidthPath" input none nil
 "Layout ReplaceBusBitChar" input none nil
 "Layout Scale" internal none 0.0005
-"Layout TechLib" internal none KISTA_SOI_TECH
-"Layout Top Cell" internal none inv_soi_qrc_test2
+"Layout TechLib" internal none KISTA_SOI_STDLIB_TECH
+"Layout Top Cell" internal none DFFX1
 "Layout View Name" internal none layout
 "Output Layout Cellmap I" internal text /home/saul/projects/KISTA/lvs_runs/lay_cellMap.txt
 "PIPO Log I" log text  /home/saul/projects/KISTA/lvs_runs/PIPO1.LOG
@@ -51,43 +51,43 @@
 "SI OSS Directory" internal none /home/saul/projects/KISTA/lvs_runs/
 "SI Output" log text  /home/saul/projects/KISTA/lvs_runs/SI.OUT
 "SI Setup File" internal text  /home/saul/projects/KISTA/lvs_runs/si.env
-"Schematic Cell Name" internal none inv_soi_qrc_test2
-"Schematic Library Name" internal none KISTA_TEST_ANALOG
-"Schematic Netlist" output text /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.cdl
-"Schematic Top Cell" internal none inv_soi_qrc_test2
+"Schematic Cell Name" internal none DFFX1
+"Schematic Library Name" internal none KISTA_SOI_STDLIB
+"Schematic Netlist" output text /home/saul/projects/KISTA/lvs_runs/DFFX1.cdl
+"Schematic Top Cell" internal none DFFX1
 "Schematic View Name" internal none schematic
 "Simulator Mode" internal none auCdl
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1638367161
-"Comparison Report" output cls /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.rep.cls
+"PVS Job Time" internal none 1638424573
+"Comparison Report" output cls /home/saul/projects/KISTA/lvs_runs/DFFX1.rep.cls
 "ERC Result" internal none EMPTY
-"ERC Summary" output text /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.sum
-"Extracted Spice File" output text /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.spi
-"Extraction Report" output erc /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.rep
+"ERC Summary" output text /home/saul/projects/KISTA/lvs_runs/DFFX1.sum
+"Extracted Spice File" output text /home/saul/projects/KISTA/lvs_runs/DFFX1.spi
+"Extraction Report" output erc /home/saul/projects/KISTA/lvs_runs/DFFX1.rep
 "Extraction Result" internal none CLEAN
 "LVS Report Options" internal none -none
-"Layout GDSII" input none /home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.gds
-"Layout Top Cell" internal none inv_soi_qrc_test2
+"Layout GDSII" input none /home/saul/projects/KISTA/lvs_runs/DFFX1.gds
+"Layout Top Cell" internal none DFFX1
 "Mask SVDB Directory" internal none /home/saul/projects/KISTA/lvs_runs/svdb
 "PVS Job Mode" internal none lvs
-"QRC Top Cell" internal none inv_soi_qrc_test2
+"QRC Top Cell" internal none DFFX1
 "Report MaxResults" internal none 1000
 "Rule File" input text /home/saul/projects/KISTA/lvs_runs/.technology.rul
 "Run Directory" internal none /home/saul/projects/KISTA/lvs_runs/
-"Schematic Top Cell" internal none inv_soi_qrc_test2
+"Schematic Top Cell" internal none DFFX1
 "UI Data" internal none ENABLED
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1638367161
+"PVS Job Time" internal none 1638424573
 "Comparison Result" internal none MATCH
-"LVS Run Name" internal none inv_soi_qrc_test2.rep
+"LVS Run Name" internal none DFFX1.rep
 "Run Directory" internal none /home/saul/projects/KISTA/lvs_runs/
 "Schematic Netlist" input text /home/saul/projects/KISTA/lvs_runs/netlist
 "UI Data" internal none ENABLED
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsnvn
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1638367163
+"PVS Job Time" internal none 1638424575

@@ -5,13 +5,13 @@ hierDepth	32
 labelCase	"preserve"
 labelDepth	32
 layerMap	"/home/saul/projects/KISTA/pvs/kista_1u.layermap"
-library	"KISTA_TEST_ANALOG"
+library	"KISTA_SOI_STDLIB"
 logFile	"/home/saul/projects/KISTA/lvs_runs/PIPO1.LOG"
 maxVertices	2048
 pinAttNum	0
 runDir	"/home/saul/projects/KISTA/lvs_runs"
-strmFile	"/home/saul/projects/KISTA/lvs_runs/inv_soi_qrc_test2.gds"
+strmFile	"/home/saul/projects/KISTA/lvs_runs/DFFX1.gds"
 strmVersion	5
-techLib	"KISTA_SOI_TECH"
-topCell	"inv_soi_qrc_test2"
+techLib	"KISTA_SOI_STDLIB_TECH"
+topCell	"DFFX1"
 view	"layout"
