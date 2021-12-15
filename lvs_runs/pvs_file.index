@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/saul/projects/KISTA
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/saul/projects/KISTA/lvs_runs/.preset.autosave
-"Job Signature" internal none IPVS_1638424567_32667
+"Job Signature" internal none IPVS_1639586466_9850
 "PVS Job Mode" internal none lvs
 "Run Directory" internal none /home/saul/projects/KISTA/lvs_runs
 "Technology Mapping File" internal none /home/saul/projects/KISTA/pvtech.lib
@@ -12,7 +12,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1638424568
+"PVS Job Time" internal none 1639586470
 "CDL Out Display Pin Information" internal none ENABLED
 "CDL Out Stop List" internal text auCdl
 "CDL Out View List" internal text auCdl schematic
@@ -44,7 +44,6 @@
 "PIPO Setup File I" internal text  /home/saul/projects/KISTA/lvs_runs/pipo1.setup
 "PVS Job Log" log text /home/saul/projects/KISTA/lvs_runs/pvsuilvs.log
 "PVS Job Mode" internal none lvs
-"Quantus QRC Data" internal none ENABLED
 "Rule File" input text /home/saul/projects/KISTA/lvs_runs/.technology.rul
 "Run Directory" internal none /home/saul/projects/KISTA/lvs_runs
 "SI Log" log text  /home/saul/projects/KISTA/lvs_runs/SI.LOG
@@ -60,7 +59,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1638424573
+"PVS Job Time" internal none 1639586474
 "Comparison Report" output cls /home/saul/projects/KISTA/lvs_runs/DFFX1.rep.cls
 "ERC Result" internal none EMPTY
 "ERC Summary" output text /home/saul/projects/KISTA/lvs_runs/DFFX1.sum
@@ -70,9 +69,7 @@
 "LVS Report Options" internal none -none
 "Layout GDSII" input none /home/saul/projects/KISTA/lvs_runs/DFFX1.gds
 "Layout Top Cell" internal none DFFX1
-"Mask SVDB Directory" internal none /home/saul/projects/KISTA/lvs_runs/svdb
 "PVS Job Mode" internal none lvs
-"QRC Top Cell" internal none DFFX1
 "Report MaxResults" internal none 1000
 "Rule File" input text /home/saul/projects/KISTA/lvs_runs/.technology.rul
 "Run Directory" internal none /home/saul/projects/KISTA/lvs_runs/
@@ -81,7 +78,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1638424573
+"PVS Job Time" internal none 1639586474
 "Comparison Result" internal none MATCH
 "LVS Run Name" internal none DFFX1.rep
 "Run Directory" internal none /home/saul/projects/KISTA/lvs_runs/
@@ -90,4 +87,4 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsnvn
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1638424575
+"PVS Job Time" internal none 1639586476

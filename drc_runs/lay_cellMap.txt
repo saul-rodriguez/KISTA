@@ -1,1 +1,1 @@
-KISTA_TEST_ANALOG test_opamp_modgen layout test_opamp_modgen
+KISTA_SOI_STDLIB DFFX1 layout DFFX1

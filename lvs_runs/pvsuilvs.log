@@ -5,7 +5,6 @@ Running: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/pvsvirt \
   -df2_version 6.1.8.0 \
   -run_dir /home/saul/projects/KISTA/lvs_runs \
   -no_rules_check \
-  -rc_data \
   -schLibName KISTA_SOI_STDLIB \
   -schCellName DFFX1 \
   -schViewName schematic \
@@ -35,7 +34,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $
           : sub-version  IC6.1.8-64b.500.7 
-Started at: 02-Dec-2021  06:56:09
+Started at: 15-Dec-2021  17:41:10
 User Name : saul
 Host Name : s2424
 Directory : /home/saul/projects/KISTA
@@ -154,11 +153,11 @@ INFO (XSTRM-223): 5. Translating cellView KISTA_SOI_STDLIB/DFFX1/layout as STRUC
 INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 
 Summary of Objects Translated:
-	Scalar Instances:                       28
+	Scalar Instances:                       27
 	Array Instances:                        0
 	Polygons:                               0
 	Paths:                                  0
-	Rectangles:                             46
+	Rectangles:                             61
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -173,12 +172,12 @@ Summary of Objects Translated:
 	Standard Vias                           15
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               125
+	Pathsegs:                               126
 	Text:                                   0
 	TextDisplay:                            7
 	Cells:                                  5
 
-Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 7152KB
+Elapsed Time: 0.3s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 6332KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '79' warning(s) found.
 
 Creation of CDL for KISTA_SOI_STDLIB/DFFX1/schematic is started
@@ -196,7 +195,7 @@ updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
 Running Artist Hierarchical Netlisting ...
 KISTA libInit.il file is loaded
 initializing MOS callbacks
-End netlisting Dec  2 06:56:10 2021
+End netlisting Dec 15 17:41:11 2021
 
 Running simin
 
@@ -204,10 +203,10 @@ Running runSim()...
 
 
 Running runsim with simulator: "auCdl"
-Begin simulation:    Dec  2 06:56:10 2021
+Begin simulation:    Dec 15 17:41:11 2021
 
 auCdl netlisting completed
-End simulation:      Dec  2 06:56:10 2021
+End simulation:      Dec 15 17:41:11 2021
 INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.
 
 ********************************************************************************
@@ -219,9 +218,9 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      1895
-Starting Time:   Thu Dec  2 06:56:13 2021 (Thu Dec  2 05:56:13 2021 GMT)
-With parameters: -lvs -top_cell DFFX1 -source_top_cell DFFX1 -spice /home/saul/projects/KISTA/lvs_runs/DFFX1.spi -rc_data -control /home/saul/projects/KISTA/lvs_runs/pvslvsctl -ui_data -gdb_data -ai /home/saul/projects/KISTA/lvs_runs/.technology.rul 
+Process Id:      32011
+Starting Time:   Wed Dec 15 17:41:14 2021 (Wed Dec 15 16:41:14 2021 GMT)
+With parameters: -lvs -top_cell DFFX1 -source_top_cell DFFX1 -spice /home/saul/projects/KISTA/lvs_runs/DFFX1.spi -control /home/saul/projects/KISTA/lvs_runs/pvslvsctl -ui_data -gdb_data -ai /home/saul/projects/KISTA/lvs_runs/.technology.rul 
 ********************************************************************************
 
 
@@ -230,7 +229,7 @@ Get host info ...
 ########################################################################
 CPU info:
     model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
-    cpu MHz         :  1495.605
+    cpu MHz         :  1391.162
     cache size      :  20480 KB
     physical cores  :  16
     logical cores   :  32
@@ -240,42 +239,42 @@ Memory info:
     64168M physical memory installed.
 
     MemTotal:       65709328 kB
-    MemFree:         7518140 kB
-    MemAvailable:   26476392 kB
+    MemFree:        15831632 kB
+    MemAvailable:   27982256 kB
     Buffers:               0 kB
-    Cached:         19533740 kB
-    SwapCached:        11360 kB
-    Active:         41472700 kB
-    Inactive:       12236532 kB
-    Active(anon):   32383364 kB
-    Inactive(anon):  3448200 kB
-    Active(file):    9089336 kB
-    Inactive(file):  8788332 kB
+    Cached:         13201048 kB
+    SwapCached:        54476 kB
+    Active:         38098420 kB
+    Inactive:        9157604 kB
+    Active(anon):   32023208 kB
+    Inactive(anon):  3747256 kB
+    Active(file):    6075212 kB
+    Inactive(file):  5410348 kB
     Unevictable:           0 kB
     Mlocked:               0 kB
     SwapTotal:      32964604 kB
-    SwapFree:       32313804 kB
-    Dirty:                48 kB
+    SwapFree:       29715660 kB
+    Dirty:               220 kB
     Writeback:             0 kB
-    AnonPages:      34162976 kB
-    Mapped:           337788 kB
-    Shmem:           1656288 kB
-    Slab:            2054004 kB
-    SReclaimable:    1572572 kB
-    SUnreclaim:       481432 kB
-    KernelStack:       11584 kB
-    PageTables:       106500 kB
+    AnonPages:      34001588 kB
+    Mapped:           318100 kB
+    Shmem:           1715488 kB
+    Slab:            1572568 kB
+    SReclaimable:    1157052 kB
+    SUnreclaim:       415516 kB
+    KernelStack:       11312 kB
+    PageTables:       106356 kB
     NFS_Unstable:          0 kB
     Bounce:                0 kB
     WritebackTmp:          0 kB
     CommitLimit:    65819268 kB
-    Committed_AS:   35493880 kB
+    Committed_AS:   34794116 kB
     VmallocTotal:   34359738367 kB
     VmallocUsed:      422088 kB
     VmallocChunk:   34325399548 kB
     Percpu:            10240 kB
     HardwareCorrupted:     0 kB
-    AnonHugePages:   2734080 kB
+    AnonHugePages:   2588672 kB
     CmaTotal:              0 kB
     CmaFree:               0 kB
     HugePages_Total:       0
@@ -319,7 +318,6 @@ LVS_REPORT_OPT -none;
 REPORT_SUMMARY -erc "DFFX1.sum" -replace;
 MAX_RESULTS -erc 1000;
 RESULTS_DB -erc "/home/saul/projects/KISTA/lvs_runs/DFFX1.erc_errors.ascii" -ascii;
-MASK_SVDB_DIR /home/saul/projects/KISTA/lvs_runs/svdb;
 KEEP_LAYERS -none;
 SCHEMATIC_FORMAT cdl;
 SCHEMATIC_PATH "/home/saul/projects/KISTA/lvs_runs/DFFX1.cdl";
@@ -342,7 +340,6 @@ UNIT -length u;
 TEXT_DEPTH -primary;
 [WARN]: TEXT_DEPTH at line 20 in file /home/saul/projects/KISTA/pvs/./kista_lvs.rul is skipped. It is set in control file.
 MASK_SVDB_DIR svdb;
-[WARN]: MASK_SVDB_DIR at line 21 in file /home/saul/projects/KISTA/pvs/./kista_lvs.rul is skipped. It is set in control file.
 LAYOUT_PRESERVE_CASE -property yes;
 LAYER_DEF empty 999;
 LAYER_DEF Metal1 1020;
@@ -567,13 +564,13 @@ Parsing Layer Mapping File DFFX1.lmap ...
 
 GDSII Input Summary
 
-Date: Thu Dec  2 06:56:13 2021
+Date: Wed Dec 15 17:41:15 2021
 GDSII file: /home/saul/projects/KISTA/lvs_runs/DFFX1.gds
-GDSII size: 14336
+GDSII size: 16384
 GDSII version: 5.0
 GDSII library name: KISTA_SOI_STDLIB
-Last Modified: 22:35:2 11/22/2021
-Last Accessed: 6:56:9 12/2/2021
+Last Modified: 17:40:15 12/15/2021
+Last Accessed: 17:41:10 12/15/2021
 data base unit in user units    : 0.0005
 physical size of data base unit : 5e-10
 magnification: 1
@@ -583,7 +580,7 @@ loading cell M2_M1_CDNS_2 ...
 loading cell nmos3_CDNS_3 ...
 loading cell pmos3_CDNS_4 ...
 loading cell DFFX1 ...
-Time: cpu=0.01/0.03  real=0.05/0.12  Memory: 17.20/17.38/17.38
+Time: cpu=0.01/0.03  real=0.06/0.13  Memory: 17.20/17.38/17.38
 
 
 Cell Summary:
@@ -593,29 +590,29 @@ Cell Summary:
 M1_PO_CDNS_1               0           3           0           9           9
 M2_M1_CDNS_2               0           3           0           6           6
 nmos3_CDNS_3               0          12           0          14          14
-pmos3_CDNS_4               0          15           0          14          14
-DFFX1                     43         137           7           1           1
+pmos3_CDNS_4               0          15           0          13          13
+DFFX1                     42         153           7           1           1
 ----------------------------------------------------------------------------
-TOTAL CELL = 5;  INSTANCE = 43;  GEOMETRY = 170;  LABEL = 7
+TOTAL CELL = 5;  INSTANCE = 42;  GEOMETRY = 186;  LABEL = 7
 
 Layer Summary:
 ----------------------------------------------------------------------------
     LAYER               ID       HPN      HTC        FPN       FTC
 ----------------------------------------------------------------------------
-Cont                  1005         9         0       121         0
+Cont                  1005        14         0       121         0
 M1Resdum              1009         0         0         0         0
 M2Resdum              1010         0         0         0         0
 M3Resdum              1011         0         0         0         0
 M4Resdum              1012         0         0         0         0
-Metal1                1020        95         0       212         0
+Metal1                1020        99         0       212         0
 Metal2                1021         4         0         9         0
 Metal3                1022         0         0         0         0
 Metal4                1023         0         0         0         0
 Nimp                  1037         1         0        14         0
-Nwell                 1039         1         0        14         0
-Oxide                 1041         2         0        28         0
-Pimp                  1045         1         0        14         0
-Poly                  1047        54         0       114         0
+Nwell                 1039         2         0        14         0
+Oxide                 1041         3         0        28         0
+Pimp                  1045         2         0        14         0
+Poly                  1047        57         0       115         0
 Psub                  1048         0         0         0         0
 ResWdum               1049         0         0         0         0
 Resdum                1050         0         0         0         0
@@ -638,12 +635,12 @@ text                  1098         0         0         0         0
 nwell_conn_text      10645         0         0         0         0
 nwell_label          10765         0         0         0         0
 nwell_pin            10875         0         0         0         0
-KTH_source           11000         2         0        28         0
+KTH_source           11000         3         0        28         0
 ----------------------------------------------------------------------------
 
 CHIP EXTENT: 0 -2000 240000 74000
 
-Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.21/17.38/17.38
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 17.21/17.38/17.38
 
 
 Ports ...
@@ -681,12 +678,12 @@ Preparing Hierarchical Database ...
 Constructing Hierarchical Database ...
 ========================================================================
 
-Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.21/17.38/17.38
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 17.21/17.38/17.38
 
 
   REORGANIZE HIERARCHIES (1)...
 
-Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.21/17.38/17.38
+Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 17.21/17.38/17.38
 
   REORGANIZE HIERARCHIES (2)...
 
@@ -700,29 +697,29 @@ Cell Summary:
 M1_PO_CDNS_1               0           3           0           9           9
 M2_M1_CDNS_2               0           3           0           6           6
 nmos3_CDNS_3               0          12           0          14          14
-pmos3_CDNS_4               0          15           0          14          14
-DFFX1                     43         137           7           1           1
+pmos3_CDNS_4               0          15           0          13          13
+DFFX1                     42         153           7           1           1
 ----------------------------------------------------------------------------
-TOTAL CELL = 5;  INSTANCE = 43;  GEOMETRY = 170;  LABEL = 7
+TOTAL CELL = 5;  INSTANCE = 42;  GEOMETRY = 186;  LABEL = 7
 
 Layer Summary:
 ----------------------------------------------------------------------------
     LAYER               ID       HPN      HTC        FPN       FTC
 ----------------------------------------------------------------------------
-Cont                  1005         9         0       121         0
+Cont                  1005        14         0       121         0
 M1Resdum              1009         0         0         0         0
 M2Resdum              1010         0         0         0         0
 M3Resdum              1011         0         0         0         0
 M4Resdum              1012         0         0         0         0
-Metal1                1020        95         0       212         0
+Metal1                1020        99         0       212         0
 Metal2                1021         4         0         9         0
 Metal3                1022         0         0         0         0
 Metal4                1023         0         0         0         0
 Nimp                  1037         1         0        14         0
-Nwell                 1039         1         0        14         0
-Oxide                 1041         2         0        28         0
-Pimp                  1045         1         0        14         0
-Poly                  1047        54         0       114         0
+Nwell                 1039         2         0        14         0
+Oxide                 1041         3         0        28         0
+Pimp                  1045         2         0        14         0
+Poly                  1047        57         0       115         0
 Psub                  1048         0         0         0         0
 ResWdum               1049         0         0         0         0
 Resdum                1050         0         0         0         0
@@ -745,7 +742,7 @@ text                  1098         0         0         0         0
 nwell_conn_text      10645         0         0         0         0
 nwell_label          10765         0         0         0         0
 nwell_pin            10875         0         0         0         0
-KTH_source           11000         2         0        28         0
+KTH_source           11000         3         0        28         0
 ----------------------------------------------------------------------------
 
 Layer Summary(Texts For Connectivity):
@@ -789,10 +786,10 @@ Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.15/9.34/13.36
 Merge Layers ...
 ========================================================================
     Cont = OR Cont
-    generate layer Cont, TYP = P, HPN = 7, FPN = 93, HEN = 28, FEN = 372
+    generate layer Cont, TYP = P, HPN = 11, FPN = 93, HEN = 44, FEN = 372
 
     Metal1 = OR Metal1
-    generate layer Metal1, TYP = P, HPN = 28, FPN = 93, HEN = 232, FEN = 492
+    generate layer Metal1, TYP = P, HPN = 28, FPN = 91, HEN = 232, FEN = 484
 
     Metal2 = OR Metal2
     generate layer Metal2, TYP = P, HPN = 4, FPN = 9, HEN = 16, FEN = 36
@@ -801,22 +798,22 @@ Merge Layers ...
     generate layer Nimp, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
 
     Nwell = OR Nwell
-    generate layer Nwell, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
+    generate layer Nwell, TYP = P, HPN = 2, FPN = 14, HEN = 8, FEN = 56
 
     Oxide = OR Oxide
-    generate layer Oxide, TYP = P, HPN = 2, FPN = 28, HEN = 8, FEN = 112
+    generate layer Oxide, TYP = P, HPN = 3, FPN = 28, HEN = 12, FEN = 112
 
     Pimp = OR Pimp
-    generate layer Pimp, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
+    generate layer Pimp, TYP = P, HPN = 2, FPN = 14, HEN = 8, FEN = 56
 
     Poly = OR Poly
-    generate layer Poly, TYP = P, HPN = 13, FPN = 47, HEN = 132, FEN = 268
+    generate layer Poly, TYP = P, HPN = 13, FPN = 46, HEN = 140, FEN = 272
 
     Via1 = OR Via1
     generate layer Via1, TYP = P, HPN = 1, FPN = 6, HEN = 4, FEN = 24
 
     KTH_source = OR KTH_source
-    generate layer KTH_source, TYP = P, HPN = 2, FPN = 28, HEN = 8, FEN = 112
+    generate layer KTH_source, TYP = P, HPN = 3, FPN = 28, HEN = 12, FEN = 112
 
 Time: cpu=0.01/0.04  real=0.01/0.14  Memory: 9.15/9.34/17.38
 
@@ -831,8 +828,8 @@ Execute Operations ...
 operation group: 1/32
     bulk = EXTENT
 ========================================================================
-    generate layer bulk, TYP = P, HPN = 3, FPN = 29, HEN = 20, FEN = 124
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.16/9.34/17.63
+    generate layer bulk, TYP = P, HPN = 3, FPN = 28, HEN = 28, FEN = 128
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.15/9.34/17.63
 
 
 
@@ -840,7 +837,7 @@ operation group: 2/32
     metal4_conn = NOT Metal4 M4Resdum
 ========================================================================
     generate layer metal4_conn, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.16/9.34/9.34
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.15/9.34/9.34
 
     delete layer Metal4
     delete layer M4Resdum
@@ -850,7 +847,7 @@ operation group: 3/32
     metal3_conn = NOT Metal3 M3Resdum
 ========================================================================
     generate layer metal3_conn, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.16/9.34/9.34
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.15/9.34/9.34
 
     delete layer Metal3
     delete layer M3Resdum
@@ -860,7 +857,7 @@ operation group: 4/32
     metal2_conn = NOT Metal2 M2Resdum
 ========================================================================
     generate layer metal2_conn, TYP = P, HPN = 4, FPN = 9, HEN = 16, FEN = 36
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.16/9.34/9.34
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.15/9.34/9.34
 
     delete layer Metal2
     delete layer M2Resdum
@@ -869,8 +866,8 @@ Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.16/9.34/9.34
 operation group: 5/32
     metal1_conn = NOT Metal1 M1Resdum
 ========================================================================
-    generate layer metal1_conn, TYP = P, HPN = 28, FPN = 93, HEN = 232, FEN = 492
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.16/9.34/9.34
+    generate layer metal1_conn, TYP = P, HPN = 28, FPN = 91, HEN = 232, FEN = 484
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.15/9.34/9.34
 
     delete layer Metal1
     delete layer M1Resdum
@@ -879,8 +876,8 @@ Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.16/9.34/9.34
 operation group: 6/32
     poly_conn = NOT Poly Resdum
 ========================================================================
-    generate layer poly_conn, TYP = P, HPN = 13, FPN = 47, HEN = 132, FEN = 268
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.16/9.34/9.34
+    generate layer poly_conn, TYP = P, HPN = 13, FPN = 46, HEN = 140, FEN = 272
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.15/9.34/9.34
 
 
 
@@ -888,31 +885,31 @@ operation group: 7/32
     cont_poly = AND Cont Poly
 ========================================================================
     generate layer cont_poly, TYP = P, HPN = 1, FPN = 9, HEN = 4, FEN = 36
-Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.16/9.34/13.61
+Time: cpu=0.01/0.05  real=0.01/0.15  Memory: 9.15/9.34/17.38
 
 
 
 operation group: 8/32
     pactive = AND Oxide Pimp
 ========================================================================
-    generate layer pactive, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.16/9.34/13.61
+    generate layer pactive, TYP = P, HPN = 2, FPN = 14, HEN = 8, FEN = 56
+Time: cpu=0.00/0.06  real=0.01/0.16  Memory: 9.15/9.34/13.61
 
 
 
 operation group: 9/32
     pdiff = NOT pactive Poly
 ========================================================================
-    generate layer pdiff, TYP = P, HPN = 2, FPN = 28, HEN = 8, FEN = 112
-Time: cpu=0.00/0.06  real=0.01/0.16  Memory: 9.16/9.34/13.61
+    generate layer pdiff, TYP = P, HPN = 4, FPN = 28, HEN = 16, FEN = 112
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.15/9.34/13.61
 
 
 
 operation group: 10/32
     pdiff_conn = NOT pdiff Resdum
 ========================================================================
-    generate layer pdiff_conn, TYP = P, HPN = 2, FPN = 28, HEN = 8, FEN = 112
-Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.16/9.34/9.34
+    generate layer pdiff_conn, TYP = P, HPN = 4, FPN = 28, HEN = 16, FEN = 112
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.15/9.34/9.34
 
     delete layer pdiff
 
@@ -920,8 +917,8 @@ Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.16/9.34/9.34
 operation group: 11/32
     cont_pdiff = AND Cont pdiff_conn
 ========================================================================
-    generate layer cont_pdiff, TYP = P, HPN = 4, FPN = 56, HEN = 16, FEN = 224
-Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.16/9.34/13.61
+    generate layer cont_pdiff, TYP = P, HPN = 8, FPN = 56, HEN = 32, FEN = 224
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.15/9.34/13.61
 
 
 
@@ -929,7 +926,7 @@ operation group: 12/32
     nactive = AND Nimp Oxide
 ========================================================================
     generate layer nactive, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.07  real=0.00/0.16  Memory: 9.16/9.34/13.61
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.15/9.34/13.61
 
 
 
@@ -937,7 +934,7 @@ operation group: 13/32
     ndiff = NOT nactive poly_conn
 ========================================================================
     generate layer ndiff, TYP = P, HPN = 2, FPN = 28, HEN = 8, FEN = 112
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/13.61
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.15/9.34/13.61
 
 
 
@@ -945,7 +942,7 @@ operation group: 14/32
     ndiff_conn = NOT ndiff Resdum
 ========================================================================
     generate layer ndiff_conn, TYP = P, HPN = 2, FPN = 28, HEN = 8, FEN = 112
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/9.34
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.15/9.34/9.34
 
     delete layer ndiff
     delete layer Resdum
@@ -955,7 +952,7 @@ operation group: 15/32
     cont_ndiff = AND Cont ndiff_conn
 ========================================================================
     generate layer cont_ndiff, TYP = P, HPN = 2, FPN = 28, HEN = 8, FEN = 112
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/13.61
+Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.15/9.34/13.61
 
     delete layer Cont
 
@@ -963,16 +960,16 @@ Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/13.61
 operation group: 16/32
     bulk_1 = NOT bulk Nwell
 ========================================================================
-    generate layer bulk_1, TYP = P, HPN = 3, FPN = 29, HEN = 24, FEN = 180
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/13.61
+    generate layer bulk_1, TYP = P, HPN = 3, FPN = 28, HEN = 36, FEN = 184
+Time: cpu=0.00/0.08  real=0.00/0.18  Memory: 9.15/9.34/13.61
 
 
 
 operation group: 17/32
     psubstrate = NOT bulk_1 Psub
 ========================================================================
-    generate layer psubstrate, TYP = P, HPN = 3, FPN = 29, HEN = 24, FEN = 180
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/9.34
+    generate layer psubstrate, TYP = P, HPN = 3, FPN = 28, HEN = 36, FEN = 184
+Time: cpu=0.00/0.08  real=0.00/0.18  Memory: 9.15/9.34/9.34
 
     delete layer bulk_1
     delete layer Psub
@@ -982,15 +979,15 @@ operation group: 18/32
     ptap = NOT pdiff_conn Nwell
 ========================================================================
     generate layer ptap, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/13.36
+Time: cpu=0.00/0.08  real=0.00/0.18  Memory: 9.15/9.34/13.36
 
 
 
 operation group: 19/32
     nwell_conn = NOT Nwell ResWdum
 ========================================================================
-    generate layer nwell_conn, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/9.34
+    generate layer nwell_conn, TYP = P, HPN = 2, FPN = 14, HEN = 8, FEN = 56
+Time: cpu=0.00/0.08  real=0.00/0.18  Memory: 9.15/9.34/9.34
 
     delete layer ResWdum
 
@@ -999,7 +996,7 @@ operation group: 20/32
     ntap = AND Nwell ndiff_conn
 ========================================================================
     generate layer ntap, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.08  real=0.00/0.17  Memory: 9.16/9.34/13.36
+Time: cpu=0.00/0.08  real=0.00/0.18  Memory: 9.15/9.34/13.36
 
 
 
@@ -1013,7 +1010,7 @@ operation group: 21/32
     SCONNECT pdiff_conn psubstrate -by ptap
     SCONNECT ndiff_conn nwell_conn -by ntap
 ========================================================================
-Time: cpu=0.03/0.10  real=0.03/0.20  Memory: 9.16/9.34/29.43
+Time: cpu=0.02/0.10  real=0.02/0.20  Memory: 9.15/9.34/29.43
 
     delete layer Via3
     delete layer Via2
@@ -1029,8 +1026,8 @@ Time: cpu=0.03/0.10  real=0.03/0.20  Memory: 9.16/9.34/29.43
 operation group: 22/32
     OxPoly = AND Oxide Poly
 ========================================================================
-    generate layer OxPoly, TYP = P, HPN = 2, FPN = 28, HEN = 8, FEN = 112
-Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.16/9.34/13.36
+    generate layer OxPoly, TYP = P, HPN = 3, FPN = 28, HEN = 12, FEN = 112
+Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.15/9.34/17.38
 
     delete layer Oxide
     delete layer Poly
@@ -1040,7 +1037,7 @@ operation group: 23/32
     _nmos1v = AND OxPoly Nimp
 ========================================================================
     generate layer _nmos1v, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.01/0.11  real=0.01/0.21  Memory: 9.16/9.34/13.61
+Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.15/9.34/13.61
 
     delete layer Nimp
 
@@ -1049,7 +1046,7 @@ operation group: 24/32
     _nmos1v_sti = AND psubstrate nactive
 ========================================================================
     generate layer _nmos1v_sti, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.16/9.34/13.36
+Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.15/9.34/13.36
 
     delete layer psubstrate
     delete layer nactive
@@ -1059,7 +1056,7 @@ operation group: 25/32
     _nmos1v_wpe_temp = SIZE _nmos1v -by 1
 ========================================================================
     generate layer _nmos1v_wpe_temp, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.16/9.34/13.61
+Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.15/9.34/13.61
 
 
 
@@ -1067,7 +1064,7 @@ operation group: 26/32
     _nmos1v_wpe = NOT _nmos1v_wpe_temp Nwell
 ========================================================================
     generate layer _nmos1v_wpe, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.16/9.34/13.36
+Time: cpu=0.00/0.11  real=0.00/0.22  Memory: 9.15/9.34/13.36
 
     delete layer _nmos1v_wpe_temp
     delete layer Nwell
@@ -1077,7 +1074,7 @@ operation group: 27/32
     _soi_nsb = AND ndiff_conn KTH_source
 ========================================================================
     generate layer _soi_nsb, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.16/9.34/13.61
+Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.15/9.34/13.61
 
 
 
@@ -1085,7 +1082,7 @@ operation group: 28/32
     _soi_nd = NOT ndiff_conn KTH_source
 ========================================================================
     generate layer _soi_nd, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.16/9.34/13.36
+Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.15/9.34/13.36
 
     delete layer ndiff_conn
 
@@ -1093,8 +1090,8 @@ Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.16/9.34/13.36
 operation group: 29/32
     _pmos1v = AND OxPoly Pimp
 ========================================================================
-    generate layer _pmos1v, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.13  real=0.00/0.23  Memory: 9.16/9.34/13.36
+    generate layer _pmos1v, TYP = P, HPN = 2, FPN = 14, HEN = 8, FEN = 56
+Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.15/9.34/13.36
 
     delete layer OxPoly
     delete layer Pimp
@@ -1103,16 +1100,16 @@ Time: cpu=0.00/0.13  real=0.00/0.23  Memory: 9.16/9.34/13.36
 operation group: 30/32
     _soi_psb = AND pdiff_conn KTH_source
 ========================================================================
-    generate layer _soi_psb, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.13  real=0.00/0.23  Memory: 9.16/9.34/13.36
+    generate layer _soi_psb, TYP = P, HPN = 2, FPN = 14, HEN = 8, FEN = 56
+Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.15/9.34/13.36
 
 
 
 operation group: 31/32
     _soi_pd = NOT pdiff_conn KTH_source
 ========================================================================
-    generate layer _soi_pd, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.13  real=0.00/0.23  Memory: 9.16/9.34/13.36
+    generate layer _soi_pd, TYP = P, HPN = 2, FPN = 14, HEN = 8, FEN = 56
+Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.15/9.34/13.36
 
     delete layer pdiff_conn
     delete layer KTH_source
@@ -1161,7 +1158,7 @@ DEVICE RECOGNITION ...
     delete layer _EPTMPL262186
 Write DEVICES ... 
 
-Time: cpu=0.02/0.15  real=0.02/0.24  Memory: 9.16/9.40/17.38
+Time: cpu=0.01/0.13  real=0.01/0.24  Memory: 9.15/9.34/17.38
 
     delete layer _nmos1v
     delete layer _nmos1v_sti
@@ -1203,112 +1200,14 @@ Outputting Results ...
 Total CPU Time                    : 0(s)
 Total Real Time                   : 0(s)
 Peak Memory Used                  : 29(M)
-Total Original Geometry           : 170(560)
+Total Original Geometry           : 186(561)
 Total ERC RuleChecks              : 0
 Total ERC Results                 : 0 (0)
 Summary can be found in file DFFX1.sum
 
 
-Creating annotated GDS ...
-********************************************************************************
-db2gds 16.15-s010 64 bit (Fri Jun 28 22:24:07 PDT 2019)
-Build Ref No.: 010 Production (06-28-2019) [pvs_1615]
-
-Copyright 2019 Cadence Design Systems, Inc.
-All rights reserved worldwide.
-
-Build O/S:       Linux x86_64 2.6.18-194.el5
-Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      1959
-Starting Time:   Thu Dec  2 06:56:13 2021 (Thu Dec  2 05:56:13 2021 GMT)
-With parameters: DFFX1_1895 /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.agf DFFX1 -lmap lmap1EmUkc -netmap /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.lnn -property_nqrc -gds_scale 2000 -vircolon 
-********************************************************************************
-
-Library name: DFFX1_1895
-GDSII file name: /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.agf
-Cells to be written out: DFFX1
-Source Library: DFFX1_1895
-Layer mapping file(GDS <- DMC): lmap1EmUkc
-    36 (dt:0 tt:0) <- 36
-    37 (dt:0 tt:0) <- 37
-    38 (dt:0 tt:0) <- 38
-    4 (dt:0 tt:0) <- 4
-    6 (dt:0 tt:0) <- 6
-    7 (dt:0 tt:0) <- 7
-    8 (dt:0 tt:0) <- 8
-    10 (dt:0 tt:0) <- 10
-    11 (dt:0 tt:0) <- 11
-    12 (dt:0 tt:0) <- 12
-    14 (dt:0 tt:0) <- 14
-    16 (dt:0 tt:0) <- 16
-    19 (dt:0 tt:0) <- 19
-    20 (dt:0 tt:0) <- 20
-    21 (dt:0 tt:0) <- 21
-    22 (dt:0 tt:0) <- 22
-    23 (dt:0 tt:0) <- 23
-    25 (dt:0 tt:0) <- 25
-    26 (dt:0 tt:0) <- 26
-    31 (dt:0 tt:0) <- 31
-    32 (dt:0 tt:0) <- 32
-    33 (dt:0 tt:0) <- 33
-    35 (dt:0 tt:0) <- 35
-Cell name case: PRESERVE
-Option: output object property for new qrc flow
-
-
-                Object Statistics of Cells                            
-Cell Name         Box  Polygon     Path   Label Instance Array    Total
-----------------------------------------------------------------------
-DFFX1              17       19        0       0    43      0        79
-M1_PO_CDNS_1        3        0        0       0     0      0         3
-M2_M1_CDNS_2        3        0        0       0     0      0         3
-nmos3_CDNS_3       11        0        0       0     0      0        11
-pmos3_CDNS_4       13        1        0       0     0      0        14
-----------------------------------------------------------------------
-
-Object Statistics of Layers
-Layer   Objects
-----------------
-   4           1
-   6          28
-   7           4
-  11           1
-  12           2
-  14           4
-  16          13
-  19           2
-  20           2
-  23           3
-  25           1
-  26           1
-  31           1
-  32           1
-  33           1
-  35           1
-  36           1
-----------------
-
-Object Summary
-------------------
-     Box        47
- Polygon        20
-    Path         0
-   Label         0
-Instance        43
-   Array         0
-------------------
-   Total       110
-
-
-Output property: 110
-Total CPU Time          : 0(s)
-Total Real Time         : 0(s)
-Peak Memory Used        : 7(M)
-Log files db2gds.log and db2gds.log.2 can be found in the run directory
-
-
 Creating extracted connectivity database ...
-CmdLine: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb -kf -edb DFFX1_1895.db -ecdb ./ -topcell DFFX1 -netlist /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.net -layermap /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.ecdbmap -textmap /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.ports -dependmap DFFX1.lmap.perc -lvsfile /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.lvsfile -saveFloatingNets .DFFX1.info.softchk 
+CmdLine: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb -kf -edb DFFX1_32011.db -ecdb ./ -topcell DFFX1 -netlist svdb/DFFX1.net -layermap svdb/DFFX1.ecdbmap -textmap svdb/DFFX1.ports -dependmap DFFX1.lmap.perc -lvsfile svdb/DFFX1.lvsfile -saveFloatingNets .DFFX1.info.softchk 
 Legend for cell operations:
    C - Cells
    P - Pins
@@ -1317,12 +1216,12 @@ Legend for cell operations:
    I - Insts
    S - Shapes
    X - Delete cell memory
-Opening layer file 'DFFX1_1895.db/__layer'...
-Loading layer map file '/home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.ecdbmap'...
-Loading text map file '/home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.ports'...
+Opening layer file 'DFFX1_32011.db/__layer'...
+Loading layer map file 'svdb/DFFX1.ecdbmap'...
+Loading text map file 'svdb/DFFX1.ports'...
 Loading dependency map file 'DFFX1.lmap.perc'...
 Opening output file './/.DFFX1.ecdb'...
-Loading lvs file '/home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.lvsfile'...
+Loading lvs file 'svdb/DFFX1.lvsfile'...
 Pre loading edb directory contents...
 Writing db header information...(0s)
 Transfering cdl structures to ecdb structures...
@@ -1344,21 +1243,21 @@ Total CPU Time      : 0(s)
 Total Real Time     : 0(s)
    Read edb time    : 0(s)
    Write ecdb time  : 0(s)
-Peak Memory Used    : 82.66(M)
+Peak Memory Used    : 82.67(M)
 
 edbToEcdb Header Information:
   ECDB file version   : 30
-  DevTmpl offset      : 72721
-  Connect offset      : 72821
-  NameTable offset    : 7185
+  DevTmpl offset      : 73119
+  Connect offset      : 73219
+  NameTable offset    : 7583
   Layer Map offset    : 149
-  Cell Start offset   : 6835
-  Cell End offset     : 7185
-  Aux Data offset     : 72921
+  Cell Start offset   : 7233
+  Cell End offset     : 7583
+  Aux Data offset     : 73319
   Nvn Labels offset   : 0
   NVP                 : 
   Scale               : 8000
-  File size           : 74180
+  File size           : 74578
   Cell count          : 5
   ECDB create time    : 0
   EDB info            : 10
@@ -1366,11 +1265,11 @@ edbToEcdb Header Information:
 
 edbToEcdb Sizes written to disk (MB):
   NameTbl             :     0.065536
-  Layers              :     0.001071
-  Shapes              :     0.002012
-  XYTree              :     0.001124
-  LookUpTbls          :     0.000359
-  Cells               :     0.000397
+  Layers              :     0.001125
+  Shapes              :     0.002196
+  XYTree              :     0.001260
+  LookUpTbls          :     0.000376
+  Cells               :     0.000404
   Insts               :     0.000810
   Ports               :     0.000810
   Nets                :     0.000240
@@ -1382,7 +1281,7 @@ edbToEcdb Sizes written to disk (MB):
   AuxData             :     0.001257
   NvnLabels           :     0.000002
 ---------------------------------
-  Total               :     0.074170
+  Total               :     0.074568
 
 edbToEcdb Done
 
@@ -1397,8 +1296,8 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      1988
-Starting Time:   Thu Dec  2 06:56:13 2021 (Thu Dec  2 05:56:13 2021 GMT)
+Process Id:      32090
+Starting Time:   Wed Dec 15 17:41:15 2021 (Wed Dec 15 16:41:15 2021 GMT)
 With parameters: -license_timeout 300 DFFX1.rep REPORTDB 
 ********************************************************************************
 
@@ -1406,7 +1305,7 @@ Processing file DFFX1.rep
 Completed creation of REPORTDB
 
 
-Netlist Extraction Finished Normally. Thu Dec  2 06:56:15 2021
+Netlist Extraction Finished Normally. Wed Dec 15 17:41:16 2021
 
 
 
@@ -1421,8 +1320,8 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      2009
-Starting Time:   Thu Dec  2 06:56:15 2021 (Thu Dec  2 05:56:15 2021 GMT)
+Process Id:      32111
+Starting Time:   Wed Dec 15 17:41:16 2021 (Wed Dec 15 16:41:16 2021 GMT)
 With parameters: -ai .technology.rul.rsf 
 ********************************************************************************
 
@@ -1447,8 +1346,8 @@ WARNING (NVN-13003): "*.SCALE" is not supported. Use ".OPTION SCALE" instead or 
  finished committing cdl netlists (0s)
 Post sch netlist rule processing (0s)
 Reading layout network
- inputting (fast parser) cdl netlist  /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.net...
- finished loading cdl netlist /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.net (0s)
+ inputting (fast parser) cdl netlist  /home/saul/projects/KISTA/lvs_runs/DFFX1.spi...
+ finished loading cdl netlist /home/saul/projects/KISTA/lvs_runs/DFFX1.spi (0s)
  commit cdl netlist(s)...
  finished committing cdl netlists (0s)
 Post lay netlist rule processing (0s)
@@ -1541,13 +1440,13 @@ Peak Memory Used      : 29.00(M)
 
 NVN Run Summary
 Total CPU Time        : 1(s)
-Total Real Time       : 1(s)
+Total Real Time       : 2(s)
 Peak Memory Used      : 235.18(M)
 
 
 LVS Summary
 Total CPU Time        : 1(s)
-Total Real Time       : 1(s)
+Total Real Time       : 2(s)
 Peak Memory Used      : 235.18(M)
 
     ########################################################
@@ -1563,32 +1462,10 @@ Peak Memory Used      : 235.18(M)
     #                                                      #
     ########################################################
 
-
-
-PVS Comparison Finished. Thu Dec  2 06:56:16 2021
-
-
-
-Creating cross reference ...
-********************************************************************************
-pvs_RCXxref 16.15-s010 64 bit (Fri Jun 28 22:24:07 PDT 2019)
-Build Ref No.: 010 Production (06-28-2019) [pvs_1615]
-
-Copyright 2019 Cadence Design Systems, Inc.
-All rights reserved worldwide.
-
-Build O/S:       Linux x86_64 2.6.18-194.el5
-Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      2026
-Starting Time:   Thu Dec  2 06:56:16 2021 (Thu Dec  2 05:56:16 2021 GMT)
-With parameters: -format C -nxf -ixf /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1 DFFX1.rep 
-********************************************************************************
-
-Total CPU Time    : 0(s)
-Total Real Time   : 0(s)
-Memory Used       : 58.84(M)
-
-pvs_RCXxref Done
 Checking in all SoftShare licenses.
+
+
+PVS Comparison Finished. Wed Dec 15 17:41:18 2021
+
 
 

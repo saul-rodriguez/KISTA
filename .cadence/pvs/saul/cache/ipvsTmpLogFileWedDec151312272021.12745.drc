@@ -1,0 +1,356 @@
+********************************************************************************
+pvs 16.15-s010 64 bit (Fri Jun 28 22:24:07 PDT 2019)
+Build Ref No.: 010 Production (06-28-2019) [pvs_1615]
+
+Copyright 2019 Cadence Design Systems, Inc.
+All rights reserved worldwide.
+
+Build O/S:       Linux x86_64 2.6.18-194.el5
+Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
+Process Id:      31349
+Starting Time:   Wed Dec 15 13:12:25 2021 (Wed Dec 15 12:12:25 2021 GMT)
+With parameters: -drc -get_rules /tmp/pvsrng.9850@s2424.1 -tc top -gds /dev/null -get_options /tmp/pvsoptpar.9850@s2424.1 -gen_tags /tmp/pvsgentags.9850@s2424.1 -control /tmp/ipvsRulesCheckControl.9850@s2424.1 /home/saul/projects/KISTA/drc_runs/.technology.rul.9850@s2424.1 
+********************************************************************************
+
+
+########################################################################
+Get host info ...
+########################################################################
+CPU info:
+    model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+    cpu MHz         :  1203.662
+    cache size      :  20480 KB
+    physical cores  :  16
+    logical cores   :  32
+    hyper-threading on
+
+Memory info:
+    64168M physical memory installed.
+
+    MemTotal:       65709328 kB
+    MemFree:          579880 kB
+    MemAvailable:   13118060 kB
+    Buffers:               0 kB
+    Cached:         13564536 kB
+    SwapCached:        17692 kB
+    Active:         53453964 kB
+    Inactive:        8954356 kB
+    Active(anon):   46776852 kB
+    Inactive(anon):  3794436 kB
+    Active(file):    6677112 kB
+    Inactive(file):  5159920 kB
+    Unevictable:           0 kB
+    Mlocked:               0 kB
+    SwapTotal:      32964604 kB
+    SwapFree:       30922188 kB
+    Dirty:                32 kB
+    Writeback:             0 kB
+    AnonPages:      48826392 kB
+    Mapped:           342348 kB
+    Shmem:           1727416 kB
+    Slab:            1612496 kB
+    SReclaimable:    1193136 kB
+    SUnreclaim:       419360 kB
+    KernelStack:       12752 kB
+    PageTables:       139316 kB
+    NFS_Unstable:          0 kB
+    Bounce:                0 kB
+    WritebackTmp:          0 kB
+    CommitLimit:    65819268 kB
+    Committed_AS:   48902128 kB
+    VmallocTotal:   34359738367 kB
+    VmallocUsed:      422088 kB
+    VmallocChunk:   34325399548 kB
+    Percpu:            10240 kB
+    HardwareCorrupted:     0 kB
+    AnonHugePages:   2697216 kB
+    CmaTotal:              0 kB
+    CmaFree:               0 kB
+    HugePages_Total:       0
+    HugePages_Free:        0
+    HugePages_Rsvd:        0
+    HugePages_Surp:        0
+    Hugepagesize:       2048 kB
+    DirectMap4k:      179524 kB
+    DirectMap2M:     4968448 kB
+    DirectMap1G:    61865984 kB
+
+
+########################################################################
+Get environment info ...
+########################################################################
+ENV VAR: TCL_LIBRARY = /pkg/cadence/installs/PVS161/share/lib/tcltk/08.64/tcl8.6
+ENV VAR: TCLX_LIBRARY = /pkg/cadence/installs/PVS161/share/lib/tclx/08.40
+ENV VAR: TCLLIBPATH = /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cadence/installs/PVS161/share/lib/tclxml/3.2 /pkg/cadence/installs/PVS161/share/lib/tcllib/1.18 /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cadence/installs/PVS161/share/lib/tclxml/3.2 /pkg/cadence/installs/PVS161/share/lib/tcllib/1.18 
+
+
+########################################################################
+Parsing Control File /tmp/ipvsRulesCheckControl.9850@s2424.1 ...
+########################################################################
+RESULTS_DB -drc "/home/saul/projects/KISTA/drc_runs/DFFX1.drc_errors.ascii" -ascii;
+
+########################################################################
+Parsing Rule File /home/saul/projects/KISTA/drc_runs/.technology.rul.9850@s2424.1 ...
+########################################################################
+TECHNOLOGY kista_pvs -ruleSet default -techLib /home/saul/projects/KISTA/pvtech.lib;
+[WARN] The rule set 'default' in technology 'kista_pvs' has file './pvlLVS.rul' given for 'ErcRules'. However, this file does not exist, or cannot be read, and will be ignored.
+[INFO] TECHNOLOGY: Rules file /home/saul/projects/KISTA/pvs/./kista_drc.rul will be included after the remainder of the current rules are processed.
+[INFO] TECHNOLOGY kista_pvs -techLib /home/saul/projects/KISTA/pvtech.lib: End of additions.
+LAYOUT_PATH "CELLNAME.gds" gdsii;
+[WARN] Cmd-line override: LAYOUT_PATH "/dev/null";
+LAYOUT_PRIMARY "CELLNAME";
+[WARN] Cmd-line override: LAYOUT_PRIMARY "top";
+RESULTS_DB -drc "CELLNAME.db" -ascii;
+[WARN]: RESULTS_DB -ascii at line 20 in file /home/saul/projects/KISTA/pvs/./kista_drc.rul is skipped. It is set in control file.
+INPUT_SCALE 2000;
+GRID 5;
+UNIT -length u;
+TEXT_DEPTH -primary;
+FLAG -nonsimple yes;
+
+RULE offgrid_check {
+    CAPTION Grid violation;
+    LAYOUT_INPUT -offgrid;
+}
+
+RULE ortho_45_check {
+    CAPTION Orthogonal and 45 degree violation;
+    LAYOUT_INPUT -skew;
+}
+
+RULE acute_check {
+    CAPTION Acute angle  violation;
+    LAYOUT_INPUT -acute;
+}
+LAYER_DEF empty 999;
+LAYER_DEF Oxide 1034;
+LAYER_MAP 1 -datatype 0 1034;
+LAYER_DEF Poly 1040;
+LAYER_MAP 3 -datatype 0 1040;
+LAYER_DEF Cont 1002;
+LAYER_MAP 6 -datatype 0 1002;
+LAYER_DEF Metal1 1016;
+LAYER_MAP 7 -datatype -le 5 1016;
+LAYER_DEF Metal2 1017;
+LAYER_MAP 9 -datatype -le 5 1017;
+LAYER_DEF Metal3 1018;
+LAYER_MAP 11 -datatype -le 5 1018;
+LAYER_DEF Metal4 1019;
+LAYER_MAP 31 -datatype -le 5 1019;
+LAYER_DEF Via1 1045;
+LAYER_MAP 8 -datatype 0 1045;
+LAYER_DEF Via2 1046;
+LAYER_MAP 10 -datatype 0 1046;
+LAYER_DEF Via3 1047;
+LAYER_MAP 30 -datatype 0 1047;
+LAYER_DEF KTH_openpad 1048;
+LAYER_MAP 172 -datatype 0 1048;
+OR Metal1 Metal2 M12;
+OR Metal3 Metal4 M34;
+OR M12 M34 Metal_all;
+AND Cont Via1 Cont_Via1_ov;
+AND Via1 Via2 Via1_Via2_ov;
+AND Via2 Via3 Via2_Via3_ov;
+
+RULE OXIDE.W.1 {
+    CAPTION OXIDEW.1: Oxide width must be >= 2.0 um;
+    INTE Oxide Oxide -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE POLY.W.1 {
+    CAPTION POLY.W.1: Poly width must be >= 1.0 um;
+    INTE Poly Poly -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE CONT.W.1 {
+    CAPTION CONT.W.1: Cont width must be >= 1.0 um;
+    INTE Cont Cont -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE METAL1.W.1 {
+    CAPTION METAL1.W.1: Metal1 width must be >= 2.0 um;
+    INTE Metal1 Metal1 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL2.W.1 {
+    CAPTION METAL2.W.1: Metal2 width must be >= 2.0 um;
+    INTE Metal2 Metal2 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL3.W.1 {
+    CAPTION METAL3.W.1: Metal3 width must be >= 2.0 um;
+    INTE Metal3 Metal3 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL4.W.1 {
+    CAPTION METAL4.W.1: Metal4 width must be >= 2.0 um;
+    INTE Metal4 Metal4 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE KTH_OPENPAD.W.1 {
+    CAPTION KTH_OPENPAD.W.1: KTH_openpad width must be >= 88.0 um;
+    INTE KTH_openpad KTH_openpad -lt 88 -output region -singular -abut lt 90;
+}
+
+RULE OXIDE.SP.1.1 {
+    CAPTION OXIDE.SP.1.1: Oxide to Oxide spacing must be >= 2.0 um;
+    EXTE Oxide Oxide -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE POLY.SP.1.1 {
+    CAPTION POLY.SP.1.1: Poly to Poly spacing must be >= 2.0 um;
+    EXTE Poly Poly -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL1.SP.1.1 {
+    CAPTION METAL1.SP.1.1: Metal1 to Metal1 spacing must be >= 2.0 um;
+    EXTE Metal1 Metal1 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL2.SP.1.1 {
+    CAPTION METAL1.SP.1.1: Metal2 to Metal2 spacing must be >= 2.0 um;
+    EXTE Metal2 Metal2 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL3.SP.1.1 {
+    CAPTION METAL1.SP.1.1: Metal3 to Metal3 spacing must be >= 2.0 um;
+    EXTE Metal3 Metal3 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE METAL4.SP.1.1 {
+    CAPTION METAL1.SP.1.1: Metal4 to Metal4 spacing must be >= 2.0 um;
+    EXTE Metal4 Metal4 -lt 2 -output region -singular -abut lt 90;
+}
+
+RULE CONT.SP.1.1 {
+    CAPTION CONT.SP.1.1: Cont to Cont spacing must be >= 1.0 um;
+    EXTE Cont Cont -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE CONT.SP.1.2 {
+    CAPTION CONT.SP.1.2: Cont to Via1 spacing must be >= 1.0 um;
+    EXTE Cont Via1 -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE VIA1.SP.1.1 {
+    CAPTION VIA1.SP.1.1: Via1 to Via1 spacing must be >= 1.0 um;
+    EXTE Via1 Via1 -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE VIA1.SP.1.2 {
+    CAPTION VIA1.SP.1.2: Via1 to Via2 spacing must be >= 1.0 um;
+    EXTE Via1 Via2 -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE VIA2.SP.1.1 {
+    CAPTION VIA2.SP.1.1: Via2 to Via2 spacing must be >= 1.0 um;
+    EXTE Via2 Via2 -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE VIA2.SP.1.2 {
+    CAPTION VIA2.SP.1.2: Via2 to Via3 spacing must be >= 1.0 um;
+    EXTE Via2 Via3 -lt 1 -output region -singular -abut lt 90;
+}
+
+RULE CONT.E.1 {
+    CAPTION CONT.E.1: Metal1 to Cont enclosure must be >= 0.5 um;
+    ENC Cont metal1 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE CONT.E.2 {
+    CAPTION CONT.E.2: Poly to Cont enclosure must be >= 0.5 um;
+    ENC Cont Poly -lt 0.5 -abut lt 90 -overlap -single_point;
+}
+
+RULE CONT.E.3 {
+    CAPTION CONT.E.3: Oxide to Cont enclosure must be >= 0.5 um;
+    ENC Cont Oxide -lt 0.5 -abut lt 90 -overlap -single_point;
+}
+
+RULE VIA1.E.1 {
+    CAPTION VIA1.E.1: Metal1 to Via1 enclosure must be >= 0.5 um;
+    ENC Via1 metal1 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE VIA1.E.2 {
+    CAPTION VIA1.E.2: Metal2 to Via1 enclosure must be >= 0.5 um;
+    ENC Via1 metal2 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE VIA2.E.1 {
+    CAPTION VIA2.E.1: Metal2 to Via2 enclosure must be >= 0.5 um;
+    ENC Via2 metal2 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE VIA2.E.2 {
+    CAPTION VIA2.E.2: Metal3 to Via2 enclosure must be >= 0.5 um;
+    ENC Via2 metal3 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE VIA3.E.1 {
+    CAPTION VIA3.E.1: Metal3 to Via3 enclosure must be >= 0.5 um;
+    ENC Via3 metal3 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE VIA3.E.2 {
+    CAPTION VIA3.E.2: Metal4 to Via3 enclosure must be >= 0.5 um;
+    ENC Via3 metal4 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE KTH_OPENPAD.E.1 {
+    CAPTION KTH_OPENPAD.E.1: Metal[X] to KTH_openpad enclosure must be >= 6.0 um;
+    ENC KTH_openpad metal_all -lt 6 -output region -singular -abut lt 90 -outside_also;
+}
+
+RULE CONT.OV.1 {
+    CAPTION CONT.OV.1: Via1 over Cont not allowed;
+    AREA Cont_Via1_ov -gt 0;
+}
+
+RULE VIA1.OV.1 {
+    CAPTION VIA1.OV.1: Via2 over Via1 not allowed;
+    AREA Via1_Via2_ov -gt 0;
+}
+
+RULE VIA2.OV.1 {
+    CAPTION VIA2.OV.1: Via3 over Via2 not allowed;
+    AREA Via2_Via3_ov -gt 0;
+}
+
+
+########################################################################
+Optimizing Rules ...
+########################################################################
+Completed execution early, as requested by the "-get_rules" or "-gen_tags"
+
+   ONE LAYER BOOLEAN: Cumulative Time CPU =        0(s) REAL =        0(s)
+   TWO LAYER BOOLEAN: Cumulative Time CPU =        0(s) REAL =        0(s)
+ POLYGON TOPOLOGICAL: Cumulative Time CPU =        0(s) REAL =        0(s)
+ POLYGON MEASUREMENT: Cumulative Time CPU =        0(s) REAL =        0(s)
+                SIZE: Cumulative Time CPU =        0(s) REAL =        0(s)
+    EDGE TOPOLOGICAL: Cumulative Time CPU =        0(s) REAL =        0(s)
+    EDGE MEASUREMENT: Cumulative Time CPU =        0(s) REAL =        0(s)
+               STAMP: Cumulative Time CPU =        0(s) REAL =        0(s)
+       ONE LAYER DRC: Cumulative Time CPU =        0(s) REAL =        0(s)
+       TWO LAYER DRC: Cumulative Time CPU =        0(s) REAL =        0(s)
+            NET AREA: Cumulative Time CPU =        0(s) REAL =        0(s)
+             DENSITY: Cumulative Time CPU =        0(s) REAL =        0(s)
+       MISCELLANEOUS: Cumulative Time CPU =        0(s) REAL =        0(s)
+             CONNECT: Cumulative Time CPU =        0(s) REAL =        0(s)
+              DEVICE: Cumulative Time CPU =        0(s) REAL =        0(s)
+                 ERC: Cumulative Time CPU =        0(s) REAL =        0(s)
+       PATTERN_MATCH: Cumulative Time CPU =        0(s) REAL =        0(s)
+            DFM FILL: Cumulative Time CPU =        0(s) REAL =        0(s)
+
+
+Total CPU Time                    : 0(s)
+Total Real Time                   : 0(s)
+Peak Memory Used                  : 10(M)
+Total Original Geometry           : 0(0)
+Total DRC RuleChecks              : 0
+Total DRC Results                 : 0 (0)
+
+
+Design Rule Check Finished Normally. Wed Dec 15 13:12:26 2021
+
+

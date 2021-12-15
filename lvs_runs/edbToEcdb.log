@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : DFFX1_1895.db
+EDB Library dir : DFFX1_32011.db
 ECDB dir        : ./
 Top Cell        : DFFX1
-CDL netlist     : /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.net
-Layer map file  : /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.ecdbmap
-Text map file   : /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.ports
+CDL netlist     : svdb/DFFX1.net
+Layer map file  : svdb/DFFX1.ecdbmap
+Text map file   : svdb/DFFX1.ports
 Dependency map  : DFFX1.lmap.perc
-Lvs file        : /home/saul/projects/KISTA/lvs_runs/svdb/DFFX1.lvsfile
+Lvs file        : svdb/DFFX1.lvsfile
 Float net file : .DFFX1.info.softchk
 debug           : 0
-Source Library  : DFFX1_1895
+Source Library  : DFFX1_32011

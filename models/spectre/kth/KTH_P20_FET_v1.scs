@@ -1,0 +1,964 @@
+
+simulator lang = spectre
+
+//*******************************************************************************************************//
+//											TOP TIER													 //
+//*******************************************************************************************************//
+
+inline subckt nch (D G S E)
+
+parameters w=2e-006 l=1e-006 nf=1 asource=5e-012 adrain=5e-012 psource=9e-006 pdrain=9e-006 
+
+nch (D G S E) nch w=w*nf l=l nf=nf asource=asource adrain=adrain psource=psource pdrain=pdrain
+
+model nch utsoi2
+//Model selection
+//Model selection
++ version     =  2.1	//newest version
++ swscale     =  1.0
+//Switch for parasitic effects
++ swigate     =  0.0	//flag for gate current			
++ swgidl      =  0.0	//flag for GIDL current
++ swshe       =  0.0	//flag for shelf heating effect
++ swign       =  1.0	//flag for induced gate noise model
+//Device type and reference temperature
++ type		  =  n	
++ tr          =  25.0	//nominal temperature
+//Geometry scaling parameters
++ lvaro		  =  0.0	//Geometry independent difference between physical and drawn field-oxide opening
++ lvarl		  =  0.0	//Length dependence of LPS	??????????????????
++ lvarw		  =  0.0	//Width dependence of LPS
++ lap 		  =  0.0
+//+ lap 		  =  3.0e-09	//Effective channel length reduction per side ??????????????? spectre default: 0???????????????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wvaro		  =  0.0	//Geometry-independent difference between physical and drawn field-oxide opening
++ wvarl		  =  0.0	//Length-dependence of WOD
++ wvarw		  =  0.0	//Width dependence of WOD
++ wot		  =  0.0	//Effective reduction of channel width per side
++ dlq 		  =  0.0	//Effective channel length offset for CV
++ dwq		  =  0.0	//Effective channel width offset for CV
+//Stress model parameters
++ saref		  =  1.0e-06	//Reference distance between OD-edge and poly from one-side
++ sbref 	  =  1.0e-06	//Reference distance between OD-edge and poly from other-side
++ wlod		  =  0.0	//Width parameter
++ kuo		  =  0.0	//Mobility degradation/enhancement coefficient
++ kvsat 	  =  0.0	//Saturation velocity degradation/enhancement coefficient
++ tkuo		  =  0.0	//Temperature dependence of KUO
++ lkuo		  =  0.0	//Length dependence of KUO
++ wkuo		  =  0.0	//Width dependence of KUO
++ pkuo		  =  0.0	//Cross-term dependence of KUO
++ llodkuo	  =  1.0 	//Length parameter for UO stress effect	????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wlodkuo	  =  1.0 	//Width parameter for UO stress effect  ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ kvtho		  =  0.0	//Threshold shifth parameter
++ lkvtho	  =  0.0	//Length dependence of KVTHO
++ wkvtho 	  =  0.0	//Width dependence of KVTHO
++ pkvtho	  =  0.0	//Cross-term dependence of KVTHO
++ llodvth	  =  1.0	//Length parameter for VTH-stress effect  ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wlodvth	  =  1.0	//Width parameter for VTH-stress effect   ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ stetao	  =  0.0	//Eta0 shift factor related to VTHO change
++ lodetao	  =  1.0	//Eta0 shift modification factor for stress effect
+//Process Parameters
+//
++ vfbo		  =  -0.1	//Geometery-independent flat band voltage at TR	 
++ vfbl	      =  0.0
++ vfblexp	  =  1.98	//Exponent describing length dependece of VFB
++ vfbw		  =  0.0	//Width dependence of VFB
++ vfblw		  =  0.0	//Area dependence of VFB
+//
++ stvfbo	  =  1.0e-003	//Geometry-independent temperature dependence of VFB	???????????????????????? In the example deck it equals 2m ???????????????????
++ stvfbl	  =  1.5e-003	//Length dependence of STVFB	???????????????????????? In the example deck it equals 3m ???????????????????
++ stvfbw	  =  0.0	//Width dependence of STVFB
++ stvfblw	  =  0.0	//Area dependence of STVFB
+//
++ toxeo	      =  6.5e-009 	//Equivalent Gate Oxide Thickness
++ toxpo	      =  6.5e-009      //Physical Gate Oxide Thickness
++ tsio	      =  25e-9	//Silicon Film Thickness 
++ tboxo 	  =  145e-9	//Buried Oxide Thickness 
+//
++ nsubo		  =  1.0e+016	//Backplane Doping level (default)
+//
++ cto		  =  0.0	//Geometry-independent part of interface states factor CT
+//
++ novo		  =  10e+020	//Effective doping of overlap -ldd regions (cm^-3) (DEFAULT) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ novdo		  =  10e+020	//Effective doping of overlap -ldd regions at drain side (DEFAULT)
+//
+//
+//Quantum mechanical effects
++ qmc		  =  1.0	//Quantum confinement coefficient
+//
+//
+//Gate to Interface coupling parameters
++ cicfo		  =  1	//front interface coupling coefficient 
++ cico	      =  1.0	//back interface coupling coefficient
++ pscel		  =  2.05	//Length dependence of PSCE   !!!!!!!!!!!!!!!!!!!!!!!!?????????????? 0 in spectre default, 60u in example deck ???????????!!!!!!!!!!!!
++ pscelexp	  =  2.2	//Exponent describing Length Dependence of PSCE
++ pscew		  =  0.0	//Width dependence of PSCE
++ pscebo	  =  1.0	//Short channel back to front interface assynmetry factor
+//
+//
+//DIBL parameters
+//
++ cfl		  = 1.4	//Length Dependence of CF DIBL-parameter !!!!!!!!!!!!!!!??????????????????0 in spectre, 20u in example deck ?????????????!!!!!!!!!!!!!!!!!!
++ cflexp	  =  2.	//Exponent for Length dependence of CF
++ cfw	   	  =  0.0	//Width dependence of CF
+//
++ cfbo		  =  0.5	//DIBL back to front interface assynetry factor
+//
++ stcfl		  =  0.0	//channel length dependence of Temp dependence of CF
+//
++ cfdo		  =  0.05	//Drain voltage dependence of parameter of DIBL (DEFAULT:0.2)
+//
++ cfdll       =  0.87    // DIBL modulation due to Leff dependence on biases
+//
+//
+//Mobility parameters
++ uo		  =  7.8e-002
+//+ uo		  =  (553.4 * (1 + u0_mis)) + delta_n_u0_hs + du0_pmc_nhs	//Front Channel Low Field mobility at TR
++ fbet1		  =  0.0	//First length dependence modulation of BETN (Front channel ratio times low field mobility at TR) (DEFAULT:0)
++ lp1		  =  1.0e-009	//	First characteristic length of BETN scaling	(DEFAULT)
++ fbet2		  =  1.e-02	//	Second length dependence modulation modulation of BETN (DEFAULT)
++ lp2		  =  10.e-009	//	Second characteristic length of BETN scaling	
+//
++ betnbo	  =  1.0	//Back channel over front channle low field mobility ratio
+//
++ stbeto	  =  1.5	//Geometry independent temperature dependence of BETN
++ stbetl	  =  0.0	//Length dependence of STBET
++ stbetw 	  =  0.0	//Width dependence of STBET
++ stbetlw	  =  0.0	//Area dependence of STBET
+//
++ cso	      =  0.1	//Geometry independent part of remote coulomb scatering parameter at TR
++ csl		  =  5.0e-003	//Channel length scaling of CSO
++ cslexp	  =  2.	//Geom.independent global scale parameter for CS
++ csthro	  =  1.0	// Geometry independent global scale parameter for Coulomb scattering threshold voltage (DEFAULT:2)
++ stcso		  =  0.0	//Temperature Dependence of CS
++ thecso	  =  0.85	//Remote Coulomb scattering exponent at TR !!!!!!!!!!!!!!????????????? 3 in example deck,  1.5 for spectre???????????????????!!!!!!!!!!!!!!!!!!!!
++ stthecso	  =  0.0	//Temperature dependence of THECS
+//
++ mueo		  =  2.5	//High-field mobility reduction coefficient at TR !!!!!!!!!?????????????? 500m at spectre,  300m at example deck !!!!!!!!!!??????????????
++ stmueo	  =  0.0	//Temperature dependence of MUE 	!!!!!!!!!!!!!!????????????????? 0 at spectre,  -500m at example deck ??????????!!!!!!!!!!!!!!!!!!!
++ themuo	  =  0.86		//High-field Mobility reduction exponent at TR
++ stthemuo	  =  0.0	//Temperature dependence of THEMU !!!!!!!!!!!!!!!!!!????????????????????? BUT 0 at example deck ???????????????!!!!!!!!!!!!!!!!!!!!!
+//
++ xcoro		  =  0.0	//High-field mobility non-universality factor at TR
++ xcorl		  =  0.0	//Channel length scaling parameter of XCOR
++ xcorlexp 	  =  1.0	//Channel length scaling exponent of XCOR
++ stxcoro	  =  0.0	//Temperature dependence of XCOR
+//
++ fetao		  =  1.0	//Transverse Effective field parameter
+//
+//
+//Series Resistance parameters
++ rsw1		  =  155		//Source/Drain series resistance for channel width WEN at TR !!!!!!!!!!!!!!!???????? 30 for spectre,  60 for example deck ???????????????!!!!!!!!!!!!!!
++ rsw2		  = 0	//Higher-order width scaling of source/drain series resistance
++ strso		  =  1.0	//Temperature dependence of RS
++ rsgo		  =  -1e-005	//transverse electric field dependence of RS	
++ thersgo	  =  2.0	//transverse electric field dependence exponent of RS
+//
+//
+//Velocity Saturation Parameters
++ thesato	  =	 9.573		//Geometry independent velocity saturation parameter at TR
++ thesatl	  =  -98.376	//Length dependence of THESAT	!!!!!!!!!!!!!!!????????????????? 0 for spectre,	4m in example deck ???????????!!!!!!!!!!!
++ thesatlexp  =  -0.386	//Exponent for length dependence of THESAT
++ thesatw	  =  0.0	//Width dependence of THESAT
++ thesatlw	  =  0.0	//Area dependence of THESAT
+//
++ thesatgo  =  -0.09	//Geometry-independent velocity saturation parameter at TR !!!!!!!!!!!!!???????????????? 0 for spectre,  1 at example deck???????????!!!!!!!!!!!!!!!!
+//
++ thesatbo	  =  0	//Back Gate bias dependence of velociy saturation
+//
++ stthesato	  =  -0.2		//Temperature dependence pf THESAT and THESATG ?????????????!!!!!!!!!!!!!!!!!!1 -400m at example deck ???????????!!!!!!!!!!!!!!!!
++ stthesatl	  =  0.0	//Length dependence of STTHESAT
++ stthesatw	  =  0.0	//Width dependence of STTHESAT
++ stthesatlw  =  0.0	//Area dependence of STTHESAT
+//
+//
+//Saturation and Channel length Modulation Parameters
++ axo	      =	 4.981	//linear/saturation transistion exponent
++ axl	      =  0.512	//Length dependence of AX 	?????????????!!!!!!!!!!!!!!!!!!! 0 for specte, 50m at example deck???????????????!!!!!!!!!!!!
++ axlexp	  =  0.420	//Exponent for length dependence of AX
+//Channel Length Modulation (CLM) Parameters
++ alpl1		  =  0.0	//Length dependence of CLM pre-factor  0 for spectre,	2m at example deck???????????!!!!!!!!!!!!
++ alplexp	  =  1.0	//Exponent for length dependence of ALP	
++ alpl2		  =  0.0e-01	//Second order length dependence of ALP	????????????!!!!!!!!!!!!!!!!! 0 for spectre, 1m at example deck ?????????????!!!!!!!!!!!!!!!!
++ alpw		  =  0.0	//Width dependence of ALP
+//
++ alp1l1	  =  7.986e-03	//Length dependence of CLM enhancement factor above threshold ????????!!!!!!!!!!!! 0 for spectre,  100u at example deck ?????????!!!!!!!!!!!!!!
++ alp1lexp	  =  0.829		//Exponent for length dependence of ALP1
++ alp1l2	  =  8.599e-04	//Second order length dependence of ALP1	???????????!!!!!!!!!!!!!!!!!! 0 for spectre, 	50m at example deck ???????!!!!!!!!!!!!!!
++ alp1w	      =  0.0	//Width dependence of ALP1
+//
++ vpo	      =  0.05	//CLM logarithm dependence factor ?????????????!!!!!!!!!!!!!!!!!! 0.01 at example deck ??????????!!!!!!!!!!!!!!!!!!!
+//
+//
+//Gate Current Parameters
++ gcoo		  =  0.0	//Gate-tunneling energy adjustment
++ iginvlw	  =  0.0	//Gate channel current pre-factor for a channel area of WEN*LEN
++ igovinvw	  =  0.0	//Gate overlap current pre-factor for an overlap of WEN*LOVH in inversion
++ igovaccw	  =  0.0	//Gate overlap current pre-factor for an overlap of WEN*LOVH in accumulation
++ gc2cho	  =  0.375	//Gate to channel current slope factor
++ gc3cho	  =  0.063	// Gate  to channel current curvature factor
++ gc2ovinvo	  =  0.375	//Gate current slope factor in overlaps (inversion)
++ gc2ovacco	  =  0.375	//Gate current slope factor in overlaps (accumulation)
++ gc3ovinvo	  =  0.063	//Gate current curvature factor in overlaps (invesion)
++ gc3ovacco	  =  0.063	//Gate current curvature factor in overlaps (accumulation)
++ stigo       =  0.0	//Temperature dependence of all gate currents
++ chibo		  =  3.1	//Tunneling barrier height	!!!!!!!!!!!!!!??????????????????   1.9 in exapmle deck,  3.1 in spectre ????????????!!!!!!!!!!!!!!!!!!
+//
+//
+//Gate Induced Drain/Source Leakage (GIDL) Parameters
++ agidlw	  =  0.0	//Width dependence of GIDL pre-factor
++ bgidlo	  =  41.0	//GIDL probability factor at TR
++ bgidldo	  =  41.0	//GIDL probability factor at TR at drain side
++ stbgidlo    =  0.0	//Temperature dependence of BGIDL
++ cgidlo	  =  0.0	//Back-bias dependence of GIDL
+//
+//
+//Charge Model Parameters
++ cgbovl	  =  0.0	//Oxide capacitance for gate-substrate overlap
++ cfro		  =  0.0e-017	//Corner related outer fring capacitance
+//+ cfrw 		  =  9.1e-017	//ORIGINAL
++ cfrw 		  =  9.2e-017	//Output fring capacitance by side (F/um) ???????????????!!!!!!!!!!!!!!!!!!!! according to cf parameter (BSIM3) of the native transistor  Take care the unit - F/um  ?????????!!!!!!!!!!!!!!!!!1
+//
++ lovo        =  20.0e-009	//Overlap length for gate/source-drain overlap capacitance
++ lovdo       =  20.0e-009	//Overlap length for gate/drain overlap capacitance
+//
++ csdo		  =  1.0	//	Drain to source direct capacitance correction factor.	
+//
++ csdbpo	  =  0.0	//Drain/Source to substrate perimeter capacitance (F/m)
+//
+//
+//Self Heating Effect Parameters
++ rtho		  =  1.0e+005	//Geometry-independent global scale parameter of RTH (thermal resistance)
++ rthl		  =  1.5		//Length dependence of RTH and CTH
++ rthw	      =  3.0    	//Width dependence of RTH and CTH
++ rthlw	      =  4.5    	//Area dependence of RTH
++ ctho	      =  1.0e-012	//Geometry-independent of thermal capacitance
++ strtho	  =  0.0	//Temperature dependence of RTH
+//Noise Parameters
++ fnto		  =  1.0	//Thermal Noise Coefficient
++ nfalw		  =  8.0e+022	//First coefficient of flicker noise
++ nfblw	      =  3.0e+007	//Second coefficient of flicker noise !!!!!!!!!!!!!!!???????????? 3e7 spectre default???????????????!!!!!!!!!!!!!!!!!!
++ nfclw		  =  0.0	//3rd coefficient of flicker noise
++ nfeo		  =  0.0	//Front Interface transverse field effect coefficient
++ efo		  =  1.0	//Frequency dependence exponent of flicker noise
+ends nmos_0
+
+////////////////////
+
+inline subckt pch (D G S E)
+
+parameters w=2e-006 l=1e-006 nf=1 asource=5e-012 adrain=5e-012 psource=9e-006 pdrain=9e-006 
+
+pch (D G S E) pch w=w*nf l=l nf=nf as=asource ad=adrain ps=psource pd=pdrain 
+
+model pch utsoi2
+//Model selection
++ version     =  2.1	//newest version
++ swscale     =  1.0
+//Switch for parasitic effects
++ swigate     =  0.0	//flag for gate current			
++ swgidl      =  0.0	//flag for GIDL current
++ swshe       =  0.0	//flag for shelf heating effect
++ swign       =  1.0	//flag for induced gate noise model
+//Device type and reference temperature
++ type		  =  p	
++ tr          =  25.0	//nominal temperature
+//Geometry scaling parameters
++ lvaro		  =  0.0	//Geometry independent difference between physical and drawn field-oxide opening
++ lvarl		  =  0.0	//Length dependence of LPS	??????????????????
++ lvarw		  =  0.0	//Width dependence of LPS
++ lap 		  =  0.0
+//+ lap 		  =  3.0e-09	//Effective channel length reduction per side ??????????????? spectre default: 0???????????????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wvaro		  =  0.0	//Geometry-independent difference between physical and drawn field-oxide opening
++ wvarl		  =  0.0	//Length-dependence of WOD
++ wvarw		  =  0.0	//Width dependence of WOD
++ wot		  =  0.0	//Effective reduction of channel width per side
++ dlq 		  =  0.0	//Effective channel length offset for CV
++ dwq		  =  0.0	//Effective channel width offset for CV
+//Stress model parameters
++ saref		  =  1.0e-06	//Reference distance between OD-edge and poly from one-side
++ sbref 	  =  1.0e-06	//Reference distance between OD-edge and poly from other-side
++ wlod		  =  0.0	//Width parameter
++ kuo		  =  0.0	//Mobility degradation/enhancement coefficient
++ kvsat 	  =  0.0	//Saturation velocity degradation/enhancement coefficient
++ tkuo		  =  0.0	//Temperature dependence of KUO
++ lkuo		  =  0.0	//Length dependence of KUO
++ wkuo		  =  0.0	//Width dependence of KUO
++ pkuo		  =  0.0	//Cross-term dependence of KUO
++ llodkuo	  =  1.0 	//Length parameter for UO stress effect	????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wlodkuo	  =  1.0 	//Width parameter for UO stress effect  ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ kvtho		  =  0.0	//Threshold shifth parameter
++ lkvtho	  =  0.0	//Length dependence of KVTHO
++ wkvtho 	  =  0.0	//Width dependence of KVTHO
++ pkvtho	  =  0.0	//Cross-term dependence of KVTHO
++ llodvth	  =  1.0	//Length parameter for VTH-stress effect  ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wlodvth	  =  1.0	//Width parameter for VTH-stress effect   ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ stetao	  =  0.0	//Eta0 shift factor related to VTHO change
++ lodetao	  =  1.0	//Eta0 shift modification factor for stress effect
+//Process Parameters
+//
++ vfbo		  =  -0.25	//Geometery-independent flat band voltage at TR	 
++ vfbl	      =  0.0
+//+ vfblexp	  =  1.98	//Exponent describing length dependece of VFB
+//+ vfbw		  =  0.0	//Width dependence of VFB
+//+ vfblw		  =  0.0	//Area dependence of VFB
+//
++ stvfbo	  =  1.0e-003	//Geometry-independent temperature dependence of VFB	???????????????????????? In the example deck it equals 2m ???????????????????
++ stvfbl	  =  1.5e-003	//Length dependence of STVFB	???????????????????????? In the example deck it equals 3m ???????????????????
++ stvfbw	  =  0.0	//Width dependence of STVFB
++ stvfblw	  =  0.0	//Area dependence of STVFB
+//
++ toxeo	      =  6.5e-009 	//Equivalent Gate Oxide Thickness
++ toxpo	      =  6.5e-009      //Physical Gate Oxide Thickness
++ tsio	      =  25e-9	//Silicon Film Thickness 
++ tboxo 	  =  145e-9	//Buried Oxide Thickness 
+//
++ nsubo		  =  1.0e+016	//Backplane Doping level (default)
+//
+//+ cto		  =  0.0	//Geometry-independent part of interface states factor CT !!!! IT SETS SS !!!!
+//
+//+ novo		  =  10e+020	//Effective doping of overlap -ldd regions (cm^-3) (DEFAULT) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//+ novdo		  =  10e+020	//Effective doping of overlap -ldd regions at drain side (DEFAULT)
+//
+//
+//Quantum mechanical effects
++ qmc		  =  1.0	//Quantum confinement coefficient
+//
+//
+//Gate to Interface coupling parameters
+//+ cicfo		  =  1	//front interface coupling coefficient 
+//+ cico	      =  1.0	//back interface coupling coefficient
+//+ pscel		  =  2.05	//Length dependence of PSCE   !!!!!!!!!!!!!!!!!!!!!!!!?????????????? 0 in spectre default, 60u in example deck ???????????!!!!!!!!!!!!
+//+ pscel = 1.5
+//+ pscelexp	  =  2.2	//Exponent describing Length Dependence of PSCE
+//+ pscew		  =  0.0	//Width dependence of PSCE
+//+ pscebo	  =  1.0	//Short channel back to front interface assynmetry factor
+//
+//
+//DIBL parameters
+//
+//+ cfl		  = 1.0	//Length Dependence of CF DIBL-parameter !!!!!!!!!!!!!!!??????????????????0 in spectre, 20u in example deck ?????????????!!!!!!!!!!!!!!!!!!
+//+ cflexp	  =  2.	//Exponent for Length dependence of CF
+//+ cfw	   	  =  0.0	//Width dependence of CF
+//
+//+ cfbo		  =  0.5	//DIBL back to front interface assynetry factor
+//
+//+ stcfl		  =  0.0	//channel length dependence of Temp dependence of CF
+//
+//+ cfdo		  =  0.05	//Drain voltage dependence of parameter of DIBL (DEFAULT:0.2)
+//
+//+ cfdll       =  0.87    // DIBL modulation due to Leff dependence on biases
+//
+//
+//Mobility parameters
++ uo		  =  3.9e-002 
+//+ uo		  =  (553.4 * (1 + u0_mis)) + delta_n_u0_hs + du0_pmc_nhs	//Front Channel Low Field mobility at TR
+//+ fbet1		  =  0.0	//First length dependence modulation of BETN (Front channel ratio times low field mobility at TR) (DEFAULT:0)
+//+ lp1		  =  1.0e-009	//	First characteristic length of BETN scaling	(DEFAULT)
+//+ fbet2		  =  1.e-02	//	Second length dependence modulation modulation of BETN (DEFAULT)
+//+ lp2		  =  10.e-009	//	Second characteristic length of BETN scaling	
+//
++ betnbo	  =  1.0	//Back channel over front channle low field mobility ratio
+//
++ stbeto	  =  1.5	//Geometry independent temperature dependence of BETN
++ stbetl	  =  0.0	//Length dependence of STBET
++ stbetw 	  =  0.0	//Width dependence of STBET
++ stbetlw	  =  0.0	//Area dependence of STBET
+//
+//+ cso	      =  0.3	//Geometry independent part of remote coulomb scatering parameter at TR
+//+ csl		  =  5.0e-003	//Channel length scaling of CSO
++ cslexp	  =  2.	//Geom.independent global scale parameter for CS
++ csthro	  =  1.0	// Geometry independent global scale parameter for Coulomb scattering threshold voltage (DEFAULT:2)
++ stcso		  =  0.0	//Temperature Dependence of CS
++ thecso	  =  1.0	//Remote Coulomb scattering exponent at TR !!!!!!!!!!!!!!????????????? 3 in example deck,  1.5 for spectre???????????????????!!!!!!!!!!!!!!!!!!!!
++ stthecso	  =  0.0	//Temperature dependence of THECS
+//
++ mueo		  =  6.5	//High-field mobility reduction coefficient at TR !!!!!!!!!?????????????? 500m at spectre,  300m at example deck !!!!!!!!!!??????????????
++ stmueo	  =  0.0	//Temperature dependence of MUE 	!!!!!!!!!!!!!!????????????????? 0 at spectre,  -500m at example deck ??????????!!!!!!!!!!!!!!!!!!!
++ themuo	  =  0.9		//High-field Mobility reduction exponent at TR
++ stthemuo	  =  0.0	//Temperature dependence of THEMU !!!!!!!!!!!!!!!!!!????????????????????? BUT 0 at example deck ???????????????!!!!!!!!!!!!!!!!!!!!!
+//
+//+ xcoro		  =  0.0	//High-field mobility non-universality factor at TR
+//+ xcorl		  =  0.0	//Channel length scaling parameter of XCOR
+//+ xcorlexp 	  =  1.0	//Channel length scaling exponent of XCOR
+//+ stxcoro	  =  0.0	//Temperature dependence of XCOR
+//
+//+ fetao		  =  1.0	//Transverse Effective field parameter
+//
+//
+//Series Resistance parameters
++ rsw1		  =  400		//Source/Drain series resistance for channel width WEN at TR !!!!!!!!!!!!!!!???????? 30 for spectre,  60 for example deck ???????????????!!!!!!!!!!!!!!
++ rsw2		  = 0	//Higher-order width scaling of source/drain series resistance
++ strso		  =  1.0	//Temperature dependence of RS
++ rsgo		  =  -1e-005	//transverse electric field dependence of RS	
++ thersgo	  =  2.0	//transverse electric field dependence exponent of RS
+//
+//
+//Velocity Saturation Parameters
++ thesato	  =	0.3		//Geometry independent velocity saturation parameter at TR
+//+ thesatl	  =  -98.376	//Length dependence of THESAT	!!!!!!!!!!!!!!!????????????????? 0 for spectre,	4m in example deck ???????????!!!!!!!!!!!
+//+ thesatlexp  =  -0.386	//Exponent for length dependence of THESAT
+//+ thesatw	  =  0.0	//Width dependence of THESAT
+//+ thesatlw	  =  0.0	//Area dependence of THESAT
+//
+//+ thesatgo  =  -0.09	//Geometry-independent velocity saturation parameter at TR !!!!!!!!!!!!!???????????????? 0 for spectre,  1 at example deck???????????!!!!!!!!!!!!!!!!
+//
+//+ thesatbo	  =  0	//Back Gate bias dependence of velociy saturation
+//
+//+ stthesato	  =  -0.2		//Temperature dependence pf THESAT and THESATG ?????????????!!!!!!!!!!!!!!!!!!1 -400m at example deck ???????????!!!!!!!!!!!!!!!!
+//+ stthesatl	  =  0.0	//Length dependence of STTHESAT
+//+ stthesatw	  =  0.0	//Width dependence of STTHESAT
+//+ stthesatlw  =  0.0	//Area dependence of STTHESAT
+//
+//
+//Saturation and Channel length Modulation Parameters
+//+ axo	      =	 25	//linear/saturation transistion exponent
+//+ axl	      =  0.512	//Length dependence of AX 	?????????????!!!!!!!!!!!!!!!!!!! 0 for specte, 50m at example deck???????????????!!!!!!!!!!!!
+//+ axlexp	  =  0.420	//Exponent for length dependence of AX
+//Channel Length Modulation (CLM) Parameters
++ alpl1		  =  0.03	//Length dependence of CLM pre-factor  0 for spectre,	2m at example deck???????????!!!!!!!!!!!!
++ alplexp	  =  1.0	//Exponent for length dependence of ALP	
++ alpl2		  =  0.0e-01	//Second order length dependence of ALP	????????????!!!!!!!!!!!!!!!!! 0 for spectre, 1m at example deck ?????????????!!!!!!!!!!!!!!!!
++ alpw		  =  0.0	//Width dependence of ALP
+//
++ alp1l1	  =  0.0	//Length dependence of CLM enhancement factor above threshold ????????!!!!!!!!!!!! 0 for spectre,  100u at example deck ?????????!!!!!!!!!!!!!!
++ alp1lexp	  =  1.0		//Exponent for length dependence of ALP1
++ alp1l2	  =  0.0	//Second order length dependence of ALP1	???????????!!!!!!!!!!!!!!!!!! 0 for spectre, 	50m at example deck ???????!!!!!!!!!!!!!!
++ alp1w	      =  0.0	//Width dependence of ALP1
+//
+//+ vpo	      =  0.05	//CLM logarithm dependence factor ?????????????!!!!!!!!!!!!!!!!!! 0.01 at example deck ??????????!!!!!!!!!!!!!!!!!!!
+//
+//
+//Gate Current Parameters
+//+ gcoo		  =  0.0	//Gate-tunneling energy adjustment
+//+ iginvlw	  =  0.0	//Gate channel current pre-factor for a channel area of WEN*LEN
+//+ igovinvw	  =  0.0	//Gate overlap current pre-factor for an overlap of WEN*LOVH in inversion
+//+ igovaccw	  =  0.0	//Gate overlap current pre-factor for an overlap of WEN*LOVH in accumulation
+//+ gc2cho	  =  0.375	//Gate to channel current slope factor
+//+ gc3cho	  =  0.063	// Gate  to channel current curvature factor
+//+ gc2ovinvo	  =  0.375	//Gate current slope factor in overlaps (inversion)
+//+ gc2ovacco	  =  0.375	//Gate current slope factor in overlaps (accumulation)
+//+ gc3ovinvo	  =  0.063	//Gate current curvature factor in overlaps (invesion)
+//+ gc3ovacco	  =  0.063	//Gate current curvature factor in overlaps (accumulation)
+//+ stigo       =  0.0	//Temperature dependence of all gate currents
+//+ chibo		  =  3.1	//Tunneling barrier height	!!!!!!!!!!!!!!??????????????????   1.9 in exapmle deck,  3.1 in spectre ????????????!!!!!!!!!!!!!!!!!!
+//
+//
+//Gate Induced Drain/Source Leakage (GIDL) Parameters
+//+ agidlw	  =  0.0	//Width dependence of GIDL pre-factor
+//+ bgidlo	  =  41.0	//GIDL probability factor at TR
+//+ bgidldo	  =  41.0	//GIDL probability factor at TR at drain side
+//+ stbgidlo    =  0.0	//Temperature dependence of BGIDL
+//+ cgidlo	  =  0.0	//Back-bias dependence of GIDL
+//
+//
+//Charge Model Parameters
++ cgbovl	  =  0.0	//Oxide capacitance for gate-substrate overlap
++ cfro		  =  0.0e-017	//Corner related outer fring capacitance
+//+ cfrw 		  =  9.1e-017	//ORIGINAL
++ cfrw 		  =  9.2e-017	//Output fring capacitance by side (F/um) ???????????????!!!!!!!!!!!!!!!!!!!! according to cf parameter (BSIM3) of the native transistor  Take care the unit - F/um  ?????????!!!!!!!!!!!!!!!!!1
+//
++ lovo        =  20.0e-009	//Overlap length for gate/source-drain overlap capacitance
++ lovdo       =  20.0e-009	//Overlap length for gate/drain overlap capacitance
+//
++ csdo		  =  1.0	//	Drain to source direct capacitance correction factor.	
+//
++ csdbpo	  =  0.0	//Drain/Source to substrate perimeter capacitance (F/m)
+//
+//
+//Self Heating Effect Parameters
++ rtho		  =  1.0e+005	//Geometry-independent global scale parameter of RTH (thermal resistance)
++ rthl		  =  1.5		//Length dependence of RTH and CTH
++ rthw	      =  3.0    	//Width dependence of RTH and CTH
++ rthlw	      =  4.5    	//Area dependence of RTH
++ ctho	      =  1.0e-012	//Geometry-independent of thermal capacitance
++ strtho	  =  0.0	//Temperature dependence of RTH
+//Noise Parameters
++ fnto		  =  1.0	//Thermal Noise Coefficient
++ nfalw		  =  8.0e+022	//First coefficient of flicker noise
++ nfblw	      =  3.0e+007	//Second coefficient of flicker noise !!!!!!!!!!!!!!!???????????? 3e7 spectre default???????????????!!!!!!!!!!!!!!!!!!
++ nfclw		  =  0.0	//3rd coefficient of flicker noise
++ nfeo		  =  0.0	//Front Interface transverse field effect coefficient
++ efo		  =  1.0	//Frequency dependence exponent of flicker noise
+ends pmos_0
+
+//
+
+inline subckt nmos_1 (D G S E)
+
+parameters w=2e-006 l=1e-006 nf=1 asource=5e-012 adrain=5e-012 psource=9e-006 pdrain=9e-006 
+
+nmos_1 (D G S E) nmos_1 w=w*nf l=l nf=nf asource=asource adrain=adrain psource=psource pdrain=pdrain
+
+model nmos_1 utsoi2
+//Model selection
++ version     =  2.1	//newest version
++ swscale     =  1.0
+//Switch for parasitic effects
++ swigate     =  0.0	//flag for gate current			
++ swgidl      =  0.0	//flag for GIDL current
++ swshe       =  0.0	//flag for shelf heating effect
++ swign       =  1.0	//flag for induced gate noise model
+//Device type and reference temperature
++ type		  =  n	
++ tr          =  25.0	//nominal temperature
+//Geometry scaling parameters
++ lvaro		  =  0.0	//Geometry independent difference between physical and drawn field-oxide opening
++ lvarl		  =  0.0	//Length dependence of LPS	??????????????????
++ lvarw		  =  0.0	//Width dependence of LPS
++ lap 		  =  0.0
+//+ lap 		  =  3.0e-09	//Effective channel length reduction per side ??????????????? spectre default: 0???????????????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wvaro		  =  0.0	//Geometry-independent difference between physical and drawn field-oxide opening
++ wvarl		  =  0.0	//Length-dependence of WOD
++ wvarw		  =  0.0	//Width dependence of WOD
++ wot		  =  0.0	//Effective reduction of channel width per side
++ dlq 		  =  0.0	//Effective channel length offset for CV
++ dwq		  =  0.0	//Effective channel width offset for CV
+//Stress model parameters
++ saref		  =  1.0e-06	//Reference distance between OD-edge and poly from one-side
++ sbref 	  =  1.0e-06	//Reference distance between OD-edge and poly from other-side
++ wlod		  =  0.0	//Width parameter
++ kuo		  =  0.0	//Mobility degradation/enhancement coefficient
++ kvsat 	  =  0.0	//Saturation velocity degradation/enhancement coefficient
++ tkuo		  =  0.0	//Temperature dependence of KUO
++ lkuo		  =  0.0	//Length dependence of KUO
++ wkuo		  =  0.0	//Width dependence of KUO
++ pkuo		  =  0.0	//Cross-term dependence of KUO
++ llodkuo	  =  1.0 	//Length parameter for UO stress effect	????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wlodkuo	  =  1.0 	//Width parameter for UO stress effect  ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ kvtho		  =  0.0	//Threshold shifth parameter
++ lkvtho	  =  0.0	//Length dependence of KVTHO
++ wkvtho 	  =  0.0	//Width dependence of KVTHO
++ pkvtho	  =  0.0	//Cross-term dependence of KVTHO
++ llodvth	  =  1.0	//Length parameter for VTH-stress effect  ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wlodvth	  =  1.0	//Width parameter for VTH-stress effect   ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ stetao	  =  0.0	//Eta0 shift factor related to VTHO change
++ lodetao	  =  1.0	//Eta0 shift modification factor for stress effect
+//Process Parameters
+//
++ vfbo		  =  -3.2e-02	//Geometery-independent flat band voltage at TR	 
++ vfbl	      =  0.0
++ vfblexp	  =  1.98	//Exponent describing length dependece of VFB
++ vfbw		  =  0.0	//Width dependence of VFB
++ vfblw		  =  0.0	//Area dependence of VFB
+//
++ stvfbo	  =  1.0e-003	//Geometry-independent temperature dependence of VFB	???????????????????????? In the example deck it equals 2m ???????????????????
++ stvfbl	  =  1.5e-003	//Length dependence of STVFB	???????????????????????? In the example deck it equals 3m ???????????????????
++ stvfbw	  =  0.0	//Width dependence of STVFB
++ stvfblw	  =  0.0	//Area dependence of STVFB
+//
++ toxeo	      =  4.5e-009 	//Equivalent Gate Oxide Thickness
++ toxpo	      =  4.5e-009      //Physical Gate Oxide Thickness
++ tsio	      =  20e-9	//Silicon Film Thickness 
++ tboxo 	  =  150e-9	//Buried Oxide Thickness 
+//
++ nsubo		  =  3.0e+018	//Backplane Doping level (default)
+//
++ cto		  =  0.0	//Geometry-independent part of interface states factor CT
+//
++ novo		  =  10e+020	//Effective doping of overlap -ldd regions (cm^-3) (DEFAULT) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ novdo		  =  10e+020	//Effective doping of overlap -ldd regions at drain side (DEFAULT)
+//
+//
+//Quantum mechanical effects
++ qmc		  =  1.0	//Quantum confinement coefficient
+//
+//
+//Gate to Interface coupling parameters
++ cicfo		  =  1	//front interface coupling coefficient 
++ cico	      =  1.0	//back interface coupling coefficient
++ pscel		  =  2.05	//Length dependence of PSCE   !!!!!!!!!!!!!!!!!!!!!!!!?????????????? 0 in spectre default, 60u in example deck ???????????!!!!!!!!!!!!
++ pscelexp	  =  2.2	//Exponent describing Length Dependence of PSCE
++ pscew		  =  0.0	//Width dependence of PSCE
++ pscebo	  =  1.0	//Short channel back to front interface assynmetry factor
+//
+//
+//DIBL parameters
+//
++ cfl		  = 1.4	//Length Dependence of CF DIBL-parameter !!!!!!!!!!!!!!!??????????????????0 in spectre, 20u in example deck ?????????????!!!!!!!!!!!!!!!!!!
++ cflexp	  =  2.	//Exponent for Length dependence of CF
++ cfw	   	  =  0.0	//Width dependence of CF
+//
++ cfbo		  =  0.5	//DIBL back to front interface assynetry factor
+//
++ stcfl		  =  0.0	//channel length dependence of Temp dependence of CF
+//
++ cfdo		  =  0.05	//Drain voltage dependence of parameter of DIBL (DEFAULT:0.2)
+//
++ cfdll       =  0.87    // DIBL modulation due to Leff dependence on biases
+//
+//
+//Mobility parameters
++ uo		  =  7.8e-002
+//+ uo		  =  (553.4 * (1 + u0_mis)) + delta_n_u0_hs + du0_pmc_nhs	//Front Channel Low Field mobility at TR
++ fbet1		  =  0.0	//First length dependence modulation of BETN (Front channel ratio times low field mobility at TR) (DEFAULT:0)
++ lp1		  =  1.0e-009	//	First characteristic length of BETN scaling	(DEFAULT)
++ fbet2		  =  1.e-02	//	Second length dependence modulation modulation of BETN (DEFAULT)
++ lp2		  =  10.e-009	//	Second characteristic length of BETN scaling	
+//
++ betnbo	  =  1.0	//Back channel over front channle low field mobility ratio
+//
++ stbeto	  =  1.5	//Geometry independent temperature dependence of BETN
++ stbetl	  =  0.0	//Length dependence of STBET
++ stbetw 	  =  0.0	//Width dependence of STBET
++ stbetlw	  =  0.0	//Area dependence of STBET
+//
++ cso	      =  0.1	//Geometry independent part of remote coulomb scatering parameter at TR
++ csl		  =  5.0e-003	//Channel length scaling of CSO
++ cslexp	  =  2.	//Geom.independent global scale parameter for CS
++ csthro	  =  1.0	// Geometry independent global scale parameter for Coulomb scattering threshold voltage (DEFAULT:2)
++ stcso		  =  0.0	//Temperature Dependence of CS
++ thecso	  =  0.85	//Remote Coulomb scattering exponent at TR !!!!!!!!!!!!!!????????????? 3 in example deck,  1.5 for spectre???????????????????!!!!!!!!!!!!!!!!!!!!
++ stthecso	  =  0.0	//Temperature dependence of THECS
+//
++ mueo		  =  2.5	//High-field mobility reduction coefficient at TR !!!!!!!!!?????????????? 500m at spectre,  300m at example deck !!!!!!!!!!??????????????
++ stmueo	  =  0.0	//Temperature dependence of MUE 	!!!!!!!!!!!!!!????????????????? 0 at spectre,  -500m at example deck ??????????!!!!!!!!!!!!!!!!!!!
++ themuo	  =  0.86		//High-field Mobility reduction exponent at TR
++ stthemuo	  =  0.0	//Temperature dependence of THEMU !!!!!!!!!!!!!!!!!!????????????????????? BUT 0 at example deck ???????????????!!!!!!!!!!!!!!!!!!!!!
+//
++ xcoro		  =  0.0	//High-field mobility non-universality factor at TR
++ xcorl		  =  0.0	//Channel length scaling parameter of XCOR
++ xcorlexp 	  =  1.0	//Channel length scaling exponent of XCOR
++ stxcoro	  =  0.0	//Temperature dependence of XCOR
+//
++ fetao		  =  1.0	//Transverse Effective field parameter
+//
+//
+//Series Resistance parameters
++ rsw1		  =  155		//Source/Drain series resistance for channel width WEN at TR !!!!!!!!!!!!!!!???????? 30 for spectre,  60 for example deck ???????????????!!!!!!!!!!!!!!
++ rsw2		  = 0	//Higher-order width scaling of source/drain series resistance
++ strso		  =  1.0	//Temperature dependence of RS
++ rsgo		  =  -1e-005	//transverse electric field dependence of RS	
++ thersgo	  =  2.0	//transverse electric field dependence exponent of RS
+//
+//
+//Velocity Saturation Parameters
++ thesato	  =	 9.573		//Geometry independent velocity saturation parameter at TR
++ thesatl	  =  -98.376	//Length dependence of THESAT	!!!!!!!!!!!!!!!????????????????? 0 for spectre,	4m in example deck ???????????!!!!!!!!!!!
++ thesatlexp  =  -0.386	//Exponent for length dependence of THESAT
++ thesatw	  =  0.0	//Width dependence of THESAT
++ thesatlw	  =  0.0	//Area dependence of THESAT
+//
++ thesatgo  =  -0.09	//Geometry-independent velocity saturation parameter at TR !!!!!!!!!!!!!???????????????? 0 for spectre,  1 at example deck???????????!!!!!!!!!!!!!!!!
+//
++ thesatbo	  =  0	//Back Gate bias dependence of velociy saturation
+//
++ stthesato	  =  -0.2		//Temperature dependence pf THESAT and THESATG ?????????????!!!!!!!!!!!!!!!!!!1 -400m at example deck ???????????!!!!!!!!!!!!!!!!
++ stthesatl	  =  0.0	//Length dependence of STTHESAT
++ stthesatw	  =  0.0	//Width dependence of STTHESAT
++ stthesatlw  =  0.0	//Area dependence of STTHESAT
+//
+//
+//Saturation and Channel length Modulation Parameters
++ axo	      =	 4.981	//linear/saturation transistion exponent
++ axl	      =  0.512	//Length dependence of AX 	?????????????!!!!!!!!!!!!!!!!!!! 0 for specte, 50m at example deck???????????????!!!!!!!!!!!!
++ axlexp	  =  0.420	//Exponent for length dependence of AX
+//Channel Length Modulation (CLM) Parameters
++ alpl1		  =  0.0	//Length dependence of CLM pre-factor  0 for spectre,	2m at example deck???????????!!!!!!!!!!!!
++ alplexp	  =  1.0	//Exponent for length dependence of ALP	
++ alpl2		  =  0.0e-01	//Second order length dependence of ALP	????????????!!!!!!!!!!!!!!!!! 0 for spectre, 1m at example deck ?????????????!!!!!!!!!!!!!!!!
++ alpw		  =  0.0	//Width dependence of ALP
+//
++ alp1l1	  =  7.986e-03	//Length dependence of CLM enhancement factor above threshold ????????!!!!!!!!!!!! 0 for spectre,  100u at example deck ?????????!!!!!!!!!!!!!!
++ alp1lexp	  =  0.829		//Exponent for length dependence of ALP1
++ alp1l2	  =  8.599e-04	//Second order length dependence of ALP1	???????????!!!!!!!!!!!!!!!!!! 0 for spectre, 	50m at example deck ???????!!!!!!!!!!!!!!
++ alp1w	      =  0.0	//Width dependence of ALP1
+//
++ vpo	      =  0.05	//CLM logarithm dependence factor ?????????????!!!!!!!!!!!!!!!!!! 0.01 at example deck ??????????!!!!!!!!!!!!!!!!!!!
+//
+//
+//Gate Current Parameters
++ gcoo		  =  0.0	//Gate-tunneling energy adjustment
++ iginvlw	  =  0.0	//Gate channel current pre-factor for a channel area of WEN*LEN
++ igovinvw	  =  0.0	//Gate overlap current pre-factor for an overlap of WEN*LOVH in inversion
++ igovaccw	  =  0.0	//Gate overlap current pre-factor for an overlap of WEN*LOVH in accumulation
++ gc2cho	  =  0.375	//Gate to channel current slope factor
++ gc3cho	  =  0.063	// Gate  to channel current curvature factor
++ gc2ovinvo	  =  0.375	//Gate current slope factor in overlaps (inversion)
++ gc2ovacco	  =  0.375	//Gate current slope factor in overlaps (accumulation)
++ gc3ovinvo	  =  0.063	//Gate current curvature factor in overlaps (invesion)
++ gc3ovacco	  =  0.063	//Gate current curvature factor in overlaps (accumulation)
++ stigo       =  0.0	//Temperature dependence of all gate currents
++ chibo		  =  3.1	//Tunneling barrier height	!!!!!!!!!!!!!!??????????????????   1.9 in exapmle deck,  3.1 in spectre ????????????!!!!!!!!!!!!!!!!!!
+//
+//
+//Gate Induced Drain/Source Leakage (GIDL) Parameters
++ agidlw	  =  0.0	//Width dependence of GIDL pre-factor
++ bgidlo	  =  41.0	//GIDL probability factor at TR
++ bgidldo	  =  41.0	//GIDL probability factor at TR at drain side
++ stbgidlo    =  0.0	//Temperature dependence of BGIDL
++ cgidlo	  =  0.0	//Back-bias dependence of GIDL
+//
+//
+//Charge Model Parameters
++ cgbovl	  =  0.0	//Oxide capacitance for gate-substrate overlap
++ cfro		  =  0.0e-017	//Corner related outer fring capacitance
+//+ cfrw 		  =  9.1e-017	//ORIGINAL
++ cfrw 		  =  9.2e-017	//Output fring capacitance by side (F/um) ???????????????!!!!!!!!!!!!!!!!!!!! according to cf parameter (BSIM3) of the native transistor  Take care the unit - F/um  ?????????!!!!!!!!!!!!!!!!!1
+//
++ lovo        =  20.0e-009	//Overlap length for gate/source-drain overlap capacitance
++ lovdo       =  20.0e-009	//Overlap length for gate/drain overlap capacitance
+//
++ csdo		  =  1.0	//	Drain to source direct capacitance correction factor.	
+//
++ csdbpo	  =  0.0	//Drain/Source to substrate perimeter capacitance (F/m)
+//
+//
+//Self Heating Effect Parameters
++ rtho		  =  1.0e+005	//Geometry-independent global scale parameter of RTH (thermal resistance)
++ rthl		  =  1.5		//Length dependence of RTH and CTH
++ rthw	      =  3.0    	//Width dependence of RTH and CTH
++ rthlw	      =  4.5    	//Area dependence of RTH
++ ctho	      =  1.0e-012	//Geometry-independent of thermal capacitance
++ strtho	  =  0.0	//Temperature dependence of RTH
+//Noise Parameters
++ fnto		  =  1.0	//Thermal Noise Coefficient
++ nfalw		  =  8.0e+022	//First coefficient of flicker noise
++ nfblw	      =  3.0e+007	//Second coefficient of flicker noise !!!!!!!!!!!!!!!???????????? 3e7 spectre default???????????????!!!!!!!!!!!!!!!!!!
++ nfclw		  =  0.0	//3rd coefficient of flicker noise
++ nfeo		  =  0.0	//Front Interface transverse field effect coefficient
++ efo		  =  1.0	//Frequency dependence exponent of flicker noise
+ends nmos_1
+
+/////////////
+
+
+
+inline subckt pmos_1 (D G S E)
+
+parameters w=2e-006 l=1e-006 nf=1 asource=5e-012 adrain=5e-012 psource=9e-006 pdrain=9e-006 
+
+pmos_1 (D G S E) pmos_1 w=w*nf l=l nf=nf as=asource ad=adrain ps=psource pd=pdrain 
+
+model pmos_1 utsoi2
+//Model selection
++ version     =  2.1	//newest version
++ swscale     =  1.0
+//Switch for parasitic effects
++ swigate     =  0.0	//flag for gate current			
++ swgidl      =  0.0	//flag for GIDL current
++ swshe       =  0.0	//flag for shelf heating effect
++ swign       =  1.0	//flag for induced gate noise model
+//Device type and reference temperature
++ type		  =  p	
++ tr          =  25.0	//nominal temperature
+//Geometry scaling parameters
++ lvaro		  =  0.0	//Geometry independent difference between physical and drawn field-oxide opening
++ lvarl		  =  0.0	//Length dependence of LPS	??????????????????
++ lvarw		  =  0.0	//Width dependence of LPS
++ lap 		  =  0.0
+//+ lap 		  =  3.0e-09	//Effective channel length reduction per side ??????????????? spectre default: 0???????????????!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wvaro		  =  0.0	//Geometry-independent difference between physical and drawn field-oxide opening
++ wvarl		  =  0.0	//Length-dependence of WOD
++ wvarw		  =  0.0	//Width dependence of WOD
++ wot		  =  0.0	//Effective reduction of channel width per side
++ dlq 		  =  0.0	//Effective channel length offset for CV
++ dwq		  =  0.0	//Effective channel width offset for CV
+//Stress model parameters
++ saref		  =  1.0e-06	//Reference distance between OD-edge and poly from one-side
++ sbref 	  =  1.0e-06	//Reference distance between OD-edge and poly from other-side
++ wlod		  =  0.0	//Width parameter
++ kuo		  =  0.0	//Mobility degradation/enhancement coefficient
++ kvsat 	  =  0.0	//Saturation velocity degradation/enhancement coefficient
++ tkuo		  =  0.0	//Temperature dependence of KUO
++ lkuo		  =  0.0	//Length dependence of KUO
++ wkuo		  =  0.0	//Width dependence of KUO
++ pkuo		  =  0.0	//Cross-term dependence of KUO
++ llodkuo	  =  1.0 	//Length parameter for UO stress effect	????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wlodkuo	  =  1.0 	//Width parameter for UO stress effect  ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ kvtho		  =  0.0	//Threshold shifth parameter
++ lkvtho	  =  0.0	//Length dependence of KVTHO
++ wkvtho 	  =  0.0	//Width dependence of KVTHO
++ pkvtho	  =  0.0	//Cross-term dependence of KVTHO
++ llodvth	  =  1.0	//Length parameter for VTH-stress effect  ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ wlodvth	  =  1.0	//Width parameter for VTH-stress effect   ????????????????????? 0.00?? (spectre default) 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++ stetao	  =  0.0	//Eta0 shift factor related to VTHO change
++ lodetao	  =  1.0	//Eta0 shift modification factor for stress effect
+//Process Parameters
+//
+//+ vfbo		  =  -3.2e-02	//Geometery-independent flat band voltage at TR	 
++ vfbo = -0.3
++ vfbl	      =  0.0
+//+ vfblexp	  =  1.98	//Exponent describing length dependece of VFB
+//+ vfbw		  =  0.0	//Width dependence of VFB
+//+ vfblw		  =  0.0	//Area dependence of VFB
+//
++ stvfbo	  =  1.0e-003	//Geometry-independent temperature dependence of VFB	???????????????????????? In the example deck it equals 2m ???????????????????
++ stvfbl	  =  1.5e-003	//Length dependence of STVFB	???????????????????????? In the example deck it equals 3m ???????????????????
++ stvfbw	  =  0.0	//Width dependence of STVFB
++ stvfblw	  =  0.0	//Area dependence of STVFB
+//
++ toxeo	      =  4.5e-009 	//Equivalent Gate Oxide Thickness
++ toxpo	      =  4.5e-009      //Physical Gate Oxide Thickness
++ tsio	      =  20e-9	//Silicon Film Thickness 
++ tboxo 	  =  150e-9	//Buried Oxide Thickness 
+//
++ nsubo		  =  3.0e+018	//Backplane Doping level (default)
+//
+//+ cto		  =  0.0	//Geometry-independent part of interface states factor CT !!!! IT SETS SS !!!!
+//
+//+ novo		  =  10e+020	//Effective doping of overlap -ldd regions (cm^-3) (DEFAULT) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//+ novdo		  =  10e+020	//Effective doping of overlap -ldd regions at drain side (DEFAULT)
+//
+//
+//Quantum mechanical effects
++ qmc		  =  1.0	//Quantum confinement coefficient
+//
+//
+//Gate to Interface coupling parameters
+//+ cicfo		  =  1	//front interface coupling coefficient 
+//+ cico	      =  1.0	//back interface coupling coefficient
+//+ pscel		  =  2.05	//Length dependence of PSCE   !!!!!!!!!!!!!!!!!!!!!!!!?????????????? 0 in spectre default, 60u in example deck ???????????!!!!!!!!!!!!
+//+ pscel = 1.5
+//+ pscelexp	  =  2.2	//Exponent describing Length Dependence of PSCE
+//+ pscew		  =  0.0	//Width dependence of PSCE
+//+ pscebo	  =  1.0	//Short channel back to front interface assynmetry factor
+//
+//
+//DIBL parameters
+//
+//+ cfl		  = 1.0	//Length Dependence of CF DIBL-parameter !!!!!!!!!!!!!!!??????????????????0 in spectre, 20u in example deck ?????????????!!!!!!!!!!!!!!!!!!
+//+ cflexp	  =  2.	//Exponent for Length dependence of CF
+//+ cfw	   	  =  0.0	//Width dependence of CF
+//
+//+ cfbo		  =  0.5	//DIBL back to front interface assynetry factor
+//
+//+ stcfl		  =  0.0	//channel length dependence of Temp dependence of CF
+//
+//+ cfdo		  =  0.05	//Drain voltage dependence of parameter of DIBL (DEFAULT:0.2)
+//
+//+ cfdll       =  0.87    // DIBL modulation due to Leff dependence on biases
+//
+//
+//Mobility parameters
+//+ uo		  =  3.9e-002
++ uo = 2.5e-002 
+//+ uo		  =  (553.4 * (1 + u0_mis)) + delta_n_u0_hs + du0_pmc_nhs	//Front Channel Low Field mobility at TR
+//+ fbet1		  =  0.0	//First length dependence modulation of BETN (Front channel ratio times low field mobility at TR) (DEFAULT:0)
+//+ lp1		  =  1.0e-009	//	First characteristic length of BETN scaling	(DEFAULT)
+//+ fbet2		  =  1.e-02	//	Second length dependence modulation modulation of BETN (DEFAULT)
+//+ lp2		  =  10.e-009	//	Second characteristic length of BETN scaling	
+//
++ betnbo	  =  1.0	//Back channel over front channle low field mobility ratio
+//
++ stbeto	  =  1.5	//Geometry independent temperature dependence of BETN
++ stbetl	  =  0.0	//Length dependence of STBET
++ stbetw 	  =  0.0	//Width dependence of STBET
++ stbetlw	  =  0.0	//Area dependence of STBET
+//
+//+ cso	      =  0.3	//Geometry independent part of remote coulomb scatering parameter at TR
+//+ csl		  =  5.0e-003	//Channel length scaling of CSO
++ cslexp	  =  2.	//Geom.independent global scale parameter for CS
++ csthro	  =  1.0	// Geometry independent global scale parameter for Coulomb scattering threshold voltage (DEFAULT:2)
++ stcso		  =  0.0	//Temperature Dependence of CS
++ thecso	  =  1.0	//Remote Coulomb scattering exponent at TR !!!!!!!!!!!!!!????????????? 3 in example deck,  1.5 for spectre???????????????????!!!!!!!!!!!!!!!!!!!!
++ stthecso	  =  0.0	//Temperature dependence of THECS
+//
++ mueo		  =  6.5	//High-field mobility reduction coefficient at TR !!!!!!!!!?????????????? 500m at spectre,  300m at example deck !!!!!!!!!!??????????????
++ stmueo	  =  0.0	//Temperature dependence of MUE 	!!!!!!!!!!!!!!????????????????? 0 at spectre,  -500m at example deck ??????????!!!!!!!!!!!!!!!!!!!
++ themuo	  =  0.9		//High-field Mobility reduction exponent at TR
++ stthemuo	  =  0.0	//Temperature dependence of THEMU !!!!!!!!!!!!!!!!!!????????????????????? BUT 0 at example deck ???????????????!!!!!!!!!!!!!!!!!!!!!
+//
+//+ xcoro		  =  0.0	//High-field mobility non-universality factor at TR
+//+ xcorl		  =  0.0	//Channel length scaling parameter of XCOR
+//+ xcorlexp 	  =  1.0	//Channel length scaling exponent of XCOR
+//+ stxcoro	  =  0.0	//Temperature dependence of XCOR
+//
+//+ fetao		  =  1.0	//Transverse Effective field parameter
+//
+//
+//Series Resistance parameters
++ rsw1		  =  400		//Source/Drain series resistance for channel width WEN at TR !!!!!!!!!!!!!!!???????? 30 for spectre,  60 for example deck ???????????????!!!!!!!!!!!!!!
++ rsw2		  = 0	//Higher-order width scaling of source/drain series resistance
++ strso		  =  1.0	//Temperature dependence of RS
++ rsgo		  =  -1e-005	//transverse electric field dependence of RS	
++ thersgo	  =  2.0	//transverse electric field dependence exponent of RS
+//
+//
+//Velocity Saturation Parameters
++ thesato	  =	0.3		//Geometry independent velocity saturation parameter at TR
+//+ thesatl	  =  -98.376	//Length dependence of THESAT	!!!!!!!!!!!!!!!????????????????? 0 for spectre,	4m in example deck ???????????!!!!!!!!!!!
+//+ thesatlexp  =  -0.386	//Exponent for length dependence of THESAT
+//+ thesatw	  =  0.0	//Width dependence of THESAT
+//+ thesatlw	  =  0.0	//Area dependence of THESAT
+//
+//+ thesatgo  =  -0.09	//Geometry-independent velocity saturation parameter at TR !!!!!!!!!!!!!???????????????? 0 for spectre,  1 at example deck???????????!!!!!!!!!!!!!!!!
+//
+//+ thesatbo	  =  0	//Back Gate bias dependence of velociy saturation
+//
+//+ stthesato	  =  -0.2		//Temperature dependence pf THESAT and THESATG ?????????????!!!!!!!!!!!!!!!!!!1 -400m at example deck ???????????!!!!!!!!!!!!!!!!
+//+ stthesatl	  =  0.0	//Length dependence of STTHESAT
+//+ stthesatw	  =  0.0	//Width dependence of STTHESAT
+//+ stthesatlw  =  0.0	//Area dependence of STTHESAT
+//
+//
+//Saturation and Channel length Modulation Parameters
+//+ axo	      =	 25	//linear/saturation transistion exponent
+//+ axl	      =  0.512	//Length dependence of AX 	?????????????!!!!!!!!!!!!!!!!!!! 0 for specte, 50m at example deck???????????????!!!!!!!!!!!!
+//+ axlexp	  =  0.420	//Exponent for length dependence of AX
+//Channel Length Modulation (CLM) Parameters
++ alpl1		  =  0.03	//Length dependence of CLM pre-factor  0 for spectre,	2m at example deck???????????!!!!!!!!!!!!
++ alplexp	  =  1.0	//Exponent for length dependence of ALP	
++ alpl2		  =  0.0e-01	//Second order length dependence of ALP	????????????!!!!!!!!!!!!!!!!! 0 for spectre, 1m at example deck ?????????????!!!!!!!!!!!!!!!!
++ alpw		  =  0.0	//Width dependence of ALP
+//
++ alp1l1	  =  0.0	//Length dependence of CLM enhancement factor above threshold ????????!!!!!!!!!!!! 0 for spectre,  100u at example deck ?????????!!!!!!!!!!!!!!
++ alp1lexp	  =  1.0		//Exponent for length dependence of ALP1
++ alp1l2	  =  0.0	//Second order length dependence of ALP1	???????????!!!!!!!!!!!!!!!!!! 0 for spectre, 	50m at example deck ???????!!!!!!!!!!!!!!
++ alp1w	      =  0.0	//Width dependence of ALP1
+//
+//+ vpo	      =  0.05	//CLM logarithm dependence factor ?????????????!!!!!!!!!!!!!!!!!! 0.01 at example deck ??????????!!!!!!!!!!!!!!!!!!!
+//
+//
+//Gate Current Parameters
+//+ gcoo		  =  0.0	//Gate-tunneling energy adjustment
+//+ iginvlw	  =  0.0	//Gate channel current pre-factor for a channel area of WEN*LEN
+//+ igovinvw	  =  0.0	//Gate overlap current pre-factor for an overlap of WEN*LOVH in inversion
+//+ igovaccw	  =  0.0	//Gate overlap current pre-factor for an overlap of WEN*LOVH in accumulation
+//+ gc2cho	  =  0.375	//Gate to channel current slope factor
+//+ gc3cho	  =  0.063	// Gate  to channel current curvature factor
+//+ gc2ovinvo	  =  0.375	//Gate current slope factor in overlaps (inversion)
+//+ gc2ovacco	  =  0.375	//Gate current slope factor in overlaps (accumulation)
+//+ gc3ovinvo	  =  0.063	//Gate current curvature factor in overlaps (invesion)
+//+ gc3ovacco	  =  0.063	//Gate current curvature factor in overlaps (accumulation)
+//+ stigo       =  0.0	//Temperature dependence of all gate currents
+//+ chibo		  =  3.1	//Tunneling barrier height	!!!!!!!!!!!!!!??????????????????   1.9 in exapmle deck,  3.1 in spectre ????????????!!!!!!!!!!!!!!!!!!
+//
+//
+//Gate Induced Drain/Source Leakage (GIDL) Parameters
+//+ agidlw	  =  0.0	//Width dependence of GIDL pre-factor
+//+ bgidlo	  =  41.0	//GIDL probability factor at TR
+//+ bgidldo	  =  41.0	//GIDL probability factor at TR at drain side
+//+ stbgidlo    =  0.0	//Temperature dependence of BGIDL
+//+ cgidlo	  =  0.0	//Back-bias dependence of GIDL
+//
+//
+//Charge Model Parameters
++ cgbovl	  =  0.0	//Oxide capacitance for gate-substrate overlap
++ cfro		  =  0.0e-017	//Corner related outer fring capacitance
+//+ cfrw 		  =  9.1e-017	//ORIGINAL
++ cfrw 		  =  9.2e-017	//Output fring capacitance by side (F/um) ???????????????!!!!!!!!!!!!!!!!!!!! according to cf parameter (BSIM3) of the native transistor  Take care the unit - F/um  ?????????!!!!!!!!!!!!!!!!!1
+//
++ lovo        =  20.0e-009	//Overlap length for gate/source-drain overlap capacitance
++ lovdo       =  20.0e-009	//Overlap length for gate/drain overlap capacitance
+//
++ csdo		  =  1.0	//	Drain to source direct capacitance correction factor.	
+//
++ csdbpo	  =  0.0	//Drain/Source to substrate perimeter capacitance (F/m)
+//
+//
+//Self Heating Effect Parameters
++ rtho		  =  1.0e+005	//Geometry-independent global scale parameter of RTH (thermal resistance)
++ rthl		  =  1.5		//Length dependence of RTH and CTH
++ rthw	      =  3.0    	//Width dependence of RTH and CTH
++ rthlw	      =  4.5    	//Area dependence of RTH
++ ctho	      =  1.0e-012	//Geometry-independent of thermal capacitance
++ strtho	  =  0.0	//Temperature dependence of RTH
+//Noise Parameters
++ fnto		  =  1.0	//Thermal Noise Coefficient
++ nfalw		  =  8.0e+022	//First coefficient of flicker noise
++ nfblw	      =  3.0e+007	//Second coefficient of flicker noise !!!!!!!!!!!!!!!???????????? 3e7 spectre default???????????????!!!!!!!!!!!!!!!!!!
++ nfclw		  =  0.0	//3rd coefficient of flicker noise
++ nfeo		  =  0.0	//Front Interface transverse field effect coefficient
++ efo		  =  1.0	//Frequency dependence exponent of flicker noise
+ends pmos_1
+

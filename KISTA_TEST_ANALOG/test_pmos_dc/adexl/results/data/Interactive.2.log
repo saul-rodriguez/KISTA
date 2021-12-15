@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Dec 14 14:53:42 2021 
+Best design point: 1
+Design specs: 
+	KISTA_TEST_ANALOG:test_pmos_dc:1	corner	Nominal - 
+	abs(IDC("/M1/D"))		16.58p
+Design parameters: 
+	VDS1		1.8
+	VGS1		400m
+
+Interactive.2
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.2 completed. 
+Current time: Tue Dec 14 14:53:44 2021 

@@ -1,7 +1,6 @@
-test_opamp_modgen
+DFFX1
 
-test_opamp_modgen
-	nmos3_CDNS_9
-	nmos3_CDNS_10
-	pmos3_CDNS_11
+DFFX1
+	nmos3_CDNS_3
+	pmos3_CDNS_4
 

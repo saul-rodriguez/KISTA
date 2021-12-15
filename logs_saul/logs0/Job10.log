@@ -1,143 +1,2336 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = KISTA_TEST_AMS
-	Cell         = test_ams_dff
-	View         = config
-	Simulator    = ams
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.19
-	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.19.rdb
-	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.19/1/KISTA_TEST_AMS:test_ams_dff:1
-	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data
-	Project Dir  = /home/saul/simulation
-	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl
-	File Encoding = 0
-
-
-variable oasisVariableValue redefined
-variable persistNewList redefined
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (2 1) on testbench [
-          KISTA_TEST_AMS:test_ams_dff:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.19/1/KISTA_TEST_AMS:test_ams_dff:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.19/1/KISTA_TEST_AMS:test_ams_dff:1
-
-
-*Info*    Creating Netlist for Point ID (2 1)
-
-generate netlist...
-INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
-INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
- field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
- analog primitives using the Spectre CDF simulation information.
-Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.19/1/KISTA_TEST_AMS:test_ams_dff:1/netlist/digital/control
-Begin Netlisting Nov 15 14:35:53 2021
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.19/1/KISTA_TEST_AMS:test_ams_dff:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-If you want to print only those cellviews that need to be re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
-INFO (VLOGNET-117): Re-netlisting the entire design.
-
-INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-non-stopping cells.
- 
-WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_ams_dff/schematic' has no ports. Make sure that this was the intended 
-design.
- 
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-
-
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-vdc                         spectre              *Stopping View*  
-vpulse                      spectre              *Stopping View*  
-cap                         spectre              *Stopping View*  
-DFFX1                       functional           *Stopping View*  
-test_ams_dff                schematic                             
-
----------- End of netlist configuration information   ----------
-Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.19/1/KISTA_TEST_AMS:test_ams_dff:1/netlist/analog/control
-Copying Spectre source file 'spectre.inp'
-Copying Spectre command file 'spectre.sim'
-Running netlist assembly..
-
-End netlisting Nov 15 14:36:01 2021
-INFO (AMS-1241): AMS UNL netlisting has completed successfully.
-To view the modules, right-click the test name on the Tests and Analyses 
-assistant pane and choose Netlist->Display menu option.
-      ...successful.
-create cds_globals...
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [
-          KISTA_TEST_AMS:test_ams_dff:1 ] for Point ID (2 1).
-
-Delete simulation data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.19/1/KISTA_TEST_AMS:test_ams_dff:1/psf.
-create cds_globals...
-      ...successful.
-compose simulator input file...
-      ...successful.
-validating simulator hierarchy...
-      ...successful.
-running...
-To check for output from compilation, elaboration and simulation run, 
-right-click on the test name, result name, or any value in the "Results" 
-tab of the Outputs section and choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (2 1) on testbench [
-          KISTA_TEST_AMS:test_ams_dff:1 ].
-
-
-
-
-
+\# Program start time:     UTC 2021.12.14 13:42:50.574
+\# Local time: CET (UTC+01:00) 2021.12.14 14:42:50.574
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $
+\o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.7  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso15577 -mpshost s2424 -davinciService DaVinciService_15577_1639488634 -log /home/saul/projects/KISTA/logs_saul/logs0/Job10.log -licenseLockFileName /home/saul/projects/KISTA/.tmp_saul/.s2424_15577 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 10
+\# Host name (type):	s2424 (x86_64)
+\# Operating system:	Linux 3.10.0-1160.42.2.el7.x86_64 #1 SMP Tue Sep 7 14:49:57 UTC 2021
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:95 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 25232)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        520 MB
+\# Available memory:	     37,510 MB
+\# System memory:	     96,361 MB
+\# Maximum memory size:	     95,980 MB
+\# Max mem available:	     37,649 MB
+\# Initial memory used:	        139 MB
+\#        process size:	      1,382 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	s2424:/home/saul/projects/KISTA
+\# Process Id:		25240
+\o 
+\o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt.
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading cli.cxt 
+\o Loading cle.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso15577, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 25240 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# Memory report: using         315 MB, process size 1,633 MB at UTC 2021.12.14 13:42:53.913
+\w *WARNING* The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\a _treeSetOpcGUI(t)
+\r t
+\# Available memory:         37,329 MB at UTC 2021.12.14 13:43:01.309
+\# Memory report: Maximum memory size now 37,648 MB at UTC 2021.12.14 13:43:01.309
+\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.12.14 13:43:01.310
+\o Loading vqp.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = KISTA_TEST_ANALOG
+\o 	Cell         = test_nmos_dc
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = KISTA_TEST_ANALOG:test_nmos_dc:1:1_KISTA_TEST_ANALOG:test_nmos_dc:1:1_state_Interactive.5
+\o 	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5.rdb
+\o 	Results Dir  = /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/1/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 	Results Loc  = /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data
+\o 	Project Dir  = /home/saul/simulation
+\o 	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nmos_dc/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o Loading vdsil.cxt 
+\o Loading viva.cxt 
+\w *WARNING* The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\o KISTA libInit.il file is loaded
+\o initializing MOS callbacks
+\o INFO (TECH-150003): The technology database "analogLib" has been automatically
+\o updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\# Memory report: using         418 MB, process size 1,738 MB at UTC 2021.12.14 13:43:53.078
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 1) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0"
+\o Setting var VGS1 = "0.5"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/1/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/1/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 1)
+\o 
+\o generate netlist...
+\o Loading seCore.cxt 
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/1/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Begin Incremental Netlisting Dec 14 14:43:53 2021
+\o End netlisting Dec 14 14:43:53 2021
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:    3
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 1).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/1/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 1) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 2) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.05"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/2/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/2/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:43:54 2021
+\o End netlisting Dec 14 14:43:54 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 2).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/2/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 2) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 3) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.1"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/3/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/3/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 3)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:43:55 2021
+\o End netlisting Dec 14 14:43:55 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 3).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/3/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 3) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 4) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.15"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/4/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/4/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 4)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:43:56 2021
+\o End netlisting Dec 14 14:43:56 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 4).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/4/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 4) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 5) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/5/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/5/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 5)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:43:57 2021
+\o End netlisting Dec 14 14:43:57 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 5).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/5/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 5) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 6) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.25"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/6/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/6/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 6)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:43:58 2021
+\o End netlisting Dec 14 14:43:58 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 6).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/6/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 6) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 7) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/7/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/7/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 7)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:43:59 2021
+\o End netlisting Dec 14 14:43:59 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 7).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/7/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 7) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 8) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.35"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/8/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/8/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 8)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:43:59 2021
+\o End netlisting Dec 14 14:43:59 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 8).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/8/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 8) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 9) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.4"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/9/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/9/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 9)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:00 2021
+\o End netlisting Dec 14 14:44:00 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 9).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/9/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 9) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 10) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.45"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/10/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/10/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 10)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:01 2021
+\o End netlisting Dec 14 14:44:01 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 10).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/10/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 10) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 11) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.5"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/11/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/11/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 11)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:02 2021
+\o End netlisting Dec 14 14:44:02 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 11).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/11/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 11) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 12) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.55"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/12/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/12/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 12)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:03 2021
+\o End netlisting Dec 14 14:44:03 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 12).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/12/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 12) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 13) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/13/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/13/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 13)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:04 2021
+\o End netlisting Dec 14 14:44:04 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 13).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/13/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 13) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 14) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.65"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/14/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/14/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 14)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:05 2021
+\o End netlisting Dec 14 14:44:05 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 14).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/14/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 14) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 15) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.7"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/15/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/15/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 15)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:06 2021
+\o End netlisting Dec 14 14:44:06 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 15).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/15/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 15) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 16) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.75"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/16/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/16/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 16)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:07 2021
+\o End netlisting Dec 14 14:44:07 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 16).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/16/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 16) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 17) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.8"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/17/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/17/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 17)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:08 2021
+\o End netlisting Dec 14 14:44:08 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 17).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/17/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 17) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 18) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.85"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/18/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/18/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 18)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:09 2021
+\o End netlisting Dec 14 14:44:09 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 18).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/18/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 18) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 19) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.9"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/19/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/19/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 19)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:10 2021
+\o End netlisting Dec 14 14:44:10 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 19).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/19/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 19) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 20) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "0.95"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/20/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/20/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 20)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:10 2021
+\o End netlisting Dec 14 14:44:10 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 20).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/20/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 20) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 21) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/21/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/21/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 21)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:11 2021
+\o End netlisting Dec 14 14:44:11 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 21).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/21/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 21) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 22) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.05"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/22/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/22/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 22)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:12 2021
+\o End netlisting Dec 14 14:44:12 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 22).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/22/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 22) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 23) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.1"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/23/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/23/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 23)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:13 2021
+\o End netlisting Dec 14 14:44:13 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 23).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/23/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 23) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 24) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.15"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/24/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/24/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 24)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:14 2021
+\o End netlisting Dec 14 14:44:14 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 24).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/24/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 24) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 25) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/25/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/25/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 25)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:15 2021
+\o End netlisting Dec 14 14:44:15 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 25).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/25/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 25) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 26) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.25"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/26/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/26/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 26)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:16 2021
+\o End netlisting Dec 14 14:44:16 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 26).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/26/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 26) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 27) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/27/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/27/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 27)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:17 2021
+\o End netlisting Dec 14 14:44:17 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 27).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/27/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 27) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 28) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.35"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/28/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/28/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 28)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:18 2021
+\o End netlisting Dec 14 14:44:18 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 28).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/28/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 28) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 29) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.4"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/29/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/29/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 29)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:19 2021
+\o End netlisting Dec 14 14:44:19 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 29).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/29/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 29) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 30) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.45"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/30/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/30/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 30)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:20 2021
+\o End netlisting Dec 14 14:44:20 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 30).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/30/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 30) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 31) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.5"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/31/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/31/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 31)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:20 2021
+\o End netlisting Dec 14 14:44:20 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 31).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/31/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 31) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 32) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.55"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/32/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/32/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 32)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:21 2021
+\o End netlisting Dec 14 14:44:21 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 32).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/32/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 32) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 33) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/33/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/33/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 33)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:22 2021
+\o End netlisting Dec 14 14:44:22 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 33).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/33/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 33) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 34) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.65"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/34/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/34/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 34)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:23 2021
+\o End netlisting Dec 14 14:44:23 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 34).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/34/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 34) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 35) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.7"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/35/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/35/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 35)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:24 2021
+\o End netlisting Dec 14 14:44:24 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 35).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/35/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 35) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 36) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.75"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/36/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/36/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 36)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:25 2021
+\o End netlisting Dec 14 14:44:25 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 36).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/36/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 36) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 37) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDS1 = "1.8"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/37/KISTA_TEST_ANALOG:test_nmos_dc:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/37/KISTA_TEST_ANALOG:test_nmos_dc:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 37)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 14 14:44:26 2021
+\o End netlisting Dec 14 14:44:26 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ] for Point ID (5 37).
+\o 
+\o Delete psf data in /home/saul/simulation/KISTA_TEST_ANALOG/test_nmos_dc/adexl/results/data/Interactive.5/37/KISTA_TEST_ANALOG:test_nmos_dc:1:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 37) on testbench [
+\o           KISTA_TEST_ANALOG:test_nmos_dc:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit            429 MB, process size 1,773 MB at UTC 2021.12.14 13:48:50.356
+\# Memory report: peak usage         429 MB, process size 1,773 MB
