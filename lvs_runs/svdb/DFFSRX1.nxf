@@ -1,0 +1,40 @@
+# XXXX: Net Cross Reference (nxf) (File format 1)
+# XXXX: Layout Primary DFFSRX1
+# XXXX: End of header.
+% MN 4 MN 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% MP 4 MP 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% DFFSRX1 8 DFFSRX1 8 
+0 16 0 n21
+0 9 0 n20
+0 2 0 CKb
+0 11 0 qbint
+0 8 0 RNb
+0 3 0 CKbb
+0 15 0 n30
+0 4 0 mout
+0 12 0 qint
+0 10 0 n35
+0 19 0 n40
+0 17 0 net426
+0 18 0 n42
+0 24 0 n22
+0 23 0 n31
+0 25 0 net402
+0 27 0 n43
+0 26 0 n41
+0 CK 0 CK
+0 D 0 D
+0 Q 0 Q
+0 QN 0 QN
+0 RN 0 RN
+0 SN 0 SN
+0 VDD! 0 VDD!
+0 VSS! 0 VSS!

@@ -1,0 +1,524 @@
+*
+*
+*
+*                       LINUX           Thu Dec 16 11:46:57 2021
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 20.1.2-p025
+*  Build Date     : Thu Sep 3 13:54:09 PDT 2020
+*
+*  HSPICE LIBRARY
+*
+*
+*
+
+*
+.global VSS! VDD!
+.SUBCKT DFFSRX1 QN RN SN CK Q D
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MX45_M0_unmatched	QN#2	qint#7	VSS!#1	VSS!#1	nch	L=1e-06
++ W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX44_M0_unmatched	qint#3	qbint#11	VSS!#12	VSS!#12
++ nch	L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0	fw=2e-06 sa=2e-06 sb=2e-06
+MX43_M0_unmatched	Q#2	qbint#12	VSS!#13	VSS!#13
++ nch	L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0	fw=2e-06 sa=2e-06 sb=2e-06
+MX42_M0_unmatched	n35#10	CKb#5	n40	n40	nch	L=1e-06
++ W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX41_M0_unmatched	n40#2	qbint#10	n42	n42	nch	L=1e-06
++ W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX40_M0_unmatched	n40#4	RNb#12	n42#4	n42#4	nch	L=1e-06
++ W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX39_M0_unmatched	n42#3	SN#9	VSS!#14	VSS!#14	nch
++ L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX38_M0_unmatched	qbint#3	n35#7	VSS!#15	VSS!#15
++ nch	L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0	fw=2e-06 sa=2e-06 sb=2e-06
+MX37_M0_unmatched	n35#4	CKbb#8	mout#6	mout#6	nch	L=1e-06
++ W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX36_M0_unmatched	mout#13	n20#13	net426	net426	nch	L=1e-06
++ W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX35_M0_unmatched	mout#11	RNb#8	net426#2	net426#2
++ nch	L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0	fw=2e-06 sa=2e-06 sb=2e-06
+MX34_M0_unmatched	net426#4	SN#5	VSS!#16	VSS!#16
++ nch	L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0	fw=2e-06 sa=2e-06 sb=2e-06
+MX33_M0_unmatched	RNb#4	RN#4	VSS!#17	VSS!#17	nch
++ L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX32_M0_unmatched	n21	D#4	VSS!#18	VSS!#18	nch
++ L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX31_M0_unmatched	n20#5	CKb#12	n21#2	n21#2	nch	L=1e-06
++ W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX30_M0_unmatched	n20#7	CKbb#10	n30	n30	nch	L=1e-06
++ W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX29_M0_unmatched	n30#2	mout#4	VSS!#19	VSS!#19	nch
++ L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX28_M0_unmatched	CKbb#4	CKb#9	VSS!#20	VSS!#20	nch
++ L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX27_M0_unmatched	CKb#3	CK#6	VSS!#11	VSS!#11	nch
++ L=1e-06	W=2e-06
++ AD=5e-12	AS=0	PD=9e-06	PS=0
++ fw=2e-06 sa=2e-06 sb=2e-06
+MX64_M0_unmatched	QN#3	qint#5	VDD!#1	VDD!#1	pch	L=1e-06
++ W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX63_M0_unmatched	qint#4	qbint#6	VDD!#14	VDD!#14
++ pch	L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0	fw=4e-06 sa=2e-06 sb=2e-06
+MX62_M0_unmatched	Q#3	qbint#13	VDD!#15	VDD!#15
++ pch	L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0	fw=4e-06 sa=2e-06 sb=2e-06
+MX61_M0_unmatched	n43	RNb#11	VDD!#16	VDD!#16	pch
++ L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX60_M0_unmatched	n41	qbint#14	n43#2	n43#2	pch	L=1e-06
++ W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX59_M0_unmatched	n35#8	CKbb#5	n41#2	n41#2	pch	L=1e-06
++ W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX58_M0_unmatched	n41#4	SN#8	VDD!#17	VDD!#17	pch
++ L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX57_M0_unmatched	qbint	n35#5	VDD!#18	VDD!#18	pch
++ L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX56_M0_unmatched	n35#3	CKb#11	mout#14	mout#14	pch
++ L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX55_M0_unmatched	mout#7	n20#11	net402	net402	pch	L=1e-06
++ W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX54_M0_unmatched	net402#2	RNb#6	VDD!#19	VDD!#19
++ pch	L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0	fw=4e-06 sa=2e-06 sb=2e-06
+MX53_M0_unmatched	mout#15	SN#3	VDD!#20	VDD!#20
++ pch	L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0	fw=4e-06 sa=2e-06 sb=2e-06
+MX52_M0_unmatched	RNb#5	RN#2	VDD!#21	VDD!#21	pch
++ L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX51_M0_unmatched	n22	D#2	VDD!#22	VDD!#22	pch
++ L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX50_M0_unmatched	n20#3	CKbb#9	n22#2	n22#2	pch	L=1e-06
++ W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX49_M0_unmatched	n20#8	CKb#13	n31	n31	pch	L=1e-06
++ W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX48_M0_unmatched	n31#2	mout#3	VDD!#23	VDD!#23	pch
++ L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX47_M0_unmatched	CKbb#2	CKb#14	VDD!#24	VDD!#24	pch
++ L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX46_M0_unmatched	CKb#4	CK#4	VDD!#13	VDD!#13	pch
++ L=1e-06	W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rs1	13	VSS!	50
+Rd4	CKb#6	CKb#11	  463.6361
+Rd5	CKb#7	CKb#12	  463.6361
+Rd44	CKb#8	CKb#9	 2253.0679
+Rd49	CKb#10	CKb	  520.9252
+Rd51	CKb#4	CKb#3	   10.7685
+Rd2	CK#5	CK	  450.9252	$poly_conn
+Rd1	CK#4	CK#5	  894.2584	$poly_conn
+Rd3	CK#5	CK#6	 1344.2584	$poly_conn
+Rd50	CKbb#6	CKbb#8	  538.6361
+Rd46	CKbb#7	CKbb	 3201.5476
+Rd45	CKbb#2	CKbb#4	   10.5956
+Rd52	SN#6	SN#9	  657.2891
+Rd48	SN#4	SN	   85.4640
+Rd47	SN#4	SN#5	 1336.0317
+Rd40	qint#6	qint#7	 1336.0317
+Rd34	qint	qint#4	   10.3891
+Rd41	qint#4	qint#3	   10.7338
+Rd35	D#3	D#4	  744.2584
+Rd42	RN#2	RN#3	 1494.2584
+Rd37	RN#3	RN	  450.9277
+Rd36	n40	n40#4	   15.9189
+Rd43	n41	n41#2	    8.2271
+Rd38	n41#2	n41#4	    7.2903
+Rd39	net426	net426#4	   16.1209
+Rd18	n42	n42#4	   16.0189
+Rd20	n42#4	n42#3	   14.7418
+Rd19	VDD!#1	VDD!#14	   46.3683
+Rd21	VDD!#1	VDD!#3	    3.3325
+Rd23	VDD!#3	VDD!#16	    2.7295
+Rd22	VDD!#5	VDD!#17	    2.7295
+Rd32	VDD!#5	VDD!#7	    0.8352
+Rd33	VDD!#7	VDD!#19	    2.7295
+Rd15	VDD!#7	VDD!#9	    0.4064
+Rd17	VDD!#9	VDD!#21	    2.7295
+Rd16	VDD!#9	VDD!#11	    0.6962
+Rd31	VDD!#11	VDD!#23	    2.7295
+Rd26	VDD!#11	VDD!#24	    7.2760
+Rd29	VSS!	VSS!#11	    5.3602
+Rd30	VSS!#12	VSS!#3	    5.5647
+Rd28	VSS!#3	VSS!#13	    5.1795
+Rd27	VSS!#3	VSS!#5	    1.0225
+Rd24	VSS!#5	VSS!#15	    5.1795
+Rd25	VSS!	VSS!#7	    0.9187
+Rd13	VSS!#16	VSS!#7	    6.6519
+Rd12	VSS!#7	VSS!#18	    5.1795
+Rd14	VSS!#7	VSS!#19	   24.2568
+Rd53	mout#2	mout#4	 1707.2892
+Rd55	mout	mout#15	   11.4660
+Rd54	mout#7	mout#9	    2.8421
+Rd6	mout#9	mout#14	    2.7510
+Rd8	mout	mout#10	    1.9539
+Rd7	mout#10	mout#13	    5.4627
+Rd9	mout#13	mout#11	  152.1254
+Rd11	qbint#7	qbint#11	 1029.2584
+Rd10	qbint#8	qbint#13	 1192.5658
+Rc87	CKb#6	CKb#5	 6453.0674
+Rc75	CKb#7	CKb#8	 1788.5167
+Rc88	CKb#9	CKb#10	 1344.2584
+Rc89	CKb	CKb#4	   10.2944
+Rc68	Q	Q#3	    2.6981	$metal1_conn
+Rc67	Q	Q#2	    5.2481	$metal1_conn
+Rc74	QN	QN#3	    2.7981	$metal1_conn
+Rc73	QN	QN#2	    5.1481	$metal1_conn
+Rc31	net402	net402#2	    5.0750	$metal1_conn
+Rc14	n22	n22#2	    5.0750	$metal1_conn
+Rc60	n43	n43#2	    5.0750	$metal1_conn
+Rc15	n21	n21#2	   10.1000	$metal1_conn
+Rc12	n30	n30#2	   10.1000	$metal1_conn
+Rc11	n31	n31#2	    5.0750	$metal1_conn
+Rc90	CKbb#9	CKbb#10	 3185.2375
+Rc76	CKbb#6	CKbb#7	 7188.5166
+Rc91	CKbb	CKbb#2	   10.0124
+Rc78	SN#8	SN#6	 1407.2892
+Rc92	SN#6	SN	    6.3279
+Rc79	SN#4	SN#3	  886.0318
+Rc93	qint#5	qint#6	  886.0318
+Rc80	qint#6	qint	   80.4640
+Rc94	qint	qint#3	   20.2079
+Rc81	D#2	D#3	 1494.2584
+Rc95	D#3	D	  450.9252
+Rc96	RN#3	RN#4	  744.2584
+Rc82	n40	n40#2	   15.6067
+Rc97	n40#2	n40#4	   14.8611
+Rc84	n41	n41#4	    8.4739
+Rc86	net426	net426#2	   15.8048
+Rc98	net426#2	net426#4	   14.7739
+Rc85	n42	n42#3	   16.0189
+Rc118	VDD!	VDD!#13	    2.8102
+Rc109	VDD!#14	VDD!#3	    3.1087
+Rc99	VDD!#3	VDD!#15	    2.7295
+Rc110	VDD!#3	VDD!#5	    0.6962
+Rc111	VDD!#5	VDD!#18	    3.8239
+Rc100	VDD!#18	VDD!#7	   11.6209
+Rc112	VDD!#7	VDD!#20	    5.6553
+Rc101	VDD!#20	VDD!#9	    5.6553
+Rc113	VDD!#9	VDD!#22	    2.7295
+Rc102	VDD!	VDD!#11	    0.3281
+Rc114	VDD!	VDD!#24	    4.5653
+Rc103	VSS!	VSS!#20	    5.1795
+Rc115	VSS!#1	VSS!#12	  152.4989
+Rc116	VSS!#1	VSS!#3	    5.7758
+Rc104	VSS!#3	VSS!#14	   26.9971
+Rc107	VSS!#14	VSS!#5	    6.6519
+Rc117	VSS!#5	VSS!#16	   26.9971
+Rc106	VSS!#5	VSS!#7	    1.0225
+Rc10	VSS!#7	VSS!#17	    5.1795
+Rc45	VSS!	VSS!#19	    6.8352
+Rc35	mout#3	mout#2	  357.2892
+Rc43	mout#2	mout	    5.1500
+Rc40	mout#6	mout#7	   63.1446
+Rc36	mout#6	mout#9	    5.7978
+Rc41	mout#9	mout#10	    0.1962
+Rc37	mout#15	mout#10	    3.7419
+Rc39	mout#10	mout#11	    5.3556
+Rc44	qbint#6	qbint#7	 1209.2584
+Rc38	qbint#7	qbint#8	 1122.2889
+Rc65	qbint#8	qbint#12	 1012.5659
+Rc49	qbint#8	qbint#5	  120.3419
+Rc50	qbint#5	qbint#9	 1945.9253
+Rc4	qbint#9	qbint#14	 1209.2584
+Rc6	qbint#9	qbint#10	 1029.2584
+Rc5	qbint#5	qbint	   11.8583
+Rc30	qbint	qbint#3	   10.1826
+Rc17	qbint#5	qbint#3	   24.4008
+Rc22	n20#11	n20#12	  444.2584
+Rc21	n20#12	n20#13	 1794.2584
+Rc18	n20#12	n20	  526.5627
+Rc23	n20	n20#2	    0.4795
+Rc20	n20#2	n20#3	    2.7420
+Rc19	n20#2	n20#8	    2.8380
+Rc46	n20#3	n20#8	   57.6422
+Rc64	n20#2	n20#5	    5.6398
+Rc52	n20#2	n20#7	    5.7526
+Rc47	n20#5	n20#7	   89.0263
+Rc48	n35#5	n35#6	  894.2584
+Rc53	n35#6	n35#7	 1344.2584
+Rc26	n35#6	n35	  370.9252
+Rc29	n35	n35#2	    5.0625
+Rc28	n35#2	n35#10	    7.8599
+Rc7	n35#2	n35#8	    3.8422
+Rc9	n35#10	n35#8	   31.4397
+Rc8	n35#2	n35#3	    2.7250
+Rc51	n35#2	n35#4	    5.2250
+Rc25	RNb#11	RNb#10	 5642.5259
+Rc69	RNb#10	RNb#12	  357.2892
+Rc71	RNb#6	RNb#7	 1794.2584
+Rc70	RNb#7	RNb#8	  444.2584
+Rc13	RNb#7	RNb	  445.9252
+Rc16	RNb	RNb#2	    5.2295
+Rc61	RNb#10	RNb#2	    6.6779
+Rc63	RNb#2	RNb#5	    2.8481
+Rc62	RNb#2	RNb#4	    5.0500
+Rb1	CKb#6	CKb#7	 7188.5166
+Rb7	CKb#8	CKb#13	 3481.2549
+Rb2	CKb#10	CKb#14	  894.2584
+Rb5	CKb	CKb#3	   20.0239
+Rb6	CKbb#5	CKbb#6	 4128.0679
+Rb4	CKbb#9	CKbb#7	  538.6361
+Rb3	CKbb	CKbb#4	   21.8270
+*
+*       CAPACITOR CARDS
+*
+*
+C1	VSS!	QN	2.82159e-15
+C2	QN#3	VSS!	1.66137e-15
+C3	QN#2	VSS!	7.96665e-16
+C4	VSS!	RN	2.01993e-15
+C5	RN#2	VSS!	2.63023e-15
+C6	RN#4	VSS!	1.55499e-15
+C7	RN#3	VSS!	3.15723e-15
+C8	VSS!	SN	6.48543e-15
+C9	SN#8	VSS!	9.28828e-16
+C10	SN#3	VSS!	1.04577e-15
+C11	SN#9	VSS!	3.2149e-16
+C12	SN#5	VSS!	8.82644e-16
+C13	SN#6	VSS!	9.77799e-16
+C14	13	SN	5.92991e-15
+C15	SN#8	13	1.48395e-15
+C16	SN#3	13	7.69688e-16
+C17	SN#9	13	1.07426e-15
+C18	SN#5	13	1.64363e-15
+C19	SN#6	13	3.71205e-15
+C20	VDD!#1	VSS!	5.18351e-16
+C21	VDD!#14	VSS!	4.7565e-16
+C22	VDD!#15	VSS!	5.51512e-16
+C23	VDD!#16	VSS!	1.22981e-15
+C24	VDD!#17	VSS!	6.65095e-16
+C25	VDD!#18	VSS!	5.64797e-16
+C26	VDD!#19	VSS!	6.51562e-16
+C27	VDD!#20	VSS!	1.3439e-15
+C28	VDD!#21	VSS!	1.29663e-15
+C29	VDD!#22	VSS!	1.37853e-15
+C30	VDD!#23	VSS!	6.40083e-16
+C31	VDD!#24	VSS!	6.18283e-16
+C32	VDD!#13	VSS!	7.30839e-16
+C33	VDD!#9	VSS!	5.92544e-15
+C34	VDD!#3	13	5.41101e-14
+C35	VSS!	CK	1.96264e-15
+C36	CK#4	VSS!	1.79689e-15
+C37	CK#6	VSS!	2.26757e-15
+C38	CK#5	VSS!	3.22621e-15
+C39	VSS!	Q	2.78028e-15
+C40	Q#3	VSS!	1.0105e-15
+C41	Q#2	VSS!	1.08536e-15
+C42	D	VSS!	2.17788e-15
+C43	D#2	VSS!	2.91751e-15
+C44	D#4	VSS!	1.44251e-15
+C45	D#3	VSS!	3.09893e-15
+C46	CKb#11	VSS!	9.50378e-16
+C47	CKb#13	VSS!	9.84995e-16
+C48	CKb#14	VSS!	9.36399e-16
+C49	CKb#5	VSS!	3.21944e-15
+C50	CKb#12	VSS!	2.48616e-16
+C51	CKb#9	VSS!	5.56747e-16
+C52	CKb#4	VSS!	1.60633e-15
+C53	CKb#6	VSS!	5.18582e-15
+C54	CKb#7	VSS!	2.22482e-15
+C55	CKb#8	VSS!	1.45979e-15
+C56	CKb#10	VSS!	2.45525e-16
+C57	CKbb	VSS!	2.43204e-15
+C58	CKbb#5	VSS!	2.38532e-15
+C59	CKbb#9	VSS!	1.82744e-15
+C60	CKbb#8	VSS!	2.03257e-16
+C61	CKbb#10	VSS!	3.14991e-16
+C62	CKbb#6	VSS!	2.04047e-15
+C63	CKbb#7	VSS!	2.74595e-15
+C64	mout#3	VSS!	7.84457e-16
+C65	mout#4	VSS!	2.51865e-16
+C66	mout#2	VSS!	7.30588e-17
+C67	mout#10	VSS!	1.63767e-14
+C68	RNb#11	VSS!	2.24681e-15
+C69	RNb#6	VSS!	1.47203e-15
+C70	RNb#12	VSS!	2.31827e-16
+C71	RNb#8	VSS!	2.6319e-16
+C72	RNb#10	VSS!	2.75071e-15
+C73	RNb#2	VSS!	1.02617e-14
+C74	RNb#7	VSS!	7.97618e-16
+C75	n20	VSS!	6.82629e-15
+C76	n20#11	VSS!	8.58717e-16
+C77	n20#13	VSS!	4.7354e-16
+C78	n20#12	VSS!	7.74118e-16
+C79	n35#5	VSS!	9.41693e-16
+C80	n35#7	VSS!	4.16618e-16
+C81	n35#2	VSS!	7.83341e-15
+C82	n35#6	VSS!	2.67706e-16
+C83	qbint#6	VSS!	9.8482e-16
+C84	qbint#13	VSS!	9.68478e-16
+C85	qbint#14	VSS!	8.52527e-16
+C86	qbint#11	VSS!	3.23188e-16
+C87	qbint#12	VSS!	3.13587e-16
+C88	qbint#10	VSS!	6.31315e-16
+C89	qbint#5	VSS!	8.40847e-15
+C90	qbint#7	VSS!	3.34071e-16
+C91	qbint#9	VSS!	6.07971e-16
+C92	qint	VSS!	8.61394e-15
+C93	qint#5	VSS!	1.66251e-15
+C94	qint#7	VSS!	2.12734e-15
+C95	13	VSS!	1.053e-13
+C96	n30	VSS!	6.55871e-16
+C97	n30#2	VSS!	5.44708e-16
+C98	n21	VSS!	3.68445e-16
+C99	n21#2	VSS!	3.68834e-16
+C100	net426#2	VSS!	7.92832e-15
+C101	n42	VSS!	8.39376e-15
+C102	n40#2	VSS!	4.89485e-15
+C103	n31	VSS!	5.79612e-16
+C104	n31#2	VSS!	1.30937e-15
+C105	n22	VSS!	6.26151e-16
+C106	n22#2	VSS!	6.24259e-16
+C107	net402	VSS!	4.56903e-16
+C108	net402#2	VSS!	5.15004e-16
+C109	n41	VSS!	6.10179e-15
+C110	n43	VSS!	6.42516e-16
+C111	n43#2	VSS!	7.74847e-16
+C112	X64_5	VSS!	1.12526e-15
+C113	X63_5	VSS!	8.58476e-16
+C114	X62_5	VSS!	9.05021e-16
+C115	X61_5	VSS!	8.80293e-16
+C116	X60_5	VSS!	1.39561e-15
+C117	X59_5	VSS!	1.53617e-15
+C118	X58_5	VSS!	8.40708e-16
+C119	X57_5	VSS!	9.241e-16
+C120	X56_5	VSS!	9.9063e-16
+C121	X55_5	VSS!	1.04247e-15
+C122	X54_5	VSS!	8.9872e-16
+C123	X53_5	VSS!	1.01913e-15
+C124	X52_5	VSS!	8.83756e-16
+C125	X51_5	VSS!	8.75116e-16
+C126	X50_5	VSS!	1.01481e-15
+C127	X49_5	VSS!	7.93606e-16
+C128	X48_5	VSS!	8.61596e-16
+C129	X47_5	VSS!	1.10613e-15
+C130	X46_5	VSS!	1.26436e-15
+C131	13	CKb	1.70037e-15
+C132	CKb#11	13	5.21272e-16
+C133	CKb#13	13	4.21182e-15
+C134	CKb#14	13	8.30923e-16
+C135	CKb#5	13	7.84589e-15
+C136	CKb#12	13	1.236e-15
+C137	CKb#9	13	3.99954e-15
+C138	CKb#4	13	1.80237e-15
+C139	CKb#3	13	9.08383e-16
+C140	CKb#6	13	1.4439e-14
+C141	CKb#7	13	9.6032e-15
+C142	CKb#8	13	7.70565e-15
+C143	CKb#10	13	2.95126e-15
+C144	13	CKbb	4.98606e-15
+C145	CKbb#5	13	4.68619e-15
+C146	CKbb#9	13	3.66044e-15
+C147	CKbb#8	13	9.91537e-16
+C148	CKbb#10	13	4.40882e-15
+C149	CKbb#2	13	1.40435e-15
+C150	CKbb#4	13	1.50684e-15
+C151	CKbb#6	13	1.22054e-14
+C152	CKbb#7	13	1.17008e-14
+C153	mout#3	13	2.88287e-16
+C154	mout#4	13	2.32806e-15
+C155	mout#2	13	3.47978e-15
+C156	mout#10	13	1.17631e-14
+C157	RNb#11	13	6.38278e-15
+C158	RNb#6	13	1.85298e-15
+C159	RNb#12	13	7.54704e-16
+C160	RNb#8	13	8.20676e-16
+C161	RNb#10	13	7.12744e-15
+C162	RNb#2	13	8.60879e-15
+C163	RNb#7	13	2.70405e-15
+C164	n20#11	13	3.72875e-16
+C165	n20#13	13	2.26116e-15
+C166	n20#2	13	9.81842e-15
+C167	n20#12	13	2.86139e-15
+C168	n35#5	13	9.09128e-16
+C169	n35#7	13	1.76607e-15
+C170	n35#2	13	1.05665e-14
+C171	n35#6	13	2.72188e-15
+C172	qbint#6	13	1.20859e-15
+C173	qbint#13	13	1.08054e-15
+C174	qbint#14	13	1.20122e-15
+C175	qbint#11	13	1.56763e-15
+C176	qbint#12	13	1.48459e-15
+C177	qbint#10	13	1.43352e-15
+C178	qbint#5	13	1.23196e-14
+C179	qbint#7	13	3.65254e-15
+C180	qbint#9	13	4.53833e-15
+*
+*
+.ENDS DFFSRX1
+*

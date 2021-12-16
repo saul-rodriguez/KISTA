@@ -1,7 +1,7 @@
 ********************************************************************************
 *** PVS HDRC SUMMARY
 ***
-Execute on Date/Time    : Wed Dec 15 17:16:38 2021
+Execute on Date/Time    : Thu Dec 16 13:05:23 2021
 PVS HDRC VERSION        : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 Rule Deck Path          : /home/saul/projects/KISTA/drc_runs/.technology.rul
 Rule Deck Title         :
@@ -27,14 +27,14 @@ DRC Results Database    :
 --------------------------------------------------------------------------------
 --- ORIGINAL LAYER STATISTICS
 ---
-LAYER Cont ....................... Total Original Geometry:        9 (     160)
-LAYER Metal1 ..................... Total Original Geometry:       74 (     226)
-LAYER Metal2 ..................... Total Original Geometry:        2 (       3)
+LAYER Cont ....................... Total Original Geometry:        9 (     166)
+LAYER Metal1 ..................... Total Original Geometry:      140 (     309)
+LAYER Metal2 ..................... Total Original Geometry:        9 (      21)
 LAYER Metal3 ..................... Total Original Geometry:        0 (       0)
 LAYER Metal4 ..................... Total Original Geometry:        0 (       0)
 LAYER Oxide ...................... Total Original Geometry:        2 (      38)
-LAYER Poly ....................... Total Original Geometry:       34 (     113)
-LAYER Via1 ....................... Total Original Geometry:        1 (       2)
+LAYER Poly ....................... Total Original Geometry:       63 (     148)
+LAYER Via1 ....................... Total Original Geometry:        1 (      13)
 LAYER Via2 ....................... Total Original Geometry:        0 (       0)
 LAYER Via3 ....................... Total Original Geometry:        0 (       0)
 LAYER KTH_openpad ................ Total Original Geometry:        0 (       0)
@@ -63,7 +63,7 @@ RULECHECK METAL4.SP.1.1 .............. Total Result      0 (       0)
 RULECHECK METAL4.W.1 ................. Total Result      0 (       0)
 RULECHECK OXIDE.SP.1.1 ............... Total Result      0 (       0)
 RULECHECK OXIDE.W.1 .................. Total Result      0 (       0)
-RULECHECK POLY.SP.1.1 ................ Total Result      3 (       3)
+RULECHECK POLY.SP.1.1 ................ Total Result      0 (       0)
 RULECHECK POLY.W.1 ................... Total Result      0 (       0)
 RULECHECK VIA1.E.1 ................... Total Result      0 (       0)
 RULECHECK VIA1.E.2 ................... Total Result      0 (       0)
@@ -86,6 +86,6 @@ RULECHECK ortho_45_check ............. Total Result      0 (       0)
 Total CPU Time                    : 0(s)
 Total Real Time                   : 0(s)
 Peak Memory Used                  : 21(M)
-Total Original Geometry           : 122 (542)
+Total Original Geometry           : 224 (695)
 Total DRC RuleChecks              : 36
-Total DRC Results                 : 3 (3)
+Total DRC Results                 : 0 (0)

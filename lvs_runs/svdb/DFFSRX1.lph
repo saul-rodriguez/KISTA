@@ -1,0 +1,47 @@
+# Placement Hierarchy File (lph)
+# 
+# 
+# 
+% pmos3_CDNS_4 4
+M0 MP 4
+% nmos3_CDNS_3 4
+M0 MN 4
+% DFFSRX1 8
+X27 nmos3_CDNS_3 4
+X28 nmos3_CDNS_3 4
+X29 nmos3_CDNS_3 4
+X30 nmos3_CDNS_3 4
+X31 nmos3_CDNS_3 4
+X32 nmos3_CDNS_3 4
+X33 nmos3_CDNS_3 4
+X34 nmos3_CDNS_3 4
+X35 nmos3_CDNS_3 4
+X36 nmos3_CDNS_3 4
+X37 nmos3_CDNS_3 4
+X38 nmos3_CDNS_3 4
+X39 nmos3_CDNS_3 4
+X40 nmos3_CDNS_3 4
+X41 nmos3_CDNS_3 4
+X42 nmos3_CDNS_3 4
+X43 nmos3_CDNS_3 4
+X44 nmos3_CDNS_3 4
+X45 nmos3_CDNS_3 4
+X46 pmos3_CDNS_4 4
+X47 pmos3_CDNS_4 4
+X48 pmos3_CDNS_4 4
+X49 pmos3_CDNS_4 4
+X50 pmos3_CDNS_4 4
+X51 pmos3_CDNS_4 4
+X52 pmos3_CDNS_4 4
+X53 pmos3_CDNS_4 4
+X54 pmos3_CDNS_4 4
+X55 pmos3_CDNS_4 4
+X56 pmos3_CDNS_4 4
+X57 pmos3_CDNS_4 4
+X58 pmos3_CDNS_4 4
+X59 pmos3_CDNS_4 4
+X60 pmos3_CDNS_4 4
+X61 pmos3_CDNS_4 4
+X62 pmos3_CDNS_4 4
+X63 pmos3_CDNS_4 4
+X64 pmos3_CDNS_4 4
