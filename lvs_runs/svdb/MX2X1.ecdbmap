@@ -1,0 +1,27 @@
+Gds_Map 2000
+Layers:
+0 0 22 Dec 17 07:00:37 2021
+cont_poly 4 0
+ndiff_conn 19 0
+metal1_conn 6 0
+cont_ndiff 20 0
+psubstrate 23 0
+nwell_conn 11 0
+_pmos1v 25 0
+_soi_nd 31 0
+_nmos1v 26 0
+pdiff_conn 12 0
+_soi_nsb 32 0
+cont_pdiff 14 0
+_soi_pd 33 0
+_soi_psb 35 0
+poly_conn 16 0
+ntap 21 0
+ptap 22 0
+m1_label 13 0
+_nmos1v_sti 39 0
+nwell_conn 11 0
+pactive 41 0
+_nmos1v_wpe 40 0
+END OF RESPONSE
+0 0 0 Dec 17 07:00:37 2021

@@ -1,157 +1,92 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = KISTA_TEST_AMS
-	Cell         = test_ams_dff
-	View         = config
-	Simulator    = ams
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.29
-	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29.rdb
-	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29/1/KISTA_TEST_AMS:test_ams_dff:1
-	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data
-	Project Dir  = /home/saul/simulation
-	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl
-	File Encoding = 0
-
-
-variable oasisVariableValue redefined
-variable persistNewList redefined
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (1 1) on testbench [
-          KISTA_TEST_AMS:test_ams_dff:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29/1/KISTA_TEST_AMS:test_ams_dff:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29/1/KISTA_TEST_AMS:test_ams_dff:1
-
-
-*Info*    Creating Netlist for Point ID (1 1)
-
-generate netlist...
-INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
-INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
- field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
- analog primitives using the Spectre CDF simulation information.
-Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29/1/KISTA_TEST_AMS:test_ams_dff:1/netlist/digital/control
-Begin Netlisting Dec 14 15:27:45 2021
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29/1/KISTA_TEST_AMS:test_ams_dff:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-If you want to print only those cellviews that need to be re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
-INFO (VLOGNET-117): Re-netlisting the entire design.
-
-INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-non-stopping cells.
- 
-WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_ams_dff/schematic' has no ports. Make sure that this was the intended 
-design.
- 
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-
-
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-vdc                         spectre              *Stopping View*  
-vpulse                      spectre              *Stopping View*  
-cap                         spectre              *Stopping View*  
-nmos3                       spectre              *Stopping View*  
-pmos3                       spectre              *Stopping View*  
-test_ams_dff                schematic                             
-DFFX1                       schematic                             
-
----------- End of netlist configuration information   ----------
-Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29/1/KISTA_TEST_AMS:test_ams_dff:1/netlist/analog/control
-Copying Spectre source file 'spectre.inp'
-Copying Spectre command file 'spectre.sim'
-WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "KISTA_SOI_STDLIB" "DFFX1" "schematic"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-Running netlist assembly..
-
-End netlisting Dec 14 15:27:51 2021
-INFO (AMS-1241): AMS UNL netlisting has completed successfully.
-To view the modules, right-click the test name on the Tests and Analyses 
-assistant pane and choose Netlist->Display menu option.
-      ...successful.
-create cds_globals...
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [
-          KISTA_TEST_AMS:test_ams_dff:1 ] for Point ID (1 1).
-
-Delete simulation data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29/1/KISTA_TEST_AMS:test_ams_dff:1/psf.
-create cds_globals...
-      ...successful.
-compose simulator input file...
-      ...successful.
-validating simulator hierarchy...
-      ...successful.
-running...
-To check for output from compilation, elaboration and simulation run, 
-right-click on the test name, result name, or any value in the "Results" 
-tab of the Outputs section and choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (1 1) on testbench [
-          KISTA_TEST_AMS:test_ams_dff:1 ].
-
-
-
-
-
+\# Program start time:     UTC 2021.12.17 09:26:48.065
+\# Local time: CET (UTC+01:00) 2021.12.17 10:26:48.065
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $
+\o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.7  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso8608 -mpshost s2424 -davinciService DaVinciService_8608_1639716722 -log /home/saul/projects/KISTA/logs_saul/logs0/Job33.log -licenseLockFileName /home/saul/projects/KISTA/.tmp_saul/.s2424_8608 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 33
+\# Host name (type):	s2424 (x86_64)
+\# Operating system:	Linux 3.10.0-1160.42.2.el7.x86_64 #1 SMP Tue Sep 7 14:49:57 UTC 2021
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:95 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 10929)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        520 MB
+\# Available memory:	     29,654 MB
+\# System memory:	     96,361 MB
+\# Maximum memory size:	     95,980 MB
+\# Max mem available:	     29,793 MB
+\# Initial memory used:	        139 MB
+\#        process size:	      1,382 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	s2424:/home/saul/projects/KISTA
+\# Process Id:		10932
+\o 
+\o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt.
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\# Memory report: using         268 MB, process size 1,592 MB at UTC 2021.12.17 09:26:50.161
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading cli.cxt 
+\o Loading cle.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso8608, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 10932 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\w *WARNING* The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\a _treeSetOpcGUI(t)
+\r t
+\# Available memory:         29,524 MB at UTC 2021.12.17 09:26:58.309
+\# Memory report: Maximum memory size now 29,844 MB at UTC 2021.12.17 09:26:58.309
+\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.12.17 09:26:58.309

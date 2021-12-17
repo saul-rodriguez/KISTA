@@ -1,1 +1,1 @@
-../../liberate_workdir/characterize/LIBRARY/verilog/KISTA_SOI_STDLIB_CCS_TT_del.v
+../../liberate_workdir/verilog/KISTA_SOI_STDLIB_CCS_TT_del.v

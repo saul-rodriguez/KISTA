@@ -1,0 +1,8 @@
+# SVDB: Layout Netlist Names (lnn)
+# SVDB: Layout Primary TIELO
+% nmos3_CDNS_2 4
+% pmos3_CDNS_3 3
+% TIELO 3
+2 VSS!
+3 Y
+5 VDD!

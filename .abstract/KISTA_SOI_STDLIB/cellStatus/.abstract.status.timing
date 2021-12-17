@@ -1,0 +1,5 @@
+cUiSetViewStatus {timing} {layout} {0}
+cUiSetViewStatus {timing} {logical} {0}
+cUiSetViewStatus {timing} {abstract.pin} {0}
+cUiSetViewStatus {timing} {abstract.ext} {0}
+cUiSetViewStatus {timing} {abstract} {0}

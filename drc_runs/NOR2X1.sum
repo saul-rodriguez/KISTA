@@ -1,0 +1,91 @@
+********************************************************************************
+*** PVS HDRC SUMMARY
+***
+Execute on Date/Time    : Fri Dec 17 11:07:15 2021
+PVS HDRC VERSION        : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
+Rule Deck Path          : /home/saul/projects/KISTA/drc_runs/.technology.rul
+Rule Deck Title         :
+Layout System           : GDSII
+Layout Path             : /home/saul/projects/KISTA/drc_runs/NOR2X1.gds
+Current Directory       : /home/saul/projects/KISTA/drc_runs
+User Name:              : saul
+Maximum Results         : 1000
+Maximum Result Vertices : 4096
+Layout Depth            : ALL
+Text Depth              : 0
+Summary File            : NOR2X1.sum
+Geometry Flagging       : ACUTE = NO  ANGLED = NO  SKEW = NO  OFFGRID = NO
+                          NONSIMPLE POLYGON = YES  NONSIMPLE PATH = NO
+Keep Empty Checks       : YES
+Excluded Cells          : 
+Layout Primary Cell     : NOR2X1
+ASCII DRC Error Report  : /home/saul/projects/KISTA/drc_runs/NOR2X1.drc_errors.ascii
+DRC Results Database    :
+--------------------------------------------------------------------------------
+--- RUNNING TIME WARNINGS
+---
+--------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER Cont ....................... Total Original Geometry:       13 (      26)
+LAYER Metal1 ..................... Total Original Geometry:       28 (      37)
+LAYER Metal2 ..................... Total Original Geometry:        0 (       0)
+LAYER Metal3 ..................... Total Original Geometry:        0 (       0)
+LAYER Metal4 ..................... Total Original Geometry:        0 (       0)
+LAYER Oxide ...................... Total Original Geometry:        2 (       4)
+LAYER Poly ....................... Total Original Geometry:        9 (      14)
+LAYER Via1 ....................... Total Original Geometry:        0 (       0)
+LAYER Via2 ....................... Total Original Geometry:        0 (       0)
+LAYER Via3 ....................... Total Original Geometry:        0 (       0)
+LAYER KTH_openpad ................ Total Original Geometry:        0 (       0)
+--------------------------------------------------------------------------------
+--- WARNINGS FROM FLAG STATEMENT
+---
+--------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK CONT.E.1 ................... Total Result      0 (       0)
+RULECHECK CONT.E.2 ................... Total Result      0 (       0)
+RULECHECK CONT.E.3 ................... Total Result      0 (       0)
+RULECHECK CONT.OV.1 .................. Total Result      0 (       0)
+RULECHECK CONT.SP.1.1 ................ Total Result      0 (       0)
+RULECHECK CONT.SP.1.2 ................ Total Result      0 (       0)
+RULECHECK CONT.W.1 ................... Total Result      0 (       0)
+RULECHECK KTH_OPENPAD.E.1 ............ Total Result      0 (       0)
+RULECHECK KTH_OPENPAD.W.1 ............ Total Result      0 (       0)
+RULECHECK METAL1.SP.1.1 .............. Total Result      0 (       0)
+RULECHECK METAL1.W.1 ................. Total Result      0 (       0)
+RULECHECK METAL2.SP.1.1 .............. Total Result      0 (       0)
+RULECHECK METAL2.W.1 ................. Total Result      0 (       0)
+RULECHECK METAL3.SP.1.1 .............. Total Result      0 (       0)
+RULECHECK METAL3.W.1 ................. Total Result      0 (       0)
+RULECHECK METAL4.SP.1.1 .............. Total Result      0 (       0)
+RULECHECK METAL4.W.1 ................. Total Result      0 (       0)
+RULECHECK OXIDE.SP.1.1 ............... Total Result      0 (       0)
+RULECHECK OXIDE.W.1 .................. Total Result      0 (       0)
+RULECHECK POLY.SP.1.1 ................ Total Result      0 (       0)
+RULECHECK POLY.W.1 ................... Total Result      0 (       0)
+RULECHECK VIA1.E.1 ................... Total Result      0 (       0)
+RULECHECK VIA1.E.2 ................... Total Result      0 (       0)
+RULECHECK VIA1.OV.1 .................. Total Result      0 (       0)
+RULECHECK VIA1.SP.1.1 ................ Total Result      0 (       0)
+RULECHECK VIA1.SP.1.2 ................ Total Result      0 (       0)
+RULECHECK VIA2.E.1 ................... Total Result      0 (       0)
+RULECHECK VIA2.E.2 ................... Total Result      0 (       0)
+RULECHECK VIA2.OV.1 .................. Total Result      0 (       0)
+RULECHECK VIA2.SP.1.1 ................ Total Result      0 (       0)
+RULECHECK VIA2.SP.1.2 ................ Total Result      0 (       0)
+RULECHECK VIA3.E.1 ................... Total Result      0 (       0)
+RULECHECK VIA3.E.2 ................... Total Result      0 (       0)
+RULECHECK acute_check ................ Total Result      0 (       0)
+RULECHECK offgrid_check .............. Total Result      0 (       0)
+RULECHECK ortho_45_check ............. Total Result      0 (       0)
+--------------------------------------------------------------------------------
+--- SUMMARY
+---
+Total CPU Time                    : 0(s)
+Total Real Time                   : 0(s)
+Peak Memory Used                  : 21(M)
+Total Original Geometry           : 52 (81)
+Total DRC RuleChecks              : 36
+Total DRC Results                 : 0 (0)

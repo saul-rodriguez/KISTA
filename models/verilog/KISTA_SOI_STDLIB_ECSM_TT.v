@@ -1,1 +1,1 @@
-../../liberate_workdir/characterize/LIBRARY/verilog/KISTA_SOI_STDLIB_ECSM_TT.v
+../../liberate_workdir/verilog/KISTA_SOI_STDLIB_ECSM_TT.v

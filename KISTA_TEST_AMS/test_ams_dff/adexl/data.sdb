@@ -14,7 +14,7 @@
 		<currentmode>Single Run, Sweeps and Corners</currentmode>
 		<overwritehistory>0</overwritehistory>
 		<tests>
-			<test enabled="1">KISTA_TEST_AMS:test_ams_dff:1
+			<test>KISTA_TEST_AMS:test_ams_dff:1
 				<tool>ADE</tool>
 				<tooloptions>
 					<option>cell
@@ -51,43 +51,6 @@
 					</option>
 				</origoptions>
 			</test>
-			<test enabled="1">KISTA_TEST_AMS:test_ams_dff:2
-				<tool>ADE</tool>
-				<tooloptions>
-					<option>cell
-						<value>test_ams_dff</value>
-					</option>
-					<option>lib
-						<value>KISTA_TEST_AMS</value>
-					</option>
-					<option>sim
-						<value>spectre</value>
-					</option>
-					<option>view
-						<value>config</value>
-					</option>
-					<option>path
-						<value>$AXL_SETUPDB_DIR/test_states</value>
-					</option>
-					<option>state
-						<value>KISTA_TEST_AMS:test_ams_dff:2_active</value>
-					</option>
-				</tooloptions>
-				<origoptions>
-					<option>cell
-						<value>test_ams_dff</value>
-					</option>
-					<option>lib
-						<value>KISTA_TEST_AMS</value>
-					</option>
-					<option>sim
-						<value>spectre</value>
-					</option>
-					<option>view
-						<value>config</value>
-					</option>
-				</origoptions>
-			</test>
 		</tests>
 		<overwritehistoryname>Interactive.0</overwritehistoryname>
 		<plottingoptions>
@@ -113,12 +76,9 @@
 				<value></value>
 			</plottingoption>
 		</plottingoptions>
-		<disabledtests>
-			<test>KISTA_TEST_AMS:test_ams_dff:2</test>
-		</disabledtests>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.22
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.0
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -133,7 +93,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:1
+					<test>KISTA_TEST_AMS:test_ams_dff:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -152,7 +112,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.22</value>
+								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.0</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -164,43 +124,6 @@
 							</option>
 							<option>sim
 								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.22</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
 							</option>
 							<option>view
 								<value>config</value>
@@ -211,7 +134,7 @@
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
 					<plottingoption>plottingmode
-						<value>Append</value>
+						<value>Replace</value>
 					</plottingoption>
 					<plottingoption>plottype
 						<value>None</value>
@@ -232,30 +155,27 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
-				<disabledtests>
-					<test>KISTA_TEST_AMS:test_ams_dff:2</test>
-				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Nov 15 16:36:28 2021</timestamp>
-			<uuid>{e3d0db5b-b591-4d5d-aca3-649240835b3e}</uuid>
-			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.22.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.22.rdb</simresults>
+			<timestamp>Dec 17 07:45:34 2021</timestamp>
+			<uuid>{894e1377-db56-483d-81c6-8999313a58b4}</uuid>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_163628751</localpsfdir>
-			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.22</psfdir>
-			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.22</simdir>
+			<localpsfdir>/tmp/s2424_saul_074534899</localpsfdir>
+			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.22.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.22.log</runlogfile>
+			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.23
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.1
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -270,7 +190,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:1
+					<test>KISTA_TEST_AMS:test_ams_dff:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -289,7 +209,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.23</value>
+								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.1</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -301,43 +221,6 @@
 							</option>
 							<option>sim
 								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.23</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
 							</option>
 							<option>view
 								<value>config</value>
@@ -348,7 +231,7 @@
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
 					<plottingoption>plottingmode
-						<value>Append</value>
+						<value>Replace</value>
 					</plottingoption>
 					<plottingoption>plottype
 						<value>None</value>
@@ -369,30 +252,27 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
-				<disabledtests>
-					<test>KISTA_TEST_AMS:test_ams_dff:2</test>
-				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Nov 15 22:36:05 2021</timestamp>
-			<uuid>{d9f6cdba-651a-46d1-9b51-8f1fd43954d4}</uuid>
-			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.23.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.23.rdb</simresults>
+			<timestamp>Dec 17 07:46:39 2021</timestamp>
+			<uuid>{553efcc6-3939-4d8e-afc7-eb3e51b6d16b}</uuid>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_223605907</localpsfdir>
-			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.23</psfdir>
-			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.23</simdir>
+			<localpsfdir>/tmp/s2424_saul_074639718</localpsfdir>
+			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.1</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.23.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.23.log</runlogfile>
+			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.24
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -407,7 +287,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:1
+					<test>KISTA_TEST_AMS:test_ams_dff:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -426,7 +306,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.24</value>
+								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.2</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -438,43 +318,6 @@
 							</option>
 							<option>sim
 								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.24</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
 							</option>
 							<option>view
 								<value>config</value>
@@ -506,30 +349,27 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
-				<disabledtests>
-					<test>KISTA_TEST_AMS:test_ams_dff:2</test>
-				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Nov 15 22:36:50 2021</timestamp>
-			<uuid>{144cce69-88b6-4c1e-af5d-b759a0466e9e}</uuid>
-			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.24.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.24.rdb</simresults>
+			<timestamp>Dec 17 07:48:50 2021</timestamp>
+			<uuid>{09ae427d-017e-4889-9eb8-820315afcfad}</uuid>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_223650101</localpsfdir>
-			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.24</psfdir>
-			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.24</simdir>
+			<localpsfdir>/tmp/s2424_saul_074850073</localpsfdir>
+			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.24.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.24.log</runlogfile>
+			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.25
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.3
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -544,7 +384,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:1
+					<test>KISTA_TEST_AMS:test_ams_dff:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -563,7 +403,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.25</value>
+								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.3</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -575,43 +415,6 @@
 							</option>
 							<option>sim
 								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.25</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
 							</option>
 							<option>view
 								<value>config</value>
@@ -643,848 +446,23 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
-				<disabledtests>
-					<test>KISTA_TEST_AMS:test_ams_dff:2</test>
-				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Nov 15 22:37:39 2021</timestamp>
-			<uuid>{0e3e0cb0-e4e3-4ae7-b2e7-f04777512c6e}</uuid>
-			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.25.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.25.rdb</simresults>
+			<timestamp>Dec 17 10:27:10 2021</timestamp>
+			<uuid>{27c07e65-74bf-419d-834d-a6c7d8733022}</uuid>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_223739833</localpsfdir>
-			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.25</psfdir>
-			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.25</simdir>
+			<localpsfdir>/tmp/s2424_saul_102710354</localpsfdir>
+			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.3</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.25.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.25.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.26
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.26</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.26</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>KISTA_TEST_AMS:test_ams_dff:2</test>
-				</disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Dec 2 07:56:50 2021</timestamp>
-			<uuid>{15e70267-4efa-4504-af42-411508a2409a}</uuid>
-			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.26.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.26.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_075650150</localpsfdir>
-			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.26</psfdir>
-			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.26</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.26.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.26.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.27
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.27</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.27</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>KISTA_TEST_AMS:test_ams_dff:2</test>
-				</disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Dec 2 07:57:32 2021</timestamp>
-			<uuid>{9db030c5-f620-42b6-8c50-eb27fc80e0fc}</uuid>
-			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.27.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.27.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_075732245</localpsfdir>
-			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.27</psfdir>
-			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.27</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.27.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.27.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.28
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.28</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.28</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>KISTA_TEST_AMS:test_ams_dff:2</test>
-				</disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Dec 14 15:25:44 2021</timestamp>
-			<uuid>{f422c170-6dcc-4823-a12b-c9233ba7dcd0}</uuid>
-			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.28.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.28.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_152544210</localpsfdir>
-			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.28</psfdir>
-			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.28</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.28.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.28.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.29
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.29</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.29</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>KISTA_TEST_AMS:test_ams_dff:2</test>
-				</disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Dec 14 15:27:43 2021</timestamp>
-			<uuid>{c42d32ff-ca2f-4ece-958a-22ffe2be1d81}</uuid>
-			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.29.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_152743192</localpsfdir>
-			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29</psfdir>
-			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.29.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.29.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.30
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.30</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.30</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>KISTA_TEST_AMS:test_ams_dff:2</test>
-				</disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Dec 14 15:34:37 2021</timestamp>
-			<uuid>{aa8485e7-a93b-41f9-bc77-26193c929357}</uuid>
-			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.30.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.30.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_153437374</localpsfdir>
-			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.30</psfdir>
-			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.30</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.30.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.30.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.31
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.31</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-					<test enabled="1">KISTA_TEST_AMS:test_ams_dff:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.31</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_ams_dff</value>
-							</option>
-							<option>lib
-								<value>KISTA_TEST_AMS</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>KISTA_TEST_AMS:test_ams_dff:2</test>
-				</disabledtests>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Dec 14 15:43:56 2021</timestamp>
-			<uuid>{c41ad1ec-b029-4170-a8cc-e2de004f8099}</uuid>
-			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.31.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.31.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_154356096</localpsfdir>
-			<psfdir>/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.31</psfdir>
-			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.31</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.31.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.31.log</runlogfile>
+			<runlog>/home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

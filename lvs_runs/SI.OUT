@@ -1,4 +1,5 @@
 Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
 
 Running simulation in directory: "/home/saul/projects/KISTA/lvs_runs/".
 
@@ -11,7 +12,7 @@ updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
 Running Artist Hierarchical Netlisting ...
 KISTA libInit.il file is loaded
 initializing MOS callbacks
-End netlisting Dec 16 13:06:03 2021
+End netlisting Dec 17 11:21:17 2021
 
 Running simin
 
@@ -19,8 +20,8 @@ Running runSim()...
 
 
 Running runsim with simulator: "auCdl"
-Begin simulation:    Dec 16 13:06:04 2021
+Begin simulation:    Dec 17 11:21:17 2021
 
 auCdl netlisting completed
-End simulation:      Dec 16 13:06:04 2021
+End simulation:      Dec 17 11:21:17 2021
 INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.

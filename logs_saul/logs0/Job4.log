@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = KISTA_TEST_AMS
-	Cell         = test_ams_dffsr
+	Cell         = test_ams_dffsrx1
 	View         = config
 	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = KISTA_TEST_AMS:test_ams_dffsr:1_none_Interactive.1
-	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1.rdb
-	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1
-	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data
+	State Name   = KISTA_TEST_AMS:test_ams_dffsrx1:1_none_Interactive.0
+	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dffsrx1/adexl/results/data/Interactive.0.rdb
+	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsrx1/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_dffsrx1:1
+	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsrx1/adexl/results/data
 	Project Dir  = /home/saul/simulation
-	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dffsr/adexl
+	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dffsrx1/adexl
 	File Encoding = 0
 
 
@@ -30,8 +30,8 @@ variable persistNewList redefined
 
 
 
-*Info*    Run start for Point ID (1 1) on testbench [
-          KISTA_TEST_AMS:test_ams_dffsr:1 ].
+*Info*    Run start for Point ID (0 1) on testbench [
+          KISTA_TEST_AMS:test_ams_dffsrx1:1 ].
 
 Resetting statistical vars
 
@@ -40,14 +40,14 @@ Resetting statistical vars
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsrx1/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_dffsrx1:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsrx1/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_dffsrx1:1
 
 
-*Info*    Creating Netlist for Point ID (1 1)
+*Info*    Creating Netlist for Point ID (0 1)
 
 generate netlist...
 INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
@@ -55,10 +55,10 @@ INFO (AMS-2031): The instances bound to the views specified in the 'Netlist usin
  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
  analog primitives using the Spectre CDF simulation information.
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/digital/control
-Begin Netlisting Dec 15 11:32:26 2021
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsrx1/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_dffsrx1:1/netlist/digital/control
+Begin Netlisting Dec 17 15:48:47 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+"/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsrx1/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_dffsrx1:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 before invoking Verilog netlister.
  
@@ -81,7 +81,7 @@ INFO (VLOGNET-117): Re-netlisting the entire design.
 INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
 non-stopping cells.
  
-WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_ams_dff/schematic' has no ports. Make sure that this was the intended 
+WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_ams_dffsrx1/schematic' has no ports. Make sure that this was the intended 
 design.
  
 INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
@@ -94,256 +94,49 @@ CELL NAME                   VIEW NAME            NOTE
 vdc                         spectre              *Stopping View*  
 vpulse                      spectre              *Stopping View*  
 cap                         spectre              *Stopping View*  
-nmos3                       spectre              *Stopping View*  
-pmos3                       spectre              *Stopping View*  
-test_ams_dff                schematic                             
-DFFSRX1                     schematic                             
+DFFSRX1                     functional           *Stopping View*  
+test_ams_dffsrx1            schematic                             
 
 ---------- End of netlist configuration information   ----------
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/control
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsrx1/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_dffsrx1:1/netlist/analog/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
 Running netlist assembly..
-.
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 14: The instance `Mmn25' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
 
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 15: The instance `Mmn26' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
+End netlisting Dec 17 15:48:55 2021
+INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+To view the modules, right-click the test name on the Tests and Analyses 
+assistant pane and choose Netlist->Display menu option.
+      ...successful.
+create cds_globals...
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          KISTA_TEST_AMS:test_ams_dffsrx1:1 ] for Point ID (0 1).
+
+Delete simulation data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsrx1/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_dffsrx1:1/psf.
+create cds_globals...
+      ...successful.
+compose simulator input file...
+      ...successful.
+validating simulator hierarchy...
+      ...successful.
+running...
+To check for output from compilation, elaboration and simulation run, 
+right-click on the test name, result name, or any value in the "Results" 
+tab of the Outputs section and choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+
+*Info*    Run complete for Point ID (0 1) on testbench [
+          KISTA_TEST_AMS:test_ams_dffsrx1:1 ].
 
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 16: The instance `Mmn55' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 17: The instance `Mmn22' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 18: The instance `Mmn20' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 19: The instance `Mmn36' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 20: The instance `Mmn35' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 21: The instance `Mmn57' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 22: The instance `Mmn21' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 23: The instance `Mmn53' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 24: The instance `Mmn45' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 25: The instance `Mmn40' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 26: The instance `Mmn32' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 27: The instance `Mmn31' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 28: The instance `Mmn30' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 29: The instance `Mmn51' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 30: The instance `Mmn52' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 31: The instance `Mmn50' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 32: The instance `Mmn56' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 33: The instance `Mmp26' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 34: The instance `Mmp25' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 35: The instance `Mmp36' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 36: The instance `Mmp35' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 37: The instance `Mmp32' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 38: The instance `Mmp31' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 39: The instance `Mmp51' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 40: The instance `Mmp52' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 41: The instance `Mmp55' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 42: The instance `Mmp22' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 43: The instance `Mmp20' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 44: The instance `Mmp57' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 45: The instance `Mmp21' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 46: The instance `Mmp53' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 47: The instance `Mmp50' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 48: The instance `Mmp45' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 49: The instance `Mmp30' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 50: The instance `Mmp40' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 51: The instance `Mmp56' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-Please refer to assembler.log file in netlist directory for the detailed info.
-      ...unsuccessful.
-
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
-
-
-
-
-
-
-
-
-
-*Info*    Run start for Point ID (1 1) on testbench [
-          KISTA_TEST_AMS:test_ams_dffsr:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1
-
-
-*Info*    Creating Netlist for Point ID (1 1)
-
-generate netlist...
-INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
-INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
- field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
- analog primitives using the Spectre CDF simulation information.
-Begin Netlisting Dec 15 11:32:33 2021
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-If you want to print only those cellviews that need to be re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-non-stopping cells.
- 
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-
-
-                (incremental data only)
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-vdc                         spectre              *Stopping View*  
-vpulse                      spectre              *Stopping View*  
-cap                         spectre              *Stopping View*  
-nmos3                       spectre              *Stopping View*  
-pmos3                       spectre              *Stopping View*  
-
----------- End of netlist configuration information   ----------
-Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/control
-Copying Spectre source file 'spectre.inp'
-Copying Spectre command file 'spectre.sim'
-Running netlist assembly..
-.
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 14: The instance `Mmn25' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 15: The instance `Mmn26' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 16: The instance `Mmn55' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 17: The instance `Mmn22' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 18: The instance `Mmn20' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 19: The instance `Mmn36' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 20: The instance `Mmn35' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 21: The instance `Mmn57' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 22: The instance `Mmn21' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 23: The instance `Mmn53' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 24: The instance `Mmn45' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 25: The instance `Mmn40' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 26: The instance `Mmn32' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 27: The instance `Mmn31' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 28: The instance `Mmn30' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 29: The instance `Mmn51' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 30: The instance `Mmn52' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 31: The instance `Mmn50' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 32: The instance `Mmn56' is referencing an undefined model or subcircuit, `nch'. Either include the file containing the definition of `nch', or define `nch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 33: The instance `Mmp26' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 34: The instance `Mmp25' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 35: The instance `Mmp36' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 36: The instance `Mmp35' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 37: The instance `Mmp32' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 38: The instance `Mmp31' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 39: The instance `Mmp51' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 40: The instance `Mmp52' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 41: The instance `Mmp55' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 42: The instance `Mmp22' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 43: The instance `Mmp20' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 44: The instance `Mmp57' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 45: The instance `Mmp21' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 46: The instance `Mmp53' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 47: The instance `Mmp50' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 48: The instance `Mmp45' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 49: The instance `Mmp30' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 50: The instance `Mmp40' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-    ERROR (SFE-23): "/home/saul/simulation/KISTA_TEST_AMS/test_ams_dffsr/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_dffsr:1/netlist/analog/input.scs" 51: The instance `Mmp56' is referencing an undefined model or subcircuit, `pch'. Either include the file containing the definition of `pch', or define `pch' before running the simulation.
-
-Please refer to assembler.log file in netlist directory for the detailed info.
-      ...unsuccessful.
-
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
 
 
 

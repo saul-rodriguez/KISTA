@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : DFFSRX1_9348.db
+EDB Library dir : NAND2X1_5911.db
 ECDB dir        : ./
-Top Cell        : DFFSRX1
-CDL netlist     : svdb/DFFSRX1.net
-Layer map file  : svdb/DFFSRX1.ecdbmap
-Text map file   : svdb/DFFSRX1.ports
-Dependency map  : DFFSRX1.lmap.perc
-Lvs file        : svdb/DFFSRX1.lvsfile
-Float net file : .DFFSRX1.info.softchk
+Top Cell        : NAND2X1
+CDL netlist     : /home/saul/projects/KISTA/lvs_runs/svdb/NAND2X1.net
+Layer map file  : /home/saul/projects/KISTA/lvs_runs/svdb/NAND2X1.ecdbmap
+Text map file   : /home/saul/projects/KISTA/lvs_runs/svdb/NAND2X1.ports
+Dependency map  : NAND2X1.lmap.perc
+Lvs file        : /home/saul/projects/KISTA/lvs_runs/svdb/NAND2X1.lvsfile
+Float net file : .NAND2X1.info.softchk
 debug           : 0
-Source Library  : DFFSRX1_9348
+Source Library  : NAND2X1_5911

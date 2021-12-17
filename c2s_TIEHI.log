@@ -1,0 +1,8 @@
+@(#)$CDS: conn2sch version 6.1.8-64b 10/08/2019 19:40 (cpgbld01) $  Fri Dec 17 10:13:15 2021
+
+WARNING (CONN2SCH-135): Signal 'VSS!#1' terminates with '!' but is not defined as global in the cellview
+'KISTA_SOI_STDLIB TIEHI netlist_tmp'. This signal would be marked global by the schematic extractor.
+WARNING (CONN2SCH-135): Signal 'VDD!#1' terminates with '!' but is not defined as global in the cellview
+'KISTA_SOI_STDLIB TIEHI netlist_tmp'. This signal would be marked global by the schematic extractor.
+INFO (CONN2SCH-372): Checked-in schematic TIEHI.
+INFO (CONN2SCH-206): End of Logfile.

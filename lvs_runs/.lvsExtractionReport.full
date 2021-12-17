@@ -5,13 +5,13 @@
 			*****************************************************
 
 
-Report File Name         : DFFSRX1.rep
-ERC Summary File         : DFFSRX1.sum
-LVS Comparison Report    : DFFSRX1.rep.cls
-LVS Softchk Report       : DFFSRX1.softchk
-Layout Name              : /home/saul/projects/KISTA/lvs_runs/DFFSRX1.gds ("DFFSRX1")
+Report File Name         : NAND2X1.rep
+ERC Summary File         : NAND2X1.sum
+LVS Comparison Report    : NAND2X1.rep.cls
+LVS Softchk Report       : NAND2X1.softchk
+Layout Name              : /home/saul/projects/KISTA/lvs_runs/NAND2X1.gds ("NAND2X1")
 User Name                : saul
-Creation Time            : Thu Dec 16 13:06:07 2021
+Creation Time            : Fri Dec 17 11:21:21 2021
 Current directory        : /home/saul/projects/KISTA/lvs_runs
 PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 
@@ -25,8 +25,7 @@ PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 
 
 Clean cell list (added by extraction report parser )
- for cell "DFFSRX1"
  for cell "M1_PO_CDNS_1"
- for cell "M2_M1_CDNS_2"
+ for cell "NAND2X1"
  for cell "nmos3_CDNS_3"
- for cell "pmos3_CDNS_4"
+ for cell "pmos3_CDNS_2"

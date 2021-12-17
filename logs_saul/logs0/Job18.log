@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = KISTA_TEST_AMS
-	Cell         = test_soi_inv
+	Cell         = test_ams_dff
 	View         = config
 	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = KISTA_TEST_AMS:test_soi_inv:2_none_Interactive.28
-	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28.rdb
-	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2
-	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data
+	State Name   = KISTA_TEST_AMS:test_ams_dff:1_none_Interactive.2
+	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2.rdb
+	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2/1/KISTA_TEST_AMS:test_ams_dff:1
+	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data
 	Project Dir  = /home/saul/simulation
-	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_soi_inv/adexl
+	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl
 	File Encoding = 0
 
 
@@ -30,8 +30,8 @@ variable persistNewList redefined
 
 
 
-*Info*    Run start for Point ID (3 1) on testbench [
-          KISTA_TEST_AMS:test_soi_inv:2 ].
+*Info*    Run start for Point ID (2 1) on testbench [
+          KISTA_TEST_AMS:test_ams_dff:1 ].
 
 Resetting statistical vars
 
@@ -40,14 +40,14 @@ Resetting statistical vars
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2/netlist
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2/1/KISTA_TEST_AMS:test_ams_dff:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2/1/KISTA_TEST_AMS:test_ams_dff:1
 
 
-*Info*    Creating Netlist for Point ID (3 1)
+*Info*    Creating Netlist for Point ID (2 1)
 
 generate netlist...
 INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
@@ -55,10 +55,10 @@ INFO (AMS-2031): The instances bound to the views specified in the 'Netlist usin
  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
  analog primitives using the Spectre CDF simulation information.
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2/netlist/digital/control
-Begin Netlisting Nov 15 15:19:28 2021
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2/1/KISTA_TEST_AMS:test_ams_dff:1/netlist/digital/control
+Begin Netlisting Dec 17 07:48:52 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+"/home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2/1/KISTA_TEST_AMS:test_ams_dff:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 before invoking Verilog netlister.
  
@@ -81,7 +81,7 @@ INFO (VLOGNET-117): Re-netlisting the entire design.
 INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
 non-stopping cells.
  
-WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_soi_inv/schematic' has no ports. Make sure that this was the intended 
+WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_ams_dff/schematic' has no ports. Make sure that this was the intended 
 design.
  
 INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
@@ -92,110 +92,65 @@ CELL NAME                   VIEW NAME            NOTE
 ---------                   ---------            ----             
 
 vdc                         spectre              *Stopping View*  
-cap                         spectre              *Stopping View*  
 vpulse                      spectre              *Stopping View*  
+cap                         spectre              *Stopping View*  
 nmos3                       spectre              *Stopping View*  
 pmos3                       spectre              *Stopping View*  
-test_soi_inv                schematic                             
-inv_soi_qrc_test2           schematic3                            
+test_ams_dff                schematic                             
+DFFX1                       schematic                             
 
 ---------- End of netlist configuration information   ----------
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2/netlist/analog/control
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2/1/KISTA_TEST_AMS:test_ams_dff:1/netlist/analog/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "KISTA_SOI_STDLIB" "DFFX1" "schematic"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
 Running netlist assembly..
 
-xmvlog: *E,EXPLPA (/home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2/netlist/digital/netlist.vams,19|11): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
-xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-Please refer to assembler.log file in netlist directory for the detailed info.
-      ...unsuccessful.
+End netlisting Dec 17 07:48:58 2021
+INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+To view the modules, right-click the test name on the Tests and Analyses 
+assistant pane and choose Netlist->Display menu option.
+      ...successful.
+create cds_globals...
+      ...successful.
+compose simulator input file...
+      ...successful.
 
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
+*Info*    Running simulation on testbench [
+          KISTA_TEST_AMS:test_ams_dff:1 ] for Point ID (2 1).
 
-
-
-
-
-
-
-
-
-*Info*    Run start for Point ID (3 1) on testbench [
-          KISTA_TEST_AMS:test_soi_inv:2 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2
+Delete simulation data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.2/1/KISTA_TEST_AMS:test_ams_dff:1/psf.
+create cds_globals...
+      ...successful.
+compose simulator input file...
+      ...successful.
+validating simulator hierarchy...
+      ...successful.
+running...
+To check for output from compilation, elaboration and simulation run, 
+right-click on the test name, result name, or any value in the "Results" 
+tab of the Outputs section and choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
 
 
-*Info*    Creating Netlist for Point ID (3 1)
+*Info*    Run complete for Point ID (2 1) on testbench [
+          KISTA_TEST_AMS:test_ams_dff:1 ].
 
-generate netlist...
-INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
-INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
- field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
- analog primitives using the Spectre CDF simulation information.
-Begin Netlisting Nov 15 15:19:34 2021
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-If you want to print only those cellviews that need to be re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-non-stopping cells.
- 
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-
-
-                (incremental data only)
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-vdc                         spectre              *Stopping View*  
-cap                         spectre              *Stopping View*  
-vpulse                      spectre              *Stopping View*  
-nmos3                       spectre              *Stopping View*  
-pmos3                       spectre              *Stopping View*  
-
----------- End of netlist configuration information   ----------
-Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2/netlist/analog/control
-Copying Spectre source file 'spectre.inp'
-Copying Spectre command file 'spectre.sim'
-Running netlist assembly..
-
-xmvlog: *E,EXPLPA (/home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.28/1/KISTA_TEST_AMS:test_soi_inv:2/netlist/digital/netlist.vams,19|11): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
-xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-Please refer to assembler.log file in netlist directory for the detailed info.
-      ...unsuccessful.
-
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
 
 
 

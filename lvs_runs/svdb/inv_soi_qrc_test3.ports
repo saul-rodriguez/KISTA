@@ -1,0 +1,7 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary inv_soi_qrc_test3
+VS 4 VS 297000 443800 metal1_conn
+VS 4 VS 297200 444200 metal1_conn
+IN 1 IN 307000 455800 metal1_conn
+VD 5 VD 295800 467200 metal1_conn
+OUT 2 OUT 1433800 453600 metal1_conn

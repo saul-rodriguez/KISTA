@@ -1,9 +1,10 @@
 Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
 ********************************************************************************
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $
           : sub-version  IC6.1.8-64b.500.7 
-Started at: 16-Dec-2021  13:06:03
+Started at: 17-Dec-2021  11:21:16
 User Name : saul
 Host Name : s2424
 Directory : /home/saul/projects/KISTA
@@ -13,7 +14,7 @@ Info: Cellview Rev Num:99,  Tech Rev Num:59
 
 *WARNING* The directory: '/home/saul/projects/KISTA/KISTA' does not exist
 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KISTA/lvs_runs/DFFSRX1.gds' already exists. It will be overwritten.
+WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KISTA/lvs_runs/NAND2X1.gds' already exists. It will be overwritten.
 INFO (XSTRM-217): Reading the layer map file, /home/saul/projects/KISTA/pvs/kista_1u.layermap
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Oxide_thk' at line number '5' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Nhvt' at line number '8' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -97,8 +98,8 @@ INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design 
 
 Summary of Options :
 library                                 KISTA_SOI_STDLIB
-strmFile                                /home/saul/projects/KISTA/lvs_runs/DFFSRX1.gds
-topCell                                 DFFSRX1
+strmFile                                /home/saul/projects/KISTA/lvs_runs/NAND2X1.gds
+topCell                                 NAND2X1
 view                                    layout
 runDir                                  /home/saul/projects/KISTA/lvs_runs
 logFile                                 /home/saul/projects/KISTA/lvs_runs/PIPO1.LOG
@@ -114,19 +115,18 @@ convertDot                              node
 KISTA libInit.il file is loaded
 initializing MOS callbacks
 INFO (XSTRM-223): 1. Translating stdVia KISTA_SOI_TECH/M1_PO/layout as STRUCTURE M1_PO_CDNS_1.
-INFO (XSTRM-223): 2. Translating stdVia KISTA_SOI_TECH/M2_M1/layout as STRUCTURE M2_M1_CDNS_2.
 Express Pcell license has been checked out for the Express Pcell feature.
+INFO (XSTRM-223): 2. Translating cellView KISTA_1UM/pmos3/layout as STRUCTURE pmos3_CDNS_2.
 INFO (XSTRM-223): 3. Translating cellView KISTA_1UM/nmos3/layout as STRUCTURE nmos3_CDNS_3.
-INFO (XSTRM-223): 4. Translating cellView KISTA_1UM/pmos3/layout as STRUCTURE pmos3_CDNS_4.
-INFO (XSTRM-223): 5. Translating cellView KISTA_SOI_STDLIB/DFFSRX1/layout as STRUCTURE DFFSRX1.
+INFO (XSTRM-223): 4. Translating cellView KISTA_SOI_STDLIB/NAND2X1/layout as STRUCTURE NAND2X1.
 INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 
 Summary of Objects Translated:
-	Scalar Instances:                       38
+	Scalar Instances:                       4
 	Array Instances:                        0
 	Polygons:                               0
 	Paths:                                  0
-	Rectangles:                             51
+	Rectangles:                             40
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -138,13 +138,13 @@ Summary of Objects Translated:
 	Area Halos:                             0
 	Markers:                                0
 	Rows:                                   0
-	Standard Vias                           27
+	Standard Vias                           2
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               179
+	Pathsegs:                               17
 	Text:                                   0
-	TextDisplay:                            11
-	Cells:                                  5
+	TextDisplay:                            6
+	Cells:                                  4
 
-Elapsed Time: 0.3s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 6368KB
+Elapsed Time: 0.3s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 6280KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '79' warning(s) found.

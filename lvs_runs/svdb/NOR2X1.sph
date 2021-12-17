@@ -1,0 +1,9 @@
+# Placement Hierarchy File (sph)
+# 
+# 
+# 
+% NOR2X1 3
+MM1 MP 4
+MM0 MP 4
+MM3 MN 4
+MM2 MN 4

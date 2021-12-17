@@ -1,0 +1,125 @@
+*
+*
+*
+*                       LINUX           Fri Dec 17 11:21:52 2021
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 20.1.2-p025
+*  Build Date     : Thu Sep 3 13:54:09 PDT 2020
+*
+*  HSPICE LIBRARY
+*
+*
+*
+
+*
+.GLOBAL VSS! VDD!
+.SUBCKT NAND2X1 A Y B
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MX5_M0_unmatched	Y#1	B#3	net6	net6	nch	L=1e-06
++ W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX4_M0_unmatched	net6#2	A#6	VSS!#1	VSS!#1	nch	L=1e-06
++ W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX3_M0_unmatched	Y#5	B#1	VDD!#1	VDD!#1	pch	L=1e-06
++ W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+MX2_M0_unmatched	Y#4	A#4	VDD!#2	VDD!#2	pch	L=1e-06
++ W=4e-06
++ AD=1e-11	AS=0	PD=1.3e-05	PS=0
++ fw=4e-06 sa=2e-06 sb=2e-06
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rd1	A#4	A#5	 1257.2892
+Rd2	A#5	A	    5.0588
+Rd3	B#2	B#3	  744.2584
+Rd4	VDD!	VDD!#1	    3.2407
+Rd5	VDD!	VDD!#2	    3.1463
+Rd6	Y	Y#3	    0.3513
+Rc16	VSS!#1	VSS!	    2.7536	$metal1_conn
+Rc4	net6	net6#2	    5.0750	$metal1_conn
+Rc1	A#5	A#6	  657.2891
+Rc2	B#1	B#2	 1344.2584
+Rc3	B#2	B	  750.9427
+Rc10	VDD!#1	VDD!#2	   24.7053
+Rc11	Y	Y#1	    2.7184
+Rc12	Y#1	Y#3	   35.1317
+Rc5	Y#3	Y#5	    2.6231
+Rc9	Y#3	Y#4	    2.8825
+Rs1	3	VSS!	50
+*
+*       CAPACITOR CARDS
+*
+*
+C1	VDD!#2	VSS!	1.1004e-17
+C2	A	VSS!	1.0262e-17
+C3	A#4	VSS!	3.38014e-18
+C4	VSS!#1	A	2.21511e-17
+C5	VSS!#1	A#6	1.80752e-16
+C6	A#5	VSS!	1.15266e-19
+C7	Y	VSS!	2.50372e-17
+C8	B	VSS!	3.93794e-18
+C9	B#1	VSS!	2.16862e-18
+C10	B#3	VSS!	1.00461e-17
+C11	B#2	VSS!	5.01714e-18
+C12	3	VSS!	7.52741e-15
+C13	VSS!#1	3	1.29653e-15
+C14	net6	VSS!	5.65898e-18
+C15	VSS!#1	net6#2	8.89107e-17
+C16	VDD!#2	A#4	1.9716e-16
+C17	VDD!#1	Y#5	1.57013e-16
+C18	VDD!#2	Y#4	1.51553e-16
+C19	VDD!#1	B#1	1.62775e-16
+C20	3	VDD!	2.2596e-15
+C21	VDD!#1	3	5.0589e-17
+C22	VDD!#2	3	4.99762e-15
+C23	VDD!#1	X3_5	1.84072e-16
+C24	VDD!#2	X2_5	3.48531e-16
+C25	A#6	Y	2.6053e-18
+C26	Y#4	A	5.90578e-17
+C27	Y#4	A#4	6.74149e-16
+C28	A#5	Y#4	4.57913e-19
+C29	3	A	3.90838e-15
+C30	A#4	3	1.16761e-15
+C31	A#6	3	1.09082e-15
+C32	A#5	3	3.9297e-17
+C33	net6#2	A#6	1.38973e-16
+C34	A#4	X2_5	5.09926e-16
+C35	B#3	Y	1.99606e-16
+C36	Y#3	B	1.95609e-16
+C37	Y#3	B#1	7.66338e-16
+C38	B#2	Y#3	6.03712e-16
+C39	Y#3	3	5.66192e-15
+C40	net6	Y	8.31149e-17
+C41	net6#2	Y#4	2.93542e-18
+C42	Y#5	X3_5	4.48721e-16
+C43	Y#4	X2_5	4.48721e-16
+C44	3	B	2.20859e-15
+C45	B#1	3	1.25679e-15
+C46	B#3	3	1.20834e-15
+C47	B#2	3	3.00815e-15
+C48	B#3	net6	1.3805e-16
+C49	B#1	X3_5	5.0433e-16
+C50	net6	3	2.43228e-16
+C51	net6#2	3	2.6608e-16
+*
+*
+.ENDS NAND2X1
+*

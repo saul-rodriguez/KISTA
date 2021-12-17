@@ -1,93 +1,96 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = KISTA_TEST_AMS
-	Cell         = test_ams_dff
-	View         = config
-	Simulator    = spectre
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = KISTA_TEST_AMS:test_ams_dff:2_none_Interactive.9
-	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.9.rdb
-	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_ams_dff:2
-	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data
-	Project Dir  = /home/saul/simulation
-	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_dff/adexl
-	File Encoding = 0
-
-
-variable oasisVariableValue redefined
-variable persistNewList redefined
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (0 1) on testbench [
-          KISTA_TEST_AMS:test_ams_dff:2 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_ams_dff:2/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_ams_dff:2
-
-
-*Info*    Creating Netlist for Point ID (0 1)
-
-generate netlist...
-Begin Incremental Netlisting Nov 15 08:38:24 2021
-WARNING (OSSHNL-335): Design configuration has changed since last netlisting session in this run
-directory. Netlist(s) from last session cannot be reused for incremental
-netlisting. Therefore, re-netlisting the design.
-
-End netlisting Nov 15 08:38:24 2021
-
-Netlisting Statistics:
-	Number of components:  716
-
-	Elapsed time:          1.0s (716.00/s)
-Errors: 0	Warnings: 0
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [
-          KISTA_TEST_AMS:test_ams_dff:2 ] for Point ID (0 1).
-
-Delete psf data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_dff/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_ams_dff:2/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (0 1) on testbench [
-          KISTA_TEST_AMS:test_ams_dff:2 ].
-
-
-
-
-
+\# Program start time:     UTC 2021.12.17 15:00:00.389
+\# Local time: CET (UTC+01:00) 2021.12.17 16:00:00.389
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $
+\o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.7  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso1444 -mpshost s2424 -davinciService DaVinciService_1444_1639752133 -log /home/saul/projects/KISTA/logs_saul/logs0/Job14.log -licenseLockFileName /home/saul/projects/KISTA/.tmp_saul/.s2424_1444 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 14
+\# Host name (type):	s2424 (x86_64)
+\# Operating system:	Linux 3.10.0-1160.42.2.el7.x86_64 #1 SMP Tue Sep 7 14:49:57 UTC 2021
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:95 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 25144)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0xc00000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        521 MB
+\# Available memory:	     31,493 MB
+\# System memory:	     96,361 MB
+\# Maximum memory size:	     95,979 MB
+\# Max mem available:	     31,631 MB
+\# Initial memory used:	        139 MB
+\#        process size:	      1,382 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	s2424:/home/saul/projects/KISTA
+\# Process Id:		12752
+\o 
+\o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt.
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\# Memory report: using         247 MB, process size 1,485 MB at UTC 2021.12.17 15:00:02.100
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading cli.cxt 
+\o Loading cle.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso1444, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 12752 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\w *WARNING* The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\a _treeSetOpcGUI(t)
+\r t
+\# Available memory:         31,361 MB at UTC 2021.12.17 15:00:11.309
+\# Memory report: Maximum memory size now 31,680 MB at UTC 2021.12.17 15:00:11.309
+\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.12.17 15:00:11.309
+\o Job 14 timed out after no activity in 300 seconds.
+\o Loading simui.cxt 
+\o Loading vdsil.cxt 
+\# Memory report: on exit            324 MB, process size 1,647 MB at UTC 2021.12.17 15:05:03.335
+\# Memory report: peak usage         324 MB, process size 1,647 MB

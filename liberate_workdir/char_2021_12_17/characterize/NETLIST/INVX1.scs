@@ -1,0 +1,27 @@
+// INVX1
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt INVX1 A Y
+    Rc4  (Y\#1 Y)  resistor r=2.5
+    Rc3  (Y Y\#3)  resistor r=5.23
+    Rc5  (vdd vdd\#1)  resistor r=2.8463
+    Rc6  (vss vss\#1)  resistor r=5.3718
+    Rd2  (A\#3 A)  resistor r=450.9252
+    Rs  (1 vss)  resistor r=50
+    Rd1  (A\#2 A\#3)  resistor r=459.2584
+    Rd3  (A\#3 A\#4)  resistor r=459.2584
+    C7  (vdd vss)  capacitor c=4.80699e-15
+    C3  (vss A)  capacitor c=1.99163e-15
+    C9  (1 vss)  capacitor c=18.9849f
+    C1  (Y\#1 vss)  capacitor c=1.86121e-15
+    C2  (Y\#3 vss)  capacitor c=1.06371e-15
+    C4  (A\#2 vss)  capacitor c=1.20051e-15
+    C6  (A\#3 vss)  capacitor c=1.54228e-15
+    C8  (vdd\#1 vss)  capacitor c=1.95119e-15
+    C10  (X1_5 vss)  capacitor c=1.60447e-15
+    C5  (A\#4 vss)  capacitor c=1.0839e-15
+    MX1_M0_unmatched  (Y\#1 A\#2 vdd\#1 vdd\#1)  pch w=4e-06 l=1e-06 as=0 \
+        ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX0_M0_unmatched  (Y\#3 A\#4 vss\#1 vss\#1)  nch w=2e-06 l=1e-06 as=0 \
+        ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+ends INVX1

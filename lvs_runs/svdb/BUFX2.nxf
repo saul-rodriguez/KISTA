@@ -1,0 +1,19 @@
+# XXXX: Net Cross Reference (nxf) (File format 1)
+# XXXX: Layout Primary BUFX2
+# XXXX: End of header.
+% MN 4 MN 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% MP 4 MP 4 
+0 D 0 D
+0 G 0 G
+0 S 0 S
+0 B 0 B
+% BUFX2 4 BUFX2 4 
+0 2 0 net6
+0 A 0 A
+0 Y 0 Y
+0 VDD! 0 VDD!
+0 VSS! 0 VSS!

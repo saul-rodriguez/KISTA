@@ -20,7 +20,7 @@ filter_coupling_cap \
 	 -coupling_cap_threshold_absolute 10 \
 	 -coupling_cap_threshold_relative 0.01
 filter_res \
-	 -merge_parallel_res false \
+	 -merge_parallel_res true \
 	 -min_res 0.1
 input_db -type pvs \
 	 -run_name "inv_soi_qrc_test2" \
@@ -38,7 +38,10 @@ output_setup \
 	 -directory_name "/home/saul/projects/KISTA/lvs_runs/svdb" \
 	 -file_name "/home/saul/projects/KISTA/inv_soi_qrc_test2.sp" \
 	 -net_name_space "SCHEMATIC" \
-	 -temporary_directory_name "inv_soi_qrc_test2"
+	 -temporary_directory_name "inv_soi_qrc_test2" \
+	 -enable_connectivity_checker flat
+parasitic_reduction \
+	 -enable_reduction true
 process_technology \
 	 -technology_corner \
 		"rcx_typical" \

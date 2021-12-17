@@ -2,17 +2,25 @@
 # OPTION COMMAND FILE created by Cadence Extraction Quantus UI Version 20.1.2-p025
 #--------------------------------------------------------------------------------------
 
+capacitance \
+	 -decoupling_factor 1.0 \
+	 -ground_net "VSS!"
 extract \
 	 -selection "all" \
-	 -type "r_only"
+	 -type "rc_coupled"
 extraction_setup \
 	 -array_vias_spacing auto \
 	 -max_fracture_length infinite \
 	 -max_fracture_length_unit "MICRONS" \
 	 -max_via_array_size "auto" \
 	 -net_name_space "LAYOUT"
+filter_cap \
+	 -exclude_self_cap true
+filter_coupling_cap \
+	 -coupling_cap_threshold_absolute 10 \
+	 -coupling_cap_threshold_relative 0.01
 filter_res \
-	 -merge_parallel_res false \
+	 -merge_parallel_res true \
 	 -min_res 0.1
 input_db -type pvs \
 	 -run_name "DFFX1" \
@@ -30,7 +38,10 @@ output_setup \
 	 -directory_name "/home/saul/projects/KISTA/lvs_runs/svdb" \
 	 -file_name "/home/saul/projects/KISTA/DFFX1.sp" \
 	 -net_name_space "SCHEMATIC" \
-	 -temporary_directory_name "DFFX1"
+	 -temporary_directory_name "DFFX1" \
+	 -enable_connectivity_checker flat
+parasitic_reduction \
+	 -enable_reduction true
 process_technology \
 	 -technology_corner \
 		"rcx_typical" \

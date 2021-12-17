@@ -1,0 +1,17 @@
+# Placement Hierarchy File (lph)
+# 
+# 
+# 
+% pmos3_CDNS_5 4
+M0 MP 4
+% pmos3_CDNS_4 4
+M0 MP 4
+% nmos3_CDNS_3 4
+M0 MN 4
+% nmos3_CDNS_2 4
+M0 MN 4
+% BUFX2 4
+X2 nmos3_CDNS_2 4
+X3 nmos3_CDNS_3 4
+X4 pmos3_CDNS_4 4
+X5 pmos3_CDNS_5 4
