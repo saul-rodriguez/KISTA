@@ -11,13 +11,13 @@ WARNING (EXTQRCXOPT-381) : The output_db -hierarchy_delimiter option value canno
 It is now set to be the same as that of the input_db -hierarchy_delimiter
 option. If input_db -hierarchy_delimiter is not set, then output_db
 -hierarchy_delimiter is set to the default value ("/" character).
-INFO (LBRCXM-630): Starting extraction: Fri Dec 17 07:02:46 2021
+INFO (LBRCXM-630): Starting extraction: Mon Dec 20 07:12:37 2021
 
 
-Forking: agdsPrep -V -rundir /home/saul/projects/KISTA/lvs_runs/svdb -agf /home/saul/projects/KISTA/lvs_runs/svdb/MX2X1.agf -outdir /tmp/qrc_1538/MX2X1 -sch -e /home/saul/projects/KISTA/lvs_runs/svdb/MX2X1.gds.map:MX2X1.alm,MX2X1.ilf -pl MX2X1.ports -mcell /tmp/qrc_1538/MX2X1/MX2X1.hcl -d MX2X1.devtab -prefix /tmp/qrc_1538/MX2X1/prefixfile -l /home/saul/projects/KISTA/lvs_runs/svdb/MX2X1.lvsfile -i MX2X1.ixf,MX2X1.lph,MX2X1.sph:MX2X1.gdx -n MX2X1.nxf,MX2X1.stl:MX2X1.gnx -s MX2X1_pin_xy.spi:MX2X1.xcn,hccidtmfile
+Forking: agdsPrep -V -rundir /home/saul/projects/KISTA/lvs_runs/svdb -agf /home/saul/projects/KISTA/lvs_runs/svdb/MX2X1.agf -outdir /tmp/qrc_27045/MX2X1 -sch -e /home/saul/projects/KISTA/lvs_runs/svdb/MX2X1.gds.map:MX2X1.alm,MX2X1.ilf -pl MX2X1.ports -mcell /tmp/qrc_27045/MX2X1/MX2X1.hcl -d MX2X1.devtab -prefix /tmp/qrc_27045/MX2X1/prefixfile -l /home/saul/projects/KISTA/lvs_runs/svdb/MX2X1.lvsfile -i MX2X1.ixf,MX2X1.lph,MX2X1.sph:MX2X1.gdx -n MX2X1.nxf,MX2X1.stl:MX2X1.gnx -s MX2X1_pin_xy.spi:MX2X1.xcn,hccidtmfile
 
-agdsPrep took  0.02 user, 0.01 sys, 0.00 elapsed, 6728.0 kbytes
-Forking:  capgen -techdir /home/saul/projects/KISTA/qrc/typical -inc /tmp/qrc_1538/MX2X1/MX2X1.ilf -lvs /tmp/qrc_1538/MX2X1/MX2X1.xcn -p2lvs /home/saul/projects/KISTA/qrc/typical/qrcTechFile -reseqn -sw3d -p poly_conn,allGate,Oxide -canonical_res_caps -length_units meters -exclude_gate_res -cap_ground_layer psubstrate /tmp/qrc_1538/MX2X1
+agdsPrep took  0.02 user, 0.01 sys, 0.00 elapsed, 6732.0 kbytes
+Forking:  capgen -techdir /home/saul/projects/KISTA/qrc/typical -inc /tmp/qrc_27045/MX2X1/MX2X1.ilf -lvs /tmp/qrc_27045/MX2X1/MX2X1.xcn -p2lvs /home/saul/projects/KISTA/qrc/typical/qrcTechFile -reseqn -sw3d -p poly_conn,allGate,Oxide -canonical_res_caps -length_units meters -exclude_gate_res -cap_ground_layer psubstrate /tmp/qrc_27045/MX2X1
 
 INFO (LBMISC-215205): 
 *** Cadence Quantus Extraction Techgen -trans VERSION 20.1.2 Linux 64 bit - (Thu Sep 3 13:54:09 PDT 2020)  ***
@@ -26,7 +26,7 @@ INFO (LBMISC-215205):
 INFO (CAPGEN-41199): 
 
 
-Techgen -trans results will be written to directory: /tmp/qrc_1538/MX2X1
+Techgen -trans results will be written to directory: /tmp/qrc_27045/MX2X1
 
 INFO (CAPGEN-41737): Lvs connect layers metal4_conn are not mapped in layer_setup file
 
@@ -39,16 +39,16 @@ WARNING (RCXSPIC-27104): p2lvsfile in tech directory does not have resistance
 
 WARNING (RCXSPIC-28248): cap_ground net cannot be set to VSS! as in the CCL because the name collides with a net name in lnn file.
 
-rcxspice took  0.09 user, 0.07 sys, 0.00 elapsed, 6676.0 kbytes
+rcxspice took  0.10 user, 0.05 sys, 0.00 elapsed, 6676.0 kbytes
 The supplied design data will be treated as a HIERARCHICAL design
 
-Successfully created RCX script '/tmp/qrc_1538/MX2X1/rcx.sh'
+Successfully created RCX script '/tmp/qrc_27045/MX2X1/rcx.sh'
 WARNING (LBRCXM-617): Unable to obtain 1 license(s) of QTS100 20.10
 
 INFO (LBRCXM-581): Checked out '1' license(s) of QTS300 20.10
 
 INFO (LBRCXM-608): Executing command
-   /pkg/cadence/installs/QUANTUS201/tools/extraction/bin/64bit//assura_rcx -V  /tmp/qrc_1538/MX2X1/rcx.sh
+   /pkg/cadence/installs/QUANTUS201/tools/extraction/bin/64bit//assura_rcx -V  /tmp/qrc_27045/MX2X1/rcx.sh
 
 INFO (ASSREXT-35013): 
 
@@ -132,9 +132,9 @@ set -v
 ##MAX_SIGNALS=
 ##MERGE_PARALLEL_R=Y
 ##MERGE_PARALLEL_VIA=N
-##MINC=1e-14
-##MINC_BY_PERCENTAGE=1
-##MINR=0.1
+##MINC=1e-17
+##MINC_BY_PERCENTAGE=0.1
+##MINR=0.001
 ##NET_NAME_SPACE=layout
 ##NETS_FILE=/dev/null
 ##NP=1
@@ -155,7 +155,7 @@ set -v
 ##POWER_NETS=
 ##POWER_NETS_FILE=/dev/null
 ##RC_FREQUENCY=
-##RCXDIR=/tmp/qrc_1538/MX2X1
+##RCXDIR=/tmp/qrc_27045/MX2X1
 ##RCXFS_HIGH=N
 ##RCXFS_NETS_FILE=
 ##RCXFS_TYPE=none
@@ -181,14 +181,14 @@ set -v
 ##SUB_NODE_CHAR='#'
 ##SUBSTRATE_PROFILE=/dev/null
 ##SUBSTRATE_STAMPING_OFF=N
-##TEMPDIR=/tmp/qrc_1538/MX2X1/rcx_temp
+##TEMPDIR=/tmp/qrc_27045/MX2X1/rcx_temp
 ##TEMPERATURE=25.0
 ##TYPE=full
 ##USER_REGION=/dev/null
 ##VARIANT_CELL_FILE=/dev/null
 ##VIA_EFFECT_OFF=N
 ##VIRTUAL_FILL=
-##XREF=/tmp/qrc_1538/MX2X1/MX2X1.gnx,/tmp/qrc_1538/MX2X1/MX2X1.gdx
+##XREF=/tmp/qrc_27045/MX2X1/MX2X1.gnx,/tmp/qrc_27045/MX2X1/MX2X1.gdx
 ##XY_COORDINATES=
 ##=======================================================
 DBGRCX_CONNECTIVITY_CHECKER=PVSNVN
@@ -199,11 +199,11 @@ CASE_SENSITIVE=TRUE
 export CASE_SENSITIVE
 QRC_MOS_LW_PRECISION=y
 export QRC_MOS_LW_PRECISION
-setTempDir /tmp/qrc_1538/MX2X1/rcx_temp
+setTempDir /tmp/qrc_27045/MX2X1/rcx_temp
 DEVICE_FINGER_DELIMITER=@
 HIERARCHY_DELIMITER=_
 OUTPUT_HIERARCHY_DELIMITER=_
-cd /tmp/qrc_1538/MX2X1
+cd /tmp/qrc_27045/MX2X1
 cat <<ENDCAT> caps2dversion
 * caps2d version: 10
 ENDCAT
@@ -215,7 +215,7 @@ export QRC
 #==========================================================#
 # Generate RCX input data from annotated GDS2 database
 #==========================================================#
-agds2rcx -V -H satfile -r /tmp/qrc_1538/MX2X1/MX2X1.xcn -crundir \
+agds2rcx -V -H satfile -r /tmp/qrc_27045/MX2X1/MX2X1.xcn -crundir \
 	/home/saul/projects/KISTA/lvs_runs/svdb -unit meters -xgl -pl \
 	MX2X1.ports -f MX2X1.alm -lnn MX2X1.lnn -pnet 5 -pinst 6 -pdev 7 \
 	MX2X1.agf MX2X1_pin_xy.spi
@@ -233,9 +233,9 @@ agds2rcx -V -H satfile -r /tmp/qrc_1538/MX2X1/MX2X1.xcn -crundir \
 INFO (AGDSEXT-30016): 
 setting dbunit 5e-10 1 5e-10
 
-agds2rcx took 0.03 user, 0.08 sys, 0.00 elapsed, 8056.0 kbytes
-Input stage took  0.06 user, 0.10 sys, 0.00 elapsed, 2628.0 kbytes
-INFO (ASSREXT-35329): Resistance data preparation stage started at Fri Dec 17 07:02:46 2021
+agds2rcx took 0.03 user, 0.07 sys, 0.00 elapsed, 8056.0 kbytes
+Input stage took  0.05 user, 0.09 sys, 0.00 elapsed, 2628.0 kbytes
+INFO (ASSREXT-35329): Resistance data preparation stage started at Mon Dec 20 07:12:37 2021
 
 #==========================================================#
 # Calculate erosion tables for specified process layers
@@ -243,7 +243,7 @@ INFO (ASSREXT-35329): Resistance data preparation stage started at Fri Dec 17 07
 densitymap -V -TC -o metal1_conn.den 150 metal1_0conn
 
 floatfilename = metal1_0conn.flt
-densitymap took 0.00 user, 0.00 sys, 0.00 elapsed, 2332.0 kbytes
+densitymap took 0.00 user, 0.00 sys, 0.00 elapsed, 2328.0 kbytes
 #==========================================================#
 # Generate power list
 #==========================================================#
@@ -256,19 +256,19 @@ epick psubstrate_orig psubstrate
 # Ensure vias do not extend beyond routing
 #==========================================================#
 geom -V cont_0poly metal1_0conn poly_0conn - cont_0poly,111,i,2
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3316.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3320.0 kbytes
 geom -V cont_0pdiff metal1_0conn pdiff_0conn - cont_0pdiff,111,i,2
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3320.0 kbytes
 geom -V cont_0ndiff metal1_0conn ndiff_0conn - cont_0ndiff,111,i,2
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3316.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3320.0 kbytes
 geom -V _0soi_0nsb ndiff_0conn - _0soi_0nsb_ndiff_0conn_ovia,11,i,1
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3320.0 kbytes
 geom -V _0soi_0nd ndiff_0conn - _0soi_0nd_ndiff_0conn_ovia,11,i,1
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3320.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3316.0 kbytes
 geom -V _0soi_0psb pdiff_0conn - _0soi_0psb_pdiff_0conn_ovia,11,i,1
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3320.0 kbytes
 geom -V _0soi_0pd pdiff_0conn - _0soi_0pd_pdiff_0conn_ovia,11,i,1
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3320.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3316.0 kbytes
 /bin/mv -f nwell_0conn_orig nwell_0conn
 /bin/mv -f psubstrate_orig psubstrate
 #==========================================================#
@@ -277,30 +277,30 @@ geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3320.0 kbytes
 beginFlattenInputs
 /bin/mv -f NET h_NET
 flatnet -V -li -h / h_NET NET
-flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 10460.0 kbytes
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 10448.0 kbytes
 netprint -V -N1 power_list:power_list_nums NET
 flattenTransistorData _0nmos1v meters
-flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3392.0 kbytes
-flatnet took 0.00 user, 0.01 sys, 0.00 elapsed, 10340.0 kbytes
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3240.0 kbytes
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 10328.0 kbytes
 flattenTransistorData _0pmos1v meters
-flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3392.0 kbytes
-flatnet took 0.00 user, 0.01 sys, 0.00 elapsed, 10340.0 kbytes
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3240.0 kbytes
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 10332.0 kbytes
 flattenLayers -m cont_0poly _0soi_0nsb _0soi_0psb
-flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3124.0 kbytes
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3384.0 kbytes
 flattenLayers -m cont_0pdiff _0soi_0nd_ndiff_0conn_ovia _0soi_0pd_pdiff_0conn_ovia
 flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3128.0 kbytes
 flattenLayers -m cont_0ndiff _0soi_0nd _0soi_0pd
 flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3128.0 kbytes
 flattenLayers -m _0soi_0nsb_ndiff_0conn_ovia _0soi_0psb_pdiff_0conn_ovia
-flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3128.0 kbytes
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3120.0 kbytes
 flattenLayers -m metal1_0conn
-flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3128.0 kbytes
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3124.0 kbytes
 flattenLayers -m poly_0conn
 flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3128.0 kbytes
 flattenLayers -m ndiff_0conn pdiff_0conn
 flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3124.0 kbytes
 flattenLayers -m nwell_0conn psubstrate
-flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3392.0 kbytes
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3132.0 kbytes
 endFlattenInputs
 #==========================================================#
 # Initialize CAP_GROUND variable
@@ -326,7 +326,7 @@ INFO (LMREDU-132003): The total number of interconnect parasitics was reduced by
 INFO (EMREDU-123022): Parasitic interconnect reduction completed successfully.
 
 Parasitic interconnect reduction took: 0.02 user, 0.01 sys, 0.00 elapsed, 7444.0 kbytes
-advgen took:  0.02 user, 0.01 sys, 0.00 elapsed, 8896.0 kbytes
+advgen took:  0.02 user, 0.02 sys, 0.00 elapsed, 8900.0 kbytes
 iprint -imerge power_list_nums floatlvsnetsfile power_list_nums2
 mv power_list_nums power_list_nums_orig
 cp power_list_nums2 power_list_nums 
@@ -338,7 +338,7 @@ epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 selectNetsByNumber power_list_nums _0soi_0nsb p_r_0soi_0nsb np_r_0soi_0nsb
 epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 selectNetsByNumber power_list_nums _0soi_0pd p_r_0soi_0pd np_r_0soi_0pd
-epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2064.0 kbytes
 selectNetsByNumber power_list_nums _0soi_0psb p_r_0soi_0psb np_r_0soi_0psb
 epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 selectNetsByNumber power_list_nums metal1_0conn p_rmetal1_0conn np_rmetal1_0conn
@@ -352,7 +352,7 @@ epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 selectNetsByNumber power_list_nums poly_0conn p_rpoly_0conn np_rpoly_0conn
 epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 selectNetsByNumber power_list_nums psubstrate p_rpsubstrate np_rpsubstrate
-epick took  0.00 user, 0.00 sys, 1.00 elapsed, 2064.0 kbytes
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 selectNetsByNumber power_list_nums cont_0poly p_rcont_0poly np_rcont_0poly
 epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 mv power_list_nums_orig power_list_nums
@@ -362,7 +362,7 @@ mv power_list_nums_orig power_list_nums
 #==========================================================#
 mergevia -V -tech /home/saul/projects/KISTA/qrc/typical -cnt np_rcont_0poly \
 	rcont_0poly - np_rmetal1_0conn np_rpoly_0conn
-mergevia took 0.00 user, 0.00 sys, 0.00 elapsed, 10520.0 kbytes
+mergevia took 0.00 user, 0.01 sys, 0.00 elapsed, 10520.0 kbytes
 #==========================================================#
 # Create resistive interconnect LDD terminals
 #==========================================================#
@@ -393,13 +393,13 @@ geom -V cont_0ndiff np_rndiff_0conn.conn - tmp_rcont_0ndiff,11,i,2
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
 mergevia -V -i -tech /home/saul/projects/KISTA/qrc/typical -cnt \
 	tmp_rcont_0ndiff rcont_0ndiff - np_rmetal1_0conn np_rndiff_0conn
-mergevia took 0.22 user, 0.17 sys, 0.00 elapsed, 10524.0 kbytes
+mergevia took 0.16 user, 0.17 sys, 0.00 elapsed, 10524.0 kbytes
 /bin/rm -f tmp_rcont_0ndiff
 geom -V cont_0pdiff np_rpdiff_0conn.conn - tmp_rcont_0pdiff,11,i,2
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
 mergevia -V -i -tech /home/saul/projects/KISTA/qrc/typical -cnt \
 	tmp_rcont_0pdiff rcont_0pdiff - np_rmetal1_0conn np_rpdiff_0conn
-mergevia took 0.21 user, 0.19 sys, 1.00 elapsed, 10524.0 kbytes
+mergevia took 0.22 user, 0.19 sys, 0.00 elapsed, 10520.0 kbytes
 /bin/rm -f tmp_rcont_0pdiff
 #==========================================================#
 # Assign net numbers to nonresistive layers
@@ -410,9 +410,9 @@ epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 epick -V -reo -e tmp_ndiff_0conn -c np_rndiff_0conn.conn tmp1_ndiff_0conn
 epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 geom -V tmp1_ndiff_0conn np_rndiff_0conn - tmp1_ndiff_0conn,11,i,2
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
-geom -V tmp_ndiff_0conn,tmp1_ndiff_0conn - np_rndiff_0conn,1,i,1
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom -V tmp_ndiff_0conn,tmp1_ndiff_0conn - np_rndiff_0conn,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 /bin/rm -f tmp_ndiff_0conn tmp1_ndiff_0conn
 epick -V -reo -e rcont_0ndiff -e rcont_0pdiff np_rpdiff_0conn.conn \
 	tmp_pdiff_0conn
@@ -430,7 +430,7 @@ epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 epick -V -reo -e tmp_nwell_0conn -c np_rnwell_0conn.conn tmp1_nwell_0conn
 epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 geom -V tmp1_nwell_0conn np_rnwell_0conn - tmp1_nwell_0conn,11,i,2
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom took  0.00 user, 0.00 sys, 1.00 elapsed, 3056.0 kbytes
 geom -V tmp_nwell_0conn,tmp1_nwell_0conn - np_rnwell_0conn,1,i,1
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 /bin/rm -f tmp_nwell_0conn tmp1_nwell_0conn
@@ -442,7 +442,7 @@ epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 geom -V tmp1_psubstrate np_rpsubstrate - tmp1_psubstrate,11,i,2
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
 geom -V tmp_psubstrate,tmp1_psubstrate - np_rpsubstrate,1,i,1
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 /bin/rm -f tmp_psubstrate tmp1_psubstrate
 epick -V -reo -e rcont_0ndiff -e rcont_0pdiff np_r_0soi_0nd.conn \
 	tmp__0soi_0nd
@@ -452,13 +452,13 @@ epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 geom -V tmp1__0soi_0nd np_r_0soi_0nd - tmp1__0soi_0nd,11,i,2
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
 geom -V tmp__0soi_0nd,tmp1__0soi_0nd - np_r_0soi_0nd,1,i,1
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
 /bin/rm -f tmp__0soi_0nd tmp1__0soi_0nd
 epick -V -reo -e rcont_0ndiff -e rcont_0pdiff np_r_0soi_0nsb.conn \
 	tmp__0soi_0nsb
 epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 epick -V -reo -e tmp__0soi_0nsb -c np_r_0soi_0nsb.conn tmp1__0soi_0nsb
-epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2064.0 kbytes
 geom -V tmp1__0soi_0nsb np_r_0soi_0nsb - tmp1__0soi_0nsb,11,i,2
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
 geom -V tmp__0soi_0nsb,tmp1__0soi_0nsb - np_r_0soi_0nsb,1,i,1
@@ -468,21 +468,21 @@ epick -V -reo -e rcont_0ndiff -e rcont_0pdiff np_r_0soi_0pd.conn \
 	tmp__0soi_0pd
 epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 epick -V -reo -e tmp__0soi_0pd -c np_r_0soi_0pd.conn tmp1__0soi_0pd
-epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2064.0 kbytes
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 geom -V tmp1__0soi_0pd np_r_0soi_0pd - tmp1__0soi_0pd,11,i,2
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
 geom -V tmp__0soi_0pd,tmp1__0soi_0pd - np_r_0soi_0pd,1,i,1
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 /bin/rm -f tmp__0soi_0pd tmp1__0soi_0pd
 epick -V -reo -e rcont_0ndiff -e rcont_0pdiff np_r_0soi_0psb.conn \
 	tmp__0soi_0psb
 epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 epick -V -reo -e tmp__0soi_0psb -c np_r_0soi_0psb.conn tmp1__0soi_0psb
-epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2064.0 kbytes
 geom -V tmp1__0soi_0psb np_r_0soi_0psb - tmp1__0soi_0psb,11,i,2
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
-geom -V tmp__0soi_0psb,tmp1__0soi_0psb - np_r_0soi_0psb,1,i,1
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom -V tmp__0soi_0psb,tmp1__0soi_0psb - np_r_0soi_0psb,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 /bin/rm -f tmp__0soi_0psb tmp1__0soi_0psb
 #==========================================================#
 # Process text layers
@@ -502,16 +502,16 @@ rex -V -m -pd -I# -tech /home/saul/projects/KISTA/qrc/typical -medge \
 	np_rpoly_0conn -rP res.mod np_rpoly_0conn::poly_conn_cut \
 	np_rmetal1_0conn::metal1_conn_cut - rcont_0ndiff,2,t rcont_0pdiff,2,t \
 	rcont_0poly,1,2,t _0nmos1v_lgvia,1,z _0pmos1v_lgvia,1,z - L1T0,2,I
-Resistance data preparation stage took  1.15 user, 1.43 sys, 3.00 elapsed, 2736.0 kbytes
-INFO (ASSREXT-35330): Resistance data preparation stage completed successfully at Fri Dec 17 07:02:49 2021
+Resistance data preparation stage took  1.09 user, 1.27 sys, 3.00 elapsed, 2736.0 kbytes
+INFO (ASSREXT-35330): Resistance data preparation stage completed successfully at Mon Dec 20 07:12:40 2021
 
-INFO (ASSREXT-35331): rex started at Fri Dec 17 07:02:49 2021
+INFO (ASSREXT-35331): rex started at Mon Dec 20 07:12:40 2021
 
-rex took  0.04 user, 0.05 sys, 0.00 elapsed, 10576.0 kbytes
-R stage took  0.06 user, 0.06 sys, 0.00 elapsed, 2736.0 kbytes
-INFO (ASSREXT-35332): rex completed successfully at Fri Dec 17 07:02:49 2021
+rex took  0.02 user, 0.07 sys, 0.00 elapsed, 10620.0 kbytes
+R stage took  0.05 user, 0.08 sys, 0.00 elapsed, 2736.0 kbytes
+INFO (ASSREXT-35332): rex completed successfully at Mon Dec 20 07:12:40 2021
 
-INFO (ASSREXT-35333): Capacitance data preparation stage started at Fri Dec 17 07:02:49 2021
+INFO (ASSREXT-35333): Capacitance data preparation stage started at Mon Dec 20 07:12:40 2021
 
 /bin/cp -f np_rnwell_0conn np_rnwell_0conn.conn
 /bin/cp -f np_rpsubstrate np_rpsubstrate.conn
@@ -519,14 +519,14 @@ INFO (ASSREXT-35333): Capacitance data preparation stage started at Fri Dec 17 0
 # Form resistive via layers
 #==========================================================#
 stamp -V -i2 np_rmetal1_0conn rcont_0poly np_rcont_0poly
-stamp took  0.19 user, 0.14 sys, 1.00 elapsed, 270876.0 kbytes
+stamp took  0.15 user, 0.14 sys, 0.00 elapsed, 270868.0 kbytes
 geom -V np_rcont_0poly,p_rcont_0poly - rcont_0poly,1,i,1
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 stamp -V -B -i np_rmetal1_0conn cont_0ndiff
-stamp took  0.21 user, 0.14 sys, 0.00 elapsed, 270872.0 kbytes
+stamp took  0.17 user, 0.12 sys, 0.00 elapsed, 270872.0 kbytes
 /bin/cp -f cont_0ndiff rcont_0ndiff
 stamp -V -B -i np_rmetal1_0conn cont_0pdiff
-stamp took  0.21 user, 0.15 sys, 0.00 elapsed, 270872.0 kbytes
+stamp took  0.17 user, 0.13 sys, 1.00 elapsed, 270872.0 kbytes
 /bin/cp -f cont_0pdiff rcont_0pdiff
 #==========================================================#
 # Combine power non-power
@@ -561,9 +561,9 @@ netprint -max NET > original_maxnetfile
 # Form capacitance layers for resistive process layers
 #==========================================================#
 geom -V -i p_rpoly_0conn,np_rpoly_0conn - so_poly_conn,1,n
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2940.0 kbytes
 geom -V p_rpoly_0conn,np_rpoly_0conn - poly_conn,1,i,1
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 geom -V -i p_rmetal1_0conn,np_rmetal1_0conn - so_metal1_conn,1,n
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 2940.0 kbytes
 geom -V p_rmetal1_0conn,np_rmetal1_0conn - metal1_conn,1,i,1
@@ -572,7 +572,7 @@ geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
 # Form capacitance layers for non-resistive process layers
 #==========================================================#
 emerge -V p_rndiff_0conn np_rndiff_0conn ndiff_0conn
-emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 1996.0 kbytes
+emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 1988.0 kbytes
 emerge -V p_rpdiff_0conn np_rpdiff_0conn pdiff_0conn
 emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 1992.0 kbytes
 grow -V .001 ndiff_0conn mask
@@ -591,21 +591,21 @@ geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
 geom -V p_rpsubstrate,np_rpsubstrate - psubstrate,1,i,1
 geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 grow -V 0.001 nwell_0conn g_nwell_0conn
-grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2264.0 kbytes
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2260.0 kbytes
 geom -V psubstrate g_nwell_0conn - psubstrate,10,i,1
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 geom -V nwell_0conn,psubstrate - BOX,1,i,1
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 xytoebbox -V -g 40.002 -e metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,nwell_0conn,psubstrate xg_BOX
 grow -V 0.001 BOX g_BOX
 grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2264.0 kbytes
 geom -V xg_BOX g_BOX - tmp_BOX,10
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
 epick -V -reo -D ${CAP_GROUND} tmp_BOX pick_BOX
 epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2068.0 kbytes
 grow -V -m 0.002 pick_BOX g_pick_BOX
-grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2268.0 kbytes
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3320.0 kbytes
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2264.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3316.0 kbytes
 stamp -i BOX g_pick_BOX
 grow -V -m -0.002 g_pick_BOX pick_BOX
 grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2496.0 kbytes
@@ -614,10 +614,10 @@ geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3144.0 kbytes
 emerge -V pick_BOX BOX tmp1_BOX
 emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 1992.0 kbytes
 geom -V tmp1_BOX - BOX,1,i,1
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 /bin/rm -f g_pick_BOX xg_BOX tmp_BOX tmp1_BOX
 geom -V BOX Oxide - BOX,10,i,1
-geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3056.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3052.0 kbytes
 geom _0nmos1v,_0pmos1v - qrcgate,1,i,1
 #==========================================================#
 # Create sip/sw3d/cn3d capacitance data files
@@ -677,56 +677,56 @@ pax16 -V -lee_off -gnd ${CAP_GROUND} -rmselfC -ignore_cf_table -scf sip.cmd \
 	BOX Oxide poly_conn:poly_conn_cut metal1_conn:metal1_conn_cut \
 	metal2_conn metal3_conn allGate - \
 	/home/saul/projects/KISTA/qrc/typical/qrcTechFile - - NET - capfile
-Capacitance data preparation stage took  0.97 user, 0.90 sys, 2.00 elapsed, 2752.0 kbytes
-INFO (ASSREXT-35334): Capacitance data preparation stage completed successfully at Fri Dec 17 07:02:51 2021
+Capacitance data preparation stage took  0.82 user, 0.85 sys, 1.00 elapsed, 2752.0 kbytes
+INFO (ASSREXT-35334): Capacitance data preparation stage completed successfully at Mon Dec 20 07:12:41 2021
 
-INFO (ASSREXT-35335): pax16 started at Fri Dec 17 07:02:51 2021
+INFO (ASSREXT-35335): pax16 started at Mon Dec 20 07:12:41 2021
 
-pax16_rdpaxcmd took  0.00 user, 0.03 sys, 0.00 elapsed, 10496.0 kbytes
-pax16 took  0.05 user, 0.06 sys, 0.00 elapsed, 34680.0 kbytes
-C stage took 0.06 user, 0.11 sys, 0.00 elapsed, 2752.0 kbytes
-INFO (ASSREXT-35336): pax16 completed successfully at Fri Dec 17 07:02:51 2021
+pax16_rdpaxcmd took  0.03 user, 0.01 sys, 1.00 elapsed, 10488.0 kbytes
+pax16 took  0.03 user, 0.07 sys, 0.00 elapsed, 34604.0 kbytes
+C stage took 0.08 user, 0.09 sys, 1.00 elapsed, 2752.0 kbytes
+INFO (ASSREXT-35336): pax16 completed successfully at Mon Dec 20 07:12:42 2021
 
-INFO (ASSREXT-35337): Output stage started at Fri Dec 17 07:02:51 2021
+INFO (ASSREXT-35337): Output stage started at Mon Dec 20 07:12:42 2021
 
 #==========================================================#
 # Perform RC reduction
 #==========================================================#
 xreduce -V -mergecap -n NET -tech /home/saul/projects/KISTA/qrc/typical -d1 \
-	-reduce -g ${CAP_GROUND},1.0 -merge_parallel_R -danglingR -minR 0.1 \
+	-reduce -g ${CAP_GROUND},1.0 -merge_parallel_R -danglingR -minR 0.001 \
 	-rPvia rcont_0poly.res,rcont_0pdiff.res,rcont_0ndiff.res -rP \
-	np_rpoly_0conn.res,np_rmetal1_0conn.res,lwires.res -minC 1e-14 \
-	-minCper 1 -cap capfile L1T0 _0nmos1v.transr _0pmos1v.transr
-INFO (XREDUCE-199107): Total number of resistors is 44
+	np_rpoly_0conn.res,np_rmetal1_0conn.res,lwires.res -minC 1e-17 \
+	-minCper 0.1 -cap capfile L1T0 _0nmos1v.transr _0pmos1v.transr
+INFO (XREDUCE-199107): Total number of resistors is 27
 
-INFO (XREDUCE-199109): minR option removed 2 resistors (5%)
+INFO (XREDUCE-199109): minR option removed 0 resistors (0%)
 
 INFO (XREDUCE-199110): merge_parallel_R option removed 0 resistors (0%)
 
-INFO (XREDUCE-199054): Total number of capacitors in capfile is 257
+INFO (XREDUCE-199054): Total number of capacitors in capfile is 153
 
-INFO (XREDUCE-199052): mergecap required for 4 (6%) of 62 nets
+INFO (XREDUCE-199052): mergecap required for 0 (0%) of 39 nets
 
 INFO (XREDUCE-199113): danglingR option removed 0 resistors
 
-INFO (XREDUCE-199065): minC small capacitor decoupling set to 1%
+INFO (XREDUCE-199065): minC small capacitor decoupling set to 0.1%
 
-INFO (XREDUCE-199066): minC option decoupled 213 capacitors in capfile
+INFO (XREDUCE-199066): minC option decoupled 33 capacitors in capfile
 
-INFO (XREDUCE-199067): the number of capacitors decreased by 175 (68%)
+INFO (XREDUCE-199067): the number of capacitors decreased by 19 (12%)
 
-INFO (XREDUCE-199107): Total number of resistors is 42
+INFO (XREDUCE-199107): Total number of resistors is 27
 
-INFO (XREDUCE-199108): d1 option renamed 3 nets
+INFO (XREDUCE-199108): d1 option renamed 1 nets
 
-INFO (XREDUCE-199054): Total number of capacitors in capfile is 82
+INFO (XREDUCE-199054): Total number of capacitors in capfile is 134
 
-xreduce took 0.08 user, 0.19 sys, 1.00 elapsed, 7916.0 kbytes
+xreduce took 0.07 user, 0.18 sys, 0.00 elapsed, 7912.0 kbytes
 #==========================================================#
 # Generate HSPICE file
 #==========================================================#
 advgen -V -g0 -li -f -n -o HSPICE -TL L1T0 -nxref \
-	/tmp/qrc_1538/MX2X1/MX2X1.gnx -dxref /tmp/qrc_1538/MX2X1/MX2X1.gdx \
+	/tmp/qrc_27045/MX2X1/MX2X1.gnx -dxref /tmp/qrc_27045/MX2X1/MX2X1.gdx \
 	-sc caps2dversion -m capfile -rPm res.mod np_rpoly_0conn.res \
 	np_rmetal1_0conn.res rcont_0poly.res rcont_0pdiff.res \
 	rcont_0ndiff.res -rPm lwires.mod lwires.res -ldda \
@@ -734,12 +734,16 @@ advgen -V -g0 -li -f -n -o HSPICE -TL L1T0 -nxref \
 	_0pmos1v.transr - NET - /home/saul/projects/KISTA/MX2X1.sp
 INFO (EMREDU-123021): Starting parasitic interconnect reduction.
 
-INFO (LMREDU-132003): The total number of interconnect parasitics was reduced by 12.10%.
+INFO (LMREDU-132003): The total number of interconnect parasitics was reduced by 26.09%.
 
 INFO (EMREDU-123022): Parasitic interconnect reduction completed successfully.
 
-Parasitic interconnect reduction took: 0.02 user, 0.00 sys, 0.00 elapsed, 7536.0 kbytes
-INFO (ADVGN-5763): spice2db warning: No reference for dev "MX9_M0" in subckt MX2X1 renamed "MX9_M0_unmatched"
+Parasitic interconnect reduction took: 0.01 user, 0.00 sys, 0.00 elapsed, 7540.0 kbytes
+INFO (ADVGN-5763): spice2db warning: No reference for dev "MX5_M0" in subckt MX2X1 renamed "MX5_M0_unmatched"
+
+INFO (ADVGN-5763): spice2db warning: No reference for dev "MX4_M0" in subckt MX2X1 renamed "MX4_M0_unmatched"
+
+INFO (ADVGN-5763): spice2db warning: No reference for dev "MX3_M0" in subckt MX2X1 renamed "MX3_M0_unmatched"
 
 INFO (ADVGN-5763): spice2db warning: No reference for dev "MX8_M0" in subckt MX2X1 renamed "MX8_M0_unmatched"
 
@@ -747,29 +751,13 @@ INFO (ADVGN-5763): spice2db warning: No reference for dev "MX7_M0" in subckt MX2
 
 INFO (ADVGN-5763): spice2db warning: No reference for dev "MX6_M0" in subckt MX2X1 renamed "MX6_M0_unmatched"
 
-INFO (ADVGN-5763): spice2db warning: No reference for dev "MX5_M0" in subckt MX2X1 renamed "MX5_M0_unmatched"
+INFO (ADVGN-5365): spice2db warning: No reference for net "3" in subckt MX2X1.
 
-INFO (ADVGN-5763): spice2db warning: No reference for dev "MX14_M0" in subckt MX2X1 renamed "MX14_M0_unmatched"
+INFO (ADVGN-5365): spice2db warning: No reference for net "X8_5" in subckt MX2X1.
 
-INFO (ADVGN-5763): spice2db warning: No reference for dev "MX13_M0" in subckt MX2X1 renamed "MX13_M0_unmatched"
+INFO (ADVGN-5365): spice2db warning: No reference for net "X7_5" in subckt MX2X1.
 
-INFO (ADVGN-5763): spice2db warning: No reference for dev "MX12_M0" in subckt MX2X1 renamed "MX12_M0_unmatched"
-
-INFO (ADVGN-5763): spice2db warning: No reference for dev "MX11_M0" in subckt MX2X1 renamed "MX11_M0_unmatched"
-
-INFO (ADVGN-5763): spice2db warning: No reference for dev "MX10_M0" in subckt MX2X1 renamed "MX10_M0_unmatched"
-
-INFO (ADVGN-5365): spice2db warning: No reference for net "5" in subckt MX2X1.
-
-INFO (ADVGN-5365): spice2db warning: No reference for net "X14_5" in subckt MX2X1.
-
-INFO (ADVGN-5365): spice2db warning: No reference for net "X13_5" in subckt MX2X1.
-
-INFO (ADVGN-5365): spice2db warning: No reference for net "X12_5" in subckt MX2X1.
-
-INFO (ADVGN-5365): spice2db warning: No reference for net "X11_5" in subckt MX2X1.
-
-INFO (ADVGN-5365): spice2db warning: No reference for net "X10_5" in subckt MX2X1.
+INFO (ADVGN-5365): spice2db warning: No reference for net "X6_5" in subckt MX2X1.
 
 advgen took:  0.03 user, 0.01 sys, 0.00 elapsed, 9144.0 kbytes
 #==========================================================#
@@ -780,13 +768,13 @@ F model=C 2 X X
 ENDCAT
 gemini -V -S -w -td 0.01 -flt gemfilterfile -acC -prr_c # -fflatten \
 	s#agds2rcx.sp s#/home/saul/projects/KISTA/MX2X1.sp
-File descriptor 3 (/home/saul/projects/KISTA/lvs_runs/svdb/qrc.MX2X1.log) leaked on pvs invocation. Parent PID 1995: /pkg/cadence/installs/QUANTUS20
-File descriptor 4 (pipe:[66515068]) leaked on pvs invocation. Parent PID 1995: /pkg/cadence/installs/QUANTUS20
-File descriptor 5 (pipe:[66515072]) leaked on pvs invocation. Parent PID 1995: /pkg/cadence/installs/QUANTUS20
-File descriptor 6 (pipe:[66515069]) leaked on pvs invocation. Parent PID 1995: /pkg/cadence/installs/QUANTUS20
-File descriptor 7 (/tmp/qrc_1538/MX2X1/rcx.sh) leaked on pvs invocation. Parent PID 1995: /pkg/cadence/installs/QUANTUS20
-File descriptor 8 (/tmp/qrc_1538/MX2X1/rcx_temp/GNUMvxqcKv (deleted)) leaked on pvs invocation. Parent PID 1995: /pkg/cadence/installs/QUANTUS20
-File descriptor 10 (/tmp/qrc_1538/MX2X1/gemfilterfile) leaked on pvs invocation. Parent PID 1995: /pkg/cadence/installs/QUANTUS20
+File descriptor 3 (/home/saul/projects/KISTA/lvs_runs/svdb/qrc.MX2X1.log) leaked on pvs invocation. Parent PID 27476: /pkg/cadence/installs/QUANTUS20
+File descriptor 4 (pipe:[68647923]) leaked on pvs invocation. Parent PID 27476: /pkg/cadence/installs/QUANTUS20
+File descriptor 5 (pipe:[68647927]) leaked on pvs invocation. Parent PID 27476: /pkg/cadence/installs/QUANTUS20
+File descriptor 6 (pipe:[68647924]) leaked on pvs invocation. Parent PID 27476: /pkg/cadence/installs/QUANTUS20
+File descriptor 7 (/tmp/qrc_27045/MX2X1/rcx.sh) leaked on pvs invocation. Parent PID 27476: /pkg/cadence/installs/QUANTUS20
+File descriptor 8 (/tmp/qrc_27045/MX2X1/rcx_temp/GNUMip7cct (deleted)) leaked on pvs invocation. Parent PID 27476: /pkg/cadence/installs/QUANTUS20
+File descriptor 10 (/tmp/qrc_27045/MX2X1/gemfilterfile) leaked on pvs invocation. Parent PID 27476: /pkg/cadence/installs/QUANTUS20
   WARNING: Running as a non-root user. Functionality may be unavailable.
 pvs: invalid option -- 'l'
   Error during parsing of command line.
@@ -795,18 +783,18 @@ ERROR (NVNCTL-600032): The following command failed:
 
 ERROR (NVNCTL-600008): Exiting...
 
-Output stage took  0.21 user, 0.26 sys, 1.00 elapsed, 2760.0 kbytes
-INFO (ASSREXT-35338): Output stage completed successfully at Fri Dec 17 07:02:52 2021
+Output stage took  0.18 user, 0.26 sys, 0.00 elapsed, 2760.0 kbytes
+INFO (ASSREXT-35338): Output stage completed successfully at Mon Dec 20 07:12:42 2021
 
 assura_rcx took:  0.00 user, 0.00 sys, 0.00 elapsed, 2760.0 kbytes
 INFO (LBRCXM-610): Extraction finished.
 
 INFO (LBRCXM-582): Checking in license of QTS300 20.10
 
-INFO (LBRCXM-702): Run ended: Fri Dec 17 07:02:52 2021
+INFO (LBRCXM-702): Run ended: Mon Dec 20 07:12:42 2021
 
 
-INFO (LBRCXM-805): Run took: 6s elapsed
+INFO (LBRCXM-805): Run took: 5s elapsed
 
 INFO (LBRCXM-708): *****  Quantus terminated normally  *****
 

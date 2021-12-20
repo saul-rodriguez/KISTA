@@ -3,4 +3,4 @@
 # THE RUN FILE created by Cadence Extraction Quantus UI Version 20.1.2-p025
 #--------------------------------------------------------------------------------------
 
-qrc  -log_file /home/saul/projects/KISTA/lvs_runs/svdb/qrc.NAND2X1.log -cmd /home/saul/projects/KISTA/lvs_runs/svdb/qrc.NAND2X1.ccl 
+qrc  -log_file /home/saul/projects/KISTA/lvs_runs/svdb/qrc.MX2X1.log -cmd /home/saul/projects/KISTA/lvs_runs/svdb/qrc.MX2X1.ccl 

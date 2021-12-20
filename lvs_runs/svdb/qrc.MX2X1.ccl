@@ -17,11 +17,11 @@ extraction_setup \
 filter_cap \
 	 -exclude_self_cap true
 filter_coupling_cap \
-	 -coupling_cap_threshold_absolute 10 \
-	 -coupling_cap_threshold_relative 0.01
+	 -coupling_cap_threshold_absolute 0.01 \
+	 -coupling_cap_threshold_relative 0.001
 filter_res \
 	 -merge_parallel_res true \
-	 -min_res 0.1
+	 -min_res 0.001
 input_db -type pvs \
 	 -run_name "MX2X1" \
 	 -directory_name "/home/saul/projects/KISTA/lvs_runs/svdb" \

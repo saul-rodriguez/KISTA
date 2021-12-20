@@ -1,6 +1,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Abstract Options File
-;; Abstract_Generator version sub-version  IC6.1.8-64b.500.7  on Dec 17 11:06:57 2021
+;; Abstract_Generator version sub-version  IC6.1.8-64b.500.7  on Dec 20 06:45:39 2021
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 absSetOption( "DateTimeLog"                "false")

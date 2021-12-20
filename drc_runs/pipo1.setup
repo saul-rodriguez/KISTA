@@ -10,8 +10,8 @@ logFile	"/home/saul/projects/KISTA/drc_runs/PIPO1.LOG"
 maxVertices	2048
 pinAttNum	0
 runDir	"/home/saul/projects/KISTA/drc_runs"
-strmFile	"/home/saul/projects/KISTA/drc_runs/NAND2X1.gds"
+strmFile	"/home/saul/projects/KISTA/drc_runs/MX2X1.gds"
 strmVersion	5
 techLib	"KISTA_SOI_STDLIB_TECH"
-topCell	"NAND2X1"
+topCell	"MX2X1"
 view	"layout"

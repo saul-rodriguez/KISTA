@@ -2,7 +2,7 @@
 * CDL Netlist:                                              *
 *                                                           *
 * Cell Name  : MX2X1                                        *
-* Netlisted  : Fri Dec 17 07:00:37 2021                     *
+* Netlisted  : Mon Dec 20 07:11:54 2021                     *
 * PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
 *.LDD
@@ -29,15 +29,11 @@ M0 3 4 2 2 pmos3 L=1e-06 W=4e-06 AD=1e-11 AS=0 PD=1.3e-05 PS=0 fw=4e-06 sa=2e-06
 * Sub cell: MX2X1                                           *
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
 .subckt MX2X1 A B S0 VDD! VSS! Y
-** N=10 EP=6 FDC=10
-X5 VSS! 2 S0 nmos3_CDNS_2 $T=19800 12000 1 180 $X=3800 $Y=12000
-X6 A 3 2 nmos3_CDNS_2 $T=35800 12000 1 180 $X=19800 $Y=12000
-X7 B 3 S0 nmos3_CDNS_2 $T=35800 12000 0 0 $X=35800 $Y=12000
-X8 VSS! 4 3 nmos3_CDNS_2 $T=56000 12000 0 0 $X=56000 $Y=12000
-X9 VSS! Y 4 nmos3_CDNS_2 $T=88000 12000 1 180 $X=72000 $Y=12000
-X10 VDD! 2 S0 pmos3_CDNS_3 $T=19800 60000 0 180 $X=3800 $Y=46000
-X11 A 3 S0 pmos3_CDNS_3 $T=35800 60000 0 180 $X=19800 $Y=46000
-X12 B 3 2 pmos3_CDNS_3 $T=35800 60000 1 0 $X=35800 $Y=46000
-X13 VDD! 4 3 pmos3_CDNS_3 $T=56000 60000 1 0 $X=56000 $Y=46000
-X14 VDD! Y 4 pmos3_CDNS_3 $T=88000 60000 0 180 $X=72000 $Y=46000
+** N=8 EP=6 FDC=6
+X3 VSS! 2 S0 nmos3_CDNS_2 $T=16000 12000 1 180 $X=0 $Y=12000
+X4 A Y 2 nmos3_CDNS_2 $T=32000 12000 1 180 $X=16000 $Y=12000
+X5 B Y S0 nmos3_CDNS_2 $T=32000 12000 0 0 $X=32000 $Y=12000
+X6 VDD! 2 S0 pmos3_CDNS_3 $T=16000 60000 0 180 $X=0 $Y=46000
+X7 A Y S0 pmos3_CDNS_3 $T=32000 60000 0 180 $X=16000 $Y=46000
+X8 B Y 2 pmos3_CDNS_3 $T=32000 60000 1 0 $X=32000 $Y=46000
 .ends MX2X1

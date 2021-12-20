@@ -5,13 +5,13 @@
 			*****************************************************
 
 
-Report File Name         : NAND2X1.rep
-ERC Summary File         : NAND2X1.sum
-LVS Comparison Report    : NAND2X1.rep.cls
-LVS Softchk Report       : NAND2X1.softchk
-Layout Name              : /home/saul/projects/KISTA/lvs_runs/NAND2X1.gds ("NAND2X1")
+Report File Name         : MX2X1.rep
+ERC Summary File         : MX2X1.sum
+LVS Comparison Report    : MX2X1.rep.cls
+LVS Softchk Report       : MX2X1.softchk
+Layout Name              : /home/saul/projects/KISTA/lvs_runs/MX2X1.gds ("MX2X1")
 User Name                : saul
-Creation Time            : Fri Dec 17 11:21:21 2021
+Creation Time            : Mon Dec 20 07:11:54 2021
 Current directory        : /home/saul/projects/KISTA/lvs_runs
 PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 
@@ -26,6 +26,6 @@ PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 
 Clean cell list (added by extraction report parser )
  for cell "M1_PO_CDNS_1"
- for cell "NAND2X1"
- for cell "nmos3_CDNS_3"
- for cell "pmos3_CDNS_2"
+ for cell "MX2X1"
+ for cell "nmos3_CDNS_2"
+ for cell "pmos3_CDNS_3"

@@ -4,9 +4,9 @@ Running: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/pvsvirt \
   -control /home/saul/projects/KISTA/drc_runs/pvsdrcctl \
   -cell_tree /home/saul/projects/KISTA/drc_runs/cell_tree.txt \
   -layLibName KISTA_SOI_STDLIB \
-  -layCellName NAND2X1 \
+  -layCellName MX2X1 \
   -layViewName layout \
-  -igds /home/saul/projects/KISTA/drc_runs/NAND2X1.gds \
+  -igds /home/saul/projects/KISTA/drc_runs/MX2X1.gds \
   -layScale 0.0005 \
   -layTechLib KISTA_SOI_STDLIB_TECH \
   -layLayerMap /home/saul/projects/KISTA/pvs/kista_1u.layermap \
@@ -17,19 +17,19 @@ Running: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/pvsvirt \
   -layMaxVertices 2048 \
   -rulesFile /home/saul/projects/KISTA/drc_runs/.technology.rul \
   -df2_version 6.1.8.0 \
-  -sign IPVS_1639736454_8982 \
+  -sign IPVS_1639980569_3927 \
   -run_dir /home/saul/projects/KISTA/drc_runs \
   -no_rules_check
 
 
 
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
 INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
 ********************************************************************************
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $
           : sub-version  IC6.1.8-64b.500.7 
-Started at: 17-Dec-2021  11:20:56
+Started at: 20-Dec-2021  07:09:31
 User Name : saul
 Host Name : s2424
 Directory : /home/saul/projects/KISTA
@@ -39,7 +39,7 @@ Info: Cellview Rev Num:99,  Tech Rev Num:59
 
 *WARNING* The directory: '/home/saul/projects/KISTA/KISTA' does not exist
 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KISTA/drc_runs/NAND2X1.gds' already exists. It will be overwritten.
+WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KISTA/drc_runs/MX2X1.gds' already exists. It will be overwritten.
 INFO (XSTRM-217): Reading the layer map file, /home/saul/projects/KISTA/pvs/kista_1u.layermap
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Oxide_thk' at line number '5' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Nhvt' at line number '8' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -123,8 +123,8 @@ INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design 
 
 Summary of Options :
 library                                 KISTA_SOI_STDLIB
-strmFile                                /home/saul/projects/KISTA/drc_runs/NAND2X1.gds
-topCell                                 NAND2X1
+strmFile                                /home/saul/projects/KISTA/drc_runs/MX2X1.gds
+topCell                                 MX2X1
 view                                    layout
 runDir                                  /home/saul/projects/KISTA/drc_runs
 logFile                                 /home/saul/projects/KISTA/drc_runs/PIPO1.LOG
@@ -141,13 +141,13 @@ KISTA libInit.il file is loaded
 initializing MOS callbacks
 INFO (XSTRM-223): 1. Translating stdVia KISTA_SOI_TECH/M1_PO/layout as STRUCTURE M1_PO_CDNS_1.
 Express Pcell license has been checked out for the Express Pcell feature.
-INFO (XSTRM-223): 2. Translating cellView KISTA_1UM/pmos3/layout as STRUCTURE pmos3_CDNS_2.
-INFO (XSTRM-223): 3. Translating cellView KISTA_1UM/nmos3/layout as STRUCTURE nmos3_CDNS_3.
-INFO (XSTRM-223): 4. Translating cellView KISTA_SOI_STDLIB/NAND2X1/layout as STRUCTURE NAND2X1.
+INFO (XSTRM-223): 2. Translating cellView KISTA_1UM/nmos3/layout as STRUCTURE nmos3_CDNS_2.
+INFO (XSTRM-223): 3. Translating cellView KISTA_1UM/pmos3/layout as STRUCTURE pmos3_CDNS_3.
+INFO (XSTRM-223): 4. Translating cellView KISTA_SOI_STDLIB/MX2X1/layout as STRUCTURE MX2X1.
 INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 
 Summary of Objects Translated:
-	Scalar Instances:                       4
+	Scalar Instances:                       6
 	Array Instances:                        0
 	Polygons:                               0
 	Paths:                                  0
@@ -163,15 +163,15 @@ Summary of Objects Translated:
 	Area Halos:                             0
 	Markers:                                0
 	Rows:                                   0
-	Standard Vias                           2
+	Standard Vias                           3
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               17
+	Pathsegs:                               31
 	Text:                                   0
-	TextDisplay:                            6
+	TextDisplay:                            8
 	Cells:                                  4
 
-Elapsed Time: 0.3s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 6276KB
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 6296KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '79' warning(s) found.
 
 
@@ -184,9 +184,9 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      5541
-Starting Time:   Fri Dec 17 11:20:57 2021 (Fri Dec 17 10:20:57 2021 GMT)
-With parameters: -drc -top_cell NAND2X1 -ui_data -control /home/saul/projects/KISTA/drc_runs/pvsdrcctl -cell_tree /home/saul/projects/KISTA/drc_runs/cell_tree.txt -ai /home/saul/projects/KISTA/drc_runs/.technology.rul 
+Process Id:      26116
+Starting Time:   Mon Dec 20 07:09:32 2021 (Mon Dec 20 06:09:32 2021 GMT)
+With parameters: -drc -top_cell MX2X1 -ui_data -control /home/saul/projects/KISTA/drc_runs/pvsdrcctl -cell_tree /home/saul/projects/KISTA/drc_runs/cell_tree.txt -ai /home/saul/projects/KISTA/drc_runs/.technology.rul 
 ********************************************************************************
 
 
@@ -195,7 +195,7 @@ Get host info ...
 ########################################################################
 CPU info:
     model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
-    cpu MHz         :  1699.218
+    cpu MHz         :  1203.955
     cache size      :  20480 KB
     physical cores  :  16
     logical cores   :  32
@@ -205,42 +205,42 @@ Memory info:
     64168M physical memory installed.
 
     MemTotal:       65709328 kB
-    MemFree:          913484 kB
-    MemAvailable:   21200616 kB
+    MemFree:        18672456 kB
+    MemAvailable:   20479660 kB
     Buffers:               0 kB
-    Cached:         21093008 kB
-    SwapCached:       104564 kB
-    Active:         48877216 kB
-    Inactive:       12962988 kB
-    Active(anon):   38707580 kB
-    Inactive(anon):  3756568 kB
-    Active(file):   10169636 kB
-    Inactive(file):  9206420 kB
+    Cached:          3763580 kB
+    SwapCached:        87992 kB
+    Active:         39178252 kB
+    Inactive:        6532900 kB
+    Active(anon):   38478372 kB
+    Inactive(anon):  5144268 kB
+    Active(file):     699880 kB
+    Inactive(file):  1388632 kB
     Unevictable:           0 kB
     Mlocked:               0 kB
     SwapTotal:      32964604 kB
-    SwapFree:       29600972 kB
-    Dirty:               700 kB
+    SwapFree:       29211596 kB
+    Dirty:                48 kB
     Writeback:             0 kB
-    AnonPages:      40643512 kB
-    Mapped:           387664 kB
-    Shmem:           1716952 kB
-    Slab:            1842756 kB
-    SReclaimable:    1403064 kB
-    SUnreclaim:       439692 kB
-    KernelStack:       13296 kB
-    PageTables:       126536 kB
+    AnonPages:      41859264 kB
+    Mapped:           346004 kB
+    Shmem:           1675068 kB
+    Slab:             404692 kB
+    SReclaimable:     196104 kB
+    SUnreclaim:       208588 kB
+    KernelStack:       12752 kB
+    PageTables:       129448 kB
     NFS_Unstable:          0 kB
     Bounce:                0 kB
     WritebackTmp:          0 kB
     CommitLimit:    65819268 kB
-    Committed_AS:   41779116 kB
+    Committed_AS:   42642252 kB
     VmallocTotal:   34359738367 kB
     VmallocUsed:      422088 kB
     VmallocChunk:   34325399548 kB
     Percpu:            10240 kB
     HardwareCorrupted:     0 kB
-    AnonHugePages:   2510848 kB
+    AnonHugePages:   2455552 kB
     CmaTotal:              0 kB
     CmaFree:               0 kB
     HugePages_Total:       0
@@ -269,14 +269,14 @@ VIRTUAL_CONNECT -colon no;
 VIRTUAL_CONNECT -semicolon_as_colon yes;
 VIRTUAL_CONNECT -report no;
 VIRTUAL_CONNECT -depth -primary;
-REPORT_SUMMARY -drc "NAND2X1.sum" -replace;
+REPORT_SUMMARY -drc "MX2X1.sum" -replace;
 MAX_RESULTS -drc 1000;
 MAX_VERTEX -drc 4096;
-RESULTS_DB -drc "/home/saul/projects/KISTA/drc_runs/NAND2X1.drc_errors.ascii" -ascii;
+RESULTS_DB -drc "/home/saul/projects/KISTA/drc_runs/MX2X1.drc_errors.ascii" -ascii;
 KEEP_LAYERS -none;
 ABORT_ON_LAYOUT_ERROR yes;
 LAYOUT_FORMAT gdsii;
-LAYOUT_PATH "/home/saul/projects/KISTA/drc_runs/NAND2X1.gds";
+LAYOUT_PATH "/home/saul/projects/KISTA/drc_runs/MX2X1.gds";
 
 ########################################################################
 Parsing Rule File /home/saul/projects/KISTA/drc_runs/.technology.rul ...
@@ -288,7 +288,7 @@ TECHNOLOGY kista_pvs -ruleSet default -techLib /home/saul/projects/KISTA/pvtech.
 LAYOUT_PATH "CELLNAME.gds" gdsii;
 [WARN]: LAYOUT_PATH at line 18 in file /home/saul/projects/KISTA/pvs/./kista_drc.rul is skipped. It is set in control file.
 LAYOUT_PRIMARY "CELLNAME";
-[WARN] Cmd-line override: LAYOUT_PRIMARY "NAND2X1";
+[WARN] Cmd-line override: LAYOUT_PRIMARY "MX2X1";
 RESULTS_DB -drc "CELLNAME.db" -ascii;
 [WARN]: RESULTS_DB -ascii at line 20 in file /home/saul/projects/KISTA/pvs/./kista_drc.rul is skipped. It is set in control file.
 INPUT_SCALE 2000;
@@ -518,56 +518,56 @@ Checking out SoftShare license Phys_Ver_Sys_DRC_XL 16.1 Qty: 1 ... succeeded (1s
 ########################################################################
 Optimizing Rules ...
 ########################################################################
-Time: cpu=0.01/0.01  real=0.06/0.06  Memory: 9.12/9.17/9.68
+Time: cpu=0.02/0.02  real=0.07/0.07  Memory: 9.12/9.17/9.68
 
 
 ########################################################################
 Loading Layout Data ...
 ########################################################################
-Parsing Layer Mapping File NAND2X1.lmap ...
+Parsing Layer Mapping File MX2X1.lmap ...
 
 GDSII Input Summary
 
-Date: Fri Dec 17 11:20:57 2021
-GDSII file: /home/saul/projects/KISTA/drc_runs/NAND2X1.gds
+Date: Mon Dec 20 07:09:32 2021
+GDSII file: /home/saul/projects/KISTA/drc_runs/MX2X1.gds
 GDSII size: 6144
 GDSII version: 5.0
 GDSII library name: KISTA_SOI_STDLIB
-Last Modified: 11:20:16 12/17/2021
-Last Accessed: 11:20:56 12/17/2021
+Last Modified: 7:1:0 12/20/2021
+Last Accessed: 7:9:31 12/20/2021
 data base unit in user units    : 0.0005
 physical size of data base unit : 5e-10
 magnification: 1
 
 loading cell M1_PO_CDNS_1 ...
-loading cell pmos3_CDNS_2 ...
-loading cell nmos3_CDNS_3 ...
-loading cell NAND2X1 ...
-Time: cpu=0.01/0.02  real=0.05/0.11  Memory: 17.16/17.31/17.31
+loading cell nmos3_CDNS_2 ...
+loading cell pmos3_CDNS_3 ...
+loading cell MX2X1 ...
+Time: cpu=0.01/0.03  real=0.05/0.12  Memory: 17.16/17.31/17.31
 
 
 Cell Summary:
 ----------------------------------------------------------------------------
     CELL            INSTANCE    GEOMETRY      LABELS        HREF        FREF
 ----------------------------------------------------------------------------
-M1_PO_CDNS_1               0           3           0           2           2
-pmos3_CDNS_2               0          12           0           2           2
-nmos3_CDNS_3               0          12           0           2           2
-NAND2X1                    6          24           0           1           1
+M1_PO_CDNS_1               0           3           0           3           3
+nmos3_CDNS_2               0          10           0           3           3
+pmos3_CDNS_3               0          12           0           3           3
+MX2X1                      9          40           0           1           1
 ----------------------------------------------------------------------------
-TOTAL CELL = 4;  INSTANCE = 6;  GEOMETRY = 51;  LABEL = 0
+TOTAL CELL = 4;  INSTANCE = 9;  GEOMETRY = 65;  LABEL = 0
 
 Layer Summary:
 ----------------------------------------------------------------------------
     LAYER                      ID       HPN      HTC        FPN       FTC
 ----------------------------------------------------------------------------
-Cont                         1002        11         0        22         0
-Metal1                       1016        29         0        38         0
+Cont                         1002         9         0        27         0
+Metal1                       1016        37         0        55         0
 Metal2                       1017         0         0         0         0
 Metal3                       1018         0         0         0         0
 Metal4                       1019         0         0         0         0
-Oxide                        1034         2         0         4         0
-Poly                         1040         9         0        14         0
+Oxide                        1034         2         0         6         0
+Poly                         1040        17         0        27         0
 Via1                         1045         0         0         0         0
 Via2                         1046         0         0         0         0
 Via3                         1047         0         0         0         0
@@ -576,7 +576,7 @@ KTH_openpad                  1048         0         0         0         0
 
 CHIP EXTENT: 0 -2000 48000 74000
 
-Time: cpu=0.00/0.02  real=0.00/0.11  Memory: 17.17/17.31/17.31
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.17/17.31/17.31
 
 
 Ports ...
@@ -601,40 +601,40 @@ Preparing Hierarchical Database ...
 Constructing Hierarchical Database ...
 ========================================================================
 
-Time: cpu=0.00/0.02  real=0.00/0.11  Memory: 17.17/17.31/17.31
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.17/17.31/17.31
 
 
   REORGANIZE HIERARCHIES (1)...
 
-Time: cpu=0.00/0.02  real=0.00/0.11  Memory: 17.17/17.31/17.31
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.17/17.31/17.31
 
     M1_PO_CDNS_1 is expanded.
   REORGANIZE HIERARCHIES (2)...
 
-Time: cpu=0.00/0.02  real=0.00/0.11  Memory: 17.17/17.31/17.31
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.17/17.31/17.31
 
 
 Cell Summary:
 ----------------------------------------------------------------------------
     CELL            INSTANCE    GEOMETRY      LABELS        HREF        FREF
 ----------------------------------------------------------------------------
-pmos3_CDNS_2               0          12           0           2           2
-nmos3_CDNS_3               0          12           0           2           2
-NAND2X1                    4          30           0           1           1
+nmos3_CDNS_2               0          10           0           3           3
+pmos3_CDNS_3               0          12           0           3           3
+MX2X1                      6          49           0           1           1
 ----------------------------------------------------------------------------
-TOTAL CELL = 3;  INSTANCE = 4;  GEOMETRY = 54;  LABEL = 0
+TOTAL CELL = 3;  INSTANCE = 6;  GEOMETRY = 71;  LABEL = 0
 
 Layer Summary:
 ----------------------------------------------------------------------------
     LAYER                      ID       HPN      HTC        FPN       FTC
 ----------------------------------------------------------------------------
-Cont                         1002        12         0        22         0
-Metal1                       1016        30         0        38         0
+Cont                         1002        11         0        27         0
+Metal1                       1016        39         0        55         0
 Metal2                       1017         0         0         0         0
 Metal3                       1018         0         0         0         0
 Metal4                       1019         0         0         0         0
-Oxide                        1034         2         0         4         0
-Poly                         1040        10         0        14         0
+Oxide                        1034         2         0         6         0
+Poly                         1040        19         0        27         0
 Via1                         1045         0         0         0         0
 Via2                         1046         0         0         0         0
 Via3                         1047         0         0         0         0
@@ -664,32 +664,32 @@ Layer Summary(Texts For DFM_TEXT):
     LAYER                      ID       TEXTS
 ----------------------------------------------------------------------------
 ----------------------------------------------------------------------------
-Time: cpu=0.00/0.02  real=0.00/0.11  Memory: 17.17/17.31/17.31
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.17/17.31/17.31
 
 
 Compacting Hierarchy Library ...
 ========================================================================
-Time: cpu=0.00/0.02  real=0.00/0.11  Memory: 9.10/9.27/17.31
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 9.10/9.27/17.31
 
 
 Analyzing Cell Overlapings ...
 ========================================================================
-Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 9.10/9.27/13.29
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 9.10/9.27/13.29
 
 
 Merge Layers ...
 ========================================================================
     Cont = OR Cont
-    generate layer Cont, TYP = P, HPN = 10, FPN = 18, HEN = 40, FEN = 72
+    generate layer Cont, TYP = P, HPN = 9, FPN = 21, HEN = 36, FEN = 84
 
     Metal1 = OR Metal1
-    generate layer Metal1, TYP = P, HPN = 10, FPN = 14, HEN = 58, FEN = 74
+    generate layer Metal1, TYP = P, HPN = 11, FPN = 19, HEN = 64, FEN = 96
 
     Oxide = OR Oxide
-    generate layer Oxide, TYP = P, HPN = 2, FPN = 4, HEN = 8, FEN = 16
+    generate layer Oxide, TYP = P, HPN = 2, FPN = 6, HEN = 8, FEN = 24
 
     Poly = OR Poly
-    generate layer Poly, TYP = P, HPN = 4, FPN = 6, HEN = 32, FEN = 40
+    generate layer Poly, TYP = P, HPN = 5, FPN = 9, HEN = 42, FEN = 58
 
 Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 9.10/9.27/13.29
 
@@ -741,11 +741,11 @@ operation group: 4/40
     OXIDE.W.1:L262153 = INTE Oxide -lt 2 -output region -single_point -abut lt 90
 ========================================================================
     generate layer OXIDE.W.1:L262153, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 9.10/9.27/17.31
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/17.31
 
 
     Rule Check OXIDE.W.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
 
 
 
@@ -753,11 +753,11 @@ operation group: 5/40
     POLY.W.1:L262154 = INTE Poly -lt 1 -output region -single_point -abut lt 90
 ========================================================================
     generate layer POLY.W.1:L262154, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 9.10/9.27/21.33
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/21.33
 
 
     Rule Check POLY.W.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
 
 
 
@@ -765,11 +765,11 @@ operation group: 6/40
     CONT.W.1:L262155 = INTE Cont -lt 1 -output region -single_point -abut lt 90
 ========================================================================
     generate layer CONT.W.1:L262155, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.10/9.27/17.31
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/17.31
 
 
     Rule Check CONT.W.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
 
 
 
@@ -837,11 +837,11 @@ operation group: 12/40
     OXIDE.SP.1.1:L262161 = EXTE Oxide -lt 2 -output region -single_point -abut lt 90
 ========================================================================
     generate layer OXIDE.SP.1.1:L262161, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/21.33
+Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/21.33
 
 
     Rule Check OXIDE.SP.1.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -849,11 +849,11 @@ operation group: 13/40
     POLY.SP.1.1:L262162 = EXTE Poly -lt 2 -output region -single_point -abut lt 90
 ========================================================================
     generate layer POLY.SP.1.1:L262162, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/21.33
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/21.33
 
 
     Rule Check POLY.SP.1.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -861,11 +861,11 @@ operation group: 14/40
     METAL1.SP.1.1:L262163 = EXTE Metal1 -lt 2 -output region -single_point -abut lt 90
 ========================================================================
     generate layer METAL1.SP.1.1:L262163, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/21.33
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/21.33
 
 
     Rule Check METAL1.SP.1.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -873,11 +873,11 @@ operation group: 15/40
     METAL2.SP.1.1:L262164 = EXTE Metal2 -lt 2 -output region -single_point -abut lt 90
 ========================================================================
     generate layer METAL2.SP.1.1:L262164, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
     Rule Check METAL2.SP.1.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -885,11 +885,11 @@ operation group: 16/40
     METAL3.SP.1.1:L262165 = EXTE Metal3 -lt 2 -output region -single_point -abut lt 90
 ========================================================================
     generate layer METAL3.SP.1.1:L262165, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
     Rule Check METAL3.SP.1.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -897,11 +897,11 @@ operation group: 17/40
     METAL4.SP.1.1:L262166 = EXTE Metal4 -lt 2 -output region -single_point -abut lt 90
 ========================================================================
     generate layer METAL4.SP.1.1:L262166, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
     Rule Check METAL4.SP.1.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -909,11 +909,11 @@ operation group: 18/40
     CONT.SP.1.1:L262167 = EXTE Cont -lt 1 -output region -single_point -abut lt 90
 ========================================================================
     generate layer CONT.SP.1.1:L262167, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/17.31
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/17.31
 
 
     Rule Check CONT.SP.1.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -921,11 +921,11 @@ operation group: 19/40
     CONT.SP.1.2:L262168 = EXTE Cont Via1 -lt 1 -output region -single_point -abut lt 90
 ========================================================================
     generate layer CONT.SP.1.2:L262168, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
     Rule Check CONT.SP.1.2 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -933,11 +933,11 @@ operation group: 20/40
     VIA1.SP.1.1:L262169 = EXTE Via1 -lt 1 -output region -single_point -abut lt 90
 ========================================================================
     generate layer VIA1.SP.1.1:L262169, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
     Rule Check VIA1.SP.1.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -945,11 +945,11 @@ operation group: 21/40
     VIA1.SP.1.2:L262170 = EXTE Via1 Via2 -lt 1 -output region -single_point -abut lt 90
 ========================================================================
     generate layer VIA1.SP.1.2:L262170, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
     Rule Check VIA1.SP.1.2 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -957,11 +957,11 @@ operation group: 22/40
     VIA2.SP.1.1:L262171 = EXTE Via2 -lt 1 -output region -single_point -abut lt 90
 ========================================================================
     generate layer VIA2.SP.1.1:L262171, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
     Rule Check VIA2.SP.1.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -969,11 +969,11 @@ operation group: 23/40
     VIA2.SP.1.2:L262172 = EXTE Via2 Via3 -lt 1 -output region -single_point -abut lt 90
 ========================================================================
     generate layer VIA2.SP.1.2:L262172, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
     Rule Check VIA2.SP.1.2 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -981,11 +981,11 @@ operation group: 24/40
     CONT.E.1:L262173 = ENC Cont Metal1 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
 ========================================================================
     generate layer CONT.E.1:L262173, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/13.29
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/13.29
 
 
     Rule Check CONT.E.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -993,12 +993,12 @@ operation group: 25/40
     CONT.E.2:L262174 = ENC Cont Poly -lt 0.5 -abut lt 90 -overlap -single_point
 ========================================================================
     generate layer CONT.E.2:L262174, TYP = R, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/17.31
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/17.31
 
     delete layer Poly
 
     Rule Check CONT.E.2 finished, 0 error(s) reported.
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
 
 
 
@@ -1006,12 +1006,12 @@ operation group: 26/40
     CONT.E.3:L262175 = ENC Cont Oxide -lt 0.5 -abut lt 90 -overlap -single_point
 ========================================================================
     generate layer CONT.E.3:L262175, TYP = R, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/17.31
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/17.31
 
     delete layer Oxide
 
     Rule Check CONT.E.3 finished, 0 error(s) reported.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
 
@@ -1019,11 +1019,11 @@ operation group: 27/40
     VIA1.E.1:L262176 = ENC Via1 Metal1 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
 ========================================================================
     generate layer VIA1.E.1:L262176, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
     Rule Check VIA1.E.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
 
@@ -1031,11 +1031,11 @@ operation group: 28/40
     VIA1.E.2:L262177 = ENC Via1 Metal2 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
 ========================================================================
     generate layer VIA1.E.2:L262177, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
     Rule Check VIA1.E.2 finished, 0 error(s) reported.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
 
@@ -1043,11 +1043,11 @@ operation group: 29/40
     VIA2.E.1:L262178 = ENC Via2 Metal2 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
 ========================================================================
     generate layer VIA2.E.1:L262178, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
     Rule Check VIA2.E.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
 
@@ -1055,11 +1055,11 @@ operation group: 30/40
     VIA2.E.2:L262179 = ENC Via2 Metal3 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
 ========================================================================
     generate layer VIA2.E.2:L262179, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
     Rule Check VIA2.E.2 finished, 0 error(s) reported.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
 
@@ -1067,11 +1067,11 @@ operation group: 31/40
     VIA3.E.1:L262180 = ENC Via3 Metal3 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
 ========================================================================
     generate layer VIA3.E.1:L262180, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
     Rule Check VIA3.E.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
 
@@ -1079,11 +1079,11 @@ operation group: 32/40
     VIA3.E.2:L262181 = ENC Via3 Metal4 -lt 0.5 -output region -single_point -abut lt 90 -outside_also
 ========================================================================
     generate layer VIA3.E.2:L262181, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
     Rule Check VIA3.E.2 finished, 0 error(s) reported.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.11/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.11/9.27/9.27
 
 
 
@@ -1091,7 +1091,7 @@ operation group: 33/40
     Metal_all = OR Metal1 Metal3 Metal2 Metal4
 ========================================================================
     layer Metal_all not generated, operation is dynamically optimized out.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.11/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.11/9.27/9.27
 
     delete layer Metal1
     delete layer Metal3
@@ -1103,13 +1103,13 @@ operation group: 34/40
     KTH_OPENPAD.E.1:L262182 = ENC KTH_openpad Metal_all -lt 6 -output region -single_point -abut lt 90 -outside_also
 ========================================================================
     generate layer KTH_OPENPAD.E.1:L262182, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.11/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.11/9.27/9.27
 
     delete layer KTH_openpad
     delete layer Metal_all
 
     Rule Check KTH_OPENPAD.E.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.11/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.11/9.27/9.27
 
 
 
@@ -1117,7 +1117,7 @@ operation group: 35/40
     Cont_Via1_ov = AND Cont Via1
 ========================================================================
     generate layer Cont_Via1_ov, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.11/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.11/9.27/9.27
 
     delete layer Cont
 
@@ -1126,12 +1126,12 @@ operation group: 36/40
     CONT.OV.1:L262183 = AREA Cont_Via1_ov -gt 0
 ========================================================================
     generate layer CONT.OV.1:L262183, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.11/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.11/9.27/9.27
 
     delete layer Cont_Via1_ov
 
     Rule Check CONT.OV.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.11/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.11/9.27/9.27
 
 
 
@@ -1139,7 +1139,7 @@ operation group: 37/40
     Via1_Via2_ov = AND Via1 Via2
 ========================================================================
     generate layer Via1_Via2_ov, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.11/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.11/9.27/9.27
 
     delete layer Via1
 
@@ -1148,12 +1148,12 @@ operation group: 38/40
     VIA1.OV.1:L262184 = AREA Via1_Via2_ov -gt 0
 ========================================================================
     generate layer VIA1.OV.1:L262184, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.11/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.11/9.27/9.27
 
     delete layer Via1_Via2_ov
 
     Rule Check VIA1.OV.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
 
@@ -1161,7 +1161,7 @@ operation group: 39/40
     Via2_Via3_ov = AND Via2 Via3
 ========================================================================
     generate layer Via2_Via3_ov, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
     delete layer Via2
     delete layer Via3
@@ -1171,12 +1171,12 @@ operation group: 40/40
     VIA2.OV.1:L262185 = AREA Via2_Via3_ov -gt 0
 ========================================================================
     generate layer VIA2.OV.1:L262185, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
     delete layer Via2_Via3_ov
 
     Rule Check VIA2.OV.1 finished, 0 error(s) reported.
-Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.10/9.27/9.27
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.10/9.27/9.27
 
 
 
@@ -1207,15 +1207,15 @@ Outputting Results ...
 Total CPU Time                    : 0(s)
 Total Real Time                   : 0(s)
 Peak Memory Used                  : 21(M)
-Total Original Geometry           : 51(78)
+Total Original Geometry           : 65(115)
 Total DRC RuleChecks              : 36
 Total DRC Results                 : 0 (0)
-Summary can be found in file NAND2X1.sum
-ASCII report database is /home/saul/projects/KISTA/drc_runs/NAND2X1.drc_errors.ascii
+Summary can be found in file MX2X1.sum
+ASCII report database is /home/saul/projects/KISTA/drc_runs/MX2X1.drc_errors.ascii
 Checking in all SoftShare licenses.
 
 
-Design Rule Check Finished Normally. Fri Dec 17 11:20:57 2021
+Design Rule Check Finished Normally. Mon Dec 20 07:09:32 2021
 
 
 

@@ -1,6 +1,6 @@
 hnlLastStopCellInfo = '(
-                           ( "KISTA_1UM" "pmos3" "auCdl" "47" "1635226585" )
-                          ( "KISTA_1UM" "nmos3" "auCdl" "47" "1639493015" )
+                           ( "KISTA_1UM" "nmos3" "auCdl" "47" "1639493015" )
+                          ( "KISTA_1UM" "pmos3" "auCdl" "47" "1635226585" )
                        )
 hnlLastMaxNameLength = 60
 hnlLastNamePrefix = "hnl_"

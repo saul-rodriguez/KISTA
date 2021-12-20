@@ -1,7 +1,7 @@
 ********************************************************************************
 *** PVS HDRC SUMMARY
 ***
-Execute on Date/Time    : Fri Dec 17 06:59:45 2021
+Execute on Date/Time    : Mon Dec 20 07:09:32 2021
 PVS HDRC VERSION        : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 Rule Deck Path          : /home/saul/projects/KISTA/drc_runs/.technology.rul
 Rule Deck Title         :
@@ -27,13 +27,13 @@ DRC Results Database    :
 --------------------------------------------------------------------------------
 --- ORIGINAL LAYER STATISTICS
 ---
-LAYER Cont ....................... Total Original Geometry:        9 (      45)
-LAYER Metal1 ..................... Total Original Geometry:       45 (      81)
+LAYER Cont ....................... Total Original Geometry:        9 (      27)
+LAYER Metal1 ..................... Total Original Geometry:       37 (      55)
 LAYER Metal2 ..................... Total Original Geometry:        0 (       0)
 LAYER Metal3 ..................... Total Original Geometry:        0 (       0)
 LAYER Metal4 ..................... Total Original Geometry:        0 (       0)
-LAYER Oxide ...................... Total Original Geometry:        2 (      10)
-LAYER Poly ....................... Total Original Geometry:       20 (      40)
+LAYER Oxide ...................... Total Original Geometry:        2 (       6)
+LAYER Poly ....................... Total Original Geometry:       17 (      27)
 LAYER Via1 ....................... Total Original Geometry:        0 (       0)
 LAYER Via2 ....................... Total Original Geometry:        0 (       0)
 LAYER Via3 ....................... Total Original Geometry:        0 (       0)
@@ -86,6 +86,6 @@ RULECHECK ortho_45_check ............. Total Result      0 (       0)
 Total CPU Time                    : 0(s)
 Total Real Time                   : 0(s)
 Peak Memory Used                  : 21(M)
-Total Original Geometry           : 76 (176)
+Total Original Geometry           : 65 (115)
 Total DRC RuleChecks              : 36
 Total DRC Results                 : 0 (0)

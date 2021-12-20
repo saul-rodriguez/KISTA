@@ -1,0 +1,7 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary XOR2X1
+Y 6 Y 35400 35600 metal1_conn
+A 1 A 8000 36000 metal1_conn
+B 2 B 24400 29200 metal1_conn
+VDD! 5 VDD! 17800 72200 metal1_conn
+VSS! 8 VSS! 57600 200 metal1_conn
