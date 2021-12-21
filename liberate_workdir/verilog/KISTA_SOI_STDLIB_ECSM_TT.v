@@ -1,1 +1,1 @@
-../char_2021_12_17/characterize/LIBRARY/KISTA_SOI_STDLIB_ECSM_TT.v
+../char_2021_12_21/characterize/LIBRARY/KISTA_SOI_STDLIB_ECSM_TT.v

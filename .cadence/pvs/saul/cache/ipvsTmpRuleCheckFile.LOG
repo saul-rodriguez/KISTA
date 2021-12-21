@@ -7,9 +7,9 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      8242
-Starting Time:   Tue Dec 21 07:12:17 2021 (Tue Dec 21 06:12:17 2021 GMT)
-With parameters: -drc -get_rules /tmp/pvsrng.23785@s2424.1 -tc top -gds /dev/null -get_options /tmp/pvsoptpar.23785@s2424.1 -gen_tags /tmp/pvsgentags.23785@s2424.1 -control /tmp/ipvsRulesCheckControl.23785@s2424.1 /home/saul/projects/KISTA/drc_runs/.technology.rul.23785@s2424.1 
+Process Id:      32282
+Starting Time:   Tue Dec 21 14:09:38 2021 (Tue Dec 21 13:09:38 2021 GMT)
+With parameters: -lvs -get_rules /tmp/pvsrng.5950@s2424.1 -tc top -gds /dev/null -get_options /tmp/pvsoptpar.5950@s2424.1 -gen_tags /tmp/pvsgentags.5950@s2424.1 -stc top -cdl . -control /tmp/ipvsRulesCheckControl.5950@s2424.1 /home/saul/projects/KISTA/lvs_runs/.technology.rul.5950@s2424.1 
 ********************************************************************************
 
 
@@ -18,7 +18,7 @@ Get host info ...
 ########################################################################
 CPU info:
     model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
-    cpu MHz         :  1205.712
+    cpu MHz         :  2299.951
     cache size      :  20480 KB
     physical cores  :  16
     logical cores   :  32
@@ -28,42 +28,42 @@ Memory info:
     64168M physical memory installed.
 
     MemTotal:       65709328 kB
-    MemFree:          363424 kB
-    MemAvailable:   16494720 kB
+    MemFree:          916404 kB
+    MemAvailable:   15902392 kB
     Buffers:               0 kB
-    Cached:         16470892 kB
-    SwapCached:       155956 kB
-    Active:         48628776 kB
-    Inactive:       12607804 kB
-    Active(anon):   41114476 kB
-    Inactive(anon):  4842340 kB
-    Active(file):    7514300 kB
-    Inactive(file):  7765464 kB
+    Cached:         15422248 kB
+    SwapCached:       133520 kB
+    Active:         48574012 kB
+    Inactive:       12174764 kB
+    Active(anon):   41964064 kB
+    Inactive(anon):  4561792 kB
+    Active(file):    6609948 kB
+    Inactive(file):  7612972 kB
     Unevictable:           0 kB
     Mlocked:               0 kB
     SwapTotal:      32964604 kB
-    SwapFree:       15103948 kB
-    Dirty:                60 kB
+    SwapFree:       14838732 kB
+    Dirty:               176 kB
     Writeback:             0 kB
-    AnonPages:      44610216 kB
-    Mapped:           404400 kB
-    Shmem:           1191128 kB
-    Slab:            1738812 kB
-    SReclaimable:    1343520 kB
-    SUnreclaim:       395292 kB
-    KernelStack:       12976 kB
-    PageTables:       172076 kB
+    AnonPages:      45194152 kB
+    Mapped:           404808 kB
+    Shmem:           1199292 kB
+    Slab:            1651756 kB
+    SReclaimable:    1255056 kB
+    SUnreclaim:       396700 kB
+    KernelStack:       12928 kB
+    PageTables:       173884 kB
     NFS_Unstable:          0 kB
     Bounce:                0 kB
     WritebackTmp:          0 kB
     CommitLimit:    65819268 kB
-    Committed_AS:   60031592 kB
+    Committed_AS:   60750940 kB
     VmallocTotal:   34359738367 kB
     VmallocUsed:      422088 kB
     VmallocChunk:   34325399548 kB
     Percpu:            10240 kB
     HardwareCorrupted:     0 kB
-    AnonHugePages:   2031616 kB
+    AnonHugePages:   1974272 kB
     CmaTotal:              0 kB
     CmaFree:               0 kB
     HugePages_Total:       0
@@ -85,242 +85,232 @@ ENV VAR: TCLLIBPATH = /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cad
 
 
 ########################################################################
-Parsing Control File /tmp/ipvsRulesCheckControl.23785@s2424.1 ...
+Parsing Control File /tmp/ipvsRulesCheckControl.5950@s2424.1 ...
 ########################################################################
-RESULTS_DB -drc "/home/saul/projects/KISTA/drc_runs/OAI21X1.drc_errors.ascii" -ascii;
+RESULTS_DB -erc "/home/saul/projects/KISTA/lvs_runs/NOR3X1.erc_errors.ascii" -ascii;
+LVS_RUN_ERC_CHECKS yes;
 
 ########################################################################
-Parsing Rule File /home/saul/projects/KISTA/drc_runs/.technology.rul.23785@s2424.1 ...
+Parsing Rule File /home/saul/projects/KISTA/lvs_runs/.technology.rul.5950@s2424.1 ...
 ########################################################################
 TECHNOLOGY kista_pvs -ruleSet default -techLib /home/saul/projects/KISTA/pvtech.lib;
 [WARN] The rule set 'default' in technology 'kista_pvs' has file './pvlLVS.rul' given for 'ErcRules'. However, this file does not exist, or cannot be read, and will be ignored.
-[INFO] TECHNOLOGY: Rules file /home/saul/projects/KISTA/pvs/./kista_drc.rul will be included after the remainder of the current rules are processed.
+[INFO] TECHNOLOGY: Rules file /home/saul/projects/KISTA/pvs/./kista_lvs.rul will be included after the remainder of the current rules are processed.
 [INFO] TECHNOLOGY kista_pvs -techLib /home/saul/projects/KISTA/pvtech.lib: End of additions.
-LAYOUT_PATH "CELLNAME.gds" gdsii;
-[WARN] Cmd-line override: LAYOUT_PATH "/dev/null";
-LAYOUT_PRIMARY "CELLNAME";
-[WARN] Cmd-line override: LAYOUT_PRIMARY "top";
-RESULTS_DB -drc "CELLNAME.db" -ascii;
-[WARN]: RESULTS_DB -ascii at line 20 in file /home/saul/projects/KISTA/pvs/./kista_drc.rul is skipped. It is set in control file.
+LVS_NETLIST yes -allow_inconsistent_model;
+LVS_FILTER_OPTION AG RC RE RG;
 INPUT_SCALE 2000;
 GRID 5;
 UNIT -length u;
 TEXT_DEPTH -primary;
-FLAG -nonsimple yes;
-
-RULE offgrid_check {
-    CAPTION Grid violation;
-    LAYOUT_INPUT -offgrid;
-}
-
-RULE ortho_45_check {
-    CAPTION Orthogonal and 45 degree violation;
-    LAYOUT_INPUT -skew;
-}
-
-RULE acute_check {
-    CAPTION Acute angle  violation;
-    LAYOUT_INPUT -acute;
-}
+MASK_SVDB_DIR svdb;
+LAYOUT_PRESERVE_CASE -property yes;
 LAYER_DEF empty 999;
-LAYER_DEF Oxide 1034;
-LAYER_MAP 1 -datatype 0 1034;
-LAYER_DEF Poly 1040;
-LAYER_MAP 3 -datatype 0 1040;
-LAYER_DEF Cont 1002;
-LAYER_MAP 6 -datatype 0 1002;
-LAYER_DEF Metal1 1016;
-LAYER_MAP 7 -datatype -le 5 1016;
-LAYER_DEF Metal2 1017;
-LAYER_MAP 9 -datatype -le 5 1017;
-LAYER_DEF Metal3 1018;
-LAYER_MAP 11 -datatype -le 5 1018;
-LAYER_DEF Metal4 1019;
-LAYER_MAP 31 -datatype -le 5 1019;
-LAYER_DEF Via1 1045;
-LAYER_MAP 8 -datatype 0 1045;
-LAYER_DEF Via2 1046;
-LAYER_MAP 10 -datatype 0 1046;
-LAYER_DEF Via3 1047;
-LAYER_MAP 30 -datatype 0 1047;
-LAYER_DEF KTH_openpad 1048;
-LAYER_MAP 172 -datatype 0 1048;
-OR Metal1 Metal2 M12;
-OR Metal3 Metal4 M34;
-OR M12 M34 Metal_all;
-AND Cont Via1 Cont_Via1_ov;
-AND Via1 Via2 Via1_Via2_ov;
-AND Via2 Via3 Via2_Via3_ov;
-
-RULE OXIDE.W.1 {
-    CAPTION OXIDEW.1: Oxide width must be >= 2.0 um;
-    INTE Oxide Oxide -lt 2 -output region -singular -abut lt 90;
-}
-
-RULE POLY.W.1 {
-    CAPTION POLY.W.1: Poly width must be >= 1.0 um;
-    INTE Poly Poly -lt 1 -output region -singular -abut lt 90;
-}
-
-RULE CONT.W.1 {
-    CAPTION CONT.W.1: Cont width must be >= 1.0 um;
-    INTE Cont Cont -lt 1 -output region -singular -abut lt 90;
-}
-
-RULE METAL1.W.1 {
-    CAPTION METAL1.W.1: Metal1 width must be >= 2.0 um;
-    INTE Metal1 Metal1 -lt 2 -output region -singular -abut lt 90;
-}
-
-RULE METAL2.W.1 {
-    CAPTION METAL2.W.1: Metal2 width must be >= 2.0 um;
-    INTE Metal2 Metal2 -lt 2 -output region -singular -abut lt 90;
-}
-
-RULE METAL3.W.1 {
-    CAPTION METAL3.W.1: Metal3 width must be >= 2.0 um;
-    INTE Metal3 Metal3 -lt 2 -output region -singular -abut lt 90;
-}
-
-RULE METAL4.W.1 {
-    CAPTION METAL4.W.1: Metal4 width must be >= 2.0 um;
-    INTE Metal4 Metal4 -lt 2 -output region -singular -abut lt 90;
-}
-
-RULE KTH_OPENPAD.W.1 {
-    CAPTION KTH_OPENPAD.W.1: KTH_openpad width must be >= 88.0 um;
-    INTE KTH_openpad KTH_openpad -lt 88 -output region -singular -abut lt 90;
-}
-
-RULE OXIDE.SP.1.1 {
-    CAPTION OXIDE.SP.1.1: Oxide to Oxide spacing must be >= 2.0 um;
-    EXTE Oxide Oxide -lt 2 -output region -singular -abut lt 90;
-}
-
-RULE POLY.SP.1.1 {
-    CAPTION POLY.SP.1.1: Poly to Poly spacing must be >= 2.0 um;
-    EXTE Poly Poly -lt 2 -output region -singular -abut lt 90;
-}
-
-RULE METAL1.SP.1.1 {
-    CAPTION METAL1.SP.1.1: Metal1 to Metal1 spacing must be >= 2.0 um;
-    EXTE Metal1 Metal1 -lt 2 -output region -singular -abut lt 90;
-}
-
-RULE METAL2.SP.1.1 {
-    CAPTION METAL1.SP.1.1: Metal2 to Metal2 spacing must be >= 2.0 um;
-    EXTE Metal2 Metal2 -lt 2 -output region -singular -abut lt 90;
-}
-
-RULE METAL3.SP.1.1 {
-    CAPTION METAL1.SP.1.1: Metal3 to Metal3 spacing must be >= 2.0 um;
-    EXTE Metal3 Metal3 -lt 2 -output region -singular -abut lt 90;
-}
-
-RULE METAL4.SP.1.1 {
-    CAPTION METAL1.SP.1.1: Metal4 to Metal4 spacing must be >= 2.0 um;
-    EXTE Metal4 Metal4 -lt 2 -output region -singular -abut lt 90;
-}
-
-RULE CONT.SP.1.1 {
-    CAPTION CONT.SP.1.1: Cont to Cont spacing must be >= 1.0 um;
-    EXTE Cont Cont -lt 1 -output region -singular -abut lt 90;
-}
-
-RULE CONT.SP.1.2 {
-    CAPTION CONT.SP.1.2: Cont to Via1 spacing must be >= 1.0 um;
-    EXTE Cont Via1 -lt 1 -output region -singular -abut lt 90;
-}
-
-RULE VIA1.SP.1.1 {
-    CAPTION VIA1.SP.1.1: Via1 to Via1 spacing must be >= 1.0 um;
-    EXTE Via1 Via1 -lt 1 -output region -singular -abut lt 90;
-}
-
-RULE VIA1.SP.1.2 {
-    CAPTION VIA1.SP.1.2: Via1 to Via2 spacing must be >= 1.0 um;
-    EXTE Via1 Via2 -lt 1 -output region -singular -abut lt 90;
-}
-
-RULE VIA2.SP.1.1 {
-    CAPTION VIA2.SP.1.1: Via2 to Via2 spacing must be >= 1.0 um;
-    EXTE Via2 Via2 -lt 1 -output region -singular -abut lt 90;
-}
-
-RULE VIA2.SP.1.2 {
-    CAPTION VIA2.SP.1.2: Via2 to Via3 spacing must be >= 1.0 um;
-    EXTE Via2 Via3 -lt 1 -output region -singular -abut lt 90;
-}
-
-RULE CONT.E.1 {
-    CAPTION CONT.E.1: Metal1 to Cont enclosure must be >= 0.5 um;
-    ENC Cont metal1 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
-}
-
-RULE CONT.E.2 {
-    CAPTION CONT.E.2: Poly to Cont enclosure must be >= 0.5 um;
-    ENC Cont Poly -lt 0.5 -abut lt 90 -overlap -single_point;
-}
-
-RULE CONT.E.3 {
-    CAPTION CONT.E.3: Oxide to Cont enclosure must be >= 0.5 um;
-    ENC Cont Oxide -lt 0.5 -abut lt 90 -overlap -single_point;
-}
-
-RULE VIA1.E.1 {
-    CAPTION VIA1.E.1: Metal1 to Via1 enclosure must be >= 0.5 um;
-    ENC Via1 metal1 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
-}
-
-RULE VIA1.E.2 {
-    CAPTION VIA1.E.2: Metal2 to Via1 enclosure must be >= 0.5 um;
-    ENC Via1 metal2 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
-}
-
-RULE VIA2.E.1 {
-    CAPTION VIA2.E.1: Metal2 to Via2 enclosure must be >= 0.5 um;
-    ENC Via2 metal2 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
-}
-
-RULE VIA2.E.2 {
-    CAPTION VIA2.E.2: Metal3 to Via2 enclosure must be >= 0.5 um;
-    ENC Via2 metal3 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
-}
-
-RULE VIA3.E.1 {
-    CAPTION VIA3.E.1: Metal3 to Via3 enclosure must be >= 0.5 um;
-    ENC Via3 metal3 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
-}
-
-RULE VIA3.E.2 {
-    CAPTION VIA3.E.2: Metal4 to Via3 enclosure must be >= 0.5 um;
-    ENC Via3 metal4 -lt 0.5 -output region -singular -abut lt 90 -outside_also;
-}
-
-RULE KTH_OPENPAD.E.1 {
-    CAPTION KTH_OPENPAD.E.1: Metal[X] to KTH_openpad enclosure must be >= 6.0 um;
-    ENC KTH_openpad metal_all -lt 6 -output region -singular -abut lt 90 -outside_also;
-}
-
-RULE CONT.OV.1 {
-    CAPTION CONT.OV.1: Via1 over Cont not allowed;
-    AREA Cont_Via1_ov -gt 0;
-}
-
-RULE VIA1.OV.1 {
-    CAPTION VIA1.OV.1: Via2 over Via1 not allowed;
-    AREA Via1_Via2_ov -gt 0;
-}
-
-RULE VIA2.OV.1 {
-    CAPTION VIA2.OV.1: Via3 over Via2 not allowed;
-    AREA Via2_Via3_ov -gt 0;
-}
+LAYER_DEF Metal1 1020;
+LAYER_MAP 7 -datatype -le 5 1020;
+LAYER_DEF Metal2 1021;
+LAYER_MAP 9 -datatype -le 5 1021;
+LAYER_DEF Metal3 1022;
+LAYER_MAP 11 -datatype -le 5 1022;
+LAYER_DEF Metal4 1023;
+LAYER_MAP 31 -datatype -le 5 1023;
+LAYER_DEF M1Resdum 1009;
+LAYER_MAP 75 -datatype 0 1009;
+LAYER_DEF M2Resdum 1010;
+LAYER_MAP 76 -datatype 0 1010;
+LAYER_DEF M3Resdum 1011;
+LAYER_MAP 77 -datatype 0 1011;
+LAYER_DEF M4Resdum 1012;
+LAYER_MAP 78 -datatype 0 1012;
+LAYER_DEF ResWdum 1049;
+LAYER_MAP 71 -datatype 0 1049;
+LAYER_DEF Resdum 1050;
+LAYER_MAP 13 -datatype 0 1050;
+LAYER_DEF Cont 1005;
+LAYER_MAP 6 -datatype 0 1005;
+LAYER_DEF Via1 1052;
+LAYER_MAP 8 -datatype 0 1052;
+LAYER_DEF Via2 1053;
+LAYER_MAP 10 -datatype 0 1053;
+LAYER_DEF Via3 1054;
+LAYER_MAP 30 -datatype 0 1054;
+LAYER_DEF Oxide 1041;
+LAYER_MAP 1 -datatype 0 1041;
+LAYER_DEF Nwell 1039;
+LAYER_MAP 2 -datatype 0 1039;
+LAYER_DEF Nimp 1037;
+LAYER_MAP 4 -datatype 0 1037;
+LAYER_DEF Pimp 1045;
+LAYER_MAP 5 -datatype 0 1045;
+LAYER_DEF Poly 1047;
+LAYER_MAP 3 -datatype 0 1047;
+LAYER_DEF Psub 1048;
+LAYER_MAP 25 -datatype 0 1048;
+LAYER_DEF KTH_source 11000;
+LAYER_MAP 170 -datatype 0 11000;
+LAYER_DEF text 1098;
+LAYER_MAP 63 -texttype 0 1098;
+TEXT_LAYER text;
+PORT -text_layer text;
+LAYER_DEF nwell_conn_text 10645;
+LAYER_MAP 2 -texttype 0 10645;
+TEXT_LAYER nwell_conn_text;
+PORT -text_layer nwell_conn_text;
+LAYER_DEF metal1_conn_text 1064;
+LAYER_MAP 7 -texttype 0 1064;
+TEXT_LAYER metal1_conn_text;
+PORT -text_layer metal1_conn_text;
+LAYER_DEF metal2_conn_text 1065;
+LAYER_MAP 9 -texttype 0 1065;
+TEXT_LAYER metal2_conn_text;
+PORT -text_layer metal2_conn_text;
+LAYER_DEF metal3_conn_text 1066;
+LAYER_MAP 11 -texttype 0 1066;
+TEXT_LAYER metal3_conn_text;
+PORT -text_layer metal3_conn_text;
+LAYER_DEF metal4_conn_text 1067;
+LAYER_MAP 31 -texttype 0 1067;
+TEXT_LAYER metal4_conn_text;
+PORT -text_layer metal4_conn_text;
+LAYER_DEF nwell_label 10765;
+LAYER_MAP 2 -texttype 0 10765;
+TEXT_LAYER nwell_label;
+PORT -text_layer nwell_label;
+LAYER_DEF m1_label 1076;
+LAYER_MAP 7 -texttype 3 1076;
+TEXT_LAYER m1_label;
+PORT -text_layer m1_label;
+LAYER_DEF m2_label 1077;
+LAYER_MAP 9 -texttype 3 1077;
+TEXT_LAYER m2_label;
+PORT -text_layer m2_label;
+LAYER_DEF m3_label 1078;
+LAYER_MAP 11 -texttype 3 1078;
+TEXT_LAYER m3_label;
+PORT -text_layer m3_label;
+LAYER_DEF m4_label 1079;
+LAYER_MAP 31 -texttype 3 1079;
+TEXT_LAYER m4_label;
+PORT -text_layer m4_label;
+LAYER_DEF nwell_pin 10875;
+LAYER_MAP 2 -texttype 0 10875;
+TEXT_LAYER nwell_pin;
+PORT -text_layer nwell_pin;
+LAYER_DEF m1_pin 1087;
+LAYER_MAP 7 -texttype 1 1087;
+TEXT_LAYER m1_pin;
+PORT -text_layer m1_pin;
+LAYER_DEF m2_pin 1088;
+LAYER_MAP 9 -texttype 1 1088;
+TEXT_LAYER m2_pin;
+PORT -text_layer m2_pin;
+LAYER_DEF m3_pin 1089;
+LAYER_MAP 11 -texttype 1 1089;
+TEXT_LAYER m3_pin;
+PORT -text_layer m3_pin;
+LAYER_DEF m4_pin 1090;
+LAYER_MAP 31 -texttype 1 1090;
+TEXT_LAYER m4_pin;
+PORT -text_layer m4_pin;
+EXTENT bulk;
+AND Cont Poly cont_poly;
+NOT Metal1 M1Resdum metal1_conn;
+NOT Metal2 M2Resdum metal2_conn;
+NOT Metal3 M3Resdum metal3_conn;
+NOT Metal4 M4Resdum metal4_conn;
+AND Nimp Oxide nactive;
+NOT Nwell ResWdum nwell_conn;
+AND Oxide Pimp pactive;
+NOT pactive Poly pdiff;
+NOT pdiff Resdum pdiff_conn;
+AND Cont pdiff_conn cont_pdiff;
+NOT Poly Resdum poly_conn;
+NOT nactive poly_conn ndiff;
+NOT ndiff Resdum ndiff_conn;
+AND Cont ndiff_conn cont_ndiff;
+AND Nwell ndiff_conn ntap;
+NOT pdiff_conn Nwell ptap;
+NOT bulk Nwell bulk_1;
+NOT bulk_1 Psub psubstrate;
+AND Oxide Poly OxPoly;
+AND OxPoly Pimp _pmos1v;
+AND OxPoly Nimp _nmos1v;
+CONNECT metal4_conn metal3_conn -by Via3;
+CONNECT metal3_conn metal2_conn -by Via2;
+CONNECT metal2_conn metal1_conn -by Via1;
+CONNECT metal1_conn poly_conn -by cont_poly;
+CONNECT metal1_conn pdiff_conn -by cont_pdiff;
+CONNECT metal1_conn ndiff_conn -by cont_ndiff;
+SCONNECT pdiff_conn psubstrate -by ptap;
+LVS_SOFTCHK psubstrate -type contact;
+SCONNECT ndiff_conn nwell_conn -by ntap;
+LVS_SOFTCHK nwell_conn -type contact;
+ATTACH metal4_conn_text metal4_conn;
+ATTACH metal3_conn_text metal3_conn;
+ATTACH metal2_conn_text metal2_conn;
+ATTACH metal1_conn_text metal1_conn;
+ATTACH nwell_conn_text nwell_conn;
+ATTACH nwell_label nwell_conn;
+ATTACH m1_label metal1_conn;
+ATTACH m2_label metal2_conn;
+ATTACH m3_label metal3_conn;
+ATTACH m4_label metal4_conn;
+ATTACH nwell_pin nwell_conn;
+ATTACH m1_pin metal1_conn;
+ATTACH m2_pin metal2_conn;
+ATTACH m3_pin metal3_conn;
+ATTACH m4_pin metal4_conn;
+AND psubstrate nactive _nmos1v_sti;
+SIZE _nmos1v -by 1 _nmos1v_wpe_temp;
+NOT _nmos1v_wpe_temp Nwell _nmos1v_wpe;
+NOT ndiff_conn KTH_source _soi_nd;
+AND ndiff_conn KTH_source _soi_nsb;
+NOT pdiff_conn KTH_source _soi_pd;
+AND pdiff_conn KTH_source _soi_psb;
+DEVICE MN ( nmos3 ) _nmos1v poly_conn ( G ) _soi_nsb ( S ) _soi_nd ( D ) _soi_nsb ( B ) -model nch < _nmos1v_sti > < _nmos1v_wpe > [ property fw , w , l , ad , as , pd , ps , sa , sb , sca , scb , scc 
+ width = perim_co ( _nmos1v , _soi_nd ) / 1 
+ fw = width 
+ w = width 
+ l = area ( _nmos1v ) / width 
+ ad = area ( D ) 
+ as = area ( S ) 
+ pd = perimeter ( D ) 
+ ps = perimeter ( S ) 
+ s = ENCLOSURE_VECTOR ( _nmos1v_sti , 2 ) 
+ sw = SUM ( s::w ) 
+ sa = SUM ( s::a * ( s::w / sw ) ) 
+ sb = SUM ( s::b * ( s::w / sw ) ) 
+ sch = ENCLOSURE_PERPENDICULAR ( _nmos1v , _nmos1v_wpe , S , 1 ) 
+ scv = ENCLOSURE_PARALLEL ( _nmos1v , _nmos1v_wpe , S , 1 ) 
+ ];
+LVS_CHECK_PROPERTY MN ( nmos4 ) l l -tolerance 0;
+LVS_CHECK_PROPERTY MN ( nmos4 ) w w -tolerance 0;
+LVS_MAP_DEVICE M ( nmos4 ) MN ( nmos4 );
+DEVICE MP ( pmos3 ) _pmos1v poly_conn ( G ) _soi_psb ( S ) _soi_pd ( D ) _soi_psb ( B ) -model pch < pactive > < nwell_conn > [ property fw , w , l , ad , as , pd , ps , sa , sb , sca , scb , scc 
+ width = perim_co ( _pmos1v , _soi_psb ) / 1 
+ fw = width 
+ w = width 
+ l = area ( _pmos1v ) / width 
+ ad = area ( D ) 
+ as = area ( S ) 
+ pd = perimeter ( D ) 
+ ps = perimeter ( S ) 
+ s = ENCLOSURE_VECTOR ( pactive , 2 ) 
+ sw = SUM ( s::w ) 
+ sa = SUM ( s::a * ( s::w / sw ) ) 
+ sb = SUM ( s::b * ( s::w / sw ) ) 
+ sch = ENCLOSURE_PERPENDICULAR ( _pmos1v , nwell_conn , S , 1 ) 
+ scv = ENCLOSURE_PARALLEL ( _pmos1v , nwell_conn , S , 1 ) 
+ ];
+LVS_CHECK_PROPERTY MP ( pmos4 ) l l -tolerance 0;
+LVS_CHECK_PROPERTY MP ( pmos4 ) w w -tolerance 0;
+LVS_MAP_DEVICE M ( pmos4 ) MP ( pmos4 );
 
 
 ########################################################################
 Optimizing Rules ...
 ########################################################################
+[WARN] Neither hcell nor -automatch option is specified.
 Completed execution early, as requested by the "-get_rules" or "-gen_tags"
 
    ONE LAYER BOOLEAN: Cumulative Time CPU =        0(s) REAL =        0(s)
@@ -345,12 +335,12 @@ Completed execution early, as requested by the "-get_rules" or "-gen_tags"
 
 Total CPU Time                    : 0(s)
 Total Real Time                   : 0(s)
-Peak Memory Used                  : 10(M)
+Peak Memory Used                  : 11(M)
 Total Original Geometry           : 0(0)
-Total DRC RuleChecks              : 0
-Total DRC Results                 : 0 (0)
+Total ERC RuleChecks              : 0
+Total ERC Results                 : 0 (0)
 
 
-Design Rule Check Finished Normally. Tue Dec 21 07:12:17 2021
+Netlist Extraction Finished Normally. Tue Dec 21 14:09:38 2021
 
 

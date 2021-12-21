@@ -2,11 +2,11 @@ xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
 DEFINE KISTA /home/saul/projects/KISTA/KISTA
 |
 xmvlog: *W,DLCPTH (./cds.lib,5): cds.lib Invalid path '/home/saul/projects/KISTA/KISTA' (cds.lib command ignored).
-TOOL:	xmvlog(64)	18.03-s018: Started on Dec 21, 2021 at 08:56:20 CET
+TOOL:	xmvlog(64)	18.03-s018: Started on Dec 21, 2021 at 14:00:07 CET
 xmvlog
     -use5x
     -SPECIFICUNIT NOR3X1
-    -zparse /tmp/vamsZparuw3432
+    -zparse /tmp/vamsZparsk5593
     -NOWARN DLNOHV
     -work KISTA_SOI_STDLIB
     -view functional
@@ -22,4 +22,4 @@ file: /home/saul/projects/KISTA/KISTA_SOI_STDLIB/NOR3X1/functional/verilog.v
 	 writing out DPL output:
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-TOOL:	xmvlog(64)	18.03-s018: Exiting on Dec 21, 2021 at 08:56:20 CET  (total: 00:00:00)
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Dec 21, 2021 at 14:00:07 CET  (total: 00:00:00)

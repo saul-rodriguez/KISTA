@@ -79,11 +79,11 @@
 (envOpts ipSelectedSimOptions) (t t t t)
 (envOpts ipTestbenchTopCell) "<SocTopCell>"
 (envOpts ipV2K1ConfigName) "myConfig"
-(envOpts irunIncDirHDL) nil
+(envOpts irunIncDirHDL) ((t "."))
 (envOpts isPackNGo) nil
 (envOpts lastEmAnaType) ""
 (envOpts libDirsHDL) nil
-(envOpts libFilesHDL) nil
+(envOpts libFilesHDL) ((t "/home/saul/projects/KISTA/models/verilog/KISTA_SOI_STDLIB_ECSM_TT.v"))
 (envOpts libraryListForConfigCreation) ""
 (envOpts macroModelEnable) nil
 (envOpts macroModelList) nil

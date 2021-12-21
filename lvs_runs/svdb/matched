@@ -3,21 +3,21 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Tue Dec 21 09:32:24 2021
-#####  ERC Summary File              :   NAND3X1.sum
-#####  Extraction Report File        :   NAND3X1.rep
-#####  Comparison Report File        :   NAND3X1.rep.cls
-#####  Top Cell                      :   NAND3X1  <vs>  NAND3X1
+#####  NVN Run Start                 :   Tue Dec 21 14:09:51 2021
+#####  ERC Summary File              :   NOR3X1.sum
+#####  Extraction Report File        :   NOR3X1.rep
+#####  Comparison Report File        :   NOR3X1.rep.cls
+#####  Top Cell                      :   NOR3X1  <vs>  NOR3X1
 #####  
 #####  Run Result                    :   MATCH
 #####  
 #####  Run Summary                   :   [INFO]  ERC Results: Empty
 #####                                :   [INFO]  Extraction Clean
 #####  
-#####  Layout Design                 :   KISTA_SOI_STDLIB NAND3X1 layout
-#####  Schematic File                :   /home/saul/projects/KISTA/lvs_runs/NAND3X1.cdl (cdl)
+#####  Layout Design                 :   KISTA_SOI_STDLIB NOR3X1 layout
+#####  Schematic File                :   /home/saul/projects/KISTA/lvs_runs/NOR3X1.cdl (cdl)
 #####  Rules File                    :   .technology.rul
-#####  Pin Swap File                 :   NAND3X1.rep.cps
+#####  Pin Swap File                 :   NOR3X1.rep.cps
 #####  
 #####  Extraction CPU Time           :   0h 0m 0s - (0s)
 #####  Extraction Exec Time          :   0h 0m 0s - (0s)

@@ -1,0 +1,72 @@
+library(userdata) {
+cell (AOI21X1) {
+    area : 864;
+    cell_footprint : AOI21X1;
+}
+
+cell (BUFX2) {
+    area : 864;
+    cell_footprint : BUFX2;
+}
+
+cell (DFFSRX1) {
+    area : 5616;
+    cell_footprint : DFFSRX1;
+}
+
+cell (DFFX1) {
+    area : 4320;
+    cell_footprint : DFFX1;
+}
+
+cell (INVX1) {
+    area : 432;
+    cell_footprint : INVX1;
+}
+
+cell (MX2X1) {
+    area : 864;
+    cell_footprint : MX2X1;
+}
+
+cell (NAND2X1) {
+    area : 864;
+    cell_footprint : NAND2X1;
+}
+
+cell (NAND3X1) {
+    area : 864;
+    cell_footprint : NAND3X1;
+}
+
+cell (NOR2X1) {
+    area : 864;
+    cell_footprint : NOR2X1;
+}
+
+cell (NOR3X1) {
+    area : 864;
+    cell_footprint : NOR3X1;
+}
+
+cell (OAI21X1) {
+    area : 864;
+    cell_footprint : OAI21X1;
+}
+
+cell (TIEHI) {
+    area : 432;
+    cell_footprint : TIEHI;
+}
+
+cell (TIELO) {
+    area : 432;
+    cell_footprint : TIELO;
+}
+
+cell (XOR2X1) {
+    area : 1269;
+    cell_footprint : XOR2X1;
+}
+
+}

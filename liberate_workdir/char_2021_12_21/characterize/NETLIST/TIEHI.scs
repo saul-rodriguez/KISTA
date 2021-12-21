@@ -1,0 +1,26 @@
+// TIEHI
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt TIEHI Y
+    C1  (vss vdd)  capacitor c=3.89589e-15
+    C3  (Y vss)  capacitor c=613.594a
+    C5  (1 vss)  capacitor c=18.0875f
+    C2  (vdd\#1 vss)  capacitor c=1.55868e-15
+    C4  (Y\#1 vss)  capacitor c=431.394a
+    C7  (net7\#3 vss)  capacitor c=2.91025e-15
+    C6  (net7 vss)  capacitor c=4.05181e-15
+    C10  (X1_5 vss)  capacitor c=1.17984e-15
+    C8  (net7\#4 vss)  capacitor c=895.178a
+    C9  (net7\#2 vss)  capacitor c=412.611a
+    Rc4  (vdd vdd\#1)  resistor r=2.7927
+    Rc2  (Y Y\#1)  resistor r=2.54
+    Rs1  (1 vss)  resistor r=50
+    Rc3  (vss\#1 vss)  resistor r=5.3554
+    Rd1  (net7\#3 net7)  resistor r=1557.2892
+    Rd2  (net7 net7\#4)  resistor r=357.2892
+    Rc1  (net7 net7\#2)  resistor r=10.1279
+    MX1_M0_unmatched  (Y\#1 net7\#3 vdd\#1 vdd\#1)  pch w=4e-06 l=1e-06 \
+        as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX0_M0_unmatched  (net7\#2 net7\#4 vss\#1 vss\#1)  nch w=2e-06 l=1e-06 \
+        as=0 ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+ends TIEHI

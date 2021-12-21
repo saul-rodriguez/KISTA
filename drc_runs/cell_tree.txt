@@ -1,6 +1,6 @@
-NAND3X1
+NOR3X1
 
-NAND3X1
-	pmos3_CDNS_2
-	nmos3_CDNS_3
+NOR3X1
+	nmos3_CDNS_2
+	pmos3_CDNS_3
 

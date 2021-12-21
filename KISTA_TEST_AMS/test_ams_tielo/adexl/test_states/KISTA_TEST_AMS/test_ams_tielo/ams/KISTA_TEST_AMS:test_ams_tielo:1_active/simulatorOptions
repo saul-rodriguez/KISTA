@@ -392,7 +392,7 @@
 (ncverilogOpts filesOnIrunCmdLine) ""
 (ncverilogOpts irunIncDir) "."
 (ncverilogOpts libDirs) ""
-(ncverilogOpts libFiles) ""
+(ncverilogOpts libFiles) "/home/saul/projects/KISTA/models/verilog/KISTA_SOI_STDLIB_ECSM_TT.v"
 (ncverilogOpts makeLib) nil
 (ncverilogOpts makeLibMixesc) nil
 (ncverilogOpts makeLibSmartorder) nil

@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : NAND3X1_31960.db
+EDB Library dir : NOR3X1_32561.db
 ECDB dir        : ./
-Top Cell        : NAND3X1
-CDL netlist     : /home/saul/projects/KISTA/lvs_runs/svdb/NAND3X1.net
-Layer map file  : /home/saul/projects/KISTA/lvs_runs/svdb/NAND3X1.ecdbmap
-Text map file   : /home/saul/projects/KISTA/lvs_runs/svdb/NAND3X1.ports
-Dependency map  : NAND3X1.lmap.perc
-Lvs file        : /home/saul/projects/KISTA/lvs_runs/svdb/NAND3X1.lvsfile
-Float net file : .NAND3X1.info.softchk
+Top Cell        : NOR3X1
+CDL netlist     : /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.net
+Layer map file  : /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.ecdbmap
+Text map file   : /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.ports
+Dependency map  : NOR3X1.lmap.perc
+Lvs file        : /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.lvsfile
+Float net file : .NOR3X1.info.softchk
 debug           : 0
-Source Library  : NAND3X1_31960
+Source Library  : NOR3X1_32561

@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = KISTA_TEST_AMS
-	Cell         = test_soi_inv
+	Cell         = test_ams_nor3
 	View         = config
-	Simulator    = spectre
+	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = KISTA_TEST_AMS:test_soi_inv:1_none_Interactive.9
-	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.9.rdb
-	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_soi_inv:1
-	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data
+	State Name   = KISTA_TEST_AMS:test_ams_nor3:1_none_Interactive.18
+	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_nor3/adexl/results/data/Interactive.18.rdb
+	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_nor3/adexl/results/data/Interactive.18/1/KISTA_TEST_AMS:test_ams_nor3:1
+	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_nor3/adexl/results/data
 	Project Dir  = /home/saul/simulation
-	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_soi_inv/adexl
+	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_nor3/adexl
 	File Encoding = 0
 
 
@@ -30,8 +30,8 @@ variable persistNewList redefined
 
 
 
-*Info*    Run start for Point ID (2 1) on testbench [
-          KISTA_TEST_AMS:test_soi_inv:1 ].
+*Info*    Run start for Point ID (0 1) on testbench [
+          KISTA_TEST_AMS:test_ams_nor3:1 ].
 
 Resetting statistical vars
 
@@ -40,65 +40,111 @@ Resetting statistical vars
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_soi_inv:1/netlist
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_nor3/adexl/results/data/Interactive.18/1/KISTA_TEST_AMS:test_ams_nor3:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_soi_inv:1
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_nor3/adexl/results/data/Interactive.18/1/KISTA_TEST_AMS:test_ams_nor3:1
 
 
-*Info*    Creating Netlist for Point ID (2 1)
-
-generate netlist...
-Begin Incremental Netlisting Nov 15 11:47:31 2021
-ERROR (OSSHNL-109): The cellview 'KISTA_TEST_ANALOG/inv_soi_qrc_test2/schematic2' has been modified since the last extraction. Validate
-that the schematic is correct and run Check and Save to correct this error.
-
-End netlisting Nov 15 11:47:31 2021
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
-
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
-
-
-
-
-
-
-
-
-
-*Info*    Run start for Point ID (2 1) on testbench [
-          KISTA_TEST_AMS:test_soi_inv:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_soi_inv:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_soi_inv/adexl/results/data/Interactive.9/1/KISTA_TEST_AMS:test_soi_inv:1
-
-
-*Info*    Creating Netlist for Point ID (2 1)
+*Info*    Creating Netlist for Point ID (0 1)
 
 generate netlist...
-Begin Incremental Netlisting Nov 15 11:47:31 2021
-ERROR (OSSHNL-109): The cellview 'KISTA_TEST_ANALOG/inv_soi_qrc_test2/schematic2' has been modified since the last extraction. Validate
-that the schematic is correct and run Check and Save to correct this error.
+INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+ field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+ analog primitives using the Spectre CDF simulation information.
+Initializing the control file using cp:
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_ams_nor3/adexl/results/data/Interactive.18/1/KISTA_TEST_AMS:test_ams_nor3:1/netlist/digital/control
+Begin Netlisting Dec 21 22:22:07 2021
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+"/home/saul/simulation/KISTA_TEST_AMS/test_ams_nor3/adexl/results/data/Interactive.18/1/KISTA_TEST_AMS:test_ams_nor3:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+If you want to print only those cellviews that need to be re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+INFO (VLOGNET-117): Re-netlisting the entire design.
 
-End netlisting Nov 15 11:47:31 2021
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+non-stopping cells.
+ 
+INFO (AMS-2050): The following cells will be netlisted without using the spectre CDF
+ simulation information, because they are bound to view symbol:
+ ' *** Library - KISTA_SOI_STDLIB  Cell - NOR3X1 ***
+             '. To use the spectre CDF simulation information, do one of the following:
+     1. Open your configuration in Hierarchy Editor and replace 'symbol' 
+ with 'spectre' in the view list and stop list. 
+      2. Choose Simulation->Options-> AMS Simulator->Netlister and add 'symbol' 
+ in the 'Netlist using spectre CDF simInfo' field.
+WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_ams_nor3/schematic' has no ports. Make sure that this was the intended 
+design.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
+
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+vdc                         spectre              *Stopping View*  
+vpulse                      spectre              *Stopping View*  
+cap                         spectre              *Stopping View*  
+NOR3X1                      symbol               *Stopping View*  
+test_ams_nor3               schematic                             
+
+---------- End of netlist configuration information   ----------
+Initializing the control file using cp:
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_nor3/adexl/results/data/Interactive.18/1/KISTA_TEST_AMS:test_ams_nor3:1/netlist/analog/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Running netlist assembly..
+
+End netlisting Dec 21 22:22:12 2021
+INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+To view the modules, right-click the test name on the Tests and Analyses 
+assistant pane and choose Netlist->Display menu option.
+      ...successful.
+create cds_globals...
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          KISTA_TEST_AMS:test_ams_nor3:1 ] for Point ID (0 1).
+
+Delete simulation data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_nor3/adexl/results/data/Interactive.18/1/KISTA_TEST_AMS:test_ams_nor3:1/psf.
+create cds_globals...
+      ...successful.
+compose simulator input file...
+      ...successful.
+validating simulator hierarchy...
+      ...successful.
+running...
+To check for output from compilation, elaboration and simulation run, 
+right-click on the test name, result name, or any value in the "Results" 
+tab of the Outputs section and choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+
+*Info*    Run complete for Point ID (0 1) on testbench [
+          KISTA_TEST_AMS:test_ams_nor3:1 ].
+
 
 
 

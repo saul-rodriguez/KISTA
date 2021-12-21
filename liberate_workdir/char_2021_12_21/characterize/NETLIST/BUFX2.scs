@@ -1,0 +1,48 @@
+// BUFX2
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt BUFX2 A Y
+    Rc9  (vss\#1 vss)  resistor r=2.8429
+    Rc10  (vss vss\#2)  resistor r=5.3217
+    Rd3  (A\#3 A)  resistor r=525.9402
+    Rs1  (3 vss)  resistor r=50
+    Rc7  (vdd\#1 vdd)  resistor r=1.6554
+    Rc8  (vdd vdd\#2)  resistor r=2.7842
+    Rc6  (Y Y\#2)  resistor r=1.4275
+    Rc5  (Y Y\#1)  resistor r=2.7225
+    Rd4  (net6\#5 net6\#6)  resistor r=444.2584
+    Rd1  (A\#2 A\#3)  resistor r=1044.2584
+    Rc2  (net6\#6 net6\#7)  resistor r=1044.2584
+    Rd6  (net6\#6 net6)  resistor r=370.9252
+    Rc4  (net6 net6\#4)  resistor r=10.4446
+    Rd5  (net6 net6\#3)  resistor r=19.9376
+    Rc3  (net6\#4 net6\#3)  resistor r=10.7147
+    Rc1  (A\#3 A\#4)  resistor r=1044.2584
+    C4  (A vss)  capacitor c=2.07322e-15
+    C17  (3 vss)  capacitor c=37.7107f
+    C2  (vdd\#1 vss)  capacitor c=2.01573e-15
+    C1  (vss vdd)  capacitor c=6.97565e-15
+    C3  (vdd\#2 vss)  capacitor c=1.58248e-15
+    C9  (Y\#2 vss)  capacitor c=1.23476e-15
+    C8  (Y vss)  capacitor c=1.31357e-15
+    C10  (Y\#1 vss)  capacitor c=1.37661e-15
+    C12  (net6\#5 vss)  capacitor c=1.44955e-15
+    C16  (net6\#6 vss)  capacitor c=2.15027e-15
+    C18  (X5_5 vss)  capacitor c=1.34974e-15
+    C19  (X4_5 vss)  capacitor c=1.12619e-15
+    C5  (A\#2 vss)  capacitor c=1.97575e-15
+    C7  (A\#3 vss)  capacitor c=3.15649e-15
+    C14  (net6\#4 vss)  capacitor c=3.21343e-15
+    C13  (net6\#7 vss)  capacitor c=1.96573e-15
+    C11  (net6 vss)  capacitor c=1.84034e-15
+    C15  (net6\#3 vss)  capacitor c=960.965a
+    C6  (A\#4 vss)  capacitor c=1.83033e-15
+    MX5_M0_unmatched  (Y\#2 net6\#5 vdd\#1 vdd\#1)  pch w=8e-06 l=1e-06 \
+        as=0 ad=2e-11 ps=0 pd=2.1e-05 sa=2e-06 sb=2e-06
+    MX4_M0_unmatched  (net6\#4 A\#2 vdd\#2 vdd\#2)  pch w=4e-06 l=1e-06 \
+        as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX3_M0_unmatched  (Y\#1 net6\#7 vss\#1 vss\#1)  nch w=4e-06 l=1e-06 \
+        as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX2_M0_unmatched  (net6\#3 A\#4 vss\#2 vss\#2)  nch w=2e-06 l=1e-06 \
+        as=0 ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+ends BUFX2

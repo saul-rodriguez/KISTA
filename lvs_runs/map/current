@@ -1,15 +1,15 @@
 ( ( nil
   version "2.1"
   mapType "incremental"
-  blockName "NAND3X1"
+  blockName "NOR3X1"
   repList "auCdl schematic"
   stopList "auCdl"
-  globalList "VSS! VDD!"
+  globalList "VDD! VSS!"
   hierDelim "."
   netlistDir "/home/saul/projects/KISTA/lvs_runs/"
  )
 ( model
-( "KISTA_SOI_STDLIB/NAND3X1/schematic" "NAND3X1" )
+( "KISTA_SOI_STDLIB/NOR3X1/schematic" "NOR3X1" )
  )
-( "NAND3X1" "ihnl/cds0/map" )
+( "NOR3X1" "ihnl/cds0/map" )
  )

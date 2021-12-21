@@ -5,9 +5,9 @@ pwd_d=`pwd`
 cd /home/saul/projects/KISTA/lvs_runs ;\
 /pkg/cadence/installs/PVS161/bin/pvs \
 	-lvs \
-	-top_cell NAND3X1 \
-	-source_top_cell NAND3X1 \
-	-spice /home/saul/projects/KISTA/lvs_runs/NAND3X1.spi \
+	-top_cell NOR3X1 \
+	-source_top_cell NOR3X1 \
+	-spice /home/saul/projects/KISTA/lvs_runs/NOR3X1.spi \
 	-rc_data \
 	-control /home/saul/projects/KISTA/lvs_runs/pvslvsctl \
 	-ui_data \
