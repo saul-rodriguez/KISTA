@@ -5,7 +5,7 @@ pwd_d=`pwd`
 cd /home/saul/projects/KISTA/drc_runs ;\
 /pkg/cadence/installs/PVS161/bin/pvs \
 	-drc \
-	-top_cell MX2X1 \
+	-top_cell NAND3X1 \
 	-ui_data \
 	-control /home/saul/projects/KISTA/drc_runs/pvsdrcctl \
 	-cell_tree /home/saul/projects/KISTA/drc_runs/cell_tree.txt \

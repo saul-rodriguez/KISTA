@@ -1,0 +1,25 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : NAND3X1.rep
+ERC Summary File         : NAND3X1.sum
+LVS Comparison Report    : NAND3X1.rep.cls
+LVS Softchk Report       : NAND3X1.softchk
+Layout Name              : /home/saul/projects/KISTA/lvs_runs/NAND3X1.gds ("NAND3X1")
+User Name                : saul
+Creation Time            : Tue Dec 21 09:32:23 2021
+Current directory        : /home/saul/projects/KISTA/lvs_runs
+PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+

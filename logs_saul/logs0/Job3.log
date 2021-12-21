@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = KISTA_TEST_AMS
-	Cell         = test_ams_xor
+	Cell         = test_ams_aoi
 	View         = config
 	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = KISTA_TEST_AMS:test_ams_xor:1_none_Interactive.1
-	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.1.rdb
-	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_xor:1
-	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data
+	State Name   = KISTA_TEST_AMS:test_ams_aoi:1_none_Interactive.11
+	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.11.rdb
+	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.11/1/KISTA_TEST_AMS:test_ams_aoi:1
+	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data
 	Project Dir  = /home/saul/simulation
-	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_xor/adexl
+	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_aoi/adexl
 	File Encoding = 0
 
 
@@ -31,7 +31,7 @@ variable persistNewList redefined
 
 
 *Info*    Run start for Point ID (1 1) on testbench [
-          KISTA_TEST_AMS:test_ams_xor:1 ].
+          KISTA_TEST_AMS:test_ams_aoi:1 ].
 
 Resetting statistical vars
 
@@ -40,11 +40,11 @@ Resetting statistical vars
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_xor:1/netlist
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.11/1/KISTA_TEST_AMS:test_ams_aoi:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_xor:1
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.11/1/KISTA_TEST_AMS:test_ams_aoi:1
 
 
 *Info*    Creating Netlist for Point ID (1 1)
@@ -55,10 +55,10 @@ INFO (AMS-2031): The instances bound to the views specified in the 'Netlist usin
  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
  analog primitives using the Spectre CDF simulation information.
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_xor:1/netlist/digital/control
-Begin Netlisting Dec 20 05:31:17 2021
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.11/1/KISTA_TEST_AMS:test_ams_aoi:1/netlist/digital/control
+Begin Netlisting Dec 21 06:15:48 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_xor:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+"/home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.11/1/KISTA_TEST_AMS:test_ams_aoi:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 before invoking Verilog netlister.
  
@@ -81,7 +81,7 @@ INFO (VLOGNET-117): Re-netlisting the entire design.
 INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
 non-stopping cells.
  
-WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_ams_xor/schematic' has no ports. Make sure that this was the intended 
+WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_ams_aoi/schematic' has no ports. Make sure that this was the intended 
 design.
  
 INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
@@ -94,18 +94,18 @@ CELL NAME                   VIEW NAME            NOTE
 vdc                         spectre              *Stopping View*  
 vpulse                      spectre              *Stopping View*  
 cap                         spectre              *Stopping View*  
-pmos3                       spectre              *Stopping View*  
 nmos3                       spectre              *Stopping View*  
-test_ams_xor                schematic                             
-XOR2X1                      schematic                             
+pmos3                       spectre              *Stopping View*  
+test_ams_aoi                schematic                             
+AOI21X1                     schematic                             
 
 ---------- End of netlist configuration information   ----------
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_xor:1/netlist/analog/control
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.11/1/KISTA_TEST_AMS:test_ams_aoi:1/netlist/analog/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
 WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "KISTA_SOI_STDLIB" "XOR2X1" "schematic"
+           than the actual number of terminals in the cellview cell-view "KISTA_SOI_STDLIB" "AOI21X1" "schematic"
 WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
            be ignored. The terminals in the cellView will be netlisted in the alphabetical
@@ -118,7 +118,7 @@ WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and
                 Edit CDF window.
 Running netlist assembly..
 
-End netlisting Dec 20 05:31:23 2021
+End netlisting Dec 21 06:15:53 2021
 INFO (AMS-1241): AMS UNL netlisting has completed successfully.
 To view the modules, right-click the test name on the Tests and Analyses 
 assistant pane and choose Netlist->Display menu option.
@@ -129,9 +129,9 @@ compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          KISTA_TEST_AMS:test_ams_xor:1 ] for Point ID (1 1).
+          KISTA_TEST_AMS:test_ams_aoi:1 ] for Point ID (1 1).
 
-Delete simulation data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.1/1/KISTA_TEST_AMS:test_ams_xor:1/psf.
+Delete simulation data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.11/1/KISTA_TEST_AMS:test_ams_aoi:1/psf.
 create cds_globals...
       ...successful.
 compose simulator input file...
@@ -149,7 +149,7 @@ reading simulation data...
 
 
 *Info*    Run complete for Point ID (1 1) on testbench [
-          KISTA_TEST_AMS:test_ams_xor:1 ].
+          KISTA_TEST_AMS:test_ams_aoi:1 ].
 
 
 

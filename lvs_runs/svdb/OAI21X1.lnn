@@ -1,0 +1,12 @@
+# SVDB: Layout Netlist Names (lnn)
+# SVDB: Layout Primary OAI21X1
+% M1_PO_CDNS_1 1
+% nmos3_CDNS_2 4
+% pmos3_CDNS_3 4
+% OAI21X1 6
+1 A0
+2 A1
+3 B0
+5 VSS!
+7 Y
+8 VDD!

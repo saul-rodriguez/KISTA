@@ -1,0 +1,39 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : OAI21X1                                      *
+* Netlisted  : Tue Dec 21 07:13:40 2021                     *
+* PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(nmos3) _nmos1v _soi_nd(D) poly_conn(G) _soi_nsb(S) _soi_nsb(B)
+*.DEVTMPLT 1 MP(pmos3) _pmos1v _soi_pd(D) poly_conn(G) _soi_psb(S) _soi_psb(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos3_CDNS_2                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos3_CDNS_2 2 3 4
+** N=4 EP=3 FDC=1
+M0 3 4 2 2 nmos3 L=1e-06 W=4e-06 AD=1e-11 AS=0 PD=1.3e-05 PS=0 fw=4e-06 sa=2e-06 sb=2e-06 $X=7000 $Y=2000 $dt=0
+.ends nmos3_CDNS_2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos3_CDNS_3                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos3_CDNS_3 2 3 4
+** N=5 EP=3 FDC=1
+M0 3 4 2 2 pmos3 L=1e-06 W=8e-06 AD=2e-11 AS=0 PD=2.1e-05 PS=0 fw=8e-06 sa=2e-06 sb=2e-06 $X=7000 $Y=2000 $dt=1
+.ends pmos3_CDNS_3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: OAI21X1                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt OAI21X1 A0 A1 B0 VDD! VSS! Y
+** N=9 EP=6 FDC=6
+X3 VSS! 6 A0 nmos3_CDNS_2 $T=0 4000 0 0 $X=0 $Y=4000
+X4 VSS! 6 A1 nmos3_CDNS_2 $T=32000 4000 1 180 $X=16000 $Y=4000
+X5 6 Y B0 nmos3_CDNS_2 $T=48000 4000 1 180 $X=32000 $Y=4000
+X6 VDD! 9 A0 pmos3_CDNS_3 $T=16000 68000 0 180 $X=0 $Y=46000
+X7 9 Y A1 pmos3_CDNS_3 $T=32000 68000 0 180 $X=16000 $Y=46000
+X8 VDD! Y B0 pmos3_CDNS_3 $T=32000 68000 1 0 $X=32000 $Y=46000
+.ends OAI21X1

@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : MX2X1_26608.db
+EDB Library dir : NAND3X1_31960.db
 ECDB dir        : ./
-Top Cell        : MX2X1
-CDL netlist     : /home/saul/projects/KISTA/lvs_runs/svdb/MX2X1.net
-Layer map file  : /home/saul/projects/KISTA/lvs_runs/svdb/MX2X1.ecdbmap
-Text map file   : /home/saul/projects/KISTA/lvs_runs/svdb/MX2X1.ports
-Dependency map  : MX2X1.lmap.perc
-Lvs file        : /home/saul/projects/KISTA/lvs_runs/svdb/MX2X1.lvsfile
-Float net file : .MX2X1.info.softchk
+Top Cell        : NAND3X1
+CDL netlist     : /home/saul/projects/KISTA/lvs_runs/svdb/NAND3X1.net
+Layer map file  : /home/saul/projects/KISTA/lvs_runs/svdb/NAND3X1.ecdbmap
+Text map file   : /home/saul/projects/KISTA/lvs_runs/svdb/NAND3X1.ports
+Dependency map  : NAND3X1.lmap.perc
+Lvs file        : /home/saul/projects/KISTA/lvs_runs/svdb/NAND3X1.lvsfile
+Float net file : .NAND3X1.info.softchk
 debug           : 0
-Source Library  : MX2X1_26608
+Source Library  : NAND3X1_31960

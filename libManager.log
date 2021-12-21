@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 09/03/2019 21:35 (ip-172-18-22-89) $
 \o Sub version:		sub-version  s061 
-\o Arguments:		-unmapped -mpssession virtuoso3564 -mpshost s2424 
+\o Arguments:		-unmapped -mpssession virtuoso23432 -mpshost s2424 
 \o Working Directory:	s2424:/home/saul/projects/KISTA
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -14,46 +14,19 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
 \w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a nrResizeWindow(cdsLibManager list(973 105 761 510))
+\a nrResizeWindow(cdsLibManager list(858 47 947 674))
 \a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
 \a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellFilterAdvancedButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(0 27 1900 1136))
-\a cdsLibManager->showCatsToggle->value = t
-\a cdsLibManager->QToolButton7->value = t
-\a cdsLibManager->showCategoriesAction->value = t
 \a cdsLibManager->cellListBox->value = "AOI21X1"
 \a cdsLibManager->cellLineEdit->value = "AOI21X1"
-\a lmgrLogShowPopup("mainListPopup1" 41 10 2 "AOI21X1")
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
 \a cdsLibManager->viewListBox->value = "functional"
 \a cdsLibManager->viewLineEdit->value = "functional"
-\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
-\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\a nrResizeWindow(cdsLibManager list(858 47 761 510))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(858 47 947 674))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 1 0)
 \a cdsLibManager->libListBox->value = nil
@@ -66,171 +39,14 @@
 \w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
 \a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
 \a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "TIEHI"
-\a cdsLibManager->cellLineEdit->value = "TIEHI"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a lmgrLogShowPopup("mainListPopup2" 44 76 2 "schematic")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "MX2X1"
-\a cdsLibManager->cellLineEdit->value = "MX2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "TIELO"
-\a cdsLibManager->cellLineEdit->value = "TIELO"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
-\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_ams_buf"
-\a cdsLibManager->cellLineEdit->value = "test_ams_buf"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "test_ams_nand"
-\a cdsLibManager->cellLineEdit->value = "test_ams_nand"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "AOI21X1"
+\a cdsLibManager->cellLineEdit->value = "AOI21X1"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup1" 60 91 2 "test_ams_nand")
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_ams_nor"
-\a cdsLibManager->cellLineEdit->value = "test_ams_nor"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "test_ams_nand"
-\a cdsLibManager->cellLineEdit->value = "test_ams_nand"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup1" 31 98 2 "test_ams_nand")
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a lmgrLogShowPopup("mainListPopup2" 44 46 2 "schematic")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "test_ams_xor"
-\a cdsLibManager->cellLineEdit->value = "test_ams_xor"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->copySimpleButton->value = t
-\a copyViewForm->SkipLibrariesEdit->value = "*"
-\a copyViewForm->SkipLibrariesEdit->value = "*"
-\a copyViewForm->CopyFromLibrary->value = "KISTA_1UM"
-\a copyViewForm->CopyToLibrary->value = "KISTA_1UM"
-\a copyViewForm->CopyFromLibrary->value = "KISTA_TEST_AMS"
-\a copyViewForm->CopyFromCell->value = "test_ams_xor"
-\a copyViewForm->CopyFromView->value = "schematic"
-\a copyViewForm->CopyToLibrary->value = "KISTA_TEST_AMS"
-\a copyViewForm->CopyToCell->value = "test_ams_xor"
-\a copyViewForm->CopyToView->value = "schematic"
-\a copyViewForm->ViewsToCopy->value = "schematic"
-\a copyViewForm->SkipLibrariesEdit->value = ""
-\a copyViewForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
-\a nrSetWindowVisibility(copyViewForm "show")
-\a nrSetCurrentWindow(copyViewForm)
-\a nrResizeWindow(copyViewForm list(1087 27 468 671))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(copyViewForm list(1087 -10 468 671))
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
-\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
-\a cdsLibManager->cellListBox->value = "test_ams_xor"
-\a cdsLibManager->cellLineEdit->value = "test_ams_xor"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
@@ -241,580 +57,135 @@
 \w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
 \a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
 \a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
+\a cdsLibManager->cellListBox->value = "AOI21X1"
+\a cdsLibManager->cellLineEdit->value = "AOI21X1"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellListBox->value = "AOI21X1"
+\a cdsLibManager->cellLineEdit->value = "AOI21X1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "MX2X1"
-\a cdsLibManager->cellLineEdit->value = "MX2X1"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "XOR2X1"
+\a cdsLibManager->cellLineEdit->value = "XOR2X1"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 42 64 2 "layout")
+\a lmgrLogShowPopup("mainListPopup2" 49 62 2 "layout")
 \a cdsLibManager->FileOpenROButton->value = t
 \o MPS request: open design readonly
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
-\a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 3 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "M4_M3_HH"
-\a cdsLibManager->cellLineEdit->value = "M4_M3_HH"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "via"
-\a cdsLibManager->viewLineEdit->value = "via"
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "analog_extracted"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
-\a cdsLibManager->viewListBox->value = "analog_extracted"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "analog_extracted"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
-\a cdsLibManager->viewListBox->value = "analog_extracted"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "analog_extracted"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "MX2X1"
-\a cdsLibManager->cellLineEdit->value = "MX2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup1" 31 294 2 "MX2X1")
-\a cdsLibManager->copySimpleButton->value = t
-\a copyCellForm->SkipLibrariesEdit->value = "*"
-\a copyCellForm->SkipLibrariesEdit->value = "*"
-\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
-\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
-\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB"
-\a copyCellForm->CopyFromCell->value = "MX2X1"
-\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB"
-\a copyCellForm->CopyToCell->value = "MX2X1"
-\a copyCellForm->ViewsToCopy->value = "abstract analog_extracted functional layout schematic symbol"
-\a copyCellForm->SkipLibrariesEdit->value = ""
-\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
-\a nrSetWindowVisibility(copyCellForm "show")
-\a nrSetCurrentWindow(copyCellForm)
-\a nrResizeWindow(copyCellForm list(1087 27 468 659))
-\a copyCellForm->CopyToCell->value = "MX2X1_BUF"
-\a copyCellForm->OK->value = t
-\o Beginning simple copy to library "KISTA_SOI_STDLIB".
-\o Processing files to be copied...
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrResizeWindow(workingDialogForm list(1185 315 273 133))
-\a nrResizeWindow(copyCellForm list(1087 -10 468 659))
-\a nrSetCurrentWindow(workingDialogForm)
-\o Copy succeeded.
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "MX2X1"
-\a cdsLibManager->cellLineEdit->value = "MX2X1"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a copyCellForm->SkipLibrariesEdit->value = "*"
-\a nrResizeWindow(workingDialogForm list(1185 278 273 133))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "MX2X1_BUF"
-\a cdsLibManager->cellLineEdit->value = "MX2X1_BUF"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "MX2X1"
-\a cdsLibManager->cellLineEdit->value = "MX2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a lmgrLogShowPopup("mainListPopup2" 47 9 2 "abstract")
-\a cdsLibManager->editDeleteButton->value = t
-\a deleteForm->deleteFilterEdit->value = "*"
-\a deleteForm->notDeleteFilterEdit->value = "*"
-\a nrSetWindowVisibility(deleteForm "show")
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(1008 169 627 425))
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(1187 299 268 91))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting view "abstract" from cell "MX2X1" in library "KISTA_SOI_STDLIB".
-\o Deleted cellview 'KISTA_SOI_STDLIB/MX2X1/abstract'.
-\a nrSetCurrentWindow(cdsLibManager)
-\o Deletion of 1 view done.
-\a cdsLibManager->viewLineEdit->value = "analog_extracted"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a nrResizeWindow(workingDialogForm list(1193 315 268 133))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "MX2X1"
-\a cdsLibManager->cellLineEdit->value = "MX2X1"
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(deleteForm list(1008 95 627 425))
-\a nrResizeWindow(workingDialogForm list(1193 278 268 133))
-\a cdsLibManager->viewListBox->value = "analog_extracted"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted"
-\a lmgrLogShowPopup("mainListPopup2" 79 9 2 "analog_extracted")
-\a cdsLibManager->editDeleteButton->value = t
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(1008 169 627 425))
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(1187 336 268 91))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting view "analog_extracted" from cell "MX2X1" in library "KISTA_SOI_STDLIB".
-\o Deleted cellview 'KISTA_SOI_STDLIB/MX2X1/analog_extracted'.
-\a nrSetCurrentWindow(cdsLibManager)
-\o Deletion of 1 view done.
-\a cdsLibManager->viewLineEdit->value = "functional"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a nrResizeWindow(workingDialogForm list(1187 315 268 133))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "MX2X1"
-\a cdsLibManager->cellLineEdit->value = "MX2X1"
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(deleteForm list(1008 132 627 425))
-\a nrResizeWindow(workingDialogForm list(1187 278 268 133))
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
-\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_ams_mx2x1"
-\a cdsLibManager->cellLineEdit->value = "test_ams_mx2x1"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "XOR2X1"
-\a cdsLibManager->cellLineEdit->value = "XOR2X1"
-\a cdsLibManager->cellListBox->value = "MX2X1"
-\a cdsLibManager->cellLineEdit->value = "MX2X1"
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "M4_M3_VV"
-\a cdsLibManager->cellLineEdit->value = "M4_M3_VV"
-\a cdsLibManager->viewListBox->value = "via"
-\a cdsLibManager->viewLineEdit->value = "via"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "MX2X1"
-\a cdsLibManager->cellLineEdit->value = "MX2X1"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "MX2X1"
-\a cdsLibManager->cellLineEdit->value = "MX2X1"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "MX2X1"
-\a cdsLibManager->cellLineEdit->value = "MX2X1"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "analog_extracted"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted"
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
 \a cdsLibManager->cellListBox->value = "AOI21X1"
 \a cdsLibManager->cellLineEdit->value = "AOI21X1"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 1 0)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "INVX1"
-\a cdsLibManager->cellLineEdit->value = "INVX1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a lmgrLogShowPopup("mainListPopup2" 51 80 2 "schematic")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
-\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_ams_tielo"
-\a cdsLibManager->cellLineEdit->value = "test_ams_tielo"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "test_ams_xor"
-\a cdsLibManager->cellLineEdit->value = "test_ams_xor"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->FileNewCVButton->value = t
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "test_ams_buf"
-\a cdsLibManager->cellLineEdit->value = "test_ams_buf"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "test_ams_xor"
-\a cdsLibManager->cellLineEdit->value = "test_ams_xor"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "test_soi_inv"
-\a cdsLibManager->cellLineEdit->value = "test_soi_inv"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "test_ams_mx2x1"
-\a cdsLibManager->cellLineEdit->value = "test_ams_mx2x1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
-\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
-\a cdsLibManager->cellListBox->value = "test_ams_mx2x1"
-\a cdsLibManager->cellLineEdit->value = "test_ams_mx2x1"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellListBox->value = "test_ams_aoi"
-\a cdsLibManager->cellLineEdit->value = "test_ams_aoi"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(796 285 947 674))
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
-\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
-\a cdsLibManager->cellListBox->value = "test_ams_aoi"
-\a cdsLibManager->cellLineEdit->value = "test_ams_aoi"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "AOI21X1"
-\a cdsLibManager->cellLineEdit->value = "AOI21X1"
-\a cdsLibManager->viewListBox->value = "functional"
-\a cdsLibManager->viewLineEdit->value = "functional"
-\a lmgrLogShowPopup("mainListPopup2" 49 9 2 "functional")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "BUFX2"
 \a cdsLibManager->cellLineEdit->value = "BUFX2"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->cellListBox->value = "AOI21X1"
 \a cdsLibManager->cellLineEdit->value = "AOI21X1"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellListBox->value = "AOI21X1"
+\a cdsLibManager->cellLineEdit->value = "AOI21X1"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellListBox->value = "AOI21X1"
+\a cdsLibManager->cellLineEdit->value = "AOI21X1"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "abstract"
+\a cdsLibManager->viewLineEdit->value = "abstract"
+\a lmgrLogShowPopup("mainListPopup2" 44 9 2 "abstract")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(804 197 947 674))
 \a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
 \a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
 \a cdsLibManager->cellLineEdit->value = ""
@@ -823,12 +194,6 @@
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellListBox->value = "test_ams_aoi"
 \a cdsLibManager->cellLineEdit->value = "test_ams_aoi"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = "config"
 \a cdsLibManager->viewLineEdit->value = "config"
 \o MPS request: edit design
@@ -839,6 +204,9 @@
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(866 118 947 674))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
 \a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
 \a cdsLibManager->cellLineEdit->value = ""
@@ -847,12 +215,416 @@
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellListBox->value = "AOI21X1"
 \a cdsLibManager->cellLineEdit->value = "AOI21X1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "OAI21X1"
+\a cdsLibManager->cellLineEdit->value = "OAI21X1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "AOI21X1"
+\a cdsLibManager->cellLineEdit->value = "AOI21X1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 52 76 2 "schematic")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup2" 64 78 2 "schematic")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
+\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "test_ams_aoi"
+\a cdsLibManager->cellLineEdit->value = "test_ams_aoi"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 53 44 2 "schematic")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "test_ams_oai"
+\a cdsLibManager->cellLineEdit->value = "test_ams_oai"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
+\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
+\a cdsLibManager->cellListBox->value = "test_ams_oai"
+\a cdsLibManager->cellLineEdit->value = "test_ams_oai"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "OAI21X1"
+\a cdsLibManager->cellLineEdit->value = "OAI21X1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
+\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "test_ams_oai"
+\a cdsLibManager->cellLineEdit->value = "test_ams_oai"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "OAI21X1"
+\a cdsLibManager->cellLineEdit->value = "OAI21X1"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "NOR2X1"
+\a cdsLibManager->cellLineEdit->value = "NOR2X1"
+\a cdsLibManager->cellListBox->value = "OAI21X1"
+\a cdsLibManager->cellLineEdit->value = "OAI21X1"
+\a cdsLibManager->viewListBox->value = "analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "analog_extracted"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "analog_extracted"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellListBox->value = "OAI21X1"
+\a cdsLibManager->cellLineEdit->value = "OAI21X1"
+\a cdsLibManager->viewListBox->value = "analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "analog_extracted"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "analog_extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellListBox->value = "OAI21X1"
+\a cdsLibManager->cellLineEdit->value = "OAI21X1"
+\a cdsLibManager->viewListBox->value = "analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "analog_extracted"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "analog_extracted"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "abstract"
+\a cdsLibManager->viewLineEdit->value = "abstract"
+\a lmgrLogShowPopup("mainListPopup2" 52 6 2 "abstract")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a lmgrLogShowPopup("mainListPopup2" 56 65 2 "layout")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "NAND3X1"
+\a cdsLibManager->cellLineEdit->value = "NAND3X1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "NAND2X1"
+\a cdsLibManager->cellLineEdit->value = "NAND2X1"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "NAND3X1"
+\a cdsLibManager->cellLineEdit->value = "NAND3X1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "NAND2X1"
+\a cdsLibManager->cellLineEdit->value = "NAND2X1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 37 80 2 "schematic")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
+\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "test_ams_aoi"
+\a cdsLibManager->cellLineEdit->value = "test_ams_aoi"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 41 47 2 "schematic")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "test_ams_nand3"
+\a cdsLibManager->cellLineEdit->value = "test_ams_nand3"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
+\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
+\a cdsLibManager->cellListBox->value = "test_ams_nand3"
+\a cdsLibManager->cellLineEdit->value = "test_ams_nand3"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "NAND3X1"
+\a cdsLibManager->cellLineEdit->value = "NAND3X1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "NAND2X1"
+\a cdsLibManager->cellLineEdit->value = "NAND2X1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a lmgrLogShowPopup("mainListPopup2" 39 61 2 "layout")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "NAND3X1"
+\a cdsLibManager->cellLineEdit->value = "NAND3X1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "analog_extracted"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "analog_extracted"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_TEST_AMS"
+\a cdsLibManager->libLineEdit->value = "KISTA_TEST_AMS"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "test_ams_nand3"
+\a cdsLibManager->cellLineEdit->value = "test_ams_nand3"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "NAND3X1"
+\a cdsLibManager->cellLineEdit->value = "NAND3X1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellListBox->value = "NAND3X1"
+\a cdsLibManager->cellLineEdit->value = "NAND3X1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellListBox->value = "NAND3X1"
+\a cdsLibManager->cellLineEdit->value = "NAND3X1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "NAND2X1"
+\a cdsLibManager->cellLineEdit->value = "NAND2X1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "NAND3X1"
+\a cdsLibManager->cellLineEdit->value = "NAND3X1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "abstract"
+\a cdsLibManager->viewLineEdit->value = "abstract"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown

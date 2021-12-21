@@ -1,0 +1,6 @@
+//Verilog HDL for "KISTA_SOI_STDLIB", "NOR3X1" "functional"
+
+
+module NOR3X1 ( );
+
+endmodule

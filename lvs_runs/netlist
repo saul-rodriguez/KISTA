@@ -2,9 +2,9 @@
 * auCdl Netlist:
 * 
 * Library Name:  KISTA_SOI_STDLIB
-* Top Cell Name: MX2X1
+* Top Cell Name: NAND3X1
 * View Name:     schematic
-* Netlisted on:  Dec 20 07:11:51 2021
+* Netlisted on:  Dec 21 09:32:19 2021
 ************************************************************************
 
 *.BIPOLAR
@@ -18,25 +18,25 @@
 *.MEGA
 .PARAM
 
-*.GLOBAL VDD!
-+        VSS!
+*.GLOBAL VSS!
++        VDD!
 
-*.PIN VDD!
-*+    VSS!
+*.PIN VSS!
+*+    VDD!
 
 ************************************************************************
 * Library Name: KISTA_SOI_STDLIB
-* Cell Name:    MX2X1
+* Cell Name:    NAND3X1
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT MX2X1 A B S0 Y
-*.PININFO A:I B:I S0:I Y:O
-MM4 Y S0 B B nmos3 W=2u L=1u
-MM2 Y SB A A nmos3 W=2u L=1u
-MM0 SB S0 VSS! VSS! nmos3 W=2u L=1u
-MM5 Y SB B B pmos3 W=4u L=1u
-MM3 Y S0 A A pmos3 W=4u L=1u
-MM1 SB S0 VDD! VDD! pmos3 W=4u L=1u
+.SUBCKT NAND3X1 A B C Y
+*.PININFO A:I B:I C:I Y:O
+MM2 Y C VDD! VDD! pmos3 W=4u L=1u
+MM0 Y B VDD! VDD! pmos3 W=4u L=1u
+MM1 Y A VDD! VDD! pmos3 W=4u L=1u
+MM5 Y A net59 net59 nmos3 W=4u L=1u
+MM4 net59 B net60 net60 nmos3 W=4u L=1u
+MM3 net60 C VSS! VSS! nmos3 W=4u L=1u
 .ENDS
 

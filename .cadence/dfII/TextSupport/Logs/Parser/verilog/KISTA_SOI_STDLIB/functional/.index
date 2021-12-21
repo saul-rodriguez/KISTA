@@ -13,3 +13,5 @@
 /home/saul/projects/KISTA/KISTA_SOI_STDLIB/AOI21X1/functional/verilog.v .cadence/dfII/TextSupport/Logs/Parser/verilog/KISTA_SOI_STDLIB/functional/compile12.log
 /home/saul/projects/KISTA/KISTA_SOI_STDLIB/OAI21X1/functional/verilog.v .cadence/dfII/TextSupport/Logs/Parser/verilog/KISTA_SOI_STDLIB/functional/compile13.log
 /home/saul/projects/KISTA/KISTA_SOI_STDLIB/XOR2X1/functional/verilog.v .cadence/dfII/TextSupport/Logs/Parser/verilog/KISTA_SOI_STDLIB/functional/compile14.log
+/home/saul/projects/KISTA/KISTA_SOI_STDLIB/NAND3X1/functional/verilog.v .cadence/dfII/TextSupport/Logs/Parser/verilog/KISTA_SOI_STDLIB/functional/compile15.log
+/home/saul/projects/KISTA/KISTA_SOI_STDLIB/NOR3X1/functional/verilog.v .cadence/dfII/TextSupport/Logs/Parser/verilog/KISTA_SOI_STDLIB/functional/compile16.log

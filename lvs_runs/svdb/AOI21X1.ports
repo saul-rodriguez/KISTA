@@ -1,0 +1,8 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary AOI21X1
+A0 3 A0 36000 19600 metal1_conn
+B0 1 B0 3800 36400 metal1_conn
+Y 7 Y 44200 35200 metal1_conn
+A1 2 A1 20200 27400 metal1_conn
+VDD! 8 VDD! 9200 72600 metal1_conn
+VSS! 5 VSS! 14000 -400 metal1_conn

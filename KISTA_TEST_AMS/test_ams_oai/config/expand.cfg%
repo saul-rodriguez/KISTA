@@ -1,0 +1,23 @@
+//Revision 3
+//NOTE
+// Default austriamicrosystems template for AMS Designer
+// Note:
+//      Please remember to replace the Library, Cell, and View fields
+//      for the Top Cell with the actual names used by your design.
+//END_NOTE
+
+config test_ams_oai;
+design KISTA_TEST_AMS.test_ams_oai:schematic;
+
+const digital behavioral, functional, schematic, symbol;
+const analog veriloga, functional, schematic, symbol;
+liblist basic, analogLib;
+
+viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spectre, symbol;
+stoplist symbol, spectre;
+
+
+cell KISTA_SOI_STDLIB.OAI21X1 binding :functional;
+
+
+endconfig

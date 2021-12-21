@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = KISTA_TEST_AMS
-	Cell         = test_ams_xor
+	Cell         = test_ams_aoi
 	View         = config
 	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = KISTA_TEST_AMS:test_ams_xor:1_none_Interactive.0
-	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.0.rdb
-	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_xor:1
-	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data
+	State Name   = KISTA_TEST_AMS:test_ams_aoi:1_none_Interactive.10
+	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.10.rdb
+	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.10/1/KISTA_TEST_AMS:test_ams_aoi:1
+	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data
 	Project Dir  = /home/saul/simulation
-	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_xor/adexl
+	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_aoi/adexl
 	File Encoding = 0
 
 
@@ -30,7 +30,7 @@ Loading monte.cxt
 
 
 *Info*    Run start for Point ID (0 1) on testbench [
-          KISTA_TEST_AMS:test_ams_xor:1 ].
+          KISTA_TEST_AMS:test_ams_aoi:1 ].
 
 Resetting statistical vars
 
@@ -39,11 +39,11 @@ Resetting statistical vars
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_xor:1/netlist
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.10/1/KISTA_TEST_AMS:test_ams_aoi:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_xor:1
+          /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.10/1/KISTA_TEST_AMS:test_ams_aoi:1
 
 
 *Info*    Creating Netlist for Point ID (0 1)
@@ -56,10 +56,10 @@ INFO (AMS-2031): The instances bound to the views specified in the 'Netlist usin
  analog primitives using the Spectre CDF simulation information.
 Loading verilogI.cxt 
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_xor:1/netlist/digital/control
-Begin Netlisting Dec 20 05:30:25 2021
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.10/1/KISTA_TEST_AMS:test_ams_aoi:1/netlist/digital/control
+Begin Netlisting Dec 21 06:14:59 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_xor:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+"/home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.10/1/KISTA_TEST_AMS:test_ams_aoi:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 before invoking Verilog netlister.
  
@@ -83,7 +83,7 @@ INFO (VLOGNET-118): Using connection by name (explicit connections) for all stop
 non-stopping cells.
  
 Loading digitalSim.cxt 
-WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_ams_xor/schematic' has no ports. Make sure that this was the intended 
+WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_ams_aoi/schematic' has no ports. Make sure that this was the intended 
 design.
  
 INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
@@ -96,17 +96,17 @@ CELL NAME                   VIEW NAME            NOTE
 vdc                         spectre              *Stopping View*  
 vpulse                      spectre              *Stopping View*  
 cap                         spectre              *Stopping View*  
-XOR2X1                      functional           *Stopping View*  
-test_ams_xor                schematic                             
+AOI21X1                     functional           *Stopping View*  
+test_ams_aoi                schematic                             
 
 ---------- End of netlist configuration information   ----------
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_xor:1/netlist/analog/control
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.10/1/KISTA_TEST_AMS:test_ams_aoi:1/netlist/analog/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
 Running netlist assembly..
 
-End netlisting Dec 20 05:30:34 2021
+End netlisting Dec 21 06:15:08 2021
 INFO (AMS-1241): AMS UNL netlisting has completed successfully.
 To view the modules, right-click the test name on the Tests and Analyses 
 assistant pane and choose Netlist->Display menu option.
@@ -117,9 +117,9 @@ compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          KISTA_TEST_AMS:test_ams_xor:1 ] for Point ID (0 1).
+          KISTA_TEST_AMS:test_ams_aoi:1 ] for Point ID (0 1).
 
-Delete simulation data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_xor/adexl/results/data/Interactive.0/1/KISTA_TEST_AMS:test_ams_xor:1/psf.
+Delete simulation data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_aoi/adexl/results/data/Interactive.10/1/KISTA_TEST_AMS:test_ams_aoi:1/psf.
 create cds_globals...
       ...successful.
 compose simulator input file...
@@ -138,7 +138,7 @@ reading simulation data...
 
 
 *Info*    Run complete for Point ID (0 1) on testbench [
-          KISTA_TEST_AMS:test_ams_xor:1 ].
+          KISTA_TEST_AMS:test_ams_aoi:1 ].
 
 
 

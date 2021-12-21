@@ -1,10 +1,10 @@
-1639980717 0 1639980717 "/home/saul/projects/KISTA/lvs_runs" "lvsbrowser" "" "" "" "/home/saul/projects/KISTA/lvs_runs/" "auCdl" "auCdl schematic" "/home/saul/projects/KISTA/lvs_runs/lay_cellMap.txt" "" "" "" "" true
+1640075546 0 1640075546 "/home/saul/projects/KISTA/lvs_runs" "lvsbrowser" "" "" "" "/home/saul/projects/KISTA/lvs_runs/" "auCdl" "auCdl schematic" "/home/saul/projects/KISTA/lvs_runs/lay_cellMap.txt" "" "" "" "" true
+1640075466 0 1640075466 "/home/saul/projects/KISTA/drc_runs/NAND3X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1640067191 0 1640067191 "/home/saul/projects/KISTA/drc_runs/OAI21X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1640062787 0 1640062787 "/home/saul/projects/KISTA/drc_runs/AOI21X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
 1639980573 0 1639980573 "/home/saul/projects/KISTA/drc_runs/MX2X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
 1639977417 0 1639977417 "/home/saul/projects/KISTA/drc_runs/XOR2X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
 1639736457 0 1639736457 "/home/saul/projects/KISTA/drc_runs/NAND2X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
 1639735635 0 1639735635 "/home/saul/projects/KISTA/drc_runs/NOR2X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
 1639729406 0 1639729406 "/home/saul/projects/KISTA/drc_runs/INVX1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
 1639728950 0 1639728950 "/home/saul/projects/KISTA/drc_runs/BUFX2.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
-1639726228 0 1639726228 "/home/saul/projects/KISTA/drc_runs/TIELO.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
-1639726175 0 1639726175 "/home/saul/projects/KISTA/drc_runs/TIEHI.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
-1639722548 0 1639722548 "/home/saul/projects/KISTA/drc_runs/DFFX1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true

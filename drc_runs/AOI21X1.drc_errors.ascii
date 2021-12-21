@@ -1,0 +1,145 @@
+AOI21X1 2000
+offgrid_check
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+Grid violation
+ortho_45_check
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+Orthogonal and 45 degree violation
+acute_check
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+Acute angle  violation
+OXIDE.W.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+OXIDEW.1: Oxide width must be >= 2.0 um
+POLY.W.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+POLY.W.1: Poly width must be >= 1.0 um
+CONT.W.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+CONT.W.1: Cont width must be >= 1.0 um
+METAL1.W.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+METAL1.W.1: Metal1 width must be >= 2.0 um
+METAL2.W.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+METAL2.W.1: Metal2 width must be >= 2.0 um
+METAL3.W.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+METAL3.W.1: Metal3 width must be >= 2.0 um
+METAL4.W.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+METAL4.W.1: Metal4 width must be >= 2.0 um
+KTH_OPENPAD.W.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+KTH_OPENPAD.W.1: KTH_openpad width must be >= 88.0 um
+OXIDE.SP.1.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+OXIDE.SP.1.1: Oxide to Oxide spacing must be >= 2.0 um
+POLY.SP.1.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+POLY.SP.1.1: Poly to Poly spacing must be >= 2.0 um
+METAL1.SP.1.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+METAL1.SP.1.1: Metal1 to Metal1 spacing must be >= 2.0 um
+METAL2.SP.1.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+METAL1.SP.1.1: Metal2 to Metal2 spacing must be >= 2.0 um
+METAL3.SP.1.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+METAL1.SP.1.1: Metal3 to Metal3 spacing must be >= 2.0 um
+METAL4.SP.1.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+METAL1.SP.1.1: Metal4 to Metal4 spacing must be >= 2.0 um
+CONT.SP.1.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+CONT.SP.1.1: Cont to Cont spacing must be >= 1.0 um
+CONT.SP.1.2
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+CONT.SP.1.2: Cont to Via1 spacing must be >= 1.0 um
+VIA1.SP.1.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA1.SP.1.1: Via1 to Via1 spacing must be >= 1.0 um
+VIA1.SP.1.2
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA1.SP.1.2: Via1 to Via2 spacing must be >= 1.0 um
+VIA2.SP.1.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA2.SP.1.1: Via2 to Via2 spacing must be >= 1.0 um
+VIA2.SP.1.2
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA2.SP.1.2: Via2 to Via3 spacing must be >= 1.0 um
+CONT.E.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+CONT.E.1: Metal1 to Cont enclosure must be >= 0.5 um
+CONT.E.2
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+CONT.E.2: Poly to Cont enclosure must be >= 0.5 um
+CONT.E.3
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+CONT.E.3: Oxide to Cont enclosure must be >= 0.5 um
+VIA1.E.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA1.E.1: Metal1 to Via1 enclosure must be >= 0.5 um
+VIA1.E.2
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA1.E.2: Metal2 to Via1 enclosure must be >= 0.5 um
+VIA2.E.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA2.E.1: Metal2 to Via2 enclosure must be >= 0.5 um
+VIA2.E.2
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA2.E.2: Metal3 to Via2 enclosure must be >= 0.5 um
+VIA3.E.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA3.E.1: Metal3 to Via3 enclosure must be >= 0.5 um
+VIA3.E.2
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA3.E.2: Metal4 to Via3 enclosure must be >= 0.5 um
+KTH_OPENPAD.E.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+KTH_OPENPAD.E.1: Metal[X] to KTH_openpad enclosure must be >= 6.0 um
+CONT.OV.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+CONT.OV.1: Via1 over Cont not allowed
+VIA1.OV.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA1.OV.1: Via2 over Via1 not allowed
+VIA2.OV.1
+0 0 2 Dec 21 05:59:46 2021
+Rule File Pathname: /home/saul/projects/KISTA/drc_runs/.technology.rul
+VIA2.OV.1: Via3 over Via2 not allowed

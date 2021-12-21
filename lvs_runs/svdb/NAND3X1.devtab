@@ -1,0 +1,55 @@
+Device_Table 2000
+0 0 1 Tue Dec 21 09:32:23 2021
+2
+Device Entry 0
+0 0 24 Tue Dec 21 09:32:23 2021
+_nmos1v
+MOS
+MN
+nmos3
+(null)
+nch
+4
+G poly_conn 0
+S _soi_nsb 1
+D _soi_nd 0
+B _soi_nsb 1
+2
+_nmos1v_sti
+_nmos1v_wpe
+9
+fw
+w
+l
+ad
+as
+pd
+ps
+sa
+sb
+Device Entry 1
+0 0 24 Tue Dec 21 09:32:23 2021
+_pmos1v
+MOS
+MP
+pmos3
+(null)
+pch
+4
+G poly_conn 0
+S _soi_psb 1
+D _soi_pd 0
+B _soi_psb 1
+2
+pactive
+nwell_conn
+9
+fw
+w
+l
+ad
+as
+pd
+ps
+sa
+sb

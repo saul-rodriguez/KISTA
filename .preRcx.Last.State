@@ -1,7 +1,7 @@
 
 
 vuipreRcxFormTable = '(
-	runName  "MX2X1"
+	runName  "NAND3X1"
 	runDir  "/home/saul/projects/KISTA/lvs_runs/svdb"
 	assuraTech  "/home/saul/projects/KISTA/pvtech.lib"
 	tech  "kista_pvs"
