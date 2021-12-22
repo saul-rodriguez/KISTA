@@ -14,8 +14,9 @@ exec mkdir -p ${rundir}/DATASHEET
 ### Define temperature and default voltage ###
 set_operating_condition -voltage 1.5 -temp 25
 
-merge_library -filename ${rundir}/LIBRARY/merged_ccs.lib ${rundir}/LIBRARY/userdata.lib ${rundir}/LIBRARY/ship_ccs.lib 
-merge_library -filename ${rundir}/LIBRARY/merged_ecsm.lib ${rundir}/LIBRARY/ship_ecsm.lib ${rundir}/LIBRARY/userdata.lib
+#merge_library -filename ${rundir}/LIBRARY/merged_ccs.lib ${rundir}/LIBRARY/userdata.lib ${rundir}/LIBRARY/ship_ccs.lib 
+#merge_library -filename ${rundir}/LIBRARY/merged_ecsm.lib ${rundir}/LIBRARY/ship_ecsm.lib ${rundir}/LIBRARY/userdata.lib
+merge_library -filename ${rundir}/LIBRARY/merged_ecsm.lib ${rundir}/LIBRARY/userdata.lib ${rundir}/LIBRARY/ship_ecsm.lib 
 
 
 
