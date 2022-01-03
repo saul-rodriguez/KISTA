@@ -2000,9 +2000,9 @@ constraintGroups(
 	) ;spacings
 
   spacings(
-     ( stackable                  "Via1"	"Via2"		nil )
-     ( stackable                  "Via2"	"Via3"		nil )
-     ( stackable                  "Via3"	"Via4"		nil )
+     ( stackable                  "Via1"	"Via2"		t )
+     ( stackable                  "Via2"	"Via3"		t )
+     ( stackable                  "Via3"	"Via4"		t )
     ; ( stackable                  "Via4"	"Via5"		t )
     ; ( stackable                  "Via5"	"Via6"		t )
     ; ( stackable                  "Via6"	"Via7"		t )

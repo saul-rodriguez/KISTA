@@ -52,10 +52,10 @@ viaDefs(
  ;  ( M3_M2_2x1_VH_W  gsclib045_tech M3_M2_2x1_VH_W via Metal2 Metal3 0.0)
  ;  ( M3_M2_1x2_VH_N  gsclib045_tech M3_M2_1x2_VH_N via Metal2 Metal3 0.0)
  ;  ( M3_M2_1x2_VH_S  gsclib045_tech M3_M2_1x2_VH_S via Metal2 Metal3 0.0)
-    ( M4_M3_HV        KISTA_SOI_STDLIB M4_M3_HV       via Metal3 Metal4 0.0)
-    ( M4_M3_VV        KISTA_SOI_STDLIB M4_M3_VV       via Metal3 Metal4 0.0)
-    ( M4_M3_VH        KISTA_SOI_STDLIB M4_M3_VH       via Metal3 Metal4 0.0)
-    ( M4_M3_HH        KISTA_SOI_STDLIB M4_M3_HH       via Metal3 Metal4 0.0)
+ ;   ( M4_M3_HV        KISTA_SOI_STDLIB M4_M3_HV       via Metal3 Metal4 0.0)
+ ;   ( M4_M3_VV        KISTA_SOI_STDLIB M4_M3_VV       via Metal3 Metal4 0.0)
+ ;   ( M4_M3_VH        KISTA_SOI_STDLIB M4_M3_VH       via Metal3 Metal4 0.0)
+ ;   ( M4_M3_HH        KISTA_SOI_STDLIB M4_M3_HH       via Metal3 Metal4 0.0)
  ;  ( M4_M3_M_EV      gsclib045_tech M4_M3_M_EV     via Metal3 Metal4 0.0)
  ;  ( M4_M3_M_WV      gsclib045_tech M4_M3_M_WV     via Metal3 Metal4 0.0)
  ;  ( M4_M3_2x1_HV_E  gsclib045_tech M4_M3_2x1_HV_E via Metal3 Metal4 0.0)
@@ -78,7 +78,7 @@ constraintGroups(
   ( "LEFSpecialRouteSpec"	nil    "LEFSpecialRouteSpec"
 
     interconnect(
-     ( validVias     (M2_M1  M3_M2  M4_M3 ) )
+     ( validVias     (M2_M1  M3_M2 ) )
     ) ;interconnect
   ) ;LEFSpecialRouteSpec
 
@@ -91,7 +91,7 @@ constraintGroups(
      ( Metal1	"horizontal" )
      ( Metal2	"vertical" )
      ( Metal3	"horizontal" )
-     ( Metal4	"vertical" )    
+    ; ( Metal4	"vertical" )    
     ) ;routingDirections
 
     spacings(
@@ -131,26 +131,25 @@ constraintGroups(
 
     spacings(
      ( minWidth                   "Metal3"	2.0 )
-     ( minWidth                   "Via3"		1.0 )
+ ;    ( minWidth                   "Via3"		1.0 )
     ) ;spacings
 
-    routingGrids(
-     ( horizontalPitch            "Metal4"   4.0 )
-     ( verticalPitch              "Metal4"   4.0 )
-     ( horizontalOffset           "Metal4"   2.0 )
-     ( verticalOffset             "Metal4"   2.0 )
-    ) ;routingGrids
+ ;   routingGrids(
+ ;    ( horizontalPitch            "Metal4"   4.0 )
+ ;    ( verticalPitch              "Metal4"   4.0 )
+ ;    ( horizontalOffset           "Metal4"   2.0 )
+ ;    ( verticalOffset             "Metal4"   2.0 )
+ ;   ) ;routingGrids
 
-    spacings(
-     ( minWidth                   "Metal4"	2.0 )
-     ;( minWidth                   "Via4"		1.0 )
-    ) ;spacings
+ ;   spacings(
+ ;    ( minWidth                   "Metal4"	2.0 )
+ ;    ;( minWidth                   "Via4"		1.0 )
+ ;   ) ;spacings
    
     interconnect(
-     ( validLayers   (Metal1  Metal2  Metal3  Metal4 ) )
+     ( validLayers   (Metal1  Metal2  Metal3 ) )
      ( validVias     (M2_M1_HV M2_M1_VV M2_M1_VH M2_M1_HH
-					 M3_M2_VH M3_M2_HH M3_M2_HV M3_M2_VV 
-					 M4_M3_HV M4_M3_VV M4_M3_VH M4_M3_HH ) )
+					 M3_M2_VH M3_M2_HH M3_M2_HV M3_M2_VV ) )
     ) ;interconnect
   ) ;LEFDefaultRouteSpec
 ) ;constraintGroups
