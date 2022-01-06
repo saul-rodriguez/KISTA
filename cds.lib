@@ -17,4 +17,5 @@ DEFINE KISTA_TEST_AMS /home/saul/projects/KISTA/KISTA_TEST_AMS
 #Removed by ddDeleteObj: DEFINE KISTA_SOI_TECH /home/saul/projects/KISTA/KISTA_SOI_TECH
 DEFINE KISTA_SOI_STDLIB_TECH /home/saul/projects/KISTA/KISTA_SOI_STDLIB_TECH
 #Removed by ddDeleteObj: DEFINE KISTA_SOI_TECH /home/saul/projects/KISTA/KISTA_SOI_TECH
+#Removed by ddDeleteObj: DEFINE KISTA_SOI_TECH /home/saul/projects/KISTA/KISTA_SOI_TECH
 DEFINE KISTA_SOI_TECH /home/saul/projects/KISTA/KISTA_SOI_TECH

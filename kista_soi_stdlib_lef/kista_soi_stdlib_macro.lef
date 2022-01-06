@@ -1,0 +1,1414 @@
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+PROPERTYDEFINITIONS
+  MACRO CatenaDesignType STRING ;
+  MACRO lxInternalViewName STRING ;
+  MACRO lxInternalConfigViewName STRING ;
+  MACRO lxInternalType STRING ;
+  MACRO lxInternalConfigCellName STRING ;
+  MACRO lxInternalCellName STRING ;
+  MACRO lxInternalTop STRING ;
+  MACRO lxInternalConfigLibName STRING ;
+  MACRO lxInternalLibName STRING ;
+END PROPERTYDEFINITIONS
+
+MACRO AOI21X1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN AOI21X1 0 0 ;
+  SIZE 24 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 24 1 ;
+        RECT 9 -1 11 7 ;
+        RECT 1 -1 3 5 ;
+    END
+  END VSS!
+  PIN A1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 9 13 13 15 ;
+    END
+  END A1
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 21 3 23 29 ;
+        RECT 5 17 23 19 ;
+        RECT 9 17 11 29 ;
+        RECT 5 3 7 19 ;
+    END
+  END Y
+  PIN A0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 17 9 19 11 ;
+    END
+  END A0
+  PIN B0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1 17 3 19 ;
+    END
+  END B0
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 24 37 ;
+        RECT 1 21 3 37 ;
+    END
+  END VDD!
+  OBS
+    LAYER Metal1 ;
+      RECT 17 3 19 7 ;
+      RECT 13 3 15 7 ;
+      RECT 13 3 19 5 ;
+      RECT 5 31 15 33 ;
+      RECT 13 21 15 33 ;
+      RECT 5 21 7 33 ;
+      RECT 13 27 19 29 ;
+      RECT 17 21 19 29 ;
+  END
+END AOI21X1
+
+MACRO BUFX2
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN BUFX2 0 0 ;
+  SIZE 24 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 24 1 ;
+        RECT 12.5 -1 14.5 11 ;
+        RECT 3.5 -1 5.5 11 ;
+    END
+  END VSS!
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1 17 3 19 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 16.5 7 18.5 29 ;
+    END
+  END Y
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 24 37 ;
+        RECT 12.5 21 14.5 37 ;
+        RECT 3.5 25 5.5 37 ;
+    END
+  END VDD!
+  OBS
+    LAYER Metal1 ;
+      RECT 7.5 9 9.5 29 ;
+      RECT 7.5 17 13 19 ;
+  END
+  PROPERTY CatenaDesignType "deviceLevel" ;
+END BUFX2
+
+MACRO DECAP1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN DECAP1 0 0 ;
+  SIZE 12 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 12 1 ;
+        RECT 7 -1 9 15 ;
+        RECT 3 -1 5 6.3 ;
+    END
+  END VSS!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 12 37 ;
+        RECT 7 27.9 9 37 ;
+        RECT 3 21 5 37 ;
+    END
+  END VDD!
+END DECAP1
+
+MACRO DECAP2
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN DECAP2 0 0 ;
+  SIZE 24 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 24 1 ;
+        RECT 16.9 -1 18.9 17.6 ;
+        RECT 12.9 -1 14.9 11.5 ;
+        RECT 8.9 -1 10.9 11.5 ;
+        RECT 4.9 -1 6.9 11.5 ;
+    END
+  END VSS!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 24 37 ;
+        RECT 16.9 22.9 18.9 37 ;
+        RECT 12.9 22.9 14.9 37 ;
+        RECT 8.9 22.9 10.9 37 ;
+        RECT 4.9 16.9 6.9 37 ;
+    END
+  END VDD!
+  PROPERTY CatenaDesignType "deviceLevel" ;
+END DECAP2
+
+MACRO DECAP4
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN DECAP4 0 0 ;
+  SIZE 48 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 48 1 ;
+        RECT 37.5 -1 39.5 18.2 ;
+        RECT 33.5 -1 35.5 11.7 ;
+        RECT 29.5 -1 31.5 11.7 ;
+        RECT 25.5 -1 27.5 11.7 ;
+        RECT 21.5 -1 23.5 11.7 ;
+        RECT 17.5 -1 19.5 11.7 ;
+        RECT 13.5 -1 15.5 11.7 ;
+        RECT 9.5 -1 11.5 11.7 ;
+    END
+  END VSS!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 48 37 ;
+        RECT 37.5 24.7 39.5 37 ;
+        RECT 33.5 24.7 35.5 37 ;
+        RECT 29.5 24.7 31.5 37 ;
+        RECT 25.5 24.7 27.5 37 ;
+        RECT 21.5 24.7 23.5 37 ;
+        RECT 17.5 24.7 19.5 37 ;
+        RECT 13.5 24.7 15.5 37 ;
+        RECT 9.5 18.6 11.5 37 ;
+    END
+  END VDD!
+  PROPERTY CatenaDesignType "deviceLevel" ;
+END DECAP4
+
+MACRO DFFSRX1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN DFFSRX1 0 0 ;
+  SIZE 156 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 156 1 ;
+        RECT 147 -1 149 9 ;
+        RECT 139 -1 141 9 ;
+        RECT 131 -1 133 9 ;
+        RECT 99 -1 101 9 ;
+        RECT 91 -1 93 9 ;
+        RECT 59 -1 61 9 ;
+        RECT 51 -1 53 9 ;
+        RECT 47 -1 49 9 ;
+        RECT 19 -1 21 9 ;
+        RECT 11 -1 13 9 ;
+        RECT 3 -1 5 9 ;
+    END
+  END VSS!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 156 37 ;
+        RECT 147 24 149 37 ;
+        RECT 139 24 141 37 ;
+        RECT 131 24 133 37 ;
+        RECT 127 24 129 37 ;
+        RECT 99 24 101 37 ;
+        RECT 91 24 93 37 ;
+        RECT 67 24 69 37 ;
+        RECT 59 24 61 37 ;
+        RECT 51 24 53 37 ;
+        RECT 47 24 49 37 ;
+        RECT 19 24 21 37 ;
+        RECT 11 24 13 37 ;
+        RECT 3 24 5 37 ;
+    END
+  END VDD!
+  PIN SN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 59 13 101 15 ;
+        RECT 77 13 79 33 ;
+        RECT 59 13 61 17 ;
+      LAYER Metal1 ;
+        RECT 99 13 103 15 ;
+        RECT 77 31 79 33 ;
+        RECT 59 15 61 19 ;
+      LAYER Via1 ;
+        RECT 59.5 15.5 60.5 16.5 ;
+        RECT 77.5 31.5 78.5 32.5 ;
+        RECT 99.5 13.5 100.5 14.5 ;
+    END
+  END SN
+  PIN QN
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 151 13 155 15 ;
+        RECT 151 7 153 28 ;
+    END
+  END QN
+  PIN CK
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1 17 3 19 ;
+    END
+  END CK
+  PIN RN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 49 13 51 15 ;
+    END
+  END RN
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 135 17 139 19 ;
+        RECT 135 7 137 28 ;
+    END
+  END Q
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 41 13 43 15 ;
+    END
+  END D
+  OBS
+    LAYER Metal1 ;
+      RECT 143 7 145 28 ;
+      RECT 143 17 149 19 ;
+      RECT 123 17 129 19 ;
+      RECT 127 7 129 19 ;
+      RECT 115 11 125 13 ;
+      RECT 123 7 125 13 ;
+      RECT 115 7 117 13 ;
+      RECT 111 7 117 9 ;
+      RECT 119 26 125 28 ;
+      RECT 123 24 125 28 ;
+      RECT 119 24 121 28 ;
+      RECT 119 3 121 9 ;
+      RECT 103 7 109 9 ;
+      RECT 105 3 107 9 ;
+      RECT 105 3 121 5 ;
+      RECT 107 30 117 32 ;
+      RECT 115 24 117 32 ;
+      RECT 107 24 109 32 ;
+      RECT 103 26 109 28 ;
+      RECT 103 24 105 28 ;
+      RECT 87 7 89 28 ;
+      RECT 87 17 91.5 19 ;
+      RECT 63 15 65 31 ;
+      RECT 79 26 85 28 ;
+      RECT 79 15 81 28 ;
+      RECT 63 15 85 17 ;
+      RECT 83 7 85 17 ;
+      RECT 71 7 73 17 ;
+      RECT 71 7 77 9 ;
+      RECT 79 3 81 9 ;
+      RECT 63 7 69 9 ;
+      RECT 67 3 69 9 ;
+      RECT 67 3 81 5 ;
+      RECT 71 26 77 28 ;
+      RECT 75 24 77 28 ;
+      RECT 71 24 73 28 ;
+      RECT 55 7 57 28 ;
+      RECT 55 11 67 13 ;
+      RECT 31 26 37 28 ;
+      RECT 35 7 37 28 ;
+      RECT 31 24 33 28 ;
+      RECT 35 20 53 22 ;
+      RECT 31 7 37 9 ;
+      RECT 39 26 45 28 ;
+      RECT 43 24 45 28 ;
+      RECT 39 24 41 28 ;
+      RECT 23 26 29 28 ;
+      RECT 27 24 29 28 ;
+      RECT 23 24 25 28 ;
+      RECT 7 7 9 28 ;
+      RECT 7 17 10.5 19 ;
+      RECT 131 14.9 133 21 ;
+      RECT 109 11 113 13 ;
+      RECT 111 17 113 28 ;
+      RECT 95 7 97 28 ;
+      RECT 67 20 74.5 22 ;
+      RECT 39 7 45 9 ;
+      RECT 23 7 29 9 ;
+      RECT 20.9 20 24.9 22 ;
+      RECT 15 7 17 33 ;
+    LAYER Via1 ;
+      RECT 131.5 19.5 132.5 20.5 ;
+      RECT 123.5 17.5 124.5 18.5 ;
+      RECT 111.5 11.5 112.5 12.5 ;
+      RECT 111.5 17.5 112.5 18.5 ;
+      RECT 95.5 21.5 96.5 22.5 ;
+      RECT 87.5 17.5 88.5 18.5 ;
+      RECT 67.5 20.5 68.5 21.5 ;
+      RECT 63.5 29.5 64.5 30.5 ;
+      RECT 55.5 9.5 56.5 10.5 ;
+      RECT 51.5 20.5 52.5 21.5 ;
+      RECT 23.4 20.5 24.4 21.5 ;
+    LAYER Metal2 ;
+      RECT 95 21 133 23 ;
+      RECT 131 19 133 23 ;
+      RECT 111 9 113 13 ;
+      RECT 55 9 113 11 ;
+      RECT 22.9 29 65 31 ;
+      RECT 22.9 20 24.9 31 ;
+      RECT 87 17 125 19 ;
+      RECT 51 20 69 22 ;
+  END
+  PROPERTY lxInternalViewName "schematic" ;
+  PROPERTY lxInternalConfigViewName "" ;
+  PROPERTY lxInternalType "CELLVIEW" ;
+  PROPERTY lxInternalConfigCellName "" ;
+  PROPERTY lxInternalCellName "DFFSRX1" ;
+  PROPERTY lxInternalTop "" ;
+  PROPERTY lxInternalConfigLibName "" ;
+  PROPERTY lxInternalLibName "KISTA_SOI_STDLIB" ;
+END DFFSRX1
+
+MACRO DFFX1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN DFFX1 0 0 ;
+  SIZE 120 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 120 1 ;
+        RECT 107 -1 109 8.4 ;
+        RECT 99 -1 101 8.4 ;
+        RECT 91 -1 93 8.4 ;
+        RECT 75 -1 77 8.4 ;
+        RECT 67 -1 69 8.4 ;
+        RECT 43 -1 45 8.4 ;
+        RECT 35 -1 37 8.4 ;
+        RECT 19 -1 21 8.4 ;
+        RECT 11 -1 13 8.4 ;
+        RECT 3 -1 5 8.4 ;
+    END
+  END VSS!
+  PIN CK
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1 17 3 19 ;
+    END
+  END CK
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 120 37 ;
+        RECT 107 24.8 109 37 ;
+        RECT 99 24.8 101 37 ;
+        RECT 91 24.8 93 37 ;
+        RECT 75 24.8 77 37 ;
+        RECT 67 24.8 69 37 ;
+        RECT 43 24.8 45 37 ;
+        RECT 35 24.8 37 37 ;
+        RECT 19 23.8 21 37 ;
+        RECT 11 23.8 13 37 ;
+        RECT 3 23.8 5 37 ;
+    END
+  END VDD!
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 21 17 23 19 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 95 16.9 99 18.9 ;
+        RECT 95 6.4 97 28.8 ;
+    END
+  END Q
+  PIN QN
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 111 13 115 15 ;
+        RECT 111 6.4 113 28.8 ;
+    END
+  END QN
+  OBS
+    LAYER Metal1 ;
+      RECT 103 6.4 105 28.8 ;
+      RECT 103 17 107 19 ;
+      RECT 87 6.4 89 28.8 ;
+      RECT 75 13 89 15 ;
+      RECT 79 26.8 85 28.8 ;
+      RECT 83 24.8 85 28.8 ;
+      RECT 79 24.8 81 28.8 ;
+      RECT 71 6.4 73 28.8 ;
+      RECT 71 17 77.5 19 ;
+      RECT 63 6.4 65 28.8 ;
+      RECT 63 17 69 19 ;
+      RECT 63 13 68 15 ;
+      RECT 55 6.4 57 28.8 ;
+      RECT 43 13 57 15 ;
+      RECT 39 6.4 41 28.8 ;
+      RECT 39 17 53 19 ;
+      RECT 47 26.8 53 28.8 ;
+      RECT 51 24.8 53 28.8 ;
+      RECT 47 24.8 49 28.8 ;
+      RECT 31 6.4 33 28.8 ;
+      RECT 31 13 36.8 15 ;
+      RECT 23 26.8 29 28.8 ;
+      RECT 27 24.8 29 28.8 ;
+      RECT 23 23.8 25 28.8 ;
+      RECT 7 6.4 9 27.8 ;
+      RECT 7 17 11.5 19 ;
+      RECT 79 6.4 85 8.4 ;
+      RECT 59 6.4 61 28.8 ;
+      RECT 47 6.4 53 8.4 ;
+      RECT 23 6.4 29 8.4 ;
+      RECT 15 6.4 17 33 ;
+    LAYER Metal2 ;
+      RECT 66 13 77 15 ;
+      RECT 51 17 61 19 ;
+      RECT 34.8 13 45 15 ;
+  END
+  PROPERTY CatenaDesignType "deviceLevel" ;
+END DFFX1
+
+MACRO FILL1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN FILL1 0 0 ;
+  SIZE 12 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 12 37 ;
+    END
+  END VDD!
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 12 1 ;
+    END
+  END VSS!
+  PROPERTY CatenaDesignType "deviceLevel" ;
+END FILL1
+
+MACRO FILL2
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN FILL2 0 0 ;
+  SIZE 24 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 24 37 ;
+    END
+  END VDD!
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 24 1 ;
+    END
+  END VSS!
+  PROPERTY CatenaDesignType "deviceLevel" ;
+END FILL2
+
+MACRO FILL4
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN FILL4 0 0 ;
+  SIZE 48 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 48 37 ;
+    END
+  END VDD!
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 48 1 ;
+    END
+  END VSS!
+  PROPERTY CatenaDesignType "deviceLevel" ;
+END FILL4
+
+MACRO INVX1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN INVX1 0 0 ;
+  SIZE 12 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 7 21 11 23 ;
+        RECT 7 12.9 9 25.1 ;
+    END
+  END Y
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 12 1 ;
+        RECT 2.4 12.9 5 14.9 ;
+        RECT 2.4 -1 4.4 14.9 ;
+    END
+  END VSS!
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1 17 3 19 ;
+    END
+  END A
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 12 37 ;
+        RECT 2.4 21.1 5 25.1 ;
+        RECT 2.4 21.1 4.4 37 ;
+    END
+  END VDD!
+END INVX1
+
+MACRO MX2X1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN MX2X1 0 0 ;
+  SIZE 24 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 24 1 ;
+        RECT 1 -1 3 9 ;
+    END
+  END VSS!
+  PIN S0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1 17 3 19 ;
+    END
+  END S0
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 24 37 ;
+        RECT 1 25 3 37 ;
+    END
+  END VDD!
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 9 13 13.1 15 ;
+        RECT 9 7 11 29 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 21 7 23 29 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 13 27 19 29 ;
+        RECT 17 7 19 29 ;
+        RECT 13 7 19 9 ;
+        RECT 13 25 15 29 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 5 31 21 33 ;
+      RECT 5 3 7 33 ;
+      RECT 5 3 13.1 5 ;
+  END
+END MX2X1
+
+MACRO MX2X1_BUF
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN MX2X1_BUF 0 0 ;
+  SIZE 48 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 48 1 ;
+        RECT 37 -1 39 9 ;
+        RECT 33 -1 35 9 ;
+        RECT 2.9 -1 4.9 9 ;
+    END
+  END VSS!
+  PIN S0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1 17 3 19 ;
+    END
+  END S0
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 48 37 ;
+        RECT 37 25 39 37 ;
+        RECT 33 25 35 37 ;
+        RECT 2.9 25 4.9 37 ;
+    END
+  END VDD!
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 10.9 13 15 15 ;
+        RECT 10.9 7 12.9 29 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 22.9 21 27 23 ;
+        RECT 22.9 7 24.9 29 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 41 7 43 29 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 29 7 31 29 ;
+      RECT 29 17 38.9 19 ;
+      RECT 14.9 27 20.9 29 ;
+      RECT 18.9 3 20.9 29 ;
+      RECT 14.9 25 16.9 29 ;
+      RECT 14.9 7 20.9 9 ;
+      RECT 18.9 3 29.5 5 ;
+      RECT 6.9 31 22.9 33 ;
+      RECT 6.9 3 8.9 33 ;
+      RECT 6.9 3 15 5 ;
+  END
+END MX2X1_BUF
+
+MACRO NAND2X1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN NAND2X1 0 0 ;
+  SIZE 24 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 17 9 19 31 ;
+        RECT 5 23 19 25 ;
+        RECT 5 23 7 31 ;
+    END
+  END Y
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 24 37 ;
+        RECT 9 29 15 31 ;
+        RECT 13 27 15 31 ;
+        RECT 9 27 11 37 ;
+    END
+  END VDD!
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5 17 9 19 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 21 17 23 19 ;
+    END
+  END B
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 24 1 ;
+        RECT 5 -1 7 13 ;
+    END
+  END VSS!
+  OBS
+    LAYER Metal1 ;
+      RECT 13 9 15 13 ;
+      RECT 9 9 11 13 ;
+      RECT 9 9 15 11 ;
+  END
+  PROPERTY CatenaDesignType "deviceLevel" ;
+END NAND2X1
+
+MACRO NAND3X1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN NAND3X1 0 0 ;
+  SIZE 24 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 21 3 23 33 ;
+        RECT 5 25 23 27 ;
+        RECT 13 25 15 33 ;
+        RECT 5 25 7 33 ;
+    END
+  END Y
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 24 37 ;
+        RECT 17 29 19 37 ;
+        RECT 9 29 11 37 ;
+        RECT 1 29 3 37 ;
+    END
+  END VDD!
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 17 13 19 15 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 9 17 11 19 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1 21 3 23 ;
+    END
+  END C
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 24 1 ;
+        RECT 1 -1 3 7 ;
+    END
+  END VSS!
+  OBS
+    LAYER Metal1 ;
+      RECT 17 3 19 7 ;
+      RECT 13 3 15 7 ;
+      RECT 13 3 19 5 ;
+      RECT 9 3 11 7 ;
+      RECT 5 3 7 7 ;
+      RECT 5 3 11 5 ;
+  END
+END NAND3X1
+
+MACRO NOR2X1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN NOR2X1 0 0 ;
+  SIZE 24 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 17 9 19 31 ;
+        RECT 5 13 19 15 ;
+        RECT 5 9 7 15 ;
+    END
+  END Y
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 21 17 23 19 ;
+    END
+  END B
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 24 37 ;
+        RECT 5 23 7 37 ;
+    END
+  END VDD!
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5 17 9 19 ;
+    END
+  END A
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 24 1 ;
+        RECT 9 9 15 11 ;
+        RECT 9 -1 11 11 ;
+    END
+  END VSS!
+  OBS
+    LAYER Metal1 ;
+      RECT 9 29 15 31 ;
+      RECT 13 23 15 31 ;
+      RECT 9 23 11 31 ;
+  END
+  PROPERTY CatenaDesignType "deviceLevel" ;
+END NOR2X1
+
+MACRO NOR3X1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN NOR3X1 0 0 ;
+  SIZE 24 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 21 3 23 33 ;
+        RECT 5 7 23 9 ;
+        RECT 13 3 15 9 ;
+        RECT 5 3 7 9 ;
+    END
+  END Y
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 24 1 ;
+        RECT 17 -1 19 5 ;
+        RECT 9 -1 11 5 ;
+        RECT 1 -1 3 5 ;
+    END
+  END VSS!
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1 9 3 11 ;
+    END
+  END A
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 24 37 ;
+        RECT 1 21 3 37 ;
+    END
+  END VDD!
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 9 13 11 15 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 17 17 19 19 ;
+    END
+  END C
+  OBS
+    LAYER Metal1 ;
+      RECT 13 31 19 33 ;
+      RECT 17 21 19 33 ;
+      RECT 13 21 15 33 ;
+      RECT 5 31 11 33 ;
+      RECT 9 21 11 33 ;
+      RECT 5 21 7 33 ;
+  END
+END NOR3X1
+
+MACRO OAI21X1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN OAI21X1 0 0 ;
+  SIZE 24 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 24 1 ;
+        RECT 9 3 11 7 ;
+        RECT 5 3 11 5 ;
+        RECT 5 -1 7 7 ;
+    END
+  END VSS!
+  PIN A0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1 21 3 23 ;
+    END
+  END A0
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 17 21 23 23 ;
+        RECT 21 3 23 23 ;
+        RECT 17 21 19 33 ;
+        RECT 13 25 19 27 ;
+        RECT 13 25 15 33 ;
+    END
+  END Y
+  PIN A1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 9 17 11 19 ;
+    END
+  END A1
+  PIN B0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 17 13 19 15 ;
+    END
+  END B0
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 24 37 ;
+        RECT 21 25 23 37 ;
+        RECT 1 25 3 37 ;
+    END
+  END VDD!
+  OBS
+    LAYER Metal1 ;
+      RECT 1 9 15 11 ;
+      RECT 13 3 15 11 ;
+      RECT 1 3 3 11 ;
+      RECT 17 3 19 7 ;
+      RECT 13 3 19 5 ;
+      RECT 5 31 11 33 ;
+      RECT 9 25 11 33 ;
+      RECT 5 25 7 33 ;
+  END
+END OAI21X1
+
+MACRO TIEHI
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN TIEHI 0 0 ;
+  SIZE 12 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 12 1 ;
+        RECT 7 -1 9 11 ;
+    END
+  END VSS!
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 7 25 11 27 ;
+        RECT 7 25 9 29 ;
+    END
+  END Y
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 12 37 ;
+        RECT 3 25 5 37 ;
+    END
+  END VDD!
+  OBS
+    LAYER Metal1 ;
+      RECT 3 13 7 15 ;
+      RECT 3 9 5 15 ;
+  END
+END TIEHI
+
+MACRO TIELO
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN TIELO 0 0 ;
+  SIZE 12 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 7 9 11 11 ;
+    END
+  END Y
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 12 1 ;
+        RECT 3 -1 5 11 ;
+    END
+  END VSS!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 12 37 ;
+        RECT 3 26.8 5 37 ;
+    END
+  END VDD!
+  OBS
+    LAYER Metal1 ;
+      RECT 7 22.8 9 30.8 ;
+      RECT 5 22.8 9 24.8 ;
+  END
+END TIELO
+
+MACRO XOR2X1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN XOR2X1 0 0 ;
+  SIZE 36 BY 36 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VDD VDD!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 35 36 37 ;
+        RECT 31 25 33 37 ;
+        RECT 3 25 5 37 ;
+    END
+  END VDD!
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 11 7 13 29 ;
+    END
+  END B
+  PIN VSS!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    NETEXPR "VSS VSS!" ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -1 36 1 ;
+        RECT 31 -1 33 9 ;
+        RECT 3 -1 5 9 ;
+    END
+  END VSS!
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3 17 5 19 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 15 27 21 29 ;
+        RECT 19 7 21 11 ;
+        RECT 15 17 19 19 ;
+        RECT 15 7 21 9 ;
+        RECT 15 7 17 29 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 23 27 29 29 ;
+      RECT 27 25 29 29 ;
+      RECT 23 7 25 29 ;
+      RECT 23 7 29 9 ;
+      RECT 7 3 9 29 ;
+      RECT 7 3 23 5 ;
+  END
+END XOR2X1
+
+END LIBRARY
