@@ -1,6 +1,6 @@
-NOR3X1
+INVX1
 
-NOR3X1
+INVX1
 	nmos3_CDNS_2
 	pmos3_CDNS_3
 

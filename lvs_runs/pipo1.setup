@@ -10,8 +10,8 @@ logFile	"/home/saul/projects/KISTA/lvs_runs/PIPO1.LOG"
 maxVertices	2048
 pinAttNum	0
 runDir	"/home/saul/projects/KISTA/lvs_runs"
-strmFile	"/home/saul/projects/KISTA/lvs_runs/NOR3X1.gds"
+strmFile	"/home/saul/projects/KISTA/lvs_runs/INVX1.gds"
 strmVersion	5
 techLib	"KISTA_SOI_STDLIB_TECH"
-topCell	"NOR3X1"
+topCell	"INVX1"
 view	"layout"

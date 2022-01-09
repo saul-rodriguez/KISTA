@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/saul/projects/KISTA
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/saul/projects/KISTA/drc_runs/.preset.autosave
-"Job Signature" internal none IPVS_1640092159_5950
+"Job Signature" internal none IPVS_1641692186_2039
 "PVS Job Mode" internal none drc
 "Run Directory" internal none /home/saul/projects/KISTA/drc_runs
 "Technology Mapping File" internal none /home/saul/projects/KISTA/pvtech.lib
@@ -12,19 +12,19 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1640092161
+"PVS Job Time" internal none 1641692187
 "Cell Tree" output text /home/saul/projects/KISTA/drc_runs/cell_tree.txt
 "Control File" input text /home/saul/projects/KISTA/drc_runs/pvsdrcctl
 "DFII version" internal none 6.1.8.0
 "Do not check rules files before run" internal none ENABLED
-"Input Layout" input none OA: KISTA_SOI_STDLIB NOR3X1 layout
-"Intermediate GDSII File" output none /home/saul/projects/KISTA/drc_runs/NOR3X1.gds
+"Input Layout" input none OA: KISTA_SOI_STDLIB INVX1 layout
+"Intermediate GDSII File" output none /home/saul/projects/KISTA/drc_runs/INVX1.gds
 "Intermediate GDSII File creation Errors" output none /home/saul/projects/KISTA/drc_runs/PIPO1.LOG
 "Intermediate OASIS File creation Errors" output none /home/saul/projects/KISTA/drc_runs/PIPO1.LOG
-"Job Signature" internal none IPVS_1640092159_5950
-"Layout Cell Name" internal none NOR3X1
+"Job Signature" internal none IPVS_1641692186_2039
+"Layout Cell Name" internal none INVX1
 "Layout ConvertPin" internal text geometry
-"Layout GDSII" input none /home/saul/projects/KISTA/drc_runs/NOR3X1.gds
+"Layout GDSII" input none /home/saul/projects/KISTA/drc_runs/INVX1.gds
 "Layout HierDepth" internal none 32
 "Layout Layermap" internal text /home/saul/projects/KISTA/pvs/kista_1u.layermap
 "Layout Library Name" internal none KISTA_SOI_STDLIB
@@ -33,7 +33,7 @@
 "Layout ReplaceBusBitChar" input none nil
 "Layout Scale" internal none 0.0005
 "Layout TechLib" internal none KISTA_SOI_STDLIB_TECH
-"Layout Top Cell" internal none NOR3X1
+"Layout Top Cell" internal none INVX1
 "Layout View Name" internal none layout
 "Output Layout Cellmap I" internal text /home/saul/projects/KISTA/drc_runs/lay_cellMap.txt
 "PIPO Log I" log text  /home/saul/projects/KISTA/drc_runs/PIPO1.LOG
@@ -46,11 +46,11 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1640092161
-"ASCII DRC Report Database" output rdb /home/saul/projects/KISTA/drc_runs/NOR3X1.drc_errors.ascii
+"PVS Job Time" internal none 1641692188
+"ASCII DRC Report Database" output rdb /home/saul/projects/KISTA/drc_runs/INVX1.drc_errors.ascii
 "Cell Tree" output text /home/saul/projects/KISTA/drc_runs/cell_tree.txt
-"DRC Summary" output text /home/saul/projects/KISTA/drc_runs/NOR3X1.sum
-"Layout GDSII" input none /home/saul/projects/KISTA/drc_runs/NOR3X1.gds
+"DRC Summary" output text /home/saul/projects/KISTA/drc_runs/INVX1.sum
+"Layout GDSII" input none /home/saul/projects/KISTA/drc_runs/INVX1.gds
 "PVS Job Mode" internal none drc
 "Report MaxResults" internal none 1000
 "Rule File" input text /home/saul/projects/KISTA/drc_runs/.technology.rul
@@ -59,4 +59,4 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1640092161
+"PVS Job Time" internal none 1641692188

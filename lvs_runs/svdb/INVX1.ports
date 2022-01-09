@@ -1,6 +1,6 @@
 # SVDB: Port Table (ports)
 # SVDB: Layout Primary INVX1
-Y 3 Y 20800 43600 metal1_conn
+Y 3 Y 16600 36000 metal1_conn
 A 4 A 2800 36200 metal1_conn
 VDD! 5 VDD! 4000 72600 metal1_conn
 VSS! 2 VSS! 4200 0 metal1_conn

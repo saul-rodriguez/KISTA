@@ -7,9 +7,9 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      32282
-Starting Time:   Tue Dec 21 14:09:38 2021 (Tue Dec 21 13:09:38 2021 GMT)
-With parameters: -lvs -get_rules /tmp/pvsrng.5950@s2424.1 -tc top -gds /dev/null -get_options /tmp/pvsoptpar.5950@s2424.1 -gen_tags /tmp/pvsgentags.5950@s2424.1 -stc top -cdl . -control /tmp/ipvsRulesCheckControl.5950@s2424.1 /home/saul/projects/KISTA/lvs_runs/.technology.rul.5950@s2424.1 
+Process Id:      25790
+Starting Time:   Sun Jan  9 01:14:24 2022 (Sun Jan  9 00:14:24 2022 GMT)
+With parameters: -lvs -get_rules /tmp/pvsrng.2039@s2424.1 -tc top -gds /dev/null -get_options /tmp/pvsoptpar.2039@s2424.1 -gen_tags /tmp/pvsgentags.2039@s2424.1 -stc top -cdl . -control /tmp/ipvsRulesCheckControl.2039@s2424.1 /home/saul/projects/KISTA/lvs_runs/.technology.rul.2039@s2424.1 
 ********************************************************************************
 
 
@@ -18,7 +18,7 @@ Get host info ...
 ########################################################################
 CPU info:
     model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
-    cpu MHz         :  2299.951
+    cpu MHz         :  1205.273
     cache size      :  20480 KB
     physical cores  :  16
     logical cores   :  32
@@ -28,42 +28,42 @@ Memory info:
     64168M physical memory installed.
 
     MemTotal:       65709328 kB
-    MemFree:          916404 kB
-    MemAvailable:   15902392 kB
+    MemFree:         3406836 kB
+    MemAvailable:   30174640 kB
     Buffers:               0 kB
-    Cached:         15422248 kB
-    SwapCached:       133520 kB
-    Active:         48574012 kB
-    Inactive:       12174764 kB
-    Active(anon):   41964064 kB
-    Inactive(anon):  4561792 kB
-    Active(file):    6609948 kB
-    Inactive(file):  7612972 kB
+    Cached:         25834820 kB
+    SwapCached:       122856 kB
+    Active:         43476868 kB
+    Inactive:       14004388 kB
+    Active(anon):   28705992 kB
+    Inactive(anon):  3302548 kB
+    Active(file):   14770876 kB
+    Inactive(file): 10701840 kB
     Unevictable:           0 kB
     Mlocked:               0 kB
     SwapTotal:      32964604 kB
-    SwapFree:       14838732 kB
-    Dirty:               176 kB
+    SwapFree:        4955776 kB
+    Dirty:                12 kB
     Writeback:             0 kB
-    AnonPages:      45194152 kB
-    Mapped:           404808 kB
-    Shmem:           1199292 kB
-    Slab:            1651756 kB
-    SReclaimable:    1255056 kB
-    SUnreclaim:       396700 kB
-    KernelStack:       12928 kB
-    PageTables:       173884 kB
+    AnonPages:      31524140 kB
+    Mapped:           582660 kB
+    Shmem:            362104 kB
+    Slab:            2348368 kB
+    SReclaimable:    1787076 kB
+    SUnreclaim:       561292 kB
+    KernelStack:       12800 kB
+    PageTables:       154224 kB
     NFS_Unstable:          0 kB
     Bounce:                0 kB
     WritebackTmp:          0 kB
     CommitLimit:    65819268 kB
-    Committed_AS:   60750940 kB
+    Committed_AS:   51631748 kB
     VmallocTotal:   34359738367 kB
     VmallocUsed:      422088 kB
     VmallocChunk:   34325399548 kB
     Percpu:            10240 kB
     HardwareCorrupted:     0 kB
-    AnonHugePages:   1974272 kB
+    AnonHugePages:   1654784 kB
     CmaTotal:              0 kB
     CmaFree:               0 kB
     HugePages_Total:       0
@@ -85,13 +85,13 @@ ENV VAR: TCLLIBPATH = /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cad
 
 
 ########################################################################
-Parsing Control File /tmp/ipvsRulesCheckControl.5950@s2424.1 ...
+Parsing Control File /tmp/ipvsRulesCheckControl.2039@s2424.1 ...
 ########################################################################
-RESULTS_DB -erc "/home/saul/projects/KISTA/lvs_runs/NOR3X1.erc_errors.ascii" -ascii;
+RESULTS_DB -erc "/home/saul/projects/KISTA/lvs_runs/DFFSRX1.erc_errors.ascii" -ascii;
 LVS_RUN_ERC_CHECKS yes;
 
 ########################################################################
-Parsing Rule File /home/saul/projects/KISTA/lvs_runs/.technology.rul.5950@s2424.1 ...
+Parsing Rule File /home/saul/projects/KISTA/lvs_runs/.technology.rul.2039@s2424.1 ...
 ########################################################################
 TECHNOLOGY kista_pvs -ruleSet default -techLib /home/saul/projects/KISTA/pvtech.lib;
 [WARN] The rule set 'default' in technology 'kista_pvs' has file './pvlLVS.rul' given for 'ErcRules'. However, this file does not exist, or cannot be read, and will be ignored.
@@ -341,6 +341,6 @@ Total ERC RuleChecks              : 0
 Total ERC Results                 : 0 (0)
 
 
-Netlist Extraction Finished Normally. Tue Dec 21 14:09:38 2021
+Netlist Extraction Finished Normally. Sun Jan  9 01:14:24 2022
 
 

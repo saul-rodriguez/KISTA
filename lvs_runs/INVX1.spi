@@ -2,7 +2,7 @@
 * CDL Netlist:                                              *
 *                                                           *
 * Cell Name  : INVX1                                        *
-* Netlisted  : Fri Dec 17 09:22:58 2021                     *
+* Netlisted  : Sun Jan  9 02:37:03 2022                     *
 * PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
 *.LDD
@@ -30,6 +30,6 @@ M0 3 4 2 2 pmos3 L=1e-06 W=4e-06 AD=1e-11 AS=0 PD=1.3e-05 PS=0 fw=4e-06 sa=2e-06
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
 .subckt INVX1 A VDD! VSS! Y
 ** N=5 EP=4 FDC=2
-X0 VSS! Y A nmos3_CDNS_2 $T=20000 23800 1 180 $X=4000 $Y=23800
-X1 VDD! Y A pmos3_CDNS_3 $T=20000 52200 0 180 $X=4000 $Y=38200
+X0 VSS! Y A nmos3_CDNS_2 $T=20000 4000 1 180 $X=4000 $Y=4000
+X1 VDD! Y A pmos3_CDNS_3 $T=20000 68000 0 180 $X=4000 $Y=54000
 .ends INVX1

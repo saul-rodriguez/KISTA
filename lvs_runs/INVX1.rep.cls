@@ -3,21 +3,21 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Tue Dec 21 14:09:51 2021
-#####  ERC Summary File              :   NOR3X1.sum
-#####  Extraction Report File        :   NOR3X1.rep
-#####  Comparison Report File        :   NOR3X1.rep.cls
-#####  Top Cell                      :   NOR3X1  <vs>  NOR3X1
+#####  NVN Run Start                 :   Sun Jan  9 02:37:05 2022
+#####  ERC Summary File              :   INVX1.sum
+#####  Extraction Report File        :   INVX1.rep
+#####  Comparison Report File        :   INVX1.rep.cls
+#####  Top Cell                      :   INVX1  <vs>  INVX1
 #####  
 #####  Run Result                    :   MATCH
 #####  
 #####  Run Summary                   :   [INFO]  ERC Results: Empty
 #####                                :   [INFO]  Extraction Clean
 #####  
-#####  Layout Design                 :   KISTA_SOI_STDLIB NOR3X1 layout
-#####  Schematic File                :   /home/saul/projects/KISTA/lvs_runs/NOR3X1.cdl (cdl)
+#####  Layout Design                 :   KISTA_SOI_STDLIB INVX1 layout
+#####  Schematic File                :   /home/saul/projects/KISTA/lvs_runs/INVX1.cdl (cdl)
 #####  Rules File                    :   .technology.rul
-#####  Pin Swap File                 :   NOR3X1.rep.cps
+#####  Pin Swap File                 :   INVX1.rep.cps
 #####  
 #####  Extraction CPU Time           :   0h 0m 0s - (0s)
 #####  Extraction Exec Time          :   0h 0m 0s - (0s)
@@ -61,10 +61,10 @@ Cells that have been blackboxed              |         0
 #
 ##############################################################################################################
 
-           |     Initial Pins     |     Compare Pins     |            | 
-Cell       |   lay    :    sch    |   lay    :    sch    | Status     | Detail
------------+----------+-----------+----------+-----------+------------+-----------
-NOR3X1     |       *6 :         4 |        6 :         6 | match      | 
+          |     Initial Pins     |     Compare Pins     |            | 
+Cell      |   lay    :    sch    |   lay    :    sch    | Status     | Detail
+----------+----------+-----------+----------+-----------+------------+-----------
+INVX1     |       *4 :         2 |        4 :         4 | match      | 
 
 
 ##############################################################################################################
@@ -76,8 +76,8 @@ NOR3X1     |       *6 :         4 |        6 :         6 | match      |
 Command Line LVS Rule Values
 ----------------------------
 
-    layout_primary                          NOR3X1 {-top_cell NOR3X1}
-    schematic_primary                       NOR3X1 {-source_top_cell NOR3X1}
+    layout_primary                          INVX1 {-top_cell INVX1}
+    schematic_primary                       INVX1 {-source_top_cell INVX1}
 
 LVS Rules Given in the Rules File
 ---------------------------------
@@ -85,9 +85,9 @@ LVS Rules Given in the Rules File
     lvs_abort                               -softchk                               no  
     lvs_abort                               -supply_error                          no  
     lvs_abort                               -check_device_for_property_rule        no  
-    layout_path                             /home/saul/projects/KISTA/lvs_runs/NOR3X1.gds
+    layout_path                             /home/saul/projects/KISTA/lvs_runs/INVX1.gds
     layout_format                           gdsii
-    schematic_path                          /home/saul/projects/KISTA/lvs_runs/NOR3X1.cdl
+    schematic_path                          /home/saul/projects/KISTA/lvs_runs/INVX1.cdl
     schematic_format                        cdl
     lvs_netlist                             yes -allow_inconsistent_model
                                              
@@ -103,7 +103,7 @@ LVS Rules Given in the Rules File
     lvs_check_property                      MN ( nmos4 ) w w -tolerance 0
     lvs_check_property                      MP ( pmos4 ) l l -tolerance 0
     lvs_check_property                      MP ( pmos4 ) w w -tolerance 0
-    lvs_report_file                         NOR3X1.rep
+    lvs_report_file                         INVX1.rep
     lvs_report_max                          50 -mismatched_net_limit 100 
     lvs_map_device                          M ( nmos4 ) MN ( nmos4 ) -source_layout
     lvs_map_device                          M ( pmos4 ) MP ( pmos4 ) -source_layout
@@ -266,12 +266,12 @@ Effective LVS Rule Values
                               |                                                |
                               |        ------->>>   MATCH   <<<-------         |
                               |                                                |
-                              |              NOR3X1  <vs>  NOR3X1              |
+                              |               INVX1  <vs>  INVX1               |
                               |                                                |
                               |                                                |
                               +------------------------------------------------+
 
-+===[NOR3X1]==================================================================================================
++===[INVX1]===================================================================================================
 |                                                 STATISTICS                                                  
 +=============================================================================================================
 
@@ -280,23 +280,23 @@ Effective LVS Rule Values
 Cell            |   lay   :   sch   |   lay   :   sch   |   lay   :  sch
 ----------------+---------+---------+---------+---------+---------+--------
 MP [4 pins]     |         :         |         :         |         :        
- MP(PMOS3)      |       3 :       3 |       3 :       3 |       3 :       3
+ MP(PMOS3)      |       1 :       1 |       1 :       1 |       1 :       1
 MN [4 pins]     |         :         |         :         |         :        
- MN(NMOS3)      |       3 :       3 |       3 :       3 |       3 :       3
+ MN(NMOS3)      |       1 :       1 |       1 :       1 |       1 :       1
 ----------------+---------+---------+---------+---------+---------+--------
-Total           |       6 :       6 |       6 :       6 |       6 :       6
+Total           |       2 :       2 |       2 :       2 |       2 :       2
 ================+=========+=========+=========+=========+=========+========
-Pins            |         :         |         :         |       6 :       6
-Nets            |         :         |         :         |       2 :       2
+Pins            |         :         |         :         |       4 :       4
+Nets            |         :         |         :         |       0 :       0
 ================+=========+=========+=========+=========+=========+========
 
-+===[NOR3X1]==================================================================================================
++===[INVX1]===================================================================================================
 |                                           INITIAL CORRESPONDENCES                                           
 +=============================================================================================================
 
 Type     | Name
----------+----------------------
-Pin      | A B C VDD! VSS! Y
+---------+------------------
+Pin      | A VDD! VSS! Y
 
 
 ##############################################################################################################

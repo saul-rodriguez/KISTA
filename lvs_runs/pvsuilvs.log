@@ -5,19 +5,18 @@ Running: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/pvsvirt \
   -df2_version 6.1.8.0 \
   -run_dir /home/saul/projects/KISTA/lvs_runs \
   -no_rules_check \
-  -rc_data \
   -schLibName KISTA_SOI_STDLIB \
-  -schCellName NOR3X1 \
+  -schCellName INVX1 \
   -schViewName schematic \
   -simViewList auCdl\ schematic \
   -simStopList auCdl \
   -displayPinInfo \
-  -source_cdl /home/saul/projects/KISTA/lvs_runs/NOR3X1.cdl \
-  -spice /home/saul/projects/KISTA/lvs_runs/NOR3X1.spi \
+  -source_cdl /home/saul/projects/KISTA/lvs_runs/INVX1.cdl \
+  -spice /home/saul/projects/KISTA/lvs_runs/INVX1.spi \
   -layLibName KISTA_SOI_STDLIB \
-  -layCellName NOR3X1 \
+  -layCellName INVX1 \
   -layViewName layout \
-  -igds /home/saul/projects/KISTA/lvs_runs/NOR3X1.gds \
+  -igds /home/saul/projects/KISTA/lvs_runs/INVX1.gds \
   -layScale 0.0005 \
   -layTechLib KISTA_SOI_STDLIB_TECH \
   -layLayerMap /home/saul/projects/KISTA/pvs/kista_1u.layermap \
@@ -30,13 +29,13 @@ Running: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/pvsvirt \
 
 
 
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
 INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
 ********************************************************************************
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $
           : sub-version  IC6.1.8-64b.500.7 
-Started at: 21-Dec-2021  14:09:45
+Started at: 09-Jan-2022  02:36:59
 User Name : saul
 Host Name : s2424
 Directory : /home/saul/projects/KISTA
@@ -46,7 +45,7 @@ Info: Cellview Rev Num:99,  Tech Rev Num:59
 
 *WARNING* The directory: '/home/saul/projects/KISTA/KISTA' does not exist
 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KISTA/lvs_runs/NOR3X1.gds' already exists. It will be overwritten.
+WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KISTA/lvs_runs/INVX1.gds' already exists. It will be overwritten.
 INFO (XSTRM-217): Reading the layer map file, /home/saul/projects/KISTA/pvs/kista_1u.layermap
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Oxide_thk' at line number '5' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Nhvt' at line number '8' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -55,6 +54,8 @@ WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.l
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Plvt' at line number '12' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Nzvt' at line number '13' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'SiProt' at line number '14' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Via3' at line number '21' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal4' at line number '22' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Via4' at line number '23' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal5' at line number '24' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Via5' at line number '25' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -71,6 +72,7 @@ WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.l
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal11' at line number '36' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'CapMetal' at line number '37' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Nburied' at line number '38' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal4' at line number '43' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal5' at line number '44' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal6' at line number '45' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal7' at line number '46' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -78,6 +80,7 @@ WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.l
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal9' at line number '48' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal10' at line number '49' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal11' at line number '50' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal4' at line number '54' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal5' at line number '55' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal6' at line number '56' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal7' at line number '57' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -85,6 +88,7 @@ WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.l
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal9' at line number '59' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal10' at line number '60' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal11' at line number '61' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal4' at line number '65' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal5' at line number '66' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal6' at line number '67' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal7' at line number '68' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -92,6 +96,7 @@ WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.l
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal9' at line number '70' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal10' at line number '71' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal11' at line number '72' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal4' at line number '76' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal5' at line number '77' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal6' at line number '78' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Metal7' at line number '79' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -107,6 +112,7 @@ WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.l
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'IND3dummy' at line number '89' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'Resdum' at line number '90' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'ResWdum' at line number '91' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'M4Resdum' at line number '95' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'M5Resdum' at line number '96' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'M6Resdum' at line number '97' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/home/saul/projects/KISTA/pvs/kista_1u.layermap' contains unknown layer 'M7Resdum' at line number '98' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -130,8 +136,8 @@ INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design 
 
 Summary of Options :
 library                                 KISTA_SOI_STDLIB
-strmFile                                /home/saul/projects/KISTA/lvs_runs/NOR3X1.gds
-topCell                                 NOR3X1
+strmFile                                /home/saul/projects/KISTA/lvs_runs/INVX1.gds
+topCell                                 INVX1
 view                                    layout
 runDir                                  /home/saul/projects/KISTA/lvs_runs
 logFile                                 /home/saul/projects/KISTA/lvs_runs/PIPO1.LOG
@@ -150,15 +156,16 @@ INFO (XSTRM-223): 1. Translating stdVia KISTA_SOI_TECH/M1_PO/layout as STRUCTURE
 Express Pcell license has been checked out for the Express Pcell feature.
 INFO (XSTRM-223): 2. Translating cellView KISTA_1UM/nmos3/layout as STRUCTURE nmos3_CDNS_2.
 INFO (XSTRM-223): 3. Translating cellView KISTA_1UM/pmos3/layout as STRUCTURE pmos3_CDNS_3.
-INFO (XSTRM-223): 4. Translating cellView KISTA_SOI_STDLIB/NOR3X1/layout as STRUCTURE NOR3X1.
+INFO (XSTRM-223): 4. Translating cellView KISTA_SOI_STDLIB/INVX1/layout as STRUCTURE INVX1.
 INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'Via1:blockage' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
 
 Summary of Objects Translated:
-	Scalar Instances:                       6
+	Scalar Instances:                       2
 	Array Instances:                        0
 	Polygons:                               0
 	Paths:                                  0
-	Rectangles:                             51
+	Rectangles:                             36
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -170,18 +177,18 @@ Summary of Objects Translated:
 	Area Halos:                             0
 	Markers:                                0
 	Rows:                                   0
-	Standard Vias                           3
+	Standard Vias                           1
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               21
+	Pathsegs:                               10
 	Text:                                   0
-	TextDisplay:                            6
+	TextDisplay:                            4
 	Cells:                                  4
 
-Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 6280KB
-INFO (XSTRM-234): Translation completed. '0' error(s) and '79' warning(s) found.
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 6268KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '87' warning(s) found.
 
-Creation of CDL for KISTA_SOI_STDLIB/NOR3X1/schematic is started
+Creation of CDL for KISTA_SOI_STDLIB/INVX1/schematic is started
  si -batch /home/saul/projects/KISTA/lvs_runs/ >/home/saul/projects/KISTA/lvs_runs/SI.OUT 2>/home/saul/projects/KISTA/lvs_runs/SI.LOG 
 Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
 INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
@@ -197,7 +204,7 @@ updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
 Running Artist Hierarchical Netlisting ...
 KISTA libInit.il file is loaded
 initializing MOS callbacks
-End netlisting Dec 21 14:09:46 2021
+End netlisting Jan  9 02:37:00 2022
 
 Running simin
 
@@ -205,10 +212,10 @@ Running runSim()...
 
 
 Running runsim with simulator: "auCdl"
-Begin simulation:    Dec 21 14:09:46 2021
+Begin simulation:    Jan  9 02:37:00 2022
 
 auCdl netlisting completed
-End simulation:      Dec 21 14:09:46 2021
+End simulation:      Jan  9 02:37:00 2022
 INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.
 
 ********************************************************************************
@@ -220,9 +227,9 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      32561
-Starting Time:   Tue Dec 21 14:09:49 2021 (Tue Dec 21 13:09:49 2021 GMT)
-With parameters: -lvs -top_cell NOR3X1 -source_top_cell NOR3X1 -spice /home/saul/projects/KISTA/lvs_runs/NOR3X1.spi -rc_data -control /home/saul/projects/KISTA/lvs_runs/pvslvsctl -ui_data -gdb_data -ai /home/saul/projects/KISTA/lvs_runs/.technology.rul 
+Process Id:      5797
+Starting Time:   Sun Jan  9 02:37:03 2022 (Sun Jan  9 01:37:03 2022 GMT)
+With parameters: -lvs -top_cell INVX1 -source_top_cell INVX1 -spice /home/saul/projects/KISTA/lvs_runs/INVX1.spi -control /home/saul/projects/KISTA/lvs_runs/pvslvsctl -ui_data -gdb_data -ai /home/saul/projects/KISTA/lvs_runs/.technology.rul 
 ********************************************************************************
 
 
@@ -231,7 +238,7 @@ Get host info ...
 ########################################################################
 CPU info:
     model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
-    cpu MHz         :  2094.580
+    cpu MHz         :  1247.753
     cache size      :  20480 KB
     physical cores  :  16
     logical cores   :  32
@@ -241,42 +248,42 @@ Memory info:
     64168M physical memory installed.
 
     MemTotal:       65709328 kB
-    MemFree:          908368 kB
-    MemAvailable:   15897724 kB
+    MemFree:         3121340 kB
+    MemAvailable:   29923280 kB
     Buffers:               0 kB
-    Cached:         15425476 kB
-    SwapCached:       133520 kB
-    Active:         48575564 kB
-    Inactive:       12178064 kB
-    Active(anon):   41965688 kB
-    Inactive(anon):  4561792 kB
-    Active(file):    6609876 kB
-    Inactive(file):  7616272 kB
+    Cached:         25869092 kB
+    SwapCached:       122856 kB
+    Active:         43738636 kB
+    Inactive:       14021604 kB
+    Active(anon):   28950708 kB
+    Inactive(anon):  3302600 kB
+    Active(file):   14787928 kB
+    Inactive(file): 10719004 kB
     Unevictable:           0 kB
     Mlocked:               0 kB
     SwapTotal:      32964604 kB
-    SwapFree:       14838732 kB
-    Dirty:               248 kB
+    SwapFree:        4955776 kB
+    Dirty:                84 kB
     Writeback:             0 kB
-    AnonPages:      45194116 kB
-    Mapped:           406536 kB
-    Shmem:           1199292 kB
-    Slab:            1652016 kB
-    SReclaimable:    1255196 kB
-    SUnreclaim:       396820 kB
-    KernelStack:       13008 kB
-    PageTables:       174764 kB
+    AnonPages:      31768416 kB
+    Mapped:           604432 kB
+    Shmem:            362160 kB
+    Slab:            2348640 kB
+    SReclaimable:    1786996 kB
+    SUnreclaim:       561644 kB
+    KernelStack:       13152 kB
+    PageTables:       157176 kB
     NFS_Unstable:          0 kB
     Bounce:                0 kB
     WritebackTmp:          0 kB
     CommitLimit:    65819268 kB
-    Committed_AS:   60754320 kB
+    Committed_AS:   52066988 kB
     VmallocTotal:   34359738367 kB
     VmallocUsed:      422088 kB
     VmallocChunk:   34325399548 kB
     Percpu:            10240 kB
     HardwareCorrupted:     0 kB
-    AnonHugePages:   1974272 kB
+    AnonHugePages:   1654784 kB
     CmaTotal:              0 kB
     CmaFree:               0 kB
     HugePages_Total:       0
@@ -313,20 +320,19 @@ LVS_ABORT -supply_error no;
 LVS_ABORT -check_device_for_property_rule no;
 LVS_FIND_SHORTS no;
 SCONNECT_UPPER_SHAPE_COUNT no;
-LVS_REPORT_FILE "NOR3X1.rep";
+LVS_REPORT_FILE "INVX1.rep";
 LVS_REPORT_MAX 50 -mismatched_net_limit 100;
 LVS_RUN_ERC_CHECKS yes;
 LVS_REPORT_OPT -none;
-REPORT_SUMMARY -erc "NOR3X1.sum" -replace;
+REPORT_SUMMARY -erc "INVX1.sum" -replace;
 MAX_RESULTS -erc 1000;
-RESULTS_DB -erc "/home/saul/projects/KISTA/lvs_runs/NOR3X1.erc_errors.ascii" -ascii;
-MASK_SVDB_DIR /home/saul/projects/KISTA/lvs_runs/svdb;
+RESULTS_DB -erc "/home/saul/projects/KISTA/lvs_runs/INVX1.erc_errors.ascii" -ascii;
 KEEP_LAYERS -none;
 SCHEMATIC_FORMAT cdl;
-SCHEMATIC_PATH "/home/saul/projects/KISTA/lvs_runs/NOR3X1.cdl";
+SCHEMATIC_PATH "/home/saul/projects/KISTA/lvs_runs/INVX1.cdl";
 ABORT_ON_LAYOUT_ERROR yes;
 LAYOUT_FORMAT gdsii;
-LAYOUT_PATH "/home/saul/projects/KISTA/lvs_runs/NOR3X1.gds";
+LAYOUT_PATH "/home/saul/projects/KISTA/lvs_runs/INVX1.gds";
 
 ########################################################################
 Parsing Rule File /home/saul/projects/KISTA/lvs_runs/.technology.rul ...
@@ -343,7 +349,6 @@ UNIT -length u;
 TEXT_DEPTH -primary;
 [WARN]: TEXT_DEPTH at line 20 in file /home/saul/projects/KISTA/pvs/./kista_lvs.rul is skipped. It is set in control file.
 MASK_SVDB_DIR svdb;
-[WARN]: MASK_SVDB_DIR at line 21 in file /home/saul/projects/KISTA/pvs/./kista_lvs.rul is skipped. It is set in control file.
 LAYOUT_PRESERVE_CASE -property yes;
 LAYER_DEF empty 999;
 LAYER_DEF Metal1 1020;
@@ -558,23 +563,23 @@ Checking out SoftShare license Phys_Ver_Sys_LVS_XL 16.1 Qty: 1 ... succeeded (1s
 Optimizing Rules ...
 ########################################################################
 [WARN] Neither hcell nor -automatch option is specified.
-Time: cpu=0.01/0.01  real=0.07/0.07  Memory: 9.14/9.24/11.50
+Time: cpu=0.02/0.02  real=0.07/0.07  Memory: 9.14/9.24/11.50
 
 
 ########################################################################
 Loading Layout Data ...
 ########################################################################
-Parsing Layer Mapping File NOR3X1.lmap ...
+Parsing Layer Mapping File INVX1.lmap ...
 
 GDSII Input Summary
 
-Date: Tue Dec 21 14:09:50 2021
-GDSII file: /home/saul/projects/KISTA/lvs_runs/NOR3X1.gds
-GDSII size: 6144
+Date: Sun Jan  9 02:37:03 2022
+GDSII file: /home/saul/projects/KISTA/lvs_runs/INVX1.gds
+GDSII size: 4096
 GDSII version: 5.0
 GDSII library name: KISTA_SOI_STDLIB
-Last Modified: 14:9:7 12/21/2021
-Last Accessed: 14:9:45 12/21/2021
+Last Modified: 2:36:19 1/9/2022
+Last Accessed: 2:36:59 1/9/2022
 data base unit in user units    : 0.0005
 physical size of data base unit : 5e-10
 magnification: 1
@@ -582,39 +587,39 @@ magnification: 1
 loading cell M1_PO_CDNS_1 ...
 loading cell nmos3_CDNS_2 ...
 loading cell pmos3_CDNS_3 ...
-loading cell NOR3X1 ...
-Time: cpu=0.01/0.02  real=0.06/0.12  Memory: 17.20/17.38/17.38
+loading cell INVX1 ...
+Time: cpu=0.01/0.03  real=0.04/0.11  Memory: 17.20/17.38/17.38
 
 
 Cell Summary:
 ----------------------------------------------------------------------------
     CELL            INSTANCE    GEOMETRY      LABELS        HREF        FREF
 ----------------------------------------------------------------------------
-M1_PO_CDNS_1               0           3           0           3           3
-nmos3_CDNS_2               0          12           0           3           3
-pmos3_CDNS_3               0          23           0           3           3
-NOR3X1                     9          33           6           1           1
+M1_PO_CDNS_1               0           3           0           1           1
+nmos3_CDNS_2               0          12           0           1           1
+pmos3_CDNS_3               0          15           0           1           1
+INVX1                      3          15           4           1           1
 ----------------------------------------------------------------------------
-TOTAL CELL = 4;  INSTANCE = 9;  GEOMETRY = 71;  LABEL = 6
+TOTAL CELL = 4;  INSTANCE = 3;  GEOMETRY = 45;  LABEL = 4
 
 Layer Summary:
 ----------------------------------------------------------------------------
     LAYER               ID       HPN      HTC        FPN       FTC
 ----------------------------------------------------------------------------
-Cont                  1005        17         0        51         0
+Cont                  1005         9         0         9         0
 M1Resdum              1009         0         0         0         0
 M2Resdum              1010         0         0         0         0
 M3Resdum              1011         0         0         0         0
 M4Resdum              1012         0         0         0         0
-Metal1                1020        36         0        54         0
+Metal1                1020        21         0        21         0
 Metal2                1021         0         0         0         0
 Metal3                1022         0         0         0         0
 Metal4                1023         0         0         0         0
-Nimp                  1037         1         0         3         0
-Nwell                 1039         1         0         3         0
-Oxide                 1041         2         0         6         0
-Pimp                  1045         1         0         3         0
-Poly                  1047        11         0        21         0
+Nimp                  1037         1         0         1         0
+Nwell                 1039         1         0         1         0
+Oxide                 1041         2         0         2         0
+Pimp                  1045         1         0         1         0
+Poly                  1047         8         0         8         0
 Psub                  1048         0         0         0         0
 ResWdum               1049         0         0         0         0
 Resdum                1050         0         0         0         0
@@ -625,7 +630,7 @@ metal1_conn_text      1064         0         0         0         0
 metal2_conn_text      1065         0         0         0         0
 metal3_conn_text      1066         0         0         0         0
 metal4_conn_text      1067         0         0         0         0
-m1_label              1076         0         6         0         6
+m1_label              1076         0         4         0         4
 m2_label              1077         0         0         0         0
 m3_label              1078         0         0         0         0
 m4_label              1079         0         0         0         0
@@ -637,12 +642,12 @@ text                  1098         0         0         0         0
 nwell_conn_text      10645         0         0         0         0
 nwell_label          10765         0         0         0         0
 nwell_pin            10875         0         0         0         0
-KTH_source           11000         2         0         6         0
+KTH_source           11000         2         0         2         0
 ----------------------------------------------------------------------------
 
-CHIP EXTENT: 0 -2000 48000 74000
+CHIP EXTENT: 0 -2000 24000 74000
 
-Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.22/17.38/17.38
+Time: cpu=0.00/0.03  real=0.00/0.11  Memory: 17.21/17.38/17.38
 
 
 Ports ...
@@ -650,12 +655,10 @@ Ports ...
 
 Texts For Connectivity ...
 ========================================================================
-Y (22.000, 9.800) 1076 NOR3X1
-VSS! (6.900, -0.500) 1076 NOR3X1
-VDD! (3.800, 36.000) 1076 NOR3X1
-C (18.100, 17.700) 1076 NOR3X1
-B (10.000, 13.800) 1076 NOR3X1
-A (2.000, 10.000) 1076 NOR3X1
+Y (8.300, 18.000) 1076 INVX1
+VSS! (2.100, 0.000) 1076 INVX1
+VDD! (2.000, 36.300) 1076 INVX1
+A (1.400, 18.100) 1076 INVX1
 
 Texts For SELECT -LABEL ...
 ========================================================================
@@ -679,47 +682,47 @@ Preparing Hierarchical Database ...
 Constructing Hierarchical Database ...
 ========================================================================
 
-Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 17.22/17.38/17.38
+    M1_PO_CDNS_1 is expanded.
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.21/17.38/17.38
 
 
   REORGANIZE HIERARCHIES (1)...
 
-Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 17.22/17.38/17.38
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.21/17.38/17.38
 
   REORGANIZE HIERARCHIES (2)...
 
-Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 17.22/17.38/17.38
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.21/17.38/17.38
 
 
 Cell Summary:
 ----------------------------------------------------------------------------
     CELL            INSTANCE    GEOMETRY      LABELS        HREF        FREF
 ----------------------------------------------------------------------------
-M1_PO_CDNS_1               0           3           0           3           3
-nmos3_CDNS_2               0          12           0           3           3
-pmos3_CDNS_3               0          23           0           3           3
-NOR3X1                     9          33           6           1           1
+nmos3_CDNS_2               0          12           0           1           1
+pmos3_CDNS_3               0          15           0           1           1
+INVX1                      2          18           4           1           1
 ----------------------------------------------------------------------------
-TOTAL CELL = 4;  INSTANCE = 9;  GEOMETRY = 71;  LABEL = 6
+TOTAL CELL = 3;  INSTANCE = 2;  GEOMETRY = 45;  LABEL = 4
 
 Layer Summary:
 ----------------------------------------------------------------------------
     LAYER               ID       HPN      HTC        FPN       FTC
 ----------------------------------------------------------------------------
-Cont                  1005        17         0        51         0
+Cont                  1005         9         0         9         0
 M1Resdum              1009         0         0         0         0
 M2Resdum              1010         0         0         0         0
 M3Resdum              1011         0         0         0         0
 M4Resdum              1012         0         0         0         0
-Metal1                1020        36         0        54         0
+Metal1                1020        21         0        21         0
 Metal2                1021         0         0         0         0
 Metal3                1022         0         0         0         0
 Metal4                1023         0         0         0         0
-Nimp                  1037         1         0         3         0
-Nwell                 1039         1         0         3         0
-Oxide                 1041         2         0         6         0
-Pimp                  1045         1         0         3         0
-Poly                  1047        11         0        21         0
+Nimp                  1037         1         0         1         0
+Nwell                 1039         1         0         1         0
+Oxide                 1041         2         0         2         0
+Pimp                  1045         1         0         1         0
+Poly                  1047         8         0         8         0
 Psub                  1048         0         0         0         0
 ResWdum               1049         0         0         0         0
 Resdum                1050         0         0         0         0
@@ -730,7 +733,7 @@ metal1_conn_text      1064         0         0         0         0
 metal2_conn_text      1065         0         0         0         0
 metal3_conn_text      1066         0         0         0         0
 metal4_conn_text      1067         0         0         0         0
-m1_label              1076         0         6         0         6
+m1_label              1076         0         4         0         4
 m2_label              1077         0         0         0         0
 m3_label              1078         0         0         0         0
 m4_label              1079         0         0         0         0
@@ -742,14 +745,14 @@ text                  1098         0         0         0         0
 nwell_conn_text      10645         0         0         0         0
 nwell_label          10765         0         0         0         0
 nwell_pin            10875         0         0         0         0
-KTH_source           11000         2         0         6         0
+KTH_source           11000         2         0         2         0
 ----------------------------------------------------------------------------
 
 Layer Summary(Texts For Connectivity):
 ----------------------------------------------------------------------------
     LAYER               ID       TEXTS
 ----------------------------------------------------------------------------
-m1_label              1076         6
+m1_label              1076         4
 ----------------------------------------------------------------------------
 
 Layer Summary(Texts For SELECT -LABEL):
@@ -769,48 +772,48 @@ Layer Summary(Texts For DFM_TEXT):
     LAYER               ID       TEXTS
 ----------------------------------------------------------------------------
 ----------------------------------------------------------------------------
-Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 17.22/17.38/17.38
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 17.21/17.38/17.38
 
 
 Compacting Hierarchy Library ...
 ========================================================================
-Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.15/9.34/17.38
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 9.15/9.34/17.38
 
 
 Analyzing Cell Overlapings ...
 ========================================================================
-Time: cpu=0.00/0.03  real=0.00/0.13  Memory: 9.15/9.34/13.36
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 9.15/9.34/13.36
 
 
 Merge Layers ...
 ========================================================================
     Cont = OR Cont
-    generate layer Cont, TYP = P, HPN = 15, FPN = 45, HEN = 60, FEN = 180
+    generate layer Cont, TYP = P, HPN = 7, FPN = 7, HEN = 28, FEN = 28
 
     Metal1 = OR Metal1
-    generate layer Metal1, TYP = P, HPN = 13, FPN = 23, HEN = 78, FEN = 118
+    generate layer Metal1, TYP = P, HPN = 8, FPN = 8, HEN = 40, FEN = 40
 
     Nimp = OR Nimp
-    generate layer Nimp, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
+    generate layer Nimp, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
 
     Nwell = OR Nwell
-    generate layer Nwell, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
+    generate layer Nwell, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
 
     Oxide = OR Oxide
-    generate layer Oxide, TYP = P, HPN = 2, FPN = 6, HEN = 8, FEN = 24
+    generate layer Oxide, TYP = P, HPN = 2, FPN = 2, HEN = 8, FEN = 8
 
     Pimp = OR Pimp
-    generate layer Pimp, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
+    generate layer Pimp, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
 
     Poly = OR Poly
-    generate layer Poly, TYP = P, HPN = 6, FPN = 12, HEN = 36, FEN = 60
+    generate layer Poly, TYP = P, HPN = 3, FPN = 3, HEN = 20, FEN = 20
 
     KTH_source = OR KTH_source
-    generate layer KTH_source, TYP = P, HPN = 2, FPN = 6, HEN = 8, FEN = 24
+    generate layer KTH_source, TYP = P, HPN = 2, FPN = 2, HEN = 8, FEN = 8
 
-Time: cpu=0.01/0.04  real=0.01/0.14  Memory: 9.15/9.34/13.36
+Time: cpu=0.01/0.04  real=0.01/0.13  Memory: 9.15/9.34/13.36
 
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.15/9.34/9.34
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
 
 ########################################################################
@@ -821,8 +824,8 @@ Execute Operations ...
 operation group: 1/32
     bulk = EXTENT
 ========================================================================
-    generate layer bulk, TYP = P, HPN = 5, FPN = 9, HEN = 20, FEN = 36
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.16/9.34/17.63
+    generate layer bulk, TYP = P, HPN = 3, FPN = 3, HEN = 20, FEN = 20
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/17.63
 
 
 
@@ -830,7 +833,7 @@ operation group: 2/32
     metal4_conn = NOT Metal4 M4Resdum
 ========================================================================
     generate layer metal4_conn, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.16/9.34/9.34
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
     delete layer Metal4
     delete layer M4Resdum
@@ -840,7 +843,7 @@ operation group: 3/32
     metal3_conn = NOT Metal3 M3Resdum
 ========================================================================
     generate layer metal3_conn, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.16/9.34/9.34
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
     delete layer Metal3
     delete layer M3Resdum
@@ -850,7 +853,7 @@ operation group: 4/32
     metal2_conn = NOT Metal2 M2Resdum
 ========================================================================
     generate layer metal2_conn, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.16/9.34/9.34
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
     delete layer Metal2
     delete layer M2Resdum
@@ -859,8 +862,8 @@ Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.16/9.34/9.34
 operation group: 5/32
     metal1_conn = NOT Metal1 M1Resdum
 ========================================================================
-    generate layer metal1_conn, TYP = P, HPN = 13, FPN = 23, HEN = 78, FEN = 118
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.16/9.34/9.34
+    generate layer metal1_conn, TYP = P, HPN = 8, FPN = 8, HEN = 40, FEN = 40
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
     delete layer Metal1
     delete layer M1Resdum
@@ -869,40 +872,40 @@ Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.16/9.34/9.34
 operation group: 6/32
     poly_conn = NOT Poly Resdum
 ========================================================================
-    generate layer poly_conn, TYP = P, HPN = 6, FPN = 12, HEN = 36, FEN = 60
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.16/9.34/9.34
+    generate layer poly_conn, TYP = P, HPN = 3, FPN = 3, HEN = 20, FEN = 20
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
 
 
 operation group: 7/32
     cont_poly = AND Cont Poly
 ========================================================================
-    generate layer cont_poly, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.16/9.34/13.61
+    generate layer cont_poly, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.05  real=0.00/0.13  Memory: 9.15/9.34/13.36
 
 
 
 operation group: 8/32
     pactive = AND Oxide Pimp
 ========================================================================
-    generate layer pactive, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.16/9.34/13.61
+    generate layer pactive, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.15/9.34/13.36
 
 
 
 operation group: 9/32
     pdiff = NOT pactive Poly
 ========================================================================
-    generate layer pdiff, TYP = P, HPN = 2, FPN = 6, HEN = 8, FEN = 24
-Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.16/9.34/13.61
+    generate layer pdiff, TYP = P, HPN = 2, FPN = 2, HEN = 8, FEN = 8
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.15/9.34/13.36
 
 
 
 operation group: 10/32
     pdiff_conn = NOT pdiff Resdum
 ========================================================================
-    generate layer pdiff_conn, TYP = P, HPN = 2, FPN = 6, HEN = 8, FEN = 24
-Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.16/9.34/9.34
+    generate layer pdiff_conn, TYP = P, HPN = 2, FPN = 2, HEN = 8, FEN = 8
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.15/9.34/9.34
 
     delete layer pdiff
 
@@ -910,32 +913,32 @@ Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.16/9.34/9.34
 operation group: 11/32
     cont_pdiff = AND Cont pdiff_conn
 ========================================================================
-    generate layer cont_pdiff, TYP = P, HPN = 12, FPN = 36, HEN = 48, FEN = 144
-Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.16/9.34/13.61
+    generate layer cont_pdiff, TYP = P, HPN = 4, FPN = 4, HEN = 16, FEN = 16
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.15/9.34/13.36
 
 
 
 operation group: 12/32
     nactive = AND Nimp Oxide
 ========================================================================
-    generate layer nactive, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.16/9.34/13.61
+    generate layer nactive, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.06  real=0.00/0.14  Memory: 9.15/9.34/13.36
 
 
 
 operation group: 13/32
     ndiff = NOT nactive poly_conn
 ========================================================================
-    generate layer ndiff, TYP = P, HPN = 2, FPN = 6, HEN = 8, FEN = 24
-Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.16/9.34/13.61
+    generate layer ndiff, TYP = P, HPN = 2, FPN = 2, HEN = 8, FEN = 8
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/13.36
 
 
 
 operation group: 14/32
     ndiff_conn = NOT ndiff Resdum
 ========================================================================
-    generate layer ndiff_conn, TYP = P, HPN = 2, FPN = 6, HEN = 8, FEN = 24
-Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.16/9.34/9.34
+    generate layer ndiff_conn, TYP = P, HPN = 2, FPN = 2, HEN = 8, FEN = 8
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
 
     delete layer ndiff
     delete layer Resdum
@@ -944,8 +947,8 @@ Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.16/9.34/9.34
 operation group: 15/32
     cont_ndiff = AND Cont ndiff_conn
 ========================================================================
-    generate layer cont_ndiff, TYP = P, HPN = 2, FPN = 6, HEN = 8, FEN = 24
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/13.61
+    generate layer cont_ndiff, TYP = P, HPN = 2, FPN = 2, HEN = 8, FEN = 8
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/13.36
 
     delete layer Cont
 
@@ -953,16 +956,16 @@ Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/13.61
 operation group: 16/32
     bulk_1 = NOT bulk Nwell
 ========================================================================
-    generate layer bulk_1, TYP = P, HPN = 5, FPN = 9, HEN = 24, FEN = 48
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/13.61
+    generate layer bulk_1, TYP = P, HPN = 3, FPN = 3, HEN = 24, FEN = 24
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/13.36
 
 
 
 operation group: 17/32
     psubstrate = NOT bulk_1 Psub
 ========================================================================
-    generate layer psubstrate, TYP = P, HPN = 5, FPN = 9, HEN = 24, FEN = 48
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/9.34
+    generate layer psubstrate, TYP = P, HPN = 3, FPN = 3, HEN = 24, FEN = 24
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
 
     delete layer bulk_1
     delete layer Psub
@@ -972,15 +975,15 @@ operation group: 18/32
     ptap = NOT pdiff_conn Nwell
 ========================================================================
     generate layer ptap, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/13.36
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
 
 
 
 operation group: 19/32
     nwell_conn = NOT Nwell ResWdum
 ========================================================================
-    generate layer nwell_conn, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/9.34
+    generate layer nwell_conn, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
 
     delete layer ResWdum
 
@@ -989,7 +992,7 @@ operation group: 20/32
     ntap = AND Nwell ndiff_conn
 ========================================================================
     generate layer ntap, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.16/9.34/13.36
+Time: cpu=0.00/0.07  real=0.00/0.15  Memory: 9.15/9.34/13.36
 
 
 
@@ -1003,7 +1006,7 @@ operation group: 21/32
     SCONNECT pdiff_conn psubstrate -by ptap
     SCONNECT ndiff_conn nwell_conn -by ntap
 ========================================================================
-Time: cpu=0.02/0.09  real=0.02/0.19  Memory: 9.16/9.34/25.41
+Time: cpu=0.02/0.09  real=0.02/0.17  Memory: 9.15/9.34/25.41
 
     delete layer Via3
     delete layer Via2
@@ -1018,8 +1021,8 @@ Time: cpu=0.02/0.09  real=0.02/0.19  Memory: 9.16/9.34/25.41
 operation group: 22/32
     OxPoly = AND Oxide Poly
 ========================================================================
-    generate layer OxPoly, TYP = P, HPN = 2, FPN = 6, HEN = 8, FEN = 24
-Time: cpu=0.00/0.09  real=0.00/0.19  Memory: 9.16/9.34/13.36
+    generate layer OxPoly, TYP = P, HPN = 2, FPN = 2, HEN = 8, FEN = 8
+Time: cpu=0.00/0.09  real=0.00/0.18  Memory: 9.15/9.34/13.36
 
     delete layer Oxide
     delete layer Poly
@@ -1028,8 +1031,8 @@ Time: cpu=0.00/0.09  real=0.00/0.19  Memory: 9.16/9.34/13.36
 operation group: 23/32
     _nmos1v = AND OxPoly Nimp
 ========================================================================
-    generate layer _nmos1v, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.10  real=0.00/0.20  Memory: 9.16/9.34/13.61
+    generate layer _nmos1v, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.09  real=0.00/0.18  Memory: 9.15/9.34/13.36
 
     delete layer Nimp
 
@@ -1037,8 +1040,8 @@ Time: cpu=0.00/0.10  real=0.00/0.20  Memory: 9.16/9.34/13.61
 operation group: 24/32
     _nmos1v_sti = AND psubstrate nactive
 ========================================================================
-    generate layer _nmos1v_sti, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.10  real=0.00/0.20  Memory: 9.16/9.34/13.36
+    generate layer _nmos1v_sti, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.10  real=0.00/0.18  Memory: 9.15/9.34/13.36
 
     delete layer psubstrate
     delete layer nactive
@@ -1047,16 +1050,16 @@ Time: cpu=0.00/0.10  real=0.00/0.20  Memory: 9.16/9.34/13.36
 operation group: 25/32
     _nmos1v_wpe_temp = SIZE _nmos1v -by 1
 ========================================================================
-    generate layer _nmos1v_wpe_temp, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.10  real=0.00/0.20  Memory: 9.16/9.34/13.61
+    generate layer _nmos1v_wpe_temp, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.10  real=0.00/0.18  Memory: 9.15/9.34/13.36
 
 
 
 operation group: 26/32
     _nmos1v_wpe = NOT _nmos1v_wpe_temp Nwell
 ========================================================================
-    generate layer _nmos1v_wpe, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.10  real=0.00/0.20  Memory: 9.16/9.34/13.36
+    generate layer _nmos1v_wpe, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.10  real=0.00/0.19  Memory: 9.15/9.34/13.36
 
     delete layer _nmos1v_wpe_temp
     delete layer Nwell
@@ -1065,16 +1068,16 @@ Time: cpu=0.00/0.10  real=0.00/0.20  Memory: 9.16/9.34/13.36
 operation group: 27/32
     _soi_nsb = AND ndiff_conn KTH_source
 ========================================================================
-    generate layer _soi_nsb, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.10  real=0.00/0.20  Memory: 9.16/9.34/13.61
+    generate layer _soi_nsb, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.10  real=0.00/0.19  Memory: 9.15/9.34/13.36
 
 
 
 operation group: 28/32
     _soi_nd = NOT ndiff_conn KTH_source
 ========================================================================
-    generate layer _soi_nd, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.11  real=0.00/0.20  Memory: 9.16/9.34/13.36
+    generate layer _soi_nd, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.10  real=0.00/0.19  Memory: 9.15/9.34/13.36
 
     delete layer ndiff_conn
 
@@ -1082,8 +1085,8 @@ Time: cpu=0.00/0.11  real=0.00/0.20  Memory: 9.16/9.34/13.36
 operation group: 29/32
     _pmos1v = AND OxPoly Pimp
 ========================================================================
-    generate layer _pmos1v, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.16/9.34/13.36
+    generate layer _pmos1v, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.11  real=0.00/0.19  Memory: 9.15/9.34/13.36
 
     delete layer OxPoly
     delete layer Pimp
@@ -1092,16 +1095,16 @@ Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.16/9.34/13.36
 operation group: 30/32
     _soi_psb = AND pdiff_conn KTH_source
 ========================================================================
-    generate layer _soi_psb, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.16/9.34/13.36
+    generate layer _soi_psb, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.11  real=0.00/0.19  Memory: 9.14/9.34/13.36
 
 
 
 operation group: 31/32
     _soi_pd = NOT pdiff_conn KTH_source
 ========================================================================
-    generate layer _soi_pd, TYP = P, HPN = 1, FPN = 3, HEN = 4, FEN = 12
-Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.16/9.34/13.36
+    generate layer _soi_pd, TYP = P, HPN = 1, FPN = 1, HEN = 4, FEN = 4
+Time: cpu=0.00/0.11  real=0.00/0.20  Memory: 9.14/9.34/13.36
 
     delete layer pdiff_conn
     delete layer KTH_source
@@ -1150,7 +1153,7 @@ DEVICE RECOGNITION ...
     delete layer _EPTMPL262186
 Write DEVICES ... 
 
-Time: cpu=0.01/0.12  real=0.01/0.22  Memory: 9.16/9.40/17.38
+Time: cpu=0.01/0.12  real=0.01/0.21  Memory: 9.15/9.34/17.38
 
     delete layer _nmos1v
     delete layer _nmos1v_sti
@@ -1192,109 +1195,14 @@ Outputting Results ...
 Total CPU Time                    : 0(s)
 Total Real Time                   : 0(s)
 Peak Memory Used                  : 25(M)
-Total Original Geometry           : 71(147)
+Total Original Geometry           : 45(45)
 Total ERC RuleChecks              : 0
 Total ERC Results                 : 0 (0)
-Summary can be found in file NOR3X1.sum
-
-
-Creating annotated GDS ...
-********************************************************************************
-db2gds 16.15-s010 64 bit (Fri Jun 28 22:24:07 PDT 2019)
-Build Ref No.: 010 Production (06-28-2019) [pvs_1615]
-
-Copyright 2019 Cadence Design Systems, Inc.
-All rights reserved worldwide.
-
-Build O/S:       Linux x86_64 2.6.18-194.el5
-Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      32625
-Starting Time:   Tue Dec 21 14:09:50 2021 (Tue Dec 21 13:09:50 2021 GMT)
-With parameters: NOR3X1_32561 /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.agf NOR3X1 -lmap lmapHVcCtH -netmap /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.lnn -property_nqrc -gds_scale 2000 -vircolon 
-********************************************************************************
-
-Library name: NOR3X1_32561
-GDSII file name: /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.agf
-Cells to be written out: NOR3X1
-Source Library: NOR3X1_32561
-Layer mapping file(GDS <- DMC): lmapHVcCtH
-    36 (dt:0 tt:0) <- 36
-    37 (dt:0 tt:0) <- 37
-    38 (dt:0 tt:0) <- 38
-    4 (dt:0 tt:0) <- 4
-    6 (dt:0 tt:0) <- 6
-    7 (dt:0 tt:0) <- 7
-    8 (dt:0 tt:0) <- 8
-    10 (dt:0 tt:0) <- 10
-    11 (dt:0 tt:0) <- 11
-    12 (dt:0 tt:0) <- 12
-    14 (dt:0 tt:0) <- 14
-    16 (dt:0 tt:0) <- 16
-    19 (dt:0 tt:0) <- 19
-    20 (dt:0 tt:0) <- 20
-    21 (dt:0 tt:0) <- 21
-    22 (dt:0 tt:0) <- 22
-    23 (dt:0 tt:0) <- 23
-    25 (dt:0 tt:0) <- 25
-    26 (dt:0 tt:0) <- 26
-    31 (dt:0 tt:0) <- 31
-    32 (dt:0 tt:0) <- 32
-    33 (dt:0 tt:0) <- 33
-    35 (dt:0 tt:0) <- 35
-Cell name case: PRESERVE
-Option: output object property for new qrc flow
-
-
-                Object Statistics of Cells                            
-Cell Name         Box  Polygon     Path   Label Instance Array    Total
-----------------------------------------------------------------------
-NOR3X1              8        6        0       0     9      0        23
-M1_PO_CDNS_1        3        0        0       0     0      0         3
-nmos3_CDNS_2       11        0        0       0     0      0        11
-pmos3_CDNS_3       21        1        0       0     0      0        22
-----------------------------------------------------------------------
-
-Object Statistics of Layers
-Layer   Objects
-----------------
-   4           1
-   6          13
-  11           1
-  12           2
-  14          12
-  16           6
-  19           2
-  20           2
-  23           5
-  25           1
-  26           1
-  31           1
-  32           1
-  33           1
-  35           1
-----------------
-
-Object Summary
-------------------
-     Box        43
- Polygon         7
-    Path         0
-   Label         0
-Instance         9
-   Array         0
-------------------
-   Total        59
-
-
-Output property: 59
-Total CPU Time          : 0(s)
-Total Real Time         : 0(s)
-Peak Memory Used        : 7(M)
-Log files db2gds.log and db2gds.log.2 can be found in the run directory
+Summary can be found in file INVX1.sum
 
 
 Creating extracted connectivity database ...
-CmdLine: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb -kf -edb NOR3X1_32561.db -ecdb ./ -topcell NOR3X1 -netlist /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.net -layermap /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.ecdbmap -textmap /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.ports -dependmap NOR3X1.lmap.perc -lvsfile /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.lvsfile -saveFloatingNets .NOR3X1.info.softchk 
+CmdLine: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb -kf -edb INVX1_5797.db -ecdb ./ -topcell INVX1 -netlist svdb/INVX1.net -layermap svdb/INVX1.ecdbmap -textmap svdb/INVX1.ports -dependmap INVX1.lmap.perc -lvsfile svdb/INVX1.lvsfile -saveFloatingNets .INVX1.info.softchk 
 Legend for cell operations:
    C - Cells
    P - Pins
@@ -1303,19 +1211,18 @@ Legend for cell operations:
    I - Insts
    S - Shapes
    X - Delete cell memory
-Opening layer file 'NOR3X1_32561.db/__layer'...
-Loading layer map file '/home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.ecdbmap'...
-Loading text map file '/home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.ports'...
-Loading dependency map file 'NOR3X1.lmap.perc'...
-Opening output file './/.NOR3X1.ecdb'...
-Loading lvs file '/home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.lvsfile'...
+Opening layer file 'INVX1_5797.db/__layer'...
+Loading layer map file 'svdb/INVX1.ecdbmap'...
+Loading text map file 'svdb/INVX1.ports'...
+Loading dependency map file 'INVX1.lmap.perc'...
+Opening output file './/.INVX1.ecdb'...
+Loading lvs file 'svdb/INVX1.lvsfile'...
 Pre loading edb directory contents...
 Writing db header information...(0s)
 Transfering cdl structures to ecdb structures...
-Cell(0): M1_PO_CDNS_1 readEDB...Link SIDN...Save IOPNLX...Done...(0s)
-Cell(1): nmos3_CDNS_2 readEDB...Link SIDN...Save IOPNLX...Done...(0s)
-Cell(2): pmos3_CDNS_3 readEDB...Link SIDN...Save IOPNLX...Done...(0s)
-Cell(3): NOR3X1 readEDB...Link SIDN...Save IOPNLX...Done...(0s)
+Cell(0): nmos3_CDNS_2 readEDB...Link SIDN...Save IOPNLX...Done...(0s)
+Cell(1): pmos3_CDNS_3 readEDB...Link SIDN...Save IOPNLX...Done...(0s)
+Cell(2): INVX1 readEDB...Link SIDN...Save IOPNLX...Done...(0s)
 Cells creation time: (0s)
 Write netlist items...(0s)
 Saving name table to db...
@@ -1329,45 +1236,45 @@ Total CPU Time      : 0(s)
 Total Real Time     : 0(s)
    Read edb time    : 0(s)
    Write ecdb time  : 0(s)
-Peak Memory Used    : 82.66(M)
+Peak Memory Used    : 82.67(M)
 
 edbToEcdb Header Information:
   ECDB file version   : 30
-  DevTmpl offset      : 69429
-  Connect offset      : 69529
-  NameTable offset    : 3893
+  DevTmpl offset      : 68522
+  Connect offset      : 68622
+  NameTable offset    : 2986
   Layer Map offset    : 149
-  Cell Start offset   : 3613
-  Cell End offset     : 3893
-  Aux Data offset     : 69629
+  Cell Start offset   : 2776
+  Cell End offset     : 2986
+  Aux Data offset     : 68722
   Nvn Labels offset   : 0
   NVP                 : 
   Scale               : 8000
-  File size           : 70853
-  Cell count          : 4
+  File size           : 69924
+  Cell count          : 3
   ECDB create time    : 0
   EDB info            : 10
   EDB info (Trans)    : WRITTEN_64 W_NOT_NET_ORDER 
 
 edbToEcdb Sizes written to disk (MB):
   NameTbl             :     0.065536
-  Layers              :     0.000971
-  Shapes              :     0.000862
-  XYTree              :     0.000689
-  LookUpTbls          :     0.000168
-  Cells               :     0.000319
-  Insts               :     0.000198
-  Ports               :     0.000210
-  Nets                :     0.000144
-  Pins                :     0.000019
-  Labels              :     0.000168
+  Layers              :     0.000940
+  Shapes              :     0.000617
+  XYTree              :     0.000526
+  LookUpTbls          :     0.000118
+  Cells               :     0.000241
+  Insts               :     0.000072
+  Ports               :     0.000096
+  Nets                :     0.000104
+  Pins                :     0.000015
+  Labels              :     0.000112
   DevTmpl             :     0.000100
   Connect             :     0.000096
   Header              :     0.000139
-  AuxData             :     0.001222
+  AuxData             :     0.001200
   NvnLabels           :     0.000002
 ---------------------------------
-  Total               :     0.070843
+  Total               :     0.069914
 
 edbToEcdb Done
 
@@ -1382,16 +1289,16 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      32655
-Starting Time:   Tue Dec 21 14:09:50 2021 (Tue Dec 21 13:09:50 2021 GMT)
-With parameters: -license_timeout 300 NOR3X1.rep REPORTDB 
+Process Id:      5881
+Starting Time:   Sun Jan  9 02:37:03 2022 (Sun Jan  9 01:37:03 2022 GMT)
+With parameters: -license_timeout 300 INVX1.rep REPORTDB 
 ********************************************************************************
 
-Processing file NOR3X1.rep
+Processing file INVX1.rep
 Completed creation of REPORTDB
 
 
-Netlist Extraction Finished Normally. Tue Dec 21 14:09:51 2021
+Netlist Extraction Finished Normally. Sun Jan  9 02:37:04 2022
 
 
 
@@ -1406,8 +1313,8 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      32676
-Starting Time:   Tue Dec 21 14:09:51 2021 (Tue Dec 21 13:09:51 2021 GMT)
+Process Id:      5908
+Starting Time:   Sun Jan  9 02:37:05 2022 (Sun Jan  9 01:37:05 2022 GMT)
 With parameters: -ai .technology.rul.rsf 
 ********************************************************************************
 
@@ -1432,8 +1339,8 @@ WARNING (NVN-13003): "*.SCALE" is not supported. Use ".OPTION SCALE" instead or 
  finished committing cdl netlists (0s)
 Post sch netlist rule processing (0s)
 Reading layout network
- inputting (fast parser) cdl netlist  /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.net...
- finished loading cdl netlist /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.net (0s)
+ inputting (fast parser) cdl netlist  /home/saul/projects/KISTA/lvs_runs/INVX1.spi...
+ finished loading cdl netlist /home/saul/projects/KISTA/lvs_runs/INVX1.spi (0s)
  commit cdl netlist(s)...
  finished committing cdl netlists (0s)
 Post lay netlist rule processing (0s)
@@ -1508,8 +1415,8 @@ Cell comparison output format:
    <Comparing|Top Cell> <Layout Cell> vs <Schematic Cell>
       <Layout instances> insts vs <Schematic instances> insts  (<Time>)-<Status>
 
-Top Cell  NOR3X1 vs NOR3X1
-   6 insts vs 6 insts . . . . . . . . . . . . . . . . . . . . . . . . (0s)-match
+Top Cell  INVX1 vs INVX1
+   2 insts vs 2 insts . . . . . . . . . . . . . . . . . . . . . . . . (0s)-match
 
 Generating the LVS report...
   Report Init (0s)
@@ -1525,14 +1432,14 @@ Peak Memory Used      : 25.00(M)
 
 
 NVN Run Summary
-Total CPU Time        : 1(s)
-Total Real Time       : 2(s)
+Total CPU Time        : 0(s)
+Total Real Time       : 1(s)
 Peak Memory Used      : 232.12(M)
 
 
 LVS Summary
-Total CPU Time        : 1(s)
-Total Real Time       : 2(s)
+Total CPU Time        : 0(s)
+Total Real Time       : 1(s)
 Peak Memory Used      : 232.12(M)
 
     ########################################################
@@ -1542,38 +1449,16 @@ Peak Memory Used      : 232.12(M)
     # Run Summary            : [INFO]  ERC Results: Empty  #
     #                        : [INFO]  Extraction Clean    #
     #                                                      #
-    # ERC Summary File       : NOR3X1.sum                  #
-    # Extraction Report File : NOR3X1.rep                  #
-    # Comparison Report File : NOR3X1.rep.cls              #
+    # ERC Summary File       : INVX1.sum                   #
+    # Extraction Report File : INVX1.rep                   #
+    # Comparison Report File : INVX1.rep.cls               #
     #                                                      #
     ########################################################
 
-
-
-PVS Comparison Finished. Tue Dec 21 14:09:53 2021
-
-
-
-Creating cross reference ...
-********************************************************************************
-pvs_RCXxref 16.15-s010 64 bit (Fri Jun 28 22:24:07 PDT 2019)
-Build Ref No.: 010 Production (06-28-2019) [pvs_1615]
-
-Copyright 2019 Cadence Design Systems, Inc.
-All rights reserved worldwide.
-
-Build O/S:       Linux x86_64 2.6.18-194.el5
-Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      32692
-Starting Time:   Tue Dec 21 14:09:53 2021 (Tue Dec 21 13:09:53 2021 GMT)
-With parameters: -format C -nxf -ixf /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1 NOR3X1.rep 
-********************************************************************************
-
-Total CPU Time    : 0(s)
-Total Real Time   : 0(s)
-Memory Used       : 58.84(M)
-
-pvs_RCXxref Done
 Checking in all SoftShare licenses.
+
+
+PVS Comparison Finished. Sun Jan  9 02:37:06 2022
+
 
 

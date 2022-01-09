@@ -89,6 +89,16 @@ MACRO AOI21X1
       RECT 5 21 7 33 ;
       RECT 13 27 19 29 ;
       RECT 17 21 19 29 ;
+    LAYER Via1 ;
+      RECT 21.5 3.5 22.5 4.5 ;
+      RECT 21.5 5.5 22.5 6.5 ;
+      RECT 21.5 21.5 22.5 22.5 ;
+      RECT 21.5 23.5 22.5 24.5 ;
+      RECT 21.5 25.5 22.5 26.5 ;
+      RECT 21.5 27.5 22.5 28.5 ;
+      RECT 17.5 9.5 18.5 10.5 ;
+      RECT 11.5 13.5 12.5 14.5 ;
+      RECT 1.5 17.5 2.5 18.5 ;
   END
 END AOI21X1
 
@@ -143,6 +153,10 @@ MACRO BUFX2
     LAYER Metal1 ;
       RECT 7.5 9 9.5 29 ;
       RECT 7.5 17 13 19 ;
+    LAYER Via1 ;
+      RECT 17 7.5 18 10.5 ;
+      RECT 17 21.5 18 28.5 ;
+      RECT 1.5 17.5 2.5 18.5 ;
   END
   PROPERTY CatenaDesignType "deviceLevel" ;
 END BUFX2
@@ -266,8 +280,8 @@ END DECAP4
 
 MACRO DFFSRX1
   CLASS CORE ;
-  ORIGIN 0 0 ;
-  FOREIGN DFFSRX1 0 0 ;
+  ORIGIN -0.7 0 ;
+  FOREIGN DFFSRX1 0.7 0 ;
   SIZE 156 BY 36 ;
   SYMMETRY X Y ;
   SITE CoreSite ;
@@ -319,18 +333,8 @@ MACRO DFFSRX1
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER Metal2 ;
-        RECT 59 13 101 15 ;
-        RECT 77 13 79 33 ;
-        RECT 59 13 61 17 ;
       LAYER Metal1 ;
-        RECT 99 13 103 15 ;
         RECT 77 31 79 33 ;
-        RECT 59 15 61 19 ;
-      LAYER Via1 ;
-        RECT 59.5 15.5 60.5 16.5 ;
-        RECT 77.5 31.5 78.5 32.5 ;
-        RECT 99.5 13.5 100.5 14.5 ;
     END
   END SN
   PIN QN
@@ -355,7 +359,7 @@ MACRO DFFSRX1
     USE SIGNAL ;
     PORT
       LAYER Metal1 ;
-        RECT 49 13 51 15 ;
+        RECT 37 3 39 5 ;
     END
   END RN
   PIN Q
@@ -372,7 +376,7 @@ MACRO DFFSRX1
     USE SIGNAL ;
     PORT
       LAYER Metal1 ;
-        RECT 41 13 43 15 ;
+        RECT 25 3 27 5 ;
     END
   END D
   OBS
@@ -431,33 +435,63 @@ MACRO DFFSRX1
       RECT 131 14.9 133 21 ;
       RECT 109 11 113 13 ;
       RECT 111 17 113 28 ;
+      RECT 99 13 103 15 ;
       RECT 95 7 97 28 ;
       RECT 67 20 74.5 22 ;
+      RECT 59 15 61 19 ;
+      RECT 49 11 51 15 ;
       RECT 39 7 45 9 ;
+      RECT 39 13 43 15 ;
       RECT 23 7 29 9 ;
       RECT 20.9 20 24.9 22 ;
       RECT 15 7 17 33 ;
     LAYER Via1 ;
+      RECT 151.5 7.5 152.5 8.5 ;
+      RECT 151.5 24.5 152.5 25.5 ;
+      RECT 151.5 26.5 152.5 27.5 ;
+      RECT 135.5 7.5 136.5 8.5 ;
+      RECT 135.5 24.5 136.5 25.5 ;
+      RECT 135.5 26.5 136.5 27.5 ;
       RECT 131.5 19.5 132.5 20.5 ;
       RECT 123.5 17.5 124.5 18.5 ;
       RECT 111.5 11.5 112.5 12.5 ;
       RECT 111.5 17.5 112.5 18.5 ;
+      RECT 99.5 13.5 100.5 14.5 ;
       RECT 95.5 21.5 96.5 22.5 ;
       RECT 87.5 17.5 88.5 18.5 ;
+      RECT 77.5 31.5 78.5 32.5 ;
       RECT 67.5 20.5 68.5 21.5 ;
       RECT 63.5 29.5 64.5 30.5 ;
+      RECT 59.5 15.5 60.5 16.5 ;
       RECT 55.5 9.5 56.5 10.5 ;
       RECT 51.5 20.5 52.5 21.5 ;
+      RECT 49.5 11.5 50.5 12.5 ;
+      RECT 49.5 13.4 50.5 14.4 ;
+      RECT 41.5 13.5 42.5 14.5 ;
+      RECT 39.5 13.5 40.5 14.5 ;
+      RECT 37.5 3.5 38.5 4.5 ;
+      RECT 25.5 3.5 26.5 4.5 ;
       RECT 23.4 20.5 24.4 21.5 ;
+      RECT 1.5 17.5 2.5 18.5 ;
     LAYER Metal2 ;
       RECT 95 21 133 23 ;
       RECT 131 19 133 23 ;
       RECT 111 9 113 13 ;
       RECT 55 9 113 11 ;
+      RECT 77 13 79 33 ;
+      RECT 59 13 61 17 ;
+      RECT 59 13 101 15 ;
       RECT 22.9 29 65 31 ;
       RECT 22.9 20 24.9 31 ;
+      RECT 49 9 51 13 ;
+      RECT 37 9 51 11 ;
+      RECT 37 3 39 11 ;
+      RECT 25 13 41 15 ;
+      RECT 25 3 27 15 ;
       RECT 87 17 125 19 ;
       RECT 51 20 69 22 ;
+    LAYER Via2 ;
+      RECT 77.5 31.5 78.5 32.5 ;
   END
   PROPERTY lxInternalViewName "schematic" ;
   PROPERTY lxInternalConfigViewName "" ;
@@ -583,6 +617,21 @@ MACRO DFFX1
       RECT 47 6.4 53 8.4 ;
       RECT 23 6.4 29 8.4 ;
       RECT 15 6.4 17 33 ;
+    LAYER Via1 ;
+      RECT 111.5 6.9 112.5 7.9 ;
+      RECT 111.5 25.3 112.5 26.3 ;
+      RECT 111.5 27.3 112.5 28.3 ;
+      RECT 95.5 6.9 96.5 7.9 ;
+      RECT 95.5 25.3 96.5 26.3 ;
+      RECT 95.5 27.3 96.5 28.3 ;
+      RECT 75.5 13.5 76.5 14.5 ;
+      RECT 66.5 13.5 67.5 14.5 ;
+      RECT 59.5 17.5 60.5 18.5 ;
+      RECT 51.5 17.5 52.5 18.5 ;
+      RECT 43.5 13.5 44.5 14.5 ;
+      RECT 35.3 13.5 36.3 14.5 ;
+      RECT 21.5 17.5 22.5 18.5 ;
+      RECT 1.5 17.5 2.5 18.5 ;
     LAYER Metal2 ;
       RECT 66 13 77 15 ;
       RECT 51 17 61 19 ;
@@ -693,8 +742,7 @@ MACRO INVX1
     USE SIGNAL ;
     PORT
       LAYER Metal1 ;
-        RECT 7 21 11 23 ;
-        RECT 7 12.9 9 25.1 ;
+        RECT 7 3 9 33 ;
     END
   END Y
   PIN VSS!
@@ -705,8 +753,7 @@ MACRO INVX1
     PORT
       LAYER Metal1 ;
         RECT 0 -1 12 1 ;
-        RECT 2.4 12.9 5 14.9 ;
-        RECT 2.4 -1 4.4 14.9 ;
+        RECT 3 -1 5 5 ;
     END
   END VSS!
   PIN A
@@ -725,10 +772,16 @@ MACRO INVX1
     PORT
       LAYER Metal1 ;
         RECT 0 35 12 37 ;
-        RECT 2.4 21.1 5 25.1 ;
-        RECT 2.4 21.1 4.4 37 ;
+        RECT 3 29 5 37 ;
     END
   END VDD!
+  OBS
+    LAYER Via1 ;
+      RECT 7.5 3.5 8.5 4.5 ;
+      RECT 7.5 29.5 8.5 30.5 ;
+      RECT 7.5 31.5 8.5 32.5 ;
+      RECT 1.5 17.5 2.5 18.5 ;
+  END
 END INVX1
 
 MACRO MX2X1
@@ -801,6 +854,20 @@ MACRO MX2X1
       RECT 5 31 21 33 ;
       RECT 5 3 7 33 ;
       RECT 5 3 13.1 5 ;
+    LAYER Via1 ;
+      RECT 21.5 7.5 22.5 8.5 ;
+      RECT 21.5 25.5 22.5 26.5 ;
+      RECT 21.5 27.5 22.5 28.5 ;
+      RECT 17.5 7.5 18.5 8.5 ;
+      RECT 17.5 25.5 18.5 26.5 ;
+      RECT 17.5 27.5 18.5 28.5 ;
+      RECT 13.5 7.5 14.5 8.5 ;
+      RECT 13.5 25.5 14.5 26.5 ;
+      RECT 13.5 27.5 14.5 28.5 ;
+      RECT 9.5 7.5 10.5 8.5 ;
+      RECT 9.5 25.5 10.5 26.5 ;
+      RECT 9.5 27.5 10.5 28.5 ;
+      RECT 1.5 17.5 2.5 18.5 ;
   END
 END MX2X1
 
@@ -883,6 +950,17 @@ MACRO MX2X1_BUF
       RECT 6.9 31 22.9 33 ;
       RECT 6.9 3 8.9 33 ;
       RECT 6.9 3 15 5 ;
+    LAYER Via1 ;
+      RECT 41.5 7.5 42.5 8.5 ;
+      RECT 41.5 25.5 42.5 26.5 ;
+      RECT 41.5 27.5 42.5 28.5 ;
+      RECT 23.4 7.5 24.4 8.5 ;
+      RECT 23.4 25.5 24.4 26.5 ;
+      RECT 23.4 27.5 24.4 28.5 ;
+      RECT 11.4 7.5 12.4 8.5 ;
+      RECT 11.4 25.5 12.4 26.5 ;
+      RECT 11.4 27.5 12.4 28.5 ;
+      RECT 1.5 17.5 2.5 18.5 ;
   END
 END MX2X1_BUF
 
@@ -948,6 +1026,15 @@ MACRO NAND2X1
       RECT 13 9 15 13 ;
       RECT 9 9 11 13 ;
       RECT 9 9 15 11 ;
+    LAYER Via1 ;
+      RECT 21.5 17.5 22.5 18.5 ;
+      RECT 17.5 9.5 18.5 10.5 ;
+      RECT 17.5 11.5 18.5 12.5 ;
+      RECT 17.5 27.5 18.5 28.5 ;
+      RECT 17.5 29.5 18.5 30.5 ;
+      RECT 7.5 17.5 8.5 18.5 ;
+      RECT 5.5 27.5 6.5 28.5 ;
+      RECT 5.5 29.5 6.5 30.5 ;
   END
   PROPERTY CatenaDesignType "deviceLevel" ;
 END NAND2X1
@@ -1026,6 +1113,18 @@ MACRO NAND3X1
       RECT 9 3 11 7 ;
       RECT 5 3 7 7 ;
       RECT 5 3 11 5 ;
+    LAYER Via1 ;
+      RECT 21.5 3.5 22.5 4.5 ;
+      RECT 21.5 5.5 22.5 6.5 ;
+      RECT 21.5 29.5 22.5 30.5 ;
+      RECT 21.5 31.5 22.5 32.5 ;
+      RECT 17.5 13.5 18.5 14.5 ;
+      RECT 13.5 29.5 14.5 30.5 ;
+      RECT 13.5 31.5 14.5 32.5 ;
+      RECT 9.5 17.5 10.5 18.5 ;
+      RECT 5.5 29.5 6.5 30.5 ;
+      RECT 5.5 31.5 6.5 32.5 ;
+      RECT 1.5 21.5 2.5 22.5 ;
   END
 END NAND3X1
 
@@ -1090,6 +1189,15 @@ MACRO NOR2X1
       RECT 9 29 15 31 ;
       RECT 13 23 15 31 ;
       RECT 9 23 11 31 ;
+    LAYER Via1 ;
+      RECT 21.5 17.5 22.5 18.5 ;
+      RECT 17.5 9.5 18.5 10.5 ;
+      RECT 17.5 23.5 18.5 24.5 ;
+      RECT 17.5 25.5 18.5 26.5 ;
+      RECT 17.5 27.5 18.5 28.5 ;
+      RECT 17.5 29.5 18.5 30.5 ;
+      RECT 7.5 17.5 8.5 18.5 ;
+      RECT 5.5 9.5 6.5 10.5 ;
   END
   PROPERTY CatenaDesignType "deviceLevel" ;
 END NOR2X1
@@ -1168,6 +1276,14 @@ MACRO NOR3X1
       RECT 5 31 11 33 ;
       RECT 9 21 11 33 ;
       RECT 5 21 7 33 ;
+    LAYER Via1 ;
+      RECT 21.5 3.5 22.5 4.5 ;
+      RECT 21.5 21.5 22.5 32.5 ;
+      RECT 17.5 17.5 18.5 18.5 ;
+      RECT 13.5 3.5 14.5 4.5 ;
+      RECT 9.5 13.5 10.5 14.5 ;
+      RECT 5.5 3.5 6.5 4.5 ;
+      RECT 1.5 9.5 2.5 10.5 ;
   END
 END NOR3X1
 
@@ -1249,6 +1365,14 @@ MACRO OAI21X1
       RECT 5 31 11 33 ;
       RECT 9 25 11 33 ;
       RECT 5 25 7 33 ;
+    LAYER Via1 ;
+      RECT 21.5 3.5 22.5 4.5 ;
+      RECT 21.5 5.5 22.5 6.5 ;
+      RECT 17.5 25.5 18.6 32.5 ;
+      RECT 17.5 13.5 18.5 14.5 ;
+      RECT 13.5 25.5 14.5 32.5 ;
+      RECT 9.5 17.5 10.5 18.5 ;
+      RECT 1.5 21.5 2.5 22.5 ;
   END
 END OAI21X1
 
@@ -1294,6 +1418,8 @@ MACRO TIEHI
     LAYER Metal1 ;
       RECT 3 13 7 15 ;
       RECT 3 9 5 15 ;
+    LAYER Via1 ;
+      RECT 7.5 25.5 8.5 28.5 ;
   END
 END TIEHI
 
@@ -1338,6 +1464,8 @@ MACRO TIELO
     LAYER Metal1 ;
       RECT 7 22.8 9 30.8 ;
       RECT 5 22.8 9 24.8 ;
+    LAYER Via1 ;
+      RECT 7.5 9.5 8.5 10.5 ;
   END
 END TIELO
 
@@ -1408,6 +1536,15 @@ MACRO XOR2X1
       RECT 23 7 29 9 ;
       RECT 7 3 9 29 ;
       RECT 7 3 23 5 ;
+    LAYER Via1 ;
+      RECT 19.5 7.5 20.5 10.5 ;
+      RECT 19.5 27.5 20.5 28.5 ;
+      RECT 15.5 7.5 16.5 8.5 ;
+      RECT 15.5 25.5 16.5 28.5 ;
+      RECT 11.5 7.5 12.5 8.5 ;
+      RECT 11.5 14 12.5 15 ;
+      RECT 11.5 25.5 12.5 28.5 ;
+      RECT 3.5 17.5 4.5 18.5 ;
   END
 END XOR2X1
 

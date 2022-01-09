@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : NOR3X1_32561.db
+EDB Library dir : INVX1_5797.db
 ECDB dir        : ./
-Top Cell        : NOR3X1
-CDL netlist     : /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.net
-Layer map file  : /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.ecdbmap
-Text map file   : /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.ports
-Dependency map  : NOR3X1.lmap.perc
-Lvs file        : /home/saul/projects/KISTA/lvs_runs/svdb/NOR3X1.lvsfile
-Float net file : .NOR3X1.info.softchk
+Top Cell        : INVX1
+CDL netlist     : svdb/INVX1.net
+Layer map file  : svdb/INVX1.ecdbmap
+Text map file   : svdb/INVX1.ports
+Dependency map  : INVX1.lmap.perc
+Lvs file        : svdb/INVX1.lvsfile
+Float net file : .INVX1.info.softchk
 debug           : 0
-Source Library  : NOR3X1_32561
+Source Library  : INVX1_5797

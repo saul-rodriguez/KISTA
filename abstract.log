@@ -1,0 +1,116 @@
+INFO (ABS-19020): Starting @(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $, sub-version  IC6.1.8-64b.500.7 , on Linux 2.6.32-431.11.2.el6.x86_64
+INFO (ABS-19046): Abstract Generator no longer uses the '.abstract.options' file in the selected design library as the default options file. The new default file location is <current working directory>/.abstract/<library name>/.abstract.options. 
+INFO (ABS-10500): Library KISTA_SOI_STDLIB Opening /home/saul/projects/KISTA/KISTA_SOI_STDLIB
+INFO (ABS-10011): Verifying Technology Data ...
+INFO (ABS-10012): Layer summary: 3 metal layer(s), 2 via layer(s), 3 poly layer(s), and 1 diff layer(s) found
+INFO (ABS-20023): Via summary: 8 valid via(s) found
+INFO (ABS-20049): The layer ndiff, defined in the spacingTables section of the foundry constraint group, is also defined in the techDerivedLayers section of the technology file. The abstract generator does not support derived layers and this layer will, therefore, be ignored. As a result, the abstracts generated will not have any shape on this layer.
+INFO (ABS-20049): The layer pdiff, defined in the spacingTables section of the foundry constraint group, is also defined in the techDerivedLayers section of the technology file. The abstract generator does not support derived layers and this layer will, therefore, be ignored. As a result, the abstracts generated will not have any shape on this layer.
+INFO (ABS-20049): The layer ndiff, defined in the spacingTables section of the foundry constraint group, is also defined in the techDerivedLayers section of the technology file. The abstract generator does not support derived layers and this layer will, therefore, be ignored. As a result, the abstracts generated will not have any shape on this layer.
+INFO (ABS-20049): The layer pdiff, defined in the spacingTables section of the foundry constraint group, is also defined in the techDerivedLayers section of the technology file. The abstract generator does not support derived layers and this layer will, therefore, be ignored. As a result, the abstracts generated will not have any shape on this layer.
+INFO (ABS-20049): The layer ndiff, defined in the spacingTables section of the foundry constraint group, is also defined in the techDerivedLayers section of the technology file. The abstract generator does not support derived layers and this layer will, therefore, be ignored. As a result, the abstracts generated will not have any shape on this layer.
+INFO (ABS-20049): The layer ptap, defined in the spacingTables section of the foundry constraint group, is also defined in the techDerivedLayers section of the technology file. The abstract generator does not support derived layers and this layer will, therefore, be ignored. As a result, the abstracts generated will not have any shape on this layer.
+INFO (ABS-20049): The layer ntap, defined in the spacingTables section of the foundry constraint group, is also defined in the techDerivedLayers section of the technology file. The abstract generator does not support derived layers and this layer will, therefore, be ignored. As a result, the abstracts generated will not have any shape on this layer.
+INFO (ABS-10503): Loading options for library KISTA_SOI_STDLIB from file /home/saul/projects/KISTA/.abstract/KISTA_SOI_STDLIB/.abstract.options.
+INFO (ABS-10501): Library KISTA_SOI_STDLIB Loading 35 cells
+INFO (ABS-19022): Loading library KISTA_SOI_STDLIB 10 percent complete...
+INFO (ABS-19022): Loading library KISTA_SOI_STDLIB 20 percent complete...
+INFO (ABS-19022): Loading library KISTA_SOI_STDLIB 30 percent complete...
+INFO (ABS-19022): Loading library KISTA_SOI_STDLIB 40 percent complete...
+INFO (ABS-19022): Loading library KISTA_SOI_STDLIB 50 percent complete...
+INFO (ABS-19022): Loading library KISTA_SOI_STDLIB 60 percent complete...
+INFO (ABS-19022): Loading library KISTA_SOI_STDLIB 70 percent complete...
+INFO (ABS-19022): Loading library KISTA_SOI_STDLIB 80 percent complete...
+INFO (ABS-19022): Loading library KISTA_SOI_STDLIB 90 percent complete...
+INFO (ABS-19022): Loading library KISTA_SOI_STDLIB 100 percent complete...
+INFO (ABS-10502): Library KISTA_SOI_STDLIB Loaded 35 cells
+INFO (ABS-10507): Library KISTA_SOI_STDLIB opened
+INFO (ABS-19046): Abstract Generator no longer uses the '.abstract.options' file in the selected design library as the default options file. The new default file location is <current working directory>/.abstract/<library name>/.abstract.options. 
+INFO (ABS-19047): Abstract Generator no longer uses the '.abstract.status' file present in the selected lib/cell directory . The new default file location for each cell is <current working directory>/.abstract/<library name>/cellStatus/.abstract.status.<cellName>. 
+*WARNING* (ABS-20061): Abstract Generator will ignore the value of the 'ReadOnlyTechnology' option and will not save the layer-purpose pairs in the technology file. Support for the 'ReadOnlyTechnology' option will be removed in a future release.
+INFO (ABS-10503): Loading options for library KISTA_SOI_STDLIB from file /home/saul/projects/KISTA/.abstract/KISTA_SOI_STDLIB/.abstract.options.
+INFO (ABS-19022): Running Abstract 20 percent complete...
+INFO (ABS-12015): Cell DFFSRX1: The prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Boundary" tab. Ensure that all the required layers have been specified in this field.
+INFO (ABS-12042): Cell DFFSRX1: Deleting nets and terminals with no pins because these are not relevant for layout tools.
+INFO (ABS-12001): Cell DFFSRX1: There are 8 existing terminals. No pins will be added for them.
+INFO (ABS-13002): Cell DFFSRX1: extracting 8 nets
+INFO (ABS-13004): Cell DFFSRX1: extracting the net SN, 1 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net QN, 2 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net CK, 3 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net RN, 4 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net Q, 5 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net D, 6 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net VSS!, 7 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net VDD!, 8 of 8.
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal1
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via1
+INFO (ABS-19022): Running Abstract 30 percent complete...
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal2
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via2
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal3
+*WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell DFFSRX1 is invalid.
+INFO (ABS-19022): Running Abstract 60 percent complete...
+INFO (ABS-14028): Cell DFFSRX1: predefined site CoreSite will be used
+INFO (ABS-19022): Running Abstract 80 percent complete...
+INFO (ABS-19022): Running Abstract 10 percent complete...
+*ERROR* (ABS-11024): Cell DFFSRX1: Failed to process the cell because the Abstract view  is currently "exclusive" locked by user saul on machine s2424.it.kth.se (since Sun Jan  9 02:00:31 2022 CET.) .Check the cell directory and close all applications that is using the same step and then try again.
+INFO (ABS-12015): Cell INVX1: The prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Boundary" tab. Ensure that all the required layers have been specified in this field.
+INFO (ABS-12001): Cell INVX1: There are 4 existing terminals. No pins will be added for them.
+INFO (ABS-13002): Cell INVX1: extracting 4 nets
+INFO (ABS-13004): Cell INVX1: extracting the net Y, 1 of 4.
+INFO (ABS-13004): Cell INVX1: extracting the net A, 2 of 4.
+INFO (ABS-13004): Cell INVX1: extracting the net VSS!, 3 of 4.
+INFO (ABS-13004): Cell INVX1: extracting the net VDD!, 4 of 4.
+INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal1
+INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Via1
+INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal2
+INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Via2
+INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal3
+*WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell INVX1 is invalid.
+INFO (ABS-19022): Running Abstract 30 percent complete...
+INFO (ABS-14028): Cell INVX1: predefined site CoreSite will be used
+INFO (ABS-19022): Running Abstract 40 percent complete...
+INFO (ABS-19022): Running Abstract 10 percent complete...
+INFO (ABS-12015): Cell DFFSRX1: The prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Boundary" tab. Ensure that all the required layers have been specified in this field.
+INFO (ABS-12042): Cell DFFSRX1: Deleting nets and terminals with no pins because these are not relevant for layout tools.
+INFO (ABS-12001): Cell DFFSRX1: There are 8 existing terminals. No pins will be added for them.
+INFO (ABS-13002): Cell DFFSRX1: extracting 8 nets
+INFO (ABS-13004): Cell DFFSRX1: extracting the net SN, 1 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net QN, 2 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net CK, 3 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net RN, 4 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net Q, 5 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net D, 6 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net VSS!, 7 of 8.
+INFO (ABS-13004): Cell DFFSRX1: extracting the net VDD!, 8 of 8.
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal1
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via1
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal2
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via2
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal3
+*WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell DFFSRX1 is invalid.
+INFO (ABS-19022): Running Abstract 30 percent complete...
+INFO (ABS-12015): Cell INVX1: The prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Boundary" tab. Ensure that all the required layers have been specified in this field.
+INFO (ABS-12001): Cell INVX1: There are 4 existing terminals. No pins will be added for them.
+INFO (ABS-13002): Cell INVX1: extracting 4 nets
+INFO (ABS-13004): Cell INVX1: extracting the net Y, 1 of 4.
+INFO (ABS-13004): Cell INVX1: extracting the net A, 2 of 4.
+INFO (ABS-13004): Cell INVX1: extracting the net VSS!, 3 of 4.
+INFO (ABS-13004): Cell INVX1: extracting the net VDD!, 4 of 4.
+INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal1
+INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Via1
+INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal2
+INFO (ABS-19022): Running Abstract 40 percent complete...
+INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Via2
+INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal3
+*WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell INVX1 is invalid.
+INFO (ABS-19022): Running Abstract 50 percent complete...
+INFO (ABS-14028): Cell DFFSRX1: predefined site CoreSite will be used
+INFO (ABS-14028): Cell INVX1: predefined site CoreSite will be used
+INFO (ABS-19022): Running Abstract 70 percent complete...
+INFO (ABS-19021): Finished sub-version  IC6.1.8-64b.500.7 
+INFO (ABS-10508): Library KISTA_SOI_STDLIB closing /home/saul/projects/KISTA/KISTA_SOI_STDLIB
+INFO (ABS-10509): Saving existing options file for library KISTA_SOI_STDLIB to /home/saul/projects/KISTA/.abstract/KISTA_SOI_STDLIB/.abstract.options.prev
+INFO (ABS-10511): Saving current option settings for library KISTA_SOI_STDLIB to the file /home/saul/projects/KISTA/.abstract/KISTA_SOI_STDLIB/.abstract.options.
+INFO (ABS-10515): Library KISTA_SOI_STDLIB closed
+INFO (ABS-10529): Abstract Generation finished for Library KISTA_SOI_STDLIB 
