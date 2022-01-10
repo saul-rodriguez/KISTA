@@ -3,14 +3,14 @@
 Product   : Virtuoso(R) LEF Out 
 Program   : @(#)$CDS: lefout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-52) $
 SubVersion: sub-version  IC6.1.8-64b.500.7 
-Started at: 09-Jan-2022  02:42:41
+Started at: 10-Jan-2022  07:10:57
 User Name : saul
 Host Name : s2424
 Directory : /home/saul/projects/KISTA
 DB Version: 	20191008 (SJ)
 CADENCE Design Systems, Inc.
 ********************************************************************************
-Running: lefout -lib KISTA_SOI_STDLIB -cells "AOI21X1 BUFX2 DECAP1 DECAP2 DECAP4 DFFSRX1 DFFX1 FILL1 FILL2 FILL4 INVX1 MX2X1 NAND2X1 NAND3X1 NOR2X1 NOR3X1 OAI21X1 TIEHI TIELO XOR2X1 MX2X1_BUF" -lef /home/saul/projects/KISTA/kista_soi_stdlib_lef/kista_soi_stdlib_macro.lef -ver 5.7 -noTech
+Running: lefout -lib KISTA_SOI_STDLIB -cells "AOI21X1 BUFX2 DECAP1 DECAP2 DECAP4 DFFSRX1 DFFX1 FILL1 FILL2 FILL4 INVX1 MX2X1 MX2X1_BUF NAND2X1 NAND3X1 NOR2X1 NOR3X1 OAI21X1 TIEHI TIELO XOR2X1" -lef /home/saul/projects/KISTA/kista_soi_stdlib_lef/kista_soi_stdlib_macro.lef -ver 5.7 -noTech
 
 Elapsed Time: 0.2s
 

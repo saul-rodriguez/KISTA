@@ -1,7 +1,7 @@
 ( ( nil
   version "2.1"
   mapType "incremental"
-  blockName "INVX1"
+  blockName "DFFSRX1"
   repList "auCdl schematic"
   stopList "auCdl"
   globalList "VDD! VSS!"
@@ -9,7 +9,7 @@
   netlistDir "/home/saul/projects/KISTA/lvs_runs/"
  )
 ( model
-( "KISTA_SOI_STDLIB/INVX1/schematic" "INVX1" )
+( "KISTA_SOI_STDLIB/DFFSRX1/schematic" "DFFSRX1" )
  )
-( "INVX1" "ihnl/cds0/map" )
+( "DFFSRX1" "ihnl/cds0/map" )
  )

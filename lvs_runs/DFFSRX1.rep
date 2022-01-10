@@ -5,13 +5,13 @@
 			*****************************************************
 
 
-Report File Name         : INVX1.rep
-ERC Summary File         : INVX1.sum
-LVS Comparison Report    : INVX1.rep.cls
-LVS Softchk Report       : INVX1.softchk
-Layout Name              : /home/saul/projects/KISTA/lvs_runs/INVX1.gds ("INVX1")
+Report File Name         : DFFSRX1.rep
+ERC Summary File         : DFFSRX1.sum
+LVS Comparison Report    : DFFSRX1.rep.cls
+LVS Softchk Report       : DFFSRX1.softchk
+Layout Name              : /home/saul/projects/KISTA/lvs_runs/DFFSRX1.gds ("DFFSRX1")
 User Name                : saul
-Creation Time            : Sun Jan  9 02:37:03 2022
+Creation Time            : Mon Jan 10 07:03:30 2022
 Current directory        : /home/saul/projects/KISTA/lvs_runs
 PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 

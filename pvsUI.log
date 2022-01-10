@@ -6,17 +6,17 @@ Parameters:
 	-cellmap
 	/home/saul/projects/KISTA/lvs_runs/lay_cellMap.txt
 	-ppid
-	1634
+	29250
 	-form
 	-viewer
 	virtuoso
 	-schview
 	schematic
 	-tag
-	EBLMHVDJICQLBKLFM
+	GJHODXCCJJLICLIOD
 
 
 Checking out SoftShare license Phys_Ver_Sys_Results_Mgr 16.1 Qty: 1 ... succeeded (1s).
-starting pvsProbeServer: port= 40320
-Starting probe server on port: 40320
+starting pvsProbeServer: port= 35700
+Starting probe server on port: 35700
 Checking in SoftShare license Phys_Ver_Sys_Results_Mgr ... succeeded (1s).

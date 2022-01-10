@@ -7,9 +7,9 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      4193
-Starting Time:   Fri Oct 22 07:23:36 2021 (Fri Oct 22 05:23:36 2021 GMT)
-With parameters: -erc -get_rules /tmp/pvsrng.32597@s2424.1 -tc top -gds /dev/null -get_options /tmp/pvsoptpar.32597@s2424.1 -gen_tags /tmp/pvsgentags.32597@s2424.1 -control /tmp/ipvsRulesCheckControl.32597@s2424.1 /home/saul/projects/KISTA/pvs/kista_lvs.rul 
+Process Id:      32740
+Starting Time:   Mon Jan 10 06:57:10 2022 (Mon Jan 10 05:57:10 2022 GMT)
+With parameters: -lvs -get_rules /tmp/pvsrng.29653@s2424.1 -tc top -gds /dev/null -get_options /tmp/pvsoptpar.29653@s2424.1 -gen_tags /tmp/pvsgentags.29653@s2424.1 -stc top -cdl . -control /tmp/ipvsRulesCheckControl.29653@s2424.1 /home/saul/projects/KISTA/lvs_runs/.technology.rul.29653@s2424.1 
 ********************************************************************************
 
 
@@ -18,7 +18,7 @@ Get host info ...
 ########################################################################
 CPU info:
     model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
-    cpu MHz         :  1203.076
+    cpu MHz         :  1207.031
     cache size      :  20480 KB
     physical cores  :  16
     logical cores   :  32
@@ -28,42 +28,42 @@ Memory info:
     64168M physical memory installed.
 
     MemTotal:       65709328 kB
-    MemFree:        16162424 kB
-    MemAvailable:   18019852 kB
+    MemFree:         4413248 kB
+    MemAvailable:   31198632 kB
     Buffers:               0 kB
-    Cached:          1565768 kB
-    SwapCached:       133368 kB
-    Active:         41433956 kB
-    Inactive:        4589508 kB
-    Active(anon):   40567904 kB
-    Inactive(anon):  4006720 kB
-    Active(file):     866052 kB
-    Inactive(file):   582788 kB
+    Cached:         25894616 kB
+    SwapCached:       122852 kB
+    Active:         42559408 kB
+    Inactive:       13926628 kB
+    Active(anon):   27713420 kB
+    Inactive(anon):  3280992 kB
+    Active(file):   14845988 kB
+    Inactive(file): 10645636 kB
     Unevictable:           0 kB
     Mlocked:               0 kB
     SwapTotal:      32964604 kB
-    SwapFree:       12281596 kB
-    Dirty:                 4 kB
+    SwapFree:        4955776 kB
+    Dirty:                20 kB
     Writeback:             0 kB
-    AnonPages:      44324764 kB
-    Mapped:           288096 kB
-    Shmem:            116900 kB
-    Slab:            1240348 kB
-    SReclaimable:     900576 kB
-    SUnreclaim:       339772 kB
-    KernelStack:       11168 kB
-    PageTables:       161532 kB
+    AnonPages:      30468964 kB
+    Mapped:           352552 kB
+    Shmem:            402968 kB
+    Slab:            2345924 kB
+    SReclaimable:    1785748 kB
+    SUnreclaim:       560176 kB
+    KernelStack:       11712 kB
+    PageTables:       143612 kB
     NFS_Unstable:          0 kB
     Bounce:                0 kB
     WritebackTmp:          0 kB
     CommitLimit:    65819268 kB
-    Committed_AS:   65746720 kB
+    Committed_AS:   48256824 kB
     VmallocTotal:   34359738367 kB
     VmallocUsed:      422088 kB
     VmallocChunk:   34325399548 kB
     Percpu:            10240 kB
     HardwareCorrupted:     0 kB
-    AnonHugePages:   3106816 kB
+    AnonHugePages:   1654784 kB
     CmaTotal:              0 kB
     CmaFree:               0 kB
     HugePages_Total:       0
@@ -85,14 +85,18 @@ ENV VAR: TCLLIBPATH = /pkg/cadence/installs/PVS161/share/lib/itcl/3.4.1 /pkg/cad
 
 
 ########################################################################
-Parsing Control File /tmp/ipvsRulesCheckControl.32597@s2424.1 ...
+Parsing Control File /tmp/ipvsRulesCheckControl.29653@s2424.1 ...
 ########################################################################
-RESULTS_DB -erc "/home/saul/projects/KISTA/erc_runs/pmos4.erc_errors.ascii" -ascii;
+RESULTS_DB -erc "/home/saul/projects/KISTA/lvs_runs/DFFSRX1.erc_errors.ascii" -ascii;
 LVS_RUN_ERC_CHECKS yes;
 
 ########################################################################
-Parsing Rule File /home/saul/projects/KISTA/pvs/kista_lvs.rul ...
+Parsing Rule File /home/saul/projects/KISTA/lvs_runs/.technology.rul.29653@s2424.1 ...
 ########################################################################
+TECHNOLOGY kista_pvs -ruleSet default -techLib /home/saul/projects/KISTA/pvtech.lib;
+[WARN] The rule set 'default' in technology 'kista_pvs' has file './pvlLVS.rul' given for 'ErcRules'. However, this file does not exist, or cannot be read, and will be ignored.
+[INFO] TECHNOLOGY: Rules file /home/saul/projects/KISTA/pvs/./kista_lvs.rul will be included after the remainder of the current rules are processed.
+[INFO] TECHNOLOGY kista_pvs -techLib /home/saul/projects/KISTA/pvtech.lib: End of additions.
 LVS_NETLIST yes -allow_inconsistent_model;
 LVS_FILTER_OPTION AG RC RE RG;
 INPUT_SCALE 2000;
@@ -142,6 +146,8 @@ LAYER_DEF Poly 1047;
 LAYER_MAP 3 -datatype 0 1047;
 LAYER_DEF Psub 1048;
 LAYER_MAP 25 -datatype 0 1048;
+LAYER_DEF KTH_source 11000;
+LAYER_MAP 170 -datatype 0 11000;
 LAYER_DEF text 1098;
 LAYER_MAP 63 -texttype 0 1098;
 TEXT_LAYER text;
@@ -257,8 +263,12 @@ ATTACH m4_pin metal4_conn;
 AND psubstrate nactive _nmos1v_sti;
 SIZE _nmos1v -by 1 _nmos1v_wpe_temp;
 NOT _nmos1v_wpe_temp Nwell _nmos1v_wpe;
-DEVICE MN ( nmos4 ) _nmos1v poly_conn ( G ) ndiff_conn ( S ) ndiff_conn ( D ) psubstrate ( B ) ( S D ) -model nch < _nmos1v_sti > < _nmos1v_wpe > [ property fw , w , l , ad , as , pd , ps , sa , sb , sca , scb , scc 
- width = perim_co ( _nmos1v , ndiff_conn ) / 2 
+NOT ndiff_conn KTH_source _soi_nd;
+AND ndiff_conn KTH_source _soi_nsb;
+NOT pdiff_conn KTH_source _soi_pd;
+AND pdiff_conn KTH_source _soi_psb;
+DEVICE MN ( nmos3 ) _nmos1v poly_conn ( G ) _soi_nsb ( S ) _soi_nd ( D ) _soi_nsb ( B ) -model nch < _nmos1v_sti > < _nmos1v_wpe > [ property fw , w , l , ad , as , pd , ps , sa , sb , sca , scb , scc 
+ width = perim_co ( _nmos1v , _soi_nd ) / 1 
  fw = width 
  w = width 
  l = area ( _nmos1v ) / width 
@@ -276,8 +286,8 @@ DEVICE MN ( nmos4 ) _nmos1v poly_conn ( G ) ndiff_conn ( S ) ndiff_conn ( D ) ps
 LVS_CHECK_PROPERTY MN ( nmos4 ) l l -tolerance 0;
 LVS_CHECK_PROPERTY MN ( nmos4 ) w w -tolerance 0;
 LVS_MAP_DEVICE M ( nmos4 ) MN ( nmos4 );
-DEVICE MP ( pmos4 ) _pmos1v poly_conn ( G ) pdiff_conn ( S ) pdiff_conn ( D ) nwell_conn ( B ) ( S D ) -model pch < pactive > [ property fw , w , l , ad , as , pd , ps , sa , sb , sca , scb , scc 
- width = perim_co ( _pmos1v , pdiff_conn ) / 2 
+DEVICE MP ( pmos3 ) _pmos1v poly_conn ( G ) _soi_psb ( S ) _soi_pd ( D ) _soi_psb ( B ) -model pch < pactive > < nwell_conn > [ property fw , w , l , ad , as , pd , ps , sa , sb , sca , scb , scc 
+ width = perim_co ( _pmos1v , _soi_psb ) / 1 
  fw = width 
  w = width 
  l = area ( _pmos1v ) / width 
@@ -331,6 +341,6 @@ Total ERC RuleChecks              : 0
 Total ERC Results                 : 0 (0)
 
 
-Netlist Extraction Finished Normally. Fri Oct 22 07:23:36 2021
+Netlist Extraction Finished Normally. Mon Jan 10 06:57:10 2022
 
 

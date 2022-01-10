@@ -42,72 +42,16 @@ INFO (ABS-13004): Cell DFFSRX1: extracting the net Q, 5 of 8.
 INFO (ABS-13004): Cell DFFSRX1: extracting the net D, 6 of 8.
 INFO (ABS-13004): Cell DFFSRX1: extracting the net VSS!, 7 of 8.
 INFO (ABS-13004): Cell DFFSRX1: extracting the net VDD!, 8 of 8.
-INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal1
-INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via1
-INFO (ABS-19022): Running Abstract 30 percent complete...
-INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal2
 INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via2
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal2
+INFO (ABS-19022): Running Abstract 30 percent complete...
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via1
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal1
 INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal3
 *WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell DFFSRX1 is invalid.
 INFO (ABS-19022): Running Abstract 60 percent complete...
 INFO (ABS-14028): Cell DFFSRX1: predefined site CoreSite will be used
 INFO (ABS-19022): Running Abstract 80 percent complete...
-INFO (ABS-19022): Running Abstract 10 percent complete...
-*ERROR* (ABS-11024): Cell DFFSRX1: Failed to process the cell because the Abstract view  is currently "exclusive" locked by user saul on machine s2424.it.kth.se (since Sun Jan  9 02:00:31 2022 CET.) .Check the cell directory and close all applications that is using the same step and then try again.
-INFO (ABS-12015): Cell INVX1: The prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Boundary" tab. Ensure that all the required layers have been specified in this field.
-INFO (ABS-12001): Cell INVX1: There are 4 existing terminals. No pins will be added for them.
-INFO (ABS-13002): Cell INVX1: extracting 4 nets
-INFO (ABS-13004): Cell INVX1: extracting the net Y, 1 of 4.
-INFO (ABS-13004): Cell INVX1: extracting the net A, 2 of 4.
-INFO (ABS-13004): Cell INVX1: extracting the net VSS!, 3 of 4.
-INFO (ABS-13004): Cell INVX1: extracting the net VDD!, 4 of 4.
-INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal1
-INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Via1
-INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal2
-INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Via2
-INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal3
-*WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell INVX1 is invalid.
-INFO (ABS-19022): Running Abstract 30 percent complete...
-INFO (ABS-14028): Cell INVX1: predefined site CoreSite will be used
-INFO (ABS-19022): Running Abstract 40 percent complete...
-INFO (ABS-19022): Running Abstract 10 percent complete...
-INFO (ABS-12015): Cell DFFSRX1: The prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Boundary" tab. Ensure that all the required layers have been specified in this field.
-INFO (ABS-12042): Cell DFFSRX1: Deleting nets and terminals with no pins because these are not relevant for layout tools.
-INFO (ABS-12001): Cell DFFSRX1: There are 8 existing terminals. No pins will be added for them.
-INFO (ABS-13002): Cell DFFSRX1: extracting 8 nets
-INFO (ABS-13004): Cell DFFSRX1: extracting the net SN, 1 of 8.
-INFO (ABS-13004): Cell DFFSRX1: extracting the net QN, 2 of 8.
-INFO (ABS-13004): Cell DFFSRX1: extracting the net CK, 3 of 8.
-INFO (ABS-13004): Cell DFFSRX1: extracting the net RN, 4 of 8.
-INFO (ABS-13004): Cell DFFSRX1: extracting the net Q, 5 of 8.
-INFO (ABS-13004): Cell DFFSRX1: extracting the net D, 6 of 8.
-INFO (ABS-13004): Cell DFFSRX1: extracting the net VSS!, 7 of 8.
-INFO (ABS-13004): Cell DFFSRX1: extracting the net VDD!, 8 of 8.
-INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal1
-INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via1
-INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal2
-INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via2
-INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal3
-*WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell DFFSRX1 is invalid.
-INFO (ABS-19022): Running Abstract 30 percent complete...
-INFO (ABS-12015): Cell INVX1: The prBoundary does not enclose all cellview geometries. This is because not all layers with geometry for calculating prBoundary have been specified in the "Using geometry on layers" field on the "Boundary" tab. Ensure that all the required layers have been specified in this field.
-INFO (ABS-12001): Cell INVX1: There are 4 existing terminals. No pins will be added for them.
-INFO (ABS-13002): Cell INVX1: extracting 4 nets
-INFO (ABS-13004): Cell INVX1: extracting the net Y, 1 of 4.
-INFO (ABS-13004): Cell INVX1: extracting the net A, 2 of 4.
-INFO (ABS-13004): Cell INVX1: extracting the net VSS!, 3 of 4.
-INFO (ABS-13004): Cell INVX1: extracting the net VDD!, 4 of 4.
-INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal1
-INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Via1
-INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal2
-INFO (ABS-19022): Running Abstract 40 percent complete...
-INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Via2
-INFO (ABS-19026): Cell INVX1: Generating detailed blockages for layer Metal3
-*WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell INVX1 is invalid.
-INFO (ABS-19022): Running Abstract 50 percent complete...
-INFO (ABS-14028): Cell DFFSRX1: predefined site CoreSite will be used
-INFO (ABS-14028): Cell INVX1: predefined site CoreSite will be used
-INFO (ABS-19022): Running Abstract 70 percent complete...
 INFO (ABS-19021): Finished sub-version  IC6.1.8-64b.500.7 
 INFO (ABS-10508): Library KISTA_SOI_STDLIB closing /home/saul/projects/KISTA/KISTA_SOI_STDLIB
 INFO (ABS-10509): Saving existing options file for library KISTA_SOI_STDLIB to /home/saul/projects/KISTA/.abstract/KISTA_SOI_STDLIB/.abstract.options.prev

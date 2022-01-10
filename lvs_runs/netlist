@@ -2,9 +2,9 @@
 * auCdl Netlist:
 * 
 * Library Name:  KISTA_SOI_STDLIB
-* Top Cell Name: INVX1
+* Top Cell Name: DFFSRX1
 * View Name:     schematic
-* Netlisted on:  Jan  9 02:37:00 2022
+* Netlisted on:  Jan 10 07:03:27 2022
 ************************************************************************
 
 *.BIPOLAR
@@ -26,13 +26,49 @@
 
 ************************************************************************
 * Library Name: KISTA_SOI_STDLIB
-* Cell Name:    INVX1
+* Cell Name:    DFFSRX1
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT INVX1 A Y
-*.PININFO A:I Y:O
-MM0 Y A VSS! VSS! nmos3 W=2u L=1u
-MM1 Y A VDD! VDD! pmos3 W=4u L=1u
+.SUBCKT DFFSRX1 CK D Q QN RN SN
+*.PININFO CK:I D:I RN:I SN:I Q:O QN:O
+MMmn25 n21 D VSS! VSS! nmos3 W=2e-06 L=1e-06 m=1
+MMmn26 n20 CKb n21 n21 nmos3 W=2e-06 L=1e-06 m=1
+MMmn55 Q qbint VSS! VSS! nmos3 W=2e-06 L=1e-06 m=1
+MMmn22 RNb RN VSS! VSS! nmos3 W=2e-06 L=1e-06 m=1
+MMmn20 CKb CK VSS! VSS! nmos3 W=2e-06 L=1e-06 m=1
+MMmn36 n20 CKbb n30 n30 nmos3 W=2e-06 L=1e-06 m=1
+MMmn35 n30 mout VSS! VSS! nmos3 W=2e-06 L=1e-06 m=1
+MMmn57 QN qint VSS! VSS! nmos3 W=2e-06 L=1e-06 m=1
+MMmn21 CKbb CKb VSS! VSS! nmos3 W=2e-06 L=1e-06 m=1
+MMmn53 n35 CKb n40 n40 nmos3 W=2e-06 L=1e-06 m=1
+MMmn45 qbint n35 VSS! VSS! nmos3 W=2e-06 L=1e-06 m=1
+MMmn40 n35 CKbb mout mout nmos3 W=2e-06 L=1e-06 m=1
+MMmn32 mout n20 net426 net426 nmos3 W=2e-06 L=1e-06 m=1
+MMmn31 mout RNb net426 net426 nmos3 W=2e-06 L=1e-06 m=1
+MMmn30 net426 SN VSS! VSS! nmos3 W=2e-06 L=1e-06 m=1
+MMmn51 n40 RNb n42 n42 nmos3 W=2e-06 L=1e-06 m=1
+MMmn52 n40 qbint n42 n42 nmos3 W=2e-06 L=1e-06 m=1
+MMmn50 n42 SN VSS! VSS! nmos3 W=2e-06 L=1e-06 m=1
+MMmn56 qint qbint VSS! VSS! nmos3 W=2e-06 L=1e-06 m=1
+MMmp26 n20 CKbb n22 n22 pmos3 W=4e-06 L=1e-06 m=1
+MMmp25 n22 D VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp36 n20 CKb n31 n31 pmos3 W=4e-06 L=1e-06 m=1
+MMmp35 n31 mout VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp32 mout n20 net402 net402 pmos3 W=4e-06 L=1e-06 m=1
+MMmp31 net402 RNb VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp51 n43 RNb VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp52 n41 qbint n43 n43 pmos3 W=4e-06 L=1e-06 m=1
+MMmp55 Q qbint VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp22 RNb RN VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp20 CKb CK VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp57 QN qint VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp21 CKbb CKb VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp53 n35 CKbb n41 n41 pmos3 W=4e-06 L=1e-06 m=1
+MMmp50 n41 SN VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp45 qbint n35 VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp30 mout SN VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
+MMmp40 n35 CKb mout mout pmos3 W=4e-06 L=1e-06 m=1
+MMmp56 qint qbint VDD! VDD! pmos3 W=4e-06 L=1e-06 m=1
 .ENDS
 

@@ -3,31 +3,31 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Sun Jan  9 02:37:05 2022
-#####  ERC Summary File              :   INVX1.sum
-#####  Extraction Report File        :   INVX1.rep
-#####  Comparison Report File        :   INVX1.rep.cls
-#####  Top Cell                      :   INVX1  <vs>  INVX1
+#####  NVN Run Start                 :   Mon Jan 10 07:03:32 2022
+#####  ERC Summary File              :   DFFSRX1.sum
+#####  Extraction Report File        :   DFFSRX1.rep
+#####  Comparison Report File        :   DFFSRX1.rep.cls
+#####  Top Cell                      :   DFFSRX1  <vs>  DFFSRX1
 #####  
 #####  Run Result                    :   MATCH
 #####  
 #####  Run Summary                   :   [INFO]  ERC Results: Empty
 #####                                :   [INFO]  Extraction Clean
 #####  
-#####  Layout Design                 :   KISTA_SOI_STDLIB INVX1 layout
-#####  Schematic File                :   /home/saul/projects/KISTA/lvs_runs/INVX1.cdl (cdl)
+#####  Layout Design                 :   KISTA_SOI_STDLIB DFFSRX1 layout
+#####  Schematic File                :   /home/saul/projects/KISTA/lvs_runs/DFFSRX1.cdl (cdl)
 #####  Rules File                    :   .technology.rul
-#####  Pin Swap File                 :   INVX1.rep.cps
+#####  Pin Swap File                 :   DFFSRX1.rep.cps
 #####  
 #####  Extraction CPU Time           :   0h 0m 0s - (0s)
 #####  Extraction Exec Time          :   0h 0m 0s - (0s)
-#####  Extraction Peak Memory Usage  :   25.00MB
+#####  Extraction Peak Memory Usage  :   29.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
 #####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
-#####  NVN Peak Memory Usage         :   232.12MB
+#####  NVN Peak Memory Usage         :   230.00MB
 #####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
 #####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   232.12MB
+#####  LVS Total Peak Memory Usage   :   230.00MB
 #####  
 ##############################################################################################################
 
@@ -61,10 +61,10 @@ Cells that have been blackboxed              |         0
 #
 ##############################################################################################################
 
-          |     Initial Pins     |     Compare Pins     |            | 
-Cell      |   lay    :    sch    |   lay    :    sch    | Status     | Detail
-----------+----------+-----------+----------+-----------+------------+-----------
-INVX1     |       *4 :         2 |        4 :         4 | match      | 
+            |     Initial Pins     |     Compare Pins     |            | 
+Cell        |   lay    :    sch    |   lay    :    sch    | Status     | Detail
+------------+----------+-----------+----------+-----------+------------+-----------
+DFFSRX1     |       *8 :         6 |        8 :         8 | match      | 
 
 
 ##############################################################################################################
@@ -76,8 +76,8 @@ INVX1     |       *4 :         2 |        4 :         4 | match      |
 Command Line LVS Rule Values
 ----------------------------
 
-    layout_primary                          INVX1 {-top_cell INVX1}
-    schematic_primary                       INVX1 {-source_top_cell INVX1}
+    layout_primary                          DFFSRX1 {-top_cell DFFSRX1}
+    schematic_primary                       DFFSRX1 {-source_top_cell DFFSRX1}
 
 LVS Rules Given in the Rules File
 ---------------------------------
@@ -85,9 +85,9 @@ LVS Rules Given in the Rules File
     lvs_abort                               -softchk                               no  
     lvs_abort                               -supply_error                          no  
     lvs_abort                               -check_device_for_property_rule        no  
-    layout_path                             /home/saul/projects/KISTA/lvs_runs/INVX1.gds
+    layout_path                             /home/saul/projects/KISTA/lvs_runs/DFFSRX1.gds
     layout_format                           gdsii
-    schematic_path                          /home/saul/projects/KISTA/lvs_runs/INVX1.cdl
+    schematic_path                          /home/saul/projects/KISTA/lvs_runs/DFFSRX1.cdl
     schematic_format                        cdl
     lvs_netlist                             yes -allow_inconsistent_model
                                              
@@ -103,7 +103,7 @@ LVS Rules Given in the Rules File
     lvs_check_property                      MN ( nmos4 ) w w -tolerance 0
     lvs_check_property                      MP ( pmos4 ) l l -tolerance 0
     lvs_check_property                      MP ( pmos4 ) w w -tolerance 0
-    lvs_report_file                         INVX1.rep
+    lvs_report_file                         DFFSRX1.rep
     lvs_report_max                          50 -mismatched_net_limit 100 
     lvs_map_device                          M ( nmos4 ) MN ( nmos4 ) -source_layout
     lvs_map_device                          M ( pmos4 ) MP ( pmos4 ) -source_layout
@@ -266,12 +266,12 @@ Effective LVS Rule Values
                               |                                                |
                               |        ------->>>   MATCH   <<<-------         |
                               |                                                |
-                              |               INVX1  <vs>  INVX1               |
+                              |             DFFSRX1  <vs>  DFFSRX1             |
                               |                                                |
                               |                                                |
                               +------------------------------------------------+
 
-+===[INVX1]===================================================================================================
++===[DFFSRX1]=================================================================================================
 |                                                 STATISTICS                                                  
 +=============================================================================================================
 
@@ -280,23 +280,23 @@ Effective LVS Rule Values
 Cell            |   lay   :   sch   |   lay   :   sch   |   lay   :  sch
 ----------------+---------+---------+---------+---------+---------+--------
 MP [4 pins]     |         :         |         :         |         :        
- MP(PMOS3)      |       1 :       1 |       1 :       1 |       1 :       1
+ MP(PMOS3)      |      19 :      19 |      19 :      19 |      19 :      19
 MN [4 pins]     |         :         |         :         |         :        
- MN(NMOS3)      |       1 :       1 |       1 :       1 |       1 :       1
+ MN(NMOS3)      |      19 :      19 |      19 :      19 |      19 :      19
 ----------------+---------+---------+---------+---------+---------+--------
-Total           |       2 :       2 |       2 :       2 |       2 :       2
+Total           |      38 :      38 |      38 :      38 |      38 :      38
 ================+=========+=========+=========+=========+=========+========
-Pins            |         :         |         :         |       4 :       4
-Nets            |         :         |         :         |       0 :       0
+Pins            |         :         |         :         |       8 :       8
+Nets            |         :         |         :         |      18 :      18
 ================+=========+=========+=========+=========+=========+========
 
-+===[INVX1]===================================================================================================
++===[DFFSRX1]=================================================================================================
 |                                           INITIAL CORRESPONDENCES                                           
 +=============================================================================================================
 
 Type     | Name
----------+------------------
-Pin      | A VDD! VSS! Y
+---------+------------------------------
+Pin      | CK D Q QN RN SN VDD! VSS!
 
 
 ##############################################################################################################

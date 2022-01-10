@@ -3,31 +3,31 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Sun Jan  9 02:37:05 2022
-#####  ERC Summary File              :   INVX1.sum
-#####  Extraction Report File        :   INVX1.rep
-#####  Comparison Report File        :   INVX1.rep.cls
-#####  Top Cell                      :   INVX1  <vs>  INVX1
+#####  NVN Run Start                 :   Mon Jan 10 07:03:32 2022
+#####  ERC Summary File              :   DFFSRX1.sum
+#####  Extraction Report File        :   DFFSRX1.rep
+#####  Comparison Report File        :   DFFSRX1.rep.cls
+#####  Top Cell                      :   DFFSRX1  <vs>  DFFSRX1
 #####  
 #####  Run Result                    :   MATCH
 #####  
 #####  Run Summary                   :   [INFO]  ERC Results: Empty
 #####                                :   [INFO]  Extraction Clean
 #####  
-#####  Layout Design                 :   KISTA_SOI_STDLIB INVX1 layout
-#####  Schematic File                :   /home/saul/projects/KISTA/lvs_runs/INVX1.cdl (cdl)
+#####  Layout Design                 :   KISTA_SOI_STDLIB DFFSRX1 layout
+#####  Schematic File                :   /home/saul/projects/KISTA/lvs_runs/DFFSRX1.cdl (cdl)
 #####  Rules File                    :   .technology.rul
-#####  Pin Swap File                 :   INVX1.rep.cps
+#####  Pin Swap File                 :   DFFSRX1.rep.cps
 #####  
 #####  Extraction CPU Time           :   0h 0m 0s - (0s)
 #####  Extraction Exec Time          :   0h 0m 0s - (0s)
-#####  Extraction Peak Memory Usage  :   25.00MB
+#####  Extraction Peak Memory Usage  :   29.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
 #####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
-#####  NVN Peak Memory Usage         :   232.12MB
+#####  NVN Peak Memory Usage         :   230.00MB
 #####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
 #####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   232.12MB
+#####  LVS Total Peak Memory Usage   :   230.00MB
 #####  
 ##############################################################################################################
 

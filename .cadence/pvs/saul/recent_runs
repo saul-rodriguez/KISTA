@@ -1,6 +1,6 @@
-1641692226 0 1641692226 "/home/saul/projects/KISTA/lvs_runs" "lvsbrowser" "" "" "" "/home/saul/projects/KISTA/lvs_runs/" "auCdl" "auCdl schematic" "/home/saul/projects/KISTA/lvs_runs/lay_cellMap.txt" "" "" "" "" true
+1641794669 0 1641794669 "/home/saul/projects/KISTA/drc_runs/DFFSRX1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1641794613 0 1641794613 "/home/saul/projects/KISTA/lvs_runs" "lvsbrowser" "" "" "" "/home/saul/projects/KISTA/lvs_runs/" "auCdl" "auCdl schematic" "/home/saul/projects/KISTA/lvs_runs/lay_cellMap.txt" "" "" "" "" true
 1641692189 0 1641692189 "/home/saul/projects/KISTA/drc_runs/INVX1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
-1641689911 0 1641689911 "/home/saul/projects/KISTA/drc_runs/DFFSRX1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
 1640092163 0 1640092163 "/home/saul/projects/KISTA/drc_runs/NOR3X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
 1640075466 0 1640075466 "/home/saul/projects/KISTA/drc_runs/NAND3X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
 1640067191 0 1640067191 "/home/saul/projects/KISTA/drc_runs/OAI21X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
