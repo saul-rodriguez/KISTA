@@ -3,7 +3,7 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Mon Jan 10 07:03:32 2022
+#####  NVN Run Start                 :   Wed Jan 12 13:57:22 2022
 #####  ERC Summary File              :   DFFSRX1.sum
 #####  Extraction Report File        :   DFFSRX1.rep
 #####  Comparison Report File        :   DFFSRX1.rep.cls
@@ -24,10 +24,10 @@
 #####  Extraction Peak Memory Usage  :   29.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
 #####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
-#####  NVN Peak Memory Usage         :   230.00MB
+#####  NVN Peak Memory Usage         :   230.01MB
 #####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
 #####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   230.00MB
+#####  LVS Total Peak Memory Usage   :   230.01MB
 #####  
 ##############################################################################################################
 

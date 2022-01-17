@@ -34,7 +34,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $
           : sub-version  IC6.1.8-64b.500.7 
-Started at: 10-Jan-2022  07:03:26
+Started at: 12-Jan-2022  13:57:17
 User Name : saul
 Host Name : s2424
 Directory : /home/saul/projects/KISTA
@@ -178,15 +178,15 @@ Summary of Objects Translated:
 	Area Halos:                             0
 	Markers:                                0
 	Rows:                                   0
-	Standard Vias                           28
+	Standard Vias                           32
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               181
+	Pathsegs:                               187
 	Text:                                   0
-	TextDisplay:                            14
+	TextDisplay:                            17
 	Cells:                                  5
 
-Elapsed Time: 0.3s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 6352KB
+Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 6336KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '88' warning(s) found.
 
 Creation of CDL for KISTA_SOI_STDLIB/DFFSRX1/schematic is started
@@ -204,7 +204,7 @@ updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
 Running Artist Hierarchical Netlisting ...
 KISTA libInit.il file is loaded
 initializing MOS callbacks
-End netlisting Jan 10 07:03:27 2022
+End netlisting Jan 12 13:57:17 2022
 
 Running simin
 
@@ -212,10 +212,10 @@ Running runSim()...
 
 
 Running runsim with simulator: "auCdl"
-Begin simulation:    Jan 10 07:03:27 2022
+Begin simulation:    Jan 12 13:57:17 2022
 
 auCdl netlisting completed
-End simulation:      Jan 10 07:03:27 2022
+End simulation:      Jan 12 13:57:17 2022
 INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.
 
 ********************************************************************************
@@ -227,8 +227,8 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      1923
-Starting Time:   Mon Jan 10 07:03:30 2022 (Mon Jan 10 06:03:30 2022 GMT)
+Process Id:      23566
+Starting Time:   Wed Jan 12 13:57:21 2022 (Wed Jan 12 12:57:21 2022 GMT)
 With parameters: -lvs -top_cell DFFSRX1 -source_top_cell DFFSRX1 -spice /home/saul/projects/KISTA/lvs_runs/DFFSRX1.spi -control /home/saul/projects/KISTA/lvs_runs/pvslvsctl -ui_data -gdb_data -ai /home/saul/projects/KISTA/lvs_runs/.technology.rul 
 ********************************************************************************
 
@@ -238,7 +238,7 @@ Get host info ...
 ########################################################################
 CPU info:
     model name      :  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
-    cpu MHz         :  1222.998
+    cpu MHz         :  1997.021
     cache size      :  20480 KB
     physical cores  :  16
     logical cores   :  32
@@ -248,42 +248,42 @@ Memory info:
     64168M physical memory installed.
 
     MemTotal:       65709328 kB
-    MemFree:         4452112 kB
-    MemAvailable:   31237804 kB
+    MemFree:         5145232 kB
+    MemAvailable:   16381608 kB
     Buffers:               0 kB
-    Cached:         25895020 kB
-    SwapCached:       122852 kB
-    Active:         42517240 kB
-    Inactive:       13926216 kB
-    Active(anon):   27670412 kB
-    Inactive(anon):  3280992 kB
-    Active(file):   14846828 kB
-    Inactive(file): 10645224 kB
+    Cached:         10508760 kB
+    SwapCached:       228608 kB
+    Active:         49324940 kB
+    Inactive:        7971784 kB
+    Active(anon):   43222304 kB
+    Inactive(anon):  3764572 kB
+    Active(file):    6102636 kB
+    Inactive(file):  4207212 kB
     Unevictable:           0 kB
     Mlocked:               0 kB
     SwapTotal:      32964604 kB
-    SwapFree:        4955776 kB
-    Dirty:               100 kB
-    Writeback:             0 kB
-    AnonPages:      30426048 kB
-    Mapped:           338328 kB
-    Shmem:            402968 kB
-    Slab:            2346504 kB
-    SReclaimable:    1785628 kB
-    SUnreclaim:       560876 kB
-    KernelStack:       11600 kB
-    PageTables:       142996 kB
+    SwapFree:        3382656 kB
+    Dirty:                76 kB
+    Writeback:             4 kB
+    AnonPages:      46558892 kB
+    Mapped:           407268 kB
+    Shmem:            198912 kB
+    Slab:            2074184 kB
+    SReclaimable:    1418516 kB
+    SUnreclaim:       655668 kB
+    KernelStack:       13872 kB
+    PageTables:       202760 kB
     NFS_Unstable:          0 kB
     Bounce:                0 kB
     WritebackTmp:          0 kB
     CommitLimit:    65819268 kB
-    Committed_AS:   48152516 kB
+    Committed_AS:   68159180 kB
     VmallocTotal:   34359738367 kB
     VmallocUsed:      422088 kB
     VmallocChunk:   34325399548 kB
     Percpu:            10240 kB
     HardwareCorrupted:     0 kB
-    AnonHugePages:   1654784 kB
+    AnonHugePages:   1175552 kB
     CmaTotal:              0 kB
     CmaFree:               0 kB
     HugePages_Total:       0
@@ -563,7 +563,7 @@ Checking out SoftShare license Phys_Ver_Sys_LVS_XL 16.1 Qty: 1 ... succeeded (1s
 Optimizing Rules ...
 ########################################################################
 [WARN] Neither hcell nor -automatch option is specified.
-Time: cpu=0.03/0.03  real=0.08/0.08  Memory: 9.14/9.24/11.50
+Time: cpu=0.01/0.01  real=0.06/0.06  Memory: 9.14/9.24/11.50
 
 
 ########################################################################
@@ -573,13 +573,13 @@ Parsing Layer Mapping File DFFSRX1.lmap ...
 
 GDSII Input Summary
 
-Date: Mon Jan 10 07:03:30 2022
+Date: Wed Jan 12 13:57:21 2022
 GDSII file: /home/saul/projects/KISTA/lvs_runs/DFFSRX1.gds
 GDSII size: 20480
 GDSII version: 5.0
 GDSII library name: KISTA_SOI_STDLIB
-Last Modified: 7:3:16 1/10/2022
-Last Accessed: 7:3:26 1/10/2022
+Last Modified: 13:55:49 1/12/2022
+Last Accessed: 13:57:17 1/12/2022
 data base unit in user units    : 0.0005
 physical size of data base unit : 5e-10
 magnification: 1
@@ -589,7 +589,7 @@ loading cell M2_M1_CDNS_2 ...
 loading cell nmos3_CDNS_3 ...
 loading cell pmos3_CDNS_4 ...
 loading cell DFFSRX1 ...
-Time: cpu=0.01/0.04  real=0.06/0.13  Memory: 17.20/17.38/17.38
+Time: cpu=0.01/0.02  real=0.05/0.12  Memory: 17.20/17.38/17.38
 
 
 Cell Summary:
@@ -597,12 +597,12 @@ Cell Summary:
     CELL            INSTANCE    GEOMETRY      LABELS        HREF        FREF
 ----------------------------------------------------------------------------
 M1_PO_CDNS_1               0           3           0          14          14
-M2_M1_CDNS_2               0           3           0          14          14
+M2_M1_CDNS_2               0           3           0          18          18
 nmos3_CDNS_3               0          12           0          19          19
 pmos3_CDNS_4               0          15           0          19          19
-DFFSRX1                   66         199          14           1           1
+DFFSRX1                   70         205          17           1           1
 ----------------------------------------------------------------------------
-TOTAL CELL = 5;  INSTANCE = 66;  GEOMETRY = 232;  LABEL = 14
+TOTAL CELL = 5;  INSTANCE = 70;  GEOMETRY = 238;  LABEL = 17
 
 Layer Summary:
 ----------------------------------------------------------------------------
@@ -613,8 +613,8 @@ M1Resdum              1009         0         0         0         0
 M2Resdum              1010         0         0         0         0
 M3Resdum              1011         0         0         0         0
 M4Resdum              1012         0         0         0         0
-Metal1                1020       141         0       311         0
-Metal2                1021        11         0        24         0
+Metal1                1020       142         0       316         0
+Metal2                1021        16         0        33         0
 Metal3                1022         0         0         0         0
 Metal4                1023         0         0         0         0
 Nimp                  1037         1         0        19         0
@@ -625,15 +625,15 @@ Poly                  1047        63         0       148         0
 Psub                  1048         0         0         0         0
 ResWdum               1049         0         0         0         0
 Resdum                1050         0         0         0         0
-Via1                  1052         1         0        14         0
+Via1                  1052         1         0        18         0
 Via2                  1053         0         0         0         0
 Via3                  1054         0         0         0         0
-metal1_conn_text      1064         0         4         0         4
+metal1_conn_text      1064         0         3         0         3
 metal2_conn_text      1065         0         0         0         0
 metal3_conn_text      1066         0         0         0         0
 metal4_conn_text      1067         0         0         0         0
-m1_label              1076         0        10         0        10
-m2_label              1077         0         0         0         0
+m1_label              1076         0        12         0        12
+m2_label              1077         0         2         0         2
 m3_label              1078         0         0         0         0
 m4_label              1079         0         0         0         0
 m1_pin                1087         0         0         0         0
@@ -649,7 +649,7 @@ KTH_source           11000         2         0        38         0
 
 CHIP EXTENT: 0 -2000 312000 74000
 
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 17.21/17.38/17.38
+Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 17.21/17.38/17.38
 
 
 Ports ...
@@ -657,18 +657,19 @@ Ports ...
 
 Texts For Connectivity ...
 ========================================================================
-RN (50.000, 14.000) 1064 DFFSRX1
+RN (42.000, 4.000) 1064 DFFSRX1
 QN (154.000, 14.000) 1064 DFFSRX1
-D (37.800, 13.600) 1064 DFFSRX1
 VSS! (11.000, -0.200) 1076 DFFSRX1
 VDD! (7.000, 36.200) 1076 DFFSRX1
 SN (77.900, 32.100) 1076 DFFSRX1
-RN (50.000, 13.500) 1076 DFFSRX1
+RN (42.000, 3.500) 1076 DFFSRX1
 QN (154.000, 14.000) 1076 DFFSRX1
 QN (153.900, 13.900) 1076 DFFSRX1
 Q (138.200, 18.000) 1076 DFFSRX1
-D (38.000, 14.000) 1076 DFFSRX1
+D (26.000, 4.000) 1076 DFFSRX1
+D (25.200, 4.300) 1076 DFFSRX1
 CK (1.800, 18.200) 1076 DFFSRX1
+D (26.000, 4.000) 1077 DFFSRX1
 
 Texts For SELECT -LABEL ...
 ========================================================================
@@ -692,16 +693,16 @@ Preparing Hierarchical Database ...
 Constructing Hierarchical Database ...
 ========================================================================
 
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 17.21/17.38/17.38
+Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 17.21/17.38/17.38
 
 
   REORGANIZE HIERARCHIES (1)...
 
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 17.21/17.38/17.38
+Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 17.21/17.38/17.38
 
   REORGANIZE HIERARCHIES (2)...
 
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 21.23/21.39/21.39
+Time: cpu=0.00/0.02  real=0.00/0.12  Memory: 21.23/21.39/21.39
 
 
 Cell Summary:
@@ -709,12 +710,12 @@ Cell Summary:
     CELL            INSTANCE    GEOMETRY      LABELS        HREF        FREF
 ----------------------------------------------------------------------------
 M1_PO_CDNS_1               0           3           0          14          14
-M2_M1_CDNS_2               0           3           0          14          14
+M2_M1_CDNS_2               0           3           0          18          18
 nmos3_CDNS_3               0          12           0          19          19
 pmos3_CDNS_4               0          15           0          19          19
-DFFSRX1                   66         199          12           1           1
+DFFSRX1                   70         205          13           1           1
 ----------------------------------------------------------------------------
-TOTAL CELL = 5;  INSTANCE = 66;  GEOMETRY = 232;  LABEL = 12
+TOTAL CELL = 5;  INSTANCE = 70;  GEOMETRY = 238;  LABEL = 13
 
 Layer Summary:
 ----------------------------------------------------------------------------
@@ -725,8 +726,8 @@ M1Resdum              1009         0         0         0         0
 M2Resdum              1010         0         0         0         0
 M3Resdum              1011         0         0         0         0
 M4Resdum              1012         0         0         0         0
-Metal1                1020       141         0       311         0
-Metal2                1021        11         0        24         0
+Metal1                1020       142         0       316         0
+Metal2                1021        16         0        33         0
 Metal3                1022         0         0         0         0
 Metal4                1023         0         0         0         0
 Nimp                  1037         1         0        19         0
@@ -737,15 +738,15 @@ Poly                  1047        63         0       148         0
 Psub                  1048         0         0         0         0
 ResWdum               1049         0         0         0         0
 Resdum                1050         0         0         0         0
-Via1                  1052         1         0        14         0
+Via1                  1052         1         0        18         0
 Via2                  1053         0         0         0         0
 Via3                  1054         0         0         0         0
-metal1_conn_text      1064         0         3         0         3
+metal1_conn_text      1064         0         2         0         2
 metal2_conn_text      1065         0         0         0         0
 metal3_conn_text      1066         0         0         0         0
 metal4_conn_text      1067         0         0         0         0
-m1_label              1076         0         9         0         9
-m2_label              1077         0         0         0         0
+m1_label              1076         0        10         0        10
+m2_label              1077         0         1         0         1
 m3_label              1078         0         0         0         0
 m4_label              1079         0         0         0         0
 m1_pin                1087         0         0         0         0
@@ -763,8 +764,9 @@ Layer Summary(Texts For Connectivity):
 ----------------------------------------------------------------------------
     LAYER               ID       TEXTS
 ----------------------------------------------------------------------------
-metal1_conn_text      1064         3
-m1_label              1076         9
+metal1_conn_text      1064         2
+m1_label              1076        10
+m2_label              1077         1
 ----------------------------------------------------------------------------
 
 Layer Summary(Texts For SELECT -LABEL):
@@ -784,17 +786,17 @@ Layer Summary(Texts For DFM_TEXT):
     LAYER               ID       TEXTS
 ----------------------------------------------------------------------------
 ----------------------------------------------------------------------------
-Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 21.23/21.39/21.39
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 21.23/21.39/21.39
 
 
 Compacting Hierarchy Library ...
 ========================================================================
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.15/9.34/21.39
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 9.15/9.34/21.39
 
 
 Analyzing Cell Overlapings ...
 ========================================================================
-Time: cpu=0.00/0.04  real=0.00/0.14  Memory: 9.15/9.34/13.36
+Time: cpu=0.00/0.03  real=0.00/0.12  Memory: 9.15/9.34/13.36
 
 
 Merge Layers ...
@@ -803,10 +805,10 @@ Merge Layers ...
     generate layer Cont, TYP = P, HPN = 7, FPN = 128, HEN = 28, FEN = 512
 
     Metal1 = OR Metal1
-    generate layer Metal1, TYP = P, HPN = 36, FPN = 134, HEN = 316, FEN = 708
+    generate layer Metal1, TYP = P, HPN = 36, FPN = 138, HEN = 318, FEN = 726
 
     Metal2 = OR Metal2
-    generate layer Metal2, TYP = P, HPN = 7, FPN = 20, HEN = 36, FEN = 88
+    generate layer Metal2, TYP = P, HPN = 9, FPN = 26, HEN = 50, FEN = 118
 
     Nimp = OR Nimp
     generate layer Nimp, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
@@ -824,14 +826,14 @@ Merge Layers ...
     generate layer Poly, TYP = P, HPN = 18, FPN = 67, HEN = 172, FEN = 368
 
     Via1 = OR Via1
-    generate layer Via1, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
+    generate layer Via1, TYP = P, HPN = 1, FPN = 18, HEN = 4, FEN = 72
 
     KTH_source = OR KTH_source
     generate layer KTH_source, TYP = P, HPN = 2, FPN = 38, HEN = 8, FEN = 152
 
-Time: cpu=0.01/0.05  real=0.01/0.15  Memory: 9.15/9.34/17.38
+Time: cpu=0.01/0.04  real=0.01/0.13  Memory: 9.15/9.34/17.38
 
-Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.15/9.34/9.34
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
 
 ########################################################################
@@ -843,7 +845,7 @@ operation group: 1/32
     bulk = EXTENT
 ========================================================================
     generate layer bulk, TYP = P, HPN = 3, FPN = 39, HEN = 36, FEN = 180
-Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/21.65
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/21.65
 
 
 
@@ -851,7 +853,7 @@ operation group: 2/32
     metal4_conn = NOT Metal4 M4Resdum
 ========================================================================
     generate layer metal4_conn, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
     delete layer Metal4
     delete layer M4Resdum
@@ -861,7 +863,7 @@ operation group: 3/32
     metal3_conn = NOT Metal3 M3Resdum
 ========================================================================
     generate layer metal3_conn, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
     delete layer Metal3
     delete layer M3Resdum
@@ -870,8 +872,8 @@ Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
 operation group: 4/32
     metal2_conn = NOT Metal2 M2Resdum
 ========================================================================
-    generate layer metal2_conn, TYP = P, HPN = 7, FPN = 20, HEN = 36, FEN = 88
-Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
+    generate layer metal2_conn, TYP = P, HPN = 9, FPN = 26, HEN = 50, FEN = 118
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
     delete layer Metal2
     delete layer M2Resdum
@@ -880,8 +882,8 @@ Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
 operation group: 5/32
     metal1_conn = NOT Metal1 M1Resdum
 ========================================================================
-    generate layer metal1_conn, TYP = P, HPN = 36, FPN = 134, HEN = 316, FEN = 708
-Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
+    generate layer metal1_conn, TYP = P, HPN = 36, FPN = 138, HEN = 318, FEN = 726
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
     delete layer Metal1
     delete layer M1Resdum
@@ -891,7 +893,7 @@ operation group: 6/32
     poly_conn = NOT Poly Resdum
 ========================================================================
     generate layer poly_conn, TYP = P, HPN = 18, FPN = 67, HEN = 172, FEN = 368
-Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
+Time: cpu=0.00/0.04  real=0.00/0.13  Memory: 9.15/9.34/9.34
 
 
 
@@ -899,7 +901,7 @@ operation group: 7/32
     cont_poly = AND Cont Poly
 ========================================================================
     generate layer cont_poly, TYP = P, HPN = 1, FPN = 14, HEN = 4, FEN = 56
-Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.15/9.34/13.61
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.15/9.34/13.61
 
 
 
@@ -907,7 +909,7 @@ operation group: 8/32
     pactive = AND Oxide Pimp
 ========================================================================
     generate layer pactive, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.15/9.34/13.61
+Time: cpu=0.00/0.05  real=0.00/0.14  Memory: 9.15/9.34/13.61
 
 
 
@@ -915,7 +917,7 @@ operation group: 9/32
     pdiff = NOT pactive Poly
 ========================================================================
     generate layer pdiff, TYP = P, HPN = 2, FPN = 38, HEN = 8, FEN = 152
-Time: cpu=0.00/0.07  real=0.00/0.16  Memory: 9.15/9.34/13.61
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.15/9.34/13.61
 
 
 
@@ -923,7 +925,7 @@ operation group: 10/32
     pdiff_conn = NOT pdiff Resdum
 ========================================================================
     generate layer pdiff_conn, TYP = P, HPN = 2, FPN = 38, HEN = 8, FEN = 152
-Time: cpu=0.00/0.07  real=0.00/0.16  Memory: 9.15/9.34/9.34
+Time: cpu=0.00/0.05  real=0.00/0.15  Memory: 9.15/9.34/9.34
 
     delete layer pdiff
 
@@ -932,7 +934,7 @@ operation group: 11/32
     cont_pdiff = AND Cont pdiff_conn
 ========================================================================
     generate layer cont_pdiff, TYP = P, HPN = 4, FPN = 76, HEN = 16, FEN = 304
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.15/9.34/13.61
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/13.61
 
 
 
@@ -940,7 +942,7 @@ operation group: 12/32
     nactive = AND Nimp Oxide
 ========================================================================
     generate layer nactive, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.07  real=0.00/0.17  Memory: 9.15/9.34/13.61
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/13.61
 
 
 
@@ -948,7 +950,7 @@ operation group: 13/32
     ndiff = NOT nactive poly_conn
 ========================================================================
     generate layer ndiff, TYP = P, HPN = 2, FPN = 38, HEN = 8, FEN = 152
-Time: cpu=0.00/0.08  real=0.00/0.17  Memory: 9.15/9.34/13.61
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/13.61
 
 
 
@@ -956,7 +958,7 @@ operation group: 14/32
     ndiff_conn = NOT ndiff Resdum
 ========================================================================
     generate layer ndiff_conn, TYP = P, HPN = 2, FPN = 38, HEN = 8, FEN = 152
-Time: cpu=0.00/0.08  real=0.00/0.17  Memory: 9.15/9.34/9.34
+Time: cpu=0.00/0.06  real=0.00/0.15  Memory: 9.15/9.34/9.34
 
     delete layer ndiff
     delete layer Resdum
@@ -966,7 +968,7 @@ operation group: 15/32
     cont_ndiff = AND Cont ndiff_conn
 ========================================================================
     generate layer cont_ndiff, TYP = P, HPN = 2, FPN = 38, HEN = 8, FEN = 152
-Time: cpu=0.00/0.08  real=0.00/0.18  Memory: 9.15/9.34/13.61
+Time: cpu=0.00/0.06  real=0.00/0.16  Memory: 9.15/9.34/13.61
 
     delete layer Cont
 
@@ -975,7 +977,7 @@ operation group: 16/32
     bulk_1 = NOT bulk Nwell
 ========================================================================
     generate layer bulk_1, TYP = P, HPN = 3, FPN = 39, HEN = 40, FEN = 256
-Time: cpu=0.00/0.08  real=0.00/0.18  Memory: 9.15/9.34/13.61
+Time: cpu=0.00/0.07  real=0.00/0.16  Memory: 9.15/9.34/13.61
 
 
 
@@ -983,7 +985,7 @@ operation group: 17/32
     psubstrate = NOT bulk_1 Psub
 ========================================================================
     generate layer psubstrate, TYP = P, HPN = 3, FPN = 39, HEN = 40, FEN = 256
-Time: cpu=0.00/0.08  real=0.00/0.18  Memory: 9.15/9.34/9.34
+Time: cpu=0.00/0.07  real=0.00/0.16  Memory: 9.15/9.34/9.34
 
     delete layer bulk_1
     delete layer Psub
@@ -993,7 +995,7 @@ operation group: 18/32
     ptap = NOT pdiff_conn Nwell
 ========================================================================
     generate layer ptap, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.08  real=0.00/0.18  Memory: 9.14/9.34/13.36
+Time: cpu=0.00/0.07  real=0.00/0.16  Memory: 9.14/9.34/13.36
 
 
 
@@ -1001,7 +1003,7 @@ operation group: 19/32
     nwell_conn = NOT Nwell ResWdum
 ========================================================================
     generate layer nwell_conn, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.08  real=0.00/0.18  Memory: 9.14/9.34/9.34
+Time: cpu=0.00/0.07  real=0.00/0.16  Memory: 9.14/9.34/9.34
 
     delete layer ResWdum
 
@@ -1010,7 +1012,7 @@ operation group: 20/32
     ntap = AND Nwell ndiff_conn
 ========================================================================
     generate layer ntap, TYP = P, HPN = 0, FPN = 0, HEN = 0, FEN = 0
-Time: cpu=0.00/0.08  real=0.00/0.18  Memory: 9.14/9.34/13.36
+Time: cpu=0.00/0.07  real=0.00/0.16  Memory: 9.14/9.34/13.36
 
 
 
@@ -1024,7 +1026,7 @@ operation group: 21/32
     SCONNECT pdiff_conn psubstrate -by ptap
     SCONNECT ndiff_conn nwell_conn -by ntap
 ========================================================================
-Time: cpu=0.02/0.10  real=0.02/0.20  Memory: 9.15/9.34/29.43
+Time: cpu=0.02/0.09  real=0.02/0.18  Memory: 9.15/9.34/29.43
 
     delete layer Via3
     delete layer Via2
@@ -1041,7 +1043,7 @@ operation group: 22/32
     OxPoly = AND Oxide Poly
 ========================================================================
     generate layer OxPoly, TYP = P, HPN = 2, FPN = 38, HEN = 8, FEN = 152
-Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.15/9.34/13.36
+Time: cpu=0.00/0.10  real=0.00/0.19  Memory: 9.15/9.34/13.36
 
     delete layer Oxide
     delete layer Poly
@@ -1051,7 +1053,7 @@ operation group: 23/32
     _nmos1v = AND OxPoly Nimp
 ========================================================================
     generate layer _nmos1v, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.15/9.34/13.61
+Time: cpu=0.01/0.10  real=0.01/0.19  Memory: 9.15/9.34/13.61
 
     delete layer Nimp
 
@@ -1060,7 +1062,7 @@ operation group: 24/32
     _nmos1v_sti = AND psubstrate nactive
 ========================================================================
     generate layer _nmos1v_sti, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.11  real=0.00/0.21  Memory: 9.15/9.34/13.36
+Time: cpu=0.00/0.10  real=0.00/0.20  Memory: 9.15/9.34/13.36
 
     delete layer psubstrate
     delete layer nactive
@@ -1070,7 +1072,7 @@ operation group: 25/32
     _nmos1v_wpe_temp = SIZE _nmos1v -by 1
 ========================================================================
     generate layer _nmos1v_wpe_temp, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.12  real=0.00/0.21  Memory: 9.15/9.34/13.61
+Time: cpu=0.00/0.11  real=0.00/0.20  Memory: 9.15/9.34/13.61
 
 
 
@@ -1078,7 +1080,7 @@ operation group: 26/32
     _nmos1v_wpe = NOT _nmos1v_wpe_temp Nwell
 ========================================================================
     generate layer _nmos1v_wpe, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.12  real=0.00/0.21  Memory: 9.15/9.34/13.36
+Time: cpu=0.00/0.11  real=0.00/0.20  Memory: 9.15/9.34/13.36
 
     delete layer _nmos1v_wpe_temp
     delete layer Nwell
@@ -1088,7 +1090,7 @@ operation group: 27/32
     _soi_nsb = AND ndiff_conn KTH_source
 ========================================================================
     generate layer _soi_nsb, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.15/9.34/13.61
+Time: cpu=0.00/0.11  real=0.00/0.20  Memory: 9.15/9.34/13.61
 
 
 
@@ -1096,7 +1098,7 @@ operation group: 28/32
     _soi_nd = NOT ndiff_conn KTH_source
 ========================================================================
     generate layer _soi_nd, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.15/9.34/13.36
+Time: cpu=0.00/0.11  real=0.00/0.20  Memory: 9.15/9.34/13.36
 
     delete layer ndiff_conn
 
@@ -1105,7 +1107,7 @@ operation group: 29/32
     _pmos1v = AND OxPoly Pimp
 ========================================================================
     generate layer _pmos1v, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.15/9.34/13.36
+Time: cpu=0.00/0.12  real=0.00/0.21  Memory: 9.15/9.34/13.36
 
     delete layer OxPoly
     delete layer Pimp
@@ -1115,7 +1117,7 @@ operation group: 30/32
     _soi_psb = AND pdiff_conn KTH_source
 ========================================================================
     generate layer _soi_psb, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.14/9.34/13.36
+Time: cpu=0.00/0.12  real=0.00/0.21  Memory: 9.14/9.34/13.36
 
 
 
@@ -1123,7 +1125,7 @@ operation group: 31/32
     _soi_pd = NOT pdiff_conn KTH_source
 ========================================================================
     generate layer _soi_pd, TYP = P, HPN = 1, FPN = 19, HEN = 4, FEN = 76
-Time: cpu=0.00/0.12  real=0.00/0.22  Memory: 9.14/9.34/13.36
+Time: cpu=0.00/0.12  real=0.00/0.21  Memory: 9.14/9.34/13.36
 
     delete layer pdiff_conn
     delete layer KTH_source
@@ -1172,7 +1174,7 @@ DEVICE RECOGNITION ...
     delete layer _EPTMPL262186
 Write DEVICES ... 
 
-Time: cpu=0.01/0.14  real=0.01/0.23  Memory: 9.15/9.34/17.38
+Time: cpu=0.02/0.13  real=0.02/0.23  Memory: 9.15/9.34/17.38
 
     delete layer _nmos1v
     delete layer _nmos1v_sti
@@ -1214,14 +1216,14 @@ Outputting Results ...
 Total CPU Time                    : 0(s)
 Total Real Time                   : 0(s)
 Peak Memory Used                  : 29(M)
-Total Original Geometry           : 232(796)
+Total Original Geometry           : 238(814)
 Total ERC RuleChecks              : 0
 Total ERC Results                 : 0 (0)
 Summary can be found in file DFFSRX1.sum
 
 
 Creating extracted connectivity database ...
-CmdLine: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb -kf -edb DFFSRX1_1923.db -ecdb ./ -topcell DFFSRX1 -netlist svdb/DFFSRX1.net -layermap svdb/DFFSRX1.ecdbmap -textmap svdb/DFFSRX1.ports -dependmap DFFSRX1.lmap.perc -lvsfile svdb/DFFSRX1.lvsfile -saveFloatingNets .DFFSRX1.info.softchk 
+CmdLine: /pkg/cadence/installs/PVS161/tools.lnx86/pvs/bin/64bit/edbToEcdb -kf -edb DFFSRX1_23566.db -ecdb ./ -topcell DFFSRX1 -netlist svdb/DFFSRX1.net -layermap svdb/DFFSRX1.ecdbmap -textmap svdb/DFFSRX1.ports -dependmap DFFSRX1.lmap.perc -lvsfile svdb/DFFSRX1.lvsfile -saveFloatingNets .DFFSRX1.info.softchk 
 Legend for cell operations:
    C - Cells
    P - Pins
@@ -1230,7 +1232,7 @@ Legend for cell operations:
    I - Insts
    S - Shapes
    X - Delete cell memory
-Opening layer file 'DFFSRX1_1923.db/__layer'...
+Opening layer file 'DFFSRX1_23566.db/__layer'...
 Loading layer map file 'svdb/DFFSRX1.ecdbmap'...
 Loading text map file 'svdb/DFFSRX1.ports'...
 Loading dependency map file 'DFFSRX1.lmap.perc'...
@@ -1261,17 +1263,17 @@ Peak Memory Used    : 82.66(M)
 
 edbToEcdb Header Information:
   ECDB file version   : 30
-  DevTmpl offset      : 74767
-  Connect offset      : 74867
-  NameTable offset    : 9231
+  DevTmpl offset      : 74986
+  Connect offset      : 75086
+  NameTable offset    : 9450
   Layer Map offset    : 149
-  Cell Start offset   : 8881
-  Cell End offset     : 9231
-  Aux Data offset     : 74967
+  Cell Start offset   : 9100
+  Cell End offset     : 9450
+  Aux Data offset     : 75186
   Nvn Labels offset   : 0
-  NVP                 : 
+  NVP                 : E
   Scale               : 8000
-  File size           : 76277
+  File size           : 76506
   Cell count          : 5
   ECDB create time    : 0
   EDB info            : 10
@@ -1279,23 +1281,23 @@ edbToEcdb Header Information:
 
 edbToEcdb Sizes written to disk (MB):
   NameTbl             :     0.065536
-  Layers              :     0.001106
-  Shapes              :     0.002771
-  XYTree              :     0.001340
-  LookUpTbls          :     0.000465
+  Layers              :     0.001130
+  Shapes              :     0.002855
+  XYTree              :     0.001317
+  LookUpTbls          :     0.000475
   Cells               :     0.000397
-  Insts               :     0.001224
-  Ports               :     0.001128
+  Insts               :     0.001296
+  Ports               :     0.001152
   Nets                :     0.000296
   Pins                :     0.000023
-  Labels              :     0.000336
+  Labels              :     0.000364
   DevTmpl             :     0.000100
   Connect             :     0.000096
   Header              :     0.000139
-  AuxData             :     0.001308
+  AuxData             :     0.001318
   NvnLabels           :     0.000002
 ---------------------------------
-  Total               :     0.076267
+  Total               :     0.076496
 
 edbToEcdb Done
 
@@ -1310,8 +1312,8 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      2002
-Starting Time:   Mon Jan 10 07:03:31 2022 (Mon Jan 10 06:03:31 2022 GMT)
+Process Id:      23655
+Starting Time:   Wed Jan 12 13:57:21 2022 (Wed Jan 12 12:57:21 2022 GMT)
 With parameters: -license_timeout 300 DFFSRX1.rep REPORTDB 
 ********************************************************************************
 
@@ -1319,7 +1321,7 @@ Processing file DFFSRX1.rep
 Completed creation of REPORTDB
 
 
-Netlist Extraction Finished Normally. Mon Jan 10 07:03:32 2022
+Netlist Extraction Finished Normally. Wed Jan 12 13:57:22 2022
 
 
 
@@ -1334,8 +1336,8 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 2.6.18-194.el5
 Executed on:     s2424 (Linux x86_64 3.10.0-1160.42.2.el7.x86_64)
-Process Id:      2023
-Starting Time:   Mon Jan 10 07:03:32 2022 (Mon Jan 10 06:03:32 2022 GMT)
+Process Id:      23682
+Starting Time:   Wed Jan 12 13:57:22 2022 (Wed Jan 12 12:57:22 2022 GMT)
 With parameters: -ai .technology.rul.rsf 
 ********************************************************************************
 
@@ -1454,14 +1456,14 @@ Peak Memory Used      : 29.00(M)
 
 NVN Run Summary
 Total CPU Time        : 1(s)
-Total Real Time       : 1(s)
-Peak Memory Used      : 230.00(M)
+Total Real Time       : 2(s)
+Peak Memory Used      : 230.01(M)
 
 
 LVS Summary
 Total CPU Time        : 1(s)
-Total Real Time       : 1(s)
-Peak Memory Used      : 230.00(M)
+Total Real Time       : 2(s)
+Peak Memory Used      : 230.01(M)
 
     ########################################################
     #                                                      #
@@ -1479,7 +1481,7 @@ Peak Memory Used      : 230.00(M)
 Checking in all SoftShare licenses.
 
 
-PVS Comparison Finished. Mon Jan 10 07:03:33 2022
+PVS Comparison Finished. Wed Jan 12 13:57:24 2022
 
 
 

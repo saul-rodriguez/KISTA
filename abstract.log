@@ -42,12 +42,12 @@ INFO (ABS-13004): Cell DFFSRX1: extracting the net Q, 5 of 8.
 INFO (ABS-13004): Cell DFFSRX1: extracting the net D, 6 of 8.
 INFO (ABS-13004): Cell DFFSRX1: extracting the net VSS!, 7 of 8.
 INFO (ABS-13004): Cell DFFSRX1: extracting the net VDD!, 8 of 8.
-INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via2
-INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal2
-INFO (ABS-19022): Running Abstract 30 percent complete...
 INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via1
-INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal1
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Via2
+INFO (ABS-19022): Running Abstract 30 percent complete...
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal2
 INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal3
+INFO (ABS-19026): Cell DFFSRX1: Generating detailed blockages for layer Metal1
 *WARNING* (ABS-11026): Bus annotation cannot be completed for the specified abstract because the logical view for cell DFFSRX1 is invalid.
 INFO (ABS-19022): Running Abstract 60 percent complete...
 INFO (ABS-14028): Cell DFFSRX1: predefined site CoreSite will be used

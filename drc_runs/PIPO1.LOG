@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $
           : sub-version  IC6.1.8-64b.500.7 
-Started at: 10-Jan-2022  07:04:28
+Started at: 12-Jan-2022  13:56:17
 User Name : saul
 Host Name : s2424
 Directory : /home/saul/projects/KISTA
@@ -141,13 +141,13 @@ Summary of Objects Translated:
 	Area Halos:                             0
 	Markers:                                0
 	Rows:                                   0
-	Standard Vias                           28
+	Standard Vias                           32
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               181
+	Pathsegs:                               187
 	Text:                                   0
-	TextDisplay:                            14
+	TextDisplay:                            17
 	Cells:                                  5
 
-Elapsed Time: 0.3s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 6348KB
+Elapsed Time: 0.3s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 6336KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '88' warning(s) found.

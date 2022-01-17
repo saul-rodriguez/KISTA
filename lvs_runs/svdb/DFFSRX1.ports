@@ -1,14 +1,15 @@
 # SVDB: Port Table (ports)
 # SVDB: Layout Primary DFFSRX1
-RN 6 RN 100000 28000 metal1_conn
-RN 6 RN 100000 27000 metal1_conn
+RN 6 RN 84000 8000 metal1_conn
+RN 6 RN 84000 7000 metal1_conn
 QN 21 QN 308000 28000 metal1_conn
 QN 21 QN 307800 27800 metal1_conn
 QN 21 QN 308000 28000 metal1_conn
 CK 1 CK 3600 36400 metal1_conn
 VDD! 22 VDD! 14000 72400 metal1_conn
 SN 7 SN 155800 64200 metal1_conn
-D 5 D 75600 27200 metal1_conn
-D 5 D 76000 28000 metal1_conn
+D 5 D 50400 8600 metal1_conn
+D 5 D 52000 8000 metal2_conn
+D 5 D 52000 8000 metal1_conn
 VSS! 14 VSS! 22000 -400 metal1_conn
 Q 20 Q 276400 36000 metal1_conn

@@ -8,6 +8,8 @@ ln -s $PDK_HOME/KISTA_SOI_STDLIB .
 ln -s $PDK_HOME/pvs .
 ln -s $PDK_HOME/qrc .
 ln -s $PDK_HOME/models .
+ln -s $PDK_HOME/kista_soi_stdlib_files .
+
 
 cp $PDK_HOME/display.drf .
 cp $PDK_HOME/pvtech.lib .

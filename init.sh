@@ -63,7 +63,8 @@ export CDS_BIND_TMP_DD=true
 ###################
 #export RTL_HOME=/pkg/cadence/installs/RC142
 #export PATH=$PATH:$RTL_HOME/tools.lnx86/bin
-export GENUSHOME=/pkg/cadence/installs/GENUS181
+#export GENUSHOME=/pkg/cadence/installs/GENUS181
+export GENUSHOME=/pkg/cadence/installs/GENUS211
 export PATH=$PATH:$GENUSHOME/tools.lnx86/bin
 
 ######################################

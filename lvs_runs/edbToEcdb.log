@@ -3,7 +3,7 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : DFFSRX1_1923.db
+EDB Library dir : DFFSRX1_23566.db
 ECDB dir        : ./
 Top Cell        : DFFSRX1
 CDL netlist     : svdb/DFFSRX1.net
@@ -13,4 +13,4 @@ Dependency map  : DFFSRX1.lmap.perc
 Lvs file        : svdb/DFFSRX1.lvsfile
 Float net file : .DFFSRX1.info.softchk
 debug           : 0
-Source Library  : DFFSRX1_1923
+Source Library  : DFFSRX1_23566

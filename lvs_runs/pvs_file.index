@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/saul/projects/KISTA
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/saul/projects/KISTA/lvs_runs/.preset.autosave
-"Job Signature" internal none IPVS_1641794604_29653
+"Job Signature" internal none IPVS_1641992213_6575
 "PVS Job Mode" internal none lvs
 "Run Directory" internal none /home/saul/projects/KISTA/lvs_runs
 "Technology Mapping File" internal none /home/saul/projects/KISTA/pvtech.lib
@@ -12,7 +12,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1641794605
+"PVS Job Time" internal none 1641992236
 "CDL Out Display Pin Information" internal none ENABLED
 "CDL Out Stop List" internal text auCdl
 "CDL Out View List" internal text auCdl schematic
@@ -59,7 +59,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1641794610
+"PVS Job Time" internal none 1641992240
 "Comparison Report" output cls /home/saul/projects/KISTA/lvs_runs/DFFSRX1.rep.cls
 "ERC Result" internal none EMPTY
 "ERC Summary" output text /home/saul/projects/KISTA/lvs_runs/DFFSRX1.sum
@@ -78,7 +78,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1641794610
+"PVS Job Time" internal none 1641992241
 "Comparison Result" internal none MATCH
 "LVS Run Name" internal none DFFSRX1.rep
 "Run Directory" internal none /home/saul/projects/KISTA/lvs_runs/
@@ -87,4 +87,4 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsnvn
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1641794612
+"PVS Job Time" internal none 1641992242

@@ -39,6 +39,8 @@ MACRO AOI21X1
     PORT
       LAYER Metal1 ;
         RECT 9 13 13 15 ;
+      LAYER Via1 ;
+        RECT 11.5 13.5 12.5 14.5 ;
     END
   END A1
   PIN Y
@@ -50,6 +52,18 @@ MACRO AOI21X1
         RECT 5 17 23 19 ;
         RECT 9 17 11 29 ;
         RECT 5 3 7 19 ;
+      LAYER Via1 ;
+        RECT 5.5 3.5 6.5 4.5 ;
+        RECT 9.5 27.5 10.5 28.5 ;
+        RECT 9.5 25.5 10.5 26.5 ;
+        RECT 9.5 23.5 10.5 24.5 ;
+        RECT 9.5 21.5 10.5 22.5 ;
+        RECT 21.5 27.5 22.5 28.5 ;
+        RECT 21.5 25.5 22.5 26.5 ;
+        RECT 21.5 23.5 22.5 24.5 ;
+        RECT 21.5 21.5 22.5 22.5 ;
+        RECT 21.5 5.5 22.5 6.5 ;
+        RECT 21.5 3.5 22.5 4.5 ;
     END
   END Y
   PIN A0
@@ -58,6 +72,8 @@ MACRO AOI21X1
     PORT
       LAYER Metal1 ;
         RECT 17 9 19 11 ;
+      LAYER Via1 ;
+        RECT 17.5 9.5 18.5 10.5 ;
     END
   END A0
   PIN B0
@@ -66,6 +82,8 @@ MACRO AOI21X1
     PORT
       LAYER Metal1 ;
         RECT 1 17 3 19 ;
+      LAYER Via1 ;
+        RECT 1.5 17.5 2.5 18.5 ;
     END
   END B0
   PIN VDD!
@@ -89,16 +107,6 @@ MACRO AOI21X1
       RECT 5 21 7 33 ;
       RECT 13 27 19 29 ;
       RECT 17 21 19 29 ;
-    LAYER Via1 ;
-      RECT 21.5 3.5 22.5 4.5 ;
-      RECT 21.5 5.5 22.5 6.5 ;
-      RECT 21.5 21.5 22.5 22.5 ;
-      RECT 21.5 23.5 22.5 24.5 ;
-      RECT 21.5 25.5 22.5 26.5 ;
-      RECT 21.5 27.5 22.5 28.5 ;
-      RECT 17.5 9.5 18.5 10.5 ;
-      RECT 11.5 13.5 12.5 14.5 ;
-      RECT 1.5 17.5 2.5 18.5 ;
   END
 END AOI21X1
 
@@ -300,7 +308,7 @@ MACRO DFFSRX1
         RECT 91 -1 93 9 ;
         RECT 59 -1 61 9 ;
         RECT 47 7 53 9 ;
-        RECT 47 -1 49 9 ;
+        RECT 51 -1 53 9 ;
         RECT 19 -1 21 9 ;
         RECT 11 -1 13 9 ;
         RECT 3 -1 5 9 ;
@@ -322,8 +330,7 @@ MACRO DFFSRX1
         RECT 91 24 93 37 ;
         RECT 67 24 69 37 ;
         RECT 59 24 61 37 ;
-        RECT 47 26 53 28 ;
-        RECT 51 24 53 28 ;
+        RECT 51 24 53 37 ;
         RECT 47 24 49 37 ;
         RECT 19 24 21 37 ;
         RECT 11 24 13 37 ;
@@ -360,7 +367,7 @@ MACRO DFFSRX1
     USE SIGNAL ;
     PORT
       LAYER Metal1 ;
-        RECT 49 13 51 15 ;
+        RECT 41 3 43 5 ;
     END
   END RN
   PIN Q
@@ -377,7 +384,7 @@ MACRO DFFSRX1
     USE SIGNAL ;
     PORT
       LAYER Metal1 ;
-        RECT 37 13 39 15 ;
+        RECT 25 3 27 5 ;
     END
   END D
   OBS
@@ -421,9 +428,9 @@ MACRO DFFSRX1
       RECT 55 7 57 28 ;
       RECT 55 11 67 13 ;
       RECT 31 26 37 28 ;
-      RECT 35 24 37 28 ;
-      RECT 31 7 33 28 ;
-      RECT 31 20 53 22 ;
+      RECT 35 7 37 28 ;
+      RECT 31 24 33 28 ;
+      RECT 35 20 53 22 ;
       RECT 31 7 37 9 ;
       RECT 39 26 45 28 ;
       RECT 43 24 45 28 ;
@@ -440,7 +447,9 @@ MACRO DFFSRX1
       RECT 95 7 97 28 ;
       RECT 67 20 74.5 22 ;
       RECT 59 15 61 19 ;
+      RECT 49 11 51 15 ;
       RECT 39 7 45 9 ;
+      RECT 39 13 43 15 ;
       RECT 23 7 29 9 ;
       RECT 20.9 20 24.9 22 ;
       RECT 15 7 17 33 ;
@@ -464,8 +473,12 @@ MACRO DFFSRX1
       RECT 59.5 15.5 60.5 16.5 ;
       RECT 55.5 9.5 56.5 10.5 ;
       RECT 51.5 20.5 52.5 21.5 ;
-      RECT 49.5 13.5 50.5 14.5 ;
-      RECT 37.5 13.5 38.5 14.5 ;
+      RECT 49.5 11.5 50.5 12.5 ;
+      RECT 49.5 13.4 50.5 14.4 ;
+      RECT 41.5 3.5 42.5 4.5 ;
+      RECT 41.5 13.5 42.5 14.5 ;
+      RECT 39.5 13.5 40.5 14.5 ;
+      RECT 25.5 3.5 26.5 4.5 ;
       RECT 23.4 20.5 24.4 21.5 ;
       RECT 1.5 17.5 2.5 18.5 ;
     LAYER Metal2 ;
@@ -478,6 +491,11 @@ MACRO DFFSRX1
       RECT 59 13 101 15 ;
       RECT 22.9 29 65 31 ;
       RECT 22.9 20 24.9 31 ;
+      RECT 49 9 51 13 ;
+      RECT 41 9 51 11 ;
+      RECT 41 3 43 11 ;
+      RECT 25 13 41 15 ;
+      RECT 25 3 27 15 ;
       RECT 87 17 125 19 ;
       RECT 51 20 69 22 ;
     LAYER Via2 ;

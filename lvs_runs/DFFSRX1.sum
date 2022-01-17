@@ -1,7 +1,7 @@
 ********************************************************************************
 *** PVS HERC SUMMARY
 ***
-Execute on Date/Time    : Mon Jan 10 07:03:30 2022
+Execute on Date/Time    : Wed Jan 12 13:57:21 2022
 PVS HERC VERSION        : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 Rule Deck Path          : /home/saul/projects/KISTA/lvs_runs/.technology.rul
 Rule Deck Title         :
@@ -33,8 +33,8 @@ LAYER M1Resdum ................... Total Original Geometry:        0 (       0)
 LAYER M2Resdum ................... Total Original Geometry:        0 (       0)
 LAYER M3Resdum ................... Total Original Geometry:        0 (       0)
 LAYER M4Resdum ................... Total Original Geometry:        0 (       0)
-LAYER Metal1 ..................... Total Original Geometry:      141 (     311)
-LAYER Metal2 ..................... Total Original Geometry:       11 (      24)
+LAYER Metal1 ..................... Total Original Geometry:      142 (     316)
+LAYER Metal2 ..................... Total Original Geometry:       16 (      33)
 LAYER Metal3 ..................... Total Original Geometry:        0 (       0)
 LAYER Metal4 ..................... Total Original Geometry:        0 (       0)
 LAYER Nimp ....................... Total Original Geometry:        1 (      19)
@@ -45,7 +45,7 @@ LAYER Poly ....................... Total Original Geometry:       63 (     148)
 LAYER Psub ....................... Total Original Geometry:        0 (       0)
 LAYER ResWdum .................... Total Original Geometry:        0 (       0)
 LAYER Resdum ..................... Total Original Geometry:        0 (       0)
-LAYER Via1 ....................... Total Original Geometry:        1 (      14)
+LAYER Via1 ....................... Total Original Geometry:        1 (      18)
 LAYER Via2 ....................... Total Original Geometry:        0 (       0)
 LAYER Via3 ....................... Total Original Geometry:        0 (       0)
 LAYER metal1_conn_text ........... Total Original Geometry:        0 (       0)
@@ -77,6 +77,6 @@ LAYER KTH_source ................. Total Original Geometry:        2 (      38)
 Total CPU Time                    : 0(s)
 Total Real Time                   : 0(s)
 Peak Memory Used                  : 29(M)
-Total Original Geometry           : 232 (796)
+Total Original Geometry           : 238 (814)
 Total ERC RuleChecks              : 0
 Total ERC Results                 : 0 (0)

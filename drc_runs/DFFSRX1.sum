@@ -1,7 +1,7 @@
 ********************************************************************************
 *** PVS HDRC SUMMARY
 ***
-Execute on Date/Time    : Mon Jan 10 07:04:29 2022
+Execute on Date/Time    : Wed Jan 12 13:56:17 2022
 PVS HDRC VERSION        : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 Rule Deck Path          : /home/saul/projects/KISTA/drc_runs/.technology.rul
 Rule Deck Title         :
@@ -28,13 +28,13 @@ DRC Results Database    :
 --- ORIGINAL LAYER STATISTICS
 ---
 LAYER Cont ....................... Total Original Geometry:        9 (     166)
-LAYER Metal1 ..................... Total Original Geometry:      141 (     311)
-LAYER Metal2 ..................... Total Original Geometry:       11 (      24)
+LAYER Metal1 ..................... Total Original Geometry:      142 (     316)
+LAYER Metal2 ..................... Total Original Geometry:       16 (      33)
 LAYER Metal3 ..................... Total Original Geometry:        0 (       0)
 LAYER Metal4 ..................... Total Original Geometry:        0 (       0)
 LAYER Oxide ...................... Total Original Geometry:        2 (      38)
 LAYER Poly ....................... Total Original Geometry:       63 (     148)
-LAYER Via1 ....................... Total Original Geometry:        1 (      14)
+LAYER Via1 ....................... Total Original Geometry:        1 (      18)
 LAYER Via2 ....................... Total Original Geometry:        0 (       0)
 LAYER Via3 ....................... Total Original Geometry:        0 (       0)
 LAYER KTH_openpad ................ Total Original Geometry:        0 (       0)
@@ -86,6 +86,6 @@ RULECHECK ortho_45_check ............. Total Result      0 (       0)
 Total CPU Time                    : 0(s)
 Total Real Time                   : 0(s)
 Peak Memory Used                  : 21(M)
-Total Original Geometry           : 227 (701)
+Total Original Geometry           : 233 (719)
 Total DRC RuleChecks              : 36
 Total DRC Results                 : 0 (0)
