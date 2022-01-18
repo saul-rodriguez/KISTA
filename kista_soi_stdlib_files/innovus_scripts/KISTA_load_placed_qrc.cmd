@@ -20,7 +20,7 @@ win
 set init_gnd_net VSS!
 set init_lef_file {../virtuoso/kista_soi_stdlib_files/lef/kista_soi_stdlib_tech.lef ../virtuoso/kista_soi_stdlib_files/lef/kista_soi_stdlib_macro.lef}
 set init_verilog ../genus_notie/genus_output/SPI_Slave_synth.v
-set init_mmmc_file MMMC_KISTA_only_typical.view
+set init_mmmc_file MMMC_KISTA_only_typical_qrc.view
 set init_pwr_net VDD!
 init_design
 setDesignMode -process 250

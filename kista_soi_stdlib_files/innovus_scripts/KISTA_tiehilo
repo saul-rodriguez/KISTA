@@ -1,0 +1,4 @@
+setTieHiLoMode -reset
+setTieHiLoMode -cell {{TIEHI TIELO}} -maxFanOut 10 -honorDontTouch false -createHierPort false
+addTieHiLo -cell {TIEHI TIELO} -prefix LTIE
+
