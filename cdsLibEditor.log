@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 09/24/2018 21:03 (ip-172-18-22-224) $
 \o Sub version:		sub-version  p015 
-\o Arguments:		-cdslib /home/saul/projects/KISTA/cds.lib -mpssession virtuoso27409 -mpshost s2424 
+\o Arguments:		-cdslib /home/saul/projects/KISTA/cds.lib -mpssession virtuoso997 -mpshost s2424 
 \o Working Directory:	s2424:/home/saul/projects/KISTA
 \o 64-bit offsets
 \a nrSetWindowVisibility(cdsLibEditor "show")
@@ -10,40 +10,19 @@
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "cdsDefTechLib"
 \a nrResizeWindow(cdsLibEditor list(1920 27 500 400))
-\a nrListItemAction(cdsLibEditor->mainTable 28 1)
-\o Active cell: 28 1 "/home/saul/projects/KISTA/KISTA_TEST_ANALOG"
-\a nrListItemRename(cdsLibEditor->mainTable, 28 1 "./KISTA_TEST_ANALOG")
-\a nrListItemAction(cdsLibEditor->mainTable 29 0)
-\o Active cell: 29 0 "KISTA_1UM"
-\a nrListItemAction(cdsLibEditor->mainTable 29 1)
-\o Active cell: 29 1 "/home/saul/projects/KISTA/KISTA_1UM"
-\a nrListItemRename(cdsLibEditor->mainTable, 29 1 "./KISTA_1UM")
-\a nrListItemAction(cdsLibEditor->mainTable 30 0)
-\o Active cell: 30 0 "KISTA_TEST_STREAMIN"
-\a nrListItemAction(cdsLibEditor->mainTable 30 1)
-\o Active cell: 30 1 "/home/saul/projects/KISTA/KISTA_TEST_STREAMIN"
-\a nrListItemRename(cdsLibEditor->mainTable, 30 1 "./KISTA_TEST_STREAMIN")
-\a nrListItemAction(cdsLibEditor->mainTable 31 0)
-\o Active cell: 31 0 "KISTA_SOI_STDLIB"
-\a nrListItemAction(cdsLibEditor->mainTable 31 1)
-\o Active cell: 31 1 "/home/saul/projects/KISTA/KISTA_SOI_STDLIB"
-\a nrListItemRename(cdsLibEditor->mainTable, 31 1 "./KISTA_SOI_STDLIB")
-\a nrListItemAction(cdsLibEditor->mainTable 32 0)
-\o Active cell: 32 0 "KISTA_TEST_AMS"
-\a nrListItemAction(cdsLibEditor->mainTable 32 1)
-\o Active cell: 32 1 "/home/saul/projects/KISTA/KISTA_TEST_AMS"
-\a nrListItemRename(cdsLibEditor->mainTable, 32 1 "./KISTA_TEST_AMS")
-\a nrListItemAction(cdsLibEditor->mainTable 33 0)
-\o Active cell: 33 0 "KISTA_SOI_STDLIB_TECH"
-\a nrListItemAction(cdsLibEditor->mainTable 33 1)
-\o Active cell: 33 1 "/home/saul/projects/KISTA/KISTA_SOI_STDLIB_TECH"
-\a nrListItemRename(cdsLibEditor->mainTable, 33 1 "./KISTA_SOI_STDLIB_TECH")
-\a nrListItemAction(cdsLibEditor->mainTable 34 0)
-\o Active cell: 34 0 "KISTA_SOI_TECH"
+\a nrListItemAction(cdsLibEditor->mainTable 35 1)
+\o Active cell: 35 1 "/home/saul/projects/KISTA/KISTA_SOI_STDLIB_40_4_TECH"
 \a nrListItemAction(cdsLibEditor->mainTable 34 1)
-\o Active cell: 34 1 "/home/saul/projects/KISTA/KISTA_SOI_TECH"
-\a nrListItemRename(cdsLibEditor->mainTable, 34 1 "./KISTA_SOI_TECH")
-\a nrListItemAction(cdsLibEditor->mainTable 35 0)
-\o Active cell: 35 0 ""
+\o Active cell: 34 1 "./KISTA_SOI_TECH"
+\a nrListItemAction(cdsLibEditor->mainTable 35 1)
+\o Active cell: 35 1 "/home/saul/projects/KISTA/KISTA_SOI_STDLIB_40_4_TECH"
+\a nrListItemRename(cdsLibEditor->mainTable, 35 1 "./KISTA_SOI_STDLIB_40_4_TECH")
+\a nrListItemAction(cdsLibEditor->mainTable 36 0)
+\o Active cell: 36 0 "KISTA_SOI_STDLIB_40_4"
+\a nrListItemAction(cdsLibEditor->mainTable 36 1)
+\o Active cell: 36 1 "/home/saul/projects/KISTA/KISTA_SOI_STDLIB_40_4"
+\a nrListItemRename(cdsLibEditor->mainTable, 36 1 "./KISTA_SOI_STDLIB_40_4")
+\a nrListItemAction(cdsLibEditor->mainTable 37 0)
+\o Active cell: 37 0 ""
 \a cdsLibEditor->fileSaveButton->value = t
 \a exit(0)
