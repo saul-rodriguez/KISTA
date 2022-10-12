@@ -1,13 +1,13 @@
 Starting Single Run, Sweeps and Corners...
 
-Current time: Thu Nov 11 15:23:24 2021 
+Current time: Mon Jan 24 11:15:15 2022 
 Best design point: 1
 Design specs: 
 	KISTA_TEST_AMS:test_ams_nand:1	corner	Nominal - 
 Design parameters: 
 
-Interactive.1
+Interactive.10
 Number of points completed: 1
 Number of simulation errors: 0
-Interactive.1 completed. 
-Current time: Thu Nov 11 15:23:45 2021 
+Interactive.10 completed. 
+Current time: Mon Jan 24 11:15:38 2022 
