@@ -155,10 +155,10 @@ rule OXIDE.SP.1.1 {
     exte Oxide Oxide -lt 2.0 -output region -singular -abut lt 90;
 }
 
-// spacing check for Poly <2.0 
+// spacing check for Poly <1.0 
 rule POLY.SP.1.1 {
-    caption POLY.SP.1.1: Poly to Poly spacing must be >= 2.0 um;
-    exte Poly Poly -lt 2.0 -output region -singular -abut lt 90;
+    caption POLY.SP.1.1: Poly to Poly spacing must be >= 1.0 um;
+    exte Poly Poly -lt 1.0 -output region -singular -abut lt 90;
 }
 
 // spacing check for Metal1 <2.0 

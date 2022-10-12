@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 09/24/2018 21:00 (ip-172-18-22-224) $
 \o Sub version:		sub-version  p015 
-\o Arguments:		-unmapped -mpssession virtuoso20544 -mpshost s2424 
+\o Arguments:		-unmapped -mpssession virtuoso27409 -mpshost s2424 
 \o Working Directory:	s2424:/home/saul/projects/KISTA
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -10,115 +10,1145 @@
 \o Opening libManager window.
 \a nrSetWindowVisibility(cdsLibManager "show")
 \o MPS service: map window
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
 \o Library Manager customization server connected.
-\a nrSetCurrentWindow(cdsLibManager)
-\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a nrResizeWindow(cdsLibManager list(861 165 947 674))
-\a nrResizeWindow(cdsLibManager list(1988 175 947 674))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
 \a nrResizeWindow(cdsLibManager list(2029 160 947 674))
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "INVX1"
-\a cdsLibManager->cellLineEdit->value = "INVX1"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS request: update library list
 \w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
 \w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "INVX1"
-\a cdsLibManager->cellLineEdit->value = "INVX1"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
 \w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
 \w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->cellListBox->value = "INVX1"
-\a cdsLibManager->cellLineEdit->value = "INVX1"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a cdsLibManager->FileNewLibButton->value = t
+\a nrSetWindowVisibility(NewLibShell "show")
+\a nrResizeWindow(NewLibShell list(2239 178 507 559))
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a NewLibShell->newLibNameText->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a NewLibShell->newLibCancelButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(NewLibShell list(2239 141 507 559))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewLibButton->value = t
+\a NewLibShell->newLibNameText->value = ""
+\a NewLibShell->QLineEdit1->value = ""
+\a NewLibShell->QLineEdit1->value = "/home"
+\a NewLibShell->QLineEdit1->value = ""
+\a NewLibShell->QLineEdit1->value = "/home/saul/projects/KISTA"
+\a nrSetWindowVisibility(NewLibShell->subDialog "show")
+\a nrResizeWindow(NewLibShell list(2239 215 507 559))
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a NewLibShell->newLibNameText->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a NewLibShell->newLibOKButton->value = t
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrResizeWindow(workingDialogForm list(2293 391 399 133))
+\a nrSetCurrentWindow(workingDialogForm)
+\o Created new library "KISTA_SOI_STDLIB_40_4_TECH" at /home/saul/projects/KISTA/KISTA_SOI_STDLIB_40_4_TECH.
+\a nrSetCurrentWindow(cdsLibManager)
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a nrResizeWindow(workingDialogForm list(2293 354 399 133))
+\a nrResizeWindow(NewLibShell list(2239 178 507 559))
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a lmgrLogShowPopup("mainListPopup2" 45 63 2 "layout")
-\a cdsLibManager->FileOpenButton->value = t
-\o MPS request: edit design
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_TECH"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_TECH"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
-\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_TECH"
-\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_TECH"
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->FileNewLibButton->value = t
+\a NewLibShell->newLibNameText->value = ""
+\a NewLibShell->QLineEdit1->value = ""
+\a NewLibShell->QLineEdit1->value = "/home"
+\a NewLibShell->QLineEdit1->value = ""
+\a NewLibShell->QLineEdit1->value = "/home/saul/projects/KISTA"
+\a nrSetWindowVisibility(NewLibShell->subDialog "show")
+\a nrResizeWindow(NewLibShell list(2239 215 507 559))
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a NewLibShell->newLibNameText->value = "KISTA_SOI_STDLIB_40_4"
+\a NewLibShell->newLibOKButton->value = t
+\a nrSetCurrentWindow(workingDialogForm)
+\o Created new library "KISTA_SOI_STDLIB_40_4" at /home/saul/projects/KISTA/KISTA_SOI_STDLIB_40_4.
+\a nrResizeWindow(workingDialogForm list(2293 428 399 133))
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
 \w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a nrResizeWindow(workingDialogForm list(2293 391 399 133))
+\a nrResizeWindow(NewLibShell list(2239 178 507 559))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a lmgrLogShowPopup("mainListPopup0" 106 27 2 "KISTA_SOI_STDLIB_40_4")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 20 198 2 "M2_M1_HH")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a lmgrLogShowPopup("mainListPopup1" 28 199 2 "M2_M1_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyFromCell->value = "M2_M1_HH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyToCell->value = "M2_M1_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB_40_4 KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetWindowVisibility(copyCellForm "show")
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrResizeWindow(workingDialogForm list(2309 428 367 133))
+\a nrSetCurrentWindow(workingDialogForm)
+\o ERROR (CLM-173): One or more of the following problems have occurred:\n      1. The source file does not exist.\n      2. A destination file will be overwritten.\n      3. A destination file is checked out.\n      4. A destination file is opened for edit.\n      5. A destination file conflicts with another.\n      6. A source library file is not valid in a different library.\n      7. A source OpenAccess cellview master file has zero size.
+\a nrSetWindowVisibility(copyProblemsDialog "show")
+\a nrResizeWindow(copyProblemsDialog list(2070 197 825 441))
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(2309 391 367 133))
+\a nrResizeWindow(copyProblemsDialog list(2080 237 825 441))
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyProblemsDialog list(2080 200 825 441))
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->cellListBox->value = "M2_M1_HV"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 46 209 2 "M2_M1_HV")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyFromCell->value = "M2_M1_HV"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyToCell->value = "M2_M1_HV"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB_40_4 KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2364 428 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2070 234 825 441))
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(2364 391 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2080 237 825 441))
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyProblemsDialog list(2080 200 825 441))
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->cellListBox->value = "M2_M1_VH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_VH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 48 228 2 "M2_M1_VH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyFromCell->value = "M2_M1_VH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyToCell->value = "M2_M1_VH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB_40_4 KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2364 428 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2070 234 825 441))
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(2364 391 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2080 237 825 441))
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyProblemsDialog list(2080 200 825 441))
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
 \a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_TECH"
 \a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_TECH"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 113 194 2 "M2_M1_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyFromCell->value = "M2_M1_HH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyToCell->value = "M2_M1_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB_40_4 KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2364 428 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2070 234 825 441))
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(2364 391 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2080 237 825 441))
+\a copyProblemsDialog->fixErrors->value = t
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyProblemsDialog list(2080 200 825 441))
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->cellListBox->value = "M2_M1_HV"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HV"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->cellListBox->value = "M2_M1_HV"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HV"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 54 194 2 "M2_M1_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyFromCell->value = "M2_M1_HH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyToCell->value = "M2_M1_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB_40_4 KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2364 428 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2070 234 825 441))
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(2364 391 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2080 237 825 441))
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyProblemsDialog list(2080 200 825 441))
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a workingDialogForm->Close->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a cdsLibManager->cellListBox->value = "M3_M2_HH"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 41 265 2 "M3_M2_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyFromCell->value = "M3_M2_HH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyToCell->value = "M3_M2_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB_40_4 KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2364 428 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2070 234 825 441))
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(2364 391 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2080 237 825 441))
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyProblemsDialog list(2080 200 825 441))
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "M4_M3_HH"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 20 332 2 "M4_M3_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyFromCell->value = "M4_M3_HH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB"
+\a copyCellForm->CopyToCell->value = "M4_M3_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB_40_4 KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2364 428 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2070 234 825 441))
+\a nrSetCurrentWindow(copyProblemsDialog)
+\a nrResizeWindow(workingDialogForm list(2364 391 273 133))
+\a nrResizeWindow(copyProblemsDialog list(2080 237 825 441))
+\a copyProblemsDialog->OK->value = t
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyProblemsDialog list(2080 200 825 441))
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 59 12 2 "M2_M1_HH")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a lmgrLogShowPopup("mainListPopup0" 119 23 2 "KISTA_SOI_STDLIB_40_4")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB"
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 31 13 2 "M2_M1_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyFromCell->value = "M2_M1_HH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyToCell->value = "M2_M1_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToCell->value = "M2_M1_HV"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->cellListBox->value = "M2_M1_HV"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 49 25 2 "M2_M1_HV")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyFromCell->value = "M2_M1_HV"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyToCell->value = "M2_M1_HV"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToCell->value = "M2_M1_VH"
+\a nrDialogAccept(copyCellForm)
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M2_M1_HV"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->cellListBox->value = "M2_M1_VH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_VH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 60 45 2 "M2_M1_VH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyFromCell->value = "M2_M1_VH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyToCell->value = "M2_M1_VH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToCell->value = "M2_M1_VV"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M2_M1_VH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_VH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->cellListBox->value = "M3_M2_HH"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 51 74 2 "M3_M2_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyFromCell->value = "M3_M2_HH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyToCell->value = "M3_M2_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToCell->value = "M3_M2_HV"
+\a nrDialogAccept(copyCellForm)
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M3_M2_HH"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a lmgrLogShowPopup("mainListPopup1" 61 77 2 "M3_M2_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyFromCell->value = "M3_M2_HH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyToCell->value = "M3_M2_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToCell->value = "M3_M2_VH"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M3_M2_HH"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->cellListBox->value = "M3_M2_VH"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_VH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 53 107 2 "M3_M2_VH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyFromCell->value = "M3_M2_VH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyToCell->value = "M3_M2_VH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToCell->value = "M3_M2_VV"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M3_M2_VH"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_VH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->cellListBox->value = "M3_M2_VV"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_VV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->cellListBox->value = "M4_M3_HH"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_HH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 55 143 2 "M4_M3_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyFromCell->value = "M4_M3_HH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyToCell->value = "M4_M3_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToCell->value = "M4_M3_H"
+\a nrDialogAccept(copyCellForm)
+\a copyCellForm->CopyToCell->value = "M4_M3_HV"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M4_M3_HH"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->cellListBox->value = "M4_M3_HV"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_HV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 71 161 2 "M4_M3_HV")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyFromCell->value = "M4_M3_HV"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyToCell->value = "M4_M3_HV"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToCell->value = "M4_M3_VH"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M4_M3_HV"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_HV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->cellListBox->value = "M4_M3_VH"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_VH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 66 177 2 "M4_M3_VH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyToLibrary->value = "KISTA_1UM"
+\a copyCellForm->CopyFromLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyFromCell->value = "M4_M3_VH"
+\a copyCellForm->CopyToLibrary->value = "KISTA_SOI_STDLIB_40_4"
+\a copyCellForm->CopyToCell->value = "M4_M3_VH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KISTA_1UM KISTA_SOI_STDLIB KISTA_SOI_STDLIB_40_4_TECH KISTA_SOI_STDLIB_TECH KISTA_SOI_TECH KISTA_TEST_AMS KISTA_TEST_ANALOG KISTA_TEST_STREAMIN US_8ths ahdlLib ambit analogLib basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(2230 128 524 659))
+\a copyCellForm->CopyToCell->value = "M4_M3_VV"
+\a nrDialogAccept(copyCellForm)
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KISTA_SOI_STDLIB_40_4".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(2356 428 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(2230 91 524 659))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->cellListBox->value = "M4_M3_VH"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_VH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(2356 391 273 133))
+\a cdsLibManager->cellListBox->value = "M4_M3_HH"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->cellListBox->value = "M4_M3_HV"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_HV"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->cellListBox->value = "M4_M3_VH"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_VH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->cellListBox->value = "M4_M3_VV"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_VV"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "M3_M2_VV"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_VV"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->cellListBox->value = "M3_M2_VH"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_VH"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->cellListBox->value = "M3_M2_HV"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_HV"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4_TECH"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB_40_4"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB_40_4"
+\a lmgrLogShowPopup("mainListPopup0" 119 26 2 "KISTA_SOI_STDLIB_40_4")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "M4_M3_VV"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_VV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown
