@@ -1,6 +1,7 @@
 # File Created by saul at Wed Oct 12 19:19:55 2022
 # assisted by CdsLibEditor
-SOFTINCLUDE /pkg/cadence/installs/IC618/share/cdssetup/cds.lib
+#SOFTINCLUDE /pkg/cadence/installs/IC618/share/cdssetup/cds.lib
+SOFTINCLUDE $CDSHOME/share/cdssetup/cds.lib
 INCLUDE $IUSHOME/tools/inca/files/cds.lib
 
 
