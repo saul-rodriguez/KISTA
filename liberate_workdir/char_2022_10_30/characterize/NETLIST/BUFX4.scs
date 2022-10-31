@@ -1,0 +1,112 @@
+// BUFX4
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt BUFX4 A Y
+    C23  (vdd\#4 Y\#2)  capacitor c=342.314a
+    C26  (vdd\#4 YN\#2310)  capacitor c=350.54a
+    C30  (vdd\#4 3)  capacitor c=101.725a
+    C51  (Y\#2 YN\#2310)  capacitor c=345.113a
+    C59  (Y\#2 3)  capacitor c=1.1017e-15
+    C64  (YN\#2310 3)  capacitor c=1.28981e-15
+    C1  (vdd\#4 vss)  capacitor c=20.4102a
+    C10  (YN\#2310 vss)  capacitor c=2.80851e-18
+    C16  (3 vss)  capacitor c=9.03776e-15
+    C2  (A vss)  capacitor c=7.05456e-18
+    C43  (3 A)  capacitor c=5.32221e-15
+    C3  (A\#2 vss)  capacitor c=8.57801e-18
+    C37  (Y\#2 A\#2)  capacitor c=4.4656e-18
+    C44  (A\#2 3)  capacitor c=1.26397e-15
+    C4  (vss\#3 A)  capacitor c=19.3507a
+    C19  (vss\#3 3)  capacitor c=452.397a
+    C5  (vss\#3 A\#4)  capacitor c=248.614a
+    C45  (A\#4 3)  capacitor c=1.79654e-15
+    C6  (A\#3 vss)  capacitor c=3.74868e-19
+    C46  (A\#3 3)  capacitor c=292.05a
+    C7  (Y vss)  capacitor c=7.7099e-18
+    C36  (Y A)  capacitor c=2.94585e-18
+    C38  (A\#3 Y)  capacitor c=1.86715e-19
+    C58  (3 Y)  capacitor c=1.27525e-15
+    C9  (YN\#5 vss)  capacitor c=5.96116e-18
+    C50  (Y\#2 YN\#5)  capacitor c=345.145a
+    C63  (YN\#5 3)  capacitor c=1.20843e-15
+    C14  (vss\#3 YN\#3)  capacitor c=183.784a
+    C41  (YN\#3 A\#4)  capacitor c=258.63a
+    C68  (YN\#3 3)  capacitor c=906.515a
+    C15  (YN\#6 vss)  capacitor c=5.54022e-20
+    C57  (YN\#6 Y)  capacitor c=721.528a
+    C69  (YN\#6 3)  capacitor c=3.94195e-15
+    C17  (vss\#1 3)  capacitor c=3.83152e-15
+    C18  (vss\#4 3)  capacitor c=251.01a
+    C8  (Y\#1 vss\#1)  capacitor c=209.535a
+    C56  (YN\#3 Y\#1)  capacitor c=7.60198e-18
+    C60  (Y\#1 3)  capacitor c=483.224a
+    C11  (vss\#1 YN\#8)  capacitor c=242.197a
+    C52  (Y\#1 YN\#8)  capacitor c=243.524a
+    C65  (YN\#8 3)  capacitor c=1.58831e-15
+    C71  (YN\#2310 6)  capacitor c=522.683a
+    C33  (vdd\#4 6)  capacitor c=149.256a
+    C61  (Y\#2 6)  capacitor c=154.663a
+    C70  (YN\#5 6)  capacitor c=481.522a
+    C32  (vdd\#1 6)  capacitor c=610.39a
+    C24  (vdd\#1 YN\#5)  capacitor c=345.416a
+    C29  (vdd\#1 3)  capacitor c=3.41435e-15
+    C28  (3 vdd)  capacitor c=8.99794e-15
+    C25  (vdd\#4 YN)  capacitor c=9.4262e-18
+    C12  (vss\#4 YN)  capacitor c=13.1103a
+    C48  (YN Y)  capacitor c=657.277a
+    C54  (YN\#4 Y)  capacitor c=14.29a
+    C39  (YN\#4 A)  capacitor c=397.983a
+    C20  (vdd\#3 A)  capacitor c=8.40444e-18
+    C21  (vdd\#3 A\#2)  capacitor c=346.707a
+    C22  (A\#3 vdd\#3)  capacitor c=5.32693e-19
+    C42  (A\#3 YN\#4)  capacitor c=22.5449a
+    C27  (vdd\#3 YN\#4)  capacitor c=287.341a
+    C31  (vdd\#3 3)  capacitor c=111.034a
+    C40  (YN\#4 A\#2)  capacitor c=366.015a
+    C49  (Y\#2 YN)  capacitor c=80.6784a
+    C55  (YN\#4 Y\#2)  capacitor c=19.7646a
+    C62  (3 YN)  capacitor c=5.72519e-15
+    C67  (YN\#4 3)  capacitor c=2.87602e-15
+    C66  (YN\#9 3)  capacitor c=1.79894e-15
+    C13  (vss\#4 YN\#9)  capacitor c=243.696a
+    C53  (Y\#1 YN\#9)  capacitor c=243.491a
+    C34  (8 vdd)  capacitor c=30.6619a
+    C35  (vdd\#3 8)  capacitor c=604.977a
+    C47  (A\#2 8)  capacitor c=531.582a
+    C72  (YN\#4 8)  capacitor c=181.312a
+    MX4_M0_unmatched  (Y\#2 YN\#2310 vdd\#4 vdd\#4)  pch w=8e-06 l=1e-06 \
+        as=2.4e-11 ad=0 ps=2.2e-05 pd=0 sa=2e-06 sb=2e-06
+    MM1  (Y\#2 YN\#5 vdd\#1 vdd\#1)  pch w=8e-06 l=1e-06 as=0 ad=2.4e-11 \
+        ps=0 pd=2.2e-05 sa=2e-06 sb=2e-06
+    MM0  (YN\#4 A\#2 vdd\#3 vdd\#3)  pch w=8e-06 l=1e-06 as=0 ad=2e-11 \
+        ps=0 pd=2.1e-05 sa=2e-06 sb=2e-06
+    Rs1  (3 vss)  resistor r=50
+    Rc12  (vss vss\#3)  resistor r=2.6222
+    Rc8  (A\#2 A\#3)  resistor r=1336.0317
+    Rc7  (A\#3 A\#4)  resistor r=1336.0317
+    Rc10  (A\#3 A)  resistor r=85.564
+    Rc6  (Y Y\#2)  resistor r=1.675
+    Rd4  (YN\#5 YN\#6)  resistor r=1336.0317
+    Rd5  (vss vss\#1)  resistor r=2.8307
+    Rd1  (vss vss\#4)  resistor r=2.7532
+    Rc11  (vss\#1 vss\#4)  resistor r=111.9025
+    Rc5  (Y Y\#1)  resistor r=2.675
+    Rc2  (YN\#6 YN\#8)  resistor r=1336.0317
+    Rd7  (YN\#6 YN\#7)  resistor r=258.7097
+    Rc4  (YN\#7 YN\#2310)  resistor r=1327.5659
+    Rc9  (vdd\#1 vdd\#4)  resistor r=34.9995
+    Rd3  (vdd vdd\#1)  resistor r=1.6323
+    Rd2  (vdd vdd\#4)  resistor r=1.5518
+    Rd9  (YN\#7 YN\#9)  resistor r=1327.5659
+    Rc3  (YN\#7 YN)  resistor r=114.0987
+    Rd8  (YN YN\#4)  resistor r=9.5341
+    Rc13  (YN YN\#3)  resistor r=16.807
+    Rd6  (YN\#4 YN\#3)  resistor r=5.205
+    Rc14  (vdd vdd\#3)  resistor r=1.4222
+    MM2  (YN\#3 A\#4 vss\#3 vss\#3)  nch w=4e-06 l=1e-06 as=0 ad=1e-11 \
+        ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MM3  (Y\#1 YN\#8 vss\#1 vss\#1)  nch w=4e-06 l=1e-06 as=0 ad=1.2e-11 \
+        ps=0 pd=1.4e-05 sa=2e-06 sb=2e-06
+    MX7_M0_unmatched  (Y\#1 YN\#9 vss\#4 vss\#4)  nch w=4e-06 l=1e-06 \
+        as=1.2e-11 ad=0 ps=1.4e-05 pd=0 sa=2e-06 sb=2e-06
+ends BUFX4

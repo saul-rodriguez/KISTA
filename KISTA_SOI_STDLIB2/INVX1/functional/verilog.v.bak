@@ -1,0 +1,6 @@
+//Verilog HDL for "KISTA_SOI_STDLIB2", "INVX1" "functional"
+
+
+module INVX1 ( );
+
+endmodule

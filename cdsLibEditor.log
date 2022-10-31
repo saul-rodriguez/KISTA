@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 09/24/2018 21:03 (ip-172-18-22-224) $
 \o Sub version:		sub-version  p015 
-\o Arguments:		-cdslib /home/saul/projects/KISTA/cds.lib -mpssession virtuoso997 -mpshost s2424 
+\o Arguments:		-display localhost:12.0 -mpssession virtuoso22250 -mpshost s2424 -namespace CDBA -cdslib /home/saul/projects/KISTA/cds.lib 
 \o Working Directory:	s2424:/home/saul/projects/KISTA
 \o 64-bit offsets
 \a nrSetWindowVisibility(cdsLibEditor "show")
@@ -9,20 +9,19 @@
 \a nrSetCurrentWindow(cdsLibEditor)
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "cdsDefTechLib"
-\a nrResizeWindow(cdsLibEditor list(1920 27 500 400))
-\a nrListItemAction(cdsLibEditor->mainTable 35 1)
-\o Active cell: 35 1 "/home/saul/projects/KISTA/KISTA_SOI_STDLIB_40_4_TECH"
-\a nrListItemAction(cdsLibEditor->mainTable 34 1)
-\o Active cell: 34 1 "./KISTA_SOI_TECH"
-\a nrListItemAction(cdsLibEditor->mainTable 35 1)
-\o Active cell: 35 1 "/home/saul/projects/KISTA/KISTA_SOI_STDLIB_40_4_TECH"
-\a nrListItemRename(cdsLibEditor->mainTable, 35 1 "./KISTA_SOI_STDLIB_40_4_TECH")
-\a nrListItemAction(cdsLibEditor->mainTable 36 0)
-\o Active cell: 36 0 "KISTA_SOI_STDLIB_40_4"
-\a nrListItemAction(cdsLibEditor->mainTable 36 1)
-\o Active cell: 36 1 "/home/saul/projects/KISTA/KISTA_SOI_STDLIB_40_4"
-\a nrListItemRename(cdsLibEditor->mainTable, 36 1 "./KISTA_SOI_STDLIB_40_4")
+\a nrResizeWindow(cdsLibEditor list(208 68 500 400))
 \a nrListItemAction(cdsLibEditor->mainTable 37 0)
 \o Active cell: 37 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(208 68 500 500))
+\a nrListItemRename(cdsLibEditor->mainTable, 37 0 "KISTA_SOI_STDLIB2")
+\a nrListItemAction(cdsLibEditor->mainTable 37 1)
+\o Active cell: 37 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 37 1 "./KISTA_SOI_STDLIB2")
+\a nrListItemAction(cdsLibEditor->mainTable 38 0)
+\o Active cell: 38 0 ""
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\a nrSetCurrentWindow(cdsLibEditor)
 \a cdsLibEditor->fileSaveButton->value = t
 \a exit(0)

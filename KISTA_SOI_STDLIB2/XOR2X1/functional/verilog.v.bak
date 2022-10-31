@@ -1,0 +1,6 @@
+//Verilog HDL for "KISTA_SOI_STDLIB2", "XOR2X1" "functional"
+
+
+module XOR2X1 ( );
+
+endmodule

@@ -1,0 +1,69 @@
+// INVX4
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt INVX4 Y A
+    C13  (Y\#2 vdd\#1)  capacitor c=345.276a
+    C14  (vdd\#1 A\#2)  capacitor c=345.416a
+    C19  (vdd\#1 1)  capacitor c=2.60272e-15
+    C25  (Y\#2 A\#2)  capacitor c=346.973a
+    C32  (Y\#2 1)  capacitor c=1.16072e-15
+    C36  (A\#2 1)  capacitor c=1.20836e-15
+    C4  (A\#2 vss)  capacitor c=6.64465e-18
+    C9  (1 vss)  capacitor c=2.7128e-15
+    C1  (vdd\#2 vss)  capacitor c=9.06406e-18
+    C20  (vdd\#2 1)  capacitor c=2.70084e-15
+    C3  (A vss)  capacitor c=2.08276e-18
+    C15  (vdd\#2 A)  capacitor c=9.32361e-18
+    C24  (Y\#2 A)  capacitor c=78.3388a
+    C35  (1 A)  capacitor c=6.13543e-15
+    C6  (vss\#2 A)  capacitor c=18.9989a
+    C11  (vss\#2 1)  capacitor c=3.0133e-15
+    C7  (vss\#2 A\#6)  capacitor c=226.115a
+    C28  (Y\#1 A\#6)  capacitor c=245.351a
+    C33  (Y\#1 1)  capacitor c=509.081a
+    C39  (A\#6 1)  capacitor c=1.73224e-15
+    C17  (A\#4 vdd\#2)  capacitor c=4.16748e-19
+    C41  (A\#4 1)  capacitor c=242.735a
+    C23  (A Y)  capacitor c=730.722a
+    C30  (A\#4 Y)  capacitor c=33.8577a
+    C31  (1 Y)  capacitor c=1.29892e-15
+    C29  (A\#3 Y)  capacitor c=722.67a
+    C8  (A\#3 vss)  capacitor c=5.59618e-20
+    C40  (A\#3 1)  capacitor c=3.94195e-15
+    C42  (A\#2 2)  capacitor c=481.439a
+    C12  (2 vss)  capacitor c=3.06619e-20
+    C2  (Y\#1 vss\#1)  capacitor c=209.878a
+    C10  (vss\#1 1)  capacitor c=3.01984e-15
+    C21  (vdd\#1 2)  capacitor c=610.327a
+    C18  (1 vdd)  capacitor c=2.7128e-15
+    C22  (vdd\#2 2)  capacitor c=604.287a
+    C34  (Y\#2 2)  capacitor c=162.938a
+    C43  (A\#7 2)  capacitor c=509.812a
+    C16  (vdd\#2 A\#7)  capacitor c=335.469a
+    C26  (Y\#2 A\#7)  capacitor c=346.973a
+    C37  (A\#7 1)  capacitor c=1.236e-15
+    C38  (A\#5 1)  capacitor c=1.58815e-15
+    C5  (vss\#1 A\#5)  capacitor c=242.706a
+    C27  (Y\#1 A\#5)  capacitor c=244.666a
+    MX2_M0_unmatched  (Y\#1 A\#6 vss\#2 vss\#2)  nch w=4e-06 l=1e-06 \
+        as=1.2e-11 ad=0 ps=1.4e-05 pd=0 sa=2e-06 sb=2e-06
+    MX3_M0_unmatched  (Y\#1 A\#5 vss\#1 vss\#1)  nch w=4e-06 l=1e-06 \
+        as=1.2e-11 ad=0 ps=1.4e-05 pd=0 sa=2e-06 sb=2e-06
+    Rs1  (1 vss)  resistor r=50
+    Rc7  (vss vss\#2)  resistor r=2.6572
+    Rd5  (A\#4 A\#6)  resistor r=1327.5659
+    Rd3  (A\#4 A)  resistor r=119.1987
+    Rc3  (Y Y\#2)  resistor r=1.675
+    Rc2  (Y Y\#1)  resistor r=2.675
+    Rd1  (A\#2 A\#3)  resistor r=1336.0317
+    Rc6  (vss\#1 vss)  resistor r=2.6632
+    Rc4  (vdd\#1 vdd)  resistor r=1.4632
+    Rc5  (vdd vdd\#2)  resistor r=1.4572
+    Rd6  (A\#4 A\#7)  resistor r=1327.5659
+    Rd4  (A\#3 A\#4)  resistor r=258.7097
+    Rc1  (A\#3 A\#5)  resistor r=1336.0317
+    MX1_M0_unmatched  (Y\#2 A\#2 vdd\#1 vdd\#1)  pch w=8e-06 l=1e-06 \
+        as=2.4e-11 ad=0 ps=2.2e-05 pd=0 sa=2e-06 sb=2e-06
+    MX0_M0_unmatched  (Y\#2 A\#7 vdd\#2 vdd\#2)  pch w=8e-06 l=1e-06 \
+        as=2.4e-11 ad=0 ps=2.2e-05 pd=0 sa=2e-06 sb=2e-06
+ends INVX4
