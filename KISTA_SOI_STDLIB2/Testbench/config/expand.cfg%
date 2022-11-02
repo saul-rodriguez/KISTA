@@ -1,0 +1,53 @@
+//Revision 35
+//NOTE
+// Default config view template for AMS netlister(s) in ADE.
+// Note:
+//      Please remember to replace Top Cell Library, Cell, and View
+//      fields with the actual names used by your design.
+//END_NOTE
+
+config Testbench;
+design KISTA_SOI_STDLIB2.Testbench:schematic;
+liblist myLib;
+
+viewlist spectre, spice, pspice, verilog, verilogams, behavioral, functional, systemVerilog, schematic, veriloga, vhdl, vhdlams, wreal;
+stoplist spectre;
+
+
+cell KISTA_SOI_STDLIB2.INVX1 binding :symbol;
+cell KISTA_SOI_STDLIB2.INVX2 binding :symbol;
+cell KISTA_SOI_STDLIB2.INVX3 binding :symbol;
+cell KISTA_SOI_STDLIB2.INVX4 binding :symbol;
+cell KISTA_SOI_STDLIB2.BUFX16 binding :symbol;
+cell KISTA_SOI_STDLIB2.BUFX2 binding :symbol;
+cell KISTA_SOI_STDLIB2.BUFX27 binding :symbol;
+cell KISTA_SOI_STDLIB2.BUFX3 binding :symbol;
+cell KISTA_SOI_STDLIB2.BUFX32 binding :symbol;
+cell KISTA_SOI_STDLIB2.BUFX4 binding :symbol;
+cell KISTA_SOI_STDLIB2.BUFX8 binding :symbol;
+cell KISTA_SOI_STDLIB2.BUFX9 binding :symbol;
+cell KISTA_SOI_STDLIB2.NAND2X1 binding :symbol;
+cell KISTA_SOI_STDLIB2.NAND2X2 binding :symbol;
+cell KISTA_SOI_STDLIB2.NAND2X3 binding :symbol;
+cell KISTA_SOI_STDLIB2.NOR2X1 binding :symbol;
+cell KISTA_SOI_STDLIB2.NOR2X2 binding :symbol;
+cell KISTA_SOI_STDLIB2.NOR2X3 binding :symbol;
+cell KISTA_SOI_STDLIB2.NAND3X1 binding :symbol;
+cell KISTA_SOI_STDLIB2.NOR3X1 binding :symbol;
+cell KISTA_SOI_STDLIB2.AOI21X1 binding :analog_extracted;
+cell KISTA_SOI_STDLIB2.OAI21X1 binding :schematic;
+cell KISTA_SOI_STDLIB2.XNOR2X1 binding :analog_extracted;
+cell KISTA_SOI_STDLIB2.XOR2X1 binding :symbol;
+cell KISTA_SOI_STDLIB2.MX2X1 binding :analog_extracted;
+cell KISTA_SOI_STDLIB2.MX4X1 binding :symbol;
+cell KISTA_SOI_STDLIB2.NAND4X1 binding :symbol;
+cell KISTA_SOI_STDLIB2.NOR4X1 binding :symbol;
+cell KISTA_SOI_STDLIB2.DFFSRX1 binding :analog_extracted;
+cell KISTA_SOI_STDLIB2.TIEHI binding :symbol;
+cell KISTA_SOI_STDLIB2.TIELO binding :symbol;
+cell KISTA_SOI_STDLIB2.DFFRX1 binding :symbol;
+cell KISTA_SOI_STDLIB2.DFFSX1 binding :symbol;
+cell KISTA_SOI_STDLIB2.DFFX1 binding :symbol;
+
+
+endconfig

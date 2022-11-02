@@ -5,7 +5,7 @@ module AND4X1 (A, B, C, D, Y, YN );
 	input A, B, C, D;
 	output Y, YN;
 
-	assign Y = A*B*C*D;
-	assign YN = ~(A*B*C*D);
+	assign Y = A & B & C & D;
+	assign YN = ~(A & B & C & D);
 
 endmodule

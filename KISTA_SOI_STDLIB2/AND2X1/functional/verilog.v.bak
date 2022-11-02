@@ -5,7 +5,7 @@ module AND2X1 (A, B, Y, YN );
 	input A, B;
 	output Y, YN;
 
-	assign Y = A*B;
-	assign YN = ~(A*B);
+	assign Y = A & B;
+	assign YN = ~(A & B);
 
 endmodule

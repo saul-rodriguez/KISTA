@@ -1,10 +1,10 @@
 //Verilog HDL for "KISTA_SOI_STDLIB2", "AdderFull" "functional"
 
 
-module ADDFX1 ( a, b, cin, sum, cout);
-	input a, b, cin;
-	output sum, cout;
+module ADDFX1 ( A,B, CIN, SUM, COUT);
+	input A ,B, CIN;
+	output SUM, COUT;
 
-	assign {cout, sum} = a + b + cin;
+	assign {COUT, SUM} = A + B + CIN;
 
 endmodule

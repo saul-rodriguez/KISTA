@@ -1,11 +1,10 @@
 //Verilog HDL for "KISTA_SOI_STDLIB2", "OAI" "functional"
 
 
-module OA21X1 (A, B, C, Y, YN);
+module OA21X1 (A, B, C, Y);
 	input A, B, C;
-	output Y, YN;
+	output Y;
 
 	assign Y = (A | B) & C;
-	assign YN = ~((A | B) & C);
 
 endmodule

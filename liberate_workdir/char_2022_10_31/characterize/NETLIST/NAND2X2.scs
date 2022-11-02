@@ -1,0 +1,89 @@
+// NAND2X2
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt NAND2X2 A Y B
+    Rs1  (3 vss)  resistor r=50
+    Rc10  (vss\#1 vss)  resistor r=2.6117
+    Rd1  (A\#2 A\#3)  resistor r=1336.0317
+    Rd3  (A\#3 A)  resistor r=85.5515
+    Rc1  (A\#3 A\#4)  resistor r=1336.0317
+    Rd2  (Y Y\#1)  resistor r=2.0043
+    Rc4  (Y\#1 Y\#3)  resistor r=6.7095
+    Rd4  (Y Y\#3)  resistor r=2.0444
+    Rc6  (Y Y\#4)  resistor r=2.775
+    Rc7  (B\#2 B\#3)  resistor r=1936.0317
+    Rc8  (vdd\#1 vdd)  resistor r=1.5298
+    Rc9  (vdd vdd\#2)  resistor r=1.4222
+    Rc5  (B\#3 B)  resistor r=85.5515
+    Rd6  (B\#3 B\#4)  resistor r=736.0318
+    Rc3  (net1 net1\#2)  resistor r=5.05
+    C20  (vdd\#1 B\#2)  capacitor c=329.14a
+    C22  (vdd\#1 3)  capacitor c=4.51168e-15
+    C52  (B\#2 3)  capacitor c=1.74469e-15
+    C9  (B\#2 vss)  capacitor c=10.2785a
+    C12  (3 vss)  capacitor c=9.944e-15
+    C1  (vdd\#2 vss)  capacitor c=8.13978e-18
+    C23  (vdd\#2 3)  capacitor c=55.9556a
+    C2  (A vss)  capacitor c=6.86949e-18
+    C17  (vdd\#2 A)  capacitor c=20.8059a
+    C33  (3 A)  capacitor c=5.66071e-15
+    C3  (A\#2 vss)  capacitor c=2.98108e-18
+    C18  (vdd\#2 A\#2)  capacitor c=347.812a
+    C34  (A\#2 3)  capacitor c=1.32208e-15
+    C4  (vss\#1 A)  capacitor c=7.37888e-18
+    C13  (vss\#1 3)  capacitor c=556.668a
+    C5  (vss\#1 A\#4)  capacitor c=226.383a
+    C35  (A\#4 3)  capacitor c=1.76664e-15
+    C6  (A\#3 vss\#1)  capacitor c=7.60317e-19
+    C36  (A\#3 3)  capacitor c=309.853a
+    C7  (Y\#4 vss)  capacitor c=78.9086a
+    C46  (Y\#4 3)  capacitor c=1.40024e-15
+    C8  (B vss)  capacitor c=17.5633a
+    C31  (B A)  capacitor c=78.6876a
+    C32  (A\#3 B)  capacitor c=4.97518e-18
+    C30  (A\#3 Y)  capacitor c=8.00979e-19
+    C27  (Y A)  capacitor c=7.47179e-18
+    C28  (Y\#3 A)  capacitor c=15.5499a
+    C19  (Y\#3 vdd\#1)  capacitor c=474.892a
+    C29  (Y\#3 A\#2)  capacitor c=261.383a
+    C39  (B Y)  capacitor c=270.541a
+    C40  (B\#2 Y)  capacitor c=859.476a
+    C41  (Y\#4 B)  capacitor c=98.7158a
+    C43  (Y\#3 B)  capacitor c=14.2056a
+    C45  (3 Y)  capacitor c=2.53016e-15
+    C47  (Y\#3 3)  capacitor c=1.50802e-15
+    C51  (3 B)  capacitor c=5.27704e-15
+    C44  (B\#3 Y)  capacitor c=24.2452a
+    C11  (B\#3 vss)  capacitor c=9.34292e-19
+    C54  (B\#3 3)  capacitor c=286.49a
+    C59  (B\#2 X3_5)  capacitor c=509.926a
+    C24  (vdd\#1 X3_5)  capacitor c=646.972a
+    C49  (Y\#3 X3_5)  capacitor c=711.262a
+    C21  (3 vdd)  capacitor c=5.60056e-15
+    C25  (X2_5 vdd)  capacitor c=30.6619a
+    C26  (vdd\#2 X2_5)  capacitor c=646.972a
+    C38  (A\#2 X2_5)  capacitor c=504.33a
+    C50  (Y\#3 X2_5)  capacitor c=569.178a
+    C10  (B\#4 vss)  capacitor c=49.7984a
+    C42  (Y\#4 B\#4)  capacitor c=190.93a
+    C53  (B\#4 3)  capacitor c=1.0921e-15
+    C58  (B\#3 net1)  capacitor c=1.72332e-18
+    C14  (net1 vss)  capacitor c=80.4539a
+    C15  (net1\#2 vss)  capacitor c=68.6314a
+    C16  (vss\#1 net1\#2)  capacitor c=75.9625a
+    C37  (net1\#2 A\#4)  capacitor c=139.36a
+    C48  (Y\#4 net1)  capacitor c=82.8682a
+    C56  (B\#4 net1)  capacitor c=139.36a
+    C55  (net1 B)  capacitor c=25.517a
+    C57  (net1\#2 B)  capacitor c=22.1965a
+    C60  (net1 3)  capacitor c=393.336a
+    C61  (net1\#2 3)  capacitor c=393.678a
+    MX4_M0_unmatched  (net1\#2 A\#4 vss\#1 vss\#1)  nch w=4e-06 l=1e-06 \
+        as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX5_M0_unmatched  (Y\#4 B\#4 net1 net1)  nch w=4e-06 l=1e-06 as=0 \
+        ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX3_M0_unmatched  (Y\#1 B\#2 vdd\#1 vdd\#1)  pch w=8e-06 l=1e-06 as=0 \
+        ad=2e-11 ps=0 pd=2.1e-05 sa=2e-06 sb=2e-06
+    MX2_M0_unmatched  (Y\#3 A\#2 vdd\#2 vdd\#2)  pch w=8e-06 l=1e-06 as=0 \
+        ad=2e-11 ps=0 pd=2.1e-05 sa=2e-06 sb=2e-06
+ends NAND2X2

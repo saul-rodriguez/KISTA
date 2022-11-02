@@ -1,0 +1,266 @@
+// ADDHX1
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt ADDHX1 A B COUT SUM
+    C28  (sumn\#7 vss)  capacitor c=1.24288e-19
+    C45  (vdd\#1 SUM\#2)  capacitor c=100.498a
+    C50  (SUM\#2 sumn\#7)  capacitor c=257.19a
+    C53  (SUM\#2 5)  capacitor c=1.33433e-15
+    C106  (vdd\#1 sumn\#7)  capacitor c=185.584a
+    C155  (sumn\#7 5)  capacitor c=1.29227e-15
+    C1  (SUM vss)  capacitor c=8.97863e-18
+    C52  (5 SUM)  capacitor c=2.02246e-15
+    C3  (A vss)  capacitor c=31.2988a
+    C70  (5 A)  capacitor c=5.18134e-15
+    C4  (A\#2 vss)  capacitor c=33.1478a
+    C71  (A\#2 5)  capacitor c=8.83269e-15
+    C5  (A\#3 vss)  capacitor c=3.61751e-18
+    C72  (A\#3 5)  capacitor c=7.17354e-15
+    C9  (COUT\#2 vss)  capacitor c=12.8329a
+    C97  (COUT\#2 5)  capacitor c=846.906a
+    C11  (vdd\#7 vss)  capacitor c=37.9392a
+    C12  (vdd\#9 vss)  capacitor c=35.6553a
+    C81  (COUT\#2 vdd\#9)  capacitor c=100.523a
+    C13  (B vss)  capacitor c=10.5982a
+    C59  (B A)  capacitor c=49.0044a
+    C126  (5 B)  capacitor c=4.87473e-15
+    C14  (B\#2 vss)  capacitor c=10.3717a
+    C47  (SUM\#2 B\#2)  capacitor c=5.32707e-18
+    C127  (B\#2 5)  capacitor c=2.62843e-15
+    C15  (B\#6 vss)  capacitor c=17.3624a
+    C60  (A\#3 B\#6)  capacitor c=11.8106a
+    C83  (COUT\#2 B\#6)  capacitor c=4.13828e-18
+    C128  (B\#6 5)  capacitor c=1.9637e-15
+    C16  (B\#5 vss)  capacitor c=5.28289e-19
+    C131  (B\#5 5)  capacitor c=266.089a
+    C19  (coutn vss)  capacitor c=38.4778a
+    C87  (COUT\#2 coutn)  capacitor c=157.097a
+    C142  (5 coutn)  capacitor c=10.094f
+    C20  (coutn\#2310 vss)  capacitor c=13.2193a
+    C64  (coutn\#2310 A\#2)  capacitor c=25.354a
+    C88  (COUT\#2 coutn\#2310)  capacitor c=5.79089e-18
+    C143  (coutn\#2310 5)  capacitor c=3.8921e-15
+    C21  (coutn\#2311 vss)  capacitor c=17.3797a
+    C89  (COUT\#2 coutn\#2311)  capacitor c=175.573a
+    C103  (vdd\#9 coutn\#2311)  capacitor c=225.73a
+    C144  (coutn\#2311 5)  capacitor c=1.50921e-15
+    C22  (coutn\#9 vss)  capacitor c=40.4671a
+    C145  (coutn\#9 5)  capacitor c=4.27485e-15
+    C24  (coutn\#3 vss)  capacitor c=7.81798e-18
+    C120  (coutn\#3 B\#6)  capacitor c=332.936a
+    C26  (coutn\#5 vss)  capacitor c=2.71445e-18
+    C65  (coutn\#5 A\#3)  capacitor c=175.25a
+    C27  (coutn\#2 vss)  capacitor c=9.03853e-18
+    C66  (coutn\#2 A)  capacitor c=29.9058a
+    C122  (coutn\#2 B)  capacitor c=864.951a
+    C123  (B\#5 coutn\#2)  capacitor c=54.8227a
+    C31  (sumn\#5 vss)  capacitor c=4.51507e-18
+    C107  (sumn\#5 vdd\#1)  capacitor c=78.403a
+    C124  (sumn\#5 B\#2)  capacitor c=382.386a
+    C32  (sumn\#6 vss)  capacitor c=5.76875e-18
+    C68  (sumn\#6 A\#2)  capacitor c=12.288a
+    C93  (COUT\#2 sumn\#6)  capacitor c=79.8109a
+    C140  (sumn\#6 coutn\#2310)  capacitor c=451.668a
+    C33  (sumn\#4 vss)  capacitor c=28.5509a
+    C34  (sumn\#3 vss)  capacitor c=32.5267a
+    C141  (sumn\#3 coutn\#9)  capacitor c=806.331a
+    C157  (sumn\#3 5)  capacitor c=13.1515f
+    C35  (sumn\#3 vss\#6)  capacitor c=12.2283a
+    C36  (vss\#2 5)  capacitor c=38.1865f
+    C17  (vss\#2 B\#3)  capacitor c=1.17329e-15
+    C46  (B\#3 SUM)  capacitor c=3.12071e-18
+    C125  (sumn\#3 B\#3)  capacitor c=590.881a
+    C129  (B\#3 5)  capacitor c=8.72508e-15
+    C37  (net7 vss)  capacitor c=12.0486a
+    C132  (net7 B)  capacitor c=66.3488a
+    C135  (B\#5 net7)  capacitor c=4.78679e-18
+    C167  (net7 5)  capacitor c=237.155a
+    C39  (vss\#6 net2)  capacitor c=72.4449a
+    C136  (B\#3 net2)  capacitor c=267.554a
+    C169  (net2 5)  capacitor c=456.754a
+    C41  (vss\#2 net2\#3)  capacitor c=40.5697a
+    C149  (net2\#3 coutn\#9)  capacitor c=213.64a
+    C158  (net2\#3 sumn\#4)  capacitor c=86.4992a
+    C171  (net2\#3 5)  capacitor c=1.19154e-15
+    C159  (sumn\#3 net2\#4)  capacitor c=322.585a
+    C170  (net2\#4 5)  capacitor c=2.17218e-15
+    C94  (COUT\#1 sumn\#4)  capacitor c=49.5333a
+    C90  (COUT\#1 coutn)  capacitor c=25.8805a
+    C91  (COUT\#1 coutn\#9)  capacitor c=7.01886e-18
+    C98  (COUT\#1 5)  capacitor c=712.119a
+    C10  (COUT\#1 vss\#8)  capacitor c=69.87a
+    C23  (vss\#8 coutn\#8)  capacitor c=196.519a
+    C92  (COUT\#1 coutn\#8)  capacitor c=222.7a
+    C146  (coutn\#8 5)  capacitor c=2.74979e-15
+    C147  (coutn\#8 net7)  capacitor c=1.12473e-18
+    C119  (B\#4 coutn\#9)  capacitor c=15.7266a
+    C84  (COUT\#1 B\#4)  capacitor c=9.5086e-18
+    C130  (B\#4 5)  capacitor c=6.85966e-15
+    C133  (B\#4 net7)  capacitor c=83.616a
+    C61  (A\#5 B\#3)  capacitor c=11.3921a
+    C69  (sumn\#3 A\#5)  capacitor c=591.8a
+    C73  (A\#5 5)  capacitor c=2.89776e-15
+    C77  (net2\#4 A\#5)  capacitor c=634.673a
+    C85  (B\#5 COUT)  capacitor c=1.59299e-19
+    C82  (B COUT)  capacitor c=2.51329e-18
+    C86  (coutn COUT)  capacitor c=312.421a
+    C95  (sumn\#3 COUT)  capacitor c=105.529a
+    C96  (5 COUT)  capacitor c=1.64018e-15
+    C99  (COUT\#2 X13_5)  capacitor c=182.808a
+    C116  (vdd\#9 X13_5)  capacitor c=177.83a
+    C151  (X13_5 coutn)  capacitor c=289.608a
+    C152  (coutn\#2311 X13_5)  capacitor c=244.067a
+    C44  (vss\#4 X13_5)  capacitor c=45.5491a
+    C18  (vss\#4 B\#4)  capacitor c=953.884a
+    C25  (coutn\#6 vss\#8)  capacitor c=51.6956a
+    C121  (coutn\#6 B\#4)  capacitor c=112.206a
+    C148  (coutn\#6 net7)  capacitor c=46.0379a
+    C67  (A\#4 coutn\#2)  capacitor c=1.8955e-18
+    C63  (A\#4 B)  capacitor c=3.10601e-18
+    C75  (A\#4 5)  capacitor c=284.497a
+    C134  (net7\#2 B)  capacitor c=58.106a
+    C62  (A\#6 B)  capacitor c=52.1451a
+    C74  (A\#6 5)  capacitor c=1.4584e-15
+    C76  (net7\#2 A\#6)  capacitor c=83.616a
+    C168  (net7\#2 5)  capacitor c=237.352a
+    C56  (vdd\#6 A)  capacitor c=20.8062a
+    C105  (coutn\#5 vdd\#6)  capacitor c=95.4586a
+    C8  (A\#4 vss\#5)  capacitor c=1.2791e-18
+    C7  (vss\#5 A\#6)  capacitor c=134.209a
+    C38  (vss\#5 net7\#2)  capacitor c=58.0934a
+    C42  (net6\#2 vss)  capacitor c=1.87456e-18
+    C78  (net6\#2 A\#2)  capacitor c=139.36a
+    C111  (vdd\#7 net6\#2)  capacitor c=97.7059a
+    C162  (sumn\#3 net6\#2)  capacitor c=11.0426a
+    C173  (net6\#2 5)  capacitor c=82.2899a
+    C154  (coutn\#5 X11_5)  capacitor c=326.868a
+    C80  (A\#3 X11_5)  capacitor c=504.33a
+    C118  (vdd\#6 X11_5)  capacitor c=448.721a
+    C58  (vdd\#5 A\#3)  capacitor c=1.69221e-15
+    C57  (vdd\#3 A\#2)  capacitor c=1.62499e-15
+    C79  (A\#2 X15_5)  capacitor c=505.193a
+    C101  (vdd\#3 B\#2)  capacitor c=11.0323a
+    C109  (vdd\#3 sumn\#6)  capacitor c=15.3951a
+    C110  (vdd\#3 5)  capacitor c=37.2069f
+    C114  (vdd\#7 X15_5)  capacitor c=183.145a
+    C165  (sumn\#3 X15_5)  capacitor c=21.6005a
+    C175  (net6\#2 X15_5)  capacitor c=330.814a
+    C48  (sumn SUM)  capacitor c=257.014a
+    C49  (SUM\#2 sumn)  capacitor c=104.549a
+    C55  (SUM\#2 X17_5)  capacitor c=406.72a
+    C54  (SUM\#1 5)  capacitor c=550.044a
+    C112  (vdd\#3 net6)  capacitor c=14.8334a
+    C113  (vdd\#1 X17_5)  capacitor c=216.078a
+    C163  (sumn\#7 X17_5)  capacitor c=508.173a
+    C137  (B\#2 net6)  capacitor c=139.36a
+    C160  (sumn\#7 net6)  capacitor c=1.87456e-18
+    C161  (sumn\#5 net6)  capacitor c=82.8682a
+    C172  (net6 5)  capacitor c=81.8764a
+    C156  (sumn\#9 5)  capacitor c=1.47098e-15
+    C51  (SUM\#1 sumn\#9)  capacitor c=171.455a
+    C100  (vdd\#2310 B\#6)  capacitor c=158.851a
+    C102  (vdd\#8 coutn\#2310)  capacitor c=239.434a
+    C104  (vdd\#2310 coutn\#3)  capacitor c=120.295a
+    C108  (vdd\#8 sumn\#6)  capacitor c=96.4516a
+    C29  (vss\#1 sumn)  capacitor c=17.485a
+    C2  (vss\#1 SUM\#1)  capacitor c=69.5598a
+    C30  (vss\#1 sumn\#9)  capacitor c=137.302a
+    C6  (vss\#7 A\#5)  capacitor c=134.247a
+    C40  (net2\#4 vss\#7)  capacitor c=129.078a
+    C43  (vss\#4 X14_5)  capacitor c=45.5492a
+    C115  (vdd\#8 X14_5)  capacitor c=177.83a
+    C150  (coutn\#2310 X14_5)  capacitor c=504.608a
+    C166  (sumn\#6 X14_5)  capacitor c=205.061a
+    C138  (B\#2 X16_5)  capacitor c=550.286a
+    C164  (sumn\#5 X16_5)  capacitor c=189.822a
+    C174  (X16_5 net6)  capacitor c=330.814a
+    C117  (vdd\#2310 X12_5)  capacitor c=182.825a
+    C139  (B\#6 X12_5)  capacitor c=535.301a
+    C153  (coutn\#3 X12_5)  capacitor c=531.172a
+    MX17_M0_unmatched  (SUM\#2 sumn\#7 vdd\#1 vdd\#1)  pch w=4e-06 l=1e-06 \
+        as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX13_M0_unmatched  (COUT\#2 coutn\#2311 vdd\#9 vdd\#9)  pch w=4e-06 \
+        l=1e-06 as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX15_M0_unmatched  (net6\#2 A\#2 vdd\#7 vdd\#7)  pch w=4e-06 l=1e-06 \
+        as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX11_M0_unmatched  (coutn\#5 A\#3 vdd\#6 vdd\#6)  pch w=4e-06 l=1e-06 \
+        as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX14_M0_unmatched  (sumn\#6 coutn\#2310 vdd\#8 vdd\#8)  pch w=4e-06 \
+        l=1e-06 as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX16_M0_unmatched  (sumn\#5 B\#2 net6 net6)  pch w=4e-06 l=1e-06 as=0 \
+        ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX12_M0_unmatched  (coutn\#3 B\#6 vdd\#2310 vdd\#2310)  pch w=4e-06 \
+        l=1e-06 as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    Rd19  (coutn\#2312 coutn\#7)  resistor r=736.0318
+    Rd20  (coutn\#2311 coutn\#2312)  resistor r=600
+    Rc26  (vdd vdd\#6)  resistor r=2.7222
+    Rc36  (vdd vdd\#5)  resistor r=99.67m
+    Rs1  (5 vss)  resistor r=50
+    Rc21  (SUM SUM\#2)  resistor r=2.875
+    Rd5  (A\#2 A\#3)  resistor r=6017.6182
+    Rd12  (vdd\#1 vdd\#7)  resistor r=244.1221
+    Rd2  (B\#5 B\#6)  resistor r=1936.0317
+    Rc5  (B\#5 B)  resistor r=85.564
+    Rc22  (coutn\#2310 coutn\#2311)  resistor r=1517.6188
+    Rd18  (coutn\#2310 coutn\#9)  resistor r=2400
+    Rd9  (coutn\#3 coutn\#5)  resistor r=23.2112
+    Rd8  (coutn coutn\#2)  resistor r=5.0981
+    Rd11  (coutn\#2 coutn\#3)  resistor r=3.1952
+    Rc24  (coutn\#2 coutn\#5)  resistor r=3.2591
+    Rc16  (sumn\#5 sumn\#3)  resistor r=3.4902
+    Rc2  (sumn\#3 sumn\#6)  resistor r=2.7731
+    Rc11  (sumn\#3 sumn\#4)  resistor r=5.1981
+    Rc38  (vss\#2 vss\#6)  resistor r=5.1974
+    Rc8  (B\#2 B\#3)  resistor r=2400
+    Rc27  (net2 net2\#3)  resistor r=15.8283
+    Rd1  (net2 net2\#4)  resistor r=15.2388
+    Rd7  (net2\#4 net2\#3)  resistor r=15.5332
+    Rc28  (coutn\#9 coutn\#8)  resistor r=1517.6188
+    Rd6  (B\#3 B\#4)  resistor r=6017.6182
+    Rc4  (A\#2 A\#5)  resistor r=2400
+    Rc6  (B\#4 B\#5)  resistor r=436.0318
+    Rc10  (COUT COUT\#2)  resistor r=2.775
+    Rc9  (COUT COUT\#1)  resistor r=5.2
+    Rc29  (coutn\#8 coutn\#7)  resistor r=1036.0317
+    Rc23  (coutn\#7 coutn)  resistor r=80.464
+    Rc33  (vss vss\#4)  resistor r=0.133
+    Rc35  (vss\#2 vss\#4)  resistor r=234.5m
+    Rc34  (vss\#4 vss\#8)  resistor r=5.1974
+    Rc30  (coutn\#2 coutn\#6)  resistor r=5.1795
+    Rc3  (net7 net7\#2)  resistor r=10.1
+    Rd4  (A\#3 A\#4)  resistor r=1336.0317
+    Rd3  (A\#4 A)  resistor r=85.564
+    Rc7  (A\#4 A\#6)  resistor r=1036.0317
+    Rc37  (vss vss\#5)  resistor r=5.1972
+    Rc32  (vdd\#9 vdd\#5)  resistor r=3.6505
+    Rd13  (vdd\#3 vdd\#9)  resistor r=11.0989
+    Rc31  (vdd\#7 vdd\#3)  resistor r=2.7861
+    Rc14  (net6 net6\#2)  resistor r=5.05
+    Rc1  (sumn sumn\#3)  resistor r=6.4597
+    Rc20  (SUM SUM\#1)  resistor r=5.1
+    Rd10  (vdd\#1 vdd\#3)  resistor r=2.9299
+    Rc15  (sumn\#7 sumn\#8)  resistor r=1336.0317
+    Rd14  (vdd\#3 vdd\#5)  resistor r=133.2m
+    Rd17  (vdd\#5 vdd\#2310)  resistor r=2.7224
+    Rc25  (vdd\#3 vdd\#8)  resistor r=2.7224
+    Rc18  (sumn\#8 sumn\#9)  resistor r=1036.0317
+    Rc19  (sumn\#8 sumn)  resistor r=80.464
+    Rc17  (sumn sumn\#5)  resistor r=37.2538
+    Rd15  (vss\#1 vss\#2)  resistor r=5.2378
+    Rd16  (vss\#2 vss\#7)  resistor r=9.1883
+    Rc39  (vss\#7 vss\#4)  resistor r=12.2714
+    MX9_M0_unmatched  (net2 B\#3 vss\#6 vss\#6)  nch w=2e-06 l=1e-06 as=0 \
+        ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+    MX7_M0_unmatched  (sumn\#4 coutn\#9 net2\#3 net2\#3)  nch w=2e-06 \
+        l=1e-06 as=0 ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+    MX6_M0_unmatched  (COUT\#1 coutn\#8 vss\#8 vss\#8)  nch w=2e-06 \
+        l=1e-06 as=0 ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+    MX5_M0_unmatched  (coutn\#6 B\#4 net7 net7)  nch w=2e-06 l=1e-06 as=0 \
+        ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+    MX4_M0_unmatched  (net7\#2 A\#6 vss\#5 vss\#5)  nch w=2e-06 l=1e-06 \
+        as=0 ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+    MX10_M0_unmatched  (SUM\#1 sumn\#9 vss\#1 vss\#1)  nch w=2e-06 l=1e-06 \
+        as=0 ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+    MX8_M0_unmatched  (net2\#4 A\#5 vss\#7 vss\#7)  nch w=2e-06 l=1e-06 \
+        as=0 ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+ends ADDHX1

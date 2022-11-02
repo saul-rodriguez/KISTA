@@ -1,9 +1,9 @@
 //Verilog HDL for "KISTA_SOI_STDLIB2", "AdderHalf" "functional"
 
 
-module ADDHX1 (a, b, cout, sum );
-	input a, b;
-	output sum, cout;
+module ADDHX1 (A, B, COUT, SUM );
+	input A, B;
+	output SUM, COUT;
 
-	assign {cout, sum} = a + b;
+	assign {COUT, SUM} = A + B;
 endmodule
