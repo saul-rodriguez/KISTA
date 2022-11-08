@@ -1,17 +1,19 @@
 
 ********************************************************************************
 Product   : Virtuoso(R) LEF Out 
-Program   : @(#)$CDS: lefout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-52) $
-SubVersion: sub-version  IC6.1.8-64b.500.7 
-Started at: 12-Jan-2022  13:59:16
+Program   : @(#)$CDS: lefout version 6.1.8-64b 10/01/2018 19:51 (ip-172-18-22-57) $
+SubVersion: sub-version  IC6.1.8-64b.83 
+Started at: 02-Nov-2022  13:11:33
 User Name : saul
 Host Name : s2424
 Directory : /home/saul/projects/KISTA
-DB Version: 	20191008 (SJ)
+DB Version: 	20181001 (SJ)
 CADENCE Design Systems, Inc.
 ********************************************************************************
-Running: lefout -lib KISTA_SOI_STDLIB -cells "AOI21X1 BUFX2 DECAP1 DECAP2 DECAP4 DFFSRX1 DFFX1 FILL1 FILL2 FILL4 INVX1 MX2X1 MX2X1_BUF NAND2X1 NAND3X1 NOR2X1 NOR3X1 OAI21X1 TIEHI TIELO XOR2X1" -lef /home/saul/projects/KISTA/kista_soi_stdlib_files/lef/kista_soi_stdlib_macro.lef -ver 5.7 -noTech
+Running: lefout -lib KISTA_SOI_STDLIB2 -cells "ADDFX1 ADDHX1 AND2X1 AND3X1 AND4X1 AO21X1 AOI21X1 BUFX16 BUFX2 BUFX27 BUFX3 BUFX32 BUFX4 BUFX8 BUFX9 DECAP2 DECAP3 DECAP4 DFFRX1 DFFSRX1 DFFSX1 DFFX1 FILL1 FILL2 FILL3 FILL4 INVX1 INVX2 INVX3 INVX4 MX2X1 MX4X1 NAND2X1 NAND2X2 NAND2X3 NAND3X1 NAND4X1 NOR2X1 NOR2X2 NOR2X3 NOR3X1 NOR4X1 OA21X1 OAI21X1 OR2X1 OR3X1 OR4X1 TIEHI TIELO XNOR2X1 XOR2X1" -lef /home/saul/projects/KISTA/kista_soi_stdlib2_files/lef/a.lef -ver 5.7 -techOnly
+WARNING: (OALEFDEF-50144): NONDEFAULTRULE virtuosoDefaultSetup: LAYER Poly: invalid definition. This rule will be ignored. Ensure all layers in the valid routing layers constraint have a minWidth constraint defined and are metal or poly-routing material.
+WARNING: (OALEFDEF-50144): NONDEFAULTRULE virtuosoDefaultTaper: LAYER Poly: invalid definition. This rule will be ignored. Ensure all layers in the valid routing layers constraint have a minWidth constraint defined and are metal or poly-routing material.
 
 Elapsed Time: 0.3s
 
-lefout translation completed (errors: 0, warnings: 0).
+lefout translation completed (errors: 0, warnings: 2).

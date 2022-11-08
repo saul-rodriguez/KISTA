@@ -1,0 +1,1 @@
+../char_2022_10_31/characterize/LIBRARY/KISTA_SOI_STDLIB2_ECSM_TT_del.v

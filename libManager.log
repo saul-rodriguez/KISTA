@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 09/24/2018 21:00 (ip-172-18-22-224) $
 \o Sub version:		sub-version  p015 
-\o Arguments:		-unmapped -mpssession virtuoso17271 -mpshost s2424 
+\o Arguments:		-unmapped -mpssession virtuoso20054 -mpshost s2424 
 \o Working Directory:	s2424:/home/saul/projects/KISTA
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -15,67 +15,34 @@
 \w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
 \w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
 \a nrResizeWindow(cdsLibManager list(420 369 947 674))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(757 113 947 674))
 \a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB2"
 \a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB2"
-\a cdsLibManager->cellListBox->value = "timing"
-\a cdsLibManager->cellLineEdit->value = "timing"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "ADDFX1"
-\a cdsLibManager->cellLineEdit->value = "ADDFX1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->cellListBox->value = "AND2X1"
-\a cdsLibManager->cellLineEdit->value = "AND2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->cellListBox->value = "AND3X1"
-\a cdsLibManager->cellLineEdit->value = "AND3X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->cellListBox->value = "AND4X1"
-\a cdsLibManager->cellLineEdit->value = "AND4X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->cellListBox->value = "AO21X1"
-\a cdsLibManager->cellLineEdit->value = "AO21X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->cellListBox->value = "ADDHX1"
-\a cdsLibManager->cellLineEdit->value = "ADDHX1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(916 202 947 674))
-\a cdsLibManager->cellListBox->value = "timing"
-\a cdsLibManager->cellLineEdit->value = "timing"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "INVX1"
+\a cdsLibManager->cellLineEdit->value = "INVX1"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a lmgrLogShowPopup("mainListPopup2" 43 97 2 "symbol")
+\a cdsLibManager->FileOpenButton->value = t
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
@@ -86,38 +53,14 @@
 \w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
 \a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB2"
 \a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB2"
-\a cdsLibManager->cellListBox->value = "timing"
-\a cdsLibManager->cellLineEdit->value = "timing"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "INVX1"
+\a cdsLibManager->cellLineEdit->value = "INVX1"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
@@ -127,30 +70,48 @@
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "NAND3X1"
-\a cdsLibManager->cellLineEdit->value = "NAND3X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 48 100 2 "symbol")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrResizeWindow(deleteForm list(907 198 627 425))
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(1086 365 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "symbol" from cell "INVX1" in library "KISTA_SOI_STDLIB2".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrResizeWindow(workingDialogForm list(1086 344 268 133))
+\o Deleted cellview 'KISTA_SOI_STDLIB2/INVX1/symbol'.
+\a nrSetCurrentWindow(deleteForm)
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deletion of 1 view done.
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(deleteForm list(907 161 627 425))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB2"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB2"
+\a cdsLibManager->cellListBox->value = "INVX1"
+\a cdsLibManager->cellLineEdit->value = "INVX1"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "timing"
-\a cdsLibManager->cellLineEdit->value = "timing"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "Testbench"
-\a cdsLibManager->cellLineEdit->value = "Testbench"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "timing"
-\a cdsLibManager->cellLineEdit->value = "timing"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
+\a nrResizeWindow(workingDialogForm list(1086 307 268 133))
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewListBox->value = nil
@@ -158,60 +119,235 @@
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "NAND2X3"
-\a cdsLibManager->cellLineEdit->value = "NAND2X3"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "INVX2"
+\a cdsLibManager->cellLineEdit->value = "INVX2"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a lmgrLogShowPopup("mainListPopup2" 51 98 2 "symbol")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(907 198 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(1086 365 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "symbol" from cell "INVX2" in library "KISTA_SOI_STDLIB2".
+\a nrResizeWindow(workingDialogForm list(1086 381 268 133))
+\o Deleted cellview 'KISTA_SOI_STDLIB2/INVX2/symbol'.
+\a nrSetCurrentWindow(deleteForm)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(973 190 947 674))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "timing"
-\a cdsLibManager->cellLineEdit->value = "timing"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deletion of 1 view done.
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(deleteForm list(907 161 627 425))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB2"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB2"
+\a cdsLibManager->cellListBox->value = "INVX2"
+\a cdsLibManager->cellLineEdit->value = "INVX2"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(1086 344 268 133))
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 5 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "INVX1"
+\a cdsLibManager->cellLineEdit->value = "INVX1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a lmgrLogShowPopup("mainListPopup2" 35 100 2 "symbol")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(907 198 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(1086 365 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "symbol" from cell "INVX1" in library "KISTA_SOI_STDLIB2".
+\a nrResizeWindow(workingDialogForm list(1086 381 268 133))
+\o Deleted cellview 'KISTA_SOI_STDLIB2/INVX1/symbol'.
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deletion of 1 view done.
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(deleteForm list(907 161 627 425))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB2"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB2"
+\a cdsLibManager->cellListBox->value = "INVX1"
+\a cdsLibManager->cellLineEdit->value = "INVX1"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(1086 344 268 133))
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "INVX3"
+\a cdsLibManager->cellLineEdit->value = "INVX3"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a lmgrLogShowPopup("mainListPopup2" 37 103 2 "symbol")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(907 198 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(1086 365 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "symbol" from cell "INVX3" in library "KISTA_SOI_STDLIB2".
+\a nrResizeWindow(workingDialogForm list(1086 381 268 133))
+\o Deleted cellview 'KISTA_SOI_STDLIB2/INVX3/symbol'.
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deletion of 1 view done.
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(deleteForm list(907 161 627 425))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB2"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB2"
+\a cdsLibManager->cellListBox->value = "INVX3"
+\a cdsLibManager->cellLineEdit->value = "INVX3"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(1086 344 268 133))
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "INVX4"
+\a cdsLibManager->cellLineEdit->value = "INVX4"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a lmgrLogShowPopup("mainListPopup2" 36 97 2 "symbol")
+\a cdsLibManager->cellListBox->value = "INVX3"
+\a cdsLibManager->cellLineEdit->value = "INVX3"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "INVX4"
+\a cdsLibManager->cellLineEdit->value = "INVX4"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a lmgrLogShowPopup("mainListPopup2" 44 98 2 "symbol")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(907 198 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(1086 365 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "symbol" from cell "INVX4" in library "KISTA_SOI_STDLIB2".
+\a nrResizeWindow(workingDialogForm list(1086 381 268 133))
+\o Deleted cellview 'KISTA_SOI_STDLIB2/INVX4/symbol'.
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deletion of 1 view done.
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(deleteForm list(907 161 627 425))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a cdsLibManager->libListBox->value = "KISTA_SOI_STDLIB2"
+\a cdsLibManager->libLineEdit->value = "KISTA_SOI_STDLIB2"
+\a cdsLibManager->cellListBox->value = "INVX4"
+\a cdsLibManager->cellLineEdit->value = "INVX4"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(1086 344 268 133))
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

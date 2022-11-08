@@ -1,0 +1,17 @@
+
+1) These tcl scripts target the design used for validation of
+the pdk and are intended to be used only as reference. New
+scripts should be created for each new design. 
+
+Usage
+
+Inside the innovus tcl you can invoce the scripts with:
+
+source KISTA_command_name.cmd
+
+2) The mmmc config file is used only as reference and covers
+only typical models and functional mode. A new mmmc config file 
+should be created if corners are available or if scan chains
+are added.
+
+
