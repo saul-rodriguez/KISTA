@@ -1,0 +1,161 @@
+===============================================================================
+[Copyright 2025] Cadence Design Systems, Inc.
+
+This program and online documentation are subject to a separate written
+agreement and may not be copied, modified, re-published, uploaded,
+executed, or distributed in any way, in any medium, whether in whole or in
+part, without prior written permission from Cadence Design Systems, Inc.
+===============================================================================
+
+
+============== checkSysConf:  Version 3.66 ====================
+
+
+Date information gathered: Fri Aug 14 09:20:25 UTC 2026
+-------------------------------------------------------
+Host Name ..............:  ees_research_saul
+Hostid .................:  11ac1a00
+Operating System .......:  Linux / x86_64
+OS Version .............:  Rocky Linux release 8.10 (Green Obsidian)
+Kernel Version .........:  5.15.0-161-generic
+Hardware Type ..........:  x86_64
+System Manufacturer ....:  Supermicro
+System Product Name ....:  SYS-4048B-TRFT
+Memory .................:  3096321 Megabyte
+CPU model ..............:  Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz
+No. of CPUs ............:  48
+Total Swap Space........:  8192 Megabyte
+Local X Server .........:  
+Patch Data file ........:  /opt/tools/cadence/installs/IC251/share/patchData/Linux/x86_64/generic/8.0WS/IC25.1
+
+
+****************   Now verifying configuration     ****************
+
+
+Validating Kernel requirements...
+            Minimum             Installed                   Status    Info                
+            --------------      --------------------------  ------    --------------------
+            4.18.0-305          5.15.0-161-generic          PASS                          
+
+
+Validating MEMORY requirements MegaByte ...
+            Minimum   Installed Status  Info                
+            -------   --------- ------  --------------------
+            4096MB    3096321MB PASS                        
+
+
+Validating SWAP requirements in MegaByte ...
+            Minimum   Installed Status  Info                
+            -------   --------- ------  --------------------
+            4096MB    8192MB    PASS                        
+
+
+Validating OS version requirement...
+            Minimum     Maximum     Installed   Status    Info
+            ----------  ----------  ----------  ------    ----------------------------
+            8.4         -           8.10        PASS      
+
+
+Validating DISPLAY requirements...
+          Minimum           Installed                   Status  Info                
+          ----------------- ---------------------       ------  ----                
+          8 planes          32 planes                   PASS                        
+          PseudoColor       DirectColor                                             
+
+
+Validating XKEYBOARD extension requirement...
+          Requirement  Installed   Status     Info
+          -----------  ---------   ------     ---------------------------
+          Required     Yes         PASS       
+
+
+Validating WRITABLE-FILE .....1 to check
+#   WRITABLE-FILE                           Exists    Status      Info                                   
+-   -------------                           ------    ------      ------------                           
+1   /dev/shm                                YES       PASS        edpSharedMemory                           
+          Status..............: PASS
+
+
+Validating PACKAGE requirements.....31 to check
+#   PACKAGE                            Release    Build          Installed               Arch        Status  Info               
+--  -------                            -------    -----          ----------              ----        ------  --------------------
+1   glibc                              2.28       151.el8        2.28-251.el8_10.22      x86_64      PASS                       
+->  'glibc'
+2   elfutils-libelf                    0.182      3.el8          0.190-2.el8             x86_64      PASS                       
+->  'libelf.so.1'
+3   ksh                                20120801   254.el8        20120801-267.el8        x86_64      PASS                       
+->  'ksh'
+4   redhat-lsb-core                    4.1        47.el8         4.1-47.el8              x86_64      PASS                       
+->  'lsb_release command'
+5   xterm                              331        1.el8_3.2      331-2.el8               x86_64      PASS                       
+->  'xterm command'
+6   mesa-libGL                         20.3.3     2.el8          23.1.4-4.el8_10         x86_64      PASS                       
+->  'libGL.so.1'
+7   libglvnd-glx                       1.3.2      1.el8          1.3.4-2.el8             x86_64      PASS                       
+->  'libGL.so.1'
+8   mesa-libGLU                        9.0.0      15.el8         9.0.0-15.el8            x86_64      PASS                       
+->  'libGLU.so.1'
+9   motif                              2.3.4      16.el8         2.3.4-21.el8_10         x86_64      PASS                       
+->  'libXm.so.4'
+10  libXp                              1.0.3      3.el8          1.0.3-3.el8             x86_64      PASS                       
+->  'libXp.so.6'
+11  libpng12                           1.2.57     5.el8          1.2.57-5.el8            x86_64      PASS                       
+->  'libpng12.so.0'
+12  libpng                             1.6.34     5.el8          1.6.34-5.el8            x86_64      PASS                       
+->  'libpng15.so.15'
+13  libjpeg-turbo                      1.5.3      10.el8         1.5.3-14.el8_10         x86_64      PASS                       
+->  'libjpeg.so.62'
+14  expat                              2.2.5      4.el8          2.2.5-17.el8_10         x86_64      PASS                       
+->  'libexpat.so.1'
+15  libXtst                            1.2.3      7.el8          1.2.3-7.el8             x86_64      PASS                       
+->  'libXtst.so.6'
+16  glibc-devel                        2.28       151.el8        2.28-251.el8_10.22      x86_64      PASS                       
+->  'glibc header files'
+17  xorg-x11-fonts-misc                7.5        19.el8         7.5-19.el8              noarch      PASS                       
+->  'Bitmap fonts'
+18  xorg-x11-fonts-ISO8859-1-75dpi     7.5        19.el8         -                       noarch      FAIL    Package not installed.
+->                                                                                                           ----------------------
+->  '75dpi fonts'
+19  gdb                                8.2        15.el8         -                       x86_64      FAIL    Package not installed.
+->                                                                                                           ----------------------
+->  'GNU Debugger'
+20  libXScrnSaver                      1.2.3      1.el8          1.2.3-1.el8             x86_64      PASS                       
+->  'libXss.so.1'
+21  apr                                1.6.3      11.el8         1.6.3-12.el8            x86_64      PASS                       
+->  'libapr-1.so.0'
+22  apr-util                           1.6.1      6.el8          1.6.1-9.el8             x86_64      PASS                       
+->  'libaprutil-1.so.0'
+23  xorg-x11-server-Xvfb               1.20.10    1.el8          1.20.11-26.el8_10       x86_64      PASS                       
+->  'Xvfb command'
+24  mesa-dri-drivers                   20.3.3     2.el8          23.1.4-4.el8_10         x86_64      PASS                       
+->  'swrast_dri.so'
+25  libXext                            1.3.4      1              1.3.4-1.el8             x86_64      PASS                       
+->  'libXext.so.6'
+26  libxkbcommon-x11                   0.9.1      1              0.9.1-1.el8             x86_64      PASS                       
+->  'libxkbcommon-x11.so.0'
+27  xcb-util-image                     0.4.0      9              0.4.0-9.el8             x86_64      PASS                       
+->  'libxcb-image.so.0'
+28  xcb-util-keysyms                   0.4.0      7              0.4.0-7.el8             x86_64      PASS                       
+->  'libxcb-keysyms.so.1'
+29  xcb-util-renderutil                0.3.9      10             0.3.9-10.el8            x86_64      PASS                       
+->  'libxcb-render-util.so.0'
+30  xcb-util-wm                        0.4.1      12             0.4.1-12.el8            x86_64      PASS                       
+->  'libxcb-icccm.so.4'
+31  libnsl                             2.28       72             2.28-251.el8_10.22      x86_64      PASS                       
+->  'libnsl'
+
+
+
+Configuration checks failed on this workstation (ees_research_saul), status is: FAIL
+
+This system does not have the correct packages to run IC25.1
+
+Please run checkSysConf IC25.1 -P <PACKAGE>
+to find out which products require the packages marked 'FAIL'
+in the table above.
+If you intend on using listed products, please contact your IT
+department or system administrator to install the packages.
+
+
+Exiting checkSysConf ... Good-bye
+Output is saved as /tmp/checkSysConf.ees_research_saul-2026.08.14.09:20.130798.log

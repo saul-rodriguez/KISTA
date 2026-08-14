@@ -1,0 +1,130 @@
+\# Program start time:     UTC 2026.08.14 11:44:48.132
+\# Local time: UTC (UTC+00:00) 2026.08.14 11:44:48.132
+\o Program:		@(#)$CDS: Virtuoso Studio version IC25.1-64b 10/07/2025 20:53 (cpgbld31) $
+\o Hierarchy:		/opt/tools/cadence/installs/IC251/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC25.1-64b.ISR2.32  (64-bit addresses)
+\# Command line:	/opt/tools/cadence/installs/IC251/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost ees_research_saul -beanport 11851 -beanbinlog  -beanLogFile /home/saul/projects/KISTA/logs_saul/logs0/amps_Service33.log -mpssession virtuoso125946 -mpshost ees_research_saul -davinciService DaVinciService_125946_1786697671 -scopedPid 125946 -axlSession fnxSession4 -axlServiceIdFlag 33 -uuid 5294f1a2-122f-4d2b-90c7-f31804193ef2 -heartbeat /dev/shm/swift-heartbeat.NwtEINNed3 -log /home/saul/projects/KISTA/logs_saul/logs0/Service33.log -adeBrokerAddress ees_research_saul:35277 -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D138FFC7EFC06BC4D67D9991F8F63CE283FBAC05DD236867C66E38F1FFC06BC4D66E38F1FFC06BC4D0C9D70B303AAD63300001E7B -interactive -offlineExprEval -upfrontMode -fenixMode explorer -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	ees_research_saul (x86_64)
+\# Operating system:	Rocky Linux 8.10 (Green Obsidian)
+\# Kernel:	Linux 5.15.0-161-generic #171-Ubuntu SMP Sat Oct 11 08:17:01 UTC 2025
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:4881 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	      1,215 MB
+\# Available memory:	  2,639,298 MB
+\# System memory:	  3,104,513 MB
+\# Maximum memory size:	  3,103,490 MB
+\# Max mem available:	  2,639,491 MB
+\# Initial memory used:	        192 MB
+\#        process size:	      1,818 MB
+\# Thread usage limits (effective/default):	maxthreads 4294967294/4294967295 maxload 48.00/48.00
+\# Qt version:		5.15.9
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	ees_research_saul:/home/saul/projects/KISTA
+\# Process Id:		142256
+\o 
+\o COPYRIGHT (C) 1992-2025  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2025  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading im.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\# Memory report: using         319 MB, process size 2,015 MB at UTC 2026.08.14 11:44:50.080
+\o Loading asimenv.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading photonics.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading vem.cxt 
+\o Loading lp.cxt 
+\o Loading hmp.cxt 
+\o Loading sipLayout.cxt 
+\o Loading viva.cxt 
+\o Loading diagCenter.cxt 
+\o INFO (ELI-00333) License program mode is LSCS.
+\# [11:44:48.072625] Configured Lic search path (25.01-s002): 3000@lic08.ug.kth.se
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso125946, host=ees_research_saul). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 142256 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\w *WARNING* The directory: '/home/saul/projects/KISTA/KISTA' does not exist
+\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\p > 
+\o Loading le.cxt 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\w *WARNING* could not load font "-*-helvetica-medium-r-*-*-12-*", using font "fixed"
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\o Loading ve.cxt 
+\o Loading tilp.cxt 
+\o Loading validator.cxt 
+\o Loading vrf.cxt 
+\o Loading multiTechPlugin.cxt 
+\o Loading exportDie.cxt 
+\o Loading hydraVmt.cxt 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 142256' to open it when Virtuoso freezes.
+\# Virtuoso has launched. For more information, open CIW - Tools - Diagnostic Center - Performance Tab - Check SKILL - Virtuoso Launch.
+\#   Virtuoso initialization   6.79s
+\#   Custom initialization     1.40s
+\#   Total                     8.19s
+\# (PerfDiag): Use backtrace from GLIBC.
+\i _axlRunServices()
+\o Loading simui.cxt 
+\o [2026-08-14 11:44:53.361 Z] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"jobid": "33", "hostname": "ees_research_saul", "processid": 142256, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Service33.log"}
+\# Memory report: using         609 MB, process size 3,759 MB at UTC 2026.08.14 11:44:54.405
+\# Available memory:      2,639,018 MB at UTC 2026.08.14 11:45:01.420
+\# Memory report: Maximum memory size now 2,639,634 MB at UTC 2026.08.14 11:45:01.421
+\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.08.14 11:45:01.421
+\o [2026-08-14 11:45:11.438 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Netlist Service process exits. {"jobid": "33", "hostname": "ees_research_saul", "processid": 142256, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Service33.log"}
+\o Loading vdsil.cxt 
+\# Lic Summary:
+\# [11:45:13.460249] Cdslmd servers:3000@lic08.ug.kth.se
+\# [11:45:13.460267] Feature usage summary:
+\# Memory report: on exit            465 MB, process size 3,679 MB at UTC 2026.08.14 11:45:13.460
+\# Memory report: peak usage         617 MB, process size 3,831 MB

@@ -1,0 +1,60 @@
+simulator lang = spectre
+
+library diode
+
+
+section tt_dio
+parameters is_dio=1
+parameters isw_dio=1
+parameters n_dio=1
+parameters rs_dio=1
+parameters cjo_dio=1
+parameters cjsw_dio=1
+include "KTH_DIODE.scs" section=dio
+endsection tt_dio
+
+section dio
+//  *************************************************************
+//                       MODEL OF N+/PW DIODE                   *
+//                                                              *
+//  *************************************************************   
+//  *************************************************************
+//  Example of netlist: 					*
+//  D0 (net2 0) diode_unit area=40f pj=800n m=1                  *
+//                                                              *
+//  *************************************************************   
+
+model diode_unit diode  
++level = 1                     tlev = 1                      tlevc = 1 
++imax = 1e40                   minr = 1e-10                  ibv = 0.03                    
++ik = 8.007637E10              is = 1.985439E-7*is_dio       n = 1.241062*n_dio                  
++rs = 8.701365E-11*rs_dio      bv = 9.2                      area = 3.6E-8                 
++cjo = 1.177208E-3*cjo_dio     vj = 0.5                      m = 0.249998                      
++fc = 0                        cjsw = 6.561678E-11*cjsw_dio  vjsw = 0.73
++mjsw = 9.48645E-3             tnom = 25                     eg = 1.16                     
++xti = 3                       cta = 8E-4                    ctp = 3.6E-4                  
++trs = 2.4E-3                  isw = 7.240096E-13*isw_dio    perim = 7.32E-4               
++tbv1 = -1E-3                  pta = 1E-3                    ptp = 1.85E-3 
++allow_scaling=1    
+                                      
+//  *************************************************************
+//                       MODEL OF P+/NW DIODE                   *
+//                                                              *
+//  *************************************************************                                                                              
+
+model g45pd1svt diode
++level = 1                     tlev = 1                      tlevc = 1  
++imax = 1e40                   minr = 1e-10                  ibv = 0.03                    
++ik = 1.225265E10              is = 1.657517E-7*is_dio       n = 1.223746 *n_dio                  
++rs = 1.1E-10*rs_dio           bv = 9.2                      area = 3.6E-8                 
++cjo = 1.308015E-3*cjo_dio     vj = 0.8                      m = 0.349995                      
++fc = 0                        cjsw = 7.604536E-11*cjsw_dio  vjsw = 0.44
++mjsw = 9.369543E-3            tnom = 25                     eg = 1.17                     
++xti = 3                       cta = 8E-4                    ctp = 2.4E-4                  
++trs = 2.4E-3                  isw = 6.075E-13*isw_dio       perim = 7.32E-4               
++tbv1 = -1E-3                  pta = 1.85E-3                 ptp = 1.8E-3               
++allow_scaling=1 
+
+endsection dio
+
+

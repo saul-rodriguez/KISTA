@@ -1,146 +1,45 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = KISTA_TEST_AMS
-	Cell         = test_ams_buf
-	View         = config
-	Simulator    = ams
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = KISTA_TEST_AMS:test_ams_buf:1_none_Interactive.5
-	Results DB   = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_buf/adexl/results/data/Interactive.5.rdb
-	Results Dir  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_buf/adexl/results/data/Interactive.5/1/KISTA_TEST_AMS:test_ams_buf:1
-	Results Loc  = /home/saul/simulation/KISTA_TEST_AMS/test_ams_buf/adexl/results/data
-	Project Dir  = /home/saul/simulation
-	Setup DB loc = /home/saul/projects/KISTA/KISTA_TEST_AMS/test_ams_buf/adexl
-	File Encoding = 0
-
-
-variable oasisVariableValue redefined
-variable persistNewList redefined
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (1 1) on testbench [
-          KISTA_TEST_AMS:test_ams_buf:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_buf/adexl/results/data/Interactive.5/1/KISTA_TEST_AMS:test_ams_buf:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/simulation/KISTA_TEST_AMS/test_ams_buf/adexl/results/data/Interactive.5/1/KISTA_TEST_AMS:test_ams_buf:1
-
-
-*Info*    Creating Netlist for Point ID (1 1)
-
-generate netlist...
-INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
-INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
- field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
- analog primitives using the Spectre CDF simulation information.
-Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/KISTA_TEST_AMS/test_ams_buf/adexl/results/data/Interactive.5/1/KISTA_TEST_AMS:test_ams_buf:1/netlist/digital/control
-Begin Netlisting Dec 21 21:57:08 2021
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/simulation/KISTA_TEST_AMS/test_ams_buf/adexl/results/data/Interactive.5/1/KISTA_TEST_AMS:test_ams_buf:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-If you want to print only those cellviews that need to be re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
-INFO (VLOGNET-117): Re-netlisting the entire design.
-
-INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-non-stopping cells.
- 
-WARNING (VLOGNET-110): The cell 'KISTA_TEST_AMS/test_ams_buf/schematic' has no ports. Make sure that this was the intended 
-design.
- 
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-
-
-
-CELL NAME                   VIEW NAME            NOTE             
----------                   ---------            ----             
-
-vdc                         spectre              *Stopping View*  
-cap                         spectre              *Stopping View*  
-vpulse                      spectre              *Stopping View*  
-res                         spectre              *Stopping View*  
-pmos3                       spectre              *Stopping View*  
-nmos3                       spectre              *Stopping View*  
-test_ams_buf                schematic                             
-BUFX2                       analog_extracted                      
-
----------- End of netlist configuration information   ----------
-Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/KISTA_TEST_AMS/test_ams_buf/adexl/results/data/Interactive.5/1/KISTA_TEST_AMS:test_ams_buf:1/netlist/analog/control
-Copying Spectre source file 'spectre.inp'
-Copying Spectre command file 'spectre.sim'
-Running netlist assembly..
-
-End netlisting Dec 21 21:57:13 2021
-INFO (AMS-1241): AMS UNL netlisting has completed successfully.
-To view the modules, right-click the test name on the Tests and Analyses 
-assistant pane and choose Netlist->Display menu option.
-      ...successful.
-create cds_globals...
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [
-          KISTA_TEST_AMS:test_ams_buf:1 ] for Point ID (1 1).
-
-Delete simulation data in /home/saul/simulation/KISTA_TEST_AMS/test_ams_buf/adexl/results/data/Interactive.5/1/KISTA_TEST_AMS:test_ams_buf:1/psf.
-create cds_globals...
-      ...successful.
-compose simulator input file...
-      ...successful.
-validating simulator hierarchy...
-      ...successful.
-running...
-To check for output from compilation, elaboration and simulation run, 
-right-click on the test name, result name, or any value in the "Results" 
-tab of the Outputs section and choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (1 1) on testbench [
-          KISTA_TEST_AMS:test_ams_buf:1 ].
-
-
-
-
-
+[Simulation Monitor: 8]
+[2026-08-14 12:53:56.043 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started the simulation monitor process {"hostname": "ees_research_saul", "processid": 160050, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log", "simulation monitor command line": "/opt/tools/cadence/installs/IC251/tools.lnx86/dfII/bin/64bit/spectreMonitor --davinciService DaVinciService_156474_1786711692 --axlsession fnxSession0 -lscs 00010590E36CFC06BC4D138FFC7EFC06BC4D67D9991F8F63CE283FBAC05DD236867C66E38F1FFC06BC4D66E38F1FFC06BC4D0C9C80FCF3E5D63200001AD6 -beanhost ees_research_saul -beanport 11895 -beanLogFile /home/saul/projects/KISTA/logs_saul/logs0/amps_Job8.log -beanbinlog  --domain 0 --interactive yes --netlistOpt no --useMultiPointEvaluation yes --exprEvalShowJobStderr yes --evalSimParallel no --maxSims 0 --historyName Interactive.0 --historyUUID  --exprEvaluator vds --mcMapping mc1.mapping --checkLogStatusInterval 0 --checkSimulatorLogTimeout 1200 --exprEvalMaxTries 3 --maxNFSSyncWait 60 -adeBrokerAddress ees_research_saul:40347 --statdbType h5v2 --fromADE true --virtuosoBinary virtuoso --guiDisplay ees_research_saul:1.0 --globalStatus 60 --evaluateMultiMC yes --evalOnSimFail SkipFailedAnalyses --numRetriesOnError 1 --fenixMode assembler --lingertimeout 300 -ahdlLockTimeout 60 --sdbLib KISTA_TEST_ANALOG --sdbCell test_res --sdbView maestro --heartBeatFileDir /dev/shm --id 8 --uuid 3e508294-5003-4a2c-8553-9ed598cd1358 --log /home/saul/projects/KISTA/logs_saul/logs0/Job8.log "}
+[2026-08-14 12:53:56.043 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started the simulation monitor process {"hostname": "ees_research_saul", "processid": 160050, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log", "current directory": "/home/saul/projects/KISTA"}
+[2026-08-14 12:53:56.043 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor has successfully started up. Trying to set up communication channels to other components ... {"hostname": "ees_research_saul", "processid": 160050, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log"}
+[2026-08-14 12:53:56.044 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Communication channels have been successfully set up. Start processing events ... {"hostname": "ees_research_saul", "processid": 160050, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log"}
+[2026-08-14 12:53:56.044 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Considering to start history {"hostname": "ees_research_saul", "processid": 160050, "history": "Interactive.0", "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log"}
+[2026-08-14 12:53:56.047 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started History {"hostname": "ees_research_saul", "processid": 160050, "history": "Interactive.3", "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log"}
+[2026-08-14 12:53:56.048 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	ees_research_saul (x86_64)
+Operating system:	Linux 5.15.0-161-generic #171-Ubuntu SMP Sat Oct 11 08:17:01 UTC 2025 {"hostname": "ees_research_saul", "processid": 160050, "history": "Interactive.3", "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log", "nodename": "ees_research_saul", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "5.15.0-161-generic", "version": "#171-Ubuntu SMP Sat Oct 11 08:17:01 UTC 2025"}
+[2026-08-14 12:53:56.048 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=160050
+totalPhysicalMemory=3023.750538GB,Used=2601.981232GB,totalVirtualMemory=3031.750534GB,Used=2605.214268GB
+Cpu: Cores=48, Load average:4.530000,4.890000,4.930000 {"hostname": "ees_research_saul", "processid": 160050, "history": "Interactive.3", "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log", "pid": "160050", "totalPhysicalMemory": "3023.750538", "physicalMemoryUsed": "2601.981232", "totalVirtualMemory": "3031.750534", "virtualMemoryUsed": "2605.214268", "cpuCores": "48", "processes": "15919", "loadAverage1": "4.530000", "loadAverage5": "4.890000", "loadAverage15": "4.930000", "loadAverage1Percent": "0.094375"}
+[2026-08-14 12:53:56.051 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "Interactive.3", "logFile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log", "logFileSize": "4459", "category": "simulation"}
+[2026-08-14 12:53:56.152 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "spectre", "HistoryName": "Interactive.3", "logFile": "/home/saul/simulation/KISTA_TEST_ANALOG/test_res/maestro/results/maestro/Interactive.3/1/KISTA_TEST_ANALOG_test_res_1/psf/spectre.out", "logFileSize": "-1", "category": "simulation"}
+[2026-08-14 12:53:56.323 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "ees_research_saul", "processid": 160050, "history": "Interactive.3", "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log", "simid": "1", "event": "launch", "category": "simulation"}
+[2026-08-14 12:53:56.327 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "ees_research_saul", "processid": 160050, "history": "Interactive.3", "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log"}
+[2026-08-14 12:53:56.381 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "ees_research_saul", "processid": 160050, "history": "Interactive.3", "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log", "event": "start", "category": "simulation"}
+[2026-08-14 12:53:57.382 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-691): This CPU processor does not support x86 advanced vector extensions instructions. This may affect math operations and slow down the simulation. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:57.382 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during circuit read-in.
+    Pre_Configuration file used: /opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.precfg
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.cfg'. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:57.383 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-2296): "/home/saul/projects/KISTA/models/spectre/kth/KTH_RES.scs" 7: The inline subckt definition `nres_unit' does not contain any inline components. The `inline' qualifier will therefore be ignored. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:57.383 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 173 Mbytes. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:57.383 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-103): "input.scs" 16: Subcircuit parameter `r', defined for subcircuit `nres_unit', has been ignored because it is invalid. Check the parameters that are defined for the instantiated subcircuit and rerun the simulation. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:59.384 Z] [ERROR] [cadence.virtuoso.ade.simulationMonitor] -     ERROR (SFE-1997): "/home/saul/projects/KISTA/models/spectre/kth/KTH_RES.scs" 14: Cannot run the simulation, because R0.r1 in parameter `bs_par_0': Unknown parameter `r' has been specified in expression `r' Correct the expression and rerun the simulation. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:59.384 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 195 Mbytes. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:59.385 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 507 ms, elapsed = 2.31 s, util. = 22%. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:59.386 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 73.5 ms. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:59.386 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 195 Mbytes. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:59.387 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 12:53:56 PM, Fri Aug 14, 2026, ended at: 12:53:58 PM, Fri Aug 14, 2026, with elapsed time (wall clock): 2.31 s. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:59.387 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 1 error, 3 warnings, and 2 notices. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:59.387 Z] [FATAL] [cadence.virtuoso.ade.simulationMonitor] - spectre terminated prematurely due to fatal error. {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:59.387 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "ees_research_saul", "processid": 160050, "history": "Interactive.3", "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log", "simid": "1", "event": "finish", "category": "simulation"}
+[2026-08-14 12:53:59.388 Z] [ERROR] [cadence.virtuoso.ade.simulationMonitor] - While simulating run Interactive.3, point 1, test KISTA_TEST_ANALOG_test_res_1, received error:
+Simulation Error:
+ The simulator process returned a non-zero exit code, indicating failure.
+The simulator could have crashed or intentionally returned to indicate an error.
+Check the simulator log file for more information.  Common causes:
+1. Simulator may have crashed during exit even after reporting success in log file.
+2. Abrupt automatic simulator termination (e.g., SIGKILL) because the simulator process has... {"history": "Interactive.3", "point": 1, "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal"}
+[2026-08-14 12:53:59.388 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "ees_research_saul", "processid": 160050, "history": "Interactive.3", "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log", "simid": "1", "event": "finish", "category": "obsolete"}
+[2026-08-14 12:54:03.943 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Current memory used: 92.2891 MBytes, peak memory used: 92.2891 MBytes {"hostname": "ees_research_saul", "processid": 160050, "history": "Interactive.3", "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log"}
+[2026-08-14 12:54:03.943 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor process exits. {"hostname": "ees_research_saul", "processid": 160050, "history": "Interactive.3", "testname": "KISTA_TEST_ANALOG_test_res_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job8.log"}

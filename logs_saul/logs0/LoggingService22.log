@@ -1,0 +1,9 @@
+[Logging Service: 22]
+[2026-08-14 12:41:26.867 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - HistoryRecorderManager init {"dbBasePath": "/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro"}
+[2026-08-14 12:41:26.867 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - useGRPC grpc service... {"brokerAddress": "ees_research_saul:37647", "serviceName": "DaVinciService_144615_1786708446", "axlSession": "fnxSession1"}
+[2026-08-14 12:41:26.868 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service has successfully started. Waiting for incoming messages ... {"hostname": "ees_research_saul", "processid": 154224, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/LoggingService22.log"}
+[2026-08-14 12:41:26.880 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - logging service gRPC started {"listening address": "ees_research_saul:40899"}
+[2026-08-14 12:41:35.927 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - Got exit signal in processControlMessage. Will exit. {}
+[2026-08-14 12:41:36.929 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Current memory used: 58.0078 MBytes, peak memory used: 58.0078 MBytes {"hostname": "ees_research_saul", "processid": 154224, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/LoggingService22.log"}
+[2026-08-14 12:41:36.929 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Stopping Logging Service process. {"hostname": "ees_research_saul", "processid": 154224, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/LoggingService22.log"}
+[2026-08-14 12:41:36.929 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service stop!!!! {"hostname": "ees_research_saul", "processid": 154224, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/LoggingService22.log"}

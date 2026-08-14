@@ -1,0 +1,9 @@
+[Logging Service: 37]
+[2026-08-14 11:49:04.926 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - HistoryRecorderManager init {"dbBasePath": "/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_diode_unit/maestro/results/maestro"}
+[2026-08-14 11:49:04.926 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - useGRPC grpc service... {"brokerAddress": "ees_research_saul:35277", "serviceName": "DaVinciService_125946_1786697671", "axlSession": "fnxSession5"}
+[2026-08-14 11:49:04.927 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service has successfully started. Waiting for incoming messages ... {"hostname": "ees_research_saul", "processid": 144121, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/LoggingService37.log"}
+[2026-08-14 11:49:04.939 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - logging service gRPC started {"listening address": "ees_research_saul:35491"}
+[2026-08-14 11:49:15.981 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - Got exit signal in processControlMessage. Will exit. {}
+[2026-08-14 11:49:16.748 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - get signal Terminated<15> from user:saul, which pid:144115:/bin/bash {"hostname": "ees_research_saul", "processid": 144121, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/LoggingService37.log", "signal": "15", "signalName": "Terminated", "which": "/bin/bash", "pid": "144115", "user": "saul", "uid": "1000"}
+[2026-08-14 11:49:16.752 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Current memory used: 56.9688 MBytes, peak memory used: 56.9688 MBytes {"hostname": "ees_research_saul", "processid": 144121, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/LoggingService37.log"}
+[2026-08-14 11:49:16.752 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service process exits. {"hostname": "ees_research_saul", "processid": 144121, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/LoggingService37.log"}

@@ -1,0 +1,315 @@
+{
+    "KISTA_TEST_ANALOG_test_diode_unit_maestro_outputs": {
+        "columnOrder": null,
+        "columns": {
+            "Details": {
+                "visible": true,
+                "width": 122
+            },
+            "Digits": {
+                "visible": true,
+                "width": 80
+            },
+            "EvalType": {
+                "visible": true,
+                "width": 80
+            },
+            "Name": {
+                "visible": true,
+                "width": 122
+            },
+            "Notation": {
+                "visible": true,
+                "width": 80
+            },
+            "Plot": {
+                "visible": true,
+                "width": 122
+            },
+            "Plot Target": {
+                "visible": true,
+                "width": 122
+            },
+            "Save": {
+                "visible": true,
+                "width": 122
+            },
+            "Spec": {
+                "visible": true,
+                "width": 122
+            },
+            "Suffix": {
+                "visible": true,
+                "width": 80
+            },
+            "Test": {
+                "visible": true,
+                "width": 80
+            },
+            "Type": {
+                "visible": true,
+                "width": 122
+            },
+            "Units": {
+                "visible": true,
+                "width": 80
+            },
+            "Weight": {
+                "visible": true,
+                "width": 80
+            }
+        },
+        "outputsMenu": {
+            "EvalType": {
+                "visible": true
+            },
+            "Formatting Properties": {
+                "visible": true
+            },
+            "Implicit Signals": {
+                "visible": false
+            },
+            "Tags": {
+                "visible": false
+            },
+            "Test": {
+                "visible": true
+            }
+        },
+        "outputsTestFilterMenu": {
+            "KISTA_TEST_ANALOG_test_diode_unit_1": {
+                "visible": true
+            }
+        }
+    },
+    "KISTA_TEST_ANALOG_test_diode_unit_maestro_resultsCommonData": null,
+    "KISTA_TEST_ANALOG_test_diode_unit_maestro_resultsDetail": {
+        "columnOrder": null,
+        "columns": {
+            "Max": {
+                "visible": false,
+                "width": 98
+            },
+            "Min": {
+                "visible": false,
+                "width": 98
+            },
+            "Plot": {
+                "visible": false,
+                "width": 98
+            },
+            "Point": {
+                "visible": false,
+                "width": 80
+            },
+            "Save": {
+                "visible": false,
+                "width": 98
+            }
+        },
+        "configureTableOptions": null,
+        "splitterSize": null
+    },
+    "KISTA_TEST_ANALOG_test_nres_unit_maestro_outputs": {
+        "columnOrder": null,
+        "columns": {
+            "Details": {
+                "visible": true,
+                "width": 148
+            },
+            "Digits": {
+                "visible": true,
+                "width": 80
+            },
+            "EvalType": {
+                "visible": true,
+                "width": 80
+            },
+            "Name": {
+                "visible": true,
+                "width": 148
+            },
+            "Notation": {
+                "visible": true,
+                "width": 80
+            },
+            "Plot": {
+                "visible": true,
+                "width": 148
+            },
+            "Plot Target": {
+                "visible": true,
+                "width": 148
+            },
+            "Save": {
+                "visible": true,
+                "width": 148
+            },
+            "Spec": {
+                "visible": true,
+                "width": 148
+            },
+            "Suffix": {
+                "visible": true,
+                "width": 80
+            },
+            "Tags": {
+                "visible": false,
+                "width": 80
+            },
+            "Test": {
+                "visible": true,
+                "width": 80
+            },
+            "Type": {
+                "visible": true,
+                "width": 148
+            },
+            "Units": {
+                "visible": true,
+                "width": 80
+            },
+            "Weight": {
+                "visible": true,
+                "width": 80
+            }
+        },
+        "outputsMenu": {
+            "EvalType": {
+                "visible": true
+            },
+            "Formatting Properties": {
+                "visible": true
+            },
+            "Implicit Signals": {
+                "visible": false
+            },
+            "Tags": {
+                "visible": false
+            },
+            "Test": {
+                "visible": true
+            }
+        },
+        "outputsTestFilterMenu": {
+            "KISTA_TEST_ANALOG_test_nres_unit_1": {
+                "visible": true
+            }
+        }
+    },
+    "KISTA_TEST_ANALOG_test_nres_unit_maestro_resultsCommonData": null,
+    "KISTA_TEST_ANALOG_test_nres_unit_maestro_resultsDetail": {
+        "columnOrder": null,
+        "columns": {
+            "Max": {
+                "visible": false,
+                "width": 98
+            },
+            "Min": {
+                "visible": false,
+                "width": 98
+            },
+            "Plot": {
+                "visible": false,
+                "width": 98
+            },
+            "Point": {
+                "visible": false,
+                "width": 80
+            },
+            "Save": {
+                "visible": false,
+                "width": 98
+            }
+        },
+        "configureTableOptions": null,
+        "splitterSize": null
+    },
+    "KISTA_TEST_ANALOG_test_res_maestro_outputs": {
+        "columnOrder": null,
+        "columns": {
+            "Digits": {
+                "visible": true,
+                "width": 98
+            },
+            "EvalType": {
+                "visible": true,
+                "width": 80
+            },
+            "Notation": {
+                "visible": true,
+                "width": 98
+            },
+            "Suffix": {
+                "visible": true,
+                "width": 98
+            },
+            "Tags": {
+                "visible": false,
+                "width": 98
+            },
+            "Test": {
+                "visible": true,
+                "width": 98
+            },
+            "Units": {
+                "visible": true,
+                "width": 98
+            },
+            "Weight": {
+                "visible": true,
+                "width": 80
+            }
+        },
+        "outputsMenu": {
+            "EvalType": {
+                "visible": true
+            },
+            "Formatting Properties": {
+                "visible": true
+            },
+            "Implicit Signals": {
+                "visible": false
+            },
+            "Tags": {
+                "visible": false
+            },
+            "Test": {
+                "visible": true
+            }
+        },
+        "outputsTestFilterMenu": {
+            "KISTA_TEST_ANALOG_test_res_1": {
+                "visible": true
+            }
+        }
+    },
+    "KISTA_TEST_ANALOG_test_res_maestro_resultsCommonData": null,
+    "KISTA_TEST_ANALOG_test_res_maestro_resultsDetail": {
+        "columnOrder": null,
+        "columns": {
+            "Max": {
+                "visible": false,
+                "width": 98
+            },
+            "Min": {
+                "visible": false,
+                "width": 98
+            },
+            "Plot": {
+                "visible": false,
+                "width": 98
+            },
+            "Point": {
+                "visible": false,
+                "width": 80
+            },
+            "Save": {
+                "visible": false,
+                "width": 98
+            }
+        },
+        "configureTableOptions": null,
+        "splitterSize": null
+    }
+}

@@ -1,98 +1,48 @@
-\# Program start time:     UTC 2021.12.21 21:01:04.781
-\# Local time: CET (UTC+01:00) 2021.12.21 22:01:04.781
-\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $
-\o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
-\o Sub version:		sub-version  IC6.1.8-64b.500.7  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso8594 -mpshost s2424 -davinciService DaVinciService_8594_1640119799 -log /home/saul/projects/KISTA/logs_saul/logs0/Job15.log -licenseLockFileName /home/saul/projects/KISTA/.tmp_saul/.s2424_8594 -interactiveA -interactiveE -interactiveRTT -nostdin -nograph -axlChildIdFlag 15
-\# Host name (type):	s2424 (x86_64)
-\# Operating system:	Linux 3.10.0-1160.42.2.el7.x86_64 #1 SMP Tue Sep 7 14:49:57 UTC 2021
-\# Linux /etc/issue:	\S
-\# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:95 (1024x868)
-\# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			RealVNC Ltd (VNC nograph server, PID 16594)
-\# Depth of Visual (Root):	16 (16)
-\# Number of Planes Used:	16
-\# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
-\# 			current id 0x0, current max 0x3ffffa (4194298)
-\# Max data seg size:	     unlimited
-\# Max process size:	     unlimited
-\# Initial sbrk value:	        526 MB
-\# Available memory:	     49,929 MB
-\# System memory:	     96,361 MB
-\# Maximum memory size:	     95,993 MB
-\# Max mem available:	     50,086 MB
-\# Initial memory used:	        157 MB
-\#        process size:	      1,382 MB
-\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
-\# Qt version:		5.9.1
-\# Window Manager:	other
-\# User Name:		saul
-\o Working Directory:	s2424:/home/saul/projects/KISTA
-\# Process Id:		16612
-\o 
-\o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
-\o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
-\o                          Reproduced with permission.
-\o 
-\o This Cadence Design Systems program and online documentation are
-\o proprietary/confidential information and may be disclosed/used only
-\o as authorized in a license agreement controlling such use and disclosure.
-\o 
-\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
-\o Use/reproduction/disclosure is subject to restriction
-\o set forth at FAR 1252.227-19 or its equivalent.
-\o Loading geView.cxt 
-\o Loading menuBuilder.cxt 
-\o Loading schView.cxt 
-\o Loading selectSv.cxt 
-\o Loading pvsui.cxt.
-\o Loading wireEdit.cxt 
-\o Loading pte2.cxt 
-\o Loading xlUI.cxt 
-\o Loading auCore.cxt 
-\o Loading vhdl.cxt 
-\o Loading seismic.cxt 
-\o Loading ci.cxt 
-\o Loading layers.cxt 
-\o Loading ams.cxt 
-\o Loading oasis.cxt 
-\o Loading analog.cxt 
-\o Loading asimenv.cxt 
-\o Loading dal.cxt 
-\o Loading awv.cxt 
-\o Loading socket.cxt 
-\o Loading par.cxt 
-\o Loading alvs.cxt 
-\o Loading caa.cxt 
-\o Loading amps.cxt 
-\o Loading adexlCore.cxt 
-\o Loading adexl.cxt 
-\o *Info*    Exporting services from client ... 
-\o 
-\o Loading cli.cxt 
-\o Loading cle.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso8594, host=s2424). ICRP is turned on. Total timeout is 180 seconds. Connection timeout is 90 seconds.
-\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 16612 within 90 seconds is being processed...
-\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
-\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# Memory report: using         335 MB, process size 1,633 MB at UTC 2021.12.21 21:01:07.849
-\w *WARNING* The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\o *Info*    Client has finished starting ... 
-\o 
-\p > 
-\a _treeSetOpcGUI(t)
-\r t
-\# Available memory:         49,802 MB at UTC 2021.12.21 21:01:15.309
-\# Memory report: Maximum memory size now 50,141 MB at UTC 2021.12.21 21:01:15.309
-\# Thread usage report: 33 active threads, active load 1.00 at UTC 2021.12.21 21:01:15.309
-\o 
-\o *Info*    Received signal SIGTERM.
-\o 
-\o 
-\o Loading simui.cxt 
-\# Memory report: on exit            344 MB, process size 1,647 MB at UTC 2021.12.21 21:03:46.805
-\# Memory report: peak usage         344 MB, process size 1,647 MB
+[Simulation Monitor: 15]
+[2026-08-14 12:36:09.929 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started the simulation monitor process {"hostname": "ees_research_saul", "processid": 151833, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log", "simulation monitor command line": "/opt/tools/cadence/installs/IC251/tools.lnx86/dfII/bin/64bit/spectreMonitor --davinciService DaVinciService_144615_1786708446 --axlsession fnxSession1 -lscs 00010590E36CFC06BC4D138FFC7EFC06BC4D67D9991F8F63CE283FBAC05DD236867C66E38F1FFC06BC4D66E38F1FFC06BC4D0C9C84A6F7BFD63200001ADA -beanhost ees_research_saul -beanport 11536 -beanLogFile /home/saul/projects/KISTA/logs_saul/logs0/amps_Job15.log -beanbinlog  --domain 0 --interactive yes --netlistOpt no --useMultiPointEvaluation yes --exprEvalShowJobStderr yes --evalSimParallel no --maxSims 0 --historyName Interactive.14 --historyUUID  --exprEvaluator vds --mcMapping mc1.mapping --checkLogStatusInterval 0 --checkSimulatorLogTimeout 1200 --exprEvalMaxTries 3 --maxNFSSyncWait 60 -adeBrokerAddress ees_research_saul:37647 --statdbType h5v2 --fromADE true --virtuosoBinary virtuoso --guiDisplay ees_research_saul:1.0 --globalStatus 60 --evaluateMultiMC yes --evalOnSimFail SkipFailedAnalyses --numRetriesOnError 1 --fenixMode assembler --lingertimeout 300 -ahdlLockTimeout 60 --sdbLib KISTA_TEST_ANALOG --sdbCell test_nres_unit --sdbView maestro --heartBeatFileDir /dev/shm --id 15 --uuid 316361a6-b9f7-41fb-9255-795699d43ab0 --log /home/saul/projects/KISTA/logs_saul/logs0/Job15.log "}
+[2026-08-14 12:36:09.930 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started the simulation monitor process {"hostname": "ees_research_saul", "processid": 151833, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log", "current directory": "/home/saul/projects/KISTA"}
+[2026-08-14 12:36:09.930 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor has successfully started up. Trying to set up communication channels to other components ... {"hostname": "ees_research_saul", "processid": 151833, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log"}
+[2026-08-14 12:36:09.930 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Communication channels have been successfully set up. Start processing events ... {"hostname": "ees_research_saul", "processid": 151833, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log"}
+[2026-08-14 12:36:09.931 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Considering to start history {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.14", "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log"}
+[2026-08-14 12:36:09.934 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started History {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log"}
+[2026-08-14 12:36:09.934 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	ees_research_saul (x86_64)
+Operating system:	Linux 5.15.0-161-generic #171-Ubuntu SMP Sat Oct 11 08:17:01 UTC 2025 {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log", "nodename": "ees_research_saul", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "5.15.0-161-generic", "version": "#171-Ubuntu SMP Sat Oct 11 08:17:01 UTC 2025"}
+[2026-08-14 12:36:09.934 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=151833
+totalPhysicalMemory=3023.750538GB,Used=2601.637276GB,totalVirtualMemory=3031.750534GB,Used=2604.870312GB
+Cpu: Cores=48, Load average:4.860000,4.470000,4.620000 {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log", "pid": "151833", "totalPhysicalMemory": "3023.750538", "physicalMemoryUsed": "2601.637276", "totalVirtualMemory": "3031.750534", "virtualMemoryUsed": "2604.870312", "cpuCores": "48", "processes": "15920", "loadAverage1": "4.860000", "loadAverage5": "4.470000", "loadAverage15": "4.620000", "loadAverage1Percent": "0.101250"}
+[2026-08-14 12:36:09.937 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "Interactive.18", "logFile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log", "logFileSize": "4500", "category": "simulation"}
+[2026-08-14 12:36:10.039 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "spectre", "HistoryName": "Interactive.18", "logFile": "/home/saul/simulation/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/Interactive.18/1/KISTA_TEST_ANALOG_test_nres_unit_1/psf/spectre.out", "logFileSize": "-1", "category": "simulation"}
+[2026-08-14 12:36:10.213 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log", "simid": "1", "event": "launch", "category": "simulation"}
+[2026-08-14 12:36:10.218 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log"}
+[2026-08-14 12:36:10.269 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log", "event": "start", "category": "simulation"}
+[2026-08-14 12:36:11.270 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-691): This CPU processor does not support x86 advanced vector extensions instructions. This may affect math operations and slow down the simulation. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.270 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during circuit read-in.
+    Pre_Configuration file used: /opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.precfg
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.cfg'. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.270 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-2296): "/home/saul/projects/KISTA/models/spectre/kth/KTH_RES.scs" 7: The inline subckt definition `nres_unit' does not contain any inline components. The `inline' qualifier will therefore be ignored. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.270 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 173 Mbytes. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.270 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 182 Mbytes. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.270 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 184 Mbytes. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.271 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.272 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 1 {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.272 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Protected devices exist and are not included in the circuit inventory.
+    Spectre X preset=mx enabled. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.272 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 187 Mbytes. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.273 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (Spectre X) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.273 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dcOp': CPU = 3.27 ms, elapsed = 4.65608 ms, util. = 70.2%. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.273 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 190 Mbytes. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.273 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 398 ms, elapsed = 413 ms, util. = 96.3%. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.274 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 72.5 ms, percentage of total = 17.5%. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.274 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 192 Mbytes. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.275 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 12:36:10 PM, Fri Aug 14, 2026, ended at: 12:36:10 PM, Fri Aug 14, 2026, with elapsed time (wall clock): 413 ms. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.275 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 2 warnings, and 7 notices. {"history": "Interactive.18", "point": 1, "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal"}
+[2026-08-14 12:36:11.275 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log", "simid": "1", "event": "finish", "category": "simulation"}
+[2026-08-14 12:36:11.275 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log", "exitStatus": "0"}
+[2026-08-14 12:36:11.275 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log", "simid": "1", "event": "finish", "category": "obsolete"}
+[2026-08-14 12:36:16.279 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log", "event": "finish", "category": "sim-eval"}
+[2026-08-14 12:36:19.784 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Current memory used: 92.2109 MBytes, peak memory used: 92.2109 MBytes {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log"}
+[2026-08-14 12:36:19.785 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor process exits. {"hostname": "ees_research_saul", "processid": 151833, "history": "Interactive.18", "testname": "KISTA_TEST_ANALOG_test_nres_unit_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/KISTA/logs_saul/logs0/Job15.log"}

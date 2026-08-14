@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<setupdb version="7">history
+	<active>Active Setup</active>
+	<history>History
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.16
+			<timestamp>Aug 14 12:27:37 2026</timestamp>
+			<uuid>{7bbe6d5b-4123-4d41-859a-6e955bc265fe}</uuid>
+			<locked>0</locked>
+			<mode>Single Run, Sweeps and Corners</mode>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/$AXL_HISTORY_NAME.rdb</simresults>
+			<psfdir>/home/saul/simulation/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</simdir>
+			<historyPsfSize>Not Computed</historyPsfSize>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.17
+			<timestamp>Aug 14 12:29:23 2026</timestamp>
+			<uuid>{30453cde-be8f-462c-bac2-c4b1c3f2e365}</uuid>
+			<locked>0</locked>
+			<mode>Single Run, Sweeps and Corners</mode>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/$AXL_HISTORY_NAME.rdb</simresults>
+			<psfdir>/home/saul/simulation/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</simdir>
+			<historyPsfSize>Not Computed</historyPsfSize>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.18
+			<timestamp>Aug 14 12:36:02 2026</timestamp>
+			<uuid>{f25759fd-36f9-4a24-958a-9179865906aa}</uuid>
+			<locked>0</locked>
+			<mode>Single Run, Sweeps and Corners</mode>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/$AXL_HISTORY_NAME.rdb</simresults>
+			<psfdir>/home/saul/simulation/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</simdir>
+			<historyPsfSize>Not Computed</historyPsfSize>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.19
+			<timestamp>Aug 14 12:36:37 2026</timestamp>
+			<uuid>{67e3675d-ff41-4cfe-951f-8a0ad03230f4}</uuid>
+			<locked>0</locked>
+			<mode>Single Run, Sweeps and Corners</mode>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/$AXL_HISTORY_NAME.rdb</simresults>
+			<psfdir>/home/saul/simulation/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</simdir>
+			<historyPsfSize>Not Computed</historyPsfSize>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.20
+			<timestamp>Aug 14 12:37:47 2026</timestamp>
+			<uuid>{115e5214-6413-4866-ae6f-1b805d34de3a}</uuid>
+			<locked>0</locked>
+			<mode>Single Run, Sweeps and Corners</mode>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/$AXL_HISTORY_NAME.rdb</simresults>
+			<psfdir>/home/saul/simulation/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</simdir>
+			<historyPsfSize>Not Computed</historyPsfSize>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.21
+			<timestamp>Aug 14 12:39:17 2026</timestamp>
+			<uuid>{b0538efb-fa44-4fbf-bf16-d411ba7f7343}</uuid>
+			<locked>0</locked>
+			<mode>Single Run, Sweeps and Corners</mode>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/$AXL_HISTORY_NAME.rdb</simresults>
+			<psfdir>/home/saul/simulation/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</simdir>
+			<historyPsfSize>Not Computed</historyPsfSize>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.22
+			<timestamp>Aug 14 12:41:20 2026</timestamp>
+			<uuid>{cda129a3-4354-4815-bac5-f90e59adcdd2}</uuid>
+			<locked>0</locked>
+			<mode>Single Run, Sweeps and Corners</mode>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/$AXL_HISTORY_NAME.rdb</simresults>
+			<psfdir>/home/saul/simulation/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</simdir>
+			<historyPsfSize>Not Computed</historyPsfSize>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.23
+			<timestamp>Aug 14 12:43:06 2026</timestamp>
+			<uuid>{ac7d23b9-cd39-405b-98b0-d48032ab1f0e}</uuid>
+			<locked>0</locked>
+			<mode>Single Run, Sweeps and Corners</mode>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/$AXL_HISTORY_NAME.rdb</simresults>
+			<psfdir>/home/saul/simulation/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</simdir>
+			<historyPsfSize>Not Computed</historyPsfSize>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.24
+			<timestamp>Aug 14 12:45:00 2026</timestamp>
+			<uuid>{11c0e251-9b2a-40a3-a274-59b0e6040548}</uuid>
+			<locked>0</locked>
+			<mode>Single Run, Sweeps and Corners</mode>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/$AXL_HISTORY_NAME.rdb</simresults>
+			<psfdir>/home/saul/simulation/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</simdir>
+			<historyPsfSize>Not Computed</historyPsfSize>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.25
+			<timestamp>Aug 14 12:45:44 2026</timestamp>
+			<uuid>{6b000477-1f52-4dd3-8f5d-97ef92052176}</uuid>
+			<locked>0</locked>
+			<mode>Single Run, Sweeps and Corners</mode>
+			<resultsname>/home/saul/projects/KISTA/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/$AXL_HISTORY_NAME.rdb</simresults>
+			<psfdir>/home/saul/simulation/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</psfdir>
+			<simdir>$AXL_PROJECT_DIR/KISTA_TEST_ANALOG/test_nres_unit/maestro/results/maestro/$AXL_HISTORY_NAME</simdir>
+			<historyPsfSize>Not Computed</historyPsfSize>
+		</historyentry>
+	</history>
+</setupdb>

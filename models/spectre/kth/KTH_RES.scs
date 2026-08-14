@@ -1,0 +1,21 @@
+
+simulator lang = spectre
+
+library res
+section restm
+
+inline subckt nres_unit ( n1 n2 )
+parameters r=1.0e3 l=1.0e-6 w=1.0e-6 factor=1.0 mf=1.0
++ pvc1 = 1.82e-6                
++ pvc2 = 1.23e-12               ptc1 = 3.28e-3                ptc2 = -1.09e-6        
++rsh = r_ressppoly            dw = r_dxw_ressppoly
++tfac = 1.0+ptc1*(temp-25.0)+ptc2*(temp-25.0)*(temp-25.0)
+//r1 ( n1 n2 ) bsource r=rsh/mf*l*factor/(w*factor-dw)*(1+pvc1*(abs(v(n2,n1))/l/factor)+pvc2*(v(n2,n1)/l/factor)*(v(n2,n1)/l/factor))*tfac
+r1 ( n1 n2 ) bsource r=r*tfac
+
+ends nres_unit
+
+endsection
+endlibrary
+
+
