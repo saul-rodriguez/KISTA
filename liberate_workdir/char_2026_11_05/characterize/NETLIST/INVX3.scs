@@ -1,0 +1,47 @@
+// INVX3
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt INVX3 Y A
+    Rc3  (Y Y\#2)  resistor r=1.2083
+    Rc2  (Y Y\#1)  resistor r=1.8167
+    Rd1  (A\#2 A\#3)  resistor r=1336.0317
+    Rc4  (vdd vdd\#1)  resistor r=1.0905
+    Rd3  (A\#3 A)  resistor r=85.564
+    Rc1  (A\#3 A\#4)  resistor r=436.0318
+    Rc5  (vss vss\#1)  resistor r=1.8488
+    Rs1  (1 vss)  resistor r=50
+    C3  (Y\#2 A\#2)  capacitor c=476.307a
+    C8  (vdd\#1 Y\#2)  capacitor c=275.887a
+    C18  (vdd\#1 A\#2)  capacitor c=439.289a
+    C2  (Y\#2 A)  capacitor c=31.9608a
+    C17  (vdd\#1 A)  capacitor c=19.5368a
+    C1  (A Y)  capacitor c=285.554a
+    C4  (Y\#1 A)  capacitor c=16.269a
+    C5  (Y\#1 A\#4)  capacitor c=210.235a
+    C6  (A\#3 Y)  capacitor c=17.9394a
+    C9  (1 Y)  capacitor c=1.37576e-15
+    C10  (Y\#2 1)  capacitor c=872.821a
+    C12  (Y\#2 X0_5)  capacitor c=805.086a
+    C11  (Y\#1 1)  capacitor c=673.164a
+    C19  (1 A)  capacitor c=4.2586e-15
+    C20  (A\#2 1)  capacitor c=1.24923e-15
+    C21  (A\#4 1)  capacitor c=756.045a
+    C22  (A\#3 1)  capacitor c=226.251a
+    C23  (A\#2 X0_5)  capacitor c=507.931a
+    C28  (vdd\#1 1)  capacitor c=2.60395e-15
+    C30  (vdd\#1 X0_5)  capacitor c=811.188a
+    C29  (X0_5 vdd)  capacitor c=30.6619a
+    C27  (1 vdd)  capacitor c=2.95818e-15
+    C24  (vdd\#1 vss)  capacitor c=2.20488e-18
+    C13  (vss A)  capacitor c=2.07346e-18
+    C25  (1 vss)  capacitor c=2.98884e-15
+    C14  (vss\#1 A)  capacitor c=55.5924a
+    C7  (vss\#1 Y\#1)  capacitor c=174.338a
+    C15  (vss\#1 A\#4)  capacitor c=277.296a
+    C16  (A\#3 vss\#1)  capacitor c=3.655e-18
+    C26  (vss\#1 1)  capacitor c=3.11807e-15
+    MX1_M0_unmatched  (Y\#1 A\#4 vss\#1 vss\#1)  nch w=6e-06 l=1e-06 as=0 \
+        ad=1.5e-11 ps=0 pd=1.7e-05 sa=2e-06 sb=2e-06
+    MX0_M0_unmatched  (Y\#2 A\#2 vdd\#1 vdd\#1)  pch w=1.2e-05 l=1e-06 \
+        as=0 ad=3e-11 ps=0 pd=2.9e-05 sa=2e-06 sb=2e-06
+ends INVX3

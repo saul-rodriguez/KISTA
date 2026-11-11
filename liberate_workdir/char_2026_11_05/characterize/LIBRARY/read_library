@@ -1,0 +1,57 @@
+ROOT_DIR = /pkg/cadence/installs/LIBERATE171
+exepath = /pkg/cadence/installs/LIBERATE171/bin
+Host : s2424 x86_64 Linux 3.10.0-1160.53.1.el7.x86_64
+LIBERATE Library Characterization Platform (x86_64) 
+Release 17.1.2.229, compiled by vficcm on Fri Aug  9 18:45:37 PDT 2019
+
+
+    ********************************************************************
+    *   Copyright (c)  Cadence Design Systems, Inc.  2006 - 2022.      *
+    *             All rights reserved.                                 *
+    *                                                                  *
+    *                                                                  *
+    *                                                                  *
+    * This program contains confidential and trade secret information  *
+    * of Cadence Design Systems, Inc. and is protected by copyright    *
+    * law and international treaties.  Any reproduction, use,          *
+    * distribution or disclosure of this program or any portion of it, *
+    * or any attempt to obtain a human-readable version of this        *
+    * program, without the express, prior written consent of           *
+    * Cadence Design Systems, Inc., is strictly prohibited.            *
+    *                                                                  *
+    *         Cadence Design Systems, Inc.                             *
+    *           2655 Seely Avenue                                      *
+    *           San Jose, CA 95134,  USA                               *
+    *                                                                  *
+    *                                                                  *
+    ********************************************************************
+    
+    
+    Copyright notices for Open Source and Third Party Tools used by this 
+    software can be viewed at <cds_inst_dir>/doc/liberate/thirdpartyinfo/Notices.txt
+
+LIBERATE started on s2424 at Mon Oct 31 22:26:28 2022
+
+Command line arguments: 'KISTA_SOI_STDLIB2_CCS_TT.lib'.
+ALTOSHOME set to '/pkg/cadence/installs/LIBERATE171'.
+INFO (LIB-700): (Oct 31 22:26:28): ERROR (LMF-11005): License call failed for feature Liberate_LX_Server, version 17.100 and quantity 1. The license server search path is defined as <none>. The FLEXnet error message is as follows,
+    FLEXnet ERROR(-5, 234, 0): No such feature exists.
+
+Run 'lic_error LMF-11005' for more information.
+INFO (LIB-700): (Oct 31 22:26:28): ERROR (LMF-11005): License call failed for feature Variety_LX_Server, version 17.100 and quantity 1. The license server search path is defined as <none>. The FLEXnet error message is as follows,
+    FLEXnet ERROR(-5, 234, 0): No such feature exists.
+
+Run 'lic_error LMF-11005' for more information.
+Server ID : T20221031222628378814S0012437
+invalid command name "library"
+    while executing
+"library (KISTA_SOI_STDLIB2_CCS_TT) {
+  /* Models written by Liberate 17.1.2.229 from Cadence Design Systems, Inc. on Mon Oct 31 22:17:11 CET 2022 */
+ ..."
+    (file "/home/saul/projects/KISTA/liberate_workdir/char_2022_10_31/characterize/LIBRARY/KISTA_SOI_STDLIB2_CCS_TT.lib" line 1)
+Peak memory usage:          402 MB
+Peak virtual memory usage:  362 MB
+Peak physical memory usage: 40 MB
+Wall time      :    0.00 hours (2.00 seconds)
+LIBERATE exited on s2424 at Mon Oct 31 22:26:30 2022
+

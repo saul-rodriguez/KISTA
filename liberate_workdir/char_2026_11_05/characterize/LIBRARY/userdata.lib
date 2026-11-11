@@ -1,0 +1,232 @@
+library(userdata) {
+cell (ADDFX1) {
+    area : 4960;
+    cell_footprint : ADDFX1;
+}
+
+cell (ADDHX1) {
+    area : 2240;
+    cell_footprint : ADDHX1;
+}
+
+cell (AND2X1) {
+    area : 960;
+    cell_footprint : AND2X1;
+}
+
+cell (AND3X1) {
+    area : 1280;
+    cell_footprint : AND3X1;
+}
+
+cell (AND4X1) {
+    area : 1600;
+    cell_footprint : AND4X1;
+}
+
+cell (AO21X1) {
+    area : 1280;
+    cell_footprint : AO21X1;
+}
+
+cell (AOI21X1) {
+    area : 960;
+    cell_footprint : AOI21X1;
+}
+
+cell (BUFX2) {
+    area : 640;
+    cell_footprint : BUFX2;
+}
+
+cell (BUFX3) {
+    area : 640;
+    cell_footprint : BUFX3;
+}
+
+cell (BUFX4) {
+    area : 800;
+    cell_footprint : BUFX4;
+}
+
+cell (BUFX8) {
+    area : 1280;
+    cell_footprint : BUFX8;
+}
+
+cell (BUFX9) {
+    area : 960;
+    cell_footprint : BUFX9;
+}
+
+cell (BUFX16) {
+    area : 2240;
+    cell_footprint : BUFX16;
+}
+
+cell (BUFX27) {
+    area : 2240;
+    cell_footprint : BUFX27;
+}
+
+cell (BUFX32) {
+    area : 4160;
+    cell_footprint : BUFX32;
+}
+
+cell (DFFRX1) {
+    area : 5440;
+    cell_footprint : DFFRX1;
+}
+
+cell (DFFSRX1) {
+    area : 8960;
+    cell_footprint : DFFSRX1;
+}
+
+cell (DFFSX1) {
+    area : 5120;
+    cell_footprint : DFFSX1;
+}
+
+cell (DFFX1) {
+    area : 4320;
+    cell_footprint : DFFX1;
+}
+
+cell (DMX2X1) {
+    area : 1920;
+    cell_footprint : DMX2X1;
+}
+
+cell (INVX1) {
+    area : 320;
+    cell_footprint : INVX1;
+}
+
+cell (INVX2) {
+    area : 320;
+    cell_footprint : INVX2;
+}
+
+cell (INVX3) {
+    area : 320;
+    cell_footprint : INVX3;
+}
+
+cell (INVX4) {
+    area : 480;
+    cell_footprint : INVX4;
+}
+
+cell (MX2X1) {
+    area : 1920;
+    cell_footprint : MX2X1;
+}
+
+cell (MX4X1) {
+    area : 5600;
+    cell_footprint : MX4X1;
+}
+
+cell (NAND2X1) {
+    area : 640;
+    cell_footprint : NAND2X1;
+}
+
+cell (NAND2X2) {
+    area : 640;
+    cell_footprint : NAND2X2;
+}
+
+cell (NAND2X3) {
+    area : 960;
+    cell_footprint : NAND2X3;
+}
+
+cell (NAND3X1) {
+    area : 960;
+    cell_footprint : NAND3X1;
+}
+
+cell (NAND4X1) {
+    area : 1280;
+    cell_footprint : NAND4X1;
+}
+
+cell (NOR2X1) {
+    area : 640;
+    cell_footprint : NOR2X1;
+}
+
+cell (NOR2X2) {
+    area : 640;
+    cell_footprint : NOR2X2;
+}
+
+cell (NOR2X3) {
+    area : 960;
+    cell_footprint : NOR2X3;
+}
+
+cell (NOR3X1) {
+    area : 960;
+    cell_footprint : NOR3X1;
+}
+
+cell (NOR4X1) {
+    area : 1280;
+    cell_footprint : NOR4X1;
+}
+
+cell (OA21X1) {
+    area : 1280;
+    cell_footprint : OA21X1;
+}
+
+cell (OAI21X1) {
+    area : 960;
+    cell_footprint : OAI21X1;
+}
+
+cell (OR2X1) {
+    area : 960;
+    cell_footprint : OR2X1;
+}
+
+cell (OR3X1) {
+    area : 1280;
+    cell_footprint : OR3X1;
+}
+
+cell (OR4X1) {
+    area : 1600;
+    cell_footprint : OR4X1;
+}
+
+cell (TFFRX1) {
+    area : 7040;
+    cell_footprint : TFFRX1;
+}
+
+cell (TIEHI) {
+    area : 320;
+    cell_footprint : TIEHI;
+}
+
+cell (TIELO) {
+    area : 320;
+    cell_footprint : TIELO;
+}
+
+cell (XNOR2X1) {
+    area : 1600;
+    cell_footprint : XNOR2X1;
+}
+
+cell (XOR2X1) {
+    area : 1600;
+    cell_footprint : XOR2X1;
+}
+
+}

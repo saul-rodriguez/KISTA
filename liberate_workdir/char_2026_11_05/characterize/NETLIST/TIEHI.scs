@@ -1,0 +1,40 @@
+// TIEHI
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt TIEHI Y
+    Rc2  (Y Y\#1)  resistor r=2.675
+    Rc4  (vdd\#1 vdd)  resistor r=2.6184
+    Rd1  (net1\#3 net1\#4)  resistor r=3136.0317
+    Rs1  (1 vss)  resistor r=50
+    Rc3  (vss\#1 vss)  resistor r=5.1382
+    Rd3  (net1\#4 net1\#5)  resistor r=436.0318
+    Rd2  (net1\#4 net1)  resistor r=80.464
+    Rc1  (net1 net1\#2)  resistor r=10.1
+    MX1_M0_unmatched  (net1\#2 net1\#5 vss\#1 vss\#1)  nch w=2e-06 l=1e-06 \
+        as=0 ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+    C2  (vdd\#1 Y\#1)  capacitor c=139.132a
+    C5  (Y\#1 net1\#3)  capacitor c=347.031a
+    C16  (vdd\#1 net1\#3)  capacitor c=222.456a
+    C4  (Y\#1 1)  capacitor c=401.69a
+    C15  (vdd\#1 1)  capacitor c=182.471a
+    C20  (net1\#3 1)  capacitor c=3.33588e-15
+    C3  (1 Y)  capacitor c=985.123a
+    C1  (vss Y)  capacitor c=1.83287e-18
+    C6  (Y\#1 X0_5)  capacitor c=408.586a
+    C7  (vdd\#1 vss)  capacitor c=1.93478e-18
+    C8  (1 vss)  capacitor c=2.95855e-15
+    C18  (vdd\#1 X0_5)  capacitor c=408.586a
+    C14  (1 vdd)  capacitor c=5.51052e-15
+    C17  (X0_5 vdd)  capacitor c=12.2034a
+    C23  (net1\#3 X0_5)  capacitor c=507.931a
+    C9  (vss\#1 1)  capacitor c=2.92465e-15
+    C10  (net1 vss)  capacitor c=3.78421e-18
+    C12  (net1\#2 vss)  capacitor c=58.7187a
+    C13  (net1\#2 vss\#1)  capacitor c=44.4275a
+    C19  (net1 1)  capacitor c=6.2293e-15
+    C22  (net1\#2 1)  capacitor c=356.758a
+    C21  (net1\#5 1)  capacitor c=758.472a
+    C11  (vss\#1 net1\#5)  capacitor c=185.868a
+    MX0_M0_unmatched  (Y\#1 net1\#3 vdd\#1 vdd\#1)  pch w=4e-06 l=1e-06 \
+        as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+ends TIEHI

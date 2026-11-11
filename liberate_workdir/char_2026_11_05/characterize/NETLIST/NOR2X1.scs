@@ -1,0 +1,93 @@
+// NOR2X1
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt NOR2X1 Y A B
+    C12  (Y\#3 B\#2)  capacitor c=329.679a
+    C16  (Y\#3 3)  capacitor c=1.55622e-15
+    C19  (Y\#3 net1)  capacitor c=82.8682a
+    C53  (B\#2 3)  capacitor c=1.92029e-15
+    C57  (B\#2 net1)  capacitor c=139.36a
+    C61  (net1 3)  capacitor c=210.796a
+    C3  (Y\#3 vdd)  capacitor c=71.0989a
+    C37  (B\#2 vdd)  capacitor c=66.3a
+    C38  (3 vdd)  capacitor c=5.18606e-15
+    C40  (net1 vdd)  capacitor c=76.8452a
+    C5  (Y\#3 A\#2)  capacitor c=6.22477e-18
+    C47  (A\#2 3)  capacitor c=2.75034e-15
+    C11  (Y\#3 B)  capacitor c=16.3017a
+    C52  (3 B)  capacitor c=6.43713e-15
+    C56  (net1 B)  capacitor c=2.95248e-18
+    C9  (B Y)  capacitor c=470.317a
+    C15  (3 Y)  capacitor c=4.68539e-15
+    C20  (Y\#3 X3_5)  capacitor c=437.88a
+    C60  (B\#2 X3_5)  capacitor c=526.868a
+    C63  (X3_5 net1)  capacitor c=318.997a
+    C35  (X3_5 vss)  capacitor c=6.13238e-18
+    C21  (vdd vss)  capacitor c=11.3334a
+    C23  (A\#2 vss)  capacitor c=1.20595e-18
+    C27  (B vss)  capacitor c=7.48425e-18
+    C28  (B\#2 vss)  capacitor c=2.20211e-18
+    C14  (B\#3 Y)  capacitor c=30.843a
+    C30  (B\#3 vss)  capacitor c=4.7437e-19
+    C31  (3 vss)  capacitor c=6.71909e-15
+    C55  (B\#3 3)  capacitor c=364.137a
+    C59  (B\#3 net1)  capacitor c=1.87135e-19
+    C34  (net1\#2 vss)  capacitor c=4.51202e-19
+    C41  (net1\#2 vdd)  capacitor c=10.97a
+    C36  (vdd\#1 A\#2)  capacitor c=239.843a
+    C39  (vdd\#1 3)  capacitor c=4.95179e-15
+    C42  (vdd\#1 net1\#2)  capacitor c=133.602a
+    C50  (net1\#2 A\#2)  capacitor c=139.36a
+    C58  (net1\#2 B)  capacitor c=2.26325e-18
+    C62  (net1\#2 3)  capacitor c=79.3505a
+    C10  (B\#4 Y)  capacitor c=726.629a
+    C54  (B\#4 3)  capacitor c=1.94237e-15
+    C43  (vdd\#1 X2_5)  capacitor c=474.675a
+    C64  (net1\#2 X2_5)  capacitor c=318.905a
+    C51  (A\#2 X2_5)  capacitor c=503.459a
+    C26  (A\#3 vss)  capacitor c=8.24273e-19
+    C45  (A\#3 B)  capacitor c=6.21617e-18
+    C49  (A\#3 3)  capacitor c=378.814a
+    C1  (vss\#3 Y)  capacitor c=56.7029a
+    C29  (vss\#3 B\#4)  capacitor c=185.195a
+    C17  (Y\#4 3)  capacitor c=354.426a
+    C32  (vss\#3 3)  capacitor c=227.131a
+    C33  (vss\#2 3)  capacitor c=3.74739e-15
+    C2  (Y\#2 vss)  capacitor c=243.467a
+    C8  (A\#3 Y\#2)  capacitor c=3.29722e-18
+    C13  (Y\#2 B)  capacitor c=8.70551e-18
+    C44  (B A)  capacitor c=98.0741a
+    C4  (A Y)  capacitor c=5.27205e-18
+    C6  (Y\#2 A)  capacitor c=103.152a
+    C18  (Y\#2 3)  capacitor c=1.33868e-15
+    C22  (A vss)  capacitor c=13.0048a
+    C24  (vss\#2 A)  capacitor c=39.291a
+    C46  (3 A)  capacitor c=6.65615e-15
+    C48  (A\#4 3)  capacitor c=1.44419e-15
+    C7  (Y\#2 A\#4)  capacitor c=169.195a
+    C25  (vss\#2 A\#4)  capacitor c=191.411a
+    MX5_M0_unmatched  (Y\#4 B\#4 vss\#3 vss\#3)  nch w=2e-06 l=1e-06 as=0 \
+        ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+    MX4_M0_unmatched  (Y\#2 A\#4 vss\#2 vss\#2)  nch w=2e-06 l=1e-06 as=0 \
+        ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+    Rd1  (Y Y\#3)  resistor r=2.875
+    Rc5  (B\#2 B\#3)  resistor r=1936.0317
+    Rc2  (net1 net1\#2)  resistor r=5.05
+    Rc11  (vdd vdd\#1)  resistor r=2.7238
+    Rc1  (B\#3 B)  resistor r=85.564
+    Rd6  (B\#3 B\#4)  resistor r=1636.0317
+    Rs1  (3 vss)  resistor r=50
+    Rd2  (A\#2 A\#3)  resistor r=2536.0317
+    Rd5  (vss vss\#3)  resistor r=5.163
+    Rc3  (vss\#3 vss\#2)  resistor r=808.0294
+    Rc6  (Y Y\#4)  resistor r=5.4883
+    Rd3  (Y\#4 Y\#2)  resistor r=145.6659
+    Rc4  (Y Y\#2)  resistor r=5.6598
+    Rc8  (vss vss\#2)  resistor r=5.2316
+    Rd4  (A\#3 A)  resistor r=85.564
+    Rc7  (A\#3 A\#4)  resistor r=1036.0317
+    MX3_M0_unmatched  (Y\#3 B\#2 net1 net1)  pch w=4e-06 l=1e-06 as=0 \
+        ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+    MX2_M0_unmatched  (net1\#2 A\#2 vdd\#1 vdd\#1)  pch w=4e-06 l=1e-06 \
+        as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+ends NOR2X1

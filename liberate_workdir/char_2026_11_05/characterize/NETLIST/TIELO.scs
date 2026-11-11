@@ -1,0 +1,39 @@
+// TIELO
+simulator lang=spectre insensitive=yes
+global vss vdd
+subckt TIELO Y
+    Rc2  (Y Y\#1)  resistor r=5.1
+    Rs1  (1 vss)  resistor r=50
+    Rc1  (net1\#4 net1\#5)  resistor r=2836.0317
+    Rc4  (vss\#1 vss)  resistor r=5.0934
+    Rc3  (vdd\#1 vdd)  resistor r=2.6632
+    Rd1  (net1\#3 net1\#4)  resistor r=736.0318
+    Rd3  (net1\#4 net1)  resistor r=88.139
+    C2  (1 Y)  capacitor c=734.017a
+    C15  (vdd\#1 net1)  capacitor c=78.277a
+    C16  (vdd\#1 net1\#3)  capacitor c=239.843a
+    C5  (vdd\#1 vss)  capacitor c=1.44171e-18
+    C1  (Y\#1 vss)  capacitor c=104.557a
+    C3  (Y\#1 1)  capacitor c=474.882a
+    C6  (1 vss)  capacitor c=5.52946e-15
+    C13  (vdd\#1 1)  capacitor c=2.60933e-15
+    C18  (net1 1)  capacitor c=6.15263e-15
+    C19  (net1\#3 1)  capacitor c=587.485a
+    C4  (Y\#1 net1\#5)  capacitor c=223.647a
+    C7  (vss\#1 1)  capacitor c=491.717a
+    C8  (net1\#5 vss)  capacitor c=206.519a
+    C9  (vss\#1 net1)  capacitor c=2.2465e-18
+    C20  (net1\#5 1)  capacitor c=3.58471e-15
+    C10  (net1\#4 vss\#1)  capacitor c=2.14281e-19
+    C11  (X1_4 vss)  capacitor c=3.06619e-20
+    C17  (vdd\#1 X1_4)  capacitor c=414.626a
+    C12  (1 vdd)  capacitor c=2.94157e-15
+    C14  (net1 vdd)  capacitor c=60.8552a
+    C21  (net1\#4 1)  capacitor c=559.84a
+    C22  (X1_4 net1)  capacitor c=408.586a
+    C23  (net1\#3 X1_4)  capacitor c=507.931a
+    MX0_M0_unmatched  (Y\#1 net1\#5 vss\#1 vss\#1)  nch w=2e-06 l=1e-06 \
+        as=0 ad=5e-12 ps=0 pd=9e-06 sa=2e-06 sb=2e-06
+    MX1_M0_unmatched  (net1 net1\#3 vdd\#1 vdd\#1)  pch w=4e-06 l=1e-06 \
+        as=0 ad=1e-11 ps=0 pd=1.3e-05 sa=2e-06 sb=2e-06
+ends TIELO

@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 25.1 - CAT39.24 09/29/2025 15:23 (cpgbld31) $
 \o Sub version:		sub-version  s021 
-\o Arguments:		-unmapped -mpssession virtuoso156474 -mpshost ees_research_saul -masterPID 156474 -ADVM 
+\o Arguments:		-unmapped -mpssession virtuoso163755 -mpshost ees_research_saul -masterPID 163755 -ADVM 
 \o Working Directory:	ees_research_saul:/home/saul/projects/KISTA
 \o 64-bit offsets
 \o Qt version: 		5.15.9
@@ -12,34 +12,51 @@
 \o Opening libManager window.
 \a nrSetWindowVisibility(cdsLibManager "show")
 \o MPS service: map window
-\a nrSetCurrentWindow(cdsLibManager)
 \w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
 \w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
+\a nrSetCurrentWindow(cdsLibManager)
 \o Library Manager customization server connected.
-\a nrResizeWindow(cdsLibManager list(287 124 1370 920))
+\a nrResizeWindow(cdsLibManager list(379 248 1370 920))
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "KISTA_TEST_ANALOG"
 \a cdsLibManager->libLineEdit->value = "KISTA_TEST_ANALOG"
-\a cdsLibManager->FileNewCVButton->value = t
+\a cdsLibManager->cellListBox->value = "test_opamp_modgen_tb"
+\a cdsLibManager->cellLineEdit->value = "test_opamp_modgen_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
 \w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
 \w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
 \a cdsLibManager->libListBox->value = "KISTA_TEST_ANALOG"
 \a cdsLibManager->libLineEdit->value = "KISTA_TEST_ANALOG"
+\a cdsLibManager->cellListBox->value = "test_opamp_modgen_tb"
+\a cdsLibManager->cellLineEdit->value = "test_opamp_modgen_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: The directory: '/home/saul/projects/KISTA/KISTA' does not exist
-\w 	but was defined in libFile '/home/saul/projects/KISTA/cds.lib' for Lib 'KISTA'.
-\a cdsLibManager->libListBox->value = "KISTA_TEST_ANALOG"
-\a cdsLibManager->libLineEdit->value = "KISTA_TEST_ANALOG"
+\a cdsLibManager->cellListBox->value = "test_opamp_modgen"
+\a cdsLibManager->cellLineEdit->value = "test_opamp_modgen"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(253 892 1370 920))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown
 \o libManager is exiting.
 \a exit(0)

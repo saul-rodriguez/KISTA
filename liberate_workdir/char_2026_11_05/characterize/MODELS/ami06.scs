@@ -1,0 +1,100 @@
+//  N8BN SPICE BSIM3 VERSION 3.1 (HSPICE Level 49) PARAMETERS
+simulator lang=spectre insensitive=yes
+
+library mosis_ami06
+section TT
+  parameters toxp=1.41e-8 toxn=1.41e-8 nvth0=0.7086 pvth0=-0.9179952
+  include "ami06.scs" section=MOS
+endsection
+	
+section SS
+  parameters toxp=1.65e-8 toxn=1.65e-8 nvth0=0.7135 pvth0=-0.9704569
+  include "ami06.scs" section=MOS
+endsection
+
+section FF
+  parameters toxp=1.29e-8 toxn=1.29e-8 nvth0=.7036 pvth0=-0.9115692
+  include "ami06.scs" section=MOS
+endsection
+
+section MOS
+//  level 11 for Cadence Spectre
+//  DATE: Jan 25/99
+//  LOT: n8bn                  WAF: 03
+//  Temperature_parameters=Default
+model ami06n bsim3v3 type=n 
++ version=3.1               tnom=27                   tox=toxn
++ xj=1.5e-7                 nch=1.7e17                vth0=nvth0
++ k1=0.8354582              k2=-0.088431              k3=41.4403818
++ k3b=-14                   w0=6.480766e-7            nlx=1e-10
++ dvt0w=0                   dvt1w=5.3e6               dvt2w=-0.032
++ dvt0=3.6139113            dvt1=0.3795745            dvt2=-0.1399976
++ u0=533.6953445            ua=7.558023e-10           ub=1.181167e-18
++ uc=2.582756e-11           vsat=1.300981e5           a0=0.5292985
++ ags=0.1463715             b0=1.283336e-6            b1=1.408099e-6
++ keta=-0.0173166           a1=0                      a2=1
++ rdsw=2.268366e3           prwg=-1e-3                prwb=6.320549e-5
++ wr=1                      wint=2.043512e-7          lint=3.034496e-8
++ xl=0                      xw=0                      dwg=-1.446149e-8
++ dwb=2.077539e-8           voff=-0.1137226           nfactor=1.2880596
++ cit=0                     cdsc=1.506004e-4          cdscd=0
++ cdscb=0                   eta0=3.815372e-4          etab=-1.029178e-3
++ dsub=2.173055e-4          pclm=0.6171774            pdiblc1=0.185986
++ pdiblc2=3.473187e-3       pdiblcb=-1e-3             drout=0.4037723
++ pscbe1=5.998012e9         pscbe2=3.788068e-8        pvag=0.012927
++ delta=0.01                mobmod=1                  prt=0
++ ute=-1.5                  kt1=-0.11                 kt1l=0
++ kt2=0.022                 ua1=4.31e-9               ub1=-7.61e-18
++ uc1=-5.6e-11              at=3.3e4                  wl=0
++ wln=1                     ww=0                      wwn=1
++ wwl=0                     ll=0                      lln=1
++ lw=0                      lwn=1                     lwl=0
++ capmod=2                  xpart=0.4                 cgdo=1.99e-10
++ cgso=1.99e-10             cgbo=0                    cj=4.233802e-4
++ pb=0.9899238              mj=0.4495859              cjsw=3.825632e-10
++ pbsw=0.1082556            mjsw=0.1083618            pvth0=0.0212852
++ prdsw=-16.1546703         pk2=0.0253069             wketa=0.0188633
++ lketa=0.0204965           
+//   N8BN SPICE BSIM3 VERSION 3.1 (HSPICE Level 49) PARAMETERS
+simulator lang=spectre insensitive=yes
+//  level 11 for Cadence Spectre
+//  DATE: Jan 25/99
+//  LOT: n8bn                  WAF: 03
+//  Temperature_parameters=Default
+model ami06p bsim3v3 type=p 
++ version=3.1               tnom=27                   tox=toxn
++ xj=1.5e-7                 nch=1.7e17                vth0=pvth0
++ k1=0.5575604              k2=0.010265               k3=14.0655075
++ k3b=-2.3032921            w0=1.147829e-6            nlx=1.114768e-10
++ dvt0w=0                   dvt1w=5.3e6               dvt2w=-0.032
++ dvt0=2.2896412            dvt1=0.5213085            dvt2=-0.1337987
++ u0=202.4540953            ua=2.290194e-9            ub=9.779742e-19
++ uc=-3.69771e-11           vsat=1.307891e5           a0=0.8356881
++ ags=0.1568774             b0=2.365956e-6            b1=5e-6
++ keta=-5.769328e-3         a1=0                      a2=1
++ rdsw=2.746814e3           prwg=2.34865e-3           prwb=0.0172298
++ wr=1                      wint=2.586255e-7          lint=7.205014e-8
++ xl=0                      xw=0                      dwg=-2.133054e-8
++ dwb=9.857534e-9           voff=-0.0837499           nfactor=1.2415529
++ cit=0                     cdsc=4.363744e-4          cdscd=0
++ cdscb=0                   eta0=0.11276              etab=-2.9484e-3
++ dsub=0.3389402            pclm=4.9847806            pdiblc1=2.481735e-5
++ pdiblc2=0.01              pdiblcb=0                 drout=0.9975107
++ pscbe1=3.497872e9         pscbe2=4.974352e-9        pvag=10.9914549
++ delta=0.01                mobmod=1                  prt=0
++ ute=-1.5                  kt1=-0.11                 kt1l=0
++ kt2=0.022                 ua1=4.31e-9               ub1=-7.61e-18
++ uc1=-5.6e-11              at=3.3e4                  wl=0
++ wln=1                     ww=0                      wwn=1
++ wwl=0                     ll=0                      lln=1
++ lw=0                      lwn=1                     lwl=0
++ capmod=2                  xpart=0.4                 cgdo=2.4e-10
++ cgso=2.4e-10              cgbo=0                    cj=7.273568e-4
++ pb=0.9665597              mj=0.4959837              cjsw=3.114708e-10
++ pbsw=0.99                 mjsw=0.2653654            pvth0=9.420541e-3
++ prdsw=-231.2571566        pk2=1.396684e-3           wketa=1.862966e-3
++ lketa=5.728589e-3         
+
+endsection
+
+endlibrary

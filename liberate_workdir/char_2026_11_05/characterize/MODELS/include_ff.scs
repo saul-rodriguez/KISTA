@@ -1,0 +1,9 @@
+// include process libraries
+simulator lang=spectre insensitive=yes
+
+// Corners (N vs. P)
+// TT - typical - typical 
+// FF - fast - fast 
+// SS - slow - slow
+
+include "ami06.scs" section=FF
