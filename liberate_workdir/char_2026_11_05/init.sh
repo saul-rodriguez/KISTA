@@ -5,9 +5,9 @@ echo Setting environment for Liberate
 export CDS_AUTO_64BIT=ALL
 #export ALTOSHOME=/opt/tools/cadence/installs/LIBERATE231
 export ALTOSHOME=/opt/tools/cadence/installs/LIBERATE251
-
-
 export PATH=$PATH:$ALTOSHOME/bin:$ALTOSHOME/tools.lnx86/spectre/bin
+
+export LIBERATE_LORDER="TOKENS"
 
 
 echo Setting licensing for Cadence Virtuoso
